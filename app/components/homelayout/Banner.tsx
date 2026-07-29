@@ -46,13 +46,13 @@ export const Banner: React.FC<BannerProps> = ({
           
           {/* Subtitle / Tag */}
           {pretitle && (
-            <span className={`inline-block px-3 mb-0 text-sm sm:text-5xl font-semibold tracking-widest ${playfair.variable}`}>
+            <span className={`inline-block px-3 mb-0 text-2xl sm:text-5xl font-semibold tracking-widest ${playfair.variable}`}>
               {pretitle}
             </span>
           )}
 
           {/* Main Title */}
-          <h1 className="text-3xl sm:text-5xl lg:text-7xl font-serif font-bold tracking-tight text-white  leading-tight sm:leading-none">
+          <h1 className="text-4xl sm:text-5xl lg:text-7xl font-serif font-bold tracking-tight text-white  leading-tight sm:leading-none">
             {title}
           </h1>
 
@@ -63,7 +63,7 @@ export const Banner: React.FC<BannerProps> = ({
 
           {/* Action Buttons */}
           {ctaButtons.length > 0 && (
-            <div className="mt-2 sm:mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <div className="mt-6 sm:mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
               {ctaButtons.map((cta, index) => {
                 const isPrimary = cta.variant === 'primary' || !cta.variant;
                 return (

@@ -35,7 +35,7 @@ export default function GallerySection({
         );
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white md:py-8 py-4">
       {/* Background Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
@@ -48,7 +48,7 @@ export default function GallerySection({
           </span>
 
           {/* Heading */}
-          <h2 className="mt-0 text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold leading-tight text-slate-900 md:text-5xl">
             {title.line1}{" "}
             <span className="text-orange-500">
               {title.highlight}
@@ -58,7 +58,7 @@ export default function GallerySection({
           <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
 
           {/* Description */}
-          <p className="mx-auto mt-0 max-w-2xl text-md leading-8 text-slate-900">
+          <p className="mx-auto mt-0 max-w-2xl text-md md:leading-8 text-slate-900">
             {description}
           </p>
 
@@ -83,7 +83,7 @@ export default function GallerySection({
         </div>
 
         {/* Gallery */}
-        <div className="mt-5 grid gap-4 md:grid-cols-2 lg:grid-cols-4 auto-rows-[180px]">
+        <div className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-4 auto-rows-[180px]">
           {filteredImages.map(
             (item: GalleryImage, index: number) => (
               <div

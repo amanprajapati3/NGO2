@@ -17,7 +17,7 @@ export interface HeaderDataProps {
 }
 
 export interface SocialLinkItem {
-  label: "facebook" | "instagram" | "twitter" | "linkedin" | "youtube";
+  label: string;
   href: string;
 }
 
@@ -45,11 +45,6 @@ export interface FooterSection {
   links: FooterLink[];
 }
 
-export interface ContactInfo {
-  address: string;
-  phone: string;
-  email: string;
-}
 
 export interface SocialLink {
   label: string;
@@ -61,7 +56,6 @@ export interface FooterData {
   siteTitle?: string;
   tagline?: string;
   footer: FooterSection[];
-  contact: ContactInfo;
   socials: SocialLink[];
 }
 

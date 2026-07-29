@@ -29,12 +29,12 @@ export default function CausesSection({ data }: CausesSectionProps) {
   const { badge, title, description, items, exploreButton, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-5 ">
+    <section className="relative overflow-hidden bg-white md:py-5 py-2 ">
       {/* Decorative Background */}
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[150px]" />
       <div className="absolute right-0 bottom-0 h-96 w-96 rounded-full bg-orange-50 blur-[180px]" />
 
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-2 md:px-8">
         {/* Badge */}
         <div className="flex justify-center">
           <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-4 pt-2 text-sm font-semibold uppercase tracking-wider text-orange-600">
@@ -47,7 +47,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
         {/* Heading */}
 
         <div className="mx-auto mt-0 max-w-3xl text-center">
-          <h2 className="text-4xl font-extrabold leading-tight text-slate-900 md:text-5xl">
+          <h2 className="text-3xl font-extrabold leading-tight text-slate-900 md:text-5xl">
             {title.line1}{" "}
             <span className="text-orange-500">{title.highlight}</span>{" "}
             {title.line2}
@@ -55,12 +55,12 @@ export default function CausesSection({ data }: CausesSectionProps) {
 
           <div className="mx-auto mt-0 h-1 w-16 rounded-full bg-orange-500" />
 
-          <p className="mt-1 text-lg leading-7 text-slate-900">{description}</p>
+          <p className="mt-1 md:text-lg md:leading-7 text-slate-900">{description}</p>
         </div>
 
         {/* Cards */}
 
-        <div className="mt-10 grid gap-8 md:grid-cols-2 xl:grid-cols-3">
+        <div className="md:mt-10 mt-2 grid md:gap-8 gap-3 sm:grid-cols-2 xl:grid-cols-3">
           {items.map((item: CauseItem, index) => (
             <div
               key={item.title}
@@ -149,7 +149,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
 
         {/* ================= CTA SECTION ================= */}
 
-        <div className="relative mt-8 overflow-hidden rounded-[40px] bg-[#2B2343]">
+        <div className="relative mt-8 overflow-hidden md:rounded-[40px] bg-[#2B2343]">
           {/* Background Image */}
           <Image
             src={cta.backgroundImage}
@@ -183,15 +183,15 @@ export default function CausesSection({ data }: CausesSectionProps) {
             </>
           )}
 
-          <div className="relative z-10 flex flex-col items-center px-8 py-9 text-center lg:px-24 ">
+          <div className="relative z-10 flex flex-col items-center  py-9 text-center md:px-24 ">
 
             {/* Heading */}
-            <h2 className="mt-2 max-w-3xl text-4xl font-extrabold leading-tight text-white md:text-5xl">
+            <h2 className="mt-2 max-w-3xl text-3xl font-extrabold leading-tight text-white md:text-5xl">
               {cta.title}
             </h2>
 
             {/* Description */}
-            <p className="mt-2 max-w-2xl text-lg leading-8 text-slate-300">
+            <p className="mt-2 max-w-2xl md:text-lg text-md md:leading-8 text-slate-300">
               {cta.description}
             </p>
 

@@ -47,7 +47,7 @@ export default function ProjectSection({
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-10 lg:py-12">
+    <section className="relative overflow-hidden bg-white py-5 lg:py-12">
       {/* Background Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
       <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
@@ -58,20 +58,20 @@ export default function ProjectSection({
             <HiOutlineHeart className="text-base" />
             {badge.label}
           </div>
-          <h2 className="mt-0 text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold leading-tight text-slate-900 sm:text-5xl">
             {heading.title.split(heading.highlight)[0]}
             <span className="text-orange-500">
               {heading.highlight}
             </span>
           </h2>
           <div className="mx-auto mt-0 h-1 w-14 rounded-full bg-orange-500" />
-          <p className="mx-auto mt-1 max-w-2xl text-lg leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-2xl md:text-lg text-md md:leading-7 text-slate-900">
             {description}
           </p>
         </div>
 
         {/* ================= Cards ================= */}
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 xl:grid-cols-4">
+        <div className="mt-10 grid md:gap-4 gap-3 sm:grid-cols-2 xl:grid-cols-4">
           {items.map((item: ProjectCard) => {
             const orange = item.color === "orange";
             return (
@@ -139,18 +139,18 @@ export default function ProjectSection({
           {/* Decorative Background */}
           <div className="absolute -left-10 -top-10 h-44 w-44 rounded-full bg-orange-100 blur-3xl opacity-40" />
           <div className="absolute -right-12 -bottom-12 h-52 w-52 rounded-full bg-orange-50 blur-3xl opacity-60" />
-          <div className="relative flex flex-col items-center justify-between gap-8 px-6 py-8 md:flex-row md:px-10">
+          <div className="relative flex flex-col items-center justify-between md:gap-8 sm:px-6 px-1 md:py-8 py-1 md:flex-row md:px-10">
 
             {/* Left */}
             <div className="flex items-center gap-5">
-              <div className="flex h-20 w-20 items-center justify-center rounded-full bg-orange-100 text-orange-500 shadow-md">
+              <div className="flex h-20 w-20 items-center justify-center rounded-full sm:bg-orange-100 text-orange-500">
                 <FiHeart className="text-4xl" />
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-slate-900">
                   {cta.title}
                 </h3>
-                <p className="mt-0 max-w-xl text-slate-900">
+                <p className="mt-0 sm:max-w-xl text-slate-900">
                   {cta.description}
                 </p>
               </div>
@@ -159,7 +159,7 @@ export default function ProjectSection({
             {/* Right */}
             <Link
               href={cta.button.href}
-              className="group inline-flex items-center gap-3 rounded-full bg-orange-500 px-8 py-4 font-semibold text-white shadow-lg shadow-orange-300/40 transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600"
+              className="group inline-flex items-center gap-3 mt-2 sm:mt-0 rounded-full bg-orange-500 md:px-8 px-2 py-4 font-semibold text-white shadow-lg shadow-orange-300/40 transition-all duration-300 hover:-translate-y-1 hover:bg-orange-600"
             >
               {cta.button.label}
               <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />

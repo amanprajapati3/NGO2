@@ -27,21 +27,21 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
-      <div className="mx-auto max-w-7xl px-5">
+    <section className="relative overflow-hidden bg-white md:py-8 py-4">
+      <div className="mx-auto max-w-7xl md:px-5 px-2">
         
         {/* Header */}
         <div className="mx-auto max-w-3xl text-center">
-          <span className="inline-flex rounded-full px-5 py-2 text-sm font-semibold text-orange-700">
+          <span className="inline-flex rounded-full px-5 pt-2 text-sm font-semibold text-orange-700">
             {data.badge.label}
           </span>
 
-          <h2 className="mt-0 text-4xl font-bold text-gray-900 md:text-5xl">
+          <h2 className="mt-0 text-3xl font-bold text-gray-900 md:text-5xl">
             {data.title.line1}{" "}
             <span className="text-yellow-600">{data.title.highlight}</span>
           </h2>
 
-          <p className="mt-1 leading-relaxed text-gray-900">
+          <p className="mt-1 md:leading-relaxed text-gray-900">
             {data.subtitle}
           </p>
         </div>
@@ -103,16 +103,16 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
                 </span>
               </div>
 
-              <h3 className="mt-4 text-3xl font-bold text-gray-900">
+              <h3 className="md:mt-4 mt-2 md:text-3xl text-2xl font-bold text-gray-900">
                 {story.title}
               </h3>
 
-              <p className="mt-4 leading-relaxed text-gray-600">
+              <p className="md:mt-4 mt-2 md:leading-relaxed text-gray-900">
                 {story.story}
               </p>
 
               {/* Before & After Comparison Grid */}
-              <div className="mt-8 grid gap-5 sm:grid-cols-2">
+              <div className="md:mt-8 mt-4 grid gap-5 sm:grid-cols-2">
                 <div className="rounded-2xl border border-gray-100 bg-gray-50 p-5">
                   <p className="mt-2 text-sm leading-relaxed text-gray-900">
                     {story.before}

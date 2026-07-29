@@ -22,13 +22,13 @@ export default function EventSection({
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-10">
+    <section className="relative overflow-hidden bg-white md:py-10 py-3">
 
       {/* Decorative Background */}
       <div className="absolute -left-24 top-10 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
       <div className="absolute right-0 top-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
 
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-2 lg:px-8">
 
         {/* ================= Heading ================= */}
 
@@ -39,7 +39,7 @@ export default function EventSection({
             {badge.label}
           </div>
 
-          <h2 className="-mt-2 text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+          <h2 className="-mt-2 text-3xl font-extrabold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
             {title.line1}{" "}
             <span className="text-orange-500">
               {title.highlight}
@@ -48,7 +48,7 @@ export default function EventSection({
 
           <div className="mx-auto mt-0 h-1 w-16 rounded-full bg-orange-500" />
 
-          <p className="mx-auto mt-1 max-w-2xl text-md leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-2xl text-md md:leading-7 text-slate-900">
             {description}
           </p>
 
@@ -56,7 +56,7 @@ export default function EventSection({
 
         {/* ================= Event Cards ================= */}
 
-        <div className="mt-8 grid gap-7 md:grid-cols-2 xl:grid-cols-3">
+        <div className="mt-8 grid gap-7 sm:grid-cols-2 xl:grid-cols-3">
                       {events.map((event: EventCard) => {
             const primary =
               event.button.variant === "primary";

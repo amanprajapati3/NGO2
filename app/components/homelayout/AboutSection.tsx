@@ -112,23 +112,23 @@ export default function AboutSection({ data }: AboutSectionProps) {
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-10 lg:py-16">
+    <section className="relative overflow-hidden bg-white py-5 lg:py-16">
       {/* Decorative Blur */}
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
       <div className="absolute right-0 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[160px]" />
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-3 lg:px-8">
         <div className="grid items-center gap-16 lg:grid-cols-2">
           {/* ================= LEFT ================= */}
-          <div>
+          <div className="">
 
             {/* Badge */}
-            <div className="mb-6 inline-flex items-center gap-2 rounded-full bg-orange-50 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-orange-600">
+            <div className="md:mb-6 flex justify-center md:justify-start items-center gap-2 rounded-full bg-orange-50 px-4 py-2 text-sm font-semibold uppercase tracking-wider text-orange-600">
               <HiOutlineHeart className="text-lg" />
               {badge.label}
             </div>
 
             {/* Heading */}
-            <h2 className="max-w-xl text-4xl font-extrabold leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
+            <h2 className="max-w-xl text-3xl text-center md:text-start font-extrabold md:leading-tight text-slate-900 sm:text-5xl lg:text-6xl">
               {title.line1}
               <br />
               {title.line2}
@@ -139,26 +139,26 @@ export default function AboutSection({ data }: AboutSectionProps) {
             </h2>
 
             {/* Orange Line */}
-            <div className="mt-8 h-1 w-14 rounded-full bg-orange-500" />
+            <div className="md:mt-8 hidden md:block mt-2 h-1 w-14 rounded-full bg-orange-500" />
             {/* Primary Text */}
-            <p className="mt-8 max-w-xl text-xl leading-relaxed text-slate-600">
+            <p className="md:mt-8 mt-2 max-w-xl md:text-xl text-center md:text-start leading-relaxed text-slate-900">
               {description.primary}
             </p>
 
             {/* Secondary Text */}
-            <p className="mt-6 max-w-xl text-lg leading-9 text-slate-500">
+            <p className="md:mt-8 mt-2 max-w-xl md:text-xl text-center md:text-start leading-relaxed text-slate-900">
               {description.secondary}
             </p>
 
             {/* Buttons */}
-            <div className="mt-10 flex flex-wrap gap-4">
+            <div className="sm:mt-10 mt-4 flex justify-center md:justify-start gap-1 sm:gap-4">
               {buttons.map((button) => {
                 const primary = button.variant === "primary";
                 return (
                   <Link
                     key={button.label}
                     href={button.href}
-                    className={`group inline-flex items-center gap-3 rounded-full px-8 py-4 text-base font-semibold transition-all duration-300 ${
+                    className={`group inline-flex items-center sm:gap-3 gap-1 text-sm sm:text-lg  rounded-full px-3 sm:px-8 sm:py-4 py-3 font-semibold transition-all duration-300 ${
                       primary
                         ? "bg-orange-500 text-white hover:bg-orange-600 shadow-lg shadow-orange-300/40"
                         : "bg-slate-900 text-white hover:bg-slate-800 shadow-lg"
@@ -219,8 +219,8 @@ export default function AboutSection({ data }: AboutSectionProps) {
             </div>
 
             {/* Floating Card */}
-            <div className="absolute right-2 top-5 z-20 rounded-3xl bg-white px-6 py-5 shadow-2xl">
-              <div className="flex items-center gap-4">
+            <div className="absolute right-2 md:top-5 top-3 z-20 rounded-3xl bg-white px-6 py-5 shadow-2xl">
+              <div className="flex items-center md:gap-4 gap-2">
                 <div className="rounded-full bg-orange-100 p-3">
                   <HiOutlineHeart className="text-3xl text-orange-500" />
                 </div>
@@ -240,19 +240,19 @@ export default function AboutSection({ data }: AboutSectionProps) {
           </div>
         </div>
                 {/* ================= Statistics ================= */}
-        <div className="mt-10 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="md:mt-10 mt-3 grid md:gap-6 gap-2 grid-cols-2 md:grid-cols-4">
           {statistics.map((item: AboutStatistic) => (
             <div
               key={item.label}
-              className="group rounded-3xl border border-slate-200 bg-white p-7 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
+              className="group rounded-3xl border border-slate-200 bg-white md:p-7 p-3 shadow-sm transition-all duration-300 hover:-translate-y-2 hover:border-orange-200 hover:shadow-xl"
             >
-              <div className="mb-5 flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 text-orange-500 transition group-hover:bg-orange-500 group-hover:text-white">
+              <div className="md:mb-5 mb-2 flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-100 text-orange-500 transition group-hover:bg-orange-500 group-hover:text-white">
                 {getStatIcon(item.icon)}
               </div>
-              <h3 className="text-3xl font-extrabold text-slate-900">
+              <h3 className="sm:text-3xl text-2xl font-extrabold text-slate-900">
                  <AnimatedNumber value={item.value} />
               </h3>
-              <p className="mt-2 text-base font-medium text-slate-500">
+              <p className="sm:mt-2 text-base font-medium text-slate-500">
                 {item.label}
               </p>
             </div>

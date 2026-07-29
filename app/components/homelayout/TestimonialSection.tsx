@@ -46,7 +46,7 @@ export default function TestimonialSection({
     testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white py-3 md:py-8">
 
       {/* Decorative Background */}
       <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
@@ -61,7 +61,7 @@ export default function TestimonialSection({
             {badge.label}
           </p>
 
-          <h2 className="mt-0 text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 sm:text-5xl">
             {title.line1}{" "}
             <span className="text-orange-500">
               {title.highlight}
@@ -70,14 +70,14 @@ export default function TestimonialSection({
 
           <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
 
-          <p className="mx-auto mt-1 max-w-3xl text-md leading-8 text-slate-900">
+          <p className="mx-auto mt-1 max-w-3xl text-md md:leading-8 text-slate-900">
             {description}
           </p>
 
         </div>
 
         {/* Card */}
-        <div className="relative overflow-hidden rounded-[34px] bg-white p-8 shadow-2xl lg:p-12">
+        <div className="relative overflow-hidden mt-3 md:mt-0 rounded-[34px] bg-white md:p-8 p-2 shadow-2xl lg:p-12">
 
           <div className="grid items-center gap-12 lg:grid-cols-[220px_1fr]">
 
@@ -90,20 +90,21 @@ export default function TestimonialSection({
                   src={activeTestimonial.image}
                   alt={activeTestimonial.name}
                   fill
+                  sizes="144px"
                   className="object-cover"
                 />
 
               </div>
 
-              <h3 className="mt-6 text-2xl font-bold text-slate-900">
+              <h3 className="md:mt-6 mt-2 text-2xl font-bold text-slate-900">
                 {activeTestimonial.name}
               </h3>
 
-              <p className="mt-2 font-medium text-orange-500">
+              <p className="md:mt-2 font-medium text-orange-500">
                 {activeTestimonial.designation}
               </p>
 
-              <div className="mt-5 flex justify-center gap-1 lg:justify-start">
+              <div className="md:mt-5 mt-2 flex justify-center gap-1 lg:justify-start">
                 {Array.from({
                   length: activeTestimonial.rating,
                 }).map((_, i) => (
@@ -119,14 +120,14 @@ export default function TestimonialSection({
             {/* Right */}
             <div>
 
-              <blockquote className="text-md leading-7 text-slate-900">
+              <blockquote className="text-md md:leading-7 text-slate-900">
                 "{activeTestimonial.message}"
               </blockquote>
 
               {/* Navigation */}
-              <div className="mt-10 flex items-center gap-4">
+              <div className="mt-10 flex justify-center-safe md:justify-end items-center gap-4">
 
-                <div className="ml-auto flex gap-2">
+                <div className="ml-auto flex justify-center-safe gap-2">
                   {testimonials.map((_, index) => (
                     <button
                       key={index}
@@ -141,17 +142,11 @@ export default function TestimonialSection({
                     />
                   ))}
                 </div>
-
               </div>
-
             </div>
-
           </div>
-
         </div>
-
       </div>
-
     </section>
   );
 }

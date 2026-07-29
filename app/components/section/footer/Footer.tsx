@@ -63,7 +63,7 @@ export default function Footer({ data }: { data: FooterData }) {
             </Link>
 
             {/* CONTACT DETAILS FROM JSON */}
-            {data.contact && (
+            {/* {data.contact && (
               <div className="pt-2 space-y-3 text-sm text-slate-400">
                 {data.contact.address && (
                   <div className="flex items-start gap-3">
@@ -80,7 +80,7 @@ export default function Footer({ data }: { data: FooterData }) {
                     >
                       {data.contact.phone}
                     </a>
-                  </div>
+                  </div>  
                 )}
                 {data.contact.email && (
                   <div className="flex items-center gap-3">
@@ -94,7 +94,7 @@ export default function Footer({ data }: { data: FooterData }) {
                   </div>
                 )}
               </div>
-            )}
+            )} */}
           </div>
 
           {/* SOCIAL MEDIA LINKS FROM JSON */}

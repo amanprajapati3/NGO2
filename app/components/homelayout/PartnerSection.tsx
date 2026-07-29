@@ -11,7 +11,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
   const logos = [...partnersList, ...partnersList];
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white md:py-8 py-4">
       {/* Background */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />
@@ -24,7 +24,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           </span>
 
           {/* Heading */}
-          <h2 className="mt-0 text-4xl font-extrabold text-slate-900 md:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 md:text-5xl">
             {title.line1}{" "}
             <span className="text-orange-500">{title.highlight}</span>
           </h2>
@@ -32,14 +32,14 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
 
           {/* Description */}
-          <p className="mx-auto mt-1 max-w-3xl text-md leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-3xl text-md md:leading-7 text-slate-900">
             {description}
           </p>
         </div>
 
         {/* ================= Logo Slider ================= */}
 
-        <div className="relative mt-12 overflow-hidden">
+        <div className="relative md:mt-12 mt-5 overflow-hidden">
           {/* Left Fade */}
           <div className="pointer-events-none absolute left-0 top-0 z-20 h-full w-24 bg-gradient-to-r from-white to-transparent" />
 
@@ -59,6 +59,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
                   alt={partner.name}
                   width={150}
                   height={70}
+                  sizes="(max-width: 640px) 100px, (max-width: 1024px) 120px, 150px"
                   className="max-h-14 w-auto object-contain transition duration-300 hover:grayscale-0"
                 />
               </Link>

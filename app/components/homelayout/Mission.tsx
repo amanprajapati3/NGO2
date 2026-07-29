@@ -62,7 +62,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
       <div className="relative ">
         {/* Main Card Container with Left Image & Floating Right Dark Panel */}
-        <div className="relative min-h-[640px] p-8 w-full overflow-hidden  ">
+        <div className="relative min-h-[640px] ms:p-8 p-2 w-full overflow-hidden  ">
           
           {/* Main Background Image (Left Side Focus) */}
           <div className="absolute inset-0 z-0">
@@ -106,8 +106,8 @@ export default function MissionSection({ data }: MissionSectionProps) {
           </div>
 
           {/* Right Floating Content Box */}
-          <div className="relative z-10 flex min-h-[640px] justify-end">
-            <div className="w-full rounded-xl ml-6 shadow-xl shadow-gray-800 max-w-2xl bg-[#101426]/95 p-8 text-white backdrop-blur-md lg:p-12">
+          <div className="relative z-10 mr-2 flex min-h-[640px] justify-end">
+            <div className="w-full rounded-xl md:ml-6 pl-2 shadow-xl shadow-gray-800 max-w-2xl bg-[#101426]/95 sm:p-8 p-2 text-white backdrop-blur-md lg:p-12">
               
               {/* Dot Grid Decorative Pattern Top Right */}
               <div className="absolute top-8 right-8 grid grid-cols-6 gap-1.5 opacity-20">

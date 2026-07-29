@@ -16,19 +16,9 @@ import {
   FaLinkedinIn,
   FaYoutube,
 } from "react-icons/fa6";
-import { HeaderDataProps } from "@/type/typeSection";
+import { HeaderDataProps,   TopBarData, SocialLinkItem
+ } from "@/type/typeSection";
 
-export interface SocialLinkItem {
-  label: "facebook" | "instagram" | "twitter" | "linkedin" | "youtube";
-  href: string;
-}
-
-export interface TopBarData {
-  address: string;
-  phone: string;
-  phoneHref: string;
-  socialLinks: SocialLinkItem[];
-}
 
 const renderSocialIcon = (label: SocialLinkItem["label"]) => {
   switch (label) {

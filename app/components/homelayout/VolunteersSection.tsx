@@ -42,13 +42,11 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white md:py-8 py-3">
       {/* Background */}
 
       <div className="absolute left-0 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[120px]" />
-
       <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />
-
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         {/* ================= Heading ================= */}
 
@@ -58,14 +56,13 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
             {badge.label}
           </div>
 
-          <h2 className="mt-0 text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 sm:text-5xl">
             {heading.title.split(heading.highlight)[0]}
             <span className="text-orange-500">{heading.highlight}</span>
           </h2>
 
           <div className="mx-auto mt-1 h-1 w-14 rounded-full bg-orange-500" />
-
-          <p className="mx-auto mt-1 max-w-2xl text-lg leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-2xl md:text-lg text-md md:leading-7 text-slate-900">
             {description}
           </p>
         </div>
@@ -78,10 +75,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
             <FiArrowLeft size={20} />
           </button>
 
-         
-
         {/* ================= Slider ================= */}
-         
         <div className="mt-1 overflow-hidden relative">
           <div
             className="flex flex-nowarp gap-4 transition-transform duration-500 ease-in-out"
@@ -125,8 +119,8 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
 
                   {/* Content */}
 
-                  <div className="p-2">
-                    <h3 className="text-2xl font-bold text-slate-900 transition group-hover:text-orange-500">
+                  <div className="sm:p-2 p-1">
+                    <h3 className="sm:text-2xl text-xl font-bold text-slate-900 transition group-hover:text-orange-500">
                       {member.name}
                     </h3>
 
@@ -152,7 +146,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
       </div>
       {/* ================= Bottom CTA ================= */}
 
-      <div className="relative mt-10 overflow-hidden md:mx-16 rounded-[36px] bg-[#2B2343]">
+      <div className="relative mt-10 overflow-hidden md:mx-16 md:rounded-[36px] bg-[#2B2343]">
         {/* Background Decoration */}
         <div className="absolute -left-20 top-0 h-64 w-64 rounded-full bg-orange-500/20 blur-[130px]" />
         <div className="absolute -right-20 bottom-0 h-64 w-64 rounded-full bg-violet-500/20 blur-[140px]" />
@@ -167,18 +161,16 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
           ))}
         </div>
 
-        <div className="relative flex flex-col items-center justify-between gap-8 px-8 py-12 text-center lg:flex-row lg:px-14 lg:py-10 lg:text-left">
+        <div className="relative flex flex-col items-center justify-between gap-8 md:px-8 p-1 py-12 text-center lg:flex-row lg:px-14 lg:py-10 lg:text-left">
           {/* Left */}
-
-          <div className="flex items-center gap-5">
-            <div className="flex h-20 w-20 items-center justify-center rounded-full bg-orange-500 text-white shadow-xl shadow-orange-500/30">
+          <div className="flex items-center md:gap-5 gap-2">
+            <div className="flex h-20 w-20 items-center justify-center rounded-full md:bg-orange-500 text-white shadow-xl md:shadow-orange-500/30">
               <FiHeart className="text-4xl" />
             </div>
-
             <div>
               <h3 className="text-3xl font-bold text-white">{cta.title}</h3>
 
-              <p className="mt-3 max-w-2xl leading-7 text-slate-300">
+              <p className="mt-3 max-w-2xl md:leading-7 text-slate-300">
                 {cta.description}
               </p>
             </div>

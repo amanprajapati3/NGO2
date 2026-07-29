@@ -33,7 +33,7 @@ export default function NewsSection({
     : articles.slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-white py-8">
+    <section className="relative overflow-hidden bg-white md:py-8 py-3">
 
       {/* Background Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
@@ -50,7 +50,7 @@ export default function NewsSection({
             {badge.label}
           </div>
 
-          <h2 className="mt-0 text-4xl font-extrabold text-slate-900 sm:text-5xl">
+          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 sm:text-5xl">
             {title.line1}{" "}
             <span className="text-orange-500">
               {title.highlight}
@@ -59,7 +59,7 @@ export default function NewsSection({
 
           <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
 
-          <p className="mx-auto mt-1 max-w-2xl text-md leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-2xl text-md md:leading-7 text-slate-900">
             {subtitle}
           </p>
 
@@ -67,7 +67,7 @@ export default function NewsSection({
 
         {/* Cards */}
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
                     {visibleArticles.map((article: NewsArticle) => (
           <div
             key={article.title}
