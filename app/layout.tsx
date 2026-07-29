@@ -1,15 +1,15 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
+import Header from "./components/section/header/Header";
+import Footer from "./components/section/footer/Footer";
+import data from "@/data/data.json"
+import { Inter } from "next/font/google";
+import SmoothScroll from "./components/shared/SmoothScroll"
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const inter = Inter({
   subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
+  variable: "--font-primary",
+  display: "swap",
 });
 
 export const metadata: Metadata = {
@@ -25,9 +25,14 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${inter.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="min-h-full flex flex-col">
+        <SmoothScroll/>
+        <Header data={data} topBar={data.topBar}/>
+        {children}
+        <Footer data={data}/>
+        </body>
     </html>
   );
 }

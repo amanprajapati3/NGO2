@@ -1,0 +1,1377 @@
+{
+  "siteTitle": "Ashray Foundation",
+  "logo": "/image.png",
+  "tagline": "Building brighter futures, together.",
+  "topBar": {
+    "address": "14 Maple Grove Avenue, Nairobi",
+    "phone": "+1 800-224-3391",
+    "phoneHref": "tel:18002243391",
+    "socialLinks": [
+      {
+        "label": "facebook",
+        "href": "https://www.facebook.com/"
+      },
+      {
+        "label": "twitter",
+        "href": "https://www.twitter.com/"
+      },
+      {
+        "label": "youtube",
+        "href": "https://www.youtube.com/"
+      },
+      {
+        "label": "instagram",
+        "href": "https://www.instagram.com/"
+      }
+    ],
+    "headerCta": {
+      "label": "Donate",
+      "href": "/"
+    },
+    "copyright": "\u00a9 2026 Helping Hearts. All rights reserved."
+  },
+  "header": [
+    {
+      "label": "Home",
+      "href": "/"
+    },
+    {
+      "label": "About",
+      "href": "/about",
+      "children": [
+        {
+          "label": "Our Story",
+          "href": "/about/our-story"
+        },
+        {
+          "label": "Vision & Mission",
+          "href": "/about/vision-mission"
+        },
+        {
+          "label": "Our Values",
+          "href": "/about/our-values"
+        },
+        {
+          "label": "Leadership Team",
+          "href": "/about/leadership-team"
+        },
+        {
+          "label": "Advisory Board",
+          "href": "/about/advisory-board"
+        },
+        {
+          "label": "CEO Message",
+          "href": "/about/ceo-message"
+        },
+        {
+          "label": "Awards & Recognition",
+          "href": "/about/awards-recognition"
+        }
+      ]
+    },
+    {
+      "label": "Careers",
+      "href": "/careers"
+    },
+    {
+      "label": "Programs",
+      "href": "/programs",
+      "children": [
+        {
+          "label": "Community Development",
+          "href": "/programs/community-development"
+        },
+        {
+          "label": "Government Projects",
+          "href": "/programs/government-projects"
+        },
+        {
+          "label": "International Projects",
+          "href": "/programs/international-projects"
+        },
+        {
+          "label": "Current Programs",
+          "href": "/programs/current-programs"
+        },
+        {
+          "label": "Ongoing Projects",
+          "href": "/programs/ongoing-projects"
+        },
+        {
+          "label": "Completed Projects",
+          "href": "/programs/completed-projects"
+        }
+      ]
+    },
+    {
+      "label": "Our Work",
+      "href": "/our-work",
+      "children": [
+        {
+          "label": "Education",
+          "href": "/our-work/education"
+        },
+        {
+          "label": "Healthcare",
+          "href": "/our-work/healthcare"
+        },
+        {
+          "label": "Women Empowerment",
+          "href": "/our-work/women-empowerment"
+        },
+        {
+          "label": "Child Welfare",
+          "href": "/our-work/child-welfare"
+        },
+        {
+          "label": "Disaster Relief",
+          "href": "/our-work/disaster-relief"
+        },
+        {
+          "label": "Human Rights",
+          "href": "/our-work/human-rights"
+        },
+        {
+          "label": "Elderly Care",
+          "href": "/our-work/elderly-care"
+        }
+      ]
+    },
+    {
+      "label": "Events",
+      "href": "/events",
+      "children": [
+        {
+          "label": "Upcoming Events",
+          "href": "/events/upcoming"
+        },
+        {
+          "label": "Past Events",
+          "href": "/events/past"
+        },
+        {
+          "label": "Charity Events",
+          "href": "/events/charity"
+        }
+      ]
+    },
+    {
+      "label": "Contact",
+      "href": "/contact",
+      "children": [
+        {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "label": "Office Locations",
+          "href": "/contact/office-locations"
+        },
+        {
+          "label": "Support",
+          "href": "/contact/support"
+        }
+      ]
+    }
+  ],
+  "footer": [
+    {
+      "label": "About",
+      "href": "/about",
+      "links": [
+        {
+          "label": "About Us",
+          "href": "/about"
+        },
+        {
+          "label": "Leadership",
+          "href": "/about/leadership-team"
+        },
+        {
+          "label": "Careers",
+          "href": "/careers"
+        },
+        {
+          "label": "Volunteer",
+          "href": "/get-involved/volunteer"
+        }
+      ]
+    },
+    {
+      "label": "Our Work",
+      "href": "/our-work",
+      "links": [
+        {
+          "label": "Education",
+          "href": "/our-work/education"
+        },
+        {
+          "label": "Health",
+          "href": "/our-work/health"
+        },
+        {
+          "label": "Women Empowerment",
+          "href": "/our-work/women-empowerment"
+        },
+        {
+          "label": "Environment",
+          "href": "/our-work/environment"
+        },
+        {
+          "label": "Child Rights",
+          "href": "/our-work/child-rights"
+        },
+        {
+          "label": "Disaster Relief",
+          "href": "/our-work/disaster-relief"
+        }
+      ]
+    },
+    {
+      "label": "Resources",
+      "href": "/resources",
+      "links": [
+        {
+          "label": "Blog",
+          "href": "/resources/blogs"
+        },
+        {
+          "label": "News",
+          "href": "/resources/news"
+        },
+        {
+          "label": "Reports",
+          "href": "/resources/reports"
+        },
+        {
+          "label": "Downloads",
+          "href": "/resources/downloads"
+        },
+        {
+          "label": "FAQs",
+          "href": "/resources/faqs"
+        }
+      ]
+    },
+    {
+      "label": "Legal",
+      "href": "/legal",
+      "links": [
+        {
+          "label": "Privacy Policy",
+          "href": "/legal/privacy-policy"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/legal/terms-conditions"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/legal/cookie-policy"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/legal/disclaimer"
+        },
+        {
+          "label": "Accessibility",
+          "href": "/legal/accessibility"
+        }
+      ]
+    },
+    {
+      "label": "Connect",
+      "href": "/connect",
+      "links": [
+        {
+          "label": "Facebook",
+          "href": "https://facebook.com"
+        },
+        {
+          "label": "Instagram",
+          "href": "https://instagram.com"
+        },
+        {
+          "label": "LinkedIn",
+          "href": "https://linkedin.com"
+        },
+        {
+          "label": "X (Twitter)",
+          "href": "https://twitter.com"
+        },
+        {
+          "label": "YouTube",
+          "href": "https://youtube.com"
+        }
+      ]
+    }
+  ],
+  "contact": {
+    "address": "14 Harmony Lane, Sector 21, Dadri, Uttar Pradesh 203207",
+    "phone": "+91 98765 43210",
+    "email": "hello@ashrayfoundation.org"
+  },
+  "socials": [
+    {
+      "label": "Facebook",
+      "href": "https://facebook.com",
+      "icon": "facebook"
+    },
+    {
+      "label": "Twitter",
+      "href": "https://twitter.com",
+      "icon": "twitter"
+    },
+    {
+      "label": "Instagram",
+      "href": "https://instagram.com",
+      "icon": "instagram"
+    },
+    {
+      "label": "LinkedIn",
+      "href": "https://linkedin.com",
+      "icon": "linkedin"
+    },
+    {
+      "label": "YouTube",
+      "href": "https://youtube.com",
+      "icon": "youtube"
+    }
+  ],
+  "banner": [
+    {
+      "title": "It is more difficult to give money away",
+      "pretitle": "Haruma",
+      "desc": "Discover curated botanical blends and timeless floral aesthetic crafted to elevate your daily ritual.",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "overlayOpacity": 0.55,
+      "ctaButtons": [
+        {
+          "label": "Explore Collection",
+          "href": "#collection",
+          "variant": "primary"
+        },
+        {
+          "label": "Our Story",
+          "href": "#story",
+          "variant": "secondary"
+        }
+      ]
+    }
+  ],
+  "about": {
+    "badge": {
+      "icon": "about",
+      "label": "About Us"
+    },
+    "title": {
+      "line1": "An International",
+      "line2": "Independent",
+      "highlight": "Charity Organization"
+    },
+    "description": {
+      "primary": "Your support will help us to make life better living for poor vulnerable children.",
+      "secondary": "We are a non-profit organization working for children and communities in need. Through education, healthcare, and essential support, we aim to create a world where every child has the opportunity to live a healthy, happy, and dignified life."
+    },
+    "buttons": [
+      {
+        "label": "Donate Now",
+        "href": "/donate",
+        "variant": "primary",
+        "icon": "heart"
+      },
+      {
+        "label": "More About Us",
+        "href": "/about",
+        "variant": "secondary",
+        "icon": "users"
+      }
+    ],
+    "gallery": {
+      "mainImage": {
+        "src": "https://images.unsplash.com/photo-1652858672796-960164bd632b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Children smiling together"
+      },
+      "topImage": {
+        "src": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Shelter for families"
+      },
+      "sideImage": {
+        "src": "https://images.unsplash.com/photo-1613399421095-41f5c68e9f8c?q=80&w=869&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Community support"
+      },
+      "playButton": {
+        "videoUrl": "/"
+      },
+      "floatingCard": {
+        "icon": "heartHands",
+        "title": "Your Support",
+        "subtitle": "Creates Real",
+        "highlight": "Change"
+      }
+    },
+    "statistics": [
+      {
+        "icon": "shield",
+        "value": "100%",
+        "label": "Trusted"
+      },
+      {
+        "icon": "badge",
+        "value": "80G",
+        "label": "Certified"
+      },
+      {
+        "icon": "users",
+        "value": "50K+",
+        "label": "Lives Impacted"
+      },
+      {
+        "icon": "globe",
+        "value": "25+",
+        "label": "Communities Served"
+      }
+    ],
+    "background": {
+      "showGradient": true,
+      "showDecorations": true
+    }
+  },
+  "mission": {
+    "badge": {
+      "icon": "mission",
+      "label": "Our Mission"
+    },
+    "title": {
+      "line1": "Concern About",
+      "highlight": "Our",
+      "line2": "Mission"
+    },
+    "tabs": [
+      {
+        "label": "Our Mission",
+        "icon": "mission",
+        "active": true
+      },
+      {
+        "label": "Our Vision",
+        "icon": "vision",
+        "active": false
+      },
+      {
+        "label": "Our Goal",
+        "icon": "goal",
+        "active": false
+      }
+    ],
+    "description": {
+      "primary": "Helping vulnerable communities through education, healthcare, sustainable development, and emergency relief while ensuring every individual has equal opportunities to live with dignity and hope.",
+      "secondary": "Our organization believes that real transformation begins by empowering people. Through collaborative initiatives, transparent governance, and long-term partnerships, we strive to create lasting positive change that benefits present and future generations."
+    },
+    "imageSection": {
+      "mainImage": {
+        "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+        "alt": "Community volunteer helping children"
+      },
+      "purposeCard": {
+        "icon": "target",
+        "badge": "Our Purpose",
+        "title": "Creating meaningful impact for a better tomorrow."
+      },
+      "showRings": true,
+      "showBrushTop": true
+    },
+    "features": [
+      {
+        "icon": "community",
+        "title": "Community First",
+        "description": "We put communities at the heart of every initiative and decision we make."
+      },
+      {
+        "icon": "shield",
+        "title": "Integrity & Transparency",
+        "description": "Every donation is managed responsibly with complete openness and accountability."
+      },
+      {
+        "icon": "growth",
+        "title": "Sustainable Impact",
+        "description": "Building long-term solutions that continue creating positive change."
+      }
+    ],
+    "buttons": [
+      {
+        "label": "Explore Our Mission",
+        "href": "/mission",
+        "variant": "primary",
+        "icon": "arrow"
+      },
+      {
+        "label": "Learn More",
+        "href": "/about",
+        "variant": "secondary",
+        "icon": "arrow"
+      }
+    ],
+    "background": {
+      "darkCard": "#111827",
+      "showDots": true,
+      "showGradient": true
+    }
+  },
+  "causes": {
+    "badge": {
+      "icon": "heart",
+      "label": "Our Causes"
+    },
+
+    "title": {
+      "line1": "The",
+      "highlight": "Causes",
+      "line2": "We Care About"
+    },
+
+    "description": "Every contribution creates opportunities for children, families, and communities to build a brighter and healthier future together.",
+
+    "items": [
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1569173675610-42c361a86e37?q=80&w=867&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Education for poor child"
+        },
+        "icon": "education",
+        "category": "#Education",
+        "title": "Education For Poor Child",
+        "description": "Providing quality education, school supplies, scholarships, and equal learning opportunities for underprivileged children.",
+        "button": {
+          "label": "Donate Now",
+          "href": "/donate",
+          "icon": "arrow"
+        }
+      },
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1497486751825-1233686d5d80?q=80&w=813&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Donation support"
+        },
+        "icon": "donation",
+        "category": "#Donation",
+        "title": "Massive Donation To Poor",
+        "description": "Supporting families through food distribution, clothing, emergency assistance, and essential daily resources.",
+        "button": {
+          "label": "Donate Now",
+          "href": "/",
+          "icon": "arrow"
+        }
+      },
+      {
+        "image": {
+          "src": "https://images.unsplash.com/photo-1618477460923-47da30de9ca4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Help homeless children"
+        },
+        "icon": "medical",
+        "category": "#Healthcare",
+        "title": "Huge Help To Homeless Children",
+        "description": "Delivering healthcare, shelter, nutrition, and emotional support to vulnerable children and families in need.",
+        "button": {
+          "label": "Donate Now",
+          "href": "/",
+          "icon": "arrow"
+        }
+      }
+    ],
+
+    "exploreButton": {
+      "label": "Explore More Causes",
+      "href": "/",
+      "icon": "arrow"
+    },
+
+    "cta": {
+      "backgroundImage": "/images/causes/cta-bg.png",
+
+      "title": "Want You Know How Can Help?",
+
+      "description": "Join our mission by donating, volunteering, or partnering with us to create sustainable change for communities around the world.",
+
+      "button": {
+        "label": "Donate Now",
+        "href": "/donate",
+        "icon": "arrow"
+      },
+
+      "decorations": {
+        "showLeaves": true,
+        "showDots": true
+      }
+    }
+  },
+  "projects": {
+    "badge": {
+      "label": "Our Projects"
+    },
+
+    "heading": {
+      "title": "Featured Projects",
+      "highlight": "Projects"
+    },
+
+    "description": "We believe in transparency and real change. Here are some of our ongoing projects improving lives and building a better future.",
+
+    "items": [
+      {
+        "category": "Education",
+        "title": "Quality Education For All",
+        "description": "Providing free education, books and learning resources to underprivileged children for a brighter future.",
+        "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
+        "button": {
+          "label": "Learn More",
+          "href": "/projects/education"
+        },
+        "icon": "book",
+        "color": "orange"
+      },
+
+      {
+        "category": "Healthcare",
+        "title": "Healthcare For Every Life",
+        "description": "Organizing health camps, medical support and awareness programs for rural communities.",
+        "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop",
+        "button": {
+          "label": "Learn More",
+          "href": "/projects/healthcare"
+        },
+        "icon": "heart",
+        "color": "purple"
+      },
+
+      {
+        "category": "Clean Water",
+        "title": "Clean Water, Better Life",
+        "description": "Building water wells and supplying safe drinking water to families and villages.",
+        "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=1200&auto=format&fit=crop",
+        "button": {
+          "label": "Learn More",
+          "href": "/projects/water"
+        },
+        "icon": "drop",
+        "color": "orange"
+      },
+
+      {
+        "category": "Women Empowerment",
+        "title": "Empowering Women",
+        "description": "Skill development, vocational training and support programs to help women become independent.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop",
+        "button": {
+          "label": "Learn More",
+          "href": "/projects/women"
+        },
+        "icon": "women",
+        "color": "purple"
+      }
+    ],
+
+    "cta": {
+      "icon": "heart",
+      "title": "Your Support Can Change Lives",
+      "description": "Every contribution brings hope and creates lasting impact in someone's life.",
+      "button": {
+        "label": "Donate Now",
+        "href": "/donate"
+      }
+    }
+  },
+  "team": {
+    "badge": {
+      "label": "Meet Our Team"
+    },
+
+    "heading": {
+      "title": "Meet Our Team",
+      "highlight": "Team"
+    },
+
+    "description": "Passionate professionals and volunteers working together to create a better world for everyone.",
+
+    "members": [
+      {
+        "name": "Rohit Sharma",
+        "designation": "Founder & Director",
+        "description": "Visionary leader with 15+ years of experience in social development and community building.",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Anjali Verma",
+        "designation": "Program Manager",
+        "description": "Driving impactful programs in education, health and women's empowerment.",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Vikram Singh",
+        "designation": "Operations Head",
+        "description": "Ensures smooth operations and effective resource management across all initiatives.",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Neha Iyer",
+        "designation": "Communications Lead",
+        "description": "Creating meaningful stories and inspiring our supporters through impactful communication.",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Aman Kapoor",
+        "designation": "Volunteer Coordinator",
+        "description": "Connecting passionate volunteers with meaningful opportunities across communities.",
+        "image": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Priya Nair",
+        "designation": "Healthcare Specialist",
+        "description": "Leading rural health initiatives and awareness programs for underserved communities.",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Arjun Mehta",
+        "designation": "Fundraising Manager",
+        "description": "Building partnerships and mobilizing resources to maximize social impact.",
+        "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      },
+      {
+        "name": "Sneha Patel",
+        "designation": "Community Outreach",
+        "description": "Working closely with local communities to ensure sustainable development initiatives.",
+        "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1200&auto=format&fit=crop",
+        "socials": [
+          {
+            "icon": "facebook",
+            "href": "https://facebook.com"
+          },
+          {
+            "icon": "linkedin",
+            "href": "https://linkedin.com"
+          },
+          {
+            "icon": "instagram",
+            "href": "https://instagram.com"
+          }
+        ]
+      }
+    ],
+
+    "cta": {
+      "icon": "heart",
+      "title": "Together, We Make Difference",
+      "description": "Join our team of dedicated individuals and help us build a stronger, kinder and more equitable future.",
+      "button": {
+        "label": "Donate Now",
+        "href": "/"
+      }
+    }
+  },
+  "supportSection": {
+    "badge": {
+      "label": "Your Support Matters",
+      "icon": "heart"
+    },
+    "title": {
+      "line1": "Together, We Can",
+      "highlight": "Change Lives"
+    },
+    "description": "Your kindness today can bring hope, food, education, healthcare, and build a brighter tomorrow for those who need it most.",
+    "button": {
+      "label": "Donate Now",
+      "href": "/donate",
+      "icon": "heart"
+    },
+    "trustItems": [
+      {
+        "icon": "shield",
+        "text": "100% Secure Donation"
+      },
+      {
+        "icon": "heart",
+        "text": "Make an Impact Today"
+      }
+    ],
+    "image": {
+      "src": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=1200&q=80",
+      "alt": "Happy children"
+    },
+    "floatingCard": {
+      "title": "Be the reason",
+      "subtitle": "someone smiles today.",
+      "icon": "heart"
+    },
+    "signature": "Thank You",
+    "background": {
+      "showDots": true,
+      "showCircle": true
+    }
+  },
+  "events": {
+    "badge": {
+      "label": "Upcoming Events"
+    },
+
+    "title": {
+      "line1": "Be Ready",
+      "highlight": "For Our Events"
+    },
+
+    "description": "Join our upcoming charity programs, fundraising campaigns, and community events to create lasting impact together.",
+
+    "events": [
+      {
+        "title": "Huruma Con Donation For Poor Child 2026",
+        "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80",
+        "href": "/events/huruma-child-donation",
+        "button": {
+          "label": "Join Now",
+          "variant": "primary"
+        }
+      },
+      {
+        "title": "Poor Funding For Helpless In Africa",
+        "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=80",
+        "href": "/events/africa-funding",
+        "button": {
+          "label": "Join Now",
+          "variant": "secondary"
+        }
+      },
+      {
+        "title": "Education Is Necessary To Poverty Family In Canada",
+        "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
+        "href": "/events/canada-education",
+        "button": {
+          "label": "Join Now",
+          "variant": "primary"
+        }
+      }
+    ]
+  },
+  "gallery": {
+    "badge": {
+      "label": "Our Gallery"
+    },
+
+    "title": {
+      "line1": "Moments of",
+      "highlight": "Change & Hope"
+    },
+
+    "description": "A glimpse of the mission we bring, the lives we touch, and the communities we build together every single day.",
+
+    "categories": [
+      {
+        "label": "All Activities",
+        "value": "all",
+        "active": true
+      },
+      {
+        "label": "Education",
+        "value": "education"
+      },
+      {
+        "label": "Health",
+        "value": "health"
+      },
+      {
+        "label": "Food Distribution",
+        "value": "food"
+      },
+      {
+        "label": "Community",
+        "value": "community"
+      },
+      {
+        "label": "Events",
+        "value": "events"
+      }
+    ],
+
+    "images": [
+      {
+        "title": "Education is Hope",
+        "category": "education",
+        "image": "https://images.unsplash.com/photo-1513258496099-48168024aec0?w=800&q=80"
+      },
+      {
+        "title": "Healthcare Support",
+        "category": "health",
+        "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80"
+      },
+      {
+        "title": "Food Distribution",
+        "category": "food",
+        "image": "https://media.istockphoto.com/id/1367146074/photo/group-of-people-working-in-charitable-foundation.jpg?s=1024x1024&w=is&k=20&c=IvIEO5BHUgT6ovWDJlcF6PajFHkC4FELIHqF8cvf81s="
+      },
+      {
+        "title": "Community Children",
+        "category": "community",
+        "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?w=800&q=80"
+      },
+      {
+        "title": "Learning Together",
+        "category": "education",
+        "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?w=800&q=80"
+      },
+      {
+        "title": "Planting Hope",
+        "category": "community",
+        "image": "https://images.unsplash.com/photo-1466611653911-95081537e5b7?w=800&q=80"
+      },
+      {
+        "title": "Volunteer Team",
+        "category": "events",
+        "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=800&q=80"
+      }
+    ]
+  },
+  "partners": {
+    "badge": {
+      "label": "Together We Grow"
+    },
+
+    "title": {
+      "line1": "Partners &",
+      "highlight": "Sponsors"
+    },
+
+    "description": "We are grateful to our partners and sponsors for their trust, support, and shared commitment to building a better tomorrow.",
+    "partnersList": [
+      {
+        "name": "Microsoft",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/4/44/Microsoft_logo.svg",
+        "website": "https://www.microsoft.com"
+      },
+      {
+        "name": "HDFC Bank",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/28/HDFC_Bank_Logo.svg",
+        "website": "https://www.hdfcbank.com"
+      },
+      {
+        "name": "Google",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg",
+        "website": "https://www.google.com"
+      },
+      {
+        "name": "Adobe",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/8/8d/Adobe_Corporate_Logo.png",
+        "website": "https://www.adobe.com"
+      },
+      {
+        "name": "Amazon",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Amazon_logo.svg",
+        "website": "https://www.amazon.com"
+      },
+      {
+        "name": "Wipro",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/a/a0/Wipro_Primary_Logo_Color_RGB.svg",
+        "website": "https://www.wipro.com"
+      },
+      {
+        "name": "Infosys",
+        "logo": "https://upload.wikimedia.org/wikipedia/commons/9/95/Infosys_logo.svg",
+        "website": "https://www.infosys.com"
+      }
+    ]
+  },
+  "testimonial": {
+    "badge": {
+      "label": "Testimonials"
+    },
+    "title": {
+      "line1": "Don't Believe Us?",
+      "highlight": "See Review"
+    },
+    "subtitle": "Precious Journey With You",
+    "description": "Every contribution helps transform lives and bring hope to communities in need. ",
+    "testimonials": [
+      {
+        "name": "Juhon Dew",
+        "designation": "Charity Blog Creator",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "Supporting this organization has been one of the most rewarding experiences of my life. Every campaign is thoughtfully planned, transparent, and focused on creating meaningful change. I have personally witnessed children receive education, families gain access to healthcare, and entire communities become stronger through their initiatives. Their commitment, honesty, and compassion make me proud to continue contributing and sharing their mission with others."
+      },
+      {
+        "name": "Sarah Williams",
+        "designation": "Community Volunteer",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "Volunteering with this NGO has completely transformed my perspective on service and humanity. Every project is organized with professionalism and genuine care for the people they support. The smiles of children, the gratitude of families, and the dedication of the entire team inspire me every single day. I feel honored to be part of an organization that consistently turns hope into real opportunities for those who need it most."
+      },
+      {
+        "name": "Michael Brown",
+        "designation": "Monthly Donor",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "What impressed me most was the transparency and accountability shown throughout every donation campaign. Regular reports, project updates, and real stories from beneficiaries gave me complete confidence that my contributions were making a genuine impact. Knowing that every donation helps provide education, food, clean water, and healthcare encourages me to remain a long-term supporter."
+      },
+      {
+        "name": "Emily Johnson",
+        "designation": "Education Sponsor",
+        "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "Being able to sponsor a child's education through this foundation has been an unforgettable journey. Receiving progress updates, letters, and photos has allowed me to witness the positive changes firsthand. The organization creates a personal connection between supporters and beneficiaries while maintaining the highest standards of integrity."
+      },
+      {
+        "name": "Daniel Carter",
+        "designation": "Corporate Partner",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "Partnering with this charity has strengthened our company's commitment to social responsibility. Their experienced team manages every project efficiently while ensuring measurable outcomes that truly improve lives. Together we have supported education, healthcare, and disaster relief initiatives for thousands of families."
+      },
+      {
+        "name": "Sophia Martinez",
+        "designation": "Healthcare Volunteer",
+        "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?auto=format&fit=crop&w=600&q=80",
+        "rating": 5,
+        "message": "Working alongside dedicated volunteers and staff members has shown me the incredible difference that compassion and teamwork can make. Every outreach program is carefully planned, ensuring medical assistance reaches families who would otherwise have little access to healthcare."
+      }
+    ]
+  },
+  "news": {
+    "badge": {
+      "label": "Our Blog"
+    },
+    "title": {
+      "line1": "Check Out Our",
+      "highlight": "Latest News"
+    },
+    "subtitle": "Stay updated with inspiring stories, community achievements, and our latest charity initiatives.",
+    "button": {
+      "label": "View All Blogs"
+    },
+    "articles": [
+      {
+        "category": "Poor",
+        "date": "22 January",
+        "title": "Poverty Not Only Means Having Less Money But Fewer Opportunities",
+        "description": "Discover how education, healthcare, and community support can help families overcome poverty and build a brighter future together.",
+        "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/poverty-not-only-means"
+      },
+      {
+        "category": "Food",
+        "date": "21 December",
+        "title": "Healthy Meals Bring Hope To Every Child In Need",
+        "description": "Learn how our nutrition programs provide healthy meals to children while supporting their education and overall development.",
+        "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/healthy-meals"
+      },
+      {
+        "category": "Health",
+        "date": "23 June",
+        "title": "Medical Support Creates A Better Future For Vulnerable Families",
+        "description": "Read how medical camps, vaccinations, and healthcare initiatives are changing thousands of lives across underserved communities.",
+        "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/medical-support"
+      },
+      {
+        "category": "Education",
+        "date": "12 April",
+        "title": "Education Opens New Doors For Every Child",
+        "description": "Providing school supplies, scholarships, and learning opportunities helps children dream bigger and achieve lasting success.",
+        "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/education"
+      },
+      {
+        "category": "Women",
+        "date": "18 March",
+        "title": "Empowering Women Through Skills And Employment",
+        "description": "Our vocational training programs enable women to gain financial independence and create sustainable livelihoods.",
+        "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/women-empowerment"
+      },
+      {
+        "category": "Community",
+        "date": "5 February",
+        "title": "Volunteers Continue Bringing Smiles To Communities",
+        "description": "Meet the volunteers whose dedication is making a meaningful impact through education, food drives, and relief programs.",
+        "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80",
+        "author": "Admin",
+        "href": "/blog/volunteers"
+      }
+    ]
+  },
+  "contact": {
+    "badge": {
+      "label": "Contact Us"
+    },
+    "title": {
+      "line1": "Let's Start",
+      "highlight": "A Conversation"
+    },
+    "description": "Have questions, ideas, or want to support our mission? We'd love to hear from you and help in every possible way.",
+
+    "office": {
+      "title": "Head Office",
+      "description": "Our dedicated team is always ready to assist volunteers, donors, and partners. Reach out through any of the following channels and we'll respond as quickly as possible.",
+
+      "address": {
+        "label": "Office Address",
+        "value": "245 Hope Street, New Delhi, India"
+      },
+
+      "phone": {
+        "label": "Phone Number",
+        "value": "+91 98765 43210"
+      },
+
+      "email": {
+        "label": "Email Address",
+        "value": "support@charityhope.org"
+      },
+
+      "hours": {
+        "label": "Working Hours",
+        "value": "Monday - Saturday : 09:00 AM - 06:00 PM"
+      }
+    },
+
+    "form": {
+      "title": "Send Us A Message",
+      "subtitle": "Fill out the form below and our team will contact you shortly.",
+
+      "fields": {
+        "name": {
+          "label": "Full Name",
+          "placeholder": "Enter your full name"
+        },
+        "email": {
+          "label": "Email Address",
+          "placeholder": "Enter your email address"
+        },
+        "phone": {
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number"
+        },
+        "subject": {
+          "label": "Subject",
+          "placeholder": "How can we help you?"
+        },
+        "message": {
+          "label": "Your Message",
+          "placeholder": "Write your message here..."
+        }
+      },
+
+      "button": {
+        "label": "Send Message"
+      }
+    }
+  },
+  "faq": {
+    "badge": {
+      "label": "Frequently Asked Questions"
+    },
+
+    "title": {
+      "line1": "Have Any",
+      "highlight": "Questions?"
+    },
+
+    "description": "Find answers to the most commonly asked questions about our charity programs, donations, volunteering, and community initiatives.",
+
+    "image": {
+      "src": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80",
+      "alt": "Customer support"
+    },
+
+    "questions": [
+      {
+        "question": "How can I make a donation?",
+        "answer": "You can donate securely through our online donation form using debit cards, credit cards, UPI, net banking, or other supported payment methods. Every contribution directly supports our education, healthcare, food, and emergency relief programs."
+      },
+      {
+        "question": "Will I receive a donation receipt?",
+        "answer": "Yes. After every successful donation, an official receipt is automatically sent to your registered email address. You can use it for your personal records or tax-related purposes where applicable."
+      },
+      {
+        "question": "How do I become a volunteer?",
+        "answer": "Simply complete our volunteer registration form. Our team will review your application and contact you with available opportunities based on your interests, skills, and location."
+      },
+      {
+        "question": "Where does my donation go?",
+        "answer": "Your donations directly fund education programs, healthcare services, food distribution, disaster relief, child welfare, women's empowerment, and community development initiatives. We maintain complete transparency regarding fund utilization."
+      },
+      {
+        "question": "Can I sponsor a child's education?",
+        "answer": "Yes. Our sponsorship program allows individuals and organizations to support children's education by covering school fees, books, uniforms, learning materials, and additional educational resources."
+      }
+    ]
+  },
+  "successStories": {
+    "badge": {
+      "label": "Success Stories"
+    },
+
+    "title": {
+      "line1": "Lives We've",
+      "highlight": "Transformed"
+    },
+
+    "subtitle": "Every smile tells a story. Discover how your support has helped individuals and families build brighter futures.",
+
+    "button": {
+      "label": "Read All Stories",
+      "href": "/success-stories"
+    },
+
+    "stories": [
+      {
+        "name": "Ananya Sharma",
+        "age": "11 Years",
+        "location": "New Delhi, India",
+        "category": "Education",
+        "image": "https://images.unsplash.com/photo-1503454537195-1dcabb73ffb9?auto=format&fit=crop&w=900&q=80",
+        "title": "From School Dropout To Class Topper",
+        "story": "Ananya's family struggled financially, making it impossible for her to continue her education. Through our scholarship program, she received school supplies, tuition support, uniforms, and mentoring. Today, she consistently ranks among the top students in her class and dreams of becoming a doctor to help underserved communities.",
+        "before": "Unable to attend school because of financial hardship and lack of educational resources.",
+        "after": "Now excelling academically with full educational support and renewed confidence.",
+        "year": "2025"
+      },
+      {
+        "name": "Ramesh Kumar",
+        "age": "42 Years",
+        "location": "Jaipur, India",
+        "category": "Healthcare",
+        "image": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=900&q=80",
+        "title": "A New Beginning Through Healthcare",
+        "story": "Ramesh suffered from a medical condition that prevented him from working and supporting his family. Our medical assistance program provided timely treatment, medicines, and follow-up care. He has fully recovered and now works full-time, providing a stable income for his loved ones.",
+        "before": "Unable to work due to untreated health complications.",
+        "after": "Recovered successfully and supporting his family with stable employment.",
+        "year": "2024"
+      },
+      {
+        "name": "Priya Devi",
+        "age": "31 Years",
+        "location": "Lucknow, India",
+        "category": "Women Empowerment",
+        "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=900&q=80",
+        "title": "Building Independence Through Skills",
+        "story": "Priya joined our vocational training initiative with no source of income. After completing tailoring and entrepreneurship training, she started her own small business. Today she earns enough to support her family while also employing two women from her community.",
+        "before": "Financially dependent with limited employment opportunities.",
+        "after": "Owns a successful tailoring business and creates jobs for others.",
+        "year": "2025"
+      },
+      {
+        "name": "Rahul Verma",
+        "age": "14 Years",
+        "location": "Patna, India",
+        "category": "Child Welfare",
+        "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?auto=format&fit=crop&w=900&q=80",
+        "title": "Hope Restored Through Community Support",
+        "story": "Rahul lost access to education after his family faced severe financial difficulties. Our child welfare initiative provided educational assistance, nutrition, counseling, and emotional support. He has returned to school and actively participates in community activities.",
+        "before": "Out of school with limited access to food and educational support.",
+        "after": "Back in school with improved health, confidence, and academic performance.",
+        "year": "2026"
+      }
+    ]
+  }
+}
