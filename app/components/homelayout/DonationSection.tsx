@@ -2,11 +2,11 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  FiArrowRight,
-  FiHeart,
-} from "react-icons/fi";
+import { FiArrowRight, FiHeart, FiShield } from "react-icons/fi";
+import { FaRegHeart } from "react-icons/fa6";
+
 import { HiOutlineHeart } from "react-icons/hi2";
+import { FaHeart } from "react-icons/fa6";
 
 import type { SupportSectionProps } from "@/type/typeSection";
 
@@ -24,159 +24,125 @@ export default function DonationSection({
   } = data;
 
   return (
-    <section className="relative mb-5 overflow-hidden">
-      {/* Decorative Background */}
-      <div className="absolute -left-24 -top-24 h-64 w-64 rounded-full blur-[120px]" />
-      <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full blur-[150px]" />
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8 lg:py-12">
+      {/* Background Soft Glows */}
+      <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
+      <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
 
-      <div className="relative mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
-        <div className="overflow-hidden">
-          <div className="grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+      {/* Outer Section Box */}
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-slate-200/50">
+          
+          {/* Floral Corner Accent (Top Left) */}
+          <div className="absolute top-0 left-0 text-orange-200/30 pointer-events-none">
+            <svg width="120" height="120" viewBox="0 0 100 100" fill="currentColor">
+              <path d="M0,0 L100,0 Q50,50 0,100 Z" />
+            </svg>
+          </div>
 
-            {/* ================= LEFT ================= */}
-            <div className="flex flex-col items-center px-2 py-6 text-center sm:px-4 sm:py-8 lg:items-start lg:px-12 lg:py-10 lg:text-left">
-
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-600 sm:px-4 sm:py-2 sm:text-sm">
-                <HiOutlineHeart className="text-base sm:text-lg" />
-                {badge.label}
+          <div className="grid grid-cols-1 items-center lg:grid-cols-12">
+            
+            {/* ================= LEFT CONTENT AREA ================= */}
+            <div className="z-10 flex flex-col items-center px-6 py-10 text-center sm:px-10 lg:col-span-6 lg:items-start lg:py-14 lg:pl-14 lg:pr-6 lg:text-left">
+              
+              {/* Badge Pill with Icon */}
+              <div className="inline-flex items-center gap-2.5">
+                <div className="flex h-8 w-8 items-center justify-center rounded-full bg-orange-100 text-[#FF4500]">
+                  <FaRegHeart className="text-base" />
+                </div>
+                <span className="text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+                  {badge.label}
+                </span>
               </div>
 
-              {/* Title */}
-              <h2 className="md:mt-4 max-w-xl text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl md:text-5xl lg:mt-3">
-                {title.line1}
+              {/* Main Heading */}
+              <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl ">
+                {title.line1}{" "}
+                <span className="text-[#FF4500]">{title.highlight || "Change"}</span>{" "}
+                {title.highlight}
               </h2>
 
-              {/* Accent Line */}
-              <div className="md:mt-3 h-1 w-14 rounded-full bg-orange-500" />
+              {/* Centered / Left Divider Line */}
+              <div className="mt-2 flex items-center gap-2 text-[#FF4500]">
+                <span className="h-[2px] w-12 bg-[#FF4500]" />
+                <FiHeart className="text-xs" />
+                <span className="h-[2px] w-12 bg-[#FF4500]" />
+              </div>
 
-              {/* Description */}
-              <p className="md:mt-3 max-w-lg text-md md:leading-7 text-slate-900 sm:text-base sm:leading-8">
+              {/* Description Paragraph */}
+              <p className="mt-4 max-w-lg text-xs leading-relaxed text-slate-600 sm:text-sm">
                 {description}
               </p>
 
-              {/* CTA */}
-              <div className="mt-5">
+              {/* Action Button */}
+              <div className="mt-6">
                 <Link
                   href={button.href}
-                  className="group inline-flex items-center gap-2.5 rounded-full bg-orange-500 px-6 py-3.5 text-sm font-semibold text-white shadow-lg shadow-orange-300/40 transition-all duration-300 hover:bg-orange-600 sm:px-8 sm:py-4 sm:text-base"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
                 >
-                  <FiHeart />
-
-                  {button.label}
-
-                  <FiArrowRight className="transition-transform duration-300 group-hover:translate-x-1" />
+                  <FiHeart className="text-sm" />
+                  <span>{button.label}</span>
+                  <FiArrowRight className="text-sm" />
                 </Link>
+              </div>
+
+              {/* Trust Badge Subtext */}
+              <div className="mt-5 flex items-center gap-2 text-[11px] font-semibold text-slate-500">
+                <FiShield className="text-xs text-[#FF4500]" />
+                <span>100% Secure Donation | Make an Impact Today</span>
               </div>
             </div>
 
-            {/* ================= RIGHT ================= */}
-            <div className="relative flex min-h-[390px] items-center justify-center md:py-6 sm:min-h-[460px] sm:py-8 lg:min-h-0 lg:py-14">
-
-              {/* Decorative Dotted Circle */}
-              <div
-                className="
-                  absolute
-                  h-[290px] w-[290px]
-                  rounded-full
-                  border-2 border-dashed border-orange-200
-                  sm:h-[370px] sm:w-[370px]
-                  md:h-[410px] md:w-[410px]
-                  lg:h-[430px] lg:w-[430px]
-                "
-              />
-
-              {/* Main Circular Image */}
-              <div
-                className="
-                  relative
-                  z-10
-                  h-[250px] w-[250px]
-                  overflow-hidden
-                  rounded-full
-                  border-[8px] border-white
-                  shadow-2xl
-                  sm:h-[320px] sm:w-[320px]
-                  md:h-[360px] md:w-[360px]
-                  lg:h-[420px] lg:w-[420px]
-                "
-              >
+            {/* ================= RIGHT IMAGE AREA ================= */}
+            <div className="relative min-h-[380px] w-full lg:col-span-6 lg:min-h-[480px]">
+              
+              {/* Curved Masked Image Container with Bottom-Right Oval Curve */}
+              <div className="relative h-full w-full min-h-[380px] overflow-hidden rounded-br-[120px] sm:rounded-br-[160px] lg:min-h-[480px] lg:rounded-l-[240px] lg:rounded-br-[180px]">
                 <Image
                   src={image.src}
                   alt={image.alt}
                   fill
-                  priority={false}
-                  className="object-cover"
-                  sizes="(max-width: 640px) 250px, (max-width: 768px) 320px, (max-width: 1024px) 360px, 420px"
+                  priority
+                  className="object-cover object-center"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
               </div>
 
-              {/* Floating Circle Card */}
-              <div
-                className="
-                  absolute
-                  left-1/2
-                  top-1/2
-                  z-20
-                  flex
-                  h-24 w-24
-                  -translate-x-[145%]
-                  -translate-y-1/2
-                  flex-col
-                  items-center
-                  justify-center
-                  rounded-full
-                  bg-[#fdeee7]
-                  text-center
-                  shadow-xl
-                  sm:h-28 sm:w-28
-                  sm:-translate-x-[150%]
-                  lg:left-8
-                  lg:h-28 lg:w-28
-                  lg:translate-x-0
-                "
-              >
-                <div className="mb-1 rounded-full bg-white p-1.5 shadow sm:p-2">
-                  <FiHeart className="text-base text-orange-500 sm:text-lg" />
+              {/* Floating Circular Badge Overlapping Image */}
+              <div className="absolute left-6 top-1/2 z-30 flex h-32 w-32 -translate-y-1/2 flex-col items-center justify-center rounded-full bg-[#FDF0EB] p-4 text-center shadow-lg ring-4 ring-white sm:h-36 sm:w-36 lg:left-0 lg:-translate-x-1/3">
+                <div className="mb-1 flex h-7 w-7 items-center justify-center text-[#FF4500]">
+                  <FaHeart className="text-lg" />
                 </div>
-
-                <p className="px-2 text-[9px] font-semibold leading-3.5 text-slate-700 sm:px-3 sm:text-[10px] sm:leading-4">
+                <p className="text-[10px] font-bold leading-tight text-slate-800 sm:text-[11px]">
                   {floatingCard.title}
                 </p>
-
-                <p className="px-2 text-[9px] leading-3.5 text-slate-500 sm:px-3 sm:text-[10px] sm:leading-4">
-                  {floatingCard.subtitle}
-                </p>
+                {floatingCard.subtitle && (
+                  <p className="mt-0.5 text-[9px] text-slate-500">
+                    {floatingCard.subtitle}
+                  </p>
+                )}
               </div>
 
-              {/* Signature */}
-              <div
-                className="
-                  absolute
-                  bottom-4
-                  right-4
-                  z-20
-                  rotate-[-10deg]
-                  sm:bottom-6
-                  sm:right-8
-                  md:right-10
-                  lg:bottom-6
-                  lg:right-10
-                "
-              >
+              {/* Bottom Right Handwritten "Thank you!" Signature */}
+              <div className="absolute bottom-4 right-6 z-20 flex flex-col items-end pointer-events-none">
                 <span
-                  className="text-2xl text-orange-400 sm:text-3xl"
-                  style={{ fontFamily: "cursive" }}
+                  className="text-2xl font-bold tracking-wide text-[#FF4500] sm:text-3xl"
+                  style={{ fontFamily: "'Caveat', 'Comic Sans MS', cursive" }}
                 >
-                  {signature}
+                  {signature || "Thank you!"}
                 </span>
+                <HiOutlineHeart className="mr-2 -mt-1 text-base text-[#FF4500]" />
               </div>
 
-              {/* Small Decorative Heart */}
-              <div className="absolute bottom-5 right-0 text-orange-200 opacity-60 sm:bottom-8 sm:right-2">
-                <HiOutlineHeart className="text-4xl sm:text-5xl" />
+              {/* Corner Floral Leaf Accent */}
+              <div className="absolute bottom-2 right-2 text-orange-200/40 pointer-events-none">
+                <svg width="80" height="80" viewBox="0 0 100 100" fill="currentColor">
+                  <path d="M10,90 Q 50,10 90,90 Z" />
+                </svg>
               </div>
+
             </div>
+
           </div>
         </div>
       </div>

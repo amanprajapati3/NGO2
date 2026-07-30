@@ -85,23 +85,7 @@ export default function FAQSection({
                     {/* Question */}
                     <button
                       onClick={() => toggleAccordion(index)}
-                      className="
-                        flex
-                        w-full
-                        items-center
-                        justify-between
-                        gap-3
-                        px-4
-                        py-4
-                        text-left
-                        transition
-                        hover:bg-orange-50
-                        sm:px-5
-                        sm:py-5
-                        md:px-6
-                        lg:px-7
-                        lg:py-6
-                      "
+                      className="flex w-full items-center justify-between gap-3 px-4 py-4 text-left transition hover:bg-orange-50 sm:px-5 sm:py-5 md:px-6 lg:px-7 lg:py-6"
                     >
                       <h3 className="pr-2 text-sm font-bold leading-6 text-slate-900 sm:pr-4 sm:text-base md:text-lg">
                         {item.question}

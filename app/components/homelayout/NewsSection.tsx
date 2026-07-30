@@ -2,147 +2,123 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import Link from "next/link";
-import {
-  FiArrowRight,
-  FiCalendar,
-  FiUser,
-} from "react-icons/fi";
-import { HiOutlineHeart } from "react-icons/hi2";
+import { FiArrowRight, FiBookOpen, FiUser } from "react-icons/fi";
 
-import type {
-  NewsSectionProps,
-  NewsArticle,
-} from "@/type/typeSection";
+import type { NewsSectionProps, NewsArticle } from "@/type/typeSection";
 
-export default function NewsSection({
-  data,
-}: NewsSectionProps) {
-  const {
-    badge,
-    title,
-    subtitle,
-    button,
-    articles,
-  } = data;
+export default function NewsSection({ data }: NewsSectionProps) {
+  const { badge, title, subtitle, button, articles } = data;
 
   const [showAll, setShowAll] = useState(false);
 
-  const visibleArticles = showAll
-    ? articles
-    : articles.slice(0, 3);
+  const visibleArticles = showAll ? articles : articles.slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-white md:py-8 py-3">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-12 lg:py-16">
+      {/* Background Glows */}
+      <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
+      <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
 
-      {/* Background Blur */}
-      <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
-      <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
+      {/* Top Right Decorative Grid Dots */}
+      <div className="absolute top-8 right-12 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none hidden sm:grid">
+        {Array.from({ length: 36 }).map((_, i) => (
+          <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
+        ))}
+      </div>
 
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-
-        {/* Heading */}
-
-        <div className="mb-5 text-center">
-
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-4 pt-2 text-sm font-semibold uppercase tracking-wider text-orange-500">
-            <HiOutlineHeart />
-            {badge.label}
+      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        {/* ================= HEADER SECTION ================= */}
+        <div className="flex flex-col items-center text-center">
+          {/* Badge Label with Book Icon */}
+          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+            <FiBookOpen className="text-sm" />
+            <span>{badge?.label || "Our Blog"}</span>
           </div>
 
-          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 sm:text-5xl">
-            {title.line1}{" "}
-            <span className="text-orange-500">
-              {title.highlight}
+          {/* Main Serif Title */}
+          <h2 className="mt-0 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+            {title?.line1 || "Check Out Our"}{" "}
+            <span className="text-[#1E1B4B]">
+              {title?.highlight || "Latest News"}
             </span>
           </h2>
 
-          <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
-
-          <p className="mx-auto mt-1 max-w-2xl text-md md:leading-7 text-slate-900">
-            {subtitle}
-          </p>
-
+          {/* Subtitle / Description */}
+          {subtitle && (
+            <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+              {subtitle}
+            </p>
+          )}
         </div>
 
-        {/* Cards */}
+        {/* ================= ARTICLE CARDS GRID ================= */}
+        <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {visibleArticles.map((article: NewsArticle) => (
+            <div
+              key={article.title}
+              className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-md shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
+            >
+              {/* Card Image Container */}
+              <div className="relative h-56 w-full  bg-slate-100 sm:h-64">
+                <Image
+                  src={article.image}
+                  alt={article.title}
+                  fill
+                  className="object-cover transition-transform duration-700 group-hover:scale-105"
+                  sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                />
 
-        <div className="grid gap-6 sm:grid-cols-2 xl:grid-cols-3">
-                    {visibleArticles.map((article: NewsArticle) => (
-          <div
-            key={article.title}
-            className="group overflow-hidden rounded-3xl border border-slate-200 bg-white shadow-md transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl"
-          >
-            {/* Image */}
-            <div className="relative h-48 overflow-hidden">
-              <Image
-                src={article.image}
-                alt={article.title}
-                fill
-                className="object-cover transition duration-500 group-hover:scale-110"
-                sizes="(max-width:768px)100vw,(max-width:1280px)50vw,33vw"
-              />
-
-              {/* Overlay */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 transition duration-300 group-hover:opacity-100" />
-            </div>
-
-            {/* Content */}
-            <div className="p-2">
-
-              {/* Meta */}
-              <div className="flex flex-wrap items-center gap-4 text-sm text-slate-500">
-
-                <div className="flex items-center gap-2">
-                  <span className="h-2 w-2 rounded-full bg-orange-500" />
-                  {article.category}
+                {/* Floating Bottom-Right Author Icon Badge */}
+                <div className="absolute -bottom-3 right-3 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-[#1E1B4B] text-white shadow-md ring-2 ring-transparent">
+                  <FiUser className="text-md  " />
                 </div>
-
-                <div className="flex items-center gap-2">
-                  <FiCalendar className="text-orange-500" />
-                  {article.date}
-                </div>
-
-                <div className="flex items-center gap-2">
-                  <FiUser className="text-orange-500" />
-                  {article.author}
-                </div>
-
               </div>
 
-              {/* Title */}
-              <h3 className="mt-1 text-2xl font-bold leading-snug text-slate-900 transition group-hover:text-orange-500">
-                {article.title}
-              </h3>
+              {/* Card Body */}
+              <div className="flex flex-1 flex-col justify-between p-6 sm:p-7">
+                <div>
+                  {/* Category & Date Metadata */}
+                  <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
+                    <span className="h-2 w-2 rounded-full bg-[#FF4500]" />
+                    <span>
+                      {article.category ? `${article.category}, ` : ""}
+                      {article.date}
+                    </span>
+                  </div>
 
-              {/* Description */}
-              <p className="mt-2 leading-6 text-slate-900">
-                {article.description}
-              </p>
+                  {/* Article Title */}
+                  <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-[#1E1B4B] transition-colors duration-200 group-hover:text-[#FF4500] sm:text-xl">
+                    {article.title}
+                  </h3>
 
+                  {/* Optional Summary */}
+                  {article.description && (
+                    <p className="mt-2 text-xs leading-relaxed text-slate-500 line-clamp-2">
+                      {article.description}
+                    </p>
+                  )}
+                </div>
+              </div>
             </div>
-          </div>
-        ))}
-      </div>
-              {/* ================= View All Button ================= */}
+          ))}
+        </div>
 
+        {/* ================= VIEW ALL BUTTON ================= */}
         {articles.length > 3 && (
-          <div className="mt-7 flex justify-center">
+          <div className="mt-10 flex justify-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group inline-flex items-center gap-3 rounded-full bg-orange-500 px-8 py-4 font-semibold text-white shadow-lg shadow-orange-300/40 transition-all duration-300 hover:scale-105 hover:bg-orange-600"
+              className="group inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
             >
-              {showAll ? "Show Less" : button.label}
-
+              <span>{showAll ? "Show Less" : button?.label || "View All Posts"}</span>
               <FiArrowRight
-                className={`transition-transform duration-300 ${
-                  showAll ? "rotate-90" : "group-hover:translate-x-1"
+                className={`text-sm transition-transform duration-300 ${
+                  showAll ? "-rotate-90" : "group-hover:translate-x-1"
                 }`}
               />
             </button>
           </div>
         )}
-
       </div>
     </section>
   );

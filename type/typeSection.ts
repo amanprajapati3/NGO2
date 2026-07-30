@@ -9,11 +9,47 @@ export interface NavItem {
   children?: NavChild[];
 }
 
+export interface PopupAbout {
+  title: string;
+  description: string;
+}
+
+export interface PopupInstagramImage {
+  src: string;
+  alt: string;
+}
+
+export interface PopupInstagram {
+  title: string;
+  images: PopupInstagramImage[];
+}
+
+export interface PopupContact {
+  phone: string;
+  phoneHref: string;
+  separator: string;
+  email: string;
+  emailHref: string;
+}
+
+export interface PopupSocialLink {
+  label: string;
+  href: string;
+}
+
+export interface PopupData {
+  aboutpopup: PopupAbout;
+  instagram: PopupInstagram;
+  contactpopup: PopupContact;
+  socialLinkspopup: PopupSocialLink[];
+}
+
 export interface HeaderDataProps {
   siteTitle: string;
   tagline: string;
   logo: string;
   header: NavItem[];
+  PopupData: PopupData;
 }
 
 export interface SocialLinkItem {
@@ -33,6 +69,8 @@ export interface TopBarData {
   socialLinks: SocialLinkItem[];
   headerCta: HeaderCTA
 }
+
+
 
 export interface FooterLink {
   label: string;
@@ -87,8 +125,6 @@ export interface AboutBadge {
 // =========================
 export interface AboutTitle {
   line1: string;
-  line2: string;
-  highlight: string;
 }
 
 // =========================
@@ -195,15 +231,24 @@ export interface MissionTitle {
   line2: string;
 }
 
+export interface MissionFeature {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface MissionTabContent {
+  primary: string;
+  secondary: string;
+  features: MissionFeature[];
+}
+
 export interface MissionTab {
+  id: string;
   label: string;
   icon: string;
   active: boolean;
-}
-
-export interface MissionDescription {
-  primary: string;
-  secondary: string;
+  content: MissionTabContent;
 }
 
 export interface MissionImage {
@@ -224,12 +269,6 @@ export interface MissionImageSection {
   showBrushTop: boolean;
 }
 
-export interface MissionFeature {
-  icon: string;
-  title: string;
-  description: string;
-}
-
 export interface MissionButton {
   label: string;
   href: string;
@@ -247,9 +286,7 @@ export interface MissionData {
   badge: MissionBadge;
   title: MissionTitle;
   tabs: MissionTab[];
-  description: MissionDescription;
   imageSection: MissionImageSection;
-  features: MissionFeature[];
   buttons: MissionButton[];
   background: MissionBackground;
 }
@@ -257,6 +294,7 @@ export interface MissionData {
 export interface MissionSectionProps {
   data: MissionData;
 }
+
 
 // ================= Causes Section =================
 

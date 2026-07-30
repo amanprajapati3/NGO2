@@ -29,7 +29,7 @@ export const Banner: React.FC<BannerProps> = ({
 
       {/* Darkened Overlay (Ensures text visibility) */}
       <div 
-        className="absolute inset-0 bg-gradient-to-r from-black/90 via-black/90 to-black/70"
+        className="absolute inset-0 bg-black/100"
         style={{ opacity: overlayOpacity }}
         aria-hidden="true"
       />
@@ -70,10 +70,10 @@ export const Banner: React.FC<BannerProps> = ({
                   <a
                     key={index}
                     href={cta.href}
-                    className={`px-5 py-2.5 sm:px-7 sm:py-3 text-xs sm:text-sm font-medium rounded-full transition-all duration-300 ease-in-out shadow-lg ${
+                    className={`px-5 py-2.5 sm:px-7 sm:py-4 text-xs sm:text-sm font-medium rounded-full transition-all duration-300 ease-in-out shadow-lg ${
                       isPrimary
-                        ? 'bg-slate-800 hover:bg-slate-900 text-white shadow-slate-900/30  hover:-translate-y-0.5'
-                        : 'bg-orange-600 hover:bg-orange-700 text-white backdrop-blur-md hover:-translate-y-0.5 '
+                        ? 'bg-slate-900 hover:bg-slate-800 text-white shadow-slate-900/30  hover:-translate-y-0.5'
+                        : 'bg-orange-700 hover:bg-orange-600 text-white backdrop-blur-md hover:-translate-y-0.5 '
                     }`}
                   >
                     {cta.label}

@@ -359,15 +359,85 @@
       ]
     }
   ],
+  "PopupData": {
+    "aboutpopup": {
+      "title": "About Us",
+      "description": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services. The customer is king, their lives and needs are the inspiration."
+    },
+    "instagram": {
+      "title": "Instagram",
+      "images": [
+        {
+          "src": "https://images.unsplash.com/photo-1489493585363-d69421e0edd3?auto=format&fit=crop&w=400&q=80",
+          "alt": "Children together"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80",
+          "alt": "Child portrait"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=400&q=80",
+          "alt": "Happy child"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=400&q=80",
+          "alt": "Child smiling"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1504150558240-0b4fd8946624?auto=format&fit=crop&w=400&q=80",
+          "alt": "Children portrait"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1494386346843-e12284507169?auto=format&fit=crop&w=400&q=80",
+          "alt": "Children playing"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1472162072942-cd5147eb3902?auto=format&fit=crop&w=400&q=80",
+          "alt": "Childhood moment"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
+          "alt": "Child portrait"
+        }
+      ]
+    },
+    "contactpopup": {
+      "phone": "+088 130 629 8615",
+      "phoneHref": "tel:+0881306298615",
+      "separator": "or",
+      "email": "huruma@gmail.com",
+      "emailHref": "mailto:huruma@gmail.com"
+    },
+    "socialLinkspopup": [
+      {
+        "label": "facebook",
+        "href": "#"
+      },
+      {
+        "label": "twitter",
+        "href": "#"
+      },
+      {
+        "label": "instagram",
+        "href": "#"
+      },
+      {
+        "label": "linkedin",
+        "href": "#"
+      },
+      {
+        "label": "pinterest",
+        "href": "#"
+      }
+    ]
+  },
   "about": {
     "badge": {
       "icon": "about",
       "label": "About Us"
     },
     "title": {
-      "line1": "An International",
-      "line2": "Independent",
-      "highlight": "Charity Organization"
+      "line1": "An International Independent Charity Organization"
     },
     "description": {
       "primary": "Your support will help us to make life better living for poor vulnerable children.",
@@ -447,27 +517,93 @@
       "highlight": "Our",
       "line2": "Mission"
     },
+
     "tabs": [
       {
+        "id": "mission",
         "label": "Our Mission",
         "icon": "mission",
-        "active": true
+        "active": true,
+        "content": {
+          "primary": "Helping vulnerable communities through education, healthcare, sustainable development, and emergency relief while ensuring every individual has equal opportunities to live with dignity and hope.",
+          "secondary": "Our organization believes that real transformation begins by empowering people. Through collaborative initiatives, transparent governance, and long-term partnerships, we strive to create lasting positive change that benefits present and future generations.",
+          "features": [
+            {
+              "icon": "community",
+              "title": "Community First",
+              "description": "We put communities at the heart of every initiative and decision we make."
+            },
+            {
+              "icon": "shield",
+              "title": "Integrity & Transparency",
+              "description": "Every donation is managed responsibly with complete openness and accountability."
+            },
+            {
+              "icon": "growth",
+              "title": "Sustainable Impact",
+              "description": "Building long-term solutions that continue creating positive change."
+            }
+          ]
+        }
       },
+
       {
+        "id": "vision",
         "label": "Our Vision",
         "icon": "vision",
-        "active": false
+        "active": false,
+        "content": {
+          "primary": "We envision a world where every individual, regardless of their background or circumstances, has access to the resources, opportunities, and support needed to build a secure and fulfilling future.",
+          "secondary": "Our vision is to create stronger and more inclusive communities where education, healthcare, equality, and sustainable development are accessible to everyone. By bringing people and organizations together, we aim to build a future where communities can grow independently and thrive with confidence.",
+          "features": [
+            {
+              "icon": "education",
+              "title": "Equal Opportunities",
+              "description": "Creating access to education, resources, and opportunities for people from underserved communities."
+            },
+            {
+              "icon": "heart",
+              "title": "A Caring Society",
+              "description": "Encouraging compassion, inclusion, and collective responsibility toward those in need."
+            },
+            {
+              "icon": "community",
+              "title": "Stronger Communities",
+              "description": "Supporting communities with the knowledge and resources needed to become self-reliant."
+            }
+          ]
+        }
       },
+
       {
+        "id": "goal",
         "label": "Our Goal",
         "icon": "goal",
-        "active": false
+        "active": false,
+        "content": {
+          "primary": "Our goal is to turn compassion into measurable action by delivering meaningful programs that address immediate needs while creating sustainable solutions for the future.",
+          "secondary": "We focus on reaching underserved communities, improving access to essential services, supporting vulnerable families, and creating opportunities for long-term growth. Every initiative is designed to create measurable impact and ensure that support reaches the people who need it most.",
+          "features": [
+            {
+              "icon": "target",
+              "title": "Meaningful Action",
+              "description": "Turning donations and community support into practical programs that create visible results."
+            },
+            {
+              "icon": "growth",
+              "title": "Long-Term Growth",
+              "description": "Developing sustainable programs that help communities progress beyond immediate assistance."
+            },
+            {
+              "icon": "heart",
+              "title": "Reach More People",
+              "description": "Expanding our initiatives to support more vulnerable individuals and communities."
+            }
+          ]
+        }
       }
     ],
-    "description": {
-      "primary": "Helping vulnerable communities through education, healthcare, sustainable development, and emergency relief while ensuring every individual has equal opportunities to live with dignity and hope.",
-      "secondary": "Our organization believes that real transformation begins by empowering people. Through collaborative initiatives, transparent governance, and long-term partnerships, we strive to create lasting positive change that benefits present and future generations."
-    },
+
     "imageSection": {
       "mainImage": {
         "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
@@ -481,23 +617,7 @@
       "showRings": true,
       "showBrushTop": true
     },
-    "features": [
-      {
-        "icon": "community",
-        "title": "Community First",
-        "description": "We put communities at the heart of every initiative and decision we make."
-      },
-      {
-        "icon": "shield",
-        "title": "Integrity & Transparency",
-        "description": "Every donation is managed responsibly with complete openness and accountability."
-      },
-      {
-        "icon": "growth",
-        "title": "Sustainable Impact",
-        "description": "Building long-term solutions that continue creating positive change."
-      }
-    ],
+
     "buttons": [
       {
         "label": "Explore Our Mission",
@@ -512,6 +632,7 @@
         "icon": "arrow"
       }
     ],
+
     "background": {
       "darkCard": "#111827",
       "showDots": true,
@@ -587,7 +708,7 @@
     },
 
     "cta": {
-      "backgroundImage": "/images/causes/cta-bg.png",
+      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
 
       "title": "Want You Know How Can Help?",
 
@@ -1373,5 +1494,135 @@
         "year": "2026"
       }
     ]
+  },
+  "aboutpage": {
+    "banner": {
+      "title": "About Us",
+      "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85",
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "About Us"
+    },
+
+    "pretitle": "Who We Are",
+    "title": "Together We Can Create Lasting Change",
+    "desc": "We work with communities, volunteers, and partners to create opportunities, strengthen lives, and build a more inclusive and sustainable future.",
+
+    "story": {
+      "pretitle": "Our Story",
+      "title": "Driven by Compassion, Powered by Community",
+      "desc": "Our journey began with a simple belief that every person deserves dignity, opportunity, and hope. Since then, we have worked alongside communities to turn that belief into meaningful action.",
+      "paragraphs": [
+        "Our work focuses on understanding the challenges faced by underserved communities and developing practical solutions that create long-term impact. From education and healthcare to livelihood support and community development, we work where our efforts can make the greatest difference.",
+        "We believe lasting change happens when communities are not simply supported, but are empowered to become active participants in shaping their own future. Every program we undertake is built around collaboration, inclusion, and respect."
+      ],
+      "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "Volunteers working together with a local community"
+    },
+
+    "mission": {
+      "pretitle": "Our Mission",
+      "title": "Turning Care Into Action",
+      "desc": "Our mission is to empower individuals and communities through programs that improve access to education, healthcare, livelihoods, and essential support.",
+      "image": "https://images.unsplash.com/photo-1531206715517-5c0ba140b2b8?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "Community members participating in an NGO program"
+    },
+
+    "vision": {
+      "pretitle": "Our Vision",
+      "title": "A Future Where Everyone Has an Opportunity",
+      "desc": "We envision a world where every individual can live with dignity, access essential opportunities, and contribute to a stronger and more compassionate community.",
+      "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=1000&q=85",
+      "imageAlt": "Children learning and growing together"
+    },
+
+    "values": {
+      "pretitle": "Our Values",
+      "title": "The Principles Behind Our Work",
+      "desc": "Our values shape how we work, how we build partnerships, and how we serve the communities at the heart of our mission.",
+      "items": [
+        {
+          "id": 1,
+          "title": "Compassion",
+          "desc": "We approach every community and every individual with empathy, dignity, and genuine care.",
+          "icon": "heart"
+        },
+        {
+          "id": 2,
+          "title": "Integrity",
+          "desc": "We believe in transparency, honesty, accountability, and responsible use of every resource entrusted to us.",
+          "icon": "shield"
+        },
+        {
+          "id": 3,
+          "title": "Inclusion",
+          "desc": "We create opportunities where every individual can participate, contribute, and be heard.",
+          "icon": "users"
+        },
+        {
+          "id": 4,
+          "title": "Collaboration",
+          "desc": "We work with communities, volunteers, organizations, and supporters because lasting change is built together.",
+          "icon": "handshake"
+        },
+        {
+          "id": 5,
+          "title": "Sustainability",
+          "desc": "We focus on solutions that strengthen communities and continue creating value long after a project ends.",
+          "icon": "leaf"
+        },
+        {
+          "id": 6,
+          "title": "Impact",
+          "desc": "We measure our efforts by the meaningful difference they create in people's lives and communities.",
+          "icon": "target"
+        }
+      ]
+    },
+
+    "impact": {
+      "pretitle": "Our Impact",
+      "title": "Together, We Are Making a Difference",
+      "desc": "Every volunteer, supporter, partner, and community member contributes to the change we are working to create.",
+      "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?auto=format&fit=crop&w=1400&q=85",
+      "imageAlt": "Children smiling together in a community",
+      "stats": [
+        {
+          "id": 1,
+          "value": "25K+",
+          "label": "Lives Reached"
+        },
+        {
+          "id": 2,
+          "value": "40+",
+          "label": "Community Projects"
+        },
+        {
+          "id": 3,
+          "value": "15",
+          "label": "Years of Service"
+        },
+        {
+          "id": 4,
+          "value": "120+",
+          "label": "Active Volunteers"
+        }
+      ]
+    },
+
+    "cta": {
+      "pretitle": "Be Part of the Change",
+      "title": "Your Support Can Help Build a Better Future",
+      "desc": "Whether you volunteer your time, support a program, or share our mission with others, your contribution can help create meaningful change.",
+      "button": {
+        "label": "Get Involved",
+        "href": "/get-involved"
+      },
+      "secondaryButton": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "image": "https://images.unsplash.com/photo-1559027615-028b8c6d5a29?auto=format&fit=crop&w=1400&q=85",
+      "imageAlt": "Volunteers joining hands for a community initiative"
+    }
   }
 }

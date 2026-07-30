@@ -1,5 +1,6 @@
 "use client";
 
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -12,201 +13,336 @@ import {
   FiCheckCircle,
 } from "react-icons/fi";
 
-import type { MissionSectionProps, MissionFeature } from "@/type/typeSection";
+import type { MissionSectionProps } from "@/type/typeSection";
 
 const getTabIcon = (icon: string) => {
   switch (icon) {
     case "mission":
-      return <FiTarget className="text-base text-orange-500" />;
+      return <FiTarget className="text-base text-[#ff5e14]" />;
     case "vision":
       return <FiEye className="text-base text-slate-400" />;
     case "goal":
       return <FiCheckCircle className="text-base text-slate-400" />;
     default:
-      return null;
+      return <FiTarget className="text-base text-[#ff5e14]" />;
   }
 };
 
 const getFeatureIcon = (icon: string) => {
   switch (icon) {
     case "community":
-      return <FiUsers className="text-xl" />;
+      return <FiUsers className="text-xl text-[#ff5e14]" />;
     case "shield":
-      return <FiShield className="text-xl" />;
+      return <FiShield className="text-xl text-[#ff5e14]" />;
     case "growth":
-      return <FiTarget className="text-xl" />;
+      return <FiTarget className="text-xl text-[#ff5e14]" />;
     default:
-      return <FiTarget className="text-xl" />;
+      return <FiTarget className="text-xl text-[#ff5e14]" />;
   }
 };
 
 const getPurposeIcon = (icon: string) => {
   switch (icon) {
     case "target":
-      return <FiTarget className="text-3xl" />;
+      return <FiTarget className="text-3xl text-[#ff5e14]" />;
     default:
-      return <FiTarget className="text-3xl" />;
+      return <FiTarget className="text-3xl text-[#ff5e14]" />;
   }
 };
 
 export default function MissionSection({ data }: MissionSectionProps) {
-  const { badge, title, tabs, description, imageSection, features, buttons } =
-    data;
+  const { badge, title, tabs, imageSection, buttons } = data;
+
+  const initialTab = tabs.find((tab) => tab.active)?.id ?? tabs[0]?.id;
+  const [activeTab, setActiveTab] = useState(initialTab);
+  const activeTabData = tabs.find((tab) => tab.id === activeTab);
 
   return (
-    <section className="relative w-full bg-white py-10">
-      {/* Top Decorative Brush Edge */}
-      {imageSection.showBrushTop && (
-        <div className="absolute top-0 left-0 right-0 z-20 h-10 w-full bg-[url('/images/brush-top.png')] bg-cover bg-center" />
-      )}
+    <section className="relative w-full bg-white">
+      <div className="relative mx-auto ">
+        {/* Main Section Container */}
+        <div className="relative min-h-[660px] w-full overflow-hidden bg-[#0c0f1d] p-4 sm:p-8 lg:p-12">
+          {/* ================= EXACT ROUGH BRUSH EDGE OVERLAY ================= */}
+          {/* ================= ROUGH BRUSH EDGE OVERLAY ================= */}
+          {imageSection.showBrushTop && (
+            <div className="pointer-events-none absolute left-0 right-0 top-0 z-20 h-16 w-full overflow-hidden">
+              <svg
+                className="relative block h-16 w-full text-white"
+                viewBox="0 0 1200 160"
+                preserveAspectRatio="none"
+              >
+                <defs>
+                  <filter
+                    id="rough-brush-edge"
+                    x="-10%"
+                    y="-30%"
+                    width="120%"
+                    height="160%"
+                  >
+                    <feTurbulence
+                      type="fractalNoise"
+                      baseFrequency="0.035 0.12"
+                      numOctaves="5"
+                      seed="8"
+                      result="noise"
+                    />
 
-      <div className="relative ">
-        {/* Main Card Container with Left Image & Floating Right Dark Panel */}
-        <div className="relative min-h-[640px] ms:p-8 p-2 w-full overflow-hidden  ">
-          
-          {/* Main Background Image (Left Side Focus) */}
+                    <feDisplacementMap
+                      in="SourceGraphic"
+                      in2="noise"
+                      scale="38"
+                      xChannelSelector="R"
+                      yChannelSelector="G"
+                    />
+                  </filter>
+                </defs>
+
+                {/* Main heavy irregular brush */}
+                <path
+                  d="
+          M0,0
+          L1200,0
+          L1200,48
+
+          C1165,40 1150,62 1118,48
+          C1085,34 1060,72 1028,52
+          C995,30 970,65 938,48
+          C900,30 875,75 838,50
+          C805,28 780,67 748,46
+          C710,25 685,73 650,48
+          C615,27 590,68 555,45
+          C520,25 495,75 458,48
+          C420,25 395,66 360,45
+          C325,25 300,72 265,48
+          C230,27 205,68 170,46
+          C135,27 105,67 75,48
+          C45,32 25,60 0,45
+
+          Z
+        "
+                  fill="currentColor"
+                  filter="url(#rough-brush-edge)"
+                />
+
+                {/* Second broken paint layer */}
+                <path
+                  d="
+          M0,0
+          L1200,0
+          L1200,25
+
+          C1160,38 1135,18 1095,32
+          C1055,46 1025,18 985,35
+          C945,50 915,20 875,34
+          C835,48 805,15 765,32
+          C725,48 690,18 650,35
+          C610,50 580,20 540,33
+          C500,48 470,17 430,34
+          C390,50 360,20 320,32
+          C280,47 250,18 210,34
+          C170,48 140,20 100,33
+          C60,47 35,22 0,35
+
+          Z
+        "
+                  fill="currentColor"
+                  opacity="0.9"
+                  filter="url(#rough-brush-edge)"
+                />
+
+                {/* Small rough paint fragments */}
+                <path
+                  d="M0,0 L1200,0 L1200,15 C1140,22 1110,10 1060,20 C1010,30 980,8 930,18 C880,27 840,9 790,20 C740,30 700,8 650,18 C600,28 560,10 510,20 C460,30 420,8 370,18 C320,27 280,9 230,20 C180,29 140,8 90,18 C50,25 25,12 0,20 "
+                  fill="currentColor"
+                  opacity="0.75"
+                  filter="url(#rough-brush-edge)"
+                />
+              </svg>
+            </div>
+          )}
+
+          {/* Background Image Container */}
           <div className="absolute inset-0 z-0">
             <Image
               src={imageSection.mainImage.src}
               alt={imageSection.mainImage.alt}
               fill
               priority
-              className="object-cover object-left"
+              className="object-cover object-left md:object-center"
               sizes="100vw"
             />
-            
-            {/* Soft Gradient Overlay towards right */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/20 via-black/40 to-[#101426]" />
 
-            {/* Orange Concentric Rings on Bottom Left */}
+            {/* Dark Vignette Overlay */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent lg:from-black/70 lg:to-transparent" />
+
+            {/* Concentric Orange Circles (Bottom Left) */}
             {imageSection.showRings && (
-              <div className="absolute -bottom-16 -left-16 pointer-events-none">
-                <div className="h-72 w-72 rounded-full border border-orange-500/25" />
-                <div className="absolute inset-6 rounded-full border border-orange-500/20" />
-                <div className="absolute inset-12 rounded-full border border-orange-500/15" />
+              <div className="absolute -bottom-28 -left-28 pointer-events-none opacity-40">
+                <div className="h-96 w-96 rounded-full border border-[#ff5e14]/40" />
+                <div className="absolute inset-8 rounded-full border border-[#ff5e14]/30" />
+                <div className="absolute inset-16 rounded-full border border-[#ff5e14]/20" />
+                <div className="absolute inset-24 rounded-full border border-[#ff5e14]/10" />
               </div>
             )}
           </div>
 
-          {/* Floating Purpose Card (Bottom Left) */}
-          <div className="absolute bottom-8 left-8 z-10 hidden p-5 max-w-sm rounded-2xl border border-white/10 bg-[#121629]/80 backdrop-blur-md md:block">
-            <div className="flex items-center gap-4">
-              <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10 text-orange-500">
-                {getPurposeIcon(imageSection.purposeCard.icon)}
-              </div>
-              <div>
-                <span className="text-xs font-semibold tracking-wider text-orange-500 uppercase">
-                  {imageSection.purposeCard.badge}
-                </span>
-                <h4 className="mt-1 text-sm font-bold leading-snug text-white">
-                  {imageSection.purposeCard.title}
-                </h4>
-              </div>
-            </div>
-          </div>
-
-          {/* Right Floating Content Box */}
-          <div className="relative z-10 mr-2 flex min-h-[640px] justify-end">
-            <div className="w-full rounded-xl md:ml-6 pl-2 shadow-xl shadow-gray-800 max-w-2xl bg-[#101426]/95 sm:p-8 p-2 text-white backdrop-blur-md lg:p-12">
-              
-              {/* Dot Grid Decorative Pattern Top Right */}
-              <div className="absolute top-8 right-8 grid grid-cols-6 gap-1.5 opacity-20">
-                {Array.from({ length: 30 }).map((_, i) => (
-                  <span key={i} className="h-1 w-1 rounded-full bg-slate-300" />
-                ))}
-              </div>
-
-              {/* Badge */}
-              <div className="inline-flex items-center gap-2 text-xs font-semibold tracking-wide text-orange-500 uppercase">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full border border-orange-500/30 bg-orange-500/10">
-                  <FiTarget className="text-orange-500" />
-                </span>
-                {badge.label}
-              </div>
-
-              {/* Title */}
-              <h2 className="mt-3 text-3xl font-extrabold tracking-tight text-white lg:text-4xl">
-                {title.line1}{" "}
-                <span className="text-orange-500">{title.highlight}</span>{" "}
-                {title.line2}
-              </h2>
-
-              {/* Underline Indicator */}
-              <div className="mt-3 flex gap-1">
-                <div className="h-0.5 w-12 bg-orange-500" />
-                <div className="h-0.5 w-4 bg-slate-700" />
-              </div>
-
-              {/* Tabs with Underline */}
-              <div className="mt-6 flex items-center gap-8 border-b border-slate-800/80 pb-3">
-                {tabs.map((tab) => (
-                  <button
-                    key={tab.label}
-                    className={`relative flex items-center gap-2 text-xs font-semibold tracking-wide transition-colors ${
-                      tab.active
-                        ? "text-orange-500"
-                        : "text-slate-400 hover:text-white"
-                    }`}
-                  >
-                    {getTabIcon(tab.icon)}
-                    {tab.label}
-                    {tab.active && (
-                      <span className="absolute -bottom-3.5 left-0 right-0 h-0.5 bg-orange-500" />
-                    )}
-                  </button>
-                ))}
-              </div>
-
-              {/* Description Paragraphs */}
-              <div className="mt-6 space-y-3 text-xs leading-relaxed text-slate-300 lg:text-sm">
-                <p>{description.primary}</p>
-                {description.secondary && <p>{description.secondary}</p>}
-              </div>
-
-              {/* Feature Cards Grid (3 Columns) */}
-              <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
-                {features.map((feature: MissionFeature) => (
-                  <div
-                    key={feature.title}
-                    className="flex flex-col rounded-2xl border border-slate-800/80 bg-[#161b30] p-4 transition-all hover:border-slate-700"
-                  >
-                    <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-orange-500/20 bg-orange-500/10 text-orange-500">
-                      {getFeatureIcon(feature.icon)}
-                    </div>
-                    <h3 className="text-xs font-bold text-white">
-                      {feature.title}
-                    </h3>
-                    <p className="mt-2 text-[11px] leading-relaxed text-slate-400">
-                      {feature.description}
-                    </p>
+          {/* Content Layout */}
+          <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
+            {/* Purpose Card (Left - Bottom Overlay on Desktop) */}
+            <div className="hidden lg:col-span-5 lg:flex lg:flex-col lg:justify-end lg:pt-96">
+              <div className="rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
+                    {getPurposeIcon(imageSection.purposeCard.icon)}
                   </div>
-                ))}
-              </div>
 
-              {/* Action Buttons */}
-              <div className="mt-8 flex items-center gap-6">
-                {buttons.map((button) => {
-                  const isPrimary = button.variant === "primary";
-                  return (
-                    <Link
-                      key={button.label}
-                      href={button.href}
-                      className={`group inline-flex items-center gap-2 rounded-full px-6 py-3 text-xs font-bold transition-all duration-200 ${
-                        isPrimary
-                          ? "bg-orange-500 text-white shadow-lg shadow-orange-500/20 hover:bg-orange-600"
-                          : "text-slate-300 hover:text-white"
-                      }`}
+                  <div>
+                    <span className="text-xs font-bold uppercase tracking-wider text-[#ff5e14]">
+                      {imageSection.purposeCard.badge}
+                    </span>
+                    <h4 className="mt-1 text-base font-bold text-white">
+                      {imageSection.purposeCard.title}
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Content Box (Right Panel) */}
+            <div className="lg:col-span-7">
+              <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 p-6 text-white shadow-2xl backdrop-blur-lg sm:p-10 lg:p-12">
+                {/* Dot Grid Top Right */}
+                <div className="absolute top-6 right-6 grid grid-cols-6 gap-1.5 opacity-20">
+                  {Array.from({ length: 30 }).map((_, i) => (
+                    <span
+                      key={i}
+                      className="h-1 w-1 rounded-full bg-slate-300"
+                    />
+                  ))}
+                </div>
+
+                {/* Badge */}
+                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#ff5e14]">
+                  <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
+                    <FiTarget className="text-sm text-[#ff5e14]" />
+                  </span>
+                  <span>{badge.label}</span>
+                </div>
+
+                {/* Heading */}
+                <h2 className="mt-4 font-serif text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-[40px] lg:leading-[1.15]">
+                  {title.line1}{" "}
+                  <span className="text-[#ff5e14]">{title.highlight}</span>{" "}
+                  {title.line2}
+                </h2>
+
+                {/* Orange/Grey Underline */}
+                <div className="mt-4 flex items-center gap-1.5">
+                  <div className="h-0.5 w-10 bg-[#ff5e14]" />
+                  <div className="h-0.5 w-3 bg-slate-600" />
+                </div>
+
+                {/* Tab Navigation */}
+                <div className="mt-8 flex items-center gap-6 border-b border-slate-800 pb-3">
+                  {tabs.map((tab) => {
+                    const isActive = tab.id === activeTab;
+                    return (
+                      <button
+                        key={tab.id}
+                        type="button"
+                        onClick={() => setActiveTab(tab.id)}
+                        className={`relative flex items-center gap-2 pb-1 text-sm font-semibold transition-colors ${
+                          isActive
+                            ? "text-[#ff5e14]"
+                            : "text-slate-300 hover:text-white"
+                        }`}
+                      >
+                        {getTabIcon(tab.icon)}
+                        <span>{tab.label}</span>
+
+                        {isActive && (
+                          <span className="absolute -bottom-3.5 left-0 right-0 h-0.5 bg-[#ff5e14]" />
+                        )}
+                      </button>
+                    );
+                  })}
+                </div>
+
+                {/* Dynamic Content */}
+                {activeTabData && (
+                  <div className="mt-6 space-y-3 text-sm leading-relaxed text-slate-300 sm:text-[15px]">
+                    <p>{activeTabData.content.primary}</p>
+                    {activeTabData.content.secondary && (
+                      <p>{activeTabData.content.secondary}</p>
+                    )}
+                  </div>
+                )}
+
+                {/* Features Grid */}
+                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                  {tabs[0]?.content.features.map((feature) => (
+                    <div
+                      key={feature.title}
+                      className="flex flex-col rounded-xl border border-slate-800/80 bg-[#161b30] p-4 transition-all hover:border-[#ff5e14]/40"
                     >
-                      {button.label}
-                      <FiArrowRight className="transition-transform group-hover:translate-x-1" />
-                    </Link>
-                  );
-                })}
-              </div>
+                      <div className="mb-3 flex h-10 w-10 items-center justify-center rounded-full border border-[#ff5e14]/20 bg-[#ff5e14]/10">
+                        {getFeatureIcon(feature.icon)}
+                      </div>
 
+                      <h3 className="text-sm font-bold text-white">
+                        {feature.title}
+                      </h3>
+
+                      <p className="mt-2 text-xs leading-relaxed text-slate-300">
+                        {feature.description}
+                      </p>
+                    </div>
+                  ))}
+                </div>
+
+                {/* Buttons */}
+                <div className="mt-8 flex flex-wrap items-center gap-6">
+                  {buttons.map((button) => {
+                    const isPrimary = button.variant === "primary";
+
+                    return (
+                      <Link
+                        key={button.label}
+                        href={button.href}
+                        className={`group inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold transition-all duration-300 ${
+                          isPrimary
+                            ? "bg-[#ff5e14] text-white hover:bg-[#e04f0d] shadow-lg shadow-orange-500/20"
+                            : "text-slate-300 hover:text-white"
+                        }`}
+                      >
+                        <span>{button.label}</span>
+                        <FiArrowRight className="text-base transition-transform group-hover:translate-x-1" />
+                      </Link>
+                    );
+                  })}
+                </div>
+              </div>
             </div>
           </div>
 
+          {/* Purpose Box on Mobile / Tablet */}
+          <div className="mt-6 block lg:hidden">
+            <div className="rounded-2xl border border-white/10 bg-[#101426]/90 p-5 backdrop-blur-md">
+              <div className="flex items-center gap-4">
+                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
+                  {getPurposeIcon(imageSection.purposeCard.icon)}
+                </div>
+                <div>
+                  <span className="text-xs font-bold uppercase tracking-wider text-[#ff5e14]">
+                    {imageSection.purposeCard.badge}
+                  </span>
+                  <h4 className="mt-0.5 text-sm font-bold text-white">
+                    {imageSection.purposeCard.title}
+                  </h4>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>

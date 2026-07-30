@@ -2,26 +2,14 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
-import {
-  FiArrowLeft,
-  FiArrowRight,
-} from "react-icons/fi";
-import { FaStar } from "react-icons/fa";
-import type {
-  TestimonialSectionProps,
-  TestimonialItem,
-} from "@/type/typeSection";
+import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
+import { HiOutlineHeart } from "react-icons/hi2";
 
-export default function TestimonialSection({
-  data,
-}: TestimonialSectionProps) {
-  const {
-    badge,
-    title,
-    subtitle,
-    description,
-    testimonials,
-  } = data;
+import { FaStar } from "react-icons/fa";
+import type { TestimonialSectionProps, TestimonialItem } from "@/type/typeSection";
+
+export default function TestimonialSection({ data }: TestimonialSectionProps) {
+  const { badge, title, subtitle, description, testimonials } = data;
 
   const [currentIndex, setCurrentIndex] = useState(0);
 
@@ -38,54 +26,54 @@ export default function TestimonialSection({
   };
 
   useEffect(() => {
-    const timer = setInterval(nextSlide, 6000);
+    const timer = setInterval(nextSlide, 7000);
     return () => clearInterval(timer);
-  }, []);
+  }, [testimonials.length]);
 
-  const activeTestimonial: TestimonialItem =
-    testimonials[currentIndex];
+  const activeTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-white py-3 md:py-8">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-12 lg:py-16">
+      {/* Soft Radial Background Glow */}
+      <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
 
-      {/* Decorative Background */}
-      <div className="absolute -left-20 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
-      <div className="absolute right-0 top-0 h-full w-1/2 bg-[radial-gradient(circle_at_center,#f3f4f6_2px,transparent_2px)] [background-size:18px_18px] opacity-40" />
+      <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+        {/* ================= HEADER SECTION ================= */}
+        <div className="flex flex-col items-center text-center">
+          {/* Badge Label */}
+          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+            <HiOutlineHeart className="text-sm" />
+            <span>{badge?.label || "Testimonials"}</span>
+          </div>
 
-      <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
-
-        {/* Heading */}
-        <div className="mb-0 text-center">
-
-          <p className="text-sm font-semibold uppercase tracking-[0.25em] text-orange-500">
-            {badge.label}
-          </p>
-
-          <h2 className="mt-0 text-3xl font-extrabold text-slate-900 sm:text-5xl">
-            {title.line1}{" "}
-            <span className="text-orange-500">
-              {title.highlight}
+          {/* Main Title */}
+          <h2 className="mt-2 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+            {title?.line1 || "Don’t Believe Us?"}{" "}
+            <span className="text-[#1E1B4B]">
+              {title?.highlight || "See Review"}
             </span>
           </h2>
 
-          <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
-
-          <p className="mx-auto mt-1 max-w-3xl text-md md:leading-8 text-slate-900">
-            {description}
-          </p>
-
+          {/* Subtitle / Description */}
+          {(description || subtitle) && (
+            <p className="mt-3 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+              {description || subtitle}
+            </p>
+          )}
         </div>
 
-        {/* Card */}
-        <div className="relative overflow-hidden mt-3 md:mt-0 rounded-[34px] bg-white md:p-8 p-2 shadow-2xl lg:p-12">
+        {/* ================= TESTIMONIAL CARD ================= */}
+        <div className="relative mt-12 overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-200/50 sm:p-10 ">
+          
+          {/* Background Dotted Globe Mesh Overlay (Right Side) */}
+          <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-[radial-gradient(#CBD5E1_1.5px,transparent_1.5px)] [background-size:12px_12px] opacity-40 pointer-events-none" />
 
-          <div className="grid items-center gap-12 lg:grid-cols-[220px_1fr]">
-
-            {/* Left */}
-            <div className="text-center lg:text-left">
-
-              <div className="relative mx-auto h-36 w-36 overflow-hidden rounded-full ring-4 ring-orange-100 lg:mx-0">
-
+          <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+            
+            {/* ================= LEFT PROFILE COLUMN ================= */}
+            <div className="flex flex-col items-center text-center lg:col-span-4 lg:items-center">
+              {/* Profile Avatar */}
+              <div className="relative h-32 w-32 overflow-hidden rounded-full ring-4 ring-orange-50 sm:h-36 sm:w-36">
                 <Image
                   src={activeTestimonial.image}
                   alt={activeTestimonial.name}
@@ -93,57 +81,63 @@ export default function TestimonialSection({
                   sizes="144px"
                   className="object-cover"
                 />
-
               </div>
 
-              <h3 className="md:mt-6 mt-2 text-2xl font-bold text-slate-900">
+              {/* Author Name */}
+              <h3 className="mt-4 font-serif text-2xl font-bold text-[#1E1B4B]">
                 {activeTestimonial.name}
               </h3>
 
-              <p className="md:mt-2 font-medium text-orange-500">
-                {activeTestimonial.designation}
+              {/* Designation / Country */}
+              <p className="mt-1 text-xs font-semibold text-slate-500">
+                {activeTestimonial.designation || "Charity Bingo"}{" "}
+                <span className="text-[#FF4500]">Canada</span>
               </p>
 
-              <div className="md:mt-5 mt-2 flex justify-center gap-1 lg:justify-start">
-                {Array.from({
-                  length: activeTestimonial.rating,
-                }).map((_, i) => (
-                  <FaStar
-                    key={i}
-                    className="text-yellow-400"
-                  />
+              {/* Star Rating */}
+              <div className="mt-3 flex items-center justify-center gap-1 text-amber-400">
+                {Array.from({ length: activeTestimonial.rating || 5 }).map((_, i) => (
+                  <FaStar key={i} className="text-sm fill-amber-400" />
                 ))}
               </div>
-
             </div>
 
-            {/* Right */}
-            <div>
+            {/* Middle Vertical Divider Line */}
+            <div className="hidden h-48 w-[1px] border-r border-dashed border-slate-200 lg:block lg:col-span-1 lg:mx-auto" />
 
-              <blockquote className="text-md md:leading-7 text-slate-900">
-                "{activeTestimonial.message}"
-              </blockquote>
+            {/* ================= RIGHT MESSAGE COLUMN ================= */}
+            <div className="flex flex-col justify-between lg:col-span-7">
+              <div>
+                {/* Quote Highlight Title */}
+                <h4 className="font-serif text-xl font-bold text-[#1E1B4B] sm:text-2xl">
+                  {activeTestimonial.name || "Precious Journey With You”"}
+                </h4>
 
-              {/* Navigation */}
-              <div className="mt-10 flex justify-center-safe md:justify-end items-center gap-4">
+                {/* Main Testimonial Message Body */}
+                <p className="mt-4 text-xs  text-slate-600 sm:text-sm ">
+                  {activeTestimonial.message}
+                </p>
+              </div>
 
-                <div className="ml-auto flex justify-center-safe gap-2">
-                  {testimonials.map((_, index) => (
-                    <button
-                      key={index}
-                      onClick={() =>
-                        setCurrentIndex(index)
-                      }
-                      className={`h-2.5 rounded-full transition-all ${
-                        currentIndex === index
-                          ? "w-8 bg-orange-500"
-                          : "w-2.5 bg-slate-300"
-                      }`}
-                    />
-                  ))}
-                </div>
+              {/* Arrow Navigation Controls */}
+              <div className="mt-8 flex items-center gap-3">
+                <button
+                  onClick={prevSlide}
+                  aria-label="Previous testimonial"
+                  className="flex h-10 cursor-pointer w-10 items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:border-[#FF4500] hover:bg-[#FF4500] hover:text-white hover:shadow-md"
+                >
+                  <FiArrowLeft className="text-base" />
+                </button>
+                <button
+                  onClick={nextSlide}
+                  aria-label="Next testimonial"
+                  className="flex h-10 w-10 cursor-pointer items-center justify-center rounded-full border border-slate-200 bg-white text-slate-600 transition-all duration-300 hover:border-[#FF4500] hover:bg-[#FF4500] hover:text-white hover:shadow-md"
+                >
+                  <FiArrowRight className="text-base" />
+                </button>
               </div>
             </div>
+
           </div>
         </div>
       </div>

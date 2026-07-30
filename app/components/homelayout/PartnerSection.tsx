@@ -3,6 +3,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import type { PartnersSectionProps, PartnerItem } from "@/type/typeSection";
+import { FiHeart } from "react-icons/fi";
 
 export default function PartnersSection({ data }: PartnersSectionProps) {
   const { badge, title, description, partnersList } = data;
@@ -11,7 +12,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
   const logos = [...partnersList, ...partnersList];
 
   return (
-    <section className="relative overflow-hidden bg-white md:py-8 py-4">
+    <section className="relative overflow-hidden bg-gray-100 md:py-8 py-4">
       {/* Background */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />
@@ -19,20 +20,23 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         {/* Badge */}
         <div className="text-center">
-          <span className="inline-flex rounded-full bg-orange-50 px-4 pt-2 text-xs font-bold uppercase tracking-[0.25em] text-orange-500">
+          <span className="inline-flex rounded-full bg-orange-50 px-4 pt-2 text-xs font-bold uppercase tracking-[0.25em] text-orange-600">
             {badge.label}
           </span>
 
           {/* Heading */}
           <h2 className="mt-0 text-3xl font-extrabold text-slate-900 md:text-5xl">
             {title.line1}{" "}
-            <span className="text-orange-500">{title.highlight}</span>
+            <span className="text-orange-700">{title.highlight}</span>
           </h2>
 
-          <div className="mx-auto mt-1 h-1 w-16 rounded-full bg-orange-500" />
-
+          <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+            <span className="h-[1px] w-10 bg-orange-300" />
+            <FiHeart className="text-[10px] text-[#FF4500]" />
+            <span className="h-[1px] w-10 bg-orange-300" />
+          </div>
           {/* Description */}
-          <p className="mx-auto mt-1 max-w-3xl text-md md:leading-7 text-slate-900">
+          <p className="mx-auto mt-1 max-w-3xl text-md  text-slate-900">
             {description}
           </p>
         </div>

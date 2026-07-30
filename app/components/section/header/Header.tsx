@@ -8,6 +8,7 @@ import {
   FiX,
   FiMapPin,
   FiPhone,
+  FiMail,
 } from "react-icons/fi";
 import {
   FaFacebookF,
@@ -15,13 +16,17 @@ import {
   FaXTwitter,
   FaLinkedinIn,
   FaYoutube,
+  FaPinterestP,
 } from "react-icons/fa6";
-import { HeaderDataProps,   TopBarData, SocialLinkItem
- } from "@/type/typeSection";
+import { BsGrid3X3GapFill } from "react-icons/bs";
+import {
+  HeaderDataProps,
+  TopBarData,
+  SocialLinkItem,
+} from "@/type/typeSection";
 
-
-const renderSocialIcon = (label: SocialLinkItem["label"]) => {
-  switch (label) {
+const renderSocialIcon = (label: string) => {
+  switch (label.toLowerCase()) {
     case "facebook":
       return <FaFacebookF size={14} />;
     case "instagram":
@@ -32,6 +37,8 @@ const renderSocialIcon = (label: SocialLinkItem["label"]) => {
       return <FaLinkedinIn size={14} />;
     case "youtube":
       return <FaYoutube size={15} />;
+    case "pinterest":
+      return <FaPinterestP size={14} />;
     default:
       return null;
   }
@@ -45,6 +52,8 @@ export default function Header({
   topBar?: TopBarData;
 }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const [isPopupOpen, setIsPopupOpen] = useState(false);
+
   const [openMobileDropdowns, setOpenMobileDropdowns] = useState<
     Record<string, boolean>
   >({});
@@ -57,36 +66,49 @@ export default function Header({
   };
 
   useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen ? "hidden" : "";
+    document.body.style.overflow = isMobileMenuOpen || isPopupOpen ? "hidden" : "";
+
     return () => {
       document.body.style.overflow = "";
     };
-  }, [isMobileMenuOpen]);
+  }, [isMobileMenuOpen, isPopupOpen]);
+
+  // Safely alias popup data with optional chaining
+  const popup = data?.PopupData;
 
   return (
     <>
-      {/* FIXED WRAPPER - sticky top-0 z-50 forces sticky behavior on both TopBar and Header */}
+      {/* ================= HEADER WRAPPER ================= */}
       <div className="sticky top-0 z-50 w-full bg-slate-900 shadow-md">
-        
         {/* ================= TOP BAR ================= */}
         {topBar && (
-          <div className="hidden border-b border-slate-800 bg-slate-800 py-2 text-xs text-slate-300 sm:block">
+          <div className="hidden bg-white text-xs text-slate-900 sm:block">
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:px-6 lg:px-8">
-              <div className="flex flex-nowrap items-center justify-center gap-2 sm:justify-start sm:gap-4">
+              <div className="ml-36 flex flex-nowrap items-center justify-center gap-2 py-1 sm:justify-start sm:gap-4">
                 {topBar.address && (
-                  <div className="flex items-center gap-1.5 transition-colors hover:text-white">
+                  <div className="flex items-center gap-1.5 transition-colors">
                     <FiMapPin className="flex-shrink-0 text-orange-500" size={14} />
                     <span>{topBar.address}</span>
                   </div>
                 )}
+
                 {topBar.phone && (
                   <a
                     href={topBar.phoneHref || `tel:${topBar.phone}`}
-                    className="flex items-center gap-1.5 transition-colors hover:text-white"
+                    className="flex items-center gap-1.5 transition-colors"
                   >
                     <FiPhone className="flex-shrink-0 text-orange-500" size={14} />
                     <span>{topBar.phone}</span>
                   </a>
+                )}
+
+                {topBar.headerCta && (
+                  <Link
+                    href={topBar.headerCta.href}
+                    className="inline-flex items-center justify-center rounded-full bg-orange-500 px-4 py-1 text-sm font-bold text-white shadow-md shadow-rose-600/20 transition-all duration-200 hover:bg-orange-700 hover:shadow-lg hover:shadow-rose-600/30"
+                  >
+                    {topBar.headerCta.label}
+                  </Link>
                 )}
               </div>
 
@@ -111,88 +133,207 @@ export default function Header({
         )}
 
         {/* ================= MAIN HEADER ================= */}
-        <header className="bg-slate-900">
+        <header className="bg-indigo-950">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between sm:h-20">
+              {/* Logo */}
               <Link href="/" className="group flex items-center gap-3">
-                <div className="flex w-16 items-center justify-center rounded-xl shadow-md shadow-rose-500/20 transition duration-300 group-hover:scale-105 sm:w-24">
-                  <img src={data.logo} alt="" />
+                <div className="-rotate-3 flex w-16 items-center justify-center rounded-xl shadow-md shadow-rose-500/20 transition duration-300 group-hover:scale-105 sm:-mt-8 sm:w-36">
+                  <img src={data?.logo} alt="Logo" />
                 </div>
               </Link>
 
-              <nav className="hidden md:flex md:items-center md:gap-1 xl:gap-2">
-                {data.header?.map((item) => {
-                  const hasChildren = item.children && item.children.length > 0;
+              <div className="flex h-full items-center gap-4">
+                {/* Desktop / Tablet Navigation & Grid Box */}
+                <div className="hidden h-full items-center gap-3 md:flex">
+                  <nav className="flex items-center md:gap-1 xl:gap-2">
+                    {data?.header?.map((item) => {
+                      const hasChildren = item.children && item.children.length > 0;
 
-                  return (
-                    <div key={item.label} className="group relative py-6">
-                      <Link
-                        href={item.href}
-                        className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm font-semibold text-slate-100 transition duration-200 hover:bg-slate-600 hover:text-white focus:outline-none"
-                      >
-                        <span>{item.label}</span>
-                        {hasChildren && (
-                          <FiChevronDown
-                            size={16}
-                            className="text-slate-500 transition-transform duration-300 group-hover:rotate-180 group-hover:text-slate-600"
-                          />
-                        )}
-                      </Link>
-
-                      {hasChildren && (
-                        <div className="invisible absolute left-0 top-full z-50 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
-                          <div
-                            className={`mt-0 border border-slate-100 bg-white p-2 shadow-xl ${
-                              item.children!.length > 6
-                                ? "grid w-[480px] grid-cols-2 gap-1"
-                                : "w-[240px]"
-                            }`}
+                      return (
+                        <div key={item.label} className="group relative py-6">
+                          <Link
+                            href={item.href}
+                            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm text-slate-100 transition duration-200 hover:bg-slate-600 hover:text-white focus:outline-none"
                           >
-                            {item.children!.map((child) => (
-                              <Link
-                                key={child.label}
-                                href={child.href}
-                                className="group/child flex items-center justify-between px-3.5 py-2.5 text-sm font-medium text-slate-700 transition duration-100 hover:bg-slate-400 hover:text-black"
+                            <span>{item.label}</span>
+
+                            {hasChildren && (
+                              <FiChevronDown
+                                size={16}
+                                className="text-slate-100 transition-transform duration-300 group-hover:rotate-180"
+                              />
+                            )}
+                          </Link>
+
+                          {hasChildren && (
+                            <div className="invisible absolute left-0 top-full z-50 translate-y-0 opacity-0 transition-all duration-200 group-hover:visible group-hover:translate-y-1 group-hover:opacity-100">
+                              <div
+                                className={`mt-0 border border-slate-100 bg-white p-2 shadow-xl ${
+                                  item.children!.length > 6
+                                    ? "grid w-[480px] grid-cols-2 gap-1"
+                                    : "w-[240px]"
+                                }`}
                               >
-                                <span>{child.label}</span>
-                              </Link>
-                            ))}
-                          </div>
+                                {item.children!.map((child) => (
+                                  <Link
+                                    key={child.label}
+                                    href={child.href}
+                                    className="group/child flex items-center justify-between px-3.5 py-2.5 text-sm font-medium text-slate-700 transition duration-100 hover:bg-slate-400 hover:text-black"
+                                  >
+                                    <span>{child.label}</span>
+                                  </Link>
+                                ))}
+                              </div>
+                            </div>
+                          )}
                         </div>
-                      )}
-                    </div>
-                  );
-                })}
-              </nav>
+                      );
+                    })}
+                  </nav>
 
-              <div className="flex items-center gap-3">
-                <Link
-                  href="/donate"
-                  className="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-rose-600/20 transition-all duration-200 hover:bg-orange-700 hover:shadow-lg hover:shadow-rose-600/30"
-                >
-                  Donate Now
-                </Link>
+                  {/* Grid Icon Button - Opens About Popup Drawer */}
+                  <button
+                    type="button"
+                    onClick={() => setIsPopupOpen(true)}
+                    aria-label="Open About Information"
+                    className="flex cursor-pointer h-full w-14 items-center justify-center bg-orange-500 text-white transition-all duration-200 hover:bg-orange-600 focus:outline-none"
+                  >
+                    <BsGrid3X3GapFill size={28} />
+                  </button>
+                </div>
 
-                <button
-                  type="button"
-                  onClick={() => setIsMobileMenuOpen(true)}
-                  aria-label="Open Mobile Menu"
-                  className="inline-flex items-center justify-center rounded-xl border border-orange-100 p-2.5 text-slate-100 hover:bg-rose-50 hover:text-orange-400 focus:outline-none md:hidden"
-                >
-                  <FiMenu size={24} />
-                </button>
+                {/* Mobile Actions */}
+                <div className="flex items-center gap-3 md:hidden">
+                  {topBar?.headerCta && (
+                    <Link
+                      href={topBar.headerCta.href}
+                      className="inline-flex items-center justify-center rounded-xl bg-orange-500 px-4 py-2.5 text-sm font-bold text-white shadow-md shadow-rose-600/20 transition-all duration-200 hover:bg-orange-700 hover:shadow-lg hover:shadow-rose-600/30"
+                    >
+                      {topBar.headerCta.label}
+                    </Link>
+                  )}
+
+                  <button
+                    type="button"
+                    onClick={() => setIsMobileMenuOpen(true)}
+                    aria-label="Open Mobile Menu"
+                    className="inline-flex items-center justify-center rounded-xl border border-orange-100 p-2.5 text-slate-100 hover:bg-rose-50 hover:text-orange-400 focus:outline-none"
+                  >
+                    <FiMenu size={24} />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </header>
       </div>
 
+      {/* ================= ABOUT POPUP SIDE DRAWER ================= */}
+      <div
+        className={`fixed inset-0 z-[100] bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 ${
+          isPopupOpen ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
+        }`}
+        onClick={() => setIsPopupOpen(false)}
+      />
+
+      <div
+        className={`fixed inset-y-0 right-0 z-[101] flex w-full max-w-md flex-col bg-white text-black shadow-2xl transition-transform duration-300 ease-in-out ${
+          isPopupOpen ? "translate-x-0" : "translate-x-full"
+        }`}
+      >
+        <div className="flex items-center justify-between px-5 pt-5">
+          <h3 className="text-xl pt-16 font-bold text-black">
+            {popup?.aboutpopup?.title || "About Us"}
+          </h3>
+          <button
+            type="button"
+            onClick={() => setIsPopupOpen(false)}
+            className="rounded-full cursor-pointer p-2 text-slate-900 "
+          >
+            <FiX size={24} />
+          </button>
+        </div>
+
+        <div className="flex-1 overflow-y-auto px-5">
+          {/* About Description */}
+          {popup?.aboutpopup?.description && (
+            <p className="text-sm text-slate-500">
+              {popup.aboutpopup.description}
+            </p>
+          )}
+
+          {/* Instagram Grid */}
+          {popup?.instagram && (
+            <div>
+              <h4 className="mb-4 text-base font-semibold text-white">
+                {popup.instagram.title}
+              </h4>
+              <div className="grid grid-cols-4 gap-2">
+                {popup.instagram.images?.map((img, idx) => (
+                  <div
+                    key={idx}
+                    className="aspect-square overflow-hidden  bg-slate-800"
+                  >
+                    <img
+                      src={img.src}
+                      alt={img.alt}
+                      className="h-full w-full object-cover transition-transform duration-300 hover:scale-110"
+                    />
+                  </div>
+                ))}
+              </div>
+            </div>
+          )}
+
+          {/* Contact Popup Info */}
+          {popup?.contactpopup && (
+            <div className="rounded-xl flex justify-center py-8 text-center space-y-6 ">
+              <div>
+              <a
+                href={popup.contactpopup.phoneHref}
+                className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
+              >
+                <FiPhone className="text-orange-500" size={16} />
+                <span>{popup.contactpopup.phone}</span>
+              </a>
+
+              <p className="text-xs pt-5 text-slate-500 uppercase font-semibold">
+                {popup.contactpopup.separator}
+              </p>
+
+              <a
+                href={popup.contactpopup.emailHref}
+                className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
+              >
+                <FiMail className="text-orange-500" size={16} />
+                <span>{popup.contactpopup.email}</span>
+              </a>
+              </div>
+            </div>
+          )}
+
+          {/* Social Links */}
+          {popup?.socialLinkspopup && popup.socialLinkspopup.length > 0 && (
+            <div className="flex justify-center items-center gap-3 pt-2">
+              {popup.socialLinkspopup.map((social) => (
+                <a
+                  key={social.label}
+                  href={social.href}
+                  className="flex h-8 w-8 items-center justify-center rounded-full border text-slate-600 transition-all hover:bg-orange-500 hover:text-white"
+                >
+                  {renderSocialIcon(social.label)}
+                </a>
+              ))}
+            </div>
+          )}
+        </div>
+      </div>
+
       {/* ================= MOBILE DRAWER ================= */}
       <div
-        className={`fixed inset-0 z-50 bg-slate-900/50 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
-          isMobileMenuOpen
-            ? "visible opacity-100"
-            : "pointer-events-none invisible opacity-0"
+        className={`fixed inset-0 z-50 bg-indigo-950/80 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
+          isMobileMenuOpen ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
       />
@@ -209,7 +350,7 @@ export default function Header({
             className="flex items-center gap-2.5"
           >
             <div className="flex h-9 w-9 items-center justify-center rounded-lg">
-              <img src={data.logo} alt="" />
+              <img src={data?.logo} alt="Logo" />
             </div>
           </Link>
 
@@ -225,7 +366,7 @@ export default function Header({
 
         <div className="flex-1 overflow-y-auto px-4 py-4">
           <nav className="flex flex-col space-y-1">
-            {data.header?.map((item) => {
+            {data?.header?.map((item) => {
               const hasChildren = item.children && item.children.length > 0;
               const isOpen = !!openMobileDropdowns[item.label];
 

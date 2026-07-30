@@ -3,9 +3,6 @@
 import React from "react";
 import Link from "next/link";
 import {
-  FiMapPin,
-  FiPhone,
-  FiMail,
   FiFacebook,
   FiTwitter,
   FiInstagram,
@@ -47,11 +44,11 @@ export default function Footer({ data }: { data: FooterData }) {
           {/* BRAND / HEADLINE */}
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="group inline-flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-tr from-rose-600 to-rose-500 text-white shadow-md shadow-amber-500/20 transition duration-300 group-hover:scale-105">
+              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-tr from-orange-600 to-orange-500 text-white shadow-md shadow-amber-500/20 transition duration-300 group-hover:scale-105">
                 <FiHeart size={22} className="fill-current" />
               </div>
               <div>
-                <span className="block text-2xl font-extrabold tracking-tight text-white transition duration-300 group-hover:text-rose-400">
+                <span className="block text-2xl font-extrabold tracking-tight text-white transition duration-300 group-hover:text-orange-400">
                   {data.siteTitle || "Ashray Foundation"}
                 </span>
                 {data.tagline && (
@@ -108,7 +105,7 @@ export default function Footer({ data }: { data: FooterData }) {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={social.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-slate-300 transition-all duration-300 hover:bg-rose-500 hover:text-white hover:-translate-y-1 shadow-sm"
+                    className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-slate-300 transition-all duration-300 hover:bg-orange-500 hover:text-white hover:-translate-y-1 shadow-sm"
                   >
                     {renderSocialIcon(social.icon)}
                   </a>
@@ -125,7 +122,7 @@ export default function Footer({ data }: { data: FooterData }) {
             <div key={idx} className="space-y-3">
               <Link
                 href={section.href}
-                className="inline-block text-sm font-bold text-white uppercase tracking-wider hover:text-rose-400 transition-colors"
+                className="inline-block text-sm font-bold text-white uppercase tracking-wider hover:text-orange-400 transition-colors"
               >
                 {section.label}
               </Link>
@@ -138,7 +135,7 @@ export default function Footer({ data }: { data: FooterData }) {
                         href={link.href}
                         target={isExternal ? "_blank" : "_self"}
                         rel={isExternal ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center text-xs text-slate-400 hover:text-rose-400 transition-colors duration-200"
+                        className="inline-flex items-center text-xs text-slate-400 hover:text-orange-400 transition-colors duration-200"
                       >
                         <span>{link.label}</span>
                         {isExternal && (
