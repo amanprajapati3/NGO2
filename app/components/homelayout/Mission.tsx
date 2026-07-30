@@ -61,7 +61,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
     <section className="relative w-full bg-white">
       <div className="relative mx-auto ">
         {/* Main Section Container */}
-        <div className="relative min-h-[660px] w-full overflow-hidden bg-[#0c0f1d] p-4 sm:p-8 lg:p-12">
+        <div className="relative min-h-[660px] w-full overflow-hidden bg-[#0c0f1d] p-0 sm:p-8 lg:p-12">
           {/* ================= EXACT ROUGH BRUSH EDGE OVERLAY ================= */}
           {/* ================= ROUGH BRUSH EDGE OVERLAY ================= */}
           {imageSection.showBrushTop && (
@@ -126,25 +126,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
                 {/* Second broken paint layer */}
                 <path
-                  d="
-          M0,0
-          L1200,0
-          L1200,25
-
-          C1160,38 1135,18 1095,32
-          C1055,46 1025,18 985,35
-          C945,50 915,20 875,34
-          C835,48 805,15 765,32
-          C725,48 690,18 650,35
-          C610,50 580,20 540,33
-          C500,48 470,17 430,34
-          C390,50 360,20 320,32
-          C280,47 250,18 210,34
-          C170,48 140,20 100,33
-          C60,47 35,22 0,35
-
-          Z
-        "
+                  d="M0,0 L1200,0 L1200,25 C1160,38 1135,18 1095,32 C1055,46 1025,18 985,35 C945,50 915,20 875,34 C835,48 805,15 765,32 C725,48 690,18 650,35 C610,50 580,20 540,33 C500,48 470,17 430,34 C390,50 360,20 320,32 C280,47 250,18 210,34 C170,48 140,20 100,33 C60,47 35,22 0,35 Z"
                   fill="currentColor"
                   opacity="0.9"
                   filter="url(#rough-brush-edge)"
@@ -187,7 +169,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
           </div>
 
           {/* Content Layout */}
-          <div className="relative z-10 grid grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
+          <div className="relative z-10 grid mt-4 md:mt-0 grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
             {/* Purpose Card (Left - Bottom Overlay on Desktop) */}
             <div className="hidden lg:col-span-5 lg:flex lg:flex-col lg:justify-end lg:pt-96">
               <div className="rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
@@ -210,7 +192,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
             {/* Content Box (Right Panel) */}
             <div className="lg:col-span-7">
-              <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 p-6 text-white shadow-2xl backdrop-blur-lg sm:p-10 lg:p-12">
+              <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 md:p-6 p-2 text-white shadow-2xl backdrop-blur-lg sm:p-10 lg:p-12">
                 {/* Dot Grid Top Right */}
                 <div className="absolute top-6 right-6 grid grid-cols-6 gap-1.5 opacity-20">
                   {Array.from({ length: 30 }).map((_, i) => (
@@ -243,7 +225,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="mt-8 flex items-center gap-6 border-b border-slate-800 pb-3">
+                <div className="md:mt-8 mt-4 justify-center md:justifyt-start flex items-center md:gap-6 gap-2 border-b border-slate-800 pb-3">
                   {tabs.map((tab) => {
                     const isActive = tab.id === activeTab;
                     return (
@@ -251,7 +233,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                         key={tab.id}
                         type="button"
                         onClick={() => setActiveTab(tab.id)}
-                        className={`relative flex items-center cursor-pointer gap-2 pb-1 text-sm font-semibold transition-colors ${
+                        className={`relative flex items-center cursor-pointer md:gap-2 pb-1 text-sm font-semibold transition-colors ${
                           isActive
                             ? "text-[#ff5e14]"
                             : "text-slate-300 hover:text-white"
@@ -301,7 +283,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 </div>
 
                 {/* Buttons */}
-                <div className="mt-8 flex flex-wrap items-center gap-6">
+                <div className="md:mt-8 my-4 flex justify-center md:justify-start flex-wrap items-center md:gap-6 gap-2">
                   {buttons.map((button) => {
                     const isPrimary = button.variant === "primary";
 
@@ -309,10 +291,10 @@ export default function MissionSection({ data }: MissionSectionProps) {
                       <Link
                         key={button.label}
                         href={button.href}
-                        className={`group inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold transition-all duration-300 ${
+                        className={`group inline-flex items-center md:gap-2 gap-1 rounded-full md:px-7 px-3 md:py-3.5 py-2 text-sm font-bold transition-all duration-300 ${
                           isPrimary
                             ? "bg-[#ff5e14] text-white hover:bg-[#e04f0d] shadow-lg shadow-orange-500/20"
-                            : "text-slate-300 hover:text-white"
+                            : "text-slate-300 bg-white/20 hover:text-white"
                         }`}
                       >
                         <span>{button.label}</span>
@@ -326,7 +308,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
           </div>
 
           {/* Purpose Box on Mobile / Tablet */}
-          <div className="mt-6 block lg:hidden">
+          <div className="my-6 block lg:hidden">
             <div className="rounded-2xl border border-white/10 bg-[#101426]/90 p-5 backdrop-blur-md">
               <div className="flex items-center gap-4">
                 <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">

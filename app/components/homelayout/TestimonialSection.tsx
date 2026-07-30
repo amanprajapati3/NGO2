@@ -33,7 +33,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const activeTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8 md:py-12">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-5 md:py-12">
       {/* Soft Radial Background Glow */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
 
@@ -47,7 +47,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
           </div>
 
           {/* Main Title */}
-          <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+          <h2 className="md:mt-1 font-serif text-3xl font-extrabold md:tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
             {title?.line1 || "Don’t Believe Us?"}{" "}
             <span className="text-[#1E1B4B]">
               {title?.highlight || "See Review"}
@@ -63,12 +63,12 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
         </div>
 
         {/* ================= TESTIMONIAL CARD ================= */}
-        <div className="relative mt-12 overflow-hidden rounded-3xl border border-slate-100 bg-white p-6 shadow-xl shadow-slate-200/50 sm:p-10 ">
+        <div className="relative md:mt-12 mt-4 overflow-hidden rounded-3xl border border-slate-100 bg-white md:p-6 p-2 shadow-xl shadow-slate-200/50 sm:p-10 ">
           
           {/* Background Dotted Globe Mesh Overlay (Right Side) */}
           <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-[radial-gradient(#CBD5E1_1.5px,transparent_1.5px)] [background-size:12px_12px] opacity-40 pointer-events-none" />
 
-          <div className="relative z-10 grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
+          <div className="relative z-10 grid grid-cols-1 items-center md:gap-8 gap-2 lg:grid-cols-12 lg:gap-12">
             
             {/* ================= LEFT PROFILE COLUMN ================= */}
             <div className="flex flex-col items-center text-center lg:col-span-4 lg:items-center">
@@ -84,7 +84,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
               </div>
 
               {/* Author Name */}
-              <h3 className="mt-4 font-serif text-2xl font-bold text-[#1E1B4B]">
+              <h3 className="md:mt-4 mt-2 font-serif text-2xl font-bold text-[#1E1B4B]">
                 {activeTestimonial.name}
               </h3>
 
@@ -114,13 +114,13 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
                 </h4>
 
                 {/* Main Testimonial Message Body */}
-                <p className="mt-4 text-xs  text-slate-600 sm:text-sm ">
+                <p className="md:mt-4 mt-1 text-xs  text-slate-600 sm:text-sm ">
                   {activeTestimonial.message}
                 </p>
               </div>
 
               {/* Arrow Navigation Controls */}
-              <div className="mt-8 flex items-center gap-3">
+              <div className="md:mt-8 my-4 flex justify-center md:justify-start items-center md:gap-3 gap-10">
                 <button
                   onClick={prevSlide}
                   aria-label="Previous testimonial"

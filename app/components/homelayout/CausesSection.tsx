@@ -56,7 +56,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
   const { badge, title, description, items, exploreButton, cta } = data;
 
   return (
-    <section className="relative overflow-hidden pt-12">
+    <section className="relative overflow-hidden md:pt-12 pt-5">
 
        
       {/* Top Left / Bottom Right Light Glow Background Decorators */}
@@ -68,17 +68,17 @@ export default function CausesSection({ data }: CausesSectionProps) {
        <div className="-top-15 -left-15 sm:h-32 sm:w-32 bg-orange-200 rounded-full absolute pointer-events-none">
        </div>
 
-       <div className="absolute top-40 rotate-6 right-60">
+       <div className="absolute md:top-40 top-14 rotate-6 md:right-60 right-10">
         <HandDrawnHeart/>
        </div>
       
       {/* Background Decorative Grid Dots */}
-      <div className="absolute top-28 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 left-0 md:left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-28 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 right-0 md:right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
@@ -134,7 +134,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
         </div>
 
         {/* ================= CAUSE CARDS GRID ================= */}
-        <div className="mt-12 grid grid-cols-1 px-4 sm:px-6 lg:px-8 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        <div className="md:mt-12 mt-4 grid grid-cols-1 px-4 sm:px-6 lg:px-8 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {items.map((item: CauseItem, index: number) => {
             const isPurple = index === 1;
             const primaryColorClass = isPurple
@@ -190,7 +190,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
                   </div>
 
                   {/* Card Bottom Actions */}
-                  <div className="mt-6 flex items-center justify-between gap-3 pt-2">
+                  <div className="md:mt-6 mt-2 flex items-center justify-between gap-3 pt-2">
                     {/* Secondary Icon Circle */}
                     <div
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${

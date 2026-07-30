@@ -3,187 +3,205 @@
 import React from "react";
 import Link from "next/link";
 import {
-  FiFacebook,
-  FiTwitter,
-  FiInstagram,
-  FiLinkedin,
-  FiYoutube,
-  FiHeart,
-  FiArrowUpRight,
+  FiMapPin,
+  FiPhone,
+  FiMail,
+  FiArrowRight,
 } from "react-icons/fi";
 import { FooterData } from "@/type/typeSection";
 
-const renderSocialIcon = (iconName: string) => {
-  switch (iconName.toLowerCase()) {
-    case "facebook":
-      return <FiFacebook size={18} />;
-    case "twitter":
-    case "x":
-      return <FiTwitter size={18} />;
-    case "instagram":
-      return <FiInstagram size={18} />;
-    case "linkedin":
-      return <FiLinkedin size={18} />;
-    case "youtube":
-      return <FiYoutube size={18} />;
-    default:
-      return <FiArrowUpRight size={18} />;
-  }
-};
-
 export default function Footer({ data }: { data: FooterData }) {
-  const currentYear = new Date().getFullYear();
-
   return (
-    <footer className="bg-black text-slate-300 pt-16 pb-8 border-t border-slate-800">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* TOP BRAND & CONTACT INFORMATION ROW */}
-        <div className="grid grid-cols-1 gap-10 pb-12 border-b border-slate-800 lg:grid-cols-12 lg:gap-8">
-          {/* BRAND / HEADLINE */}
-          <div className="lg:col-span-5 space-y-4">
-            <Link href="/" className="group inline-flex items-center gap-3">
-              <div className="flex h-11 w-11 items-center justify-center rounded-xl bg-gradient-to-tr from-orange-600 to-orange-500 text-white shadow-md shadow-amber-500/20 transition duration-300 group-hover:scale-105">
-                <FiHeart size={22} className="fill-current" />
-              </div>
-              <div>
-                <span className="block text-2xl font-extrabold tracking-tight text-white transition duration-300 group-hover:text-orange-400">
-                  {data.siteTitle || "Ashray Foundation"}
-                </span>
-                {data.tagline && (
-                  <span className="text-xs font-medium text-slate-200">
-                    {data.tagline}
-                  </span>
-                )}
-              </div>
-            </Link>
+    <footer className="bg-[#252525] text-slate-200">
+      <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
 
-            {/* CONTACT DETAILS FROM JSON */}
-            {/* {data.contact && (
-              <div className="pt-2 space-y-3 text-sm text-slate-400">
-                {data.contact.address && (
-                  <div className="flex items-start gap-3">
-                    <FiMapPin className="text-rose-500 mt-1 shrink-0" size={16} />
-                    <span>{data.contact.address}</span>
-                  </div>
-                )}
-                {data.contact.phone && (
-                  <div className="flex items-center gap-3">
-                    <FiPhone className="text-rose-500 shrink-0" size={16} />
-                    <a
-                      href={`tel:${data.contact.phone}`}
-                      className="hover:text-rose-400 transition-colors"
-                    >
-                      {data.contact.phone}
-                    </a>
-                  </div>  
-                )}
-                {data.contact.email && (
-                  <div className="flex items-center gap-3">
-                    <FiMail className="text-rose-500 shrink-0" size={16} />
-                    <a
-                      href={`mailto:${data.contact.email}`}
-                      className="hover:text-rose-400 transition-colors"
-                    >
-                      {data.contact.email}
-                    </a>
-                  </div>
-                )}
+        {/* NEWSLETTER */}
+        <div className="border-b border-dashed border-slate-700 py-8">
+          <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2">
+            <div>
+              <h2 className="text-2xl font-bold text-white">
+                {data.newsletter.title}
+              </h2>
+
+              <p className="mt-2 max-w-xl text-sm leading-7 text-indigo-200">
+                {data.newsletter.description}
+              </p>
+            </div>
+
+            <form className="flex w-full items-center rounded-full bg-white p-1">
+              <input
+                type="email"
+                placeholder={data.newsletter.placeholder}
+                className="min-w-0 flex-1 bg-transparent px-5 py-3 text-sm text-slate-700 outline-none placeholder:text-slate-400"
+              />
+
+              <button
+                type="submit"
+                className="flex shrink-0 items-center gap-1 rounded-full bg-[#ff5a1f] px-6 py-3 text-sm font-medium text-white transition-colors duration-300 hover:bg-[#e94d16]"
+              >
+                {data.newsletter.buttonLabel}
+                <FiArrowRight size={16} />
+              </button>
+            </form>
+          </div>
+        </div>
+
+        {/* MAIN FOOTER */}
+        <div className="grid grid-cols-1 gap-10 py-7 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
+
+          {/* CONTACT INFO */}
+          <div className="lg:col-span-3">
+            <h3 className="mb-6 text-xl font-bold text-white">
+              {data.contactInfo.title}
+            </h3>
+
+            <div className="space-y-5">
+
+              <div>
+                <div className="mb-2 flex items-center gap-2 text-sm font-medium text-[#ff5a1f]">
+                  <FiMapPin size={16} />
+                  <span>{data.contactInfo.location.label}</span>
+                </div>
+
+                <p className="text-sm leading-6 text-indigo-200">
+                  {data.contactInfo.location.address}
+                </p>
               </div>
-            )} */}
+
+              <div>
+                <div className="mb-2 flex items-center gap-2 text-sm font-medium text-[#ff5a1f]">
+                  <FiPhone size={16} />
+                  <span>{data.contactInfo.phone.label}</span>
+                </div>
+
+                <a
+                  href={data.contactInfo.phone.href}
+                  className="text-sm text-indigo-200 transition-colors hover:text-[#ff5a1f]"
+                >
+                  {data.contactInfo.phone.number}
+                </a>
+              </div>
+
+              <div>
+                <div className="mb-2 flex items-center gap-2 text-sm font-medium text-[#ff5a1f]">
+                  <FiMail size={16} />
+                  <span>{data.contactInfo.email.label}</span>
+                </div>
+
+                <a
+                  href={data.contactInfo.email.href}
+                  className="text-sm text-indigo-200 transition-colors hover:text-[#ff5a1f]"
+                >
+                  {data.contactInfo.email.address}
+                </a>
+              </div>
+
+            </div>
           </div>
 
-          {/* SOCIAL MEDIA LINKS FROM JSON */}
-          <div className="lg:col-span-7 flex flex-col justify-between items-start lg:items-end">
-            <div className="space-y-3">
-              <div className="flex flex-wrap gap-3">
-                {data.socials?.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={social.label}
-                    className="flex h-10 w-10 items-center justify-center rounded-xl bg-slate-800 text-slate-300 transition-all duration-300 hover:bg-orange-500 hover:text-white hover:-translate-y-1 shadow-sm"
+          {/* OUR SUPPORT */}
+          <div className="lg:col-span-3 lg:pl-5">
+            <h3 className="mb-6 text-xl font-bold text-white">
+              {data.support.title}
+            </h3>
+
+            <ul className="space-y-3">
+              {data.support.links.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-indigo-200 transition-colors duration-200 hover:text-[#ff5a1f]"
                   >
-                    {renderSocialIcon(social.icon)}
-                  </a>
-                ))}
-              </div>
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* OUR SERVICES */}
+          <div className="lg:col-span-2">
+            <h3 className="mb-6 text-xl font-bold text-white">
+              {data.services.title}
+            </h3>
+
+            <ul className="space-y-3">
+              {data.services.links.map((link, index) => (
+                <li key={index}>
+                  <Link
+                    href={link.href}
+                    className="text-sm text-indigo-200 transition-colors duration-200 hover:text-[#ff5a1f]"
+                  >
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          </div>
+
+          {/* RECENT NEWS */}
+          <div className="lg:col-span-4">
+            <h3 className="mb-6 text-xl font-bold text-white">
+              {data.recentNews.title}
+            </h3>
+
+            <div className="space-y-6">
+              {data.recentNews.items.map((item, index) => (
+                <Link
+                  key={index}
+                  href={item.href}
+                  className="group flex gap-5"
+                >
+                  <div className="relative h-[67px] w-[80px] shrink-0 overflow-hidden">
+                    <img
+                      src={item.image}
+                      alt={item.title}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+
+                  <div className="border-l border-dashed border-slate-700 pl-5">
+                    <h4 className="text-sm font-medium leading-6 text-white transition-colors group-hover:text-[#ff5a1f]">
+                      {item.title}
+                    </h4>
+
+                    <div className="mt-2 flex items-center gap-1.5 text-xs text-slate-400">
+                      <span className="h-2 w-2 rounded-full bg-[#ff5a1f]" />
+                      <span>
+                        {item.category}, {item.date}
+                      </span>
+                    </div>
+                  </div>
+                </Link>
+              ))}
             </div>
           </div>
         </div>
 
-        {/* DYNAMIC FOOTER SECTIONS GRID FROM JSON */}
-        <div className="flex justify-center">
-          <div className="py-5 flex justify-center flex-col-2 md:col-end-4 gap-5 md:gap-16">
-            {data.footer?.map((section, idx) => (
-              <div key={idx} className="space-y-3">
-                <Link
-                  href={section.href}
-                  className="inline-block text-sm font-bold text-white uppercase tracking-wider hover:text-orange-400 transition-colors"
-                >
-                  {section.label}
-                </Link>
+        {/* BOTTOM BAR */}
+        <div className="border-t border-dashed border-slate-700 py-4">
+          <div className="flex flex-col items-center justify-between gap-3 text-xs text-indigo-200 sm:flex-row">
+            <p>{data.bottomBar.copyright}</p>
 
-                <ul className="space-y-2">
-                  {section.links
-                    ?.filter((_, linkIdx) => {
-                      // Remove first 3 links only from Legal section
-                      if (section.label === "Legal") {
-                        return linkIdx > 2;
-                      }
-                      return true;
-                    })
-                    .map((link, linkIdx) => {
-                      const isExternal = link.href.startsWith("http");
+            <div className="flex items-center gap-3">
+              {data.bottomBar.links.map((link, index) => (
+                <React.Fragment key={index}>
+                  {index > 0 && (
+                    <span className="text-[#ff5a1f]">|</span>
+                  )}
 
-                      return (
-                        <li key={linkIdx}>
-                          <Link
-                            href={link.href}
-                            target={isExternal ? "_blank" : "_self"}
-                            rel={isExternal ? "noopener noreferrer" : undefined}
-                            className="inline-flex items-center text-xs text-slate-400 hover:text-orange-400 transition-colors duration-200"
-                          >
-                            <span>{link.label}</span>
-
-                            {isExternal && (
-                              <FiArrowUpRight
-                                size={12}
-                                className="ml-0.5 text-slate-500"
-                              />
-                            )}
-                          </Link>
-                        </li>
-                      );
-                    })}
-                </ul>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* BOTTOM COPYRIGHT ROW */}
-        <div className="pt-8 border-t border-slate-800/80 text-center sm:flex sm:items-center sm:justify-between text-xs text-slate-500">
-          <p>
-            © {currentYear} {data.siteTitle || "Ashray Foundation"}. All rights
-            reserved.
-          </p>
-          <div className="flex justify-center sm:justify-end items-center gap-4">
-            {data.footer
-              ?.find((section) => section.label === "Legal")
-              ?.links?.slice(0, 3)
-              .map((link, idx) => (
-                <Link
-                  key={idx}
-                  href={link.href}
-                  className="hover:text-orange-400 transition-colors duration-200"
-                >
-                  {link.label}
-                </Link>
+                  <Link
+                    href={link.href}
+                    className="transition-colors duration-200 hover:text-[#ff5a1f]"
+                  >
+                    {link.label}
+                  </Link>
+                </React.Fragment>
               ))}
+            </div>
           </div>
         </div>
+
       </div>
     </footer>
   );

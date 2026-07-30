@@ -75,11 +75,11 @@ export default function DonationSection({ data }: SupportSectionProps) {
       <div className="pointer-events-none absolute -right-20 bottom-0 h-96 w-96 rounded-full blur-[120px]" />
 
       {/* Outer Section Box */}
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-3 sm:px-6 lg:px-8">
         <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-red-200">
           <div className="grid grid-cols-1 items-center lg:grid-cols-12">
             {/* ================= LEFT CONTENT AREA ================= */}
-            <div className="z-10 flex flex-col items-center px-6 py-10 text-center sm:px-10 lg:col-span-6 lg:items-start lg:py-14 lg:pl-14 lg:pr-6 lg:text-left">
+            <div className="z-10 flex flex-col items-center md:px-6 px-3 py-10 text-center sm:px-10 lg:col-span-6 lg:items-start lg:py-14 lg:pl-14 lg:pr-6 lg:text-left">
               {/* Badge Pill with Icon */}
               <div className="inline-flex items-center gap-2.5">
                 <div>
@@ -108,12 +108,12 @@ export default function DonationSection({ data }: SupportSectionProps) {
               </div>
 
               {/* Description */}
-              <p className="mt-4 max-w-lg text-xs leading-relaxed text-slate-600 sm:text-sm">
+              <p className="md:mt-4 mt-2 max-w-lg text-xs leading-relaxed text-slate-600 sm:text-sm">
                 {description}
               </p>
 
               {/* Action Button */}
-              <div className="mt-6">
+              <div className="md:mt-6 mt-2">
                 <Link
                   href={button.href}
                   className="inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:-translate-y-0.5 hover:bg-[#e03d00] hover:shadow-lg"
@@ -125,7 +125,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
               </div>
 
               {/* Trust Badge */}
-              <div className="mt-5 flex items-center gap-2 text-[11px] font-semibold text-slate-500">
+              <div className="md:mt-5 mt-4 flex items-center gap-2 text-[11px] font-semibold text-slate-500">
                 <FiShield className="text-xs text-[#FF4500]" />
                 <span>100% Secure Donation | Make an Impact Today</span>
               </div>

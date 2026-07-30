@@ -1,7 +1,6 @@
 {
-  "siteTitle": "Ashray Foundation",
   "logo": "/image.png",
-  "tagline": "Building brighter futures, together.",
+  "siteTitle": "NGO website",
   "topBar": {
     "address": "14 Maple Grove Avenue, Nairobi",
     "phone": "+1 800-224-3391",
@@ -48,16 +47,16 @@
           "href": "/our-story"
         },
         {
-          "label": "Vision & Mission",
-          "href": "/vision-mission"
+          "label": "Services",
+          "href": "/service"
         },
         {
           "label": "Our Values",
           "href": "/our-values"
         },
         {
-          "label": "Leadership Team",
-          "href": "/leadership-team"
+          "label": "Team",
+          "href": "/team"
         },
         {
           "label": "Advisory Board",
@@ -75,7 +74,7 @@
     },
     {
       "label": "Careers",
-      "href": "/careers"
+      "href": "/career"
     },
     {
       "label": "Programs",
@@ -178,174 +177,138 @@
       ]
     }
   ],
-  "footer": [
-    {
-      "label": "About",
-      "href": "#",
+  "footer": {
+    "newsletter": {
+      "title": "Join Our Newsletter",
+      "description": "News letter dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.",
+      "placeholder": "Enter your email",
+      "buttonLabel": "Subscribe Now",
+      "buttonIcon": "arrow-right"
+    },
+
+    "contactInfo": {
+      "title": "Contact Info",
+      "location": {
+        "label": "LOCATION",
+        "address": "205 Fida Walinton, Tongo New York, Canada",
+        "icon": "map-pin"
+      },
+      "phone": {
+        "label": "CALL US",
+        "number": "987-0986-0987",
+        "href": "tel:98709860987",
+        "icon": "phone"
+      },
+      "email": {
+        "label": "EMAIL US",
+        "address": "support@huruma.com",
+        "href": "mailto:support@huruma.com",
+        "icon": "mail"
+      }
+    },
+
+    "support": {
+      "title": "Our Support",
       "links": [
         {
-          "label": "About Us",
-          "href": "/about-us"
+          "label": "Private Policies",
+          "href": "/privacy-policy"
         },
         {
-          "label": "Leadership",
-          "href": "/leadership-team"
+          "label": "Donate Now",
+          "href": "/donate"
+        },
+        {
+          "label": "Become A Volunteer",
+          "href": "/volunteer"
         },
         {
           "label": "Careers",
           "href": "/careers"
         },
         {
+          "label": "Contact Us",
+          "href": "/contact"
+        },
+        {
+          "label": "Paid Programs",
+          "href": "/paid-programs"
+        },
+        {
+          "label": "Partnership",
+          "href": "/partnership"
+        }
+      ]
+    },
+
+    "services": {
+      "title": "Our Services",
+      "links": [
+        {
+          "label": "Donate",
+          "href": "/donate"
+        },
+        {
+          "label": "Sponsor",
+          "href": "/sponsor"
+        },
+        {
+          "label": "Fundraise",
+          "href": "/fundraise"
+        },
+        {
           "label": "Volunteer",
           "href": "/volunteer"
+        },
+        {
+          "label": "Partner",
+          "href": "/partner"
+        },
+        {
+          "label": "Jobs",
+          "href": "/jobs"
+        },
+        {
+          "label": "Form",
+          "href": "/form"
         }
       ]
     },
-    {
-      "label": "Our Work",
-      "href": "#",
-      "links": [
+
+    "recentNews": {
+      "title": "Recent News",
+      "items": [
         {
-          "label": "Education",
-          "href": "/education"
+          "title": "Support About Poverty To Poor Family",
+          "category": "Poor",
+          "date": "22 January",
+          "image": "/images/news/news-1.jpg",
+          "href": "/news/support-about-poverty-to-poor-family"
         },
         {
-          "label": "Health",
-          "href": "/health"
-        },
-        {
-          "label": "Women Empowerment",
-          "href": "/our-work/women-empowerment"
-        },
-        {
-          "label": "Environment",
-          "href": "/our-work/environment"
-        },
-        {
-          "label": "Child Rights",
-          "href": "/our-work/child-rights"
-        },
-        {
-          "label": "Disaster Relief",
-          "href": "/our-work/disaster-relief"
+          "title": "Mostly Suffered School Boys Care",
+          "category": "Health",
+          "date": "24 February",
+          "image": "/images/news/news-2.jpg",
+          "href": "/news/mostly-suffered-school-boys-care"
         }
       ]
     },
-    {
-      "label": "Resources",
-      "href": "#",
+
+    "bottomBar": {
+      "copyright": "© Huruma is Proudly Owned by EvenTheme",
       "links": [
-        {
-          "label": "Blog",
-          "href": "/blogs"
-        },
-        {
-          "label": "News",
-          "href": "/news"
-        },
-        {
-          "label": "Reports",
-          "href": "/reports"
-        },
-        {
-          "label": "Downloads",
-          "href": "/downloads"
-        },
-        {
-          "label": "FAQs",
-          "href": "/faqs"
-        }
-      ]
-    },
-    {
-      "label": "Legal",
-      "href": "#",
-      "links": [
-        {
-          "label": "Privacy Policy",
-          "href": "/privacy-policy"
-        },
         {
           "label": "Terms & Conditions",
           "href": "/terms-conditions"
         },
         {
-          "label": "Site Map",
-          "href": "/site-map"
-        },
-        {
-          "label": "Cookie",
-          "href": "/cookie"
-        },
-        {
-          "label": "Disclaimer",
-          "href": "/disclaimer"
-        },
-        {
-          "label": "Accessibility",
-          "href": "/accessibility"
-        }
-      ]
-    },
-    {
-      "label": "Connect",
-      "href": "/connect",
-      "links": [
-        {
-          "label": "Facebook",
-          "href": "https://facebook.com"
-        },
-        {
-          "label": "Instagram",
-          "href": "https://instagram.com"
-        },
-        {
-          "label": "LinkedIn",
-          "href": "https://linkedin.com"
-        },
-        {
-          "label": "X (Twitter)",
-          "href": "https://twitter.com"
-        },
-        {
-          "label": "YouTube",
-          "href": "https://youtube.com"
+          "label": "Privacy Policy",
+          "href": "/privacy-policy"
         }
       ]
     }
-  ],
-  "contact": {
-    "address": "14 Harmony Lane, Sector 21, Dadri, Uttar Pradesh 203207",
-    "phone": "+91 98765 43210",
-    "email": "hello@ashrayfoundation.org"
   },
-  "socials": [
-    {
-      "label": "Facebook",
-      "href": "https://facebook.com",
-      "icon": "facebook"
-    },
-    {
-      "label": "Twitter",
-      "href": "https://twitter.com",
-      "icon": "twitter"
-    },
-    {
-      "label": "Instagram",
-      "href": "https://instagram.com",
-      "icon": "instagram"
-    },
-    {
-      "label": "LinkedIn",
-      "href": "https://linkedin.com",
-      "icon": "linkedin"
-    },
-    {
-      "label": "YouTube",
-      "href": "https://youtube.com",
-      "icon": "youtube"
-    }
-  ],
   "banner": [
     {
       "title": "It is more difficult to give money away",
@@ -539,63 +502,101 @@
       "showDecorations": true
     },
 
-    "breadcrumb": {
-      "home": {
-        "label": "Home",
-        "href": "/"
-      },
-      "current": {
-        "label": "About Us",
-        "href": "/about"
-      },
-      "title": "About Us",
-      "backgroundImage": {
-        "src": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
-        "alt": "Children receiving support"
-      },
+    "banner": {
+      "breadcrumbCurrent": "About us",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+      "alt": "About us",
       "overlay": true
     },
-      "values": {
-        "badge": "Our Values",
-        "title": "What Guides Everything We Do",
-        "items": [
-          {
-            "icon": "heart",
-            "title": "Compassion",
-            "description": "We put people first and approach every challenge with empathy, kindness, and respect."
-          },
-          {
-            "icon": "shield",
-            "title": "Integrity",
-            "description": "We remain accountable and transparent in the way we use resources and serve communities."
-          },
-          {
-            "icon": "users",
-            "title": "Inclusion",
-            "description": "We believe everyone deserves equal opportunities regardless of their background or circumstances."
-          },
-          {
-            "icon": "globe",
-            "title": "Sustainability",
-            "description": "We focus on solutions that strengthen communities and create lasting positive change."
-          }
-        ]
-      },
-      "cta": {
-        "badge": "Be Part of the Change",
-        "title": "Together, We Can Change Lives",
-        "description": "Your support can help us reach more children, strengthen communities, and create opportunities for a brighter future.",
-        "button": {
-          "label": "Donate Now",
-          "href": "/donate",
-          "icon": "heart"
+    "values": {
+      "badge": "Our Values",
+      "title": "What Guides Everything We Do",
+      "items": [
+        {
+          "icon": "heart",
+          "title": "Compassion",
+          "description": "We put people first and approach every challenge with empathy, kindness, and respect."
         },
-        "secondaryButton": {
-          "label": "Get Involved",
-          "href": "/volunteer",
-          "icon": "users"
+        {
+          "icon": "shield",
+          "title": "Integrity",
+          "description": "We remain accountable and transparent in the way we use resources and serve communities."
+        },
+        {
+          "icon": "users",
+          "title": "Inclusion",
+          "description": "We believe everyone deserves equal opportunities regardless of their background or circumstances."
+        },
+        {
+          "icon": "globe",
+          "title": "Sustainability",
+          "description": "We focus on solutions that strengthen communities and create lasting positive change."
         }
+      ]
+    },
+    "cta": {
+      "badge": "Be Part of the Change",
+      "title": "Together, We Can Change Lives",
+      "description": "Your support can help us reach more children, strengthen communities, and create opportunities for a brighter future.",
+      "button": {
+        "label": "Donate Now",
+        "href": "/donate",
+        "icon": "heart"
+      },
+      "secondaryButton": {
+        "label": "Get Involved",
+        "href": "/volunteer",
+        "icon": "users"
       }
+    }
+  },
+  "whyChooseUs": {
+    "badge": "WHY CHOOSE US",
+    "title": {
+      "line1": "Why Choose",
+      "line2": "Team Equal Care?"
+    },
+    "description": "We are committed to creating sustainable change in communities by focusing on education, healthcare, empowerment, and essential support for those in need.",
+    "image": "https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageAlt": "Children smiling together",
+    "imageOverlay": {
+      "icon": "heart-hand",
+      "text": "Every small contribution makes",
+      "highlight": "a big difference in someone's life."
+    },
+    "cards": [
+      {
+        "icon": "target",
+        "title": "Mission Driven",
+        "description": "We are focused on creating a lasting impact through our mission and values."
+      },
+      {
+        "icon": "users",
+        "title": "Transparent & Trusted",
+        "description": "We maintain complete transparency in our work and use of donations. You can trust us."
+      },
+      {
+        "icon": "heart-hand",
+        "title": "Impact Focused",
+        "description": "Our programs are designed to bring real, measurable, and lasting change."
+      },
+      {
+        "icon": "award",
+        "title": "Experienced Team",
+        "description": "Our team of dedicated professionals works tirelessly to bring hope and support to communities."
+      },
+      {
+        "icon": "handshake",
+        "title": "Community Centered",
+        "description": "We work closely with communities to understand their needs and create sustainable solutions."
+      },
+      {
+        "icon": "donation",
+        "title": "Secure Donations",
+        "description": "Your donations are safe with us and are used directly for the intended causes."
+      }
+    ]
   },
   "mission": {
     "badge": {
@@ -895,6 +896,11 @@
   "team": {
     "badge": {
       "label": "Meet Our Team"
+    },
+    "banner": {
+      "breadcrumbCurrent": "Our Team",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
 
     "heading": {
@@ -1713,6 +1719,654 @@
       },
       "image": "https://images.unsplash.com/photo-1559027615-028b8c6d5a29?auto=format&fit=crop&w=1400&q=85",
       "imageAlt": "Volunteers joining hands for a community initiative"
+    }
+  },
+  "career": {
+    "banner": {
+      "breadcrumbCurrent": "Career",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "badge": {
+      "label": "Join Our Team"
+    },
+    "heading": {
+      "title": "Build Your Career With Us",
+      "highlight": "Career"
+    },
+    "description": "Join a passionate team working together to create meaningful change and build a better future for communities.",
+    "jobs": [
+      {
+        "id": "program-manager",
+        "title": "Program Manager",
+        "location": "New Delhi, India",
+        "employmentType": "Full Time",
+        "department": "Programs",
+        "experience": "3+ Years",
+        "description": "Lead and manage community development programs while working closely with partners, volunteers and local communities.",
+        "image": "/images/career/program-manager.jpg",
+        "label": "Job details",
+        "href": "/job-detail"
+      },
+      {
+        "id": "fundraising-manager",
+        "title": "Fundraising Manager",
+        "location": "New Delhi, India",
+        "employmentType": "Full Time",
+        "department": "Fundraising",
+        "experience": "2+ Years",
+        "description": "Develop fundraising strategies, build donor relationships and create opportunities to increase our social impact.",
+        "image": "/images/career/fundraising-manager.jpg",
+        "label": "Job details",
+        "href": "/job-detail"
+      },
+      {
+        "id": "community-coordinator",
+        "title": "Community Coordinator",
+        "location": "Uttar Pradesh, India",
+        "employmentType": "Full Time",
+        "department": "Community Outreach",
+        "experience": "1+ Years",
+        "description": "Work directly with communities and coordinate field activities to support sustainable development initiatives.",
+        "image": "/images/career/community-coordinator.jpg",
+        "label": "Job details",
+        "href": "/job-detail"
+      },
+      {
+        "id": "communications-officer",
+        "title": "Communications Officer",
+        "location": "New Delhi, India",
+        "employmentType": "Full Time",
+        "department": "Communications",
+        "experience": "2+ Years",
+        "description": "Create compelling stories, manage communication campaigns and help share the impact of our work.",
+        "image": "/images/career/communications-officer.jpg",
+        "label": "Job details",
+        "href": "/job-detail"
+      },
+      {
+        "id": "communications-officer",
+        "title": "Communications Officer",
+        "location": "New Delhi, India",
+        "employmentType": "Full Time",
+        "department": "Communications",
+        "experience": "2+ Years",
+        "description": "Create compelling stories, manage communication campaigns and help share the impact of our work.",
+        "image": "/images/career/communications-officer.jpg",
+        "label": "Job details",
+        "href": "/job-detail"
+      }
+    ],
+    "cta": {
+      "title": "Don't See the Right Role?",
+      "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities..",
+      "button": {
+        "label": "Send Your Resume",
+        "href": "/"
+      }
+    }
+  },
+  "jobDetails": {
+    "id": "program-manager",
+    "banner": {
+      "breadcrumbCurrent": "Job Details",
+      "breadcrumbHome": "Career",
+      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "title": "Job Details",
+    "location": "New Delhi, India",
+    "employmentType": "Full Time",
+    "department": "Programs",
+    "experience": "3+ Years",
+    "vacancies": "1 Position",
+    "salary": "Competitive",
+    "applicationDeadline": "Open Until Filled",
+    "description": "We are looking for a passionate and experienced Program Manager to lead our community development programs and ensure their successful implementation.",
+    "overview": "The Program Manager will be responsible for planning, coordinating and monitoring programs while working closely with communities, partners, volunteers and internal teams.",
+    "responsibilities": [
+      "Plan and manage community development programs.",
+      "Coordinate with field teams, partners and community members.",
+      "Monitor program progress and prepare regular reports.",
+      "Manage program resources and timelines effectively.",
+      "Build strong relationships with stakeholders and partners.",
+      "Identify challenges and develop practical solutions."
+    ],
+    "requirements": [
+      "Bachelor's degree in social work, management, development studies or a related field.",
+      "Minimum 3 years of experience in program management or social development.",
+      "Strong communication and organizational skills.",
+      "Ability to manage multiple projects and deadlines.",
+      "Experience working with communities and partner organizations.",
+      "Strong problem-solving and leadership abilities."
+    ],
+    "skills": [
+      "Program Management",
+      "Team Leadership",
+      "Communication",
+      "Community Development",
+      "Project Planning",
+      "Stakeholder Management"
+    ],
+    "perks": [
+      {
+        "title": "Health Insurance",
+        "icon": "FiShield"
+      },
+      {
+        "title": "Career Growth",
+        "icon": "FiTrendingUp"
+      },
+      {
+        "title": "Supportive Culture",
+        "icon": "FiHeart"
+      },
+      {
+        "title": "Work-Life Balance",
+        "icon": "FiClock"
+      },
+      {
+        "title": "Performance Bonuses",
+        "icon": "FiGift"
+      }
+    ],
+    "questionsSection": {
+      "title": "Have Questions?",
+      "subtitle": "We're here to help you find the right opportunity.",
+      "buttonLabel": "Contact HR Team",
+      "email": "careers@company.com"
+    },
+    "shareSection": {
+      "title": "Share this Job",
+      "subtitle": "Know someone who might be perfect for this role?",
+      "links": {
+        "linkedin": "https://linkedin.com/share",
+        "facebook": "https://facebook.com/share",
+        "twitter": "https://twitter.com/share",
+        "whatsapp": "https://wa.me/?text="
+      }
+    },
+    "cta": {
+      "title": "Don't See the Right Role?",
+      "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities.",
+      "button": {
+        "label": "Send Your Resume",
+        "href": "/contact"
+      }
+    },
+    "applyButton": {
+      "label": "Apply Now",
+      "href": "/apply-form"
+    }
+  },
+  "careerApplication": {
+    "banner": {
+      "breadcrumbCurrent": "Apply Now",
+      "breadcrumbHome": "Career",
+      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "badge": {
+      "label": "Join Our Team"
+    },
+    "heading": {
+      "title": "Apply For This Position",
+      "highlight": "Apply"
+    },
+    "description": "Complete the application form below and our team will review your application. We look forward to learning more about you.",
+    "fields": [
+      {
+        "name": "fullName",
+        "label": "Full Name",
+        "type": "text",
+        "placeholder": "Enter your full name",
+        "required": true
+      },
+      {
+        "name": "email",
+        "label": "Email Address",
+        "type": "email",
+        "placeholder": "Enter your email address",
+        "required": true
+      },
+      {
+        "name": "phone",
+        "label": "Phone Number",
+        "type": "tel",
+        "placeholder": "Enter your phone number",
+        "required": true
+      },
+      {
+        "name": "position",
+        "label": "Position Applying For",
+        "type": "select",
+        "placeholder": "Select a position",
+        "required": true,
+        "options": [
+          {
+            "label": "Program Manager",
+            "value": "program-manager"
+          },
+          {
+            "label": "Fundraising Manager",
+            "value": "fundraising-manager"
+          },
+          {
+            "label": "Community Coordinator",
+            "value": "community-coordinator"
+          },
+          {
+            "label": "Communications Officer",
+            "value": "communications-officer"
+          }
+        ]
+      },
+      {
+        "name": "experience",
+        "label": "Years of Experience",
+        "type": "text",
+        "placeholder": "e.g. 3 years",
+        "required": true
+      },
+      {
+        "name": "resume",
+        "label": "Upload Resume",
+        "type": "file",
+        "placeholder": "Choose your resume",
+        "required": true
+      },
+      {
+        "name": "coverLetter",
+        "label": "Cover Letter",
+        "type": "textarea",
+        "placeholder": "Tell us why you would be a good fit for this position",
+        "required": true
+      }
+    ],
+    "button": {
+      "label": "Submit Application",
+      "icon": "arrow-right"
+    },
+    "note": "By submitting this application, you agree that the information provided may be used for recruitment purposes."
+  },
+  "jobApply": {
+    "banner": {
+      "breadcrumbCurrent": "Job Application",
+      "breadcrumbHome": "Job Details",
+      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+    "formSections": {
+      "personalInformation": {
+        "step": 1,
+        "title": "Personal Information",
+        "fields": {
+          "fullName": {
+            "label": "Full Name",
+            "required": true,
+            "placeholder": "Enter your full name"
+          },
+          "emailAddress": {
+            "label": "Email Address",
+            "required": true,
+            "placeholder": "Enter your email"
+          },
+          "phoneNumber": {
+            "label": "Phone Number",
+            "required": true,
+            "placeholder": "Enter your phone number"
+          },
+          "currentLocation": {
+            "label": "Current Location",
+            "required": true,
+            "placeholder": "Enter your city"
+          }
+        }
+      },
+      "professionalInformation": {
+        "step": 2,
+        "title": "Professional Information",
+        "fields": {
+          "currentJobTitle": {
+            "label": "Current Job Title",
+            "required": false,
+            "placeholder": "Enter your current job title"
+          },
+          "totalExperience": {
+            "label": "Total Experience",
+            "required": true,
+            "placeholder": "Select experience"
+          },
+          "relevantExperience": {
+            "label": "Relevant Experience",
+            "required": true,
+            "placeholder": "Select experience"
+          },
+          "noticePeriod": {
+            "label": "Notice Period",
+            "required": true,
+            "placeholder": "Select notice period"
+          }
+        }
+      },
+      "uploadDocuments": {
+        "step": 3,
+        "title": "Upload Documents",
+        "subtitle": "Upload your latest resume and any other relevant documents.",
+        "fields": {
+          "resume": {
+            "label": "Upload Your Resume",
+            "required": true,
+            "dragDropText": "Drag & drop your file here, or",
+            "actionText": "browse",
+            "supportedFormats": "Supported formats: PDF, DOC, DOCX (Max size: 5MB)"
+          },
+          "coverLetter": {
+            "label": "Cover Letter (Optional)",
+            "required": false,
+            "uploadTitle": "Upload Cover Letter",
+            "dragDropText": "Drag & drop your file here, or",
+            "actionText": "browse",
+            "supportedFormats": "Supported formats: PDF, DOC, DOCX (Max size: 5MB)"
+          }
+        }
+      },
+      "additionalInformation": {
+        "step": 4,
+        "title": "Additional Information",
+        "fields": {
+          "whyInterested": {
+            "label": "Why are you interested in this role?",
+            "required": false,
+            "placeholder": "Write your answer here...",
+            "maxLength": 500,
+            "counterText": "0/500"
+          },
+          "hearAboutUs": {
+            "label": "How did you hear about this job?",
+            "required": false,
+            "placeholder": "Select an option"
+          }
+        }
+      }
+    },
+    "actions": {
+      "backButton": {
+        "label": "Back to Job Details",
+        "href": "/job-detail"
+      },
+      "submitButton": {
+        "label": "Submit Application"
+      }
+    },
+    "sidebar": {
+      "jobSummary": {
+        "title": "Job Summary",
+        "details": [
+          {
+            "label": "Job Title:",
+            "value": "Program Manager"
+          },
+          {
+            "label": "Job Type:",
+            "value": "Full-time"
+          },
+          {
+            "label": "Department:",
+            "value": "Programs"
+          },
+          {
+            "label": "Location:",
+            "value": "New Delhi, India"
+          },
+          {
+            "label": "Experience:",
+            "value": "3-5 Years"
+          },
+          {
+            "label": "Salary:",
+            "value": "₹6,000,000 – ₹8,000,000 PA"
+          }
+        ]
+      },
+      "tipsBeforeYouApply": {
+        "title": "Tips Before You Apply",
+        "tips": [
+          "Update your resume with relevant skills and experience.",
+          "Highlight achievements that match the job requirements.",
+          "Keep your contact information up to date."
+        ]
+      },
+      "equalOpportunityEmployer": {
+        "title": "Equal Opportunity Employer",
+        "description": "We value diversity and are committed to creating an inclusive environment for all employees."
+      },
+      "needHelp": {
+        "title": "Need Help?",
+        "description": "If you have any questions, feel free to contact our HR team.",
+        "button": {
+          "label": "Contact HR Team",
+          "href": "mailto:hr@company.com"
+        }
+      }
+    }
+  },
+  "servicesPage": {
+    "banner": {
+      "backgroundImage": "https://images.unsplash.com/photo-1618477460923-47da30de9ca4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "breadcrumbCurrent": "Services",
+      "breadcrumbHome": "Home"
+    },
+    "header": {
+      "subTag": "TOGETHER WE SERVE",
+      "titlePrefix": "Our ",
+      "titleHighlight": "Services",
+      "description": "We are committed to creating a positive impact in the lives of people and communities through our dedicated services and initiatives.",
+      "sectionTag": "WHAT WE DO"
+    },
+
+    "items": [
+      {
+        "id": "education-for-all",
+        "title": "Education for All",
+        "description": "We provide quality education and learning opportunities for underprivileged children to build a brighter future.",
+        "image": "https://images.unsplash.com/photo-1734542380831-1b843c852c5e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiBookOpen",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "healthcare-wellness",
+        "title": "Healthcare & Wellness",
+        "description": "We organize health camps and wellness programs to ensure better health and hygiene for communities.",
+        "image": "https://images.unsplash.com/photo-1621353880594-70b5fd44ecb3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiHeart",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "environment-protection",
+        "title": "Environment Protection",
+        "description": "We work towards a greener planet by promoting tree plantation, clean energy, and sustainable living.",
+        "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=1013&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiFeather",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "women-empowerment",
+        "title": "Women Empowerment",
+        "description": "We empower women with skills, training, and resources to help them become independent and confident.",
+        "image": "https://images.unsplash.com/photo-1593526613712-7b4b9a707330?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiUser",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "food-nutrition",
+        "title": "Food & Nutrition",
+        "description": "We provide nutritious food and support to fight hunger and malnutrition in our communities.",
+        "image": "https://media.istockphoto.com/id/524903696/photo/poor-indian-children-asking-for-food-india.jpg?s=1024x1024&w=is&k=20&c=4PGbQnx1BN2XaC9Y2BdWtKUOBwz7s4EnNY_QkAW2JFc=",
+        "icon": "FiSmile",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "elderly-care",
+        "title": "Elderly Care",
+        "description": "We care for our elders by providing support, medical care, and companionship for a dignified life.",
+        "image": "https://images.unsplash.com/photo-1762955911431-4c44c7c3f408?q=80&w=821&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiHeartHandshake",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "disaster-relief",
+        "title": "Disaster Relief",
+        "description": "We respond quickly in times of crisis to provide immediate relief and rehabilitation support.",
+        "image": "https://images.unsplash.com/photo-1558448495-5ef3fce92344?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiShield",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "youth-development",
+        "title": "Youth Development",
+        "description": "We inspire and guide youth through education, mentorship, and skill development programs.",
+        "image": "https://images.unsplash.com/photo-1621354429610-d9be6a144b10?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiAward",
+        "link": "/services-detail",
+        "label": "Learn More"
+      },
+      {
+        "id": "community-development",
+        "title": "Community Development",
+        "description": "We work with communities to improve living conditions and create opportunities for sustainable growth.",
+        "image": "https://images.unsplash.com/photo-1542315099045-93937d70c67a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "icon": "FiUsers",
+        "link": "/services-detail",
+        "label": "Learn More"
+      }
+    ],
+
+    "callToAction": {
+      "titlePrefix": "Together, We Can Create a ",
+      "titleHighlight": "Better Tomorrow",
+      "description": "Your support helps us continue our mission and bring smiles, hope, and change to those who need it most.",
+      "buttonText": "Get Involved",
+      "buttonLink": "/get-involved",
+      "bannerImage": "https://images.unsplash.com/photo-1509099863731-ef4bff19e808?q=80&w=872&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    }
+  },
+  "serviceDetailPage": {
+    "banner": {
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+      "breadcrumbCurrent": "Services Details",
+      "breadcrumbHome": "Home"
+    },
+    "aboutSection": {
+      "tag": "ABOUT THIS SERVICE",
+      "title": "Building Brighter Futures",
+      "paragraphs": [
+        "We work to provide underprivileged children with access to quality education, school supplies, and a safe learning environment. Our programs focus on bridging the education gap and empowering children to dream, learn, and achieve.",
+        "Through scholarships, teacher training, and learning resources, we are helping children build the skills they need to create a better tomorrow."
+      ],
+      "features": [
+        {
+          "id": "1",
+          "title": "Quality Education",
+          "icon": "FiGraduationCap"
+        },
+        {
+          "id": "2",
+          "title": "Learning Resources",
+          "icon": "FiBook"
+        },
+        {
+          "id": "3",
+          "title": "Inclusive Opportunities",
+          "icon": "FiUsers"
+        }
+      ],
+      "image": "https://images.unsplash.com/photo-1610500796385-3ffc1ae2f046?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageAlt": "Children learning together"
+    },
+
+    "whatWeDoSection": {
+      "tag": "OUR PROGRAMS",
+      "title": "What We Do",
+      "cards": [
+        {
+          "id": "1",
+          "title": "School Support",
+          "description": "We support schools with infrastructure, books, and teaching aids to create better learning spaces.",
+          "icon": "FiHome"
+        },
+        {
+          "id": "2",
+          "title": "Scholarship Programs",
+          "description": "We provide scholarships to meritorious and deserving students to help them continue their education.",
+          "icon": "FiAward"
+        },
+        {
+          "id": "3",
+          "title": "Teacher Training",
+          "description": "We organize training sessions for teachers to improve teaching quality and student outcomes.",
+          "icon": "FiPresentation"
+        },
+        {
+          "id": "4",
+          "title": "Child Development",
+          "description": "We conduct activities that enhance life skills, creativity, and confidence among children.",
+          "icon": "FiUserCheck"
+        }
+      ]
+    },
+
+    "impactSection": {
+      "tag": "OUR IMPACT",
+      "title": "Making a Difference Together",
+      "stats": [
+        {
+          "id": "1",
+          "value": "25,000+",
+          "label": "Children Educated",
+          "icon": "FiUsers"
+        },
+        {
+          "id": "2",
+          "value": "150+",
+          "label": "Schools Supported",
+          "icon": "FiHome"
+        },
+        {
+          "id": "3",
+          "value": "10,000+",
+          "label": "Scholarships Awarded",
+          "icon": "FiBookOpen"
+        },
+        {
+          "id": "4",
+          "value": "300+",
+          "label": "Teachers Trained",
+          "icon": "FiUser"
+        }
+      ]
+    },
+
+    "getInvolvedSection": {
+      "tag": "GET INVOLVED",
+      "title": "Help Us Spread the Light of Education",
+      "description": "Your support can change a child's life. Join us in building a world where every child has the opportunity to learn and grow.",
+      "buttons": {
+        "primary": {
+          "label": "Donate Now",
+          "href": "/donate"
+        },
+        "secondary": {
+          "label": "Volunteer With Us",
+          "href": "/volunteer"
+        }
+      },
+      "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "imageAlt": "Supporting children's education"
     }
   }
 }

@@ -77,23 +77,23 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
   const { badge, heading, description, members, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-12 mt-5 lg:py-12">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 mt-0 lg:py-12">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
 
       <div className="-top-15 -left-15 sm:h-32 sm:w-32 bg-orange-200 rounded-full absolute pointer-events-none"></div>
 
-      <div className="absolute top-30 rotate-6 right-60">
+      <div className="absolute md:top-30 top-16 rotate-6 md:right-60 right-5">
         <HandDrawnHeart />
       </div>
       {/* Decorative Grid Dots */}
-      <div className="absolute top-28 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 md:left-6 left-0 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-28 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 md:right-6 right-0 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
@@ -127,7 +127,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
         </div>
 
         {/* ================= TEAM MEMBERS GRID ================= */}
-        <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
+        <div className="md:mt-12 mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {members.map((member: TeamMember) => (
             <div
               key={member.name}
@@ -191,7 +191,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
 
         {/* ================= BOTTOM CTA BANNER ================= */}
         {cta && (
-          <div className="relative mt-12 overflow-hidden rounded-2xl bg-[#fdf4f0] px-6 py-8 shadow-sm sm:px-10 lg:px-20">
+          <div className="relative md:mt-12 mt-5 overflow-hidden rounded-2xl bg-[#fdf4f0] md:px-6 px-2 py-8 shadow-sm sm:px-10 lg:px-20">
             {/* Foliage / Floral Corner Accents */}
             {/* ================= LEFT LEAF BRANCH ================= */}
             <div className="absolute left-0 bottom-0 top-0 h-full w-24 sm:w-32 text-orange-200/50 pointer-events-none">
@@ -269,7 +269,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
               </svg>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center justify-between gap-6 sm:flex-row">
+            <div className="relative  z-10 flex flex-col items-center justify-between md:gap-6 gap-2 sm:flex-row">
               {/* Left Side: Heart Avatar + Text */}
               <div className="flex items-center gap-5 text-center sm:text-left">
                 {/* Layered Heart Icon Badge */}
@@ -280,7 +280,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
                   </div>
                 </div>
 
-                <div className="ml-3">
+                <div className="md:ml-3">
                   <h3 className="text-lg font-extrabold text-slate-900 sm:text-xl">
                     {cta.title}
                   </h3>

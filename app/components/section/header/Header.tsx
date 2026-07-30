@@ -82,7 +82,7 @@ export default function Header({
   return (
     <>
       {/* ================= HEADER WRAPPER ================= */}
-      <div className="sticky top-0 z-50 w-full bg-slate-900 shadow-md">
+      <div className="fixed top-0 z-50 w-full bg-slate-900 shadow-md">
         {/* ================= TOP BAR ================= */}
         {topBar && (
           <div className="hidden bg-white text-xs text-slate-900 sm:block">

@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Header from "./components/section/header/Header";
 import Footer from "./components/section/footer/Footer";
-import data from "@/data/data.json"
+import data from "@/data/data.json";
 import { Inter } from "next/font/google";
-import SmoothScroll from "./components/shared/SmoothScroll"
+import SmoothScroll from "./components/shared/SmoothScroll";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,16 +23,13 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html
-      lang="en"
-      className={`${inter.variable} h-full antialiased`}
-    >
+    <html lang="en" className={`${inter.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">
-        <SmoothScroll/>
-        <Header data={data} topBar={data.topBar}/>
-        {children}
-        <Footer data={data}/>
-        </body>
+        <SmoothScroll />
+        <Header data={data} topBar={data.topBar} />
+        <main className="pt-16 sm:pt-24">{children}</main>
+        <Footer data={data.footer} />
+      </body>
     </html>
   );
 }

@@ -149,14 +149,14 @@ export default function AboutSection({ data }: AboutSectionProps) {
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-16 ">
+    <section className="relative overflow-hidden bg-white md:py-16 py-5 ">
       {/* Background Semi-Circle Decoration */}
       <BackgroundDecorations />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           {/* ================= LEFT CONTENT ================= */}
-          <div className="lg:col-span-6">
+          <div className="lg:col-span-6 text-center md:text-start">
             {/* Badge Sub-title */}
             <div className="inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
               <HiOutlineHeart className="text-lg" />
@@ -164,11 +164,11 @@ export default function AboutSection({ data }: AboutSectionProps) {
             </div>
 
             {/* Heading */}
-            <h2 className="mt-2 text-3xl font-bold text-[#23122c] md:text-[45px] leading-tight">
+            <h2 className="md:mt-2 text-2xl font-bold text-[#23122c] md:text-[45px] md:leading-tight">
               {title.line1}
             </h2>
 
-            <div className="my-4 h-2 w-[70px] rounded-xl bg-orange-500" />
+            <div className="md:y-4 h-2  hidden md:block md:justify-start w-[70px] rounded-xl bg-orange-500" />
 
             {/* Primary Text */}
             <p className="mt-2 text-base font-semibold text-orange-600 sm:text-[17px]">
@@ -181,14 +181,14 @@ export default function AboutSection({ data }: AboutSectionProps) {
             </p>
 
             {/* Buttons */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="md:mt-8 mt-4 flex justify-center md:justify-start flex-wrap items-center md:gap-4 gap-1">
               {buttons.map((button) => {
                 const primary = button.variant === "primary";
                 return (
                   <Link
                     key={button.label}
                     href={button.href}
-                    className={`group inline-flex items-center gap-2 rounded-[30px] px-8 py-3.5 text-[15px] font-bold transition-all duration-300 ${
+                    className={`group inline-flex items-center md:gap-2 gap-1 rounded-[30px] md:px-8 px-2 md:py-3.5 py-2 text-[15px] font-bold transition-all duration-300 ${
                       primary
                         ? "bg-orange-600 text-white shadow-lg shadow-red-500/10 hover:bg-[#23122c]"
                         : "bg-[#23122c] text-white shadow-md hover:bg-orange-600"
@@ -204,7 +204,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
           </div>
 
           {/* ================= RIGHT GALLERY ================= */}
-          <div className="relative mt-10 lg:col-span-6 lg:mt-0">
+          <div className="relative md:mt-10 mt-0 lg:col-span-6 lg:mt-0">
             {/* Outer container establishing height and proportions */}
             <div className="relative mx-auto h-[400px] w-full max-w-lg sm:h-[480px] lg:max-w-none">
               {/* ================= 1. TOP LEFT IMAGE ================= */}
@@ -287,9 +287,9 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
         {/* ================= STATISTICS SMALL BAR ================= */}
         {statistics2 && statistics2.length > 0 && (
-          <div className="mt-5 w-full lg:w-3/4">
+          <div className="md:mt-5 mt-2 w-full lg:w-3/4">
             <div className="rounded-3xl border border-slate-100 bg-white/90 backdrop-blur-sm px-3 py-3 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.07)]">
-              <div className="grid grid-cols-1 divide-y divide-slate-100 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
+              <div className="grid  divide-y divide-slate-100 grid-cols-2 sm:grid-cols-3 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
                 {statistics2.map((item: AboutStatistic2, index: number) => {
                   const { icon, theme } = getStatIconAndTheme(item.icon, index);
 
@@ -327,9 +327,9 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
         {/* ================= STATISTICS MAIN BAR ================= */}
         {statistics && statistics.length > 0 && (
-          <div className="mt-10">
+          <div className="md:mt-10 mt-0">
             <div className="rounded-3xl border border-slate-100 bg-white/90 backdrop-blur-sm px-6 py-6 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.07)] sm:px-8 sm:py-8">
-              <div className="grid grid-cols-1 divide-y divide-slate-100 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
+              <div className="grid divide-y divide-slate-100 grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
                 {statistics.map((item: AboutStatistic, index: number) => {
                   const { icon, theme } = getStatIconAndTheme(item.icon, index);
 

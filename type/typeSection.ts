@@ -46,7 +46,6 @@ export interface PopupData {
 
 export interface HeaderDataProps {
   siteTitle: string;
-  tagline: string;
   logo: string;
   header: NavItem[];
   PopupData: PopupData;
@@ -70,31 +69,69 @@ export interface TopBarData {
   headerCta: HeaderCTA
 }
 
-
-
 export interface FooterLink {
   label: string;
   href: string;
 }
 
-export interface FooterSection {
+export interface NewsletterData {
+  title: string;
+  description: string;
+  placeholder: string;
+  buttonLabel: string;
+  buttonIcon: string;
+}
+
+export interface ContactInfoItem {
   label: string;
-  href: string;
+  icon: string;
+  address?: string;
+  number?: string;
+  href?: string;
+}
+
+export interface ContactInfoData {
+  title: string;
+  location: ContactInfoItem;
+  phone: ContactInfoItem;
+  email: ContactInfoItem;
+}
+
+export interface FooterSupportData {
+  title: string;
   links: FooterLink[];
 }
 
+export interface FooterServicesData {
+  title: string;
+  links: FooterLink[];
+}
 
-export interface SocialLink {
-  label: string;
+export interface RecentNewsItem {
+  title: string;
+  category: string;
+  date: string;
+  image: string;
   href: string;
-  icon: string;
+}
+
+export interface RecentNewsData {
+  title: string;
+  items: RecentNewsItem[];
+}
+
+export interface BottomBarData {
+  copyright: string;
+  links: FooterLink[];
 }
 
 export interface FooterData {
-  siteTitle?: string;
-  tagline?: string;
-  footer: FooterSection[];
-  socials: SocialLink[];
+  newsletter: NewsletterData;
+  contactInfo: ContactInfoData;
+  support: FooterSupportData;
+  services: FooterServicesData;
+  recentNews: RecentNewsData;
+  bottomBar: BottomBarData;
 }
 
 export interface BannerCTA {
@@ -203,35 +240,12 @@ export interface AboutBackground {
 }
 
 // ABOUT PAGE - BREADCRUMB
-export interface AboutBreadcrumbItem {
-  label: string;
-  href: string;
-}
-
-export interface AboutBreadcrumbImage {
-  src: string;
+export interface AboutBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
   alt: string;
-}
-
-export interface AboutBreadcrumb {
-  home: AboutBreadcrumbItem;
-  current: AboutBreadcrumbItem;
-  title: string;
-  backgroundImage: AboutBreadcrumbImage;
   overlay: boolean;
-}
-
-// ABOUT PAGE - VALUES
-export interface AboutValueItem {
-  icon: string;
-  title: string;
-  description: string;
-}
-
-export interface AboutValues {
-  badge: string;
-  title: string;
-  items: AboutValueItem[];
 }
 
 export interface AboutCTAButton {
@@ -258,11 +272,8 @@ export interface AboutSection {
   statistics2: AboutStatistic2[];
   background: AboutBackground;
   cta: AboutCTA;
-  values: AboutValues;
-
-
   // About Page additions
-  breadcrumb: AboutBreadcrumb;
+  banner: AboutBanner;
 }
 
 // =========================
@@ -270,6 +281,32 @@ export interface AboutSection {
 // =========================
 export interface AboutSectionProps {
   data: AboutSection;
+}
+
+// why choose us 
+export interface WhyChooseCard {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface WhyChooseImageOverlay {
+  icon: string;
+  text: string;
+  highlight: string;
+}
+
+export interface WhyChooseUsData {
+  badge: string;
+  title: {
+    line1: string;
+    line2: string;
+  };
+  description: string;
+  image: string;
+  imageAlt: string;
+  imageOverlay: WhyChooseImageOverlay;
+  cards: WhyChooseCard[];
 }
 // ================= Mission Section =================
 
@@ -484,6 +521,12 @@ export interface TeamMember {
   socials: TeamSocial[];
 }
 
+export interface teamBanner{
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
 export interface TeamButton {
   label: string;
   href: string;
@@ -500,16 +543,13 @@ export interface TeamSectionData {
   badge: {
     label: string;
   };
-
   heading: {
     title: string;
     highlight: string;
   };
-
   description: string;
-
+  banner: teamBanner;
   members: TeamMember[];
-
   cta: TeamCTA;
 }
 
@@ -776,7 +816,7 @@ export interface ContactBreadcrumb {
   overlay: boolean;
 }
 
-export interface ContactInfoItem {
+export interface ContactInfoitem {
   label: string;
   value: string;
 }
@@ -784,10 +824,10 @@ export interface ContactInfoItem {
 export interface ContactOffice {
   title: string;
   description: string;
-  address: ContactInfoItem;
-  phone: ContactInfoItem;
-  email: ContactInfoItem;
-  hours: ContactInfoItem;
+  address: ContactInfoitem;
+  phone: ContactInfoitem;
+  email: ContactInfoitem;
+  hours: ContactInfoitem;
 }
 
 export interface ContactField {
@@ -903,4 +943,431 @@ export interface SuccessStoriesData {
 
 export interface SuccessStoriesProps {
   data: SuccessStoriesData;
+}
+
+// career
+export interface CareerBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+export interface CareerBadge {
+  label: string;
+}
+
+export interface CareerHeading {
+  title: string;
+  highlight: string;
+}
+
+export interface CareerJob {
+  id: string;
+  title: string;
+  location: string;
+  employmentType: string;
+  department: string;
+  experience: string;
+  description: string;
+  image: string;
+  href: string;
+  label: string;
+}
+
+export interface CareerButton {
+  label: string;
+  href: string;
+}
+
+export interface CareerCTA {
+  badge: string;
+  title: string;
+  description: string;
+  button: CareerButton;
+}
+
+export interface CareerPageData {
+  banner: CareerBanner;
+  badge: CareerBadge;
+  heading: CareerHeading;
+  description: string;
+  jobs: CareerJob[];
+  cta: CareerCTA;
+}
+
+export interface CareerPageProps {
+  data: CareerPageData;
+}
+
+// job details
+export interface JobDetailsBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+export interface JobDetailsButton {
+  label: string;
+  href: string;
+}
+
+export interface JobPerk {
+  title: string;
+  icon: string;
+}
+
+export interface QuestionsSection {
+  title: string;
+  subtitle: string;
+  buttonLabel: string;
+  email: string;
+}
+
+export interface ShareSection {
+  title: string;
+  subtitle: string;
+  links: {
+    linkedin: string;
+    facebook: string;
+    twitter: string;
+    whatsapp: string;
+  };
+}
+
+export interface JobDetailsLabels {
+  home: string;
+  jobOverview: string;
+  keyResponsibilities: string;
+  requirements: string;
+  whatWeOffer: string;
+  jobSummary: string;
+  jobTitle: string;
+  jobType: string;
+  department: string;
+  location: string;
+  experience: string;
+  vacancies: string;
+  salary: string;
+}
+
+export interface CareerCTA {
+  title: string;
+  description: string;
+  button: JobDetailsButton;
+}
+
+export interface JobDetailsData {
+  id: string;
+
+  labels: JobDetailsLabels;
+
+  banner: JobDetailsBanner;
+
+  title: string;
+
+  location: string;
+  employmentType: string;
+  department: string;
+  experience: string;
+  vacancies?: string;
+
+  salary: string;
+  applicationDeadline: string;
+
+  description: string;
+  overview: string;
+
+  responsibilities: string[];
+  requirements: string[];
+  skills: string[];
+
+  perks?: JobPerk[];
+
+  questionsSection?: QuestionsSection;
+
+  shareSection?: ShareSection;
+
+  cta?: CareerCTA;
+
+  applyButton: JobDetailsButton;
+}
+
+export interface JobDetailsProps {
+  data: JobDetailsData;
+}
+// application form
+export type CareerApplicationFieldType =
+  | "text"
+  | "email"
+  | "tel"
+  | "select"
+  | "file"
+  | "textarea";
+
+export interface CareerApplicationOption {
+  label: string;
+  value: string;
+}
+
+export interface CareerApplicationField {
+  name: string;
+  label: string;
+  type: CareerApplicationFieldType;
+  placeholder: string;
+  required: boolean;
+  options?: CareerApplicationOption[];
+}
+
+export interface CareerApplicationBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+export interface CareerApplicationBadge {
+  label: string;
+}
+
+export interface CareerApplicationHeading {
+  title: string;
+  highlight: string;
+}
+
+export interface CareerApplicationButton {
+  label: string;
+  icon: string;
+}
+
+export interface CareerApplicationData {
+  banner: CareerApplicationBanner;
+  badge: CareerApplicationBadge;
+  heading: CareerApplicationHeading;
+  description: string;
+  fields: CareerApplicationField[];
+  button: CareerApplicationButton;
+  note: string;
+}
+
+export interface CareerApplicationProps {
+  data: CareerApplicationData;
+}
+
+export interface InputField {
+  label: string;
+  required: boolean;
+  placeholder: string;
+}
+
+export interface TextareaField extends InputField {
+  maxLength?: number;
+  counterText?: string;
+}
+
+export interface FileUploadField {
+  label: string;
+  required: boolean;
+  uploadTitle?: string;
+  dragDropText: string;
+  actionText: string;
+  supportedFormats: string;
+}
+
+export interface JobSummaryDetail {
+  label: string;
+  value: string;
+}
+
+export interface JobApplyData {
+  jobApply: {
+    formSections: {
+      personalInformation: {
+        step: number;
+        title: string;
+        fields: {
+          fullName: InputField;
+          emailAddress: InputField;
+          phoneNumber: InputField;
+          currentLocation: InputField;
+        };
+      };
+      professionalInformation: {
+        step: number;
+        title: string;
+        fields: {
+          currentJobTitle: InputField;
+          totalExperience: InputField;
+          relevantExperience: InputField;
+          noticePeriod: InputField;
+        };
+      };
+      uploadDocuments: {
+        step: number;
+        title: string;
+        subtitle: string;
+        fields: {
+          resume: FileUploadField;
+          coverLetter: FileUploadField;
+        };
+      };
+      additionalInformation: {
+        step: number;
+        title: string;
+        fields: {
+          whyInterested: TextareaField;
+          hearAboutUs: InputField;
+        };
+      };
+    };
+    actions: {
+      backButton: {
+        label: string;
+        href: string;
+      };
+      submitButton: {
+        label: string;
+      };
+    };
+    sidebar: {
+      jobSummary: {
+        title: string;
+        details: JobSummaryDetail[];
+      };
+      tipsBeforeYouApply: {
+        title: string;
+        tips: string[];
+      };
+      equalOpportunityEmployer: {
+        title: string;
+        description: string;
+      };
+      needHelp: {
+        title: string;
+        description: string;
+        button: {
+          label: string;
+          href: string;
+        };
+      };
+    };
+  };
+}
+
+export interface ServiceHeader {
+  subTag: string;
+  titlePrefix: string;
+  titleHighlight: string;
+  description: string;
+  sectionTag: string;
+}
+
+export interface ServicesBanner{
+  backgroundImage: string;
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+}
+
+export interface ServiceItem {
+  id: string;
+  title: string;
+  description: string;
+  image: string;
+  icon: string;
+  link: string;
+  label:string;
+}
+
+export interface CallToActionData {
+  titlePrefix: string;
+  titleHighlight: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+  bannerImage: string;
+}
+
+export interface ServicesPageData {
+  header: ServiceHeader;
+  items: ServiceItem[];
+  callToAction: CallToActionData;
+  banner: ServicesBanner;
+}
+
+export interface ServicesPageProps {
+  data: ServicesPageData;
+}
+
+export interface ServiceDetailFeature {
+  id: string;
+  title: string;
+  icon: string;
+}
+
+export interface ServiceDetailAbout {
+  tag: string;
+  title: string;
+  paragraphs: string[];
+  features: ServiceDetailFeature[];
+  image: string;
+  imageAlt: string;
+}
+
+export interface ServiceDetailProgram {
+  id: string;
+  title: string;
+  description: string;
+  icon: string;
+}
+
+export interface ServiceDetailWhatWeDo {
+  tag: string;
+  title: string;
+  cards: ServiceDetailProgram[];
+}
+
+export interface ServiceDetailStat {
+  id: string;
+  value: string;
+  label: string;
+  icon: string;
+}
+
+export interface ServiceDetailImpact {
+  tag: string;
+  title: string;
+  stats: ServiceDetailStat[];
+}
+
+export interface ServiceDetailsBanner{
+  backgroundImage:string;
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+}
+
+export interface ServiceDetailButton {
+  label: string;
+  href: string;
+}
+
+export interface ServiceDetailGetInvolved {
+  tag: string;
+  title: string;
+  description: string;
+  buttons: {
+    primary: ServiceDetailButton;
+    secondary: ServiceDetailButton;
+  };
+  image: string;
+  imageAlt: string;
+}
+
+export interface ServiceDetailPageData {
+  aboutSection: ServiceDetailAbout;
+  whatWeDoSection: ServiceDetailWhatWeDo;
+  impactSection: ServiceDetailImpact;
+  banner : ServiceDetailsBanner;
+  getInvolvedSection: ServiceDetailGetInvolved;
+}
+
+export interface ServiceDetailPageProps {
+  data: ServiceDetailPageData;
 }

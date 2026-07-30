@@ -68,7 +68,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
           <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" />
 
           {/* Description */}
-          <p className="mt-2 max-w-2xl text-md  text-slate-900 sm:text-base">
+          <p className="mt-2 max-w-2xl md:text-md text-sm  text-slate-900 sm:text-base">
             {description}
           </p>
         </div>

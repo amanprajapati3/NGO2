@@ -86,7 +86,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
   const { badge, heading, description, items, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 pt-12">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:pt-12 pt-5">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
@@ -94,18 +94,18 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
       {/* circle design */}
       <div className="-top-15 -left-15 sm:h-32 sm:w-32 bg-orange-200 rounded-full absolute pointer-events-none"></div>
       {/* Decorative Grid Dots */}
-      <div className="absolute top-28 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 md:left-6 left-0 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-28 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-28 top-5 md:right-6 right-0 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
 
-      <div className="absolute top-40 rotate-6 right-60">
+      <div className="absolute md:top-40 top-10 rotate-6 md:right-60 right-5">
         <HandDrawnHeart />
       </div>
 
@@ -124,7 +124,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
           </h2>
 
           {/* Subheading Divider Line */}
-          <div className="mt-3 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          <div className="md:mt-3 mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span>Making Impact Every Day</span>
@@ -208,7 +208,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
 
         {/* ================= BOTTOM CTA BANNER ================= */}
         {cta && (
-          <div className="relative mt-12 overflow-hidden rounded-2xl bg-[#fdf4f0] px-6 py-8 shadow-sm sm:px-10 lg:px-20">
+          <div className="relative md:mt-12 mt-5 overflow-hidden rounded-2xl bg-[#fdf4f0] md:px-6 px-0 md:py-8 py-2 shadow-sm sm:px-10 lg:px-20">
             {/* Background Decorative Foliage / Leaf Accents */}
             {/* ================= LEFT LEAF BRANCH ================= */}
             <div className="absolute left-0 bottom-0 top-0 h-full w-24 sm:w-32 text-orange-200/50 pointer-events-none">
@@ -286,7 +286,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
               </svg>
             </div>
 
-            <div className="relative z-10 flex flex-col items-center justify-between gap-6 sm:flex-row">
+            <div className="relative z-10 flex flex-col items-center justify-between md:gap-6 gap-2 sm:flex-row">
               {/* Left Side: Avatar + Text */}
               <div className="flex items-center gap-5 text-center sm:text-left">
                 {/* Double Ring Heart Avatar */}
@@ -295,7 +295,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                     <div className="text-2xl" ><ConcentricHeartBadge /></div>
                 </div>
 
-                <div className="ml-5">
+                <div className="md:ml-5">
                   <h3 className="text-lg font-extrabold text-slate-900 sm:text-xl">
                     {cta.title}
                   </h3>

@@ -27,7 +27,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white pt-12 pb-4">
+    <section className="relative overflow-hidden bg-white md:pt-12 pt-8 pb-4">
       <div className="mx-auto max-w-7xl md:px-5 px-2">
         
         {/* Header */}
@@ -41,7 +41,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
             <span className="text-yellow-600">{data.title.highlight}</span>
           </h2>
 
-          <p className="mt-1 md:leading-relaxed text-gray-900">
+          <p className="md:mt-1 text-sm md:text-md md:leading-relaxed text-gray-900">
             {data.subtitle}
           </p>
         </div>
@@ -67,7 +67,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
           </button>
 
           {/* Story Content Wrapper */}
-          <div className="grid items-center gap-10 px-6 md:grid-cols-2 md:px-12">
+          <div className="grid items-center gap-10 px-2 md:grid-cols-2 md:px-12">
             
             {/* Story Image */}
             <div className="relative mx-auto h-[380px] w-full max-w-md overflow-hidden rounded-3xl shadow-lg">
@@ -135,7 +135,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
         </div>
 
         {/* Bottom CTA Button */}
-        <div className="mt-14 text-center">
+        <div className="md:mt-14 mt-4 text-center">
           <Link
             href={data.button.href}
             className="inline-flex rounded-full bg-orange-500 px-8 py-3.5 text-sm font-semibold text-white shadow-md transition hover:bg-orange-600 active:scale-95"

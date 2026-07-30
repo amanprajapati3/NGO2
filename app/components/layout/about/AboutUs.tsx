@@ -17,12 +17,12 @@ import { BsAwardFill } from "react-icons/bs";
 import { HiOutlineHeart, HiOutlineShieldCheck } from "react-icons/hi2";
 import { LuGraduationCap, LuHeartHandshake } from "react-icons/lu";
 import { useEffect, useRef, useState } from "react";
+import WhyChooseUs from "../choose/Choose";
 import MissionSection from "../../homelayout/Mission";
-import type { MissionData } from "@/type/typeSection";
+import type { MissionData, WhyChooseUsData } from "@/type/typeSection";
 
 const mission = data.mission as MissionData;
-
-
+const whychooseus = data.whyChooseUs as WhyChooseUsData
 
 import type {
   AboutSectionProps,
@@ -30,25 +30,17 @@ import type {
   AboutStatistic2,
 } from "@/type/typeSection";
 
-// =====================================================
 // BACKGROUND DECORATIONS
-// =====================================================
-
 const BackgroundDecorations = () => {
   return (
     <div className="pointer-events-none absolute inset-0 overflow-hidden z-0">
       {/* Semi-circular decorative shape behind top-right image extending to stats section */}
-      <div 
-        className="absolute -right-20 -top-20 h-[850px] w-[300 rounded-full bg-[#fdeee9]/60 md:h-[950px] ] lg:-right-32 lg:-top-32 lg:h-[1100px] w-[500px]"
-      />
+      <div className="absolute -right-20 -top-20 h-[850px] w-[300 rounded-full bg-[#fdeee9]/60 md:h-[950px] ] lg:-right-32 lg:-top-32 lg:h-[1100px] w-[500px]" />
     </div>
   );
 };
 
-// =====================================================
 // BUTTON ICON
-// =====================================================
-
 const getButtonIcon = (icon: string) => {
   switch (icon) {
     case "heart":
@@ -62,10 +54,7 @@ const getButtonIcon = (icon: string) => {
   }
 };
 
-// =====================================================
 // STAT ICON
-// =====================================================
-
 const getStatIconAndTheme = (icon: string, index: number) => {
   const themes = [
     {
@@ -152,10 +141,7 @@ const getValueIcon = (icon: string) => {
   }
 };
 
-// =====================================================
 // ANIMATED NUMBER
-// =====================================================
-
 const AnimatedNumber = ({ value }: { value: string }) => {
   const [count, setCount] = useState(0);
   const [started, setStarted] = useState(false);
@@ -224,19 +210,17 @@ export default function AboutUs({ data }: AboutSectionProps) {
     gallery,
     statistics,
     statistics2,
-    breadcrumb,
-    values,
-    cta,
+    banner,
   } = data;
 
   return (
     <main className="w-full overflow-hidden">
-      {breadcrumb && (
+      {banner && (
         <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
           {/* Background Image */}
           <Image
-            src={breadcrumb.backgroundImage.src}
-            alt={breadcrumb.backgroundImage.alt}
+            src={banner.backgroundImage}
+            alt={banner.alt}
             fill
             priority
             className="object-cover"
@@ -244,7 +228,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
           />
 
           {/* Overlay */}
-          {breadcrumb.overlay && (
+          {banner.overlay && (
             <div className="absolute inset-0 bg-[#23122c]/65" />
           )}
 
@@ -252,20 +236,20 @@ export default function AboutUs({ data }: AboutSectionProps) {
           <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
             {/* Title */}
             <h1 className="text-4xl mb-2 font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              {breadcrumb.title}
+              {banner.breadcrumbCurrent}
             </h1>
             {/* Breadcrumb */}
             <div className="mb-0 flex items-center justify-center gap-2 text-sm text-white/80">
               <Link
-                href={breadcrumb.home.href}
+                href="/"
                 className="transition-colors hover:text-orange-400"
               >
-                {breadcrumb.home.label}
+                {banner.breadcrumbHome}
               </Link>
               <span>/</span>
 
               <span className="text-orange-400">
-                {breadcrumb.current.label}
+                {banner.breadcrumbCurrent}
               </span>
             </div>
             {/* Decorative Line */}
@@ -275,10 +259,10 @@ export default function AboutUs({ data }: AboutSectionProps) {
       )}
 
       {/* main about section */}
-      <section className="relative overflow-hidden bg-white md:pt-12 pt-7">
+      <section className="relative overflow-hidden bg-white md:pt-12 pt-5">
         <BackgroundDecorations />
-        <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
+        <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
+          <div className="grid text-center md:text-start items-center gap-10 lg:grid-cols-12 lg:gap-12">
             {/* LEFT CONTENT */}
             <div className="lg:col-span-6">
               {/* Badge */}
@@ -288,12 +272,12 @@ export default function AboutUs({ data }: AboutSectionProps) {
               </div>
 
               {/* Heading */}
-              <h2 className="mt-2 text-3xl font-bold leading-tight text-[#23122c] md:text-[45px]">
+              <h2 className="md:mt-2 text-2xl font-bold leading-tight text-[#23122c] md:text-[45px]">
                 {title.line1}
               </h2>
 
               {/* Divider */}
-              <div className="my-4 h-2 w-[70px] rounded-xl bg-orange-500" />
+              <div className="my-4 h-2 hidden md:block w-[70px] rounded-xl bg-orange-500" />
 
               {/* Primary */}
               <p className="mt-2 text-base font-semibold text-orange-600 sm:text-[17px]">
@@ -301,19 +285,19 @@ export default function AboutUs({ data }: AboutSectionProps) {
               </p>
 
               {/* Secondary */}
-              <p className="mt-2 text-sm leading-7 text-[#666666] sm:text-[15px]">
+              <p className="mt-2 text-sm md:leading-7 text-[#666666] sm:text-[15px]">
                 {description.secondary}
               </p>
 
               {/* Buttons */}
-              <div className="mt-8 flex flex-wrap items-center gap-4">
+              <div className="md:mt-8 mt-4 flex justify-center md:justify-start flex-wrap items-center md:gap-4 gap-2">
                 {buttons.map((button) => {
                   const primary = button.variant === "primary";
                   return (
                     <Link
                       key={button.label}
                       href={button.href}
-                      className={`group inline-flex items-center gap-2 rounded-[30px] px-8 py-3.5 text-[15px] font-bold transition-all duration-300 ${
+                      className={`group inline-flex items-center md:gap-2 gag-1 rounded-[30px] md:px-8 px-3 md:py-3.5 py-2 text-[15px] font-bold transition-all duration-300 ${
                         primary
                           ? "bg-orange-600 text-white shadow-lg shadow-orange-500/10 hover:bg-[#23122c]"
                           : "bg-[#23122c] text-white shadow-md hover:bg-orange-600"
@@ -329,7 +313,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
             </div>
 
             {/* RIGHT GALLERY  */}
-            <div className="relative mt-10 lg:col-span-6 lg:mt-0">
+            <div className="relative md:mt-10 mt-0 lg:col-span-6 lg:mt-0">
               <div className="relative mx-auto h-[400px] w-full max-w-lg sm:h-[480px] lg:max-w-none">
                 {/* Top Image */}
                 <div className="absolute left-8 top-0 z-0 h-[220px] w-[68%] overflow-hidden rounded-2xl shadow-sm sm:h-[270px] sm:w-[68%]">
@@ -401,9 +385,9 @@ export default function AboutUs({ data }: AboutSectionProps) {
 
           {/* statistics 2 */}
           {statistics2?.length > 0 && (
-            <div className="mt-8 w-full lg:w-1/2 ">
+            <div className="md:mt-8 mt-4 w-full lg:w-1/2 ">
               <div className="rounded-3xl  bg-white/90 px-3 py-3 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.07)] backdrop-blur-sm">
-                <div className="grid grid-cols-1 divide-y divide-slate-100 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-3 lg:divide-x lg:divide-slate-200">
+                <div className="grid  divide-y divide-slate-100 grid-cols-2 sm:divide-y-0 lg:grid-cols-3 lg:divide-x lg:divide-slate-200">
                   {statistics2.map((item: AboutStatistic2, index: number) => {
                     const { icon, theme } = getStatIconAndTheme(
                       item.icon,
@@ -442,15 +426,15 @@ export default function AboutUs({ data }: AboutSectionProps) {
       {/* statistics */}
       {statistics?.length > 0 && (
         <section className="bg-[#fafafa]">
-          <div className="mx-auto max-w-7xl  px-4 sm:px-6 lg:px-8">
-            <div className="rounded-3xl 0 bg-white px-6 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.07)] sm:px-8 sm:py-8">
-              <div className="grid grid-cols-1 divide-y divide-slate-100 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
+          <div className="mx-auto max-w-7xl px-0 sm:px-6 lg:px-8">
+            <div className="rounded-3xl 0 bg-white  px-6 shadow-[0_15px_40px_-15px_rgba(0,0,0,0.07)] sm:px-8 sm:py-8">
+              <div className="grid divide-y gap-2 divide-slate-100 grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-slate-200">
                 {statistics.map((item: AboutStatistic, index: number) => {
                   const { icon, theme } = getStatIconAndTheme(item.icon, index);
                   return (
                     <div
                       key={item.label}
-                      className={`flex items-center gap-4 py-5 sm:py-3 lg:py-0 ${
+                      className={`flex justify-center md:justify-start items-center gap-4 py-5 sm:py-3 lg:py-0 ${
                         index !== 0 ? "lg:pl-8" : ""
                       } ${index !== statistics.length - 1 ? "lg:pr-8" : ""}`}
                     >
@@ -460,7 +444,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
                         {icon}
                       </div>
                       <div className="flex flex-col">
-                        <h3 className="text-2xl font-bold text-[#23122c] sm:text-3xl">
+                        <h3 className="md:text-2xl text-lg font-bold text-[#23122c] sm:text-3xl">
                           <AnimatedNumber value={item.value} />
                         </h3>
                         <p className="text-sm font-medium leading-tight text-[#666666] sm:text-base">
@@ -476,11 +460,11 @@ export default function AboutUs({ data }: AboutSectionProps) {
         </section>
       )}
 
-      {/* value section */}
+      {/* value section
       {values && (
-        <section className="relative overflow-hidden bg-white py-16">
+        <section className="relative overflow-hidden bg-white md:py-16 py-5">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            {/* Heading */}
+            
             <div className="mx-auto max-w-2xl text-center">
               <div className="inline-flex items-center gap-2 text-sm font-semibold text-orange-600">
                 <HiOutlineHeart className="text-lg" />
@@ -489,28 +473,28 @@ export default function AboutUs({ data }: AboutSectionProps) {
               <h2 className="mt-0 text-3xl font-bold leading-tight text-[#23122c] md:text-4xl lg:text-[42px]">
                 {values.title}
               </h2>
-              <div className="mx-auto mt-0 h-1.5 w-16 rounded-full bg-orange-500" />
+              <div className="mx-auto hidden md:block mt-0 h-1.5 w-16 rounded-full bg-orange-500" />
             </div>
 
-            {/* Values Grid */}
-            <div className="mt-8 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
+       
+            <div className="md:mt-8 mt-0 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {values.items.map((item) => (
                 <div
                   key={item.title}
-                  className="group rounded-3xl border border-slate-100 bg-white p-7 text-center shadow-[0_15px_40px_-20px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
+                  className="group rounded-3xl border border-slate-100 bg-white md:p-7 p-2 text-center shadow-[0_15px_40px_-20px_rgba(0,0,0,0.12)] transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
                 >
-                  {/* Icon */}
+                 
                   <div className="mx-auto flex h-16 w-16 items-center justify-center rounded-2xl bg-orange-50 text-orange-500 transition-all duration-300 group-hover:bg-orange-500 group-hover:text-white">
                     {getValueIcon(item.icon)}
                   </div>
 
-                  {/* Title */}
+               
                   <h3 className="mt-5 text-xl font-bold text-[#23122c]">
                     {item.title}
                   </h3>
 
-                  {/* Description */}
-                  <p className="mt-3 text-sm leading-6 text-[#666666]">
+                 
+                  <p className="mt-3 text-sm md:leading-6 text-[#666666]">
                     {item.description}
                   </p>
                 </div>
@@ -518,35 +502,40 @@ export default function AboutUs({ data }: AboutSectionProps) {
             </div>
           </div>
         </section>
-      )}
-    <MissionSection data={mission} />
-{cta && (
-        <section className="relative overflow-hidden bg-[#23122c] py-8 ">
-          {/* Decorative circles */}
+      )} */}
+
+      <div className="mt-5">
+      <MissionSection data={mission} />
+
+      </div>
+
+      <WhyChooseUs data={whychooseus} />
+      
+      {/* {cta && (
+        <section className="relative overflow-hidden bg-[#23122c] md:py-8 py-4 ">
+      
           <div className="pointer-events-none absolute -right-32 -top-32 h-80 w-80 rounded-full border border-orange-400/20" />
           <div className="pointer-events-none absolute -bottom-40 -left-20 h-96 w-96 rounded-full border border-orange-400/10" />
-          <div className="relative z-10 mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-            {/* Badge */}
+          <div className="relative z-10 mx-auto max-w-5xl px-1 text-center sm:px-6 lg:px-8">
+
             <div className="inline-flex items-center gap-2 text-sm font-semibold text-orange-400">
               <HiOutlineHeart className="text-lg" />
               <span>{cta.badge}</span>
             </div>
 
-            {/* Title */}
             <h2 className="mt-0 text-3xl font-bold text-white sm:text-4xl lg:text-5xl">
               {cta.title}
             </h2>
 
-            {/* Description */}
             <p className="mx-auto mt-2 max-w-2xl text-sm text-white/70 sm:text-base">
               {cta.description}
             </p>
 
-            {/* Buttons */}
-            <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
+
+            <div className="md:mt-8 my-4 flex flex-wrap items-center justify-center md:gap-4 gap-2">
               <Link
                 href={cta.button.href}
-                className="group inline-flex items-center gap-2 rounded-full bg-orange-500 px-8 py-3.5 text-sm font-bold text-white shadow-lg transition-all duration-300 hover:bg-orange-600 hover:-translate-y-0.5"
+                className="group inline-flex items-center gap-2 rounded-full bg-orange-500 md:px-8 px-2 md:py-3.5 py-2 text-sm font-bold text-white shadow-lg transition-all duration-300 hover:bg-orange-600 hover:-translate-y-0.5"
               >
                 {getButtonIcon(cta.button.icon)}
                 <span>{cta.button.label}</span>
@@ -554,7 +543,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
               </Link>
               <Link
                 href={cta.secondaryButton.href}
-                className="group inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 px-8 py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-[#23122c]"
+                className="group inline-flex items-center gap-2 rounded-full border border-white/20 bg-white/10 md:px-8 p-2 md:py-3.5 text-sm font-bold text-white backdrop-blur-sm transition-all duration-300 hover:bg-white hover:text-[#23122c]"
               >
                 {getButtonIcon(cta.secondaryButton.icon)}
                 <span>{cta.secondaryButton.label}</span>
@@ -563,8 +552,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
             </div>
           </div>
         </section>
-      )}
+      )} */}
     </main>
-
   );
 }

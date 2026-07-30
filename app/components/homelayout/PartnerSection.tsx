@@ -12,7 +12,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
   const logos = [...partnersList, ...partnersList];
 
   return (
-    <section className="relative overflow-hidden bg-gray-100 md:py-8 py-4">
+    <section className="relative overflow-hidden bg-gray-100 py-8">
       {/* Background */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute right-0 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />
@@ -36,7 +36,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
             <span className="h-[1px] w-10 bg-orange-300" />
           </div>
           {/* Description */}
-          <p className="mx-auto mt-1 max-w-3xl text-md  text-slate-900">
+          <p className="mx-auto mt-2 max-w-3xl md:text-md text-sm text-slate-900">
             {description}
           </p>
         </div>

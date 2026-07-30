@@ -25,24 +25,24 @@ export default function GallerySection({ data }: GallerySectionProps) {
       : images.filter((item) => item.category === activeCategory);
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-8">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
 
       {/* Decorative Grid Dots */}
-      <div className="absolute top-10 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-10 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-10 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute md:top-10 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
 
-      <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative mx-auto max-w-7xl px-4 pt-3 md:pt-0 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Label */}
@@ -73,7 +73,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
           </p>
 
           {/* ================= CATEGORY FILTER TABS ================= */}
-          <div className="mt-8 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
+          <div className="md:mt-8 mt-3 flex flex-wrap items-center justify-center gap-2 sm:gap-3">
             {categories.map((category, idx) => {
               const isActive = activeCategory === category.value;
 
@@ -81,7 +81,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 <div key={category.value} className="flex items-center">
                   <button
                     onClick={() => setActiveCategory(category.value)}
-                    className={`rounded-full px-5 py-2 text-xs cursor-pointer font-bold transition-all duration-300 ${
+                    className={`rounded-full px-5 py-2 text-xs border cursor-pointer font-bold transition-all duration-300 ${
                       isActive
                         ? "bg-[#FF4500] text-white shadow-md shadow-orange-500/20"
                         : "text-slate-600 hover:text-[#FF4500]"
@@ -101,7 +101,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
         </div>
 
         {/* ================= GALLERY BENTO GRID ================= */}
-        <div className="mt-10 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+        <div className="md:mt-10 mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
           {filteredImages.map((item: GalleryImage, index: number) => {
             // First item spans 2 rows on large screens (tall feature card)
             const isTall = index === 0;
