@@ -33,7 +33,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const activeTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-12 lg:py-16">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8 md:py-12">
       {/* Soft Radial Background Glow */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
 
@@ -47,7 +47,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
           </div>
 
           {/* Main Title */}
-          <h2 className="mt-2 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
             {title?.line1 || "Don’t Believe Us?"}{" "}
             <span className="text-[#1E1B4B]">
               {title?.highlight || "See Review"}
@@ -56,7 +56,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
           {/* Subtitle / Description */}
           {(description || subtitle) && (
-            <p className="mt-3 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+            <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
               {description || subtitle}
             </p>
           )}

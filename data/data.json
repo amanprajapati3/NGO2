@@ -37,35 +37,39 @@
     },
     {
       "label": "About",
-      "href": "/about",
+      "href": "#",
       "children": [
         {
+          "label": "About us",
+          "href": "/about-us"
+        },
+        {
           "label": "Our Story",
-          "href": "/about/our-story"
+          "href": "/our-story"
         },
         {
           "label": "Vision & Mission",
-          "href": "/about/vision-mission"
+          "href": "/vision-mission"
         },
         {
           "label": "Our Values",
-          "href": "/about/our-values"
+          "href": "/our-values"
         },
         {
           "label": "Leadership Team",
-          "href": "/about/leadership-team"
+          "href": "/leadership-team"
         },
         {
           "label": "Advisory Board",
-          "href": "/about/advisory-board"
+          "href": "/advisory-board"
         },
         {
           "label": "CEO Message",
-          "href": "/about/ceo-message"
+          "href": "/ceo-message"
         },
         {
           "label": "Awards & Recognition",
-          "href": "/about/awards-recognition"
+          "href": "/awards-recognition"
         }
       ]
     },
@@ -75,71 +79,71 @@
     },
     {
       "label": "Programs",
-      "href": "/programs",
+      "href": "#",
       "children": [
         {
           "label": "Community Development",
-          "href": "/programs/community-development"
+          "href": "/community-development"
         },
         {
           "label": "Government Projects",
-          "href": "/programs/government-projects"
+          "href": "/government-projects"
         },
         {
           "label": "International Projects",
-          "href": "/programs/international-projects"
+          "href": "/international-projects"
         },
         {
           "label": "Current Programs",
-          "href": "/programs/current-programs"
+          "href": "/current-programs"
         },
         {
           "label": "Ongoing Projects",
-          "href": "/programs/ongoing-projects"
+          "href": "/ongoing-projects"
         },
         {
           "label": "Completed Projects",
-          "href": "/programs/completed-projects"
+          "href": "/completed-projects"
         }
       ]
     },
     {
       "label": "Our Work",
-      "href": "/our-work",
+      "href": "#",
       "children": [
         {
           "label": "Education",
-          "href": "/our-work/education"
+          "href": "/education"
         },
         {
           "label": "Healthcare",
-          "href": "/our-work/healthcare"
+          "href": "/healthcare"
         },
         {
           "label": "Women Empowerment",
-          "href": "/our-work/women-empowerment"
+          "href": "/women-empowerment"
         },
         {
           "label": "Child Welfare",
-          "href": "/our-work/child-welfare"
+          "href": "/child-welfare"
         },
         {
           "label": "Disaster Relief",
-          "href": "/our-work/disaster-relief"
+          "href": "/disaster-relief"
         },
         {
           "label": "Human Rights",
-          "href": "/our-work/human-rights"
+          "href": "/human-rights"
         },
         {
           "label": "Elderly Care",
-          "href": "/our-work/elderly-care"
+          "href": "/elderly-care"
         }
       ]
     },
     {
       "label": "Events",
-      "href": "/events",
+      "href": "#",
       "children": [
         {
           "label": "Upcoming Events",
@@ -157,7 +161,7 @@
     },
     {
       "label": "Contact",
-      "href": "/contact",
+      "href": "#",
       "children": [
         {
           "label": "Contact Us",
@@ -177,15 +181,15 @@
   "footer": [
     {
       "label": "About",
-      "href": "/about",
+      "href": "#",
       "links": [
         {
           "label": "About Us",
-          "href": "/about"
+          "href": "/about-us"
         },
         {
           "label": "Leadership",
-          "href": "/about/leadership-team"
+          "href": "/leadership-team"
         },
         {
           "label": "Careers",
@@ -193,21 +197,21 @@
         },
         {
           "label": "Volunteer",
-          "href": "/get-involved/volunteer"
+          "href": "/volunteer"
         }
       ]
     },
     {
       "label": "Our Work",
-      "href": "/our-work",
+      "href": "#",
       "links": [
         {
           "label": "Education",
-          "href": "/our-work/education"
+          "href": "/education"
         },
         {
           "label": "Health",
-          "href": "/our-work/health"
+          "href": "/health"
         },
         {
           "label": "Women Empowerment",
@@ -229,53 +233,57 @@
     },
     {
       "label": "Resources",
-      "href": "/resources",
+      "href": "#",
       "links": [
         {
           "label": "Blog",
-          "href": "/resources/blogs"
+          "href": "/blogs"
         },
         {
           "label": "News",
-          "href": "/resources/news"
+          "href": "/news"
         },
         {
           "label": "Reports",
-          "href": "/resources/reports"
+          "href": "/reports"
         },
         {
           "label": "Downloads",
-          "href": "/resources/downloads"
+          "href": "/downloads"
         },
         {
           "label": "FAQs",
-          "href": "/resources/faqs"
+          "href": "/faqs"
         }
       ]
     },
     {
       "label": "Legal",
-      "href": "/legal",
+      "href": "#",
       "links": [
         {
           "label": "Privacy Policy",
-          "href": "/legal/privacy-policy"
+          "href": "/privacy-policy"
         },
         {
           "label": "Terms & Conditions",
-          "href": "/legal/terms-conditions"
+          "href": "/terms-conditions"
         },
         {
-          "label": "Cookie Policy",
-          "href": "/legal/cookie-policy"
+          "label": "Site Map",
+          "href": "/site-map"
+        },
+        {
+          "label": "Cookie",
+          "href": "/cookie"
         },
         {
           "label": "Disclaimer",
-          "href": "/legal/disclaimer"
+          "href": "/disclaimer"
         },
         {
           "label": "Accessibility",
-          "href": "/legal/accessibility"
+          "href": "/accessibility"
         }
       ]
     },
@@ -436,13 +444,16 @@
       "icon": "about",
       "label": "About Us"
     },
+
     "title": {
       "line1": "An International Independent Charity Organization"
     },
+
     "description": {
       "primary": "Your support will help us to make life better living for poor vulnerable children.",
       "secondary": "We are a non-profit organization working for children and communities in need. Through education, healthcare, and essential support, we aim to create a world where every child has the opportunity to live a healthy, happy, and dignified life."
     },
+
     "buttons": [
       {
         "label": "Donate Now",
@@ -457,13 +468,14 @@
         "icon": "users"
       }
     ],
+
     "gallery": {
       "mainImage": {
         "src": "https://images.unsplash.com/photo-1652858672796-960164bd632b?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "alt": "Children smiling together"
       },
       "topImage": {
-        "src": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "src": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
         "alt": "Shelter for families"
       },
       "sideImage": {
@@ -480,6 +492,25 @@
         "highlight": "Change"
       }
     },
+
+    "statistics2": [
+      {
+        "icon": "heart",
+        "value": "150+",
+        "label": "Healthcare Campus"
+      },
+      {
+        "icon": "users",
+        "value": "100+",
+        "label": "Vilage Reached"
+      },
+      {
+        "icon": "education",
+        "value": "350+",
+        "label": "Education Program"
+      }
+    ],
+
     "statistics": [
       {
         "icon": "shield",
@@ -502,10 +533,69 @@
         "label": "Communities Served"
       }
     ],
+
     "background": {
       "showGradient": true,
       "showDecorations": true
-    }
+    },
+
+    "breadcrumb": {
+      "home": {
+        "label": "Home",
+        "href": "/"
+      },
+      "current": {
+        "label": "About Us",
+        "href": "/about"
+      },
+      "title": "About Us",
+      "backgroundImage": {
+        "src": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+        "alt": "Children receiving support"
+      },
+      "overlay": true
+    },
+      "values": {
+        "badge": "Our Values",
+        "title": "What Guides Everything We Do",
+        "items": [
+          {
+            "icon": "heart",
+            "title": "Compassion",
+            "description": "We put people first and approach every challenge with empathy, kindness, and respect."
+          },
+          {
+            "icon": "shield",
+            "title": "Integrity",
+            "description": "We remain accountable and transparent in the way we use resources and serve communities."
+          },
+          {
+            "icon": "users",
+            "title": "Inclusion",
+            "description": "We believe everyone deserves equal opportunities regardless of their background or circumstances."
+          },
+          {
+            "icon": "globe",
+            "title": "Sustainability",
+            "description": "We focus on solutions that strengthen communities and create lasting positive change."
+          }
+        ]
+      },
+      "cta": {
+        "badge": "Be Part of the Change",
+        "title": "Together, We Can Change Lives",
+        "description": "Your support can help us reach more children, strengthen communities, and create opportunities for a brighter future.",
+        "button": {
+          "label": "Donate Now",
+          "href": "/donate",
+          "icon": "heart"
+        },
+        "secondaryButton": {
+          "label": "Get Involved",
+          "href": "/volunteer",
+          "icon": "users"
+        }
+      }
   },
   "mission": {
     "badge": {

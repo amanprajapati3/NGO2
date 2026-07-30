@@ -27,27 +27,63 @@ const getCauseIcon = (icon: string) => {
       return <FiHeart className="text-xl text-white" />;
   }
 };
+export const HandDrawnHeart = ({ 
+  className = "w-24 h-24", 
+  color = "#FFD5CE" 
+}: { 
+  className?: string; 
+  color?: string; 
+}) => {
+  return (
+    <svg
+      className={className}
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M 33 78 C 50 63 85 49 85 38 C 85 27 70 23 60 32 C 55 36 53 41 53 41 C 53 41 50 33 46 29 C 40 23 27 25 27 38 C 27 52 50 72 75 85"
+        stroke={color}
+        strokeWidth="3.5"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  );
+};
 
 export default function CausesSection({ data }: CausesSectionProps) {
   const { badge, title, description, items, exploreButton, cta } = data;
 
   return (
-    <section className="relative overflow-hidden py-12">
-      {/* Top Left / Bottom Right Light Glow Background Decorators */}
-      <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
-      <div className="absolute -right-20 -bottom-20 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
+    <section className="relative overflow-hidden pt-12">
 
+       
+      {/* Top Left / Bottom Right Light Glow Background Decorators */}
+      <div className="absolute -left-20 -top-20 h-80 w-80 rounded-full bg-orange-100 blur-[100px] pointer-events-none" />
+      <div className="absolute -right-20 -bottom-20 h-96 w-96 rounded-full bg-orange-100 blur-[120px] pointer-events-none" />
+
+
+       {/* circle design top right and left */}
+       <div className="-top-15 -left-15 sm:h-32 sm:w-32 bg-orange-200 rounded-full absolute pointer-events-none">
+       </div>
+
+       <div className="absolute top-40 rotate-6 right-60">
+        <HandDrawnHeart/>
+       </div>
+      
       {/* Background Decorative Grid Dots */}
-      <div className="absolute top-12 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute top-28 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-12 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute top-28 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
+      
 
       <div className="relative mx-auto ">
         {/* ================= HEADER SECTION ================= */}
@@ -191,46 +227,109 @@ export default function CausesSection({ data }: CausesSectionProps) {
         </div>
 
         {/* ================= CTA BANNER ================= */}
-        {cta && (
-          <div className="relative mt-5 overflow-hidden border bg-[#1c1830]  py-12 text-center text-white shadow-2xl  lg:py-16">
-            {/* CTA Background Image Overlay */}
-            {cta.backgroundImage && (
-              <Image
-                src={cta.backgroundImage}
-                alt="CTA Background"
-                fill
-                className="object-cover opacity-10 pointer-events-none"
-                sizes="100vw"
-              />
-            )}
+{cta && (
+  <div className="relative mt-5 h-[260px] sm:h-[280px] overflow-hidden bg-[#232042] py-10 text-center text-white shadow-2xl  flex items-center justify-center">
+    
+    {/* ================= BACKGROUND LEAVES (EXACT SCALE & POSITIONS) ================= */}
+    <div className="absolute inset-0 pointer-events-none select-none overflow-hidden flex justify-between items-center px-2 sm:px-6">
+      
+      {/* 1. FAR LEFT: Upward Curved Split Leaf */}
+      <svg
+        className="h-[85%] w-auto text-[#3C3666] -ml-4"
+        viewBox="0 0 100 200"
+        fill="currentColor"
+      >
+        <path d="M 15 200 C 10 140 30 70 80 10 C 95 40 90 90 65 140 C 45 175 30 190 15 200 Z" />
+        <path d="M 15 200 Q 40 100 80 10" stroke="#232042" strokeWidth="2.5" fill="none" />
+        {/* Cuts */}
+        <path d="M 60 55 L 82 65 L 65 80 Z" fill="#232042" />
+        <path d="M 50 95 L 72 108 L 54 120 Z" fill="#232042" />
+        <path d="M 38 140 L 58 152 L 42 162 Z" fill="#232042" />
+      </svg>
 
-            {/* Glowing Accent Orbs */}
-            <div className="absolute -left-10 -top-10 h-64 w-64 rounded-full bg-[#FF4500]/20 blur-[100px] pointer-events-none" />
-            <div className="absolute -right-10 -bottom-10 h-64 w-64 rounded-full bg-[#5B3CC4]/30 blur-[100px] pointer-events-none" />
+      {/* 2. INNER LEFT: Downward Drooping Fern */}
+      <svg
+        className="h-[95%] w-auto text-[#3C3666] -ml-6 sm:-ml-2"
+        viewBox="0 0 140 200"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path d="M 130 -10 Q 100 80 10 160" strokeWidth="3" strokeLinecap="round" />
+        {/* Left Side Fronds */}
+        <path d="M 110 25 Q 70 20 40 30" strokeWidth="4.5" strokeLinecap="round" />
+        <path d="M 98 48 Q 58 40 28 55" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 85 72 Q 48 65 18 82" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 70 98 Q 36 92 10 112" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 55 122 Q 26 120 4 140" strokeWidth="4.5" strokeLinecap="round" />
+        
+        {/* Right Side Fronds */}
+        <path d="M 120 15 Q 95 40 75 60" strokeWidth="4.5" strokeLinecap="round" />
+        <path d="M 108 38 Q 82 65 62 88" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 92 62 Q 68 90 50 112" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 76 88 Q 54 118 38 138" strokeWidth="4.5" strokeLinecap="round" />
+      </svg>
 
-            {/* CTA Content */}
-            <div className="relative z-10 mx-auto max-w-3xl">
-              <h2 className="font-serif text-2xl font-extrabold sm:text-4xl lg:text-4xl">
-                {cta.title}
-              </h2>
+      {/* 3. INNER RIGHT: Large Monstera Leaf Hanging Down */}
+      <svg
+        className="h-[105%] w-auto text-[#3C3666] -mr-6 sm:-mr-2"
+        viewBox="0 0 160 200"
+        fill="currentColor"
+      >
+        <path d="M 30 -20 C 95 -20 160 40 150 120 C 140 170 95 200 50 180 C 15 160 -10 100 5 40 Z" />
+        {/* Center Stem & Veins */}
+        <path d="M 30 -20 Q 65 70 100 165" stroke="#232042" strokeWidth="3" fill="none" />
+        <path d="M 48 25 Q 95 20 128 35" stroke="#232042" strokeWidth="2" fill="none" />
+        <path d="M 58 65 Q 108 65 138 85" stroke="#232042" strokeWidth="2" fill="none" />
+        <path d="M 68 105 Q 112 112 132 138" stroke="#232042" strokeWidth="2" fill="none" />
+      </svg>
 
-              <p className="mt-3 text-xs text-slate-300 sm:text-sm lg:text-base leading-relaxed">
-                {cta.description}
-              </p>
+      {/* 4. FAR RIGHT: Upward Fan Palm Leaf */}
+      <svg
+        className="h-[95%] w-auto text-[#3C3666] -mr-4"
+        viewBox="0 0 130 200"
+        fill="none"
+        stroke="currentColor"
+      >
+        <path d="M 105 210 Q 90 110 10 10" strokeWidth="3" strokeLinecap="round" />
+        {/* Top Fronds */}
+        <path d="M 20 22 Q 55 20 88 32" strokeWidth="4.5" strokeLinecap="round" />
+        <path d="M 32 38 Q 66 36 98 52" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 44 58 Q 78 55 108 75" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 56 80 Q 88 78 118 100" strokeWidth="5" strokeLinecap="round" />
+        <path d="M 68 102 Q 96 105 122 128" strokeWidth="4.5" strokeLinecap="round" />
 
-              <div className="mt-8">
-                <Link
-                  href={cta.button.href}
-                  className="inline-flex items-center gap-2 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-lg shadow-orange-500/25 transition-all hover:bg-[#e03d00] hover:shadow-orange-500/40"
-                >
-                  <FiHeart className="text-sm" />
-                  <span>{cta.button.label}</span>
-                  <FiArrowRight className="text-sm" />
-                </Link>
-              </div>
-            </div>
-          </div>
-        )}
+        {/* Bottom Fronds */}
+        <path d="M 12 15 Q 32 50 52 80" strokeWidth="4" strokeLinecap="round" />
+        <path d="M 24 35 Q 44 70 64 102" strokeWidth="4.5" strokeLinecap="round" />
+        <path d="M 38 58 Q 56 92 74 125" strokeWidth="4.5" strokeLinecap="round" />
+        <path d="M 52 82 Q 70 118 86 148" strokeWidth="4" strokeLinecap="round" />
+      </svg>
+
+    </div>
+
+    {/* ================= CTA CONTENT (CENTERED OVER LEAVES) ================= */}
+    <div className="relative z-10 mx-auto max-w-xl px-4">
+      <h2 className="font-serif text-2xl font-extrabold tracking-tight text-white sm:text-3xl lg:text-4xl">
+        {cta.title}
+      </h2>
+
+      <p className="mt-2.5 text-xs text-slate-300 sm:text-sm leading-relaxed opacity-90 max-w-md mx-auto">
+        {cta.description}
+      </p>
+
+      <div className="mt-6">
+        <Link
+          href={cta.button.href}
+          className="inline-flex items-center gap-2 rounded-full bg-[#463E75] hover:bg-[#524989] px-7 py-2.5 text-xs font-bold text-white shadow-md transition-all border border-white/10"
+        >
+          <span>{cta.button.label}</span>
+          <FiArrowRight className="text-sm" />
+        </Link>
+      </div>
+    </div>
+
+  </div>
+)}
       </div>
     </section>
   );

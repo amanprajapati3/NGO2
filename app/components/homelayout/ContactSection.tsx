@@ -57,7 +57,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
           </div>
 
           {/* Title */}
-          <h2 className="md:mt-4 max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl lg:mt-3">
+          <h2 className="md:mt-2 max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl ">
             {title.line1}{" "}
             <span className="text-orange-500">
               {title.highlight}
@@ -65,10 +65,10 @@ export default function ContactSection({ data }: ContactSectionProps) {
           </h2>
 
           {/* Accent */}
-          <div className="mt-3 h-1 w-14 rounded-full bg-orange-500 sm:w-16" />
+          <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" />
 
           {/* Description */}
-          <p className="mt-3 max-w-2xl text-md md:leading-7 text-slate-900 sm:text-base sm:leading-8">
+          <p className="mt-2 max-w-2xl text-md  text-slate-900 sm:text-base">
             {description}
           </p>
         </div>
@@ -92,7 +92,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                   {office.title}
                 </h3>
 
-                <p className="mx-auto mt-3 max-w-xl text-sm leading-7 text-white/80 sm:mt-5 sm:text-base sm:leading-8 lg:mx-0">
+                <p className="mx-auto mt-3 max-w-xl text-sm  text-white/80 sm:mt-5 sm:text-base lg:mx-0">
                   {office.description}
                 </p>
               </div>

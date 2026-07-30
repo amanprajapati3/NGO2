@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import {
   FiChevronDown,
   FiMenu,
@@ -65,8 +66,10 @@ export default function Header({
     }));
   };
 
+  const pathname = usePathname();
   useEffect(() => {
-    document.body.style.overflow = isMobileMenuOpen || isPopupOpen ? "hidden" : "";
+    document.body.style.overflow =
+      isMobileMenuOpen || isPopupOpen ? "hidden" : "";
 
     return () => {
       document.body.style.overflow = "";
@@ -84,10 +87,13 @@ export default function Header({
         {topBar && (
           <div className="hidden bg-white text-xs text-slate-900 sm:block">
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:px-6 lg:px-8">
-              <div className="ml-36 flex flex-nowrap items-center justify-center gap-2 py-1 sm:justify-start sm:gap-4">
+              <div className="ml-44 flex flex-nowrap items-center justify-center gap-2 py-1 sm:justify-start sm:gap-4">
                 {topBar.address && (
                   <div className="flex items-center gap-1.5 transition-colors">
-                    <FiMapPin className="flex-shrink-0 text-orange-500" size={14} />
+                    <FiMapPin
+                      className="flex-shrink-0 text-orange-500"
+                      size={14}
+                    />
                     <span>{topBar.address}</span>
                   </div>
                 )}
@@ -97,7 +103,10 @@ export default function Header({
                     href={topBar.phoneHref || `tel:${topBar.phone}`}
                     className="flex items-center gap-1.5 transition-colors"
                   >
-                    <FiPhone className="flex-shrink-0 text-orange-500" size={14} />
+                    <FiPhone
+                      className="flex-shrink-0 text-orange-500"
+                      size={14}
+                    />
                     <span>{topBar.phone}</span>
                   </a>
                 )}
@@ -138,30 +147,43 @@ export default function Header({
             <div className="flex h-16 items-center justify-between sm:h-20">
               {/* Logo */}
               <Link href="/" className="group flex items-center gap-3">
-                <div className="-rotate-3 flex w-16 items-center justify-center rounded-xl shadow-md shadow-rose-500/20 transition duration-300 group-hover:scale-105 sm:-mt-8 sm:w-36">
-                  <img src={data?.logo} alt="Logo" />
+                <div className="flex w-16  items-center justify-center transition duration-300 group-hover:scale-105 sm:-mt-8 sm:w-40">
+                  <img
+                    src={data?.logo}
+                    alt="Logo"
+                    className="w-full object-cover rounded-br-2xl [clip-path:polygon(0_0,_100%_0,_100%_95%,_0_100%)]"
+                  />
                 </div>
               </Link>
-
               <div className="flex h-full items-center gap-4">
                 {/* Desktop / Tablet Navigation & Grid Box */}
                 <div className="hidden h-full items-center gap-3 md:flex">
                   <nav className="flex items-center md:gap-1 xl:gap-2">
                     {data?.header?.map((item) => {
-                      const hasChildren = item.children && item.children.length > 0;
+                      const hasChildren =
+                        item.children && item.children.length > 0;
+
+                      // Define active state logic
+                      // It's active if the pathname exactly matches item.href, or
+                      // if item is a root parent and pathname starts with its href (for active subpages)
+                      const isActive =
+                        pathname === item.href ||
+                        (item.href !== "/" && pathname.startsWith(item.href));
 
                       return (
                         <div key={item.label} className="group relative py-6">
                           <Link
                             href={item.href}
-                            className="inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm text-slate-100 transition duration-200 hover:bg-slate-600 hover:text-white focus:outline-none"
+                            className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm transition duration-200 focus:outline-none 
+              ${isActive ? "text-orange-600 font-semibold" : "text-slate-100 hover:bg-white/10 hover:text-white"}`}
                           >
                             <span>{item.label}</span>
 
                             {hasChildren && (
                               <FiChevronDown
                                 size={16}
-                                className="text-slate-100 transition-transform duration-300 group-hover:rotate-180"
+                                className={`transition-transform duration-300 group-hover:rotate-180 
+                  ${isActive ? "text-orange-600" : "text-slate-100"}`}
                               />
                             )}
                           </Link>
@@ -175,15 +197,20 @@ export default function Header({
                                     : "w-[240px]"
                                 }`}
                               >
-                                {item.children!.map((child) => (
-                                  <Link
-                                    key={child.label}
-                                    href={child.href}
-                                    className="group/child flex items-center justify-between px-3.5 py-2.5 text-sm font-medium text-slate-700 transition duration-100 hover:bg-slate-400 hover:text-black"
-                                  >
-                                    <span>{child.label}</span>
-                                  </Link>
-                                ))}
+                                {item.children!.map((child) => {
+                                  const isChildActive = pathname === child.href;
+
+                                  return (
+                                    <Link
+                                      key={child.label}
+                                      href={child.href}
+                                      className={`group/child flex items-center justify-between px-3.5 py-2.5 text-sm font-medium transition duration-100 hover:bg-slate-400 hover:text-black
+                        ${isChildActive ? "text-orange-600 font-semibold bg-orange-50/50" : "text-slate-700"}`}
+                                    >
+                                      <span>{child.label}</span>
+                                    </Link>
+                                  );
+                                })}
                               </div>
                             </div>
                           )}
@@ -232,7 +259,9 @@ export default function Header({
       {/* ================= ABOUT POPUP SIDE DRAWER ================= */}
       <div
         className={`fixed inset-0 z-[100] bg-slate-950/60 backdrop-blur-sm transition-opacity duration-300 ${
-          isPopupOpen ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
+          isPopupOpen
+            ? "visible opacity-100"
+            : "pointer-events-none invisible opacity-0"
         }`}
         onClick={() => setIsPopupOpen(false)}
       />
@@ -290,25 +319,25 @@ export default function Header({
           {popup?.contactpopup && (
             <div className="rounded-xl flex justify-center py-8 text-center space-y-6 ">
               <div>
-              <a
-                href={popup.contactpopup.phoneHref}
-                className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
-              >
-                <FiPhone className="text-orange-500" size={16} />
-                <span>{popup.contactpopup.phone}</span>
-              </a>
+                <a
+                  href={popup.contactpopup.phoneHref}
+                  className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
+                >
+                  <FiPhone className="text-orange-500" size={16} />
+                  <span>{popup.contactpopup.phone}</span>
+                </a>
 
-              <p className="text-xs pt-5 text-slate-500 uppercase font-semibold">
-                {popup.contactpopup.separator}
-              </p>
+                <p className="text-xs pt-5 text-slate-500 uppercase font-semibold">
+                  {popup.contactpopup.separator}
+                </p>
 
-              <a
-                href={popup.contactpopup.emailHref}
-                className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
-              >
-                <FiMail className="text-orange-500" size={16} />
-                <span>{popup.contactpopup.email}</span>
-              </a>
+                <a
+                  href={popup.contactpopup.emailHref}
+                  className="flex items-center gap-3 text-sm text-slate-900 hover:text-orange-400"
+                >
+                  <FiMail className="text-orange-500" size={16} />
+                  <span>{popup.contactpopup.email}</span>
+                </a>
               </div>
             </div>
           )}
@@ -333,7 +362,9 @@ export default function Header({
       {/* ================= MOBILE DRAWER ================= */}
       <div
         className={`fixed inset-0 z-50 bg-indigo-950/80 backdrop-blur-sm transition-opacity duration-300 md:hidden ${
-          isMobileMenuOpen ? "visible opacity-100" : "pointer-events-none invisible opacity-0"
+          isMobileMenuOpen
+            ? "visible opacity-100"
+            : "pointer-events-none invisible opacity-0"
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
       />

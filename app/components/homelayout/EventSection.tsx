@@ -14,24 +14,66 @@ export default function EventSection({ data }: EventsSectionProps) {
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
 
+{/* circle design */}
+      <div className="top-28 -right-16 h-20 w-20 sm:h-32 sm:w-32 bg-orange-100 rounded-full absolute pointer-events-none"></div>
+
       {/* Decorative Top-Left Leaf Outline */}
-      <div className="absolute top-8 left-10 text-orange-200/40 pointer-events-none hidden sm:block">
-        <svg width="100" height="120" viewBox="0 0 100 120" fill="none" stroke="currentColor" strokeWidth="1.5">
-          <path d="M50,110 C50,110 20,70 20,40 C20,15 35,5 50,5 C65,5 80,15 80,40 C80,70 50,110 50,110 Z" />
-          <path d="M50,110 L50,5" />
-          <path d="M50,40 L30,25" />
-          <path d="M50,60 L70,45" />
-          <path d="M50,80 L30,65" />
-        </svg>
-      </div>
+      <div className="absolute top-8 left-28 rotate-6 text-orange-200 pointer-events-none hidden sm:block">
+  <svg
+    width="120"
+    height="140"
+    viewBox="0 0 120 140"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="1.5"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+  >
+    {/* Main Curved Stem */}
+    <path d="M 60 130 Q 55 80 70 20" />
+
+    {/* ================= 1. BOTTOM LEFT LEAF ================= */}
+    <g className="leaf-left-bottom">
+      {/* Leaf Outline */}
+      <path d="M 58 95 C 40 92 20 80 15 65 C 28 60 48 70 58 95 Z" />
+      {/* Center Vein */}
+      <path d="M 58 95 C 42 85 28 75 15 65" />
+      {/* Side Veins */}
+      <path d="M 46 88 Q 38 80 34 76" />
+      <path d="M 36 81 Q 28 73 25 70" />
+    </g>
+
+    {/* ================= 2. MIDDLE RIGHT LEAF ================= */}
+    <g className="leaf-right-middle">
+      {/* Leaf Outline */}
+      <path d="M 64 70 C 82 65 100 50 105 32 C 90 30 72 42 64 70 Z" />
+      {/* Center Vein */}
+      <path d="M 64 70 C 78 58 92 45 105 32" />
+      {/* Side Veins */}
+      <path d="M 74 61 Q 84 55 88 50" />
+      <path d="M 85 51 Q 93 43 96 39" />
+    </g>
+
+    {/* ================= 3. TOP LEAF (TIP) ================= */}
+    <g className="leaf-top">
+      {/* Leaf Outline */}
+      <path d="M 69 28 C 60 18 55 5 62 2 C 70 12 73 20 69 28 Z" />
+      {/* Center Vein */}
+      <path d="M 69 28 C 65 18 61 10 62 2" />
+      {/* Side Veins */}
+      <path d="M 67 22 Q 62 16 60 14" />
+      <path d="M 65 14 Q 61 9 60 7" />
+    </g>
+  </svg>
+</div>
 
       {/* Decorative Grid Dots */}
-      <div className="absolute top-12 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute top-28 left-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}
       </div>
-      <div className="absolute top-12 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
+      <div className="absolute top-5 right-6 grid grid-cols-6 gap-1.5 opacity-20 pointer-events-none">
         {Array.from({ length: 36 }).map((_, i) => (
           <span key={i} className="h-1.5 w-1.5 rounded-full bg-orange-400" />
         ))}

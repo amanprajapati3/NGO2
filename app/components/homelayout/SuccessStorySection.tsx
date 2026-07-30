@@ -27,7 +27,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white md:py-8 py-4">
+    <section className="relative overflow-hidden bg-white pt-12 pb-4">
       <div className="mx-auto max-w-7xl md:px-5 px-2">
         
         {/* Header */}

@@ -141,7 +141,7 @@ export interface AboutDescription {
 export interface AboutButton {
   label: string;
   href: string;
-  variant: "primary" | "secondary";
+  variant: string;
   icon: string;
 }
 
@@ -190,17 +190,64 @@ export interface AboutStatistic {
   label: string;
 }
 
-// =========================
+export interface AboutStatistic2 {
+  icon: string;
+  value: string;
+  label: string;
+}
+
 // Background
-// =========================
 export interface AboutBackground {
   showGradient: boolean;
   showDecorations: boolean;
 }
 
-// =========================
-// About Section
-// =========================
+// ABOUT PAGE - BREADCRUMB
+export interface AboutBreadcrumbItem {
+  label: string;
+  href: string;
+}
+
+export interface AboutBreadcrumbImage {
+  src: string;
+  alt: string;
+}
+
+export interface AboutBreadcrumb {
+  home: AboutBreadcrumbItem;
+  current: AboutBreadcrumbItem;
+  title: string;
+  backgroundImage: AboutBreadcrumbImage;
+  overlay: boolean;
+}
+
+// ABOUT PAGE - VALUES
+export interface AboutValueItem {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface AboutValues {
+  badge: string;
+  title: string;
+  items: AboutValueItem[];
+}
+
+export interface AboutCTAButton {
+  label: string;
+  href: string;
+  icon: string;
+}
+
+export interface AboutCTA {
+  badge: string;
+  title: string;
+  description: string;
+  button: AboutCTAButton;
+  secondaryButton: AboutCTAButton;
+}
+
 export interface AboutSection {
   badge: AboutBadge;
   title: AboutTitle;
@@ -208,7 +255,14 @@ export interface AboutSection {
   buttons: AboutButton[];
   gallery: AboutGallery;
   statistics: AboutStatistic[];
+  statistics2: AboutStatistic2[];
   background: AboutBackground;
+  cta: AboutCTA;
+  values: AboutValues;
+
+
+  // About Page additions
+  breadcrumb: AboutBreadcrumb;
 }
 
 // =========================
@@ -217,7 +271,6 @@ export interface AboutSection {
 export interface AboutSectionProps {
   data: AboutSection;
 }
-
 // ================= Mission Section =================
 
 export interface MissionBadge {
@@ -705,6 +758,23 @@ export interface ContactTitle {
   line1: string;
   highlight: string;
 }
+export interface ContactBreadcrumbItem {
+  label: string;
+  href: string;
+}
+
+export interface ContactBreadcrumbImage {
+  src: string;
+  alt: string;
+}
+
+export interface ContactBreadcrumb {
+  home: ContactBreadcrumbItem;
+  current: ContactBreadcrumbItem;
+  title: string;
+  backgroundImage: ContactBreadcrumbImage;
+  overlay: boolean;
+}
 
 export interface ContactInfoItem {
   label: string;
@@ -750,6 +820,7 @@ export interface ContactData {
   description: string;
   office: ContactOffice;
   form: ContactForm;
+  breadcumb:ContactBreadcrumb;
 }
 
 export interface ContactSectionProps {

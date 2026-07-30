@@ -37,10 +37,8 @@ export default function Footer({ data }: { data: FooterData }) {
   return (
     <footer className="bg-black text-slate-300 pt-16 pb-8 border-t border-slate-800">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        
         {/* TOP BRAND & CONTACT INFORMATION ROW */}
         <div className="grid grid-cols-1 gap-10 pb-12 border-b border-slate-800 lg:grid-cols-12 lg:gap-8">
-          
           {/* BRAND / HEADLINE */}
           <div className="lg:col-span-5 space-y-4">
             <Link href="/" className="group inline-flex items-center gap-3">
@@ -116,51 +114,76 @@ export default function Footer({ data }: { data: FooterData }) {
         </div>
 
         {/* DYNAMIC FOOTER SECTIONS GRID FROM JSON */}
-        <div className="flex  justify-center">
-        <div className="py-5 flex jusfity-center flex-col-2 md:col-end-4 gap-5 md:gap-16">
-          {data.footer?.map((section, idx) => (
-            <div key={idx} className="space-y-3">
-              <Link
-                href={section.href}
-                className="inline-block text-sm font-bold text-white uppercase tracking-wider hover:text-orange-400 transition-colors"
-              >
-                {section.label}
-              </Link>
-              <ul className="space-y-2">
-                {section.links?.map((link, linkIdx) => {
-                  const isExternal = link.href.startsWith("http");
-                  return (
-                    <li key={linkIdx}>
-                      <Link
-                        href={link.href}
-                        target={isExternal ? "_blank" : "_self"}
-                        rel={isExternal ? "noopener noreferrer" : undefined}
-                        className="inline-flex items-center text-xs text-slate-400 hover:text-orange-400 transition-colors duration-200"
-                      >
-                        <span>{link.label}</span>
-                        {isExternal && (
-                          <FiArrowUpRight size={12} className="ml-0.5 text-slate-500" />
-                        )}
-                      </Link>
-                    </li>
-                  );
-                })}
-              </ul>
-            </div>
-          ))}
-        </div>
+        <div className="flex justify-center">
+          <div className="py-5 flex justify-center flex-col-2 md:col-end-4 gap-5 md:gap-16">
+            {data.footer?.map((section, idx) => (
+              <div key={idx} className="space-y-3">
+                <Link
+                  href={section.href}
+                  className="inline-block text-sm font-bold text-white uppercase tracking-wider hover:text-orange-400 transition-colors"
+                >
+                  {section.label}
+                </Link>
+
+                <ul className="space-y-2">
+                  {section.links
+                    ?.filter((_, linkIdx) => {
+                      // Remove first 3 links only from Legal section
+                      if (section.label === "Legal") {
+                        return linkIdx > 2;
+                      }
+                      return true;
+                    })
+                    .map((link, linkIdx) => {
+                      const isExternal = link.href.startsWith("http");
+
+                      return (
+                        <li key={linkIdx}>
+                          <Link
+                            href={link.href}
+                            target={isExternal ? "_blank" : "_self"}
+                            rel={isExternal ? "noopener noreferrer" : undefined}
+                            className="inline-flex items-center text-xs text-slate-400 hover:text-orange-400 transition-colors duration-200"
+                          >
+                            <span>{link.label}</span>
+
+                            {isExternal && (
+                              <FiArrowUpRight
+                                size={12}
+                                className="ml-0.5 text-slate-500"
+                              />
+                            )}
+                          </Link>
+                        </li>
+                      );
+                    })}
+                </ul>
+              </div>
+            ))}
+          </div>
         </div>
 
         {/* BOTTOM COPYRIGHT ROW */}
         <div className="pt-8 border-t border-slate-800/80 text-center sm:flex sm:items-center sm:justify-between text-xs text-slate-500">
           <p>
-            © {currentYear} {data.siteTitle || "Ashray Foundation"}. All rights reserved.
+            © {currentYear} {data.siteTitle || "Ashray Foundation"}. All rights
+            reserved.
           </p>
-          <p className="mt-2 sm:mt-0">
-            {data.tagline || "Building brighter futures, together."}
-          </p>
+          <div className="flex justify-center sm:justify-end items-center gap-4">
+            {data.footer
+              ?.find((section) => section.label === "Legal")
+              ?.links?.slice(0, 3)
+              .map((link, idx) => (
+                <Link
+                  key={idx}
+                  href={link.href}
+                  className="hover:text-orange-400 transition-colors duration-200"
+                >
+                  {link.label}
+                </Link>
+              ))}
+          </div>
         </div>
-
       </div>
     </footer>
   );

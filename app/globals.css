@@ -1,4 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap');
+
 @import "tailwindcss";
+
+/* Tailwind v4 Theme */
+@theme {
+  --font-cursive: "Great Vibes", cursive;
+  --font-primary: "Inter", sans-serif;
+}
 
 :root {
   color-scheme: light;
@@ -7,6 +15,10 @@
 
   /* Global Website Font */
   --font-primary: "Inter", sans-serif;
+}
+
+.font-cursive {
+  font-family: "Great Vibes", cursive !important;
 }
 
 html,
