@@ -2,7 +2,10 @@ import React from "react";
 import type { SupportDataProps } from "@/type/typeSection";
 
 // Helper Function for Rendering Vector SVGs Based on Icon Names
-const renderIcon = (iconName: string, className: string = "w-6 h-6 text-[#EA580C]") => {
+const renderIcon = (
+  iconName: string,
+  className: string = "w-6 h-6 text-[#EA580C]",
+) => {
   const strokeProps = {
     className,
     fill: "none",
@@ -109,7 +112,6 @@ export default function SupportPage({ data }: SupportDataProps) {
 
   return (
     <div className="w-full bg-[#FAF9F6] text-slate-800 antialiased font-sans">
-      
       {/* ================= 1. HERO BREADCRUMB BANNER ================= */}
       <section className="relative h-52 sm:h-[300px] w-full bg-slate-900 overflow-hidden flex items-center justify-center">
         {/* Background Image */}
@@ -149,8 +151,7 @@ export default function SupportPage({ data }: SupportDataProps) {
       </section>
 
       {/* ================= MAIN CONTAINER ================= */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 space-y-16">
-        
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12  space-y-16">
         {/* ================= 2. INTRODUCTION & TOP VALUES ================= */}
         <section className="text-center">
           {/* Section Header */}
@@ -169,20 +170,20 @@ export default function SupportPage({ data }: SupportDataProps) {
 
             <div className="mx-auto w-10 h-[2px] bg-[#EA580C] mt-3 mb-4" />
 
-            <p className="text-xs sm:text-sm text-slate-600 leading-relaxed">
+            <p className="text-xs sm:text-sm text-slate-600 ">
               {introduction.description}
             </p>
           </div>
 
           {/* 3 Top Key Values Grid */}
-          <div className="mt-12 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+          <div className="mt-8 grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
             {keyValues.values.map((val) => (
               <div
                 key={val.id}
                 className="bg-white p-6 rounded-2xl border border-orange-100 shadow-xs flex items-start gap-4 hover:shadow-md transition-shadow"
               >
                 <div className="w-14 h-14 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center shrink-0">
-                  {renderIcon(val.iconName, "w-7 h-7 text-[#EA580C]")}
+                  {renderIcon(val.iconName, "w-12 h-12 text-[#EA580C]")}
                 </div>
                 <div>
                   <h3 className="font-serif font-bold text-base text-slate-900">
@@ -199,12 +200,16 @@ export default function SupportPage({ data }: SupportDataProps) {
 
         {/* ================= 3. WAYS TO SUPPORT (5 CARDS) ================= */}
         <section className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-xs text-center">
-          <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
-            {waysToSupport.topBadge}
-          </span>
-          <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-2" />
+          <div className="flex items-center justify-center gap-3">
+            <div className="h-[2px] w-8 bg-[#EA580C]" />
 
-          <h2 className="text-2xl sm:text-4xl font-serif font-bold text-slate-900">
+            <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+              {waysToSupport.topBadge}
+            </span>
+
+            <div className="h-[2px] w-8 bg-[#EA580C]" />
+          </div>
+          <h2 className="text-2xl pt-2 sm:text-4xl font-serif font-bold text-slate-900">
             {waysToSupport.heading}
           </h2>
 
@@ -215,8 +220,11 @@ export default function SupportPage({ data }: SupportDataProps) {
                 className="bg-slate-50/60 rounded-2xl p-5 border border-slate-100 flex flex-col justify-between items-center text-center hover:bg-white hover:shadow-lg transition-all duration-300"
               >
                 <div className="flex flex-col items-center">
-                  <div className="w-16 h-16 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mb-4">
-                    {renderIcon(card.iconName, "w-8 h-8 text-[#EA580C]")}
+                  <div className="w-6 h-6 sm:w-24 sm:h-24 rounded-full bg-orange-50 border border-orange-100 flex items-center justify-center mb-4">
+                    {renderIcon(
+                      card.iconName,
+                      "w-6 h-6 sm:w-16 sm:h-16 text-[#EA580C]",
+                    )}
                   </div>
 
                   <h3 className="font-serif font-bold text-sm sm:text-base text-slate-900 mb-2">
@@ -243,7 +251,7 @@ export default function SupportPage({ data }: SupportDataProps) {
         </section>
 
         {/* ================= 4. YOUR SUPPORT, REAL IMPACT ================= */}
-        <section className="bg-orange-50/50 rounded-3xl p-6 sm:p-10 border border-orange-100/80 text-center">
+        <section className="bg-orange-50/50 border rounded-3xl p-6 sm:p-10 border-orange-200/80 text-center">
           <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
             {impactStats.topBadge}
           </span>
@@ -259,8 +267,11 @@ export default function SupportPage({ data }: SupportDataProps) {
                 key={stat.id}
                 className="flex flex-col items-center bg-white p-5 rounded-2xl border border-orange-100/60 shadow-2xs"
               >
-                <div className="w-12 h-12 rounded-full bg-orange-50 border border-orange-200 flex items-center justify-center mb-3">
-                  {renderIcon(stat.iconName, "w-6 h-6 text-[#EA580C]")}
+                <div className="w-6 h-6 sm:w-24 sm:h-24  rounded-full bg-orange-50 border border-orange-200 flex items-center justify-center mb-3">
+                  {renderIcon(
+                    stat.iconName,
+                    "w-6 h-6 sm:w-16 sm:h-16 text-[#EA580C]",
+                  )}
                 </div>
 
                 <span className="font-serif text-2xl sm:text-3xl font-bold text-[#EA580C]">
@@ -280,16 +291,32 @@ export default function SupportPage({ data }: SupportDataProps) {
         </section>
 
         {/* ================= 5. CTA BANNER (SIDE-BY-SIDE WITH HANDS ICON) ================= */}
-        <section className="rounded-3xl bg-[#FFF8F6] border border-orange-100 shadow-sm overflow-hidden">
-          <div className="grid grid-cols-1 lg:grid-cols-12 items-center min-h-[300px]">
-            
-            {/* Left Content Area (Col 1-7) */}
-            <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-6 relative z-10">
-              
+        <section className="relative min-h-[300px] overflow-hidden rounded-3xl border border-orange-100 shadow-sm">
+          {/* Full Section Background Image */}
+          <img
+            src={ctaBanner.bannerImage.src}
+            alt={ctaBanner.bannerImage.alt}
+            className="absolute inset-0 w-full h-full object-cover object-center"
+          />
+
+          {/* White gradient from left 50% → transparent */}
+          <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-white via-white/95 to-transparent" />
+
+          {/* Optional: subtle overall overlay for readability */}
+          <div className="absolute inset-0 bg-white/5" />
+
+          {/* Content */}
+          <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 items-center min-h-[300px]">
+            {/* Left Content Area */}
+            <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-6">
               {/* Left Hands Icon Badge */}
-              <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white shadow-sm border border-orange-100 flex items-center justify-center shrink-0">
-                {renderIcon("hands-heart", "w-10 h-10 sm:w-12 sm:h-12 text-[#EA580C]")}
-              </div>
+              {/* <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white shadow-sm border border-orange-100 flex items-center justify-center shrink-0">
+                {/* {renderIcon(
+                  "hands-heart",
+                  "w-10 h-10 sm:w-12 sm:h-12 text-[#EA580C]",
+                )}
+                <img src="/heartImage.png" alt="" />
+              </div> */}
 
               {/* Text Info */}
               <div className="flex-1">
@@ -297,6 +324,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                   <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
                     {ctaBanner.topBadge}
                   </span>
+
                   <div className="w-8 h-[2px] bg-[#EA580C] mt-1" />
                 </div>
 
@@ -333,31 +361,21 @@ export default function SupportPage({ data }: SupportDataProps) {
                 </div>
               </div>
             </div>
-
-            {/* Right Banner Image (Col 8-12) */}
-            <div className="lg:col-span-5 h-64 sm:h-80 lg:h-full relative overflow-hidden">
-              <img
-                src={ctaBanner.bannerImage.src}
-                alt={ctaBanner.bannerImage.alt}
-                className="w-full h-full object-cover object-center"
-              />
-            </div>
-
           </div>
         </section>
 
         {/* ================= 6. TRANSPARENCY BAR ================= */}
-        <section className="rounded-2xl bg-[#EA580C] text-white p-5 sm:p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
+        <section className="rounded-2xl bg-white text-orange-500 p-5 sm:p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex items-center gap-4 text-center md:text-left">
-            <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
-              {renderIcon(transparencyBar.iconName, "w-6 h-6 text-white")}
+            <div className="w-12 h-12 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
+              {renderIcon(transparencyBar.iconName, "w-10 h-10 text-orange-700")}
             </div>
 
             <div>
-              <h4 className="font-semibold text-sm sm:text-base">
+              <h4 className="font-semibold text-sm pt-2 sm:text-base">
                 {transparencyBar.title}
               </h4>
-              <p className="text-xs text-orange-100 mt-0.5">
+              <p className="text-xs text-orange-600 mt-0.5">
                 {transparencyBar.subtitle}
               </p>
             </div>
@@ -365,12 +383,11 @@ export default function SupportPage({ data }: SupportDataProps) {
 
           <a
             href={transparencyBar.action.url}
-            className="px-5 py-2.5 rounded-full border border-white text-white hover:bg-white hover:text-[#EA580C] transition-all text-xs font-bold whitespace-nowrap"
+            className="px-5 py-2.5 rounded-full shadow-sm hover:shadow-md shadow-orange-500 text-orange-500 hover:bg-white hover:text-[#EA580C] transition-all text-xs font-bold whitespace-nowrap"
           >
             {transparencyBar.action.label} &rarr;
           </a>
         </section>
-
       </div>
     </div>
   );

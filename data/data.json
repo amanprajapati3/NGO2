@@ -59,8 +59,8 @@
           "href": "/team"
         },
         {
-          "label": "Advisory Board",
-          "href": "/advisory-board"
+          "label": "Branches",
+          "href": "/branches"
         },
         {
           "label": "CEO Message",
@@ -219,24 +219,28 @@
           "href": "/donate"
         },
         {
-          "label": "Become A Volunteer",
-          "href": "/team"
-        },
-        {
-          "label": "Careers",
-          "href": "/career"
-        },
-        {
-          "label": "Contact Us",
-          "href": "/contact-us"
-        },
-        {
           "label": "Blogs",
           "href": "/blog"
         },
         {
           "label": "Our Partners",
           "href": "/partners"
+        },
+        {
+          "label": "CSR",
+          "href": "/csr"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookie-policy"
+        },
+        {
+          "label": "Disclaimer ",
+          "href": "/disclaimer"
         }
       ]
     },
@@ -245,24 +249,24 @@
       "title": "Our Services",
       "links": [
         {
-          "label": "Donate",
-          "href": "/CTA"
+          "label": "Enquiry Now",
+          "href": "/enquiry"
         },
         {
-          "label": "Sponsor",
-          "href": "/sponsor"
+          "label": "Frenchise",
+          "href": "/frenchise"
         },
         {
-          "label": "Fundraise",
-          "href": "/fundraise"
+          "label": "Case Study",
+          "href": "/case-study"
         },
         {
           "label": "Testimonial",
           "href": "/testimonial"
         },
         {
-          "label": "Support",
-          "href": "/support"
+          "label": "Bronchure",
+          "href": "/bronchure"
         }
       ]
     },
@@ -297,6 +301,10 @@
         {
           "label": "Privacy Policy",
           "href": "/privacy-policy"
+        },
+        {
+          "label": "Sitemap",
+          "href": "/sitemap"
         }
       ]
     }
@@ -728,6 +736,11 @@
       "label": "Our Causes"
     },
 
+    "banner": {
+       "breadcrumbCurrent": "Case Study",
+       "breadcrumbHome": "Home",
+       "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+    },
     "title": {
       "line1": "The",
       "highlight": "Causes",
@@ -2603,6 +2616,113 @@
       }
     ]
   },
+   "refund": {
+    "banner": {
+      "breadcrumbCurrent": "Refund Policy",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "conditions": [
+      {
+        "id": "donation-refunds",
+        "title": "Donation Refund Policy",
+        "content": "Due to the nature of charitable donations, all contributions made to our organization are generally non-refundable. Donations are immediately allocated towards our ongoing social initiatives, relief funds, and community welfare programs."
+      },
+      {
+        "id": "accidental-donations",
+        "title": "Errors & Duplicate Transactions",
+        "content": "If an error occurs during your transaction (such as a duplicate charge or an incorrect amount entered), please contact our support team within 7 business days of the transaction date with proof of payment. Valid claims will be reviewed and refunded promptly."
+      },
+      {
+        "id": "event-cancellations",
+        "title": "Event Tickets & Registrations",
+        "content": "Fees or contributions made for fundraising events, workshops, or galas are non-refundable. If an event is cancelled by the organization, participants may request a full refund or choose to convert their registration fee into a tax-deductible donation."
+      },
+      {
+        "id": "processing-time",
+        "title": "Refund Processing Time",
+        "content": "Approved refunds will be processed through the original method of payment within 10 to 14 business days. Depending on your financial institution, it may take additional time for the credit to reflect in your account."
+      },
+      {
+        "id": "contact-refunds",
+        "title": "How to Request a Refund",
+        "content": "To submit a refund inquiry or claim, please email our support team with your transaction ID, full name, date of payment, and reason for the request."
+      }
+    ]
+  },
+  "cookie": {
+    "banner": {
+      "breadcrumbCurrent": "Cookie Policy",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "conditions": [
+      {
+        "id": "what-are-cookies",
+        "title": "What Are Cookies?",
+        "content": "Cookies are small text files stored on your computer or mobile device when you visit our website. They help us make the website function properly, enhance security, provide a better user experience, and analyze site performance."
+      },
+      {
+        "id": "how-we-use-cookies",
+        "title": "How We Use Cookies",
+        "content": "We use cookies to remember your preferences, keep you logged in, analyze web traffic, and measure the effectiveness of our campaigns. These cookies help us understand how users interact with our site so we can continuously improve user experience."
+      },
+      {
+        "id": "types-of-cookies",
+        "title": "Types of Cookies We Use",
+        "content": "Essential Cookies are required for core site functionality such as secure navigation and donation processing. Analytical/Performance Cookies allow us to count visits and traffic sources so we can measure and improve performance. Functional Cookies enable enhanced functionality and personalization."
+      },
+      {
+        "id": "managing-cookies",
+        "title": "Managing Cookie Preferences",
+        "content": "You can control and manage cookies through your web browser settings. Most browsers allow you to block, delete, or receive warnings before a cookie is stored. Please note that disabling essential cookies may impact the functionality of certain website features."
+      },
+      {
+        "id": "third-party-cookies",
+        "title": "Third-Party Cookies",
+        "content": "In some special cases, we also use cookies provided by trusted third parties, such as Google Analytics and payment gateways, to help us understand site usage and securely process contributions."
+      },
+      {
+        "id": "updates-to-policy",
+        "title": "Updates to Cookie Policy",
+        "content": "We may update this Cookie Policy periodically to reflect changes in technologies, legal regulations, or our operational practices. Any updates will be published on this page."
+      }
+    ]
+  },
+  "disclaimer": {
+    "banner": {
+      "breadcrumbCurrent": "Disclaimer",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "conditions": [
+      {
+        "id": "general-information",
+        "title": "General Information Only",
+        "content": "The information provided on this website by our organization is for general informational and educational purposes only. All information on the site is provided in good faith, however we make no representation or warranty of any kind regarding accuracy, adequacy, validity, or completeness."
+      },
+      {
+        "id": "no-professional-advice",
+        "title": "No Professional Advice",
+        "content": "Content contained on or made available through this website is not intended to serve as legal, financial, or medical advice. Users should consult qualified professionals for specific advice tailored to their individual circumstances."
+      },
+      {
+        "id": "external-links-disclaimer",
+        "title": "External Links Disclaimer",
+        "content": "This website may contain links to external third-party websites or content. Such external links are not investigated, monitored, or checked for accuracy, adequacy, validity, reliability, or completeness by us."
+      },
+      {
+        "id": "limitation-of-liability",
+        "title": "Limitation of Liability",
+        "content": "Under no circumstance shall our organization, officers, directors, employees, or volunteers be liable for any direct, indirect, incidental, or consequential damages resulting from the use of, or inability to use, this website or reliance on any information provided."
+      },
+      {
+        "id": "changes-disclaimer",
+        "title": "Right to Modify",
+        "content": "We reserve the right to add, delete, or modify the contents of this website at any time without prior notice. We do not warrant that the website is free of viruses or other harmful components."
+      }
+    ]
+  },
   "donateNow": {
     "header": {
       "badge": "DONATE NOW",
@@ -2790,9 +2910,9 @@
     },
 
     "banner": {
-     "breadcrumbCurrent": "Industry We Serve",
-     "breadcrumbHome": "Home",
-     "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
+      "breadcrumbCurrent": "Industry We Serve",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
     },
 
     "sectors": [
@@ -3134,7 +3254,7 @@
       }
     }
   },
-   "supportPage": {
+  "supportPage": {
     "hero": {
       "title": "Support",
       "logo": {
@@ -3298,6 +3418,1028 @@
         "label": "Learn More About Us",
         "url": "/about/transparency"
       }
+    }
+  },
+  "csrPage": {
+    "banner": {
+      "breadcrumbCurrent": "CSR",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600&auto=format&fit=crop"
+    },
+
+    "header": {
+      "topBadge": "OUR CSR INITIATIVES",
+      "title": {
+        "part1": "We Care.",
+        "part2": "We Act. We Make a Difference."
+      },
+      "subtitle": "Our Corporate Social Responsibility (CSR) initiatives reflect our commitment to building a better and more sustainable tomorrow for all."
+    },
+
+    "stats": [
+      {
+        "id": "lives-impacted",
+        "value": "50,000+",
+        "label": "Lives Impacted",
+        "iconName": "users"
+      },
+      {
+        "id": "csr-projects",
+        "value": "100+",
+        "label": "CSR Projects",
+        "iconName": "heart-hands"
+      },
+      {
+        "id": "communities-reached",
+        "value": "200+",
+        "label": "Communities Reached",
+        "iconName": "globe"
+      },
+      {
+        "id": "trees-planted",
+        "value": "25,000+",
+        "label": "Trees Planted",
+        "iconName": "tree"
+      }
+    ],
+
+    "focusAreas": {
+      "topBadge": "OUR FOCUS AREAS",
+      "title": "Creating Change Where It Matters",
+      "description": "Our CSR initiatives focus on empowering people, strengthening communities, protecting the environment, and creating sustainable opportunities for a better future.",
+      "items": [
+        {
+          "id": "education",
+          "title": "Education",
+          "description": "Empowering children with quality education and better learning opportunities.",
+          "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?q=80&w=800&auto=format&fit=crop",
+          "iconName": "school"
+        },
+        {
+          "id": "healthcare",
+          "title": "Healthcare",
+          "description": "Supporting health and well-being through medical care and awareness.",
+          "image": "https://images.unsplash.com/photo-1584515979956-d9f6e5d09982?q=80&w=800&auto=format&fit=crop",
+          "iconName": "healthcare"
+        },
+        {
+          "id": "environment",
+          "title": "Environment",
+          "description": "Protecting natural resources and promoting sustainability for future generations.",
+          "image": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?q=80&w=800&auto=format&fit=crop",
+          "iconName": "leaf"
+        },
+        {
+          "id": "skill-development",
+          "title": "Skill Development",
+          "description": "Building skills and creating livelihood opportunities for self-reliance.",
+          "image": "https://images.unsplash.com/photo-1531482615713-2afd69097998?q=80&w=800&auto=format&fit=crop",
+          "iconName": "graduation-cap"
+        },
+        {
+          "id": "community-support",
+          "title": "Community Support",
+          "description": "Standing with communities in times of need and driving social progress.",
+          "image": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=800&auto=format&fit=crop",
+          "iconName": "heart-hands"
+        }
+      ]
+    },
+
+    "ourImpact": {
+      "topBadge": "OUR IMPACT",
+      "title": "Creating a Lasting Difference",
+      "description": "Through collaboration, compassion, and commitment, we are creating a lasting impact in the lives we touch.",
+
+      "ctaButton": {
+        "text": "Learn More About Our Impact",
+        "action": "->"
+      },
+
+      "pillars": [
+        {
+          "id": "sustainable-development",
+          "title": "Sustainable Development",
+          "description": "Working towards long-term, inclusive growth.",
+          "iconName": "tree"
+        },
+        {
+          "id": "ethical-commitment",
+          "title": "Ethical Commitment",
+          "description": "Upholding integrity, transparency, and responsibility.",
+          "iconName": "shield-check"
+        },
+        {
+          "id": "measurable-impact",
+          "title": "Measurable Impact",
+          "description": "Ensuring our efforts create meaningful and measurable change.",
+          "iconName": "target"
+        },
+        {
+          "id": "better-tomorrow",
+          "title": "Better Tomorrow",
+          "description": "Together, we build a brighter and better tomorrow for all.",
+          "iconName": "award"
+        }
+      ]
+    },
+
+    "csrProjects": {
+      "topBadge": "OUR CSR PROJECTS",
+      "title": "Projects That Create Real Impact",
+      "description": "From education and healthcare to environmental conservation and women empowerment, our projects are designed to create meaningful and lasting change.",
+
+      "items": [
+        {
+          "id": "rural-education-program",
+          "title": "Rural Education Program",
+          "description": "Improving access to quality education in rural areas.",
+          "image": "https://images.unsplash.com/photo-1497633762265-9d179a990aa6?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+          "id": "mobile-health-camps",
+          "title": "Mobile Health Camps",
+          "description": "Bringing essential healthcare services to underserved communities.",
+          "image": "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+          "id": "green-earth-initiative",
+          "title": "Green Earth Initiative",
+          "description": "Tree plantation drives and environment conservation programs.",
+          "image": "https://images.unsplash.com/photo-1516253593875-bd7ba052fbc5?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+          "id": "women-empowerment",
+          "title": "Women Empowerment",
+          "description": "Skill training and livelihood support for women to build independent futures.",
+          "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800&auto=format&fit=crop"
+        },
+        {
+          "id": "community-relief-support",
+          "title": "Community Relief Support",
+          "description": "Providing food, essentials, and support during emergencies and disasters.",
+          "image": "https://images.unsplash.com/photo-1593113598332-cd288d649433?q=80&w=800&auto=format&fit=crop"
+        }
+      ]
+    },
+
+    "bannerCta": {
+      "title": "Together, We Can Build a Better Tomorrow",
+      "description": "Join hands with us in creating a more inclusive, equitable, and sustainable world.",
+      "buttonText": "Partner With Us",
+      "buttonAction": "->"
+    },
+
+    "coreValues": {
+      "topBadge": "OUR CORE VALUES",
+      "title": "Values That Guide Our Work",
+      "description": "Our work is guided by strong values that help us remain committed to the people, communities, and planet we serve.",
+
+      "items": [
+        {
+          "id": "transparency",
+          "title": "Transparency",
+          "description": "We are transparent in our actions and reporting.",
+          "iconName": "globe"
+        },
+        {
+          "id": "accountability",
+          "title": "Accountability",
+          "description": "We take responsibility for our commitments.",
+          "iconName": "shield-check"
+        },
+        {
+          "id": "partnership",
+          "title": "Partnership",
+          "description": "We believe in the power of collaboration.",
+          "iconName": "handshake"
+        },
+        {
+          "id": "compassion",
+          "title": "Compassion",
+          "description": "We care for people and the planet.",
+          "iconName": "heart"
+        }
+      ]
+    }
+  },
+  "enquiryNowPage": {
+    "type": "enquiryNowPage",
+
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Enquiry Now",
+      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
+      "title": "Enquiry Now"
+    },
+
+    "header": {
+      "icon": "envelope",
+      "label": "ENQUIRY NOW",
+      "heading": "We're Here to Help You",
+      "description": "Have a question, suggestion, or want to know more about our work? Fill out the form and our team will get back to you soon."
+    },
+
+    "leftSection": {
+      "title": "Together, We Can Create a Better Tomorrow",
+      "description": "Your queries and feedback help us improve and serve communities better. Reach out to us today!",
+
+      "features": [
+        {
+          "icon": "users",
+          "title": "Quick Response",
+          "description": "We ensure a prompt reply to all enquiries."
+        },
+        {
+          "icon": "shield",
+          "title": "Your Information is Safe",
+          "description": "We respect your privacy and keep your information secure."
+        },
+        {
+          "icon": "headset",
+          "title": "Friendly Support",
+          "description": "Our team is always ready to assist you."
+        },
+        {
+          "icon": "heart-hands",
+          "title": "We Value You",
+          "description": "Your message is important to us."
+        }
+      ],
+
+      "image": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=400&auto=format&fit=crop",
+        "alt": "Group of children holding a Thank You sign"
+      }
+    },
+
+    "form": {
+      "title": "Send Us a Message",
+
+      "fields": [
+        {
+          "name": "fullName",
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "type": "text",
+          "required": true,
+          "icon": "user"
+        },
+        {
+          "name": "emailAddress",
+          "label": "Email Address",
+          "placeholder": "Enter your email",
+          "type": "email",
+          "required": true,
+          "icon": "envelope"
+        },
+        {
+          "name": "phoneNumber",
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number",
+          "type": "tel",
+          "required": true,
+          "icon": "phone"
+        },
+        {
+          "name": "subject",
+          "label": "Subject",
+          "placeholder": "Select a subject",
+          "type": "select",
+          "required": true,
+          "options": []
+        },
+        {
+          "name": "messageType",
+          "label": "Message Type",
+          "type": "radio",
+          "required": true,
+          "options": [
+            {
+              "value": "generalEnquiry",
+              "label": "General Enquiry",
+              "default": true
+            },
+            {
+              "value": "partnership",
+              "label": "Partnership"
+            },
+            {
+              "value": "volunteer",
+              "label": "Volunteer"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ]
+        },
+        {
+          "name": "message",
+          "label": "Message",
+          "placeholder": "Type your message here...",
+          "type": "textarea",
+          "required": true,
+          "icon": "edit"
+        },
+        {
+          "name": "howDidYouHear",
+          "label": "How did you hear about us?",
+          "placeholder": "Select an option",
+          "type": "select",
+          "required": false,
+          "options": []
+        },
+        {
+          "name": "preferredContactMethod",
+          "label": "Preferred Contact Method",
+          "placeholder": "Select an option",
+          "type": "select",
+          "required": false,
+          "options": []
+        }
+      ],
+
+      "privacy": {
+        "text": "I agree to the Privacy Policy and Terms & Conditions.",
+        "links": ["Privacy Policy", "Terms & Conditions"],
+        "required": true
+      },
+
+      "submitButton": {
+        "label": "Submit Enquiry",
+        "icon": "paper-plane"
+      }
+    },
+
+    "contactSection": {
+      "title": "Prefer to talk?",
+      "subtitle": "We're Just a Call Away!",
+      "description": "You can also reach us directly through phone or email.",
+
+      "items": [
+        {
+          "icon": "phone",
+          "label": "Call Us",
+          "value": "+91 98765 43210"
+        },
+        {
+          "icon": "envelope",
+          "label": "Email Us",
+          "value": "info@ngo.org"
+        },
+        {
+          "icon": "clock",
+          "label": "Working Hours",
+          "value": "Mon - Sat\n9:00 AM - 6:00 PM"
+        }
+      ]
+    },
+
+    "footerBanner": {
+      "icon": "shield-check",
+      "text": "We are committed to transparency and accountability.",
+      "subtext": "Your trust inspires us to do more and better every day.",
+
+      "button": {
+        "label": "Learn More About Us",
+        "icon": "arrow-right"
+      }
+    }
+  },
+  "franchisePage": {
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Franchise",
+      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
+      "title": "Franchise"
+    },
+
+    "header": {
+      "icon": "handshake",
+      "label": "FRANCHISE",
+      "heading": "Be a Part of Our Mission. Build a Better Tomorrow.",
+      "description": "Join our growing network of franchise partners and make a meaningful impact in your community while building a rewarding and sustainable business."
+    },
+
+    "features": [
+      {
+        "icon": "chart",
+        "title": "Proven Model",
+        "description": "A successful and impact-driven business model you can trust."
+      },
+      {
+        "icon": "coin",
+        "title": "Low Investment",
+        "description": "Affordable franchise opportunities with high returns."
+      },
+      {
+        "icon": "users",
+        "title": "Training & Support",
+        "description": "Comprehensive training and continuous support at every step."
+      },
+      {
+        "icon": "heart-hands",
+        "title": "Make an Impact",
+        "description": "Empower communities and create positive, lasting change."
+      }
+    ],
+
+    "leftSection": {
+      "label": "WHY PARTNER WITH US?",
+      "title": "Grow Your Business. Change Lives.",
+      "description": "Our franchise partners are not just building a business, they are creating real change in society.",
+      "points": [
+        "Strong brand reputation and trust",
+        "Complete operational support",
+        "Marketing & branding assistance",
+        "Exclusive territory rights",
+        "Opportunity to make a social impact",
+        "Scalable and sustainable business"
+      ],
+      "image": {
+        "src": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Team joining hands together"
+      }
+    },
+
+    "form": {
+      "title": "Enquire Now",
+      "subtitle": "Take the first step towards owning a franchise.",
+
+      "fields": [
+        {
+          "name": "fullName",
+          "label": "Full Name",
+          "placeholder": "Enter your full name",
+          "type": "text",
+          "required": true,
+          "icon": "user"
+        },
+        {
+          "name": "emailAddress",
+          "label": "Email Address",
+          "placeholder": "Enter your email",
+          "type": "email",
+          "required": true,
+          "icon": "mail"
+        },
+        {
+          "name": "phoneNumber",
+          "label": "Phone Number",
+          "placeholder": "Enter your phone number",
+          "type": "tel",
+          "required": true,
+          "icon": "phone"
+        },
+        {
+          "name": "city",
+          "label": "City",
+          "placeholder": "Enter your city",
+          "type": "text",
+          "required": true,
+          "icon": "map-pin"
+        },
+        {
+          "name": "preferredState",
+          "label": "Preferred State",
+          "placeholder": "Select your state",
+          "type": "select",
+          "required": true,
+          "options": []
+        },
+        {
+          "name": "investmentCapacity",
+          "label": "Investment Capacity",
+          "placeholder": "Select investment range",
+          "type": "select",
+          "required": true,
+          "options": [
+            {
+              "value": "5-10L",
+              "label": "₹5 - 10 Lakhs"
+            },
+            {
+              "value": "10-25L",
+              "label": "₹10 - 25 Lakhs"
+            },
+            {
+              "value": "25-50L",
+              "label": "₹25 - 50 Lakhs"
+            },
+            {
+              "value": "50L+",
+              "label": "₹50 Lakhs+"
+            }
+          ]
+        },
+        {
+          "name": "whyPartner",
+          "label": "Why do you want to partner with us?",
+          "placeholder": "Share your thoughts...",
+          "type": "textarea",
+          "required": true,
+          "icon": "message"
+        },
+        {
+          "name": "howDidYouHear",
+          "label": "How did you hear about us?",
+          "placeholder": "Select an option",
+          "type": "select",
+          "required": false,
+          "options": [
+            {
+              "value": "social",
+              "label": "Social Media"
+            },
+            {
+              "value": "friend",
+              "label": "Friend / Family"
+            },
+            {
+              "value": "google",
+              "label": "Google Search"
+            },
+            {
+              "value": "event",
+              "label": "Event"
+            },
+            {
+              "value": "other",
+              "label": "Other"
+            }
+          ]
+        },
+        {
+          "name": "preferredContactMethod",
+          "label": "Preferred Contact Method",
+          "placeholder": "Select an option",
+          "type": "select",
+          "required": false,
+          "options": [
+            {
+              "value": "email",
+              "label": "Email"
+            },
+            {
+              "value": "phone",
+              "label": "Phone"
+            },
+            {
+              "value": "whatsapp",
+              "label": "WhatsApp"
+            }
+          ]
+        }
+      ],
+
+      "privacy": {
+        "text": "I agree to the Privacy Policy and Terms & Conditions.",
+        "links": ["Privacy Policy", "Terms & Conditions"],
+        "required": true
+      },
+
+      "submitButton": {
+        "label": "Submit Enquiry",
+        "icon": "send"
+      }
+    },
+
+    "processSection": {
+      "label": "OUR FRANCHISE PROCESS",
+      "title": "Simple Steps to Get Started",
+
+      "steps": [
+        {
+          "number": 1,
+          "icon": "clipboard",
+          "title": "Enquiry",
+          "description": "Submit your enquiry form with basic details."
+        },
+        {
+          "number": 2,
+          "icon": "phone",
+          "title": "Connect",
+          "description": "Our team will connect with you."
+        },
+        {
+          "number": 3,
+          "icon": "document",
+          "title": "Discussion",
+          "description": "We will share detailed information and plan."
+        },
+        {
+          "number": 4,
+          "icon": "handshake",
+          "title": "Agreement",
+          "description": "Finalize terms and complete agreement."
+        },
+        {
+          "number": 5,
+          "icon": "training",
+          "title": "Training",
+          "description": "Get trained and ready to launch."
+        },
+        {
+          "number": 6,
+          "icon": "award",
+          "title": "Launch",
+          "description": "Start your journey and create impact!"
+        }
+      ]
+    },
+
+    "contactBanner": {
+      "title": "Have Questions?",
+      "subtitle": "We're Here to Help!",
+      "description": "Talk to our franchise expert today and explore the opportunity that's right for you.",
+      "phone": "+91 98765 43210",
+      "email": "franchise@ngo.org",
+      "workingHours": "Mon - Sat : 9:00 AM - 6:00 PM",
+
+      "image": {
+        "src": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Hands holding a red heart"
+      }
+    }
+  },
+  "branchesPage": {
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Branches",
+      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
+      "title": "Branches"
+    },
+
+    "header": {
+      "label": "OUR BRANCHES",
+      "icon": "building",
+      "heading": "Our Branches, Stronger Together",
+      "description": "With multiple branches across regions, we are closer to the communities we serve and the lives we aim to transform."
+    },
+
+    "stats": [
+      {
+        "icon": "building",
+        "value": "25+",
+        "label": "Branches",
+        "subLabel": "Across Different Regions"
+      },
+      {
+        "icon": "users",
+        "value": "50,000+",
+        "label": "Lives Impacted",
+        "subLabel": "Through Our Presence"
+      },
+      {
+        "icon": "handshake",
+        "value": "15+",
+        "label": "States",
+        "subLabel": "We Are Active In"
+      },
+      {
+        "icon": "target",
+        "value": "100+",
+        "label": "Programs",
+        "subLabel": "Running at Local Level"
+      }
+    ],
+
+    "locationsSection": {
+      "label": "WHERE WE WORK",
+      "title": "Find a Branch Near You",
+
+      "branches": [
+        {
+          "city": "New Delhi",
+          "address": "123 Community Center, Lodhi Road, New Delhi, Delhi - 110003",
+          "phone": "+91 98765 43210"
+        },
+        {
+          "city": "Mumbai",
+          "address": "45 Hope Street, Andheri West, Mumbai, Maharashtra - 400058",
+          "phone": "+91 98765 43211"
+        },
+        {
+          "city": "Bengaluru",
+          "address": "78 Seva Bhavan Road, Koramangala, Bengaluru, Karnataka - 560034",
+          "phone": "+91 98765 43212"
+        },
+        {
+          "city": "Kolkata",
+          "address": "18 Harmony Lane, Salt Lake, Kolkata, West Bengal - 700064",
+          "phone": "+91 98765 43213"
+        },
+        {
+          "city": "Hyderabad",
+          "address": "22 Helping Hands Plaza, Banjara Hills, Hyderabad, Telangana - 500034",
+          "phone": "+91 98765 43214"
+        },
+        {
+          "city": "Chennai",
+          "address": "55 Unity Tower, T. Nagar, Chennai, Tamil Nadu - 600017",
+          "phone": "+91 98765 43215"
+        }
+      ],
+
+      "mapSide": {
+        "title": "Spreading Hope, Changing Lives",
+        "description": "Our branches help us reach more people and create lasting impact in communities.",
+        "mapImage": "https://images.unsplash.com/photo-1587474260584-136574528ed5?q=80&w=1170&auto=format&fit=crop"
+      }
+    },
+
+    "ctaBanner": {
+      "label": "BE A PART OF OUR MISSION",
+      "title": "Let's Build a Better Tomorrow Together",
+      "description": "Get in touch with your nearest branch or reach out to us to know how you can get involved.",
+
+      "primaryButton": {
+        "label": "Get Involved",
+        "href": "/get-involved"
+      },
+
+      "secondaryButton": {
+        "label": "Contact Us",
+        "href": "/contact"
+      },
+
+      "image": {
+        "src": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1170&auto=format&fit=crop",
+        "alt": "Hands holding a red heart together"
+      }
+    },
+
+    "contactBar": {
+      "items": [
+        {
+          "icon": "headset",
+          "label": "Need Help? Call Us",
+          "value": "+91 12345 67890"
+        },
+        {
+          "icon": "mail",
+          "label": "Email Us",
+          "value": "info@ngo.org"
+        },
+        {
+          "icon": "globe",
+          "label": "Visit Us",
+          "value": "www.ngo.org"
+        }
+      ]
+    }
+  },
+   "brochurePage": {
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Brochure",
+      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
+      "title": "Brochure"
+    },
+    "header": {
+      "icon": "book-open",
+      "label": "BROCHURES",
+      "heading": "Explore Our Brochures",
+      "description": "Download our brochures to know more about our mission, programs, initiatives and the impact we create in communities."
+    },
+    "features": [
+      {
+        "icon": "file-text",
+        "title": "Detailed Information",
+        "description": "Get in-depth information about our programs and initiatives."
+      },
+      {
+        "icon": "heart-hands",
+        "title": "Our Impact",
+        "description": "See how we are creating positive and lasting change in communities."
+      },
+      {
+        "icon": "users",
+        "title": "Get Involved",
+        "description": "Find opportunities to volunteer, partner or donate with us."
+      },
+      {
+        "icon": "download",
+        "title": "Easy Download",
+        "description": "Download brochures in PDF format with just one click."
+      }
+    ],
+    "sectionTitle": {
+      "label": "OUR BROCHURES",
+      "heading": "Inform. Inspire. Involve."
+    },
+    "brochures": [
+      {
+        "id": "overview",
+        "title": "BUILDING A BETTER TOMORROW",
+        "subtitle": "Together, we can create a better world.",
+        "name": "Overview Brochure",
+        "description": "Learn about our mission, vision and the journey of our organization.",
+        "image": "/bronchure/tomorrow.png",
+        "downloadUrl": "/brochures/overview.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "programs",
+        "title": "OUR PROGRAMS",
+        "subtitle": "Empowering communities through sustainable initiatives.",
+        "name": "Programs Brochure",
+        "description": "Explore the programs and initiatives we run for community development.",
+        "image": "/bronchure/programs.png",
+        "downloadUrl": "/brochures/programs.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "impact",
+        "title": "MAKING AN IMPACT",
+        "subtitle": "Real stories. Real change. Stronger communities.",
+        "name": "Impact Report",
+        "description": "Discover the impact we create and the lives we touch through our work.",
+        "image": "/bronchure/impact.png",
+        "downloadUrl": "/brochures/impact.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "partnership",
+        "title": "PARTNER WITH US",
+        "subtitle": "Together, we can build a stronger, better tomorrow.",
+        "name": "Partnership Brochure",
+        "description": "Know how you can partner with us to bring meaningful change.",
+        "image": "/bronchure/partners.png",
+        "downloadUrl": "/brochures/partnership.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "volunteer",
+        "title": "VOLUNTEER WITH US",
+        "subtitle": "Your time can create a lifetime of change.",
+        "name": "Volunteer Brochure",
+        "description": "Find out how you can contribute your time and skills as a volunteer.",
+        "image": "/bronchure/voluteer.png",
+        "downloadUrl": "/brochures/volunteer.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "csr",
+        "title": "CSR INITIATIVES",
+        "subtitle": "Working together for a sustainable and better future.",
+        "name": "CSR Brochure",
+        "description": "Explore our corporate social responsibility initiatives and collaborations.",
+        "image": "/bronchure/csr.png",
+        "downloadUrl": "/brochures/csr.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "annual",
+        "title": "ANNUAL REPORT 2023-24",
+        "subtitle": "A year of progress. A future of hope.",
+        "name": "Annual Report",
+        "description": "A comprehensive report of our activities, achievements and financials.",
+        "image": "/bronchure/report.png",
+        "downloadUrl": "/brochures/annual-report-2023-24.pdf",
+        "downloadlabel": "Download"
+      },
+      {
+        "id": "donation",
+        "title": "HOW YOUR DONATION HELPS",
+        "subtitle": "Small acts of kindness create big change.",
+        "name": "Donation Impact Brochure",
+        "description": "See how your donations help us support and uplift those in need.",
+        "image": "/bronchure/donation.png",
+        "downloadUrl": "/brochures/donation-impact.pdf",
+        "downloadlabel": "Download"
+      }
+    ],
+    "ctaSection": {
+      "label": "TOGETHER WE CAN",
+      "title": "Be a Part of the Change",
+      "description": "Join hands with us to create a better, stronger and more equitable world for all.",
+      "primaryButton": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondaryButton": {
+        "label": "Join Us",
+        "href": "/join"
+      },
+      "stats": [
+        {
+          "icon": "users",
+          "value": "50,000+",
+          "label": "Lives Impacted"
+        },
+        {
+          "icon": "heart-hands",
+          "value": "100+",
+          "label": "Communities"
+        },
+        {
+          "icon": "handshake",
+          "value": "200+",
+          "label": "Partners"
+        },
+        {
+          "icon": "globe",
+          "value": "15+",
+          "label": "States"
+        }
+      ]
+    }
+  },
+  "sitemap": {
+    "banner": {
+      "breadcrumbCurrent": "Sitemap",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "header": {
+      "title": "SITEMAP",
+      "subtitle": "Navigate through our website with ease. Find everything you need in just a click."
+    },
+    "homeNode": {
+      "label": "HOME",
+      "href": "/",
+      "icon": "Home"
+    },
+    "categories": [
+      {
+        "id": "company",
+        "title": "COMPANY",
+        "icon": "Building2",
+        "items": [
+          { "label": "About Us", "href": "/about-us", "icon": "Building2" },
+          { "label": "Mission", "href": "/about-us#mission", "icon": "HeartHandshake" },
+          { "label": "Vision", "href": "/about-us#vision", "icon": "Eye" },
+          { "label": "Why Choose Us", "href": "/about-us#why-choose-us", "icon": "ShieldCheck" },
+          { "label": "Our Team", "href": "/team", "icon": "Users" },
+          { "label": "Awards & Certifications", "href": "/awards", "icon": "Award" },
+          { "label": "Partners", "href": "/partners", "icon": "Heart" },
+          { "label": "Media", "href": "/gallery", "icon": "Newspaper" }
+        ]
+      },
+      {
+        "id": "services",
+        "title": "SERVICES",
+        "icon": "Settings",
+        "items": [
+          { "label": "Services", "href": "/service", "icon": "Settings" },
+          { "label": "Industries We Serve", "href": "/industry", "icon": "Factory" },
+          { "label": "Portfolio / Projects", "href": "/project", "icon": "FolderKanban" },
+          { "label": "Case Study", "href": "/case-study", "icon": "FileText" }
+        ]
+      },
+      {
+        "id": "resources",
+        "title": "RESOURCES",
+        "icon": "FileText",
+        "items": [
+          { "label": "Blog / News", "href": "/blog", "icon": "FileText" },
+          { "label": "Blog List", "href": "/blog", "icon": "List" },
+          { "label": "FAQs", "href": "/faq", "icon": "HelpCircle" },
+          { "label": "Support", "href": "/support", "icon": "LifeBuoy" },
+          { "label": "Events", "href": "/event", "icon": "Calendar" }
+        ]
+      },
+      {
+        "id": "opportunities",
+        "title": "OPPORTUNITIES",
+        "icon": "Briefcase",
+        "items": [
+          { "label": "Career", "href": "/career", "icon": "UserPlus" },
+          { "label": "Franchise", "href": "/frenchise", "icon": "Network" }
+        ]
+      },
+      {
+        "id": "quick-actions",
+        "title": "QUICK ACTIONS",
+        "icon": "Zap",
+        "items": [
+          { "label": "Enquiry Now", "href": "/enquiry", "icon": "CheckSquare" },
+          { "label": "Contact Us", "href": "/contact-us", "icon": "PhoneCall" },
+          { "label": "Donate now", "href": "/donate", "icon": "Heart" }
+        ]
+      },
+      {
+        "id": "gallery",
+        "title": "GALLERY",
+        "icon": "Image",
+        "items": [
+          { "label": "Gallery", "href": "/gallery", "icon": "Image" }
+        ]
+      }
+    ],
+    "legalNode": {
+      "title": "LEGAL & POLICIES",
+      "icon": "ShieldCheck",
+      "items": [
+        { "label": "Privacy Policy", "href": "/privacy-policy", "icon": "Shield" },
+        { "label": "Terms & Conditions", "href": "/terms-conditions", "icon": "ClipboardList" },
+        { "label": "Refund Policy", "href": "/refund-policy", "icon": "RotateCcw" },
+        { "label": "Cookie Policy", "href": "/cookie-policy", "icon": "Cookie" },
+        { "label": "Disclaimer", "href": "/disclaimer", "icon": "AlertTriangle" },
+        { "label": "SITEMAP", "href": "/sitemap", "icon": "Network", "isCurrent": true }
+      ]
     }
   }
 }

@@ -1,0 +1,276 @@
+"use client";
+
+import type { SitemapPageProps } from "@/type/typeSection";
+import Image from "next/image";
+import Link from "next/link";
+import {
+  Home,
+  Building2,
+  Target,
+  Eye,
+  CheckCircle2,
+  Users,
+  Award,
+  HeartHandshake,
+  Newspaper,
+  Settings,
+  Factory,
+  FolderKanban,
+  FileText,
+  List,
+  HelpCircle,
+  LifeBuoy,
+  Calendar,
+  Briefcase,
+  UserPlus,
+  Network,
+  Zap,
+  CheckSquare,
+  PhoneCall,
+  Heart,
+  Image as ImageIcon,
+  ShieldCheck,
+  Shield,
+  ClipboardList,
+  RotateCcw,
+  Cookie,
+  AlertTriangle,
+  GitFork,
+  LayoutGrid,
+} from "lucide-react";
+import React from "react";
+
+// Icon Renderer Map
+const iconMap: Record<string, React.ElementType> = {
+  Home,
+  Building2,
+  Target,
+  Eye,
+  CheckCircle2,
+  Users,
+  Award,
+  HeartHandshake,
+  Newspaper,
+  Settings,
+  Factory,
+  FolderKanban,
+  FileText,
+  List,
+  HelpCircle,
+  LifeBuoy,
+  Calendar,
+  Briefcase,
+  UserPlus,
+  Network,
+  Zap,
+  CheckSquare,
+  PhoneCall,
+  Heart,
+  Image: ImageIcon,
+  ShieldCheck,
+  Shield,
+  ClipboardList,
+  RotateCcw,
+  Cookie,
+  AlertTriangle,
+  GitFork,
+};
+
+export default function Sitemap({ data }: SitemapPageProps) {
+  const { banner, header, homeNode, categories, legalNode } = data;
+
+  const renderIcon = (name: string, className: string = "w-4 h-4") => {
+    const IconComp = iconMap[name] || LayoutGrid;
+    return <IconComp className={className} />;
+  };
+
+  return (
+    <main className="min-h-screen bg-[#fafafa]">
+      {/* ================= Banner ================= */}
+      <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
+        <Image
+          src={banner.backgroundImage}
+          alt={banner.breadcrumbCurrent}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
+
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-[#120a1a]/75" />
+
+        {/* Banner Content */}
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {banner.breadcrumbCurrent}
+          </h1>
+
+          {/* Breadcrumb */}
+          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
+            <Link href="/" className="transition-colors hover:text-[#ff541b]">
+              {banner.breadcrumbHome}
+            </Link>
+
+            <span className="text-[#ff541b]">/</span>
+
+            <span className="text-[#ff541b]">{banner.breadcrumbCurrent}</span>
+          </div>
+        </div>
+      </section>
+
+      {/* ================= Sitemap Content ================= */}
+      <section className="relative py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
+        {/* Decorative Grid Texture */}
+        <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
+
+        <div className="relative z-10">
+          {/* Header Title Block */}
+          <div className="flex flex-col items-center text-center mb-12">
+            {/* Top Icon Diagram */}
+            <div className="mb-1 p-2 rounded-lg bg-orange-50 border border-orange-100 text-[#ff541b]">
+              <GitFork className="w-8 h-8 rotate-180" />
+            </div>
+
+            {/* Sitemap Big Title with Decorative Lines & Heart */}
+            <div className="flex items-center justify-center gap-4 w-full max-w-md my-1">
+              <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent to-[#ff541b]" />
+              <h2 className="text-3xl sm:text-4xl  font-black tracking-wider text-[#0B132A]">
+                {header.title}
+              </h2>
+              <div className="h-[2px] flex-1 bg-gradient-to-l from-transparent to-[#ff541b]" />
+            </div>
+
+            {/* Heart Decorator */}
+            <div className="flex items-center gap-2 my-1 text-[#ff541b]">
+              <span className="h-[1px] w-8 bg-[#ff541b]" />
+              <Heart className="w-4 h-4 fill-[#ff541b]" />
+              <span className="h-[1px] w-8 bg-[#ff541b]" />
+            </div>
+
+            {/* Subtitle */}
+            <p className="mt-1 text-sm sm:text-base text-slate-600 max-w-2xl">
+              {header.subtitle}
+            </p>
+          </div>
+
+          {/* ================= TREE STRUCTURE ================= */}
+
+          {/* 1. HOME Node */}
+          <div className="flex flex-col items-center">
+            <Link
+              href={homeNode.href}
+              className="inline-flex items-center justify-center gap-2.5 px-8 py-3 bg-[#ff541b] text-white font-bold tracking-wider rounded-xl shadow-lg shadow-orange-500/25 hover:bg-[#e0450e] hover:shadow-orange-500/40 hover:-translate-y-0.5 transition-all duration-200"
+            >
+              {renderIcon(homeNode.icon, "w-5 h-5")}
+              <span>{homeNode.label}</span>
+            </Link>
+
+            {/* Vertical Line down from HOME to main branch line */}
+            <div className="w-[2px] h-10 bg-[#ff541b]" />
+          </div>
+
+          {/* 2. Main Horizontal Line & 6 Top Columns */}
+          <div className="relative">
+            {/* Horizontal Line across 6 columns on Desktop */}
+            <div className="hidden lg:block absolute top-0 left-[8.33%] right-[8.33%] h-[2px] bg-[#ff541b]" />
+
+            {/* Central Drop Line through Middle (between col 3 & 4) down to LEGAL & POLICIES */}
+            <div className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-[#ff541b] z-0 pointer-events-none" />
+
+            {/* 6 Category Columns Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10 pt-0 lg:pt-8">
+              {categories.map((category) => (
+                <div key={category.id} className="flex flex-col items-center">
+                  {/* Vertical Line from top horizontal line to Category Header on Desktop */}
+                  <div className="hidden lg:block w-[2px] h-8 bg-[#ff541b] -mt-8" />
+
+                  {/* Category Header Card */}
+                  <div className="w-full bg-[#0B132A] text-white px-3 py-3 rounded-lg flex items-center justify-center gap-2 shadow-md mb-3 border border-slate-800">
+                    <span className="text-[#ff541b]">
+                      {renderIcon(category.icon, "w-4 h-4")}
+                    </span>
+                    <span className="font-bold text-xs tracking-wider uppercase">
+                      {category.title}
+                    </span>
+                  </div>
+
+                  {/* Category Items List */}
+                  <div className="w-full flex flex-col gap-2.5">
+                    {category.items.map((item, idx) => (
+                      <Link
+                        key={idx}
+                        href={item.href}
+                        className="group flex items-center gap-2.5 px-3.5 py-2.5 bg-white rounded-lg border border-slate-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-orange-300 hover:bg-orange-50/30 transition-all duration-200"
+                      >
+                        <span className="text-[#ff541b] group-hover:scale-110 transition-transform">
+                          {renderIcon(item.icon, "w-4 h-4")}
+                        </span>
+                        <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-[#ff541b] transition-colors leading-tight">
+                          {item.label}
+                        </span>
+                      </Link>
+                    ))}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Central Vertical Connector Line to LEGAL & POLICIES */}
+          <div className="flex flex-col items-center mt-10 md:mt-16">
+            <div className="w-[2px] h-12 bg-[#ff541b]" />
+
+            {/* 3. LEGAL & POLICIES Node */}
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B132A] text-white font-bold tracking-wider text-xs sm:text-sm rounded-xl shadow-lg border border-slate-800">
+              <ShieldCheck className="w-5 h-5 text-[#ff541b]" />
+              <span>{legalNode.title}</span>
+            </div>
+
+            {/* Vertical Line down from LEGAL & POLICIES to Legal Horizontal Bar */}
+            <div className="w-[2px] h-10 bg-[#ff541b]" />
+          </div>
+
+          {/* 4. Lower Horizontal Line & 6 Policy Cards */}
+          <div className="relative">
+            {/* Horizontal Line across 6 policy cards on Desktop */}
+            <div className="hidden lg:block absolute top-0 left-[8.33%] right-[8.33%] h-[2px] bg-[#ff541b]" />
+
+            {/* 6 Policy Cards Grid */}
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 relative z-10 pt-0 lg:pt-6">
+              {legalNode.items.map((item, idx) => {
+                const isCurrentSitemap = item.isCurrent;
+                return (
+                  <div key={idx} className="flex flex-col items-center">
+                    {/* Vertical Line from legal horizontal line on Desktop */}
+                    <div className="hidden lg:block w-[2px] h-6 bg-[#ff541b] -mt-6" />
+
+                    <Link
+                      href={item.href}
+                      className={`w-full flex items-center justify-center gap-2.5 px-3.5 py-3 rounded-xl border transition-all duration-200 ${
+                        isCurrentSitemap
+                          ? "bg-[#0B132A] text-white border-[#0B132A] shadow-md hover:bg-[#131f40]"
+                          : "bg-white text-slate-700 border-slate-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-orange-300 hover:text-[#ff541b]"
+                      }`}
+                    >
+                      <span
+                        className={
+                          isCurrentSitemap ? "text-[#ff541b]" : "text-[#ff541b]"
+                        }
+                      >
+                        {renderIcon(item.icon, "w-4 h-4")}
+                      </span>
+                      <span className="font-semibold text-xs sm:text-sm tracking-wide text-center">
+                        {item.label}
+                      </span>
+                    </Link>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

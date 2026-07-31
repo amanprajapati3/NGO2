@@ -392,6 +392,12 @@ export interface CauseBadge {
   label: string;
 }
 
+export interface CausesBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
 export interface CauseTitle {
   line1: string;
   highlight: string;
@@ -450,6 +456,7 @@ export interface CausesData {
   items: CauseItem[];
   exploreButton: ExploreCausesButton;
   cta: CausesCTA;
+  banner: CausesBanner;
 }
 
 export interface CausesSectionProps {
@@ -482,7 +489,7 @@ export interface ProjectCTA {
   button: ProjectButton;
 }
 
-export interface ProjectBanner{
+export interface ProjectBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
   backgroundImage: string;
@@ -1455,7 +1462,7 @@ export type TermsCondition = { id: string; title: string; content: string };
 export type TermsData = { banner: TermsBanner; conditions: TermsCondition[] };
 
 export interface TermsConditionProps {
-  data: TermsData
+  data: TermsData;
 }
 
 export type PrivacyBanner = {
@@ -1464,13 +1471,112 @@ export type PrivacyBanner = {
   backgroundImage: string;
 };
 export type privacyPolicy = { id: string; title: string; content: string };
-export type privacyPolicydata = { banner: PrivacyBanner; conditions: privacyPolicy[] };
+export type privacyPolicydata = {
+  banner: PrivacyBanner;
+  conditions: privacyPolicy[];
+};
 
 export interface privacyPolicyprops {
-  data: privacyPolicydata
+  data: privacyPolicydata;
 }
 
-//Donate Now Banner 
+export type refundBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+export type refundPolicy = { id: string; title: string; content: string };
+export type refundPolicydata = {
+  banner: refundBanner;
+  conditions: refundPolicy[];
+};
+
+export interface refundPolicyprops {
+  data: refundPolicydata;
+}
+
+export type cookieBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+export type cookiePolicy = { id: string; title: string; content: string };
+export type cookiePolicydata = {
+  banner: cookieBanner;
+  conditions: cookiePolicy[];
+};
+
+export interface cookiePolicyprops {
+  data: cookiePolicydata;
+}
+
+export type disclaimerBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+export type disclaimerPolicy = { id: string; title: string; content: string };
+export type disclaimerPolicydata = {
+  banner: disclaimerBanner;
+  conditions: disclaimerPolicy[];
+};
+
+export interface disclaimerPolicyprops {
+  data: disclaimerPolicydata;
+}
+
+export type SitemapBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+
+export type SitemapHeader = {
+  title: string;
+  subtitle: string;
+};
+
+export type SitemapHomeNode = {
+  label: string;
+  href: string;
+  icon: string;
+};
+
+export type SitemapLinkItem = {
+  label: string;
+  href: string;
+  icon: string;
+  isCurrent?: boolean;
+};
+
+export type SitemapCategory = {
+  id: string;
+  title: string;
+  icon: string;
+  items: SitemapLinkItem[];
+};
+
+export type SitemapLegalNode = {
+  title: string;
+  icon: string;
+  items: SitemapLinkItem[];
+};
+
+export type SitemapData = {
+  banner: SitemapBanner;
+  header: SitemapHeader;
+  homeNode: SitemapHomeNode;
+  categories: SitemapCategory[];
+  legalNode: SitemapLegalNode;
+};
+
+export interface SitemapPageProps {
+  data: SitemapData;
+}
+
+
+
+//Donate Now Banner
 export type DonateNowBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
@@ -1867,4 +1973,401 @@ export interface SupportPageData {
 
 export interface SupportDataProps {
   data: SupportPageData;
+}
+
+export interface CSRPageProps {
+  banner: {
+    breadcrumbCurrent: string;
+    breadcrumbHome: string;
+    backgroundImage: string;
+  };
+
+  header: {
+    topBadge: string;
+
+    title: {
+      part1: string;
+      part2: string;
+    };
+
+    subtitle: string;
+  };
+
+  stats: {
+    id: string;
+    value: string;
+    label: string;
+    iconName: string;
+  }[];
+
+  focusAreas: {
+    topBadge: string;
+    title: string;
+    description: string;
+
+    items: {
+      id: string;
+      title: string;
+      description: string;
+      image: string;
+      iconName: string;
+    }[];
+  };
+
+  ourImpact: {
+    topBadge: string;
+    title: string;
+    description: string;
+
+    ctaButton: {
+      text: string;
+      action: string;
+    };
+
+    pillars: {
+      id: string;
+      title: string;
+      description: string;
+      iconName: string;
+    }[];
+  };
+
+  csrProjects: {
+    topBadge: string;
+    title: string;
+    description: string;
+
+    items: {
+      id: string;
+      title: string;
+      description: string;
+      image: string;
+    }[];
+  };
+
+  bannerCta: {
+    title: string;
+    description: string;
+    buttonText: string;
+    buttonAction: string;
+  };
+
+  coreValues: {
+    topBadge: string;
+    title: string;
+    description: string;
+
+    items: {
+      id: string;
+      title: string;
+      description: string;
+      iconName: string;
+    }[];
+  };
+}
+
+export interface EnquiryNowPageProps {
+  type: "enquiryNowPage";
+
+  banner: {
+    breadcrumbHome: string;
+    breadcrumbCurrent: string;
+    backgroundImage: string;
+    title: string;
+  };
+
+  header: {
+    icon: string;
+    label: string;
+    heading: string;
+    description: string;
+  };
+
+  leftSection: {
+    title: string;
+    description: string;
+
+    features: {
+      icon: string;
+      title: string;
+      description: string;
+    }[];
+
+    image: {
+      src: string;
+      alt: string;
+    };
+  };
+
+  form: {
+    title: string;
+
+    fields: {
+      name: string;
+      label: string;
+      placeholder?: string;
+      type: "text" | "email" | "tel" | "select" | "radio" | "textarea";
+      required: boolean;
+      icon?: string;
+
+      options?: {
+        value: string;
+        label: string;
+        default?: boolean;
+      }[];
+    }[];
+
+    privacy: {
+      text: string;
+      links: string[];
+      required: boolean;
+    };
+
+    submitButton: {
+      label: string;
+      icon: string;
+    };
+  };
+
+  contactSection: {
+    title: string;
+    subtitle: string;
+    description: string;
+
+    items: {
+      icon: string;
+      label: string;
+      value: string;
+    }[];
+  };
+
+  footerBanner: {
+    icon: string;
+    text: string;
+    subtext: string;
+
+    button: {
+      label: string;
+      icon: string;
+    };
+  };
+}
+
+export interface FranchisePageProps {
+  banner: {
+    breadcrumbHome: string;
+    breadcrumbCurrent: string;
+    backgroundImage: string;
+    title: string;
+  };
+
+  header: {
+    icon: string;
+    label: string;
+    heading: string;
+    description: string;
+  };
+
+  features: {
+    icon: string;
+    title: string;
+    description: string;
+  }[];
+
+  leftSection: {
+    label: string;
+    title: string;
+    description: string;
+    points: string[];
+
+    image: {
+      src: string;
+      alt: string;
+    };
+  };
+
+  form: {
+    title: string;
+    subtitle: string;
+
+    fields: {
+      name: string;
+      label: string;
+      placeholder?: string;
+      type: "text" | "email" | "tel" | "select" | "textarea";
+      required: boolean;
+      icon?: string;
+
+      options?: {
+        value: string;
+        label: string;
+      }[];
+    }[];
+
+    privacy: {
+      text: string;
+      links: string[];
+      required: boolean;
+    };
+
+    submitButton: {
+      label: string;
+      icon: string;
+    };
+  };
+
+  processSection: {
+    label: string;
+    title: string;
+
+    steps: {
+      number: number;
+      icon: string;
+      title: string;
+      description: string;
+    }[];
+  };
+
+  contactBanner: {
+    title: string;
+    subtitle: string;
+    description: string;
+    phone: string;
+    email: string;
+    workingHours: string;
+
+    image: {
+      src: string;
+      alt: string;
+    };
+  };
+}
+
+export interface BranchesPageProps {
+  banner: {
+    breadcrumbHome: string;
+    breadcrumbCurrent: string;
+    backgroundImage: string;
+    title: string;
+  };
+
+  header: {
+    label: string;
+    icon: string;
+    heading: string;
+    description: string;
+  };
+
+  stats: {
+    icon: string;
+    value: string;
+    label: string;
+    subLabel: string;
+  }[];
+
+  locationsSection: {
+    label: string;
+    title: string;
+
+    branches: {
+      city: string;
+      address: string;
+      phone: string;
+    }[];
+
+    mapSide: {
+      title: string;
+      description: string;
+      mapImage: string;
+    };
+  };
+
+  ctaBanner: {
+    label: string;
+    title: string;
+    description: string;
+
+    primaryButton: {
+      label: string;
+      href: string;
+    };
+
+    secondaryButton: {
+      label: string;
+      href: string;
+    };
+
+    image: {
+      src: string;
+      alt: string;
+    };
+  };
+
+  contactBar: {
+    items: {
+      icon: string;
+      label: string;
+      value: string;
+    }[];
+  };
+}
+
+export interface BrochurePageProps {
+  banner: {
+    breadcrumbHome: string;
+    breadcrumbCurrent: string;
+    backgroundImage: string;
+    title: string;
+  };
+
+  header: {
+    icon: string;
+    label: string;
+    heading: string;
+    description: string;
+  };
+
+  features: {
+    icon: string;
+    title: string;
+    description: string;
+  }[];
+
+  sectionTitle: {
+    label: string;
+    heading: string;
+  };
+
+  brochures: {
+    id: string;
+    title: string;
+    subtitle: string;
+    name: string;
+    description: string;
+    image: string;
+    downloadUrl: string;
+    downloadlabel: string;
+  }[];
+
+  ctaSection: {
+    label: string;
+    title: string;
+    description: string;
+
+    primaryButton: {
+      label: string;
+      href: string;
+    };
+
+    secondaryButton: {
+      label: string;
+      href: string;
+    };
+
+    stats: {
+      icon: string;
+      value: string;
+      label: string;
+    }[];
+  };
 }

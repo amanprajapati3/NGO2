@@ -24,9 +24,7 @@ const iconMap: Record<string, React.ReactNode> = {
   FiFeather: <FiFeather className="h-5 w-5 sm:h-6 sm:w-6" />,
   FiUser: <FiUser className="h-5 w-5 sm:h-6 sm:w-6" />,
   FiSmile: <FiSmile className="h-5 w-5 sm:h-6 sm:w-6" />,
-  FiHeartHandshake: (
-    <FaHandHoldingHeart className="h-5 w-5 sm:h-6 sm:w-6" />
-  ),
+  FiHeartHandshake: <FaHandHoldingHeart className="h-5 w-5 sm:h-6 sm:w-6" />,
   FiShield: <FiShield className="h-5 w-5 sm:h-6 sm:w-6" />,
   FiAward: <FiAward className="h-5 w-5 sm:h-6 sm:w-6" />,
   FiUsers: <FiUsers className="h-5 w-5 sm:h-6 sm:w-6" />,
@@ -37,43 +35,40 @@ export default function ServicesPage({ data }: ServicesPageProps) {
 
   return (
     <main className="w-full ">
-  
-  {/* banner */}
-  <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
-          <Image
-            src={banner.backgroundImage}
-            alt={banner.breadcrumbCurrent}
-            fill
-            priority
-            className="object-cover"
-            sizes="100vw"
-          />
-  
-          <div className="absolute inset-0 bg-[#120a1a]/70" />
-  
-          <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-            <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-              {banner.breadcrumbCurrent}
-            </h1>
-  
-            <div className="flex items-center justify-center gap-2 text-sm text-white/80">
-              <Link href="/" className="transition-colors hover:text-[#ff541b]">
-                {banner.breadcrumbHome}
-              </Link>
-  
-              <span>/</span>
-  
-              <span className="text-[#ff541b]">{banner.breadcrumbCurrent}</span>
-            </div>
-  
-            <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#ff541b]" />
-          </div>
-        </section>
-      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 bg-[#fdfcfc] py-8 text-[#1a1a1a] sm:py-12 lg:py-16">
+      {/* banner */}
+      <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
+        <Image
+          src={banner.backgroundImage}
+          alt={banner.breadcrumbCurrent}
+          fill
+          priority
+          className="object-cover"
+          sizes="100vw"
+        />
 
+        <div className="absolute inset-0 bg-[#120a1a]/70" />
+
+        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
+          <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
+            {banner.breadcrumbCurrent}
+          </h1>
+
+          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
+            <Link href="/" className="transition-colors hover:text-[#ff541b]">
+              {banner.breadcrumbHome}
+            </Link>
+
+            <span>/</span>
+
+            <span className="text-[#ff541b]">{banner.breadcrumbCurrent}</span>
+          </div>
+
+          <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#ff541b]" />
+        </div>
+      </section>
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 bg-[#fdfcfc] py-8 text-[#1a1a1a] sm:py-12 lg:py-16">
         {/* ================= HEADER SECTION ================= */}
         <div className="text-center">
-
           {/* Top Divider & Tag */}
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
             <span className="h-[1px] w-6 bg-orange-400 sm:w-10" />
@@ -140,7 +135,6 @@ export default function ServicesPage({ data }: ServicesPageProps) {
 
               {/* Card Body */}
               <div className="flex flex-1 flex-col p-4 pt-7 text-center sm:p-6 sm:pt-8">
-
                 <h3 className="font-serif text-base font-bold text-[#111111] sm:text-lg">
                   {item.title}
                 </h3>
@@ -166,49 +160,49 @@ export default function ServicesPage({ data }: ServicesPageProps) {
         </div>
 
         {/* ================= CTA BANNER ================= */}
-        <div className="relative mt-10 overflow-hidden rounded-2xl bg-gradient-to-r from-[#fdf0f0] via-[#fcf5f5] to-transparent p-5 sm:mt-16 sm:p-8 lg:p-12">
-          <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-12">
+        <div className="relative mt-10 min-h-[280px] overflow-hidden rounded-2xl sm:mt-16">
+          {/* Full CTA Background Image */}
+          <Image
+            src={callToAction.bannerImage}
+            alt={callToAction.buttonText}
+            fill
+            sizes="100vw"
+            className="object-cover object-center"
+          />
 
-            {/* CTA Content */}
-            <div className="space-y-3 sm:space-y-4 lg:col-span-7">
+          {/* White gradient from left 50% → transparent */}
+          <div className="absolute inset-y-0 left-0 w-3/4 bg-gradient-to-r from-white via-white/95 to-transparent" />
 
-              <h2 className="font-serif text-xl font-bold text-[#111111] sm:text-3xl lg:text-4xl">
-                {callToAction.titlePrefix}
+          {/* CTA Content */}
+          <div className="relative z-10 grid min-h-[280px] grid-cols-1 items-center lg:grid-cols-12">
+            <div className="p-5 sm:p-8 lg:col-span-7 lg:p-12">
+              <div className="space-y-3 sm:space-y-4">
+                <h2 className="font-serif text-xl font-bold text-[#111111] sm:text-3xl lg:text-4xl">
+                  {callToAction.titlePrefix}
 
-                <span className="text-orange-500">
-                  {callToAction.titleHighlight}
-                </span>
-              </h2>
+                  <span className="text-orange-500">
+                    {callToAction.titleHighlight}
+                  </span>
+                </h2>
 
-              <p className="max-w-xl text-xs leading-relaxed text-slate-600 sm:text-sm lg:text-base">
-                {callToAction.description}
-              </p>
+                <p className="max-w-xl text-xs leading-relaxed text-slate-600 sm:text-sm lg:text-base">
+                  {callToAction.description}
+                </p>
 
-              <div className="pt-2">
-                <Link
-                  href={callToAction.buttonLink}
-                  className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-orange-600 sm:px-7 sm:py-3 sm:text-sm"
-                >
-                  <span>{callToAction.buttonText}</span>
+                <div className="pt-2">
+                  <Link
+                    href={callToAction.buttonLink}
+                    className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-orange-600 sm:px-7 sm:py-3 sm:text-sm"
+                  >
+                    <span>{callToAction.buttonText}</span>
 
-                  <FiArrowRight className="text-xs sm:text-sm" />
-                </Link>
+                    <FiArrowRight className="text-xs sm:text-sm" />
+                  </Link>
+                </div>
               </div>
-            </div>
-
-            {/* CTA Image */}
-            <div className="relative hidden h-48 w-full overflow-hidden rounded-xl lg:col-span-5 lg:block lg:h-64">
-              <Image
-                src={callToAction.bannerImage}
-                alt={callToAction.buttonText}
-                fill
-                sizes="(max-width: 1024px) 0vw, 40vw"
-                className="object-cover object-center"
-              />
             </div>
           </div>
         </div>
-
       </div>
     </main>
   );
