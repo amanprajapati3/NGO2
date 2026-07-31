@@ -30,10 +30,10 @@ export default function FAQSection({
       <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
 
       <div className="relative mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
-        <div className="grid items-center gap-8 md:gap-10 lg:grid-cols-2 lg:gap-12">
+        <div className="flex flex-col justify-center items-center text-center gap-10">
 
           {/* ================= LEFT ================= */}
-          <div className="flex flex-col items-center text-center lg:items-start lg:text-left">
+          <div className=" items-center text-center ">
 
             {/* Badge */}
             <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
@@ -42,7 +42,7 @@ export default function FAQSection({
             </div>
 
             {/* Title */}
-            <h2 className="md:mt-2 max-w-xl text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl md:text-5xl lg:mt-0">
+            <h2 className="md:mt-0 max-w-xl text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl md:text-5xl lg:mt-0">
               {title.line1}{" "}
               <span className="text-orange-500">
                 {title.highlight}
@@ -50,15 +50,17 @@ export default function FAQSection({
             </h2>
 
             {/* Accent Line */}
-            <div className="mt-2 h-1 w-14 rounded-full bg-orange-500" />
+            <center>
+            <div className="mt-2 h-1 w-14 sm:w-28 rounded-full bg-orange-500" />
+            </center>
 
             {/* Description */}
-            <p className="mt-2 max-w-lg md:text-md text-sm text-slate-900 sm:text-base ">
+            <p className="mt-2 max-w-lg md:text-md text-sm text-slate-900  ">
               {description}
             </p>
 
             {/* Image */}
-            <div className="relative mt-5 w-full max-w-[520px] overflow-hidden rounded-2xl sm:mt-6">
+            {/* <div className="relative mt-5 w-full max-w-[520px] overflow-hidden rounded-2xl sm:mt-6">
               <Image
                 src={image.src}
                 alt={image.alt}
@@ -67,7 +69,7 @@ export default function FAQSection({
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 520px, 700px"
                 className="h-auto w-full object-cover"
               />
-            </div>
+            </div> */}
           </div>
 
           {/* ================= RIGHT ================= */}
@@ -124,7 +126,7 @@ export default function FAQSection({
                           }}
                           className="overflow-hidden"
                         >
-                          <div className="border-t border-slate-100 px-2 py-4 sm:px-5 sm:py-5 md:px-6 lg:px-7 lg:py-6">
+                          <div className="border-t text-start border-slate-100 px-2 py-4 sm:px-5 sm:py-5 md:px-6 lg:px-7 lg:py-6">
                             <p className="text-sm md:leading-7 text-slate-600 sm:text-base sm:leading-8">
                               {item.answer}
                             </p>

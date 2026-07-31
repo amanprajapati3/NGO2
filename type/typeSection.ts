@@ -56,7 +56,7 @@ export interface SocialLinkItem {
   href: string;
 }
 
-export interface HeaderCTA{
+export interface HeaderCTA {
   label: string;
   href: string;
 }
@@ -66,7 +66,7 @@ export interface TopBarData {
   phone: string;
   phoneHref: string;
   socialLinks: SocialLinkItem[];
-  headerCta: HeaderCTA
+  headerCta: HeaderCTA;
 }
 
 export interface FooterLink {
@@ -137,7 +137,7 @@ export interface FooterData {
 export interface BannerCTA {
   label: string;
   href: string;
-  variant?: 'primary' | 'secondary';
+  variant?: "primary" | "secondary";
 }
 
 export interface BannerProps {
@@ -283,7 +283,7 @@ export interface AboutSectionProps {
   data: AboutSection;
 }
 
-// why choose us 
+// why choose us
 export interface WhyChooseCard {
   icon: string;
   title: string;
@@ -385,7 +385,6 @@ export interface MissionSectionProps {
   data: MissionData;
 }
 
-
 // ================= Causes Section =================
 
 export interface CauseBadge {
@@ -483,6 +482,12 @@ export interface ProjectCTA {
   button: ProjectButton;
 }
 
+export interface ProjectBanner{
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
+}
+
 export interface ProjectSectionData {
   badge: {
     label: string;
@@ -498,6 +503,7 @@ export interface ProjectSectionData {
   items: ProjectCard[];
 
   cta: ProjectCTA;
+  banner: ProjectBanner;
 }
 
 export interface ProjectSectionProps {
@@ -521,7 +527,7 @@ export interface TeamMember {
   socials: TeamSocial[];
 }
 
-export interface teamBanner{
+export interface teamBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
   backgroundImage: string;
@@ -568,6 +574,12 @@ export interface SupportTitle {
   highlight: string;
 }
 
+export interface SupportBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
+}
+
 export interface SupportButton {
   label: string;
   href: string;
@@ -605,6 +617,7 @@ export interface SupportSection {
   floatingCard: SupportFloatingCard;
   signature: string;
   background: SupportBackground;
+  banner: SupportBanner;
 }
 
 export interface SupportSectionProps {
@@ -620,6 +633,12 @@ export interface EventBadge {
 export interface EventTitle {
   line1: string;
   highlight: string;
+}
+
+export interface EventBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
 }
 
 export interface EventButton {
@@ -639,6 +658,7 @@ export interface EventsSection {
   title: EventTitle;
   description: string;
   events: EventCard[];
+  banner: EventBanner;
 }
 
 export interface EventsSectionProps {
@@ -656,6 +676,12 @@ export interface GalleryTitle {
   highlight: string;
 }
 
+export interface Gallerybanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
+}
+
 export interface GalleryCategory {
   label: string;
   value: string;
@@ -668,12 +694,24 @@ export interface GalleryImage {
   image: string;
 }
 
+export interface GalleryVideo {
+  title: string;
+  description: string;
+  category: string;
+  categoryLabel: string;
+  duration: string;
+  thumbnail: string;
+  videoUrl?: string;
+}
+
 export interface GalleryData {
   badge: GalleryBadge;
   title: GalleryTitle;
   description: string;
   categories: GalleryCategory[];
   images: GalleryImage[];
+  videos: GalleryVideo[];
+  banner: Gallerybanner;
 }
 
 export interface GallerySectionProps {
@@ -691,6 +729,12 @@ export interface PartnerTitle {
   highlight: string;
 }
 
+export interface PartnersBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
+}
+
 export interface PartnerItem {
   name: string;
   logo: string;
@@ -703,6 +747,7 @@ export interface PartnersData {
   description: string;
   sectionTitle: string;
   partnersList: PartnerItem[];
+  banner: PartnersBanner;
 }
 
 export interface PartnersSectionProps {
@@ -718,6 +763,12 @@ export interface TestimonialBadge {
 export interface TestimonialTitle {
   line1: string;
   highlight: string;
+}
+
+export interface TestimonialBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
 }
 
 export interface TestimonialReview {
@@ -742,6 +793,7 @@ export interface TestimonialData {
   description: string;
   review: TestimonialReview;
   testimonials: TestimonialItem[];
+  banner: TestimonialBanner;
 }
 
 export interface TestimonialSectionProps {
@@ -754,6 +806,12 @@ export interface TestimonialSectionProps {
 
 export interface NewsBadge {
   label: string;
+}
+
+export interface BlogBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  backgroundImage: string;
 }
 
 export interface NewsTitle {
@@ -781,6 +839,7 @@ export interface NewsSectionData {
   subtitle: string;
   button: NewsButton;
   articles: NewsArticle[];
+  banner: BlogBanner;
 }
 
 export interface NewsSectionProps {
@@ -798,22 +857,29 @@ export interface ContactTitle {
   line1: string;
   highlight: string;
 }
-export interface ContactBreadcrumbItem {
-  label: string;
-  href: string;
-}
-
-export interface ContactBreadcrumbImage {
-  src: string;
-  alt: string;
-}
-
-export interface ContactBreadcrumb {
-  home: ContactBreadcrumbItem;
-  current: ContactBreadcrumbItem;
+export interface ContactCard {
+  icon: string;
   title: string;
-  backgroundImage: ContactBreadcrumbImage;
-  overlay: boolean;
+  description: string;
+}
+
+export interface MapCoordinates {
+  lat: number;
+  lng: number;
+}
+
+export interface ContactMap {
+  locationTitle: string;
+  locationSubtitle: string;
+  mapUrl: string;
+  embedUrl: string;
+  coordinates: MapCoordinates;
+}
+
+export interface ContactBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
 }
 
 export interface ContactInfoitem {
@@ -860,7 +926,9 @@ export interface ContactData {
   description: string;
   office: ContactOffice;
   form: ContactForm;
-  breadcumb:ContactBreadcrumb;
+  cards: ContactCard[];
+  map: ContactMap;
+  banner: ContactBanner;
 }
 
 export interface ContactSectionProps {
@@ -885,6 +953,12 @@ export interface FAQImage {
   alt: string;
 }
 
+export interface FaqBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
 export interface FAQItem {
   question: string;
   answer: string;
@@ -896,6 +970,7 @@ export interface FAQData {
   description: string;
   image: FAQImage;
   questions: FAQItem[];
+  banner: FaqBanner;
 }
 
 export interface FAQSectionProps {
@@ -1260,7 +1335,7 @@ export interface ServiceHeader {
   sectionTag: string;
 }
 
-export interface ServicesBanner{
+export interface ServicesBanner {
   backgroundImage: string;
   breadcrumbHome: string;
   breadcrumbCurrent: string;
@@ -1273,7 +1348,7 @@ export interface ServiceItem {
   image: string;
   icon: string;
   link: string;
-  label:string;
+  label: string;
 }
 
 export interface CallToActionData {
@@ -1337,8 +1412,8 @@ export interface ServiceDetailImpact {
   stats: ServiceDetailStat[];
 }
 
-export interface ServiceDetailsBanner{
-  backgroundImage:string;
+export interface ServiceDetailsBanner {
+  backgroundImage: string;
   breadcrumbHome: string;
   breadcrumbCurrent: string;
 }
@@ -1364,10 +1439,432 @@ export interface ServiceDetailPageData {
   aboutSection: ServiceDetailAbout;
   whatWeDoSection: ServiceDetailWhatWeDo;
   impactSection: ServiceDetailImpact;
-  banner : ServiceDetailsBanner;
+  banner: ServiceDetailsBanner;
   getInvolvedSection: ServiceDetailGetInvolved;
 }
 
 export interface ServiceDetailPageProps {
   data: ServiceDetailPageData;
+}
+export type TermsBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+export type TermsCondition = { id: string; title: string; content: string };
+export type TermsData = { banner: TermsBanner; conditions: TermsCondition[] };
+
+export interface TermsConditionProps {
+  data: TermsData
+}
+
+export type PrivacyBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+export type privacyPolicy = { id: string; title: string; content: string };
+export type privacyPolicydata = { banner: PrivacyBanner; conditions: privacyPolicy[] };
+
+export interface privacyPolicyprops {
+  data: privacyPolicydata
+}
+
+//Donate Now Banner 
+export type DonateNowBanner = {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+};
+
+export type DonateNowHeaderTitle = {
+  line1: string;
+  highlight: string;
+};
+
+export type DonateNowHeader = {
+  badge: string;
+  title: DonateNowHeaderTitle;
+  description: string;
+};
+
+export type WhyDonateTitle = {
+  line1: string;
+  highlight: string;
+};
+
+export type WhyDonateFeature = {
+  id: string;
+  title: string;
+  description: string;
+};
+
+export type WhyDonateIllustration = {
+  alt: string;
+  src: string;
+};
+
+export type WhyDonate = {
+  title: WhyDonateTitle;
+  description: string;
+  features: WhyDonateFeature[];
+  illustration: WhyDonateIllustration;
+};
+
+export type DonationAmountOption = {
+  amount: number | null;
+  currencySymbol: string | null;
+  label: string;
+  subtitle?: string;
+  isOther: boolean;
+};
+
+export type DonationAmountSection = {
+  title: string;
+  options: DonationAmountOption[];
+};
+
+export type DonorField = {
+  label: string;
+  placeholder: string;
+  required: boolean;
+};
+
+export type DonorInfoFields = {
+  fullName: DonorField;
+  email: DonorField;
+  phone: DonorField;
+  country: DonorField;
+};
+
+export type DonorInfoSection = {
+  title: string;
+  fields: DonorInfoFields;
+};
+
+export type PaymentMethod = {
+  id: string;
+  title: string;
+  subtitle: string;
+};
+
+export type PaymentMethodSection = {
+  title: string;
+  methods: PaymentMethod[];
+};
+
+export type NewsletterConsent = {
+  label: string;
+};
+
+export type SubmitButton = {
+  label: string;
+};
+
+export type SecurityNote = {
+  text: string;
+};
+
+export type DonationForm = {
+  amountSection: DonationAmountSection;
+  donorInfoSection: DonorInfoSection;
+  paymentMethodSection: PaymentMethodSection;
+  newsletterConsent: NewsletterConsent;
+  submitButton: SubmitButton;
+  securityNote: SecurityNote;
+};
+
+export type ImpactStat = {
+  value: string;
+  label: string;
+  description: string;
+};
+
+export type DonateNowData = {
+  header: DonateNowHeader;
+  banner: DonateNowBanner;
+  whyDonate: WhyDonate;
+  donationForm: DonationForm;
+  impactStats: ImpactStat[];
+};
+
+export interface DonateNowProps {
+  data: DonateNowData;
+}
+
+// Industry Page Types
+export interface IndustryHeader {
+  topBadge: string;
+  title: {
+    part1: string;
+    part2: string;
+  };
+  subtitle: string;
+  sectionTag: string;
+}
+
+export interface IndustryBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+export interface IndustrySectorImage {
+  src: string;
+  alt: string;
+}
+
+export interface IndustrySectorCTA {
+  text: string;
+  url: string;
+}
+
+export interface IndustrySector {
+  id: string;
+  title: string;
+  description: string;
+  image: IndustrySectorImage;
+  iconName: string;
+  cta: IndustrySectorCTA;
+}
+
+export interface IndustryPartnerBannerTitle {
+  line1: string;
+  line2: string;
+}
+
+export interface IndustryPartnerBannerCTA {
+  text: string;
+  url: string;
+}
+
+export interface IndustryPartnerMetric {
+  id: string;
+  value: string;
+  label: string;
+  iconName: string;
+}
+
+export interface IndustryPartnerBanner {
+  title: IndustryPartnerBannerTitle;
+  description: string;
+  cta: IndustryPartnerBannerCTA;
+  metrics: IndustryPartnerMetric[];
+}
+export interface IndustryPageData {
+  header: IndustryHeader;
+  banner: IndustryBanner;
+  sectors: IndustrySector[];
+  partnerBanner: IndustryPartnerBanner;
+}
+
+// ================= HERO BREADCRUMB =================
+export interface awardBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+// ================= PAGE HEADER =================
+export interface HeaderTitle {
+  part1: string;
+  part2: string;
+}
+
+export interface AwardsHeader {
+  topBadge: string;
+  title: HeaderTitle;
+  subtitle: string;
+}
+
+// ================= STATS METRICS =================
+export interface AwardStat {
+  id: string;
+  value: string;
+  label: string;
+  iconName: string;
+}
+
+// ================= INDIVIDUAL AWARD ITEM =================
+export interface AwardImage {
+  src: string;
+  alt: string;
+}
+
+export interface AwardItem {
+  id: string;
+  title: string;
+  description: string;
+  year: string;
+  image: AwardImage;
+}
+
+export interface AwardsSection {
+  topBadge: string;
+  title: string;
+  awards: AwardItem[];
+}
+
+// ================= CALL TO ACTION BANNERS =================
+export interface CTAButton {
+  text: string;
+  url: string;
+}
+
+export interface SupportBannerTitle {
+  line1: string;
+  line2: string;
+}
+
+export interface SupportBanner {
+  topBadge: string;
+  title: SupportBannerTitle;
+  description: string;
+  cta: CTAButton;
+  iconName: string;
+  trophyImage: AwardImage;
+}
+
+export interface TransparencyBanner {
+  title: string;
+  subtitle: string;
+  iconName: string;
+  cta: CTAButton;
+}
+
+export interface AwardsPageData {
+  banner: awardBanner;
+  header: AwardsHeader;
+  stats: AwardStat[];
+  awardsSection: AwardsSection;
+  supportBanner: SupportBanner;
+  transparencyBanner: TransparencyBanner;
+}
+
+export interface AwardsDataProps {
+  data: AwardsPageData;
+}
+
+// ================= support =================
+
+export interface SupportHeroLogo {
+  src: string;
+  alt: string;
+}
+
+export interface SupportHeroBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  backgroundImage: string;
+}
+
+export interface SupportHero {
+  title: string;
+  logo: SupportHeroLogo;
+  banner: SupportHeroBanner;
+}
+
+export interface SupportIntroductionHeading {
+  plainText: string;
+  highlightedText: string;
+}
+
+export interface SupportIntroduction {
+  topBadge: string;
+  heading: SupportIntroductionHeading;
+  description: string;
+}
+
+export interface SupportKeyValue {
+  id: string;
+  iconName: string;
+  title: string;
+  description: string;
+}
+
+export interface SupportKeyValues {
+  values: SupportKeyValue[];
+}
+
+export interface SupportAction {
+  label: string;
+  url: string;
+}
+
+export interface SupportCard {
+  id: string;
+  iconName: string;
+  title: string;
+  description: string;
+  action: SupportAction;
+}
+
+export interface WaysToSupport {
+  topBadge: string;
+  heading: string;
+  supportCards: SupportCard[];
+}
+
+export interface SupportImpactStat {
+  id: string;
+  iconName: string;
+  value: string;
+  label: string;
+}
+
+export interface SupportImpactStats {
+  topBadge: string;
+  heading: string;
+  stats: SupportImpactStat[];
+  closingText: string;
+}
+
+export interface SupportCtaHeading {
+  plainText: string;
+  highlightedText: string;
+}
+
+export interface SupportCtaAction {
+  label: string;
+  url: string;
+}
+
+export interface SupportCtaBannerImage {
+  src: string;
+  alt: string;
+}
+
+export interface SupportCtaBanner {
+  topBadge: string;
+  heading: SupportCtaHeading;
+  description: string;
+  primaryAction: SupportCtaAction;
+  secondaryAction: SupportCtaAction;
+  bannerImage: SupportCtaBannerImage;
+}
+
+export interface SupportTransparencyAction {
+  label: string;
+  url: string;
+}
+
+export interface SupportTransparencyBar {
+  iconName: string;
+  title: string;
+  subtitle: string;
+  action: SupportTransparencyAction;
+}
+
+export interface SupportPageData {
+  hero: SupportHero;
+  introduction: SupportIntroduction;
+  keyValues: SupportKeyValues;
+  waysToSupport: WaysToSupport;
+  impactStats: SupportImpactStats;
+  ctaBanner: SupportCtaBanner;
+  transparencyBar: SupportTransparencyBar;
+}
+
+export interface SupportDataProps {
+  data: SupportPageData;
 }

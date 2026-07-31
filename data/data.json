@@ -43,16 +43,16 @@
           "href": "/about-us"
         },
         {
-          "label": "Our Story",
-          "href": "/our-story"
+          "label": "Our Projects",
+          "href": "/project"
         },
         {
           "label": "Services",
           "href": "/service"
         },
         {
-          "label": "Our Values",
-          "href": "/our-values"
+          "label": "Industry We Serve",
+          "href": "/industry"
         },
         {
           "label": "Team",
@@ -68,7 +68,7 @@
         },
         {
           "label": "Awards & Recognition",
-          "href": "/awards-recognition"
+          "href": "/awards"
         }
       ]
     },
@@ -146,15 +146,15 @@
       "children": [
         {
           "label": "Upcoming Events",
-          "href": "/events/upcoming"
+          "href": "/event"
         },
         {
           "label": "Past Events",
           "href": "/events/past"
         },
         {
-          "label": "Charity Events",
-          "href": "/events/charity"
+          "label": "Gallery",
+          "href": "/gallery"
         }
       ]
     },
@@ -164,15 +164,15 @@
       "children": [
         {
           "label": "Contact Us",
-          "href": "/contact"
+          "href": "/contact-us"
         },
         {
           "label": "Office Locations",
-          "href": "/contact/office-locations"
+          "href": "/office-locations"
         },
         {
           "label": "Support",
-          "href": "/contact/support"
+          "href": "/support"
         }
       ]
     }
@@ -211,8 +211,8 @@
       "title": "Our Support",
       "links": [
         {
-          "label": "Private Policies",
-          "href": "/privacy-policy"
+          "label": "Faqs",
+          "href": "/faq"
         },
         {
           "label": "Donate Now",
@@ -220,23 +220,23 @@
         },
         {
           "label": "Become A Volunteer",
-          "href": "/volunteer"
+          "href": "/team"
         },
         {
           "label": "Careers",
-          "href": "/careers"
+          "href": "/career"
         },
         {
           "label": "Contact Us",
-          "href": "/contact"
+          "href": "/contact-us"
         },
         {
-          "label": "Paid Programs",
-          "href": "/paid-programs"
+          "label": "Blogs",
+          "href": "/blog"
         },
         {
-          "label": "Partnership",
-          "href": "/partnership"
+          "label": "Our Partners",
+          "href": "/partners"
         }
       ]
     },
@@ -246,7 +246,7 @@
       "links": [
         {
           "label": "Donate",
-          "href": "/donate"
+          "href": "/CTA"
         },
         {
           "label": "Sponsor",
@@ -257,20 +257,12 @@
           "href": "/fundraise"
         },
         {
-          "label": "Volunteer",
-          "href": "/volunteer"
+          "label": "Testimonial",
+          "href": "/testimonial"
         },
         {
-          "label": "Partner",
-          "href": "/partner"
-        },
-        {
-          "label": "Jobs",
-          "href": "/jobs"
-        },
-        {
-          "label": "Form",
-          "href": "/form"
+          "label": "Support",
+          "href": "/support"
         }
       ]
     },
@@ -282,15 +274,15 @@
           "title": "Support About Poverty To Poor Family",
           "category": "Poor",
           "date": "22 January",
-          "image": "/images/news/news-1.jpg",
-          "href": "/news/support-about-poverty-to-poor-family"
+          "image": "https://images.unsplash.com/photo-1582213782179-e0d53f98f2ca?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "href": "/blog"
         },
         {
           "title": "Mostly Suffered School Boys Care",
           "category": "Health",
           "date": "24 February",
-          "image": "/images/news/news-2.jpg",
-          "href": "/news/mostly-suffered-school-boys-care"
+          "image": "https://images.unsplash.com/photo-1547082634-4886fd241406?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "href": "/blog"
         }
       ]
     },
@@ -822,6 +814,12 @@
       "label": "Our Projects"
     },
 
+    "banner": {
+      "breadcrumbCurrent": "Projects",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+    },
+
     "heading": {
       "title": "Featured Projects",
       "highlight": "Projects"
@@ -1088,6 +1086,11 @@
       "label": "Your Support Matters",
       "icon": "heart"
     },
+    "banner": {
+      "breadcrumbCurrent": "CTA",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
     "title": {
       "line1": "Together, We Can",
       "highlight": "Change Lives"
@@ -1127,7 +1130,11 @@
     "badge": {
       "label": "Upcoming Events"
     },
-
+    "banner": {
+      "breadcrumbCurrent": "Events",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
     "title": {
       "line1": "Be Ready",
       "highlight": "For Our Events"
@@ -1169,7 +1176,11 @@
     "badge": {
       "label": "Our Gallery"
     },
-
+    "banner": {
+      "breadcrumbCurrent": "Gallery",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
     "title": {
       "line1": "Moments of",
       "highlight": "Change & Hope"
@@ -1202,6 +1213,80 @@
       {
         "label": "Events",
         "value": "events"
+      }
+    ],
+    "videos": [
+      {
+        "title": "Empowering Futures Through Education",
+        "description": "Watch how education is transforming young lives and building brighter tomorrows.",
+        "category": "education",
+        "categoryLabel": "EDUCATION",
+        "duration": "02:45",
+        "thumbnail": "https://images.unsplash.com/photo-1509062522246-3755977927d7?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Clean Water, Better Life",
+        "description": "Providing clean water and healthier communities for a better tomorrow.",
+        "category": "community",
+        "categoryLabel": "CLEAN WATER",
+        "duration": "02:12",
+        "thumbnail": "https://images.unsplash.com/photo-1541252260730-0412e8e2108e?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Empowering Women, Empowering Communities",
+        "description": "Skills, support, and opportunities for women to lead independent lives.",
+        "category": "events",
+        "categoryLabel": "WOMEN EMPOWERMENT",
+        "duration": "01:58",
+        "thumbnail": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Building Stronger Communities",
+        "description": "Together we rise, together we thrive.",
+        "category": "community",
+        "categoryLabel": "COMMUNITY",
+        "duration": "02:68",
+        "thumbnail": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Small Efforts, Big Impact",
+        "description": "Every action counts towards a better world.",
+        "category": "community",
+        "categoryLabel": "COMMUNITY",
+        "duration": "01:47",
+        "thumbnail": "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Healthcare For Every Life",
+        "description": "Organizing health camps and spreading care to every corner.",
+        "category": "health",
+        "categoryLabel": "HEALTHCARE",
+        "duration": "02:31",
+        "thumbnail": "https://images.unsplash.com/photo-1584515933487-779824d29309?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Creating Brighter Tomorrows",
+        "description": "Nurturing dreams and unlocking endless possibilities.",
+        "category": "education",
+        "categoryLabel": "EDUCATION",
+        "duration": "01:59",
+        "thumbnail": "https://images.unsplash.com/photo-1577896851231-70ef18881754?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+      },
+      {
+        "title": "Hope in Every Drop",
+        "description": "Working together to bring clean water and hope to all.",
+        "category": "community",
+        "categoryLabel": "CLEAN WATER",
+        "duration": "02:20",
+        "thumbnail": "https://images.unsplash.com/photo-1527192491265-7e15c55b1ed2?w=800&q=80",
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       }
     ],
 
@@ -1253,6 +1338,12 @@
       "highlight": "Sponsors"
     },
 
+    "banner": {
+      "breadcrumbCurrent": "Partners",
+      "breadcrumbHome": " Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
     "description": "We are grateful to our partners and sponsors for their trust, support, and shared commitment to building a better tomorrow.",
     "partnersList": [
       {
@@ -1295,6 +1386,11 @@
   "testimonial": {
     "badge": {
       "label": "Testimonials"
+    },
+    "banner": {
+      "breadcrumbCurrent": "Testimonial",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1623122617524-18ca7a791c37?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Don't Believe Us?",
@@ -1350,6 +1446,11 @@
   "news": {
     "badge": {
       "label": "Our Blog"
+    },
+    "banner": {
+      "breadcrumbCurrent": "Blogs & News",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Check Out Our",
@@ -1420,12 +1521,48 @@
     "badge": {
       "label": "Contact Us"
     },
+    "banner": {
+      "breadcrumbCurrent": "Contact Us",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
     "title": {
       "line1": "Let's Start",
       "highlight": "A Conversation"
     },
     "description": "Have questions, ideas, or want to support our mission? We'd love to hear from you and help in every possible way.",
-
+    "cards": [
+      {
+        "icon": "headset",
+        "title": "Quick Response",
+        "description": "We reply to all inquiries within 24 hours."
+      },
+      {
+        "icon": "shield-check",
+        "title": "Secure & Confidential",
+        "description": "Your information is safe with us."
+      },
+      {
+        "icon": "users",
+        "title": "Expert Support",
+        "description": "Our team is here to help you."
+      },
+      {
+        "icon": "thumbs-up",
+        "title": "100% Satisfaction",
+        "description": "We are committed to your satisfaction."
+      }
+    ],
+    "map": {
+      "locationTitle": "205 Fida Wailnton, Tongo",
+      "locationSubtitle": "New York, Canada",
+      "mapUrl": "https://maps.google.com/?q=205+Fida+Wailnton+Tongo",
+      "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976373946229!3d40.69766371917835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus",
+      "coordinates": {
+        "lat": 40.7128,
+        "lng": -74.006
+      }
+    },
     "office": {
       "title": "Head Office",
       "description": "Our dedicated team is always ready to assist volunteers, donors, and partners. Reach out through any of the following channels and we'll respond as quickly as possible.",
@@ -1487,7 +1624,11 @@
     "badge": {
       "label": "Frequently Asked Questions"
     },
-
+    "banner": {
+      "breadcrumbCurrent": "Faqs",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
+    },
     "title": {
       "line1": "Have Any",
       "highlight": "Questions?"
@@ -2367,6 +2508,796 @@
       },
       "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "imageAlt": "Supporting children's education"
+    }
+  },
+  "terms": {
+    "banner": {
+      "breadcrumbCurrent": "Terms & Conditions",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "conditions": [
+      {
+        "id": "acceptance",
+        "title": "Acceptance of Terms",
+        "content": "By accessing and using this website, you agree to comply with and be bound by these Terms & Conditions. If you do not agree with any part of these terms, please do not use our website."
+      },
+      {
+        "id": "use-of-website",
+        "title": "Use of Website",
+        "content": "This website is intended to provide information about our causes, initiatives, and ways to support our mission. You agree to use this website only for lawful purposes and in a way that does not infringe the rights of others or restrict their use and enjoyment of the site."
+      },
+      {
+        "id": "donations",
+        "title": "Donations & Contributions",
+        "content": "All donations made through this website are voluntary and non-refundable. We are committed to using the funds for their intended purpose and maintaining transparency in our operations."
+      },
+      {
+        "id": "third-party-links",
+        "title": "Third-Party Links",
+        "content": "Our website may contain links to external websites for additional information. We are not responsible for the content or practices of these third-party sites."
+      },
+      {
+        "id": "changes",
+        "title": "Changes to Terms",
+        "content": "We may update these Terms & Conditions at any time without prior notice. Changes will be posted on this page, and continued use of the website constitutes acceptance of the updated terms."
+      },
+      {
+        "id": "contact",
+        "title": "Contact Us",
+        "content": "If you have any questions regarding these Terms & Conditions, please contact us through our website."
+      }
+    ]
+  },
+  "privacy": {
+    "banner": {
+      "breadcrumbCurrent": "Privacy Policy",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+    },
+    "conditions": [
+      {
+        "id": "information-collection",
+        "title": "Information We Collect",
+        "content": "We may collect information you voluntarily provide when you contact us, subscribe to updates, make a donation, participate in our initiatives, or use certain features of our website. This may include your name, email address, phone number, and other information you choose to provide."
+      },
+      {
+        "id": "use-of-information",
+        "title": "How We Use Your Information",
+        "content": "We use the information we collect to provide and improve our services, process donations, respond to inquiries, communicate important updates, manage our programs, and keep you informed about our causes and initiatives. We only use your information for legitimate purposes related to our organization."
+      },
+      {
+        "id": "information-sharing",
+        "title": "Sharing of Information",
+        "content": "We do not sell or rent your personal information. We may share information with trusted service providers who help us operate our website, process donations, or provide essential services. These providers are expected to handle your information securely and only for the purposes for which it was provided."
+      },
+      {
+        "id": "cookies",
+        "title": "Cookies & Tracking Technologies",
+        "content": "Our website may use cookies and similar technologies to improve your browsing experience, understand how visitors use our website, and enhance our services. You can adjust your browser settings to manage or disable cookies, although some website features may not function properly as a result."
+      },
+      {
+        "id": "data-security",
+        "title": "Data Security",
+        "content": "We take reasonable administrative, technical, and organizational measures to protect your personal information from unauthorized access, misuse, alteration, disclosure, or loss. However, no method of transmitting or storing information online can be guaranteed to be completely secure."
+      },
+      {
+        "id": "third-party-links",
+        "title": "Third-Party Links",
+        "content": "Our website may contain links to third-party websites or services. We are not responsible for the privacy practices, content, or security of those external websites. We encourage you to review their privacy policies before providing them with your personal information."
+      },
+      {
+        "id": "your-rights",
+        "title": "Your Privacy Rights",
+        "content": "Depending on applicable laws, you may have the right to request access to, correction of, or deletion of your personal information. You may also have the right to withdraw consent for certain uses of your information. To exercise these rights, please contact us through the information provided on our website."
+      },
+      {
+        "id": "policy-updates",
+        "title": "Changes to This Privacy Policy",
+        "content": "We may update this Privacy Policy from time to time to reflect changes in our practices, services, or legal requirements. Any updates will be posted on this page, and the revised policy will become effective when published."
+      },
+      {
+        "id": "contact",
+        "title": "Contact Us",
+        "content": "If you have questions, concerns, or requests regarding this Privacy Policy or how we handle your personal information, please contact us through our website."
+      }
+    ]
+  },
+  "donateNow": {
+    "header": {
+      "badge": "DONATE NOW",
+      "title": {
+        "line1": "Your Kindness",
+        "highlight": "Creates Lasting Change"
+      },
+      "description": "Your support helps us bring hope, create opportunities, and build a better future for those who need it most."
+    },
+
+    "banner": {
+      "breadcrumbCurrent": "Donate Now",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
+    },
+    "whyDonate": {
+      "title": {
+        "line1": "Why Your Donation",
+        "highlight": "Makes a Difference"
+      },
+      "description": "Every contribution, big or small, helps us continue our mission and reach more people in need.",
+      "features": [
+        {
+          "id": "secure-donations",
+          "title": "100% Secure Donations",
+          "description": "Your donations are safe and secure with us."
+        },
+        {
+          "id": "transparency-trust",
+          "title": "Transparency & Trust",
+          "description": "We ensure complete transparency in how your donations are used."
+        },
+        {
+          "id": "tax-benefits",
+          "title": "Tax Benefits",
+          "description": "Get tax exemption on your donations as per applicable laws."
+        },
+        {
+          "id": "support-matters",
+          "title": "Support That Matters",
+          "description": "Your kindness helps us create real and lasting change."
+        }
+      ],
+      "illustration": {
+        "alt": "Jar full of red hearts",
+        "src": "/donate_now.png"
+      }
+    },
+
+    "donationForm": {
+      "amountSection": {
+        "title": "Choose How You Want to Donate",
+        "options": [
+          {
+            "amount": 500,
+            "currencySymbol": "₹",
+            "label": "Feed a Child",
+            "isOther": false
+          },
+          {
+            "amount": 1000,
+            "currencySymbol": "₹",
+            "label": "Support Education",
+            "isOther": false
+          },
+          {
+            "amount": 2500,
+            "currencySymbol": "₹",
+            "label": "Healthcare Support",
+            "isOther": false
+          },
+          {
+            "amount": 5000,
+            "currencySymbol": "₹",
+            "label": "Empower a Family",
+            "isOther": false
+          },
+          {
+            "amount": null,
+            "currencySymbol": null,
+            "label": "Other",
+            "subtitle": "Fill your amount",
+            "isOther": true
+          }
+        ]
+      },
+
+      "donorInfoSection": {
+        "title": "Donor Information",
+        "fields": {
+          "fullName": {
+            "label": "Full Name",
+            "placeholder": "Enter your full name",
+            "required": true
+          },
+          "email": {
+            "label": "Email Address",
+            "placeholder": "Enter your email",
+            "required": true
+          },
+          "phone": {
+            "label": "Phone Number",
+            "placeholder": "Enter your phone number",
+            "required": true
+          },
+          "country": {
+            "label": "Country",
+            "placeholder": "Select your country",
+            "required": true
+          }
+        }
+      },
+
+      "paymentMethodSection": {
+        "title": "Payment Method",
+        "methods": [
+          {
+            "id": "upi",
+            "title": "UPI",
+            "subtitle": "Pay using UPI"
+          },
+          {
+            "id": "card",
+            "title": "Card",
+            "subtitle": "Debit / Credit Card"
+          },
+          {
+            "id": "net-banking",
+            "title": "Net Banking",
+            "subtitle": "All major banks"
+          },
+          {
+            "id": "wallet",
+            "title": "Wallet",
+            "subtitle": "PhonePe, Paytm etc."
+          }
+        ]
+      },
+
+      "newsletterConsent": {
+        "label": "I would like to receive updates on how my donation is making an impact."
+      },
+
+      "submitButton": {
+        "label": "Donate Now"
+      },
+
+      "securityNote": {
+        "text": "Your payment is secure and encrypted."
+      }
+    },
+
+    "impactStats": [
+      {
+        "value": "50,000+",
+        "label": "Lives Impacted",
+        "description": "Through your support"
+      },
+      {
+        "value": "100+",
+        "label": "Communities",
+        "description": "Empowered"
+      },
+      {
+        "value": "25+",
+        "label": "Projects",
+        "description": "Running Successfully"
+      },
+      {
+        "value": "10,000+",
+        "label": "Donors",
+        "description": "Standing with us"
+      }
+    ]
+  },
+  "industryPage": {
+    "header": {
+      "topBadge": "TOGETHER WE EMPOWER",
+      "title": {
+        "part1": "Industries",
+        "part2": "We Serve"
+      },
+      "subtitle": "We partner with organizations across diverse sectors to create meaningful impact and drive positive change in communities.",
+      "sectionTag": "MAKING IMPACT ACROSS SECTORS"
+    },
+
+    "banner": {
+     "breadcrumbCurrent": "Industry We Serve",
+     "breadcrumbHome": "Home",
+     "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
+    },
+
+    "sectors": [
+      {
+        "id": "education",
+        "title": "Education",
+        "description": "Promoting quality education and learning opportunities for underprivileged children.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1473649085228-583485e6e4d7?q=80&w=1032&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Underprivileged children studying in a classroom"
+        },
+        "iconName": "graduation-cap",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "healthcare",
+        "title": "Healthcare",
+        "description": "Improving healthcare access and promoting wellness for healthier communities.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1621353879120-f34320919816?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Doctor performing checkup on a young girl"
+        },
+        "iconName": "activity-heartbeat",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "environment",
+        "title": "Environment",
+        "description": "Working towards a sustainable future through conservation and eco-friendly initiatives.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1654441000599-6d8b83387baf?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Hands gently holding a small growing green plant"
+        },
+        "iconName": "leaf",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "women-empowerment",
+        "title": "Women Empowerment",
+        "description": "Empowering women with skills, resources, and opportunities for independent living.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1774504798113-a03e2aa24789?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Women learning tailor sewing skills on sewing machines"
+        },
+        "iconName": "user-female",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "food-and-nutrition",
+        "title": "Food & Nutrition",
+        "description": "Combating hunger and malnutrition by providing nutritious food and support.",
+        "image": {
+          "src": "https://media.istockphoto.com/id/1060352206/photo/donate-food-to-hungry-people-concept-of-poverty-and-hunger.jpg?s=1024x1024&w=is&k=20&c=gGe745FB1BoPtvm1gX-4AGTexDDZOn7Xpk_HB3phOtM=",
+          "alt": "Children sitting together eating healthy meals"
+        },
+        "iconName": "food-bowl",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "arts-and-culture",
+        "title": "Arts & Culture",
+        "description": "Preserving and promoting arts, culture, and traditions for future generations.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1621870536986-151d03e2e99a?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Young girl dressed in traditional Indian attire performing art"
+        },
+        "iconName": "theatre-masks",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "skill-development",
+        "title": "Skill Development",
+        "description": "Equipping individuals with skills and training for better livelihoods and employment.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1690356107685-3725367f6f3f?q=80&w=873&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Young men undergoing vocational machinery training in a workshop"
+        },
+        "iconName": "gears",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "water-and-sanitation",
+        "title": "Water & Sanitation",
+        "description": "Ensuring access to clean water and sanitation facilities for healthy living.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1694723173349-78ce68fcf38a?q=80&w=774&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Hands washing under a outdoor tap with clean running water"
+        },
+        "iconName": "water-drop",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "animal-welfare",
+        "title": "Animal Welfare",
+        "description": "Protecting and caring for animals and promoting their welfare in communities.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1542715234-bd0adb4249b7?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "A happy dog and cat sitting together outdoors"
+        },
+        "iconName": "paw-print",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      },
+      {
+        "id": "corporate-partnerships",
+        "title": "Corporate Partnerships",
+        "description": "Collaborating with businesses to create sustainable and scalable impact.",
+        "image": {
+          "src": "https://images.unsplash.com/photo-1584365098838-50ccef838f4a?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Two professionals in business suits shaking hands"
+        },
+        "iconName": "handshake",
+        "cta": {
+          "text": "Learn More",
+          "url": "/"
+        }
+      }
+    ],
+
+    "partnerBanner": {
+      "title": {
+        "line1": "Partner With Us to",
+        "line2": "Create Lasting Change"
+      },
+      "description": "Together with our partners, volunteers, and supporters, we can build a stronger, brighter, and more equitable future for all.",
+      "cta": {
+        "text": "Get Involved",
+        "url": "/get-involved"
+      },
+      "metrics": [
+        {
+          "id": "lives-impacted",
+          "value": "25,000+",
+          "label": "Lives Impacted",
+          "iconName": "hands-heart"
+        },
+        {
+          "id": "programs",
+          "value": "150+",
+          "label": "Programs",
+          "iconName": "people-group"
+        },
+        {
+          "id": "sectors-covered",
+          "value": "20+",
+          "label": "Sectors Covered",
+          "iconName": "globe"
+        },
+        {
+          "id": "partners",
+          "value": "500+",
+          "label": "Partners",
+          "iconName": "handshake-outline"
+        }
+      ]
+    }
+  },
+  "awardsPage": {
+    "banner": {
+      "breadcrumbCurrent": "Awards & Recognitions",
+      "breadcrumbHome": "Home",
+      "backgroundImage": "https://images.unsplash.com/photo-1677640724372-adb865d29aa8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+    },
+
+    "header": {
+      "topBadge": "OUR AWARDS",
+      "title": {
+        "part1": "Awards &",
+        "part2": "Recognition"
+      },
+      "subtitle": "These recognitions inspire us to keep working harder and create a greater impact in the communities we serve."
+    },
+
+    "stats": [
+      {
+        "id": "awards-received",
+        "value": "25+",
+        "label": "Awards Received",
+        "iconName": "trophy"
+      },
+      {
+        "id": "years-excellence",
+        "value": "15+",
+        "label": "Years of Excellence",
+        "iconName": "ribbon"
+      },
+      {
+        "id": "lives-impacted",
+        "value": "50,000+",
+        "label": "Lives Impacted",
+        "iconName": "people-group"
+      },
+      {
+        "id": "communities-served",
+        "value": "100+",
+        "label": "Communities Served",
+        "iconName": "star"
+      }
+    ],
+
+    "awardsSection": {
+      "topBadge": "HONORED FOR OUR IMPACT",
+      "title": "Recognitions That Motivate Us",
+      "awards": [
+        {
+          "id": "ngo-excellence-award",
+          "title": "NGO Excellence Award",
+          "description": "For outstanding contribution to social development and community welfare.",
+          "year": "2024",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1568912872277-31089abcfe50?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Gold star trophy on black base"
+          }
+        },
+        {
+          "id": "community-impact-award",
+          "title": "Community Impact Award",
+          "description": "Honoring our consistent efforts in creating meaningful change in communities.",
+          "year": "2023",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1880391433/photo/golden-championship-trophy-isolated-on-white-background-concept-of-victory.jpg?s=1024x1024&w=is&k=20&c=aevbeQt83ZY_Vg00rvwxGat1Vi0UV3gvu46pddHHqSM=",
+            "alt": "Golden laurel wreath trophy"
+          }
+        },
+        {
+          "id": "social-responsibility-award",
+          "title": "Social Responsibility Award",
+          "description": "Recognizing our dedication to social responsibility and sustainable development.",
+          "year": "2023",
+          "image": {
+            "src": "https://media.istockphoto.com/id/973266950/photo/golden-trophy-or-gold-cup-isolated-on-white-background.jpg?s=1024x1024&w=is&k=20&c=_uxSWD0mxPZlpzHC16m6xQ2cMk65ObucQ1T1TWeQPTk=",
+            "alt": "Golden statue trophy holding crystal globe"
+          }
+        },
+        {
+          "id": "best-ngo-award",
+          "title": "Best NGO Award",
+          "description": "For exceptional work in education, healthcare and empowerment programs.",
+          "year": "2022",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1677640724372-adb865d29aa8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3Dg",
+            "alt": "Circular wooden plaque award with golden emblem"
+          }
+        },
+        {
+          "id": "humanitarian-award",
+          "title": "Humanitarian Award",
+          "description": "In appreciation of our humanitarian services and relief efforts.",
+          "year": "2022",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Silver circular plate award with laurel details"
+          }
+        },
+        {
+          "id": "volunteer-excellence-award",
+          "title": "Volunteer Excellence Award",
+          "description": "For building a strong volunteer network and promoting community participation.",
+          "year": "2021",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Leaf shaped glass award with golden star"
+          }
+        },
+        {
+          "id": "innovative-program-award",
+          "title": "Innovative Program Award",
+          "description": "Recognizing innovation and creativity in implementing impactful programs.",
+          "year": "2021",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1773067752106-afa68a418ccc?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Golden trophy cup on dark wooden base"
+          }
+        },
+        {
+          "id": "partnership-excellence-award",
+          "title": "Partnership Excellence Award",
+          "description": "For collaborative partnerships that drive progress and create lasting impact.",
+          "year": "2020",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1760996888745-a878ad8779df?q=80&w=1631&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Shield shaped golden plaque award"
+          }
+        }
+      ]
+    },
+
+    "supportBanner": {
+      "topBadge": "TOGETHER WE ACHIEVE MORE",
+      "title": {
+        "line1": "Your Support Builds",
+        "line2": "Our Success"
+      },
+      "description": "Every award is a reflection of your trust and support. Together, we will continue to create a better tomorrow.",
+      "cta": {
+        "text": "Support Our Mission",
+        "url": "/support-our-mission"
+      },
+      "iconName": "hands-heart",
+      "trophyImage": {
+        "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+        "alt": "Gold trophy with inscription 'TOGETHER WE CAN CREATE CHANGE'"
+      }
+    },
+
+    "transparencyBanner": {
+      "title": "We are committed to transparency and accountability.",
+      "subtitle": "Thank you for being a part of our journey and inspiring us every day.",
+      "iconName": "shield-check",
+      "cta": {
+        "text": "Learn More About Us",
+        "url": "/about-us"
+      }
+    }
+  },
+   "supportPage": {
+    "hero": {
+      "title": "Support",
+      "logo": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=400&auto=format&fit=crop",
+        "alt": "Organization Logo"
+      },
+      "banner": {
+        "breadcrumbCurrent": "Support Us",
+        "breadcrumbHome": "Home",
+        "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+      }
+    },
+
+    "introduction": {
+      "topBadge": "SUPPORT US",
+      "heading": {
+        "plainText": "Together, We Can Create a",
+        "highlightedText": "Better Tomorrow"
+      },
+      "description": "Your support helps us continue our mission and bring hope, care, and opportunities to those who need it most."
+    },
+
+    "keyValues": {
+      "values": [
+        {
+          "id": "impact",
+          "iconName": "hands-heart",
+          "title": "Make an Impact",
+          "description": "Your contribution creates real change in lives."
+        },
+        {
+          "id": "communities",
+          "iconName": "people-group",
+          "title": "Support Communities",
+          "description": "Empowering communities for a brighter future."
+        },
+        {
+          "id": "transparency",
+          "iconName": "shield-check",
+          "title": "Trust & Transparency",
+          "description": "We ensure every contribution is used responsibly."
+        }
+      ]
+    },
+
+    "waysToSupport": {
+      "topBadge": "WAYS TO SUPPORT",
+      "heading": "Every Action Helps Us Bring Change",
+      "supportCards": [
+        {
+          "id": "donate",
+          "iconName": "hand-holding-heart",
+          "title": "Donate Now",
+          "description": "Your donation helps provide food, education, healthcare and a better life.",
+          "action": {
+            "label": "Donate Now",
+            "url": "/donate"
+          }
+        },
+        {
+          "id": "volunteer",
+          "iconName": "users",
+          "title": "Become a Volunteer",
+          "description": "Give your time and skills to support our programs and communities.",
+          "action": {
+            "label": "Sign Up Now",
+            "url": "/volunteer"
+          }
+        },
+        {
+          "id": "partner",
+          "iconName": "handshake",
+          "title": "Partner With Us",
+          "description": "Collaborate with us to create sustainable and long-term impact.",
+          "action": {
+            "label": "Partner Now",
+            "url": "/partner"
+          }
+        },
+        {
+          "id": "sponsor",
+          "iconName": "gift",
+          "title": "Sponsor a Program",
+          "description": "Sponsor our programs and help us reach more people in need.",
+          "action": {
+            "label": "Sponsor Now",
+            "url": "/sponsor"
+          }
+        },
+        {
+          "id": "spread-word",
+          "iconName": "megaphone",
+          "title": "Spread the Word",
+          "description": "Share our mission with your friends and help us grow our impact.",
+          "action": {
+            "label": "Share Now",
+            "url": "/share"
+          }
+        }
+      ]
+    },
+
+    "impactStats": {
+      "topBadge": "YOUR SUPPORT, REAL IMPACT",
+      "heading": "Changing Lives, Building Futures",
+      "stats": [
+        {
+          "id": "education",
+          "iconName": "graduation-cap",
+          "value": "25,000+",
+          "label": "Children Educated"
+        },
+        {
+          "id": "meals",
+          "iconName": "bowl-hot",
+          "value": "15,000+",
+          "label": "Meals Provided"
+        },
+        {
+          "id": "healthcare",
+          "iconName": "heart-pulse",
+          "value": "8,500+",
+          "label": "Healthcare Support"
+        },
+        {
+          "id": "communities",
+          "iconName": "globe",
+          "value": "100+",
+          "label": "Communities Impacted"
+        }
+      ],
+      "closingText": "Together with your support, we are building a better and more equitable world for all."
+    },
+
+    "ctaBanner": {
+      "topBadge": "BE A PART OF THE CHANGE",
+      "heading": {
+        "plainText": "Your Support Can",
+        "highlightedText": "Change a Life Today"
+      },
+      "description": "Every act of kindness brings hope and creates opportunities for a better tomorrow.",
+      "primaryAction": {
+        "label": "Donate Now",
+        "url": "/donate"
+      },
+      "secondaryAction": {
+        "label": "Volunteer With Us",
+        "url": "/volunteer"
+      },
+      "bannerImage": {
+        "src": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1200&auto=format&fit=crop",
+        "alt": "Hands coming together to support a community cause"
+      }
+    },
+
+    "transparencyBar": {
+      "iconName": "shield-check-outline",
+      "title": "We are committed to transparency and accountability.",
+      "subtitle": "Your trust inspires us to do more and better every day.",
+      "action": {
+        "label": "Learn More About Us",
+        "url": "/about/transparency"
+      }
     }
   }
 }

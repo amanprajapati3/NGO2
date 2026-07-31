@@ -14,7 +14,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
   const visibleArticles = showAll ? articles : articles.slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-white px-0 pt-12 ">
+    <section className="relative overflow-hidden bg-white px-0 py-8 ">
       {/* Background Glows */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full  blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full  blur-[120px] pointer-events-none" />
