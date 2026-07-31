@@ -1,3 +1,4 @@
+import PageBanner from "../../shared/PageBanner"
 import Image from "next/image";
 import Link from "next/link";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
@@ -9,44 +10,13 @@ interface TestimonialPageLayoutProps {
 }
 
 export default function TestimonialPageLayout({ data }: TestimonialPageLayoutProps) {
-  const { banner, badge, title, subtitle, description, testimonials } = data || {};
+  const { banner, badge, title, pretitle, description, testimonials } = data || {};
 
   return (
     <div className="w-full overflow-hidden bg-[#fafafa]">
       {/* ================= HERO BANNER ================= */}
-      <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
-        <Image
-          src={
-            banner?.backgroundImage ||
-            "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop"
-          }
-          alt={banner?.breadcrumbCurrent || "Testimonials"}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      <PageBanner banner={banner} />
 
-        <div className="absolute inset-0 bg-[#120a1a]/70" />
-
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {banner?.breadcrumbCurrent || "Testimonials"}
-          </h1>
-
-          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
-            <Link href="/" className="transition-colors hover:text-[#ff541b]">
-              {banner?.breadcrumbHome || "Home"}
-            </Link>
-            <span>/</span>
-            <span className="text-[#ff541b]">
-              {banner?.breadcrumbCurrent || "Testimonials"}
-            </span>
-          </div>
-
-          <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#ff541b]" />
-        </div>
-      </section>
 
       {/* ================= TESTIMONIAL CONTENT SECTION ================= */}
       <section className="relative py-12">
@@ -81,10 +51,10 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
               <span className="h-[1px] w-10 bg-orange-300" />
             </div>
 
-            {/* Subtitle / Description */}
-            {subtitle && (
+            {/* pretitle / Description */}
+            {pretitle && (
               <p className="mt-2 text-sm font-semibold text-slate-700">
-                {subtitle}
+                {pretitle}
               </p>
             )}
 

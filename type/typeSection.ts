@@ -11,7 +11,7 @@ export interface NavItem {
 
 export interface PopupAbout {
   title: string;
-  description: string;
+  desc: string;
 }
 
 export interface PopupInstagramImage {
@@ -203,7 +203,7 @@ export interface AboutVideo {
 export interface FloatingCard {
   icon: string;
   title: string;
-  subtitle: string;
+  pretitle: string;
   highlight: string;
 }
 
@@ -240,10 +240,18 @@ export interface AboutBackground {
 }
 
 // ABOUT PAGE - BREADCRUMB
+export interface PageBannerData {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  bgImageUrl: string;
+  title?: string;
+  alt?: string;
+}
+
 export interface AboutBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
   alt: string;
   overlay: boolean;
 }
@@ -257,7 +265,7 @@ export interface AboutCTAButton {
 export interface AboutCTA {
   badge: string;
   title: string;
-  description: string;
+  desc: string;
   button: AboutCTAButton;
   secondaryButton: AboutCTAButton;
 }
@@ -265,7 +273,7 @@ export interface AboutCTA {
 export interface AboutSection {
   badge: AboutBadge;
   title: AboutTitle;
-  description: AboutDescription;
+  desc: AboutDescription;
   buttons: AboutButton[];
   gallery: AboutGallery;
   statistics: AboutStatistic[];
@@ -287,7 +295,7 @@ export interface AboutSectionProps {
 export interface WhyChooseCard {
   icon: string;
   title: string;
-  description: string;
+  desc: string;
 }
 
 export interface WhyChooseImageOverlay {
@@ -302,7 +310,7 @@ export interface WhyChooseUsData {
     line1: string;
     line2: string;
   };
-  description: string;
+  desc: string;
   image: string;
   imageAlt: string;
   imageOverlay: WhyChooseImageOverlay;
@@ -395,7 +403,7 @@ export interface CauseBadge {
 export interface CausesBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface CauseTitle {
@@ -442,7 +450,7 @@ export interface CausesDecorations {
 }
 
 export interface CausesCTA {
-  backgroundImage: string;
+  bgImageUrl: string;
   title: string;
   description: string;
   button: CausesCTAButton;
@@ -492,7 +500,7 @@ export interface ProjectCTA {
 export interface ProjectBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface ProjectSectionData {
@@ -537,7 +545,7 @@ export interface TeamMember {
 export interface teamBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface TeamButton {
@@ -584,7 +592,7 @@ export interface SupportTitle {
 export interface SupportBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface SupportButton {
@@ -605,7 +613,7 @@ export interface SupportImage {
 
 export interface SupportFloatingCard {
   title: string;
-  subtitle: string;
+  pretitle: string;
   icon: string;
 }
 
@@ -645,7 +653,7 @@ export interface EventTitle {
 export interface EventBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface EventButton {
@@ -686,7 +694,7 @@ export interface GalleryTitle {
 export interface Gallerybanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface GalleryCategory {
@@ -739,7 +747,7 @@ export interface PartnerTitle {
 export interface PartnersBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface PartnerItem {
@@ -775,7 +783,7 @@ export interface TestimonialTitle {
 export interface TestimonialBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface TestimonialReview {
@@ -796,7 +804,7 @@ export interface TestimonialItem {
 export interface TestimonialData {
   badge: TestimonialBadge;
   title: TestimonialTitle;
-  subtitle: string;
+  pretitle: string;
   description: string;
   review: TestimonialReview;
   testimonials: TestimonialItem[];
@@ -818,7 +826,7 @@ export interface NewsBadge {
 export interface BlogBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface NewsTitle {
@@ -843,7 +851,7 @@ export interface NewsArticle {
 export interface NewsSectionData {
   badge: NewsBadge;
   title: NewsTitle;
-  subtitle: string;
+  pretitle: string;
   button: NewsButton;
   articles: NewsArticle[];
   banner: BlogBanner;
@@ -877,7 +885,7 @@ export interface MapCoordinates {
 
 export interface ContactMap {
   locationTitle: string;
-  locationSubtitle: string;
+  locationpretitle: string;
   mapUrl: string;
   embedUrl: string;
   coordinates: MapCoordinates;
@@ -886,7 +894,7 @@ export interface ContactMap {
 export interface ContactBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface ContactInfoitem {
@@ -922,7 +930,7 @@ export interface ContactButton {
 
 export interface ContactForm {
   title: string;
-  subtitle: string;
+  pretitle: string;
   fields: ContactFields;
   button: ContactButton;
 }
@@ -963,7 +971,7 @@ export interface FAQImage {
 export interface FaqBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface FAQItem {
@@ -1018,7 +1026,7 @@ export interface SuccessStory {
 export interface SuccessStoriesData {
   badge: SuccessStoriesBadge;
   title: SuccessStoriesTitle;
-  subtitle: string;
+  pretitle: string;
   button: SuccessStoriesButton;
   stories: SuccessStory[];
 }
@@ -1031,7 +1039,7 @@ export interface SuccessStoriesProps {
 export interface CareerBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface CareerBadge {
@@ -1085,7 +1093,7 @@ export interface CareerPageProps {
 export interface JobDetailsBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface JobDetailsButton {
@@ -1100,14 +1108,14 @@ export interface JobPerk {
 
 export interface QuestionsSection {
   title: string;
-  subtitle: string;
+  pretitle: string;
   buttonLabel: string;
   email: string;
 }
 
 export interface ShareSection {
   title: string;
-  subtitle: string;
+  pretitle: string;
   links: {
     linkedin: string;
     facebook: string;
@@ -1203,7 +1211,7 @@ export interface CareerApplicationField {
 export interface CareerApplicationBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface CareerApplicationBadge {
@@ -1285,7 +1293,7 @@ export interface JobApplyData {
       uploadDocuments: {
         step: number;
         title: string;
-        subtitle: string;
+        pretitle: string;
         fields: {
           resume: FileUploadField;
           coverLetter: FileUploadField;
@@ -1343,7 +1351,7 @@ export interface ServiceHeader {
 }
 
 export interface ServicesBanner {
-  backgroundImage: string;
+  bgImageUrl: string;
   breadcrumbHome: string;
   breadcrumbCurrent: string;
 }
@@ -1420,7 +1428,7 @@ export interface ServiceDetailImpact {
 }
 
 export interface ServiceDetailsBanner {
-  backgroundImage: string;
+  bgImageUrl: string;
   breadcrumbHome: string;
   breadcrumbCurrent: string;
 }
@@ -1456,7 +1464,7 @@ export interface ServiceDetailPageProps {
 export type TermsBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 export type TermsCondition = { id: string; title: string; content: string };
 export type TermsData = { banner: TermsBanner; conditions: TermsCondition[] };
@@ -1468,7 +1476,7 @@ export interface TermsConditionProps {
 export type PrivacyBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 export type privacyPolicy = { id: string; title: string; content: string };
 export type privacyPolicydata = {
@@ -1483,7 +1491,7 @@ export interface privacyPolicyprops {
 export type refundBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 export type refundPolicy = { id: string; title: string; content: string };
 export type refundPolicydata = {
@@ -1498,7 +1506,7 @@ export interface refundPolicyprops {
 export type cookieBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 export type cookiePolicy = { id: string; title: string; content: string };
 export type cookiePolicydata = {
@@ -1513,7 +1521,7 @@ export interface cookiePolicyprops {
 export type disclaimerBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 export type disclaimerPolicy = { id: string; title: string; content: string };
 export type disclaimerPolicydata = {
@@ -1528,12 +1536,12 @@ export interface disclaimerPolicyprops {
 export type SitemapBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 
 export type SitemapHeader = {
   title: string;
-  subtitle: string;
+  pretitle: string;
 };
 
 export type SitemapHomeNode = {
@@ -1580,7 +1588,7 @@ export interface SitemapPageProps {
 export type DonateNowBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 };
 
 export type DonateNowHeaderTitle = {
@@ -1621,7 +1629,7 @@ export type DonationAmountOption = {
   amount: number | null;
   currencySymbol: string | null;
   label: string;
-  subtitle?: string;
+  pretitle?: string;
   isOther: boolean;
 };
 
@@ -1651,7 +1659,7 @@ export type DonorInfoSection = {
 export type PaymentMethod = {
   id: string;
   title: string;
-  subtitle: string;
+  pretitle: string;
 };
 
 export type PaymentMethodSection = {
@@ -1705,14 +1713,14 @@ export interface IndustryHeader {
     part1: string;
     part2: string;
   };
-  subtitle: string;
+  pretitle: string;
   sectionTag: string;
 }
 
 export interface IndustryBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface IndustrySectorImage {
@@ -1768,7 +1776,7 @@ export interface IndustryPageData {
 export interface awardBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 // ================= PAGE HEADER =================
@@ -1780,7 +1788,7 @@ export interface HeaderTitle {
 export interface AwardsHeader {
   topBadge: string;
   title: HeaderTitle;
-  subtitle: string;
+  pretitle: string;
 }
 
 // ================= STATS METRICS =================
@@ -1833,7 +1841,7 @@ export interface SupportBanner {
 
 export interface TransparencyBanner {
   title: string;
-  subtitle: string;
+  pretitle: string;
   iconName: string;
   cta: CTAButton;
 }
@@ -1861,7 +1869,7 @@ export interface SupportHeroLogo {
 export interface SupportHeroBanner {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
-  backgroundImage: string;
+  bgImageUrl: string;
 }
 
 export interface SupportHero {
@@ -1957,7 +1965,7 @@ export interface SupportTransparencyAction {
 export interface SupportTransparencyBar {
   iconName: string;
   title: string;
-  subtitle: string;
+  pretitle: string;
   action: SupportTransparencyAction;
 }
 
@@ -1979,7 +1987,7 @@ export interface CSRPageProps {
   banner: {
     breadcrumbCurrent: string;
     breadcrumbHome: string;
-    backgroundImage: string;
+    bgImageUrl: string;
   };
 
   header: {
@@ -1990,7 +1998,7 @@ export interface CSRPageProps {
       part2: string;
     };
 
-    subtitle: string;
+    pretitle: string;
   };
 
   stats: {
@@ -2072,7 +2080,7 @@ export interface EnquiryNowPageProps {
   banner: {
     breadcrumbHome: string;
     breadcrumbCurrent: string;
-    backgroundImage: string;
+    bgImageUrl: string;
     title: string;
   };
 
@@ -2131,7 +2139,7 @@ export interface EnquiryNowPageProps {
 
   contactSection: {
     title: string;
-    subtitle: string;
+    pretitle: string;
     description: string;
 
     items: {
@@ -2157,7 +2165,7 @@ export interface FranchisePageProps {
   banner: {
     breadcrumbHome: string;
     breadcrumbCurrent: string;
-    backgroundImage: string;
+    bgImageUrl: string;
     title: string;
   };
 
@@ -2188,7 +2196,7 @@ export interface FranchisePageProps {
 
   form: {
     title: string;
-    subtitle: string;
+    pretitle: string;
 
     fields: {
       name: string;
@@ -2230,7 +2238,7 @@ export interface FranchisePageProps {
 
   contactBanner: {
     title: string;
-    subtitle: string;
+    pretitle: string;
     description: string;
     phone: string;
     email: string;
@@ -2247,7 +2255,7 @@ export interface BranchesPageProps {
   banner: {
     breadcrumbHome: string;
     breadcrumbCurrent: string;
-    backgroundImage: string;
+    bgImageUrl: string;
     title: string;
   };
 
@@ -2316,7 +2324,7 @@ export interface BrochurePageProps {
   banner: {
     breadcrumbHome: string;
     breadcrumbCurrent: string;
-    backgroundImage: string;
+    bgImageUrl: string;
     title: string;
   };
 
@@ -2341,7 +2349,7 @@ export interface BrochurePageProps {
   brochures: {
     id: string;
     title: string;
-    subtitle: string;
+    pretitle: string;
     name: string;
     description: string;
     image: string;

@@ -7,7 +7,7 @@ import { FiArrowRight, FiBookOpen, FiUser } from "react-icons/fi";
 import type { NewsSectionProps, NewsArticle } from "@/type/typeSection";
 
 export default function NewsSection({ data }: NewsSectionProps) {
-  const { badge, title, subtitle, button, articles } = data;
+  const { badge, title, pretitle, button, articles } = data;
 
   const [showAll, setShowAll] = useState(false);
 
@@ -43,10 +43,10 @@ export default function NewsSection({ data }: NewsSectionProps) {
             </span>
           </h2>
 
-          {/* Subtitle / Description */}
-          {subtitle && (
+          {/* pretitle / Description */}
+          {pretitle && (
             <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
-              {subtitle}
+              {pretitle}
             </p>
           )}
         </div>
@@ -108,7 +108,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
           <div className="mt-10 flex justify-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
+              className="group inline-flex items-center cursor-pointer gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
             >
               <span>{showAll ? "Show Less" : button?.label || "View All Posts"}</span>
               <FiArrowRight

@@ -82,7 +82,7 @@ export default function EventSection({ data }: EventsSectionProps) {
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
-          {/* Subtitle Line */}
+          {/* pretitle Line */}
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
             <span className="h-[1px] w-8 bg-orange-200" />
             <span>{badge?.label || "Upcoming Events"}</span>
@@ -139,7 +139,7 @@ export default function EventSection({ data }: EventsSectionProps) {
                 />
 
                 {/* Gradient Dark Overlay */}
-                <div className="absolute inset-0 bg-black/70 transition-opacity duration-300 group-hover:opacity-95" />
+                <div className="absolute inset-0 bg-gradient-to-t from-black  transition-opacity duration-300 group-hover:opacity-95" />
 
                 {/* Content Overlay Area */}
                 <div className="relative z-10 flex flex-col items-start p-6 sm:p-8">

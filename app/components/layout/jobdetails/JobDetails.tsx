@@ -1,8 +1,8 @@
 "use client";
 
 import React from "react";
-import Image from "next/image";
 import Link from "next/link";
+import PageBanner from "../../shared/PageBanner";
 import {
   FiFileText,
   FiList,
@@ -43,38 +43,15 @@ export default function JobDetails({ data }: JobDetailsProps) {
     <main className="w-full bg-[#fcfcfd] text-[#0d152e]">
 
       {/* ================= HERO BANNER ================= */}
-      <section className="relative flex min-h-[260px] items-center justify-center overflow-hidden sm:min-h-[300px]">
-        <div className="absolute inset-0 bg-[#120a1a]">
-          <Image
-            src={data.banner.backgroundImage}
-            alt={data.title}
-            fill
-            priority
-            className="object-cover opacity-30"
-            sizes="100vw"
-          />
-        </div>
-
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-2 text-3xl font-extrabold tracking-tight text-white sm:text-4xl lg:text-5xl">
-            {data.title}
-          </h1>
-
-          <div className="flex items-center justify-center gap-2 text-xs font-medium text-white/80 sm:text-sm">
-            <Link href="/" className="transition-colors hover:text-[#ff541b]">
-              Home
-            </Link>
-            <span>/</span>
-            <Link href="/careers" className="transition-colors hover:text-[#ff541b]">
-              {data.banner.breadcrumbHome}
-            </Link>
-            <span>/</span>
-            <span className="text-[#ff541b]">{data.banner.breadcrumbCurrent}</span>
-          </div>
-
-          <div className="mx-auto mt-4 h-1 w-12 rounded-full bg-[#ff541b]" />
-        </div>
-      </section>
+      <PageBanner
+        banner={data.banner}
+        title={data.title}
+        breadcrumbs={[
+          { label: "Home", href: "/" },
+          { label: data.banner.breadcrumbHome, href: "/careers" },
+          { label: data.title },
+        ]}
+      />
 
       {/* ================= MAIN CONTENT SECTION ================= */}
       <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
@@ -277,7 +254,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                   {data.questionsSection.title}
                 </h4>
                 <p className="mt-1 text-xs text-[#64748b] leading-relaxed">
-                  {data.questionsSection.subtitle}
+                  {data.questionsSection.pretitle}
                 </p>
 
                 <a
@@ -297,7 +274,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                   {data.shareSection.title}
                 </h3>
                 <p className="mt-1 text-xs text-[#64748b]">
-                  {data.shareSection.subtitle}
+                  {data.shareSection.pretitle}
                 </p>
 
                 <div className="mt-4 flex items-center gap-3">

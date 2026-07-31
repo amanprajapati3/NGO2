@@ -1,5 +1,7 @@
 "use client";
 
+import PageBanner from "../../shared/PageBanner";
+
 import React, { useState } from "react";
 import Link from "next/link";
 import {
@@ -45,36 +47,8 @@ export default function ApplyJob() {
 
   return (
     <div className="w-full bg-[#fcfcfd] text-[#0d152e] ">
-      <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
-        <Image
-          src={banner.backgroundImage}
-          alt={banner.breadcrumbCurrent}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      <PageBanner banner={banner} />
 
-        <div className="absolute inset-0 bg-[#120a1a]/70" />
-
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {banner.breadcrumbCurrent}
-          </h1>
-
-          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
-            <Link href="/" className="transition-colors hover:text-[#ff541b]">
-              {banner.breadcrumbHome}
-            </Link>
-
-            <span>/</span>
-
-            <span className="text-[#ff541b]">{banner.breadcrumbCurrent}</span>
-          </div>
-
-          <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#ff541b]" />
-        </div>
-      </section>
 
       <div className="mx-auto max-w-7xl px-3 sm:px-6 py-6 lg:px-8 sm:py-10 lg:py-14">
         {/* FORM CONTAINER & SIDEBAR */}
@@ -337,7 +311,7 @@ export default function ApplyJob() {
               </div>
               <div className="mt-2 h-[2px] w-8 bg-[#ff541b]" />
               <p className="mt-3 text-xs text-slate-500 sm:text-sm">
-                {formSections.uploadDocuments.subtitle}
+                {formSections.uploadDocuments.pretitle}
               </p>
 
               <div className="mt-5 space-y-4 sm:space-y-5">

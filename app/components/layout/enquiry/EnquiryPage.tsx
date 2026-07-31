@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { FaRegHeart } from "react-icons/fa";
 
+import PageBanner from "../../shared/PageBanner";
 import type { EnquiryNowPageProps } from "@/type/typeSection";
 
 interface Props {
@@ -71,35 +72,7 @@ export default function EnquiryPage({ data }: Props) {
 
   return (
     <main className="min-h-screen bg-white text-gray-800">
-      <section className="relative flex h-[280px] items-center justify-center overflow-hidden md:h-[320px]">
-        <Image
-          src={banner.backgroundImage}
-          alt={banner.title}
-          fill
-          priority
-          className="object-cover object-center"
-        />
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="relative z-10 px-4 text-center text-white">
-          <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-5xl">
-            {banner.title}
-          </h1>
-
-          <nav
-            aria-label="Breadcrumb"
-            className="flex items-center justify-center gap-2 text-sm text-white/90"
-          >
-            <Link href="/" className="transition hover:text-orange-300">
-              {banner.breadcrumbHome}
-            </Link>
-            <span className="text-orange-500 ">/</span>
-
-            <span className="font-medium text-orange-500">
-              {banner.breadcrumbCurrent}
-            </span>
-          </nav>
-        </div>
-      </section>
+      <PageBanner banner={banner} />
 
       <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-8 pt-3 text-center">
         {/* Icon + line */}
@@ -468,7 +441,7 @@ export default function EnquiryPage({ data }: Props) {
               </p>
 
               <h3 className="mt-1 text-2xl font-bold text-gray-900">
-                {contactSection.subtitle}
+                {contactSection.pretitle}
               </h3>
 
               <p className="mt-2 max-w-xs text-sm text-gray-600">

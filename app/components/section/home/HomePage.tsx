@@ -23,7 +23,7 @@ import NewsSection from "../../homelayout/NewsSection";
 
 export default function HomePage(){
 
-const banner = data.banner[0] as BannerProps;
+const banner = data.banner as BannerProps[];
 const about = data.about as AboutSectionType;
 // const mission = data.mission as MissionData;
 const causes = data.causes as CausesData;
@@ -41,7 +41,7 @@ const news = data.news as NewsSectionData
 
     return(
         <>
-        <Banner {...banner}/>
+        <Banner banners={banner} />
         <AboutSection data={about}/>
         {/* <MissionSection data={mission} /> */}
         <CausesSection data={causes}/>

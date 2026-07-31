@@ -82,7 +82,7 @@ export default function Header({
   return (
     <>
       {/* ================= HEADER WRAPPER ================= */}
-      <div className="fixed top-0 z-50 w-full bg-slate-900 shadow-md">
+      <div className="fixed top-0 z-50 w-full bg-[#3d376d] shadow-md">
         {/* ================= TOP BAR ================= */}
         {topBar && (
           <div className="hidden bg-white text-xs text-slate-900 sm:block">
@@ -142,7 +142,7 @@ export default function Header({
         )}
 
         {/* ================= MAIN HEADER ================= */}
-        <header className="bg-indigo-950">
+        <header className="bg-[#3d376d]">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex h-16 items-center justify-between sm:h-20">
               {/* Logo */}
@@ -286,9 +286,9 @@ export default function Header({
 
         <div className="flex-1 overflow-y-auto px-5">
           {/* About Description */}
-          {popup?.aboutpopup?.description && (
+          {popup?.aboutpopup?.desc && (
             <p className="text-sm text-slate-500">
-              {popup.aboutpopup.description}
+              {popup.aboutpopup.desc}
             </p>
           )}
 

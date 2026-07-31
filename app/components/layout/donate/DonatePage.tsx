@@ -1,4 +1,6 @@
 "use client";
+import PageBanner from "../../shared/PageBanner";
+
 
 import { useState } from "react";
 import Image from "next/image";
@@ -85,44 +87,8 @@ export default function DonatePage({ data }: DonateNowProps) {
   return (
     <div className="w-full overflow-hidden bg-[#fafafa]">
       {/* ================= 1. HERO BANNER ================= */}
-      <section className="relative flex min-h-[280px] items-center justify-center overflow-hidden sm:min-h-[330px] lg:min-h-[350px]">
-        <Image
-          src={
-            data.banner.backgroundImage ||
-            "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
-          }
-          alt={data.banner.breadcrumbCurrent || "Donate Now"}
-          fill
-          priority
-          className="object-cover"
-          sizes="100vw"
-        />
+      <PageBanner banner={data.banner} />
 
-        <div className="absolute inset-0 bg-[#120a1a]/70" />
-
-        <div className="relative z-10 mx-auto w-full max-w-7xl px-4 text-center sm:px-6 lg:px-8">
-          <h1 className="mb-2 text-4xl font-bold tracking-tight text-white sm:text-5xl lg:text-6xl">
-            {data.banner.breadcrumbCurrent}
-          </h1>
-
-          <div className="flex items-center justify-center gap-2 text-sm text-white/80">
-            <Link
-              href="/"
-              className="transition-colors hover:text-orange-400"
-            >
-              {data.banner.breadcrumbHome}
-            </Link>
-
-            <span>/</span>
-
-            <span className="text-orange-500">
-              {data.banner.breadcrumbCurrent}
-            </span>
-          </div>
-
-          <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-orange-400" />
-        </div>
-      </section>
 
       {/* ================= MAIN CONTENT ================= */}
       <section className="relative py-12 ">
@@ -256,7 +222,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
                             <span className="mt-1 text-[11px] font-medium text-slate-500">
                               {opt.isOther
-                                ? opt.subtitle
+                                ? opt.pretitle
                                 : opt.label}
                             </span>
                           </button>
@@ -457,7 +423,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                             </span>
 
                             <span className="mt-1 text-[10px] text-slate-400">
-                              {method.subtitle}
+                              {method.pretitle}
                             </span>
                           </button>
                         );

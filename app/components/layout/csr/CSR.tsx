@@ -1,4 +1,5 @@
 import React from "react";
+import PageBanner from "../../shared/PageBanner";
 import type { CSRPageProps } from "@/type/typeSection";
 
 // --- Custom SVGs Matching Image Icons Exactly ---
@@ -292,34 +293,11 @@ interface CSRProps {
 export default function CSR({ data }: CSRProps) {
   return (
     <div className="min-h-screen bg-slate-50 font-sans text-slate-800">
-      {/* 1. Header Hero Banner */}
-      <div className="relative flex h-64 flex-col items-center justify-center overflow-hidden bg-slate-900 text-white md:h-80">
-        <img
-          src={data.banner.backgroundImage}
-          alt={data.banner.breadcrumbCurrent}
-          className="absolute inset-0 h-full w-full object-cover opacity-30 brightness-75"
-        />
-
-        <div className="relative z-10 px-4 text-center">
-          <h1 className="mb-3 font-serif text-4xl font-bold tracking-tight md:text-5xl">
-            {data.banner.breadcrumbCurrent}
-          </h1>
-
-          <div className="flex items-center justify-center space-x-2 text-sm font-medium md:text-base">
-            <span className="text-slate-200">{data.banner.breadcrumbHome}</span>
-
-            <span className="font-bold text-orange-500">/</span>
-
-            <span className="text-slate-100">
-              {data.banner.breadcrumbCurrent}
-            </span>
-          </div>
-        </div>
-      </div>
+      <PageBanner banner={data.banner} />
 
       {/* Main Container */}
       <div className="mx-auto max-w-7xl  px-4 py-12 sm:px-6 lg:px-8">
-        {/* 2. Top Header & Subtitle */}
+        {/* 2. Top Header & pretitle */}
         <div className="mx-auto max-w-3xl space-y-1 text-center">
           <div className="inline-flex items-center space-x-3">
             <span className="h-[2px] w-12 bg-orange-500" />
@@ -350,7 +328,7 @@ export default function CSR({ data }: CSRProps) {
           </div>
 
           <p className="text-sm leading-relaxed text-slate-600 md:text-base">
-            {data.header.subtitle}
+            {data.header.pretitle}
           </p>
         </div>
 

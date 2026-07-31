@@ -182,7 +182,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
               </h3>
 
               <p className="mx-auto mt-3 max-w-2xl text-sm leading-7 text-slate-900 sm:mt-4 sm:text-base sm:leading-7 lg:mx-0">
-                {form.subtitle}
+                {form.pretitle}
               </p>
             </div>
 

@@ -1,4 +1,5 @@
 import React from "react";
+import PageBanner from "../../shared/PageBanner"
 import type { SupportDataProps } from "@/type/typeSection";
 
 // Helper Function for Rendering Vector SVGs Based on Icon Names
@@ -113,42 +114,7 @@ export default function SupportPage({ data }: SupportDataProps) {
   return (
     <div className="w-full bg-[#FAF9F6] text-slate-800 antialiased font-sans">
       {/* ================= 1. HERO BREADCRUMB BANNER ================= */}
-      <section className="relative h-52 sm:h-[300px] w-full bg-slate-900 overflow-hidden flex items-center justify-center">
-        {/* Background Image */}
-        <img
-          src={hero.banner.backgroundImage}
-          alt={hero.title}
-          className="absolute inset-0 w-full h-full object-cover opacity-30"
-        />
-
-        {/* Top Floating Logo */}
-        {hero.logo?.src && (
-          <div className="absolute top-4 left-4 sm:left-8 z-20">
-            <img
-              src={hero.logo.src}
-              alt={hero.logo.alt}
-              className="h-8 sm:h-10 object-contain"
-            />
-          </div>
-        )}
-
-        {/* Hero Title & Breadcrumb */}
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-white tracking-wide">
-            {hero.title}
-          </h1>
-
-          <div className="mt-3 flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-slate-300">
-            <a href="/" className="hover:text-orange-400 transition-colors">
-              {hero.banner.breadcrumbHome}
-            </a>
-            <span className="text-[#EA580C]">/</span>
-            <span className="text-[#EA580C] font-semibold">
-              {hero.banner.breadcrumbCurrent}
-            </span>
-          </div>
-        </div>
-      </section>
+      <PageBanner banner={hero.banner} title={hero.title} />
 
       {/* ================= MAIN CONTAINER ================= */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12  space-y-16">
@@ -376,7 +342,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                 {transparencyBar.title}
               </h4>
               <p className="text-xs text-orange-600 mt-0.5">
-                {transparencyBar.subtitle}
+                {transparencyBar.pretitle}
               </p>
             </div>
           </div>

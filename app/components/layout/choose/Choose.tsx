@@ -15,25 +15,25 @@ import { WhyChooseUsData } from "@/type/typeSection";
 const renderIcon = (icon: string) => {
   switch (icon) {
     case "target":
-      return <FiTarget size={22} strokeWidth={2} />;
+      return <FiTarget size={30} strokeWidth={2} />;
 
     case "users":
-      return <FiUsers size={22} strokeWidth={2} />;
+      return <FiUsers size={30} strokeWidth={2} />;
 
     case "heart-hand":
-      return <FiHeart size={22} strokeWidth={2} />;
+      return <FiHeart size={30} strokeWidth={2} />;
 
     case "award":
-      return <FiAward size={22} strokeWidth={2} />;
+      return <FiAward size={30} strokeWidth={2} />;
 
     case "handshake":
-      return <FiUsers size={22} strokeWidth={2} />;
+      return <FiUsers size={30} strokeWidth={2} />;
 
     case "donation":
-      return <FiDollarSign size={22} strokeWidth={2} />;
+      return <FiDollarSign size={30} strokeWidth={2} />;
 
     default:
-      return <FiArrowUpRight size={22} />;
+      return <FiArrowUpRight size={30} />;
   }
 };
 
@@ -43,7 +43,7 @@ export default function WhyChooseUs({
   data: WhyChooseUsData;
 }) {
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] md:px-4 px-2 py-8 ">
+    <section className="relative overflow-hidden bg-[#fafafa] md:px-32 px-2 py-8 ">
       <div className="relative mx-auto  bg-[#fffcf9] md:p-6 p-2">
         
         {/* BACKGROUND DECORATION */}
@@ -67,13 +67,13 @@ export default function WhyChooseUs({
           <div className="flex flex-col lg:col-span-5">
 
             {/* BADGE */}
-            <div className="mb-3 flex items-center gap-2 text-xs font-bold tracking-wider text-[#ff541b] uppercase">
+            <div className="mb-3 flex items-center gap-2 text-xs md:tet-xl font-bold tracking-wider text-[#ff541b] uppercase">
               <FiHeart size={15} className="fill-[#ff541b]" />
               <span>{data.badge}</span>
             </div>
 
             {/* TITLE */}
-            <h2 className="text-3xl font-extrabold text-[#0f172a] sm:text-4xl md:text-[42px] leading-[1.15]">
+            <h2 className="text-3xl font-extrabold text-[#0f172a] sm:text-4xl md:text-[50px] leading-[1.15]">
               {data.title.line1}
               <br />
               <span>
@@ -94,8 +94,8 @@ export default function WhyChooseUs({
             <div className="mt-3 h-[3px] w-12 rounded-full bg-[#ff541b]" />
 
             {/* DESCRIPTION */}
-            <p className="mt-5 text-xs sm:text-sm leading-relaxed text-[#525b70]">
-              {data.description}
+            <p className="mt-5 text-xs sm:text-lg leading-relaxed text-[#525b70]">
+              {data.desc}
             </p>
 
             {/* IMAGE CARD */}
@@ -133,12 +133,12 @@ export default function WhyChooseUs({
               >
                 <div>
                   {/* ICON */}
-                  <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#fff0e8] text-[#ff541b] transition-colors duration-300 group-hover:bg-[#ff541b] group-hover:text-white">
+                  <div className="flex h-12 sm:h-16 sm:w-16 w-12 items-center justify-center rounded-full bg-[#fff0e8] text-[#ff541b] transition-colors duration-300 group-hover:bg-[#ff541b] group-hover:text-white">
                     {renderIcon(card.icon)}
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="mt-4 text-base font-bold leading-snug text-[#0f172a]">
+                  <h3 className="mt-4 text-base md:text-2xl font-bold leading-snug text-[#0f172a]">
                     {card.title}
                   </h3>
 
@@ -146,8 +146,8 @@ export default function WhyChooseUs({
                   <div className="mt-2.5 h-[2px] w-4 bg-[#ff541b]" />
 
                   {/* DESCRIPTION */}
-                  <p className="mt-3 text-xs leading-relaxed text-[#64748b]">
-                    {card.description}
+                  <p className="mt-3 text-xs md:text-lg leading-relaxed text-[#64748b]">
+                    {card.desc}
                   </p>
                 </div>
               </div>

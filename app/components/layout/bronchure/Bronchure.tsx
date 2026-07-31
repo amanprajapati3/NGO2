@@ -15,6 +15,7 @@ import {
 import { SlBookOpen } from "react-icons/sl";
 
 
+import PageBanner from "../../shared/PageBanner";
 import type { BrochurePageProps } from "@/type/typeSection";
 
 interface Props {
@@ -59,38 +60,7 @@ export default function Bronchure({ data }: Props) {
     <main className="min-h-screen bg-white text-gray-800">
 
       {/* ===================== BANNER ===================== */}
-      <section className="relative flex h-[280px] items-center justify-center overflow-hidden md:h-[320px]">
-        <Image
-          src={banner.backgroundImage}
-          alt={banner.title}
-          fill
-          priority
-          className="object-cover object-center"
-        />
-
-        <div className="absolute inset-0 bg-black/55" />
-
-        <div className="relative z-10 sm:px-4 px-2 text-center text-white">
-          <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-5xl">
-            {banner.title}
-          </h1>
-
-          <nav className="flex items-center justify-center gap-2 text-sm text-white/90">
-            <Link
-              href="/"
-              className="transition hover:text-white"
-            >
-              {banner.breadcrumbHome}
-            </Link>
-
-            <span className="text-orange-400">/</span>
-
-            <span className="font-medium text-orange-400">
-              {banner.breadcrumbCurrent}
-            </span>
-          </nav>
-        </div>
-      </section>
+      <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-10 pt-5 text-center">
@@ -193,7 +163,7 @@ export default function Bronchure({ data }: Props) {
                   </p>
 
                   <p className="mt-0.5 line-clamp-2 text-xs text-white/90">
-                    {item.subtitle}
+                    {item.pretitle}
                   </p>
                 </div> */}
 

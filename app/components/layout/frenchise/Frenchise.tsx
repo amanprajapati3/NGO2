@@ -23,6 +23,7 @@ import {
   Heart,
 } from "lucide-react";
 
+import PageBanner from "../../shared/PageBanner";
 import type { FranchisePageProps } from "@/type/typeSection";
 
 interface Props {
@@ -90,36 +91,7 @@ export default function FrenchisePage({ data }: Props) {
     <main className="min-h-screen bg-white text-gray-800">
 
       {/* ===================== BANNER ===================== */}
-      <section className="relative flex h-[280px] items-center justify-center overflow-hidden md:h-[320px]">
-        <Image
-          src={banner.backgroundImage}
-          alt={banner.title}
-          fill
-          priority
-          className="object-cover object-center"
-        />
-
-        <div className="absolute inset-0 bg-black/55" />
-        <div className="relative z-10 px-4 text-center text-white">
-          <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-5xl">
-            {banner.title}
-          </h1>
-          <nav className="flex items-center justify-center gap-2 text-sm text-white">
-            <Link
-              href="/"
-              className="transition hover:text-white"
-            >
-              {banner.breadcrumbHome}
-            </Link>
-
-            <span className="text-orange-500">/</span>
-
-            <span className="font-medium text-orange-400">
-              {banner.breadcrumbCurrent}
-            </span>
-          </nav>
-        </div>
-      </section>
+      <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl px-3 pb-12 sm:pt-10 pt-5 text-center">
@@ -236,7 +208,7 @@ export default function FrenchisePage({ data }: Props) {
             </h3>
 
             <p className="mb-6 text-sm text-gray-500">
-              {form.subtitle}
+              {form.pretitle}
             </p>
 
             <form className="space-y-5">
@@ -517,7 +489,7 @@ export default function FrenchisePage({ data }: Props) {
                     {contactBanner.title}
                   </p>
                   <h3 className="text-2xl font-bold">
-                    {contactBanner.subtitle}
+                    {contactBanner.pretitle}
                   </h3>
                 </div>
               </div>

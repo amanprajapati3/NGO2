@@ -141,7 +141,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
   const {
     badge,
     title,
-    description,
+    desc,
     buttons,
     gallery,
     statistics,
@@ -149,7 +149,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white md:py-16 py-5 ">
+    <section className="relative overflow-hidden bg-white md:pt-16 pb-10 py-5 ">
       {/* Background Semi-Circle Decoration */}
       <BackgroundDecorations />
 
@@ -172,12 +172,12 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
             {/* Primary Text */}
             <p className="mt-2 text-base font-semibold text-orange-600 sm:text-[17px]">
-              {description.primary}
+              {desc.primary}
             </p>
 
             {/* Secondary Text */}
             <p className="mt-2 text-sm text-[#666666] sm:text-[15px]">
-              {description.secondary}
+              {desc.secondary}
             </p>
 
             {/* Buttons */}
@@ -240,7 +240,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
                 {/* Text */}
                 <div className="flex flex-col">
                   {gallery.floatingCard.title}
-                  <span className="text-sm -mt-1">{gallery.floatingCard.subtitle}</span>
+                  <span className="text-sm -mt-1">{gallery.floatingCard.pretitle}</span>
                   <span className="text-orange-500 -mt-1 text-md">{gallery.floatingCard.highlight}</span>
                 </div>
               </div>

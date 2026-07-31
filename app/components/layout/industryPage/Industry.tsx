@@ -1,4 +1,5 @@
 import React from "react";
+import PageBanner from "../../shared/PageBanner";
 import type { IndustryPageData } from "@/type/typeSection";
 
 // ===============================
@@ -221,30 +222,7 @@ export default function Industry({ data }: IndustryProps) {
 
   return (
     <div className="w-full bg-[#FCFDFD] font-sans text-[#0F172A]">
-      {/* ================= HERO BANNER ================= */}
-      <section className="relative flex h-48 w-full items-center justify-center overflow-hidden bg-slate-900 sm:h-[300px]">
-        <img
-          src={banner.backgroundImage}
-          alt={banner.breadcrumbCurrent}
-          className="absolute inset-0 h-full w-full object-cover opacity-35"
-        />
-
-        <div className="relative z-10 px-4 text-center">
-          <h1 className="font-serif text-3xl font-bold tracking-wide text-white sm:text-5xl">
-            {header.title.part1} {header.title.part2}
-          </h1>
-
-          <div className="mt-3 flex items-center justify-center gap-2 text-xs font-medium text-slate-200 sm:text-sm">
-            <a href="/" className="transition-colors hover:text-orange-400">
-              {banner.breadcrumbHome}
-            </a>
-
-            <span>/</span>
-
-            <span className="text-orange-500">{banner.breadcrumbCurrent}</span>
-          </div>
-        </div>
-      </section>
+      <PageBanner banner={banner} title={`${header.title.part1} ${header.title.part2}`} />
 
       {/* ================= MAIN CONTENT ================= */}
       <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6  lg:px-8">
@@ -270,7 +248,7 @@ export default function Industry({ data }: IndustryProps) {
           </h2>
 
           <p className="mx-auto mt-4 max-w-2xl text-xs leading-relaxed text-slate-600 sm:text-sm">
-            {header.subtitle}
+            {header.pretitle}
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2">

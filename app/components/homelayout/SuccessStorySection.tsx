@@ -42,7 +42,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
           </h2>
 
           <p className="md:mt-1 text-sm md:text-md md:leading-relaxed text-gray-900">
-            {data.subtitle}
+            {data.pretitle}
           </p>
         </div>
 

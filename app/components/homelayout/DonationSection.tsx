@@ -155,9 +155,9 @@ export default function DonationSection({ data }: SupportSectionProps) {
                   {floatingCard.title}
                 </p>
 
-                {floatingCard.subtitle && (
+                {floatingCard.pretitle && (
                   <p className="mt-0.5 text-[9px] text-slate-500">
-                    {floatingCard.subtitle}
+                    {floatingCard.pretitle}
                   </p>
                 )}
               </div>

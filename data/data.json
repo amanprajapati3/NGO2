@@ -314,26 +314,48 @@
       "title": "It is more difficult to give money away",
       "pretitle": "Haruma",
       "desc": "Discover curated botanical blends and timeless floral aesthetic crafted to elevate your daily ritual.",
-      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop",
       "overlayOpacity": 0.55,
       "ctaButtons": [
         {
-          "label": "Explore Collection",
-          "href": "#collection",
+          "label": "Donate Now",
+          "href": "/donate",
           "variant": "primary"
         },
+        { "label": "Become Member", "href": "/team", "variant": "secondary" }
+      ]
+    },
+    {
+      "title": "Together, We Can Create Change",
+      "pretitle": "Support Our Mission",
+      "desc": "Your support helps us empower communities, create opportunities, and build a better future for everyone.",
+      "bgImageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?q=80&w=1600&auto=format&fit=crop",
+      "overlayOpacity": 0.55,
+      "ctaButtons": [
+        { "label": "Donate Now", "href": "/donate", "variant": "primary" },
+        { "label": "Become Member", "href": "/team", "variant": "secondary" }
+      ]
+    },
+    {
+      "title": "It is more difficult to give money away",
+      "pretitle": "Haruma",
+      "desc": "Discover curated botanical blends and timeless floral aesthetic crafted to elevate your daily ritual.",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop",
+      "overlayOpacity": 0.55,
+      "ctaButtons": [
         {
-          "label": "Our Story",
-          "href": "#story",
-          "variant": "secondary"
-        }
+          "label": "Donate Now",
+          "href": "/donate",
+          "variant": "primary"
+        },
+        { "label": "Become Member", "href": "/team", "variant": "secondary" }
       ]
     }
   ],
   "PopupData": {
     "aboutpopup": {
       "title": "About Us",
-      "description": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services. The customer is king, their lives and needs are the inspiration."
+      "desc": "We believe brand interaction is key in communication. Real innovations and a positive customer experience are the heart of successful communication. No fake products and services. The customer is king, their lives and needs are the inspiration."
     },
     "instagram": {
       "title": "Instagram",
@@ -412,7 +434,7 @@
       "line1": "An International Independent Charity Organization"
     },
 
-    "description": {
+    "desc": {
       "primary": "Your support will help us to make life better living for poor vulnerable children.",
       "secondary": "We are a non-profit organization working for children and communities in need. Through education, healthcare, and essential support, we aim to create a world where every child has the opportunity to live a healthy, happy, and dignified life."
     },
@@ -451,7 +473,7 @@
       "floatingCard": {
         "icon": "heartHands",
         "title": "Your Support",
-        "subtitle": "Creates Real",
+        "pretitle": "Creates Real",
         "highlight": "Change"
       }
     },
@@ -505,9 +527,9 @@
     "banner": {
       "breadcrumbCurrent": "About us",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
-      "alt": "About us",
-      "overlay": true
+      "alt": "about us page ",
+      "overlay": true,
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "values": {
       "badge": "Our Values",
@@ -516,29 +538,29 @@
         {
           "icon": "heart",
           "title": "Compassion",
-          "description": "We put people first and approach every challenge with empathy, kindness, and respect."
+          "desc": "We put people first and approach every challenge with empathy, kindness, and respect."
         },
         {
           "icon": "shield",
           "title": "Integrity",
-          "description": "We remain accountable and transparent in the way we use resources and serve communities."
+          "desc": "We remain accountable and transparent in the way we use resources and serve communities."
         },
         {
           "icon": "users",
           "title": "Inclusion",
-          "description": "We believe everyone deserves equal opportunities regardless of their background or circumstances."
+          "desc": "We believe everyone deserves equal opportunities regardless of their background or circumstances."
         },
         {
           "icon": "globe",
           "title": "Sustainability",
-          "description": "We focus on solutions that strengthen communities and create lasting positive change."
+          "desc": "We focus on solutions that strengthen communities and create lasting positive change."
         }
       ]
     },
     "cta": {
       "badge": "Be Part of the Change",
       "title": "Together, We Can Change Lives",
-      "description": "Your support can help us reach more children, strengthen communities, and create opportunities for a brighter future.",
+      "desc": "Your support can help us reach more children, strengthen communities, and create opportunities for a brighter future.",
       "button": {
         "label": "Donate Now",
         "href": "/donate",
@@ -557,7 +579,7 @@
       "line1": "Why Choose",
       "line2": "Team Equal Care?"
     },
-    "description": "We are committed to creating sustainable change in communities by focusing on education, healthcare, empowerment, and essential support for those in need.",
+    "desc": "We are committed to creating sustainable change in communities by focusing on education, healthcare, empowerment, and essential support for those in need.",
     "image": "https://images.unsplash.com/photo-1524069290683-0457abfe42c3?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     "imageAlt": "Children smiling together",
     "imageOverlay": {
@@ -569,32 +591,32 @@
       {
         "icon": "target",
         "title": "Mission Driven",
-        "description": "We are focused on creating a lasting impact through our mission and values."
+        "desc": "We are focused on creating a lasting impact through our mission and values."
       },
       {
         "icon": "users",
         "title": "Transparent & Trusted",
-        "description": "We maintain complete transparency in our work and use of donations. You can trust us."
+        "desc": "We maintain complete transparency in our work and use of donations. You can trust us."
       },
       {
         "icon": "heart-hand",
         "title": "Impact Focused",
-        "description": "Our programs are designed to bring real, measurable, and lasting change."
+        "desc": "Our programs are designed to bring real, measurable, and lasting change."
       },
       {
         "icon": "award",
         "title": "Experienced Team",
-        "description": "Our team of dedicated professionals works tirelessly to bring hope and support to communities."
+        "desc": "Our team of dedicated professionals works tirelessly to bring hope and support to communities."
       },
       {
         "icon": "handshake",
         "title": "Community Centered",
-        "description": "We work closely with communities to understand their needs and create sustainable solutions."
+        "desc": "We work closely with communities to understand their needs and create sustainable solutions."
       },
       {
         "icon": "donation",
         "title": "Secure Donations",
-        "description": "Your donations are safe with us and are used directly for the intended causes."
+        "desc": "Your donations are safe with us and are used directly for the intended causes."
       }
     ]
   },
@@ -718,7 +740,7 @@
       },
       {
         "label": "Learn More",
-        "href": "/about",
+        "href": "/about-us",
         "variant": "secondary",
         "icon": "arrow"
       }
@@ -737,9 +759,9 @@
     },
 
     "banner": {
-       "breadcrumbCurrent": "Case Study",
-       "breadcrumbHome": "Home",
-       "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+      "breadcrumbCurrent": "Case Study",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
     },
     "title": {
       "line1": "The",
@@ -804,7 +826,7 @@
     },
 
     "cta": {
-      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
+      "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
 
       "title": "Want You Know How Can Help?",
 
@@ -830,7 +852,7 @@
     "banner": {
       "breadcrumbCurrent": "Projects",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+      "bgImageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
     },
 
     "heading": {
@@ -911,7 +933,7 @@
     "banner": {
       "breadcrumbCurrent": "Our Team",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
 
     "heading": {
@@ -1102,7 +1124,7 @@
     "banner": {
       "breadcrumbCurrent": "CTA",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Together, We Can",
@@ -1130,7 +1152,7 @@
     },
     "floatingCard": {
       "title": "Be the reason",
-      "subtitle": "someone smiles today.",
+      "pretitle": "someone smiles today.",
       "icon": "heart"
     },
     "signature": "Thank You",
@@ -1146,7 +1168,7 @@
     "banner": {
       "breadcrumbCurrent": "Events",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "title": {
       "line1": "Be Ready",
@@ -1192,7 +1214,7 @@
     "banner": {
       "breadcrumbCurrent": "Gallery",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Moments of",
@@ -1354,7 +1376,7 @@
     "banner": {
       "breadcrumbCurrent": "Partners",
       "breadcrumbHome": " Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
 
     "description": "We are grateful to our partners and sponsors for their trust, support, and shared commitment to building a better tomorrow.",
@@ -1403,13 +1425,13 @@
     "banner": {
       "breadcrumbCurrent": "Testimonial",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1623122617524-18ca7a791c37?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1623122617524-18ca7a791c37?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Don't Believe Us?",
       "highlight": "See Review"
     },
-    "subtitle": "Precious Journey With You",
+    "pretitle": "Precious Journey With You",
     "description": "Every contribution helps transform lives and bring hope to communities in need. ",
     "testimonials": [
       {
@@ -1463,13 +1485,13 @@
     "banner": {
       "breadcrumbCurrent": "Blogs & News",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Check Out Our",
       "highlight": "Latest News"
     },
-    "subtitle": "Stay updated with inspiring stories, community achievements, and our latest charity initiatives.",
+    "pretitle": "Stay updated with inspiring stories, community achievements, and our latest charity initiatives.",
     "button": {
       "label": "View All Blogs"
     },
@@ -1537,7 +1559,7 @@
     "banner": {
       "breadcrumbCurrent": "Contact Us",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1596524430615-b46475ddff6e?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": {
       "line1": "Let's Start",
@@ -1568,7 +1590,7 @@
     ],
     "map": {
       "locationTitle": "205 Fida Wailnton, Tongo",
-      "locationSubtitle": "New York, Canada",
+      "locationpretitle": "New York, Canada",
       "mapUrl": "https://maps.google.com/?q=205+Fida+Wailnton+Tongo",
       "embedUrl": "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d193595.15830869428!2d-74.11976373946229!3d40.69766371917835!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c24fa5d33f083b%3A0xc80b8f06e177fe62!2sNew%20York%2C%20NY!5e0!3m2!1sen!2sus!4v1710000000000!5m2!1sen!2sus",
       "coordinates": {
@@ -1603,7 +1625,7 @@
 
     "form": {
       "title": "Send Us A Message",
-      "subtitle": "Fill out the form below and our team will contact you shortly.",
+      "pretitle": "Fill out the form below and our team will contact you shortly.",
 
       "fields": {
         "name": {
@@ -1640,7 +1662,7 @@
     "banner": {
       "breadcrumbCurrent": "Faqs",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
+      "bgImageUrl": "https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=900&q=80"
     },
     "title": {
       "line1": "Have Any",
@@ -1687,7 +1709,7 @@
       "highlight": "Transformed"
     },
 
-    "subtitle": "Every smile tells a story. Discover how your support has helped individuals and families build brighter futures.",
+    "pretitle": "Every smile tells a story. Discover how your support has helped individuals and families build brighter futures.",
 
     "button": {
       "label": "Read All Stories",
@@ -1747,10 +1769,9 @@
   },
   "aboutpage": {
     "banner": {
-      "title": "About Us",
-      "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85",
       "breadcrumbHome": "Home",
-      "breadcrumbCurrent": "About Us"
+      "breadcrumbCurrent": "About Us",
+      "bgImageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
     },
 
     "pretitle": "Who We Are",
@@ -1879,7 +1900,7 @@
     "banner": {
       "breadcrumbCurrent": "Career",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1594708767771-a7502209ff51?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "badge": {
       "label": "Join Our Team"
@@ -1965,7 +1986,7 @@
     "banner": {
       "breadcrumbCurrent": "Job Details",
       "breadcrumbHome": "Career",
-      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "title": "Job Details",
     "location": "New Delhi, India",
@@ -2025,13 +2046,13 @@
     ],
     "questionsSection": {
       "title": "Have Questions?",
-      "subtitle": "We're here to help you find the right opportunity.",
+      "pretitle": "We're here to help you find the right opportunity.",
       "buttonLabel": "Contact HR Team",
       "email": "careers@company.com"
     },
     "shareSection": {
       "title": "Share this Job",
-      "subtitle": "Know someone who might be perfect for this role?",
+      "pretitle": "Know someone who might be perfect for this role?",
       "links": {
         "linkedin": "https://linkedin.com/share",
         "facebook": "https://facebook.com/share",
@@ -2056,7 +2077,7 @@
     "banner": {
       "breadcrumbCurrent": "Apply Now",
       "breadcrumbHome": "Career",
-      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "badge": {
       "label": "Join Our Team"
@@ -2145,7 +2166,7 @@
     "banner": {
       "breadcrumbCurrent": "Job Application",
       "breadcrumbHome": "Job Details",
-      "backgroundImage": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1535090467336-9501f96eef89?q=80&w=900&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     "formSections": {
       "personalInformation": {
@@ -2203,7 +2224,7 @@
       "uploadDocuments": {
         "step": 3,
         "title": "Upload Documents",
-        "subtitle": "Upload your latest resume and any other relevant documents.",
+        "pretitle": "Upload your latest resume and any other relevant documents.",
         "fields": {
           "resume": {
             "label": "Upload Your Resume",
@@ -2304,7 +2325,7 @@
   },
   "servicesPage": {
     "banner": {
-      "backgroundImage": "https://images.unsplash.com/photo-1618477460923-47da30de9ca4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+      "bgImageUrl": "https://images.unsplash.com/photo-1618477460923-47da30de9ca4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
       "breadcrumbCurrent": "Services",
       "breadcrumbHome": "Home"
     },
@@ -2411,7 +2432,7 @@
   },
   "serviceDetailPage": {
     "banner": {
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop",
       "breadcrumbCurrent": "Services Details",
       "breadcrumbHome": "Home"
     },
@@ -2527,7 +2548,7 @@
     "banner": {
       "breadcrumbCurrent": "Terms & Conditions",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "conditions": [
       {
@@ -2566,7 +2587,7 @@
     "banner": {
       "breadcrumbCurrent": "Privacy Policy",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "conditions": [
       {
@@ -2616,11 +2637,11 @@
       }
     ]
   },
-   "refund": {
+  "refund": {
     "banner": {
       "breadcrumbCurrent": "Refund Policy",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "conditions": [
       {
@@ -2654,7 +2675,7 @@
     "banner": {
       "breadcrumbCurrent": "Cookie Policy",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "conditions": [
       {
@@ -2693,7 +2714,7 @@
     "banner": {
       "breadcrumbCurrent": "Disclaimer",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "conditions": [
       {
@@ -2736,7 +2757,7 @@
     "banner": {
       "breadcrumbCurrent": "Donate Now",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
     },
     "whyDonate": {
       "title": {
@@ -2804,7 +2825,7 @@
             "amount": null,
             "currencySymbol": null,
             "label": "Other",
-            "subtitle": "Fill your amount",
+            "pretitle": "Fill your amount",
             "isOther": true
           }
         ]
@@ -2842,22 +2863,22 @@
           {
             "id": "upi",
             "title": "UPI",
-            "subtitle": "Pay using UPI"
+            "pretitle": "Pay using UPI"
           },
           {
             "id": "card",
             "title": "Card",
-            "subtitle": "Debit / Credit Card"
+            "pretitle": "Debit / Credit Card"
           },
           {
             "id": "net-banking",
             "title": "Net Banking",
-            "subtitle": "All major banks"
+            "pretitle": "All major banks"
           },
           {
             "id": "wallet",
             "title": "Wallet",
-            "subtitle": "PhonePe, Paytm etc."
+            "pretitle": "PhonePe, Paytm etc."
           }
         ]
       },
@@ -2905,14 +2926,14 @@
         "part1": "Industries",
         "part2": "We Serve"
       },
-      "subtitle": "We partner with organizations across diverse sectors to create meaningful impact and drive positive change in communities.",
+      "pretitle": "We partner with organizations across diverse sectors to create meaningful impact and drive positive change in communities.",
       "sectionTag": "MAKING IMPACT ACROSS SECTORS"
     },
 
     "banner": {
       "breadcrumbCurrent": "Industry We Serve",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
     },
 
     "sectors": [
@@ -3100,7 +3121,7 @@
     "banner": {
       "breadcrumbCurrent": "Awards & Recognitions",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1677640724372-adb865d29aa8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+      "bgImageUrl": "https://images.unsplash.com/photo-1677640724372-adb865d29aa8?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
 
     "header": {
@@ -3109,7 +3130,7 @@
         "part1": "Awards &",
         "part2": "Recognition"
       },
-      "subtitle": "These recognitions inspire us to keep working harder and create a greater impact in the communities we serve."
+      "pretitle": "These recognitions inspire us to keep working harder and create a greater impact in the communities we serve."
     },
 
     "stats": [
@@ -3246,7 +3267,7 @@
 
     "transparencyBanner": {
       "title": "We are committed to transparency and accountability.",
-      "subtitle": "Thank you for being a part of our journey and inspiring us every day.",
+      "pretitle": "Thank you for being a part of our journey and inspiring us every day.",
       "iconName": "shield-check",
       "cta": {
         "text": "Learn More About Us",
@@ -3264,7 +3285,7 @@
       "banner": {
         "breadcrumbCurrent": "Support Us",
         "breadcrumbHome": "Home",
-        "backgroundImage": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
+        "bgImageUrl": "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?auto=format&fit=crop&w=1600&q=85"
       }
     },
 
@@ -3413,7 +3434,7 @@
     "transparencyBar": {
       "iconName": "shield-check-outline",
       "title": "We are committed to transparency and accountability.",
-      "subtitle": "Your trust inspires us to do more and better every day.",
+      "pretitle": "Your trust inspires us to do more and better every day.",
       "action": {
         "label": "Learn More About Us",
         "url": "/about/transparency"
@@ -3424,7 +3445,7 @@
     "banner": {
       "breadcrumbCurrent": "CSR",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1600&auto=format&fit=crop"
     },
 
     "header": {
@@ -3433,7 +3454,7 @@
         "part1": "We Care.",
         "part2": "We Act. We Make a Difference."
       },
-      "subtitle": "Our Corporate Social Responsibility (CSR) initiatives reflect our commitment to building a better and more sustainable tomorrow for all."
+      "pretitle": "Our Corporate Social Responsibility (CSR) initiatives reflect our commitment to building a better and more sustainable tomorrow for all."
     },
 
     "stats": [
@@ -3629,8 +3650,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Enquiry Now",
-      "backgroundImage": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
-      "title": "Enquiry Now"
+      "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
     },
 
     "header": {
@@ -3774,7 +3794,7 @@
 
     "contactSection": {
       "title": "Prefer to talk?",
-      "subtitle": "We're Just a Call Away!",
+      "pretitle": "We're Just a Call Away!",
       "description": "You can also reach us directly through phone or email.",
 
       "items": [
@@ -3811,8 +3831,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Franchise",
-      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
-      "title": "Franchise"
+      "bgImageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
     },
 
     "header": {
@@ -3865,7 +3884,7 @@
 
     "form": {
       "title": "Enquire Now",
-      "subtitle": "Take the first step towards owning a franchise.",
+      "pretitle": "Take the first step towards owning a franchise.",
 
       "fields": [
         {
@@ -4051,7 +4070,7 @@
 
     "contactBanner": {
       "title": "Have Questions?",
-      "subtitle": "We're Here to Help!",
+      "pretitle": "We're Here to Help!",
       "description": "Talk to our franchise expert today and explore the opportunity that's right for you.",
       "phone": "+91 98765 43210",
       "email": "franchise@ngo.org",
@@ -4067,8 +4086,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Branches",
-      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
-      "title": "Branches"
+      "bgImageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
     },
 
     "header": {
@@ -4190,12 +4208,11 @@
       ]
     }
   },
-   "brochurePage": {
+  "brochurePage": {
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Brochure",
-      "backgroundImage": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop",
-      "title": "Brochure"
+      "bgImageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
     },
     "header": {
       "icon": "book-open",
@@ -4233,7 +4250,7 @@
       {
         "id": "overview",
         "title": "BUILDING A BETTER TOMORROW",
-        "subtitle": "Together, we can create a better world.",
+        "pretitle": "Together, we can create a better world.",
         "name": "Overview Brochure",
         "description": "Learn about our mission, vision and the journey of our organization.",
         "image": "/bronchure/tomorrow.png",
@@ -4243,7 +4260,7 @@
       {
         "id": "programs",
         "title": "OUR PROGRAMS",
-        "subtitle": "Empowering communities through sustainable initiatives.",
+        "pretitle": "Empowering communities through sustainable initiatives.",
         "name": "Programs Brochure",
         "description": "Explore the programs and initiatives we run for community development.",
         "image": "/bronchure/programs.png",
@@ -4253,7 +4270,7 @@
       {
         "id": "impact",
         "title": "MAKING AN IMPACT",
-        "subtitle": "Real stories. Real change. Stronger communities.",
+        "pretitle": "Real stories. Real change. Stronger communities.",
         "name": "Impact Report",
         "description": "Discover the impact we create and the lives we touch through our work.",
         "image": "/bronchure/impact.png",
@@ -4263,7 +4280,7 @@
       {
         "id": "partnership",
         "title": "PARTNER WITH US",
-        "subtitle": "Together, we can build a stronger, better tomorrow.",
+        "pretitle": "Together, we can build a stronger, better tomorrow.",
         "name": "Partnership Brochure",
         "description": "Know how you can partner with us to bring meaningful change.",
         "image": "/bronchure/partners.png",
@@ -4273,7 +4290,7 @@
       {
         "id": "volunteer",
         "title": "VOLUNTEER WITH US",
-        "subtitle": "Your time can create a lifetime of change.",
+        "pretitle": "Your time can create a lifetime of change.",
         "name": "Volunteer Brochure",
         "description": "Find out how you can contribute your time and skills as a volunteer.",
         "image": "/bronchure/voluteer.png",
@@ -4283,7 +4300,7 @@
       {
         "id": "csr",
         "title": "CSR INITIATIVES",
-        "subtitle": "Working together for a sustainable and better future.",
+        "pretitle": "Working together for a sustainable and better future.",
         "name": "CSR Brochure",
         "description": "Explore our corporate social responsibility initiatives and collaborations.",
         "image": "/bronchure/csr.png",
@@ -4293,7 +4310,7 @@
       {
         "id": "annual",
         "title": "ANNUAL REPORT 2023-24",
-        "subtitle": "A year of progress. A future of hope.",
+        "pretitle": "A year of progress. A future of hope.",
         "name": "Annual Report",
         "description": "A comprehensive report of our activities, achievements and financials.",
         "image": "/bronchure/report.png",
@@ -4303,7 +4320,7 @@
       {
         "id": "donation",
         "title": "HOW YOUR DONATION HELPS",
-        "subtitle": "Small acts of kindness create big change.",
+        "pretitle": "Small acts of kindness create big change.",
         "name": "Donation Impact Brochure",
         "description": "See how your donations help us support and uplift those in need.",
         "image": "/bronchure/donation.png",
@@ -4351,11 +4368,11 @@
     "banner": {
       "breadcrumbCurrent": "Sitemap",
       "breadcrumbHome": "Home",
-      "backgroundImage": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=1600&auto=format&fit=crop"
     },
     "header": {
       "title": "SITEMAP",
-      "subtitle": "Navigate through our website with ease. Find everything you need in just a click."
+      "pretitle": "Navigate through our website with ease. Find everything you need in just a click."
     },
     "homeNode": {
       "label": "HOME",
@@ -4369,11 +4386,23 @@
         "icon": "Building2",
         "items": [
           { "label": "About Us", "href": "/about-us", "icon": "Building2" },
-          { "label": "Mission", "href": "/about-us#mission", "icon": "HeartHandshake" },
+          {
+            "label": "Mission",
+            "href": "/about-us#mission",
+            "icon": "HeartHandshake"
+          },
           { "label": "Vision", "href": "/about-us#vision", "icon": "Eye" },
-          { "label": "Why Choose Us", "href": "/about-us#why-choose-us", "icon": "ShieldCheck" },
+          {
+            "label": "Why Choose Us",
+            "href": "/about-us#why-choose-us",
+            "icon": "ShieldCheck"
+          },
           { "label": "Our Team", "href": "/team", "icon": "Users" },
-          { "label": "Awards & Certifications", "href": "/awards", "icon": "Award" },
+          {
+            "label": "Awards & Certifications",
+            "href": "/awards",
+            "icon": "Award"
+          },
           { "label": "Partners", "href": "/partners", "icon": "Heart" },
           { "label": "Media", "href": "/gallery", "icon": "Newspaper" }
         ]
@@ -4384,8 +4413,16 @@
         "icon": "Settings",
         "items": [
           { "label": "Services", "href": "/service", "icon": "Settings" },
-          { "label": "Industries We Serve", "href": "/industry", "icon": "Factory" },
-          { "label": "Portfolio / Projects", "href": "/project", "icon": "FolderKanban" },
+          {
+            "label": "Industries We Serve",
+            "href": "/industry",
+            "icon": "Factory"
+          },
+          {
+            "label": "Portfolio / Projects",
+            "href": "/project",
+            "icon": "FolderKanban"
+          },
           { "label": "Case Study", "href": "/case-study", "icon": "FileText" }
         ]
       },
@@ -4424,21 +4461,44 @@
         "id": "gallery",
         "title": "GALLERY",
         "icon": "Image",
-        "items": [
-          { "label": "Gallery", "href": "/gallery", "icon": "Image" }
-        ]
+        "items": [{ "label": "Gallery", "href": "/gallery", "icon": "Image" }]
       }
     ],
     "legalNode": {
       "title": "LEGAL & POLICIES",
       "icon": "ShieldCheck",
       "items": [
-        { "label": "Privacy Policy", "href": "/privacy-policy", "icon": "Shield" },
-        { "label": "Terms & Conditions", "href": "/terms-conditions", "icon": "ClipboardList" },
-        { "label": "Refund Policy", "href": "/refund-policy", "icon": "RotateCcw" },
-        { "label": "Cookie Policy", "href": "/cookie-policy", "icon": "Cookie" },
-        { "label": "Disclaimer", "href": "/disclaimer", "icon": "AlertTriangle" },
-        { "label": "SITEMAP", "href": "/sitemap", "icon": "Network", "isCurrent": true }
+        {
+          "label": "Privacy Policy",
+          "href": "/privacy-policy",
+          "icon": "Shield"
+        },
+        {
+          "label": "Terms & Conditions",
+          "href": "/terms-conditions",
+          "icon": "ClipboardList"
+        },
+        {
+          "label": "Refund Policy",
+          "href": "/refund-policy",
+          "icon": "RotateCcw"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookie-policy",
+          "icon": "Cookie"
+        },
+        {
+          "label": "Disclaimer",
+          "href": "/disclaimer",
+          "icon": "AlertTriangle"
+        },
+        {
+          "label": "SITEMAP",
+          "href": "/sitemap",
+          "icon": "Network",
+          "isCurrent": true
+        }
       ]
     }
   }

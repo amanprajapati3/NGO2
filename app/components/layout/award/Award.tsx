@@ -1,4 +1,5 @@
 import React from "react";
+import PageBanner from "../../shared/PageBanner";
 import type { AwardsDataProps } from "@/type/typeSection";
 
 // ================= ACCURATE C-CURVED LAUREL LEAF BRANCH SVG =================
@@ -197,31 +198,7 @@ export default function Award({ data }: AwardsDataProps) {
   return (
     <div className="w-full bg-[#FAF9F6] text-[#0F172A] font-sans antialiased">
       {/* ================= 1. TOP HERO BREADCRUMB BANNER ================= */}
-      <section className="relative h-48 sm:h-[300px] w-full bg-slate-900 overflow-hidden flex items-center justify-center">
-        <img
-          src={banner.backgroundImage}
-          alt="Awards Background"
-          className="absolute inset-0 w-full h-full object-cover opacity-25"
-        />
-
-        <div className="relative z-10 text-center px-4">
-          <h1 className="text-3xl sm:text-5xl font-serif font-bold text-white tracking-wide">
-            {banner.breadcrumbCurrent}
-          </h1>
-
-          <div className="mt-3 flex items-center justify-center gap-2 text-xs sm:text-sm font-medium text-slate-300">
-            <a href="/" className="hover:text-orange-400 transition-colors">
-              {banner.breadcrumbHome}
-            </a>
-
-            <span className="text-orange-500">/</span>
-
-            <span className="text-orange-500 font-semibold">
-              {banner.breadcrumbCurrent}
-            </span>
-          </div>
-        </div>
-      </section>
+      <PageBanner banner={banner} />
 
       {/* ================= 2. MAIN AWARDS SECTION ================= */}
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/40 via-white to-orange-50/20 py-12">
@@ -272,9 +249,9 @@ export default function Award({ data }: AwardsDataProps) {
               <span className="h-[1.5px] w-8 bg-orange-300" />
             </div>
 
-            {/* Subtitle */}
+            {/* pretitle */}
             <p className="mt-4 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-lg mx-auto">
-              {header.subtitle}
+              {header.pretitle}
             </p>
           </div>
 
@@ -445,7 +422,7 @@ export default function Award({ data }: AwardsDataProps) {
                 </h4>
 
                 <p className="text-xs text-orange-100 mt-0.5">
-                  {transparencyBanner.subtitle}
+                  {transparencyBanner.pretitle}
                 </p>
               </div>
             </div>

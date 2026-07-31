@@ -16,6 +16,7 @@ import {
   ArrowRight,
 } from "lucide-react";
 
+import PageBanner from "../../shared/PageBanner";
 import type { BranchesPageProps } from "@/type/typeSection";
 
 interface Props {
@@ -51,35 +52,7 @@ export default function Branches({ data }: Props) {
   return (
     <main className="min-h-screen bg-white text-gray-800">
       {/* ===================== BANNER ===================== */}
-      <section className="relative flex h-[280px] items-center justify-center overflow-hidden md:h-[320px]">
-        <Image
-          src={banner.backgroundImage}
-          alt={banner.title}
-          fill
-          priority
-          className="object-cover object-center"
-        />
-
-        <div className="absolute inset-0 bg-black/55" />
-
-        <div className="relative z-10 px-4 text-center text-white">
-          <h1 className="mb-3 text-4xl font-bold tracking-tight md:text-5xl">
-            {banner.title}
-          </h1>
-
-          <nav className="flex items-center justify-center gap-2 text-sm text-white/90">
-            <Link href="/" className="transition hover:text-white">
-              {banner.breadcrumbHome}
-            </Link>
-
-            <span className="text-orange-400">/</span>
-
-            <span className="font-medium text-orange-400">
-              {banner.breadcrumbCurrent}
-            </span>
-          </nav>
-        </div>
-      </section>
+      <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 pt-10 text-center">
@@ -187,311 +160,14 @@ export default function Branches({ data }: Props) {
 
           {/* ===================== MAP SIDE ===================== */}
           {/* Map Side */}
-          <div className="rounded-2xl bg-orange-50 p-6 lg:col-span-2">
+          <div className=" p-0 lg:col-span-2">
             <div className="">
               {/* INDIA MAP */}
               <div className="relative flex min-h-[280px] items-center justify-center">
-                <svg
-                  viewBox="0 0 500 560"
-                  className="h-auto w-full max-w-[320px]"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <defs>
-                    {/* Dot pattern */}
-                    <pattern
-                      id="indiaDots"
-                      width="12"
-                      height="12"
-                      patternUnits="userSpaceOnUse"
-                    >
-                      <circle
-                        cx="3"
-                        cy="3"
-                        r="1.8"
-                        fill="#f97316"
-                        opacity="0.45"
-                      />
-                    </pattern>
-
-                    {/* India shape */}
-                    <clipPath id="indiaClip">
-                      <path
-                        d="
-                M210 20
-                L195 34
-                L180 38
-                L171 51
-                L157 57
-                L153 72
-                L139 81
-                L142 96
-                L128 108
-                L130 121
-                L116 130
-                L105 145
-                L92 153
-                L82 169
-                L68 178
-                L62 193
-                L70 207
-                L82 212
-                L75 224
-                L63 231
-                L67 243
-                L79 249
-                L84 263
-                L94 276
-                L99 293
-                L108 309
-                L113 326
-                L121 344
-                L126 362
-                L132 383
-                L141 402
-                L146 423
-                L154 447
-                L166 470
-                L174 493
-                L185 514
-                L199 528
-                L211 532
-                L222 522
-                L227 505
-                L234 489
-                L238 469
-                L244 449
-                L250 429
-                L257 410
-                L266 393
-                L277 377
-                L290 363
-                L303 350
-                L315 337
-                L327 325
-                L339 310
-                L350 296
-                L362 284
-                L374 272
-                L385 257
-                L398 244
-                L410 230
-                L422 215
-                L435 202
-                L447 189
-                L452 176
-                L443 166
-                L433 162
-                L426 151
-                L430 139
-                L421 132
-                L410 135
-                L399 129
-                L389 118
-                L379 109
-                L367 102
-                L355 94
-                L342 88
-                L330 83
-                L316 78
-                L303 72
-                L291 66
-                L280 59
-                L267 53
-                L256 46
-                L246 38
-                L235 30
-                Z
-              "
-                      />
-                    </clipPath>
-                  </defs>
-
-                  {/* Dotted India */}
-                  <g clipPath="url(#indiaClip)">
-                    <rect
-                      x="40"
-                      y="10"
-                      width="430"
-                      height="530"
-                      fill="url(#indiaDots)"
-                    />
-
-                    {/* subtle orange background */}
-                    <rect
-                      x="40"
-                      y="10"
-                      width="430"
-                      height="530"
-                      fill="#f97316"
-                      opacity="0.035"
-                    />
-                  </g>
-
-                  {/* India outline */}
-                  <path
-                    d="
-            M210 20
-            L195 34
-            L180 38
-            L171 51
-            L157 57
-            L153 72
-            L139 81
-            L142 96
-            L128 108
-            L130 121
-            L116 130
-            L105 145
-            L92 153
-            L82 169
-            L68 178
-            L62 193
-            L70 207
-            L82 212
-            L75 224
-            L63 231
-            L67 243
-            L79 249
-            L84 263
-            L94 276
-            L99 293
-            L108 309
-            L113 326
-            L121 344
-            L126 362
-            L132 383
-            L141 402
-            L146 423
-            L154 447
-            L166 470
-            L174 493
-            L185 514
-            L199 528
-            L211 532
-            L222 522
-            L227 505
-            L234 489
-            L238 469
-            L244 449
-            L250 429
-            L257 410
-            L266 393
-            L277 377
-            L290 363
-            L303 350
-            L315 337
-            L327 325
-            L339 310
-            L350 296
-            L362 284
-            L374 272
-            L385 257
-            L398 244
-            L410 230
-            L422 215
-            L435 202
-            L447 189
-            L452 176
-            L443 166
-            L433 162
-            L426 151
-            L430 139
-            L421 132
-            L410 135
-            L399 129
-            L389 118
-            L379 109
-            L367 102
-            L355 94
-            L342 88
-            L330 83
-            L316 78
-            L303 72
-            L291 66
-            L280 59
-            L267 53
-            L256 46
-            L246 38
-            L235 30
-            Z
-          "
-                    fill="none"
-                    stroke="#f97316"
-                    strokeWidth="3"
-                    strokeLinejoin="round"
-                  />
-
-                  {/* Location pins */}
-
-                  {/* Delhi */}
-                  <g transform="translate(235 195)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-
-                  {/* Mumbai */}
-                  <g transform="translate(155 340)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-
-                  {/* Bengaluru */}
-                  <g transform="translate(218 407)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-
-                  {/* Kolkata */}
-                  <g transform="translate(360 265)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-
-                  {/* Hyderabad */}
-                  <g transform="translate(255 350)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-
-                  {/* Chennai */}
-                  <g transform="translate(265 440)">
-                    <circle
-                      r="13"
-                      fill="white"
-                      stroke="#f97316"
-                      strokeWidth="2"
-                    />
-                    <circle r="5" fill="#f97316" />
-                  </g>
-                </svg>
+                <img src="/Indianmap.png" alt="" />
               </div>
 
-              <div className="text-center md:text-left">
+              {/* <div className="text-center md:text-left">
                 <div className="mb-3 flex items-center justify-center gap-3 md:justify-start">
                   <span className="h-px w-10 bg-orange-400" />
 
@@ -515,7 +191,7 @@ export default function Branches({ data }: Props) {
                     6 Active Branch Locations
                   </span>
                 </div>
-              </div>
+              </div> */}
             </div>
           </div>
         </div>
