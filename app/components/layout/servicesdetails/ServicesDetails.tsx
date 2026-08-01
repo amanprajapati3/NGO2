@@ -19,6 +19,7 @@ import { FaChalkboardTeacher } from "react-icons/fa";
 import { RiGraduationCapFill } from "react-icons/ri";
 
 import type { ServiceDetailPageData } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 const iconMap: Record<string, React.ReactNode> = {
   FiGraduationCap: <RiGraduationCapFill className="h-5 w-5 sm:h-6 sm:w-6" />,
@@ -176,7 +177,7 @@ export default function ServiceDetailPage({
         <section className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-6">
             <div className="flex items-center gap-2">
-              <span className="h-[2px] w-6 bg-orange-400" />
+              {/* <span className="h-[2px] w-6 bg-orange-400" /> */}
               <span className="text-xs font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
                 {aboutSection.tag}
               </span>
@@ -223,11 +224,13 @@ export default function ServiceDetailPage({
         <section className="mt-12">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
-              <span className="h-[1px] w-6 bg-orange-500" />
+              {/* <span className="h-[1px] w-6 bg-orange-500" /> */}
+              <HiOutlineHeart className="text-base text-[#FF4500]" />
+              
               <span>{whatWeDoSection.tag}</span>
-              <span className="h-[1px] w-6 bg-orange-500" />
+              {/* <span className="h-[1px] w-6 bg-orange-500" /> */}
             </div>
-            <h2 className="mt-2 text-2xl font-serif font-bold text-[#111111] sm:text-3xl lg:text-4xl">
+            <h2 className="mt-0 text-2xl font-serif font-bold text-[#111111] sm:text-3xl lg:text-4xl">
               {whatWeDoSection.title}
             </h2>
           </div>
@@ -267,9 +270,9 @@ export default function ServiceDetailPage({
             <div className="relative flex items-center justify-center px-4 text-center">
               <div>
                 <div className="flex items-center  text-orange-400 justify-center gap-2 text-xs font-bold uppercase tracking-wider text-black sm:text-sm">
-                  <span className="h-[1px] w-6 bg-orange-400 " />
+                  <HiOutlineHeart className="text-base text-[#FF4500]" />
                   <span>{impactSection.tag}</span>
-                  <span className="h-[1px] w-6 bg-orange-400 " />
+                  {/* <span className="h-[1px] w-6 bg-orange-400 " /> */}
                 </div>
                 <h2 className="mt-2 text-2xl font-serif font-bold text-black sm:text-3xl lg:text-4xl">
                   {impactSection.title}

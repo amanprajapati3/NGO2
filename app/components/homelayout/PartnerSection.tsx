@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { PartnersSectionProps, PartnerItem } from "@/type/typeSection";
 import { FiHeart } from "react-icons/fi";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 export default function PartnersSection({ data }: PartnersSectionProps) {
   const { badge, title, description, partnersList } = data;
@@ -19,9 +20,13 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
         {/* Header */}
         <div className="text-center">
           {/* Badge */}
-          <span className="inline-flex rounded-full bg-orange-50 px-4 pt-2 text-xs font-bold uppercase tracking-[0.25em] text-orange-600">
+          <div className="flex justify-center gap-1">
+             <HiOutlineHeart className="text-base text-[#FF4500]" />
+          <span className="inline-flex rounded-full bg-orange-50  text-xs font-bold uppercase tracking-[0.25em] text-orange-600">
             {badge.label}
           </span>
+          </div>
+
 
           {/* Heading */}
           <h2 className="mt-0 text-3xl font-extrabold text-slate-900 md:text-5xl">
@@ -30,13 +35,13 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           </h2>
 
           {/* Decorative Line */}
-          <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
 
             <FiHeart className="text-[10px] text-[#FF4500]" />
 
             <span className="h-[1px] w-10 bg-orange-300" />
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mx-auto mt-2 max-w-3xl text-sm text-slate-900 md:text-base">

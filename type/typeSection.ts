@@ -536,6 +536,7 @@ export interface TeamSocial {
 
 export interface TeamMember {
   name: string;
+  textLink:string;
   designation: string;
   description: string;
   image: string;
@@ -593,6 +594,7 @@ export interface SupportBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
   bgImageUrl: string;
+  title:string;
 }
 
 export interface SupportButton {
@@ -836,6 +838,7 @@ export interface NewsTitle {
 
 export interface NewsButton {
   label: string;
+  href:string;
 }
 
 export interface NewsArticle {
@@ -1830,7 +1833,7 @@ export interface SupportBannerTitle {
   line2: string;
 }
 
-export interface SupportBanner {
+export interface Supportbanner {
   topBadge: string;
   title: SupportBannerTitle;
   description: string;
@@ -1851,7 +1854,7 @@ export interface AwardsPageData {
   header: AwardsHeader;
   stats: AwardStat[];
   awardsSection: AwardsSection;
-  supportBanner: SupportBanner;
+  supportBanner: Supportbanner;
   transparencyBanner: TransparencyBanner;
 }
 
@@ -2378,4 +2381,204 @@ export interface BrochurePageProps {
       label: string;
     }[];
   };
+}
+export interface TeamDetailStat {
+  value: string;
+  label: string;
+}
+
+export interface TeamDetailContactInfo {
+  email: string;
+  phone: string;
+  location: string;
+  qualification: string;
+  languages: string[];
+}
+
+export interface TeamDetailsBanner{
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  bgImageUrl: string;
+  title:string;
+}
+
+export interface TeamDetailSocialLinks {
+  facebook: string;
+  linkedin: string;
+  twitter: string;
+}
+
+export interface TeamDetailSkill {
+  skill: string;
+  percentage: number;
+}
+
+export interface TeamDetailExperience {
+  period: string;
+  role: string;
+  organization: string;
+  description: string;
+}
+
+export interface TeamDetailAchievement {
+  title: string;
+  description: string;
+}
+
+export interface TeamDetailsData {
+  id: string;
+  name: string;
+  role: string;
+  bio: string;
+  image: string;
+  banner:TeamDetailsBanner;
+  stats: TeamDetailStat[];
+  contactInfo: TeamDetailContactInfo;
+  socialLinks: TeamDetailSocialLinks;
+  about: string[];
+  skills: TeamDetailSkill[];
+  experience: TeamDetailExperience[];
+  achievements: TeamDetailAchievement[];
+}
+
+export interface TeamDetailsProps {
+  data: TeamDetailsData;
+}
+
+// Interfaces for the Sidebar Widgets
+export interface CasedetailsPost {
+  id: string;
+  title: string;
+  date: string;
+  category?: string;
+  image: {
+    src: string;
+    alt: string;
+  };
+  slug: string;
+}
+
+export interface SidebarCaseDetailsData {
+  searchPlaceholder: string;
+  popularPostsTitle: string;
+  popularPosts: CasedetailsPost[];
+}
+
+// Interfaces for Main Content
+export interface PrimaryArticle {
+  title: string;
+  mainImage: {
+    src: string;
+    alt: string;
+  };
+  paragraphs: string[];
+}
+
+export interface CaseDetailsBanner{
+  breadcrumbHome: string;
+  breadcrumbCurrent:string;
+  bgImageUrl:string
+}
+
+export interface SecondaryArticle {
+  postedOn: string;
+  title: string;
+  paragraphs: string[];
+}
+
+export interface CaseDetailPageMainContent {
+  primaryArticle: PrimaryArticle;
+  secondaryArticle: SecondaryArticle;
+  pageTitle: string;
+  mainContent: CaseDetailPageMainContent;
+  sidebar: SidebarCaseDetailsData;
+  banner: CaseDetailsBanner
+}
+
+// Complete Page Data Interface
+export interface CaseDetailPageProps {
+   data: CaseDetailPageMainContent
+}
+
+export interface BlogDetailImage {
+  src: string;
+  alt: string;
+}
+
+export interface BlogDetailsBanner{
+  breadcrumbHome:string;
+  breadcrumbCurrent:string;
+  bgImageUrl:string;
+}
+
+export interface BlogDetailMeta {
+  publishedDate: string;
+  author: string;
+  readTime: string;
+}
+
+export interface BlogDetailQuote {
+  quoteText: string;
+}
+
+export interface BlogDetailKeyElement {
+  id: string;
+  label: string;
+}
+
+export interface BlogDetailKeyElements {
+  title: string;
+  items: BlogDetailKeyElement[];
+}
+
+export interface BlogDetailSubSection {
+  title: string;
+  paragraphs: string[];
+}
+
+export interface BlogDetailMainContent {
+  category: string;
+  mainImage: BlogDetailImage;
+  meta: BlogDetailMeta;
+  title: string;
+  introParagraphs: string[];
+  quote: BlogDetailQuote;
+  middleParagraphs: string[];
+  galleryImages: BlogDetailImage[];
+  keyElements: BlogDetailKeyElements;
+  subSections: BlogDetailSubSection[];
+}
+
+export interface BlogDetailPopularPost {
+  id: string;
+  title: string;
+  date: string;
+  image: BlogDetailImage;
+  slug: string;
+}
+
+export interface BlogDetailCtaWidget {
+  title: string;
+  description: string;
+  buttonLabel: string;
+  buttonHref: string;
+}
+
+export interface BlogDetailSidebar {
+  searchPlaceholder: string;
+  popularPostsTitle: string;
+  popularPosts: BlogDetailPopularPost[];
+  ctaWidget: BlogDetailCtaWidget;
+}
+
+export interface BlogDetailData {
+  pageTitle: string;
+  mainContent: BlogDetailMainContent;
+  sidebar: BlogDetailSidebar;
+  banner:BlogDetailsBanner;
+}
+
+export interface BlogDetailsPageProps {
+  data: BlogDetailData
+;
 }

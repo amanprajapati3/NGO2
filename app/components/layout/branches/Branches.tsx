@@ -18,6 +18,7 @@ import {
 
 import PageBanner from "../../shared/PageBanner";
 import type { BranchesPageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface Props {
   data: BranchesPageProps;
@@ -55,12 +56,18 @@ export default function Branches({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 pt-10 text-center">
-        <p className="mb-3 text-sm font-semibold tracking-[0.2em] text-orange-600">
+      <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 pt-10 md:pt-14 text-center ">
+        
+        <div className="flex justify-center gap-1">
+
+          <HiOutlineHeart className="text-base  text-[#FF4500]" />
+       
+        <p className="mb-0 -mt-0.5 text-sm font-semibold tracking-[0.2em] text-orange-600">
           {header.label}
         </p>
+         </div>
 
-        <div className="mb-1 flex items-center justify-center gap-3">
+        {/* <div className="mb-1 flex items-center justify-center gap-3">
           <div className="h-px w-10 bg-orange-400" />
 
           <div className="flex h-10 w-10 items-center justify-center rounded-full border border-orange-400 text-orange-600">
@@ -68,13 +75,13 @@ export default function Branches({ data }: Props) {
           </div>
 
           <div className="h-px w-10 bg-orange-400" />
-        </div>
+        </div> */}
 
         <h2 className="mb-2 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
           {header.heading}
         </h2>
 
-        <div className="mx-auto mb-2 h-1 w-16 rounded-full bg-orange-500" />
+        {/* <div className="mx-auto mb-2 h-1 w-16 rounded-full bg-orange-500" /> */}
 
         <p className="mx-auto max-w-2xl leading-relaxed text-gray-600">
           {header.description}

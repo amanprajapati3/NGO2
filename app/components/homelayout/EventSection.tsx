@@ -4,12 +4,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiHeart } from "react-icons/fi";
 import type { EventsSectionProps, EventCard } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 export default function EventSection({ data }: EventsSectionProps) {
   const { badge, title, description, events } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-14">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
@@ -84,25 +85,24 @@ export default function EventSection({ data }: EventsSectionProps) {
         <div className="flex flex-col items-center text-center">
           {/* pretitle Line */}
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
-            <span className="h-[1px] w-8 bg-orange-200" />
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge?.label || "Upcoming Events"}</span>
-            <span className="h-[1px] w-8 bg-orange-200" />
           </div>
 
           {/* Main Title */}
           <h2 className="mt-0 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
             {title?.line1 || "Be Ready"}{" "}
-            <span className="text-[#FF4500]">
+            <span className="text-[#0F172A]">
               {title?.highlight || "For Our Events"}
             </span>
           </h2>
 
           {/* Subheading Heart Divider */}
-          <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-12 bg-orange-300" />
             <FiHeart className="text-xs text-[#FF4500] fill-[#FF4500]" />
             <span className="h-[1px] w-12 bg-orange-300" />
-          </div>
+          </div> */}
 
           {/* Optional Description Paragraph */}
           {description && (

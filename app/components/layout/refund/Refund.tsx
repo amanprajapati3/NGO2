@@ -14,10 +14,10 @@ export default function RefundPolicy({ data }: refundPolicyprops) {
 
         {/* ================= Refund Policy Conditions ================= */}
         <section className="py-12 md:py-16">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto px-4 md:px-10">
             <div className="flex flex-col">
               {conditions.map((section, index) => (
-                <div key={section.id} className="group">
+                <div key={section.id} className="group ">
                   {/* Heading */}
                   <div className="relative pb-2">
                     <h2 className="font-serif text-2xl font-bold tracking-tight text-[#0F172A] sm:text-3xl">
@@ -25,7 +25,7 @@ export default function RefundPolicy({ data }: refundPolicyprops) {
                     </h2>
 
                     {/* Orange Accent */}
-                    <div className="mt-2 h-[3px] w-10 bg-[#FF4500]" />
+                    {/* <div className="mt-2 h-[3px] w-10 bg-[#FF4500]" /> */}
                   </div>
 
                   {/* Content */}

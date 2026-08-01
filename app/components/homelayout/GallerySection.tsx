@@ -10,6 +10,7 @@ import type {
   GalleryVideo,
   GalleryData,
 } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 export default function GallerySection({ data }: GallerySectionProps) {
   const { badge, title, description, categories, images, videos = [] } = data;
@@ -55,25 +56,26 @@ export default function GallerySection({ data }: GallerySectionProps) {
         <div className="flex flex-col items-center text-center">
           {/* Badge Label */}
           <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
-            <span className="h-[1px] w-8 bg-orange-200" />
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
+            
             <span>{badge?.label || "Our Gallery"}</span>
-            <span className="h-[1px] w-8 bg-orange-200" />
+            {/* <span className="h-[1px] w-8 bg-orange-200" /> */}
           </div>
 
           {/* Main Title */}
           <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
             {title?.line1 || "Moments of"}{" "}
-            <span className="text-[#FF4500]">
+            <span className="text-[#0F172A]">
               {title?.highlight || "Change & Hope"}
             </span>
           </h2>
 
           {/* Subheading Heart Line Divider */}
-          <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span className="h-[1px] w-10 bg-orange-300" />
-          </div>
+          </div> */}
 
           {/* Description Paragraph */}
           <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
@@ -163,24 +165,26 @@ export default function GallerySection({ data }: GallerySectionProps) {
             <div className="flex text-center mb-10 justify-center items-center">
               <div className="flex flex-col items-center text-center">
                 <div className="flex items-center  gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
-                  <span className="h-[1px] w-8 bg-orange-200 " />
+                  {/* <span className="h-[1px] w-8 bg-orange-200 " /> */}
+                   <HiOutlineHeart className="text-base text-[#FF4500]" />
+
                   <span className="">{badge?.label || "Our Gallery"}</span>
-                  <span className="h-[1px] w-8 bg-orange-200 " />
+                  {/* <span className="h-[1px] w-8 bg-orange-200 " /> */}
                 </div>
                 {/* Main Title */}
                 <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
                   {title?.line1 || "Moments of"}{" "}
-                  <span className="text-[#FF4500]">
+                  <span className="text-[#0F172A]">
                     {title?.highlight || "Change & Hope"}
                   </span>
                 </h2>
 
                 {/* Subheading Heart Line Divider */}
-                <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+                {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
                   <span className="h-[1px] w-10 bg-orange-300" />
                   <FiHeart className="text-[10px] text-[#FF4500]" />
                   <span className="h-[1px] w-10 bg-orange-300" />
-                </div>
+                </div> */}
 
                 {/* Description Paragraph */}
                 <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">

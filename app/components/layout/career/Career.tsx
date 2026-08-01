@@ -40,26 +40,26 @@ export default function Career({ data }: CareerPageProps) {
 
 
       {/* ================= CAREER INTRO & OPEN POSITIONS ================= */}
-      <section className="px-4 py-4 sm:px-6 md:py-10 lg:px-8">
+      <section className="px-4 py-4 sm:px-6 md:py-12 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {/* HEADER AREA */}
           <div className="mx-auto max-w-3xl text-center">
             {/* BRIEFCASE / BADGE ICON */}
             <div className="flex gap-2 justify-center">
-              <div className=" mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[#fff0eb] text-[#ff541b]">
+              {/* <div className=" mb-3 flex h-14 w-14 items-center justify-center rounded-full bg-[#fff0eb] text-[#ff541b]">
                 <FiBriefcase className="text-2xl" />
-              </div>
+              </div> */}
 
               <h2 className="flex flex-col items-center justify-center text-3xl font-extrabold text-[#0d152e] sm:text-4xl">
                 <span>{heading.title}</span>
 
-                <div className="flex  gap-2">
+                {/* <div className="flex  gap-2">
                     <div className="bg-orange-500 mt-3 h-1 w-[80px]"></div>
                   <span className="mt-1 text-xs text-[#ff541b]">
                     <FiHeart className="inline fill-[#ff541b]" size={20} />
                   </span>
                   <div className="bg-orange-500 mt-3 h-1 w-[80px]"></div>
-                </div>
+                </div> */}
               </h2>
             </div>
 

@@ -25,7 +25,7 @@
     ],
     "headerCta": {
       "label": "Donate",
-      "href": "/"
+      "href": "/donate"
     },
     "copyright": "\u00a9 2026 Helping Hearts. All rights reserved."
   },
@@ -229,18 +229,6 @@
         {
           "label": "CSR",
           "href": "/csr"
-        },
-        {
-          "label": "Refund Policy",
-          "href": "/refund-policy"
-        },
-        {
-          "label": "Cookie Policy",
-          "href": "/cookie-policy"
-        },
-        {
-          "label": "Disclaimer ",
-          "href": "/disclaimer"
         }
       ]
     },
@@ -294,6 +282,18 @@
     "bottomBar": {
       "copyright": "© Huruma is Proudly Owned by EvenTheme",
       "links": [
+        {
+          "label": "Refund Policy",
+          "href": "/refund-policy"
+        },
+        {
+          "label": "Cookie Policy",
+          "href": "/cookie-policy"
+        },
+        {
+          "label": "Disclaimer ",
+          "href": "/disclaimer"
+        },
         {
           "label": "Terms & Conditions",
           "href": "/terms-conditions"
@@ -448,7 +448,7 @@
       },
       {
         "label": "More About Us",
-        "href": "/about",
+        "href": "/about-us",
         "variant": "secondary",
         "icon": "users"
       }
@@ -798,7 +798,7 @@
         "description": "Supporting families through food distribution, clothing, emergency assistance, and essential daily resources.",
         "button": {
           "label": "Donate Now",
-          "href": "/",
+          "href": "/donate",
           "icon": "arrow"
         }
       },
@@ -813,7 +813,7 @@
         "description": "Delivering healthcare, shelter, nutrition, and emotional support to vulnerable children and families in need.",
         "button": {
           "label": "Donate Now",
-          "href": "/",
+          "href": "/donate",
           "icon": "arrow"
         }
       }
@@ -870,7 +870,7 @@
         "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop",
         "button": {
           "label": "Learn More",
-          "href": "/projects/education"
+          "href": "/"
         },
         "icon": "book",
         "color": "orange"
@@ -883,7 +883,7 @@
         "image": "https://images.unsplash.com/photo-1584515933487-779824d29309?q=80&w=1200&auto=format&fit=crop",
         "button": {
           "label": "Learn More",
-          "href": "/projects/healthcare"
+          "href": "/"
         },
         "icon": "heart",
         "color": "purple"
@@ -896,7 +896,7 @@
         "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?q=80&w=1200&auto=format&fit=crop",
         "button": {
           "label": "Learn More",
-          "href": "/projects/water"
+          "href": "/"
         },
         "icon": "drop",
         "color": "orange"
@@ -909,7 +909,7 @@
         "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?q=80&w=1200&auto=format&fit=crop",
         "button": {
           "label": "Learn More",
-          "href": "/projects/women"
+          "href": "/"
         },
         "icon": "women",
         "color": "purple"
@@ -966,6 +966,7 @@
       },
       {
         "name": "Anjali Verma",
+        "textLink": "/team-details",
         "designation": "Program Manager",
         "description": "Driving impactful programs in education, health and women's empowerment.",
         "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?q=80&w=1200&auto=format&fit=crop",
@@ -986,6 +987,7 @@
       },
       {
         "name": "Vikram Singh",
+        "textLink": "/team-details",
         "designation": "Operations Head",
         "description": "Ensures smooth operations and effective resource management across all initiatives.",
         "image": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?q=80&w=1200&auto=format&fit=crop",
@@ -1006,6 +1008,7 @@
       },
       {
         "name": "Neha Iyer",
+        "textLink": "/team-details",
         "designation": "Communications Lead",
         "description": "Creating meaningful stories and inspiring our supporters through impactful communication.",
         "image": "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=1200&auto=format&fit=crop",
@@ -1026,6 +1029,7 @@
       },
       {
         "name": "Aman Kapoor",
+        "textLink": "/team-details",
         "designation": "Volunteer Coordinator",
         "description": "Connecting passionate volunteers with meaningful opportunities across communities.",
         "image": "https://images.unsplash.com/photo-1504257432389-52343af06ae3?q=80&w=1200&auto=format&fit=crop",
@@ -1046,6 +1050,7 @@
       },
       {
         "name": "Priya Nair",
+        "textLink": "/team-details",
         "designation": "Healthcare Specialist",
         "description": "Leading rural health initiatives and awareness programs for underserved communities.",
         "image": "https://images.unsplash.com/photo-1544005313-94ddf0286df2?q=80&w=1200&auto=format&fit=crop",
@@ -1066,6 +1071,7 @@
       },
       {
         "name": "Arjun Mehta",
+        "textLink": "/team-details",
         "designation": "Fundraising Manager",
         "description": "Building partnerships and mobilizing resources to maximize social impact.",
         "image": "https://images.unsplash.com/photo-1504593811423-6dd665756598?q=80&w=1200&auto=format&fit=crop",
@@ -1086,6 +1092,7 @@
       },
       {
         "name": "Sneha Patel",
+        "textLink": "/team-details",
         "designation": "Community Outreach",
         "description": "Working closely with local communities to ensure sustainable development initiatives.",
         "image": "https://images.unsplash.com/photo-1488426862026-3ee34a7d66df?q=80&w=1200&auto=format&fit=crop",
@@ -1115,6 +1122,115 @@
         "href": "/"
       }
     }
+  },
+  "teamDetails": {
+    "id": "rohit-sharma",
+    "name": "Rohit Sharma",
+    "role": "FOUNDER & DIRECTOR",
+    "bio": "Visionary leader with 15+ years of experience in social development and community building.",
+    "image": "/NGO_images-feepik/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
+    "banner": {
+      "breadcrumbCurrent": "Team Details",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_images-feepik/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
+      "title": "Team Details"
+    },
+    "stats": [
+      {
+        "value": "15+",
+        "label": "Years Experience"
+      },
+      {
+        "value": "250+",
+        "label": "Projects Completed"
+      },
+      {
+        "value": "98%",
+        "label": "Success Rate"
+      }
+    ],
+    "contactInfo": {
+      "email": "rohit.sharma@ngo.org",
+      "phone": "+1 987-0986-0987",
+      "location": "New York, Canada",
+      "qualification": "Master in Social Work (MSW)",
+      "languages": ["English", "Hindi"]
+    },
+    "socialLinks": {
+      "facebook": "https://facebook.com",
+      "linkedin": "https://linkedin.com",
+      "twitter": "https://twitter.com"
+    },
+    "about": [
+      "Rohit Sharma is the Founder & Director of our organization. He is a passionate changemaker dedicated to building stronger, healthier, and more equitable communities.",
+      "With over 15 years of experience in the social sector, Rohit has led numerous initiatives in education, healthcare, women empowerment, and poverty alleviation. His strategic vision and compassionate leadership continue to inspire our team and the communities we serve."
+    ],
+    "skills": [
+      {
+        "skill": "Community Development",
+        "percentage": 95
+      },
+      {
+        "skill": "Strategic Planning",
+        "percentage": 90
+      },
+      {
+        "skill": "Team Leadership",
+        "percentage": 92
+      },
+      {
+        "skill": "Public Speaking",
+        "percentage": 88
+      },
+      {
+        "skill": "Project Management",
+        "percentage": 90
+      }
+    ],
+    "experience": [
+      {
+        "period": "2008 - 2010",
+        "role": "Program Coordinator",
+        "organization": "Help Foundation, Canada",
+        "description": "Managed community outreach programs and built strong partnerships with local organizations."
+      },
+      {
+        "period": "2011 - 2014",
+        "role": "Project Manager",
+        "organization": "Social Impact Group, Canada",
+        "description": "Led multiple social projects focused on education and healthcare for underprivileged communities."
+      },
+      {
+        "period": "2015 - 2018",
+        "role": "Senior Manager",
+        "organization": "Change Makers Org, Canada",
+        "description": "Oversaw large-scale initiatives and managed cross-functional teams to achieve organizational goals."
+      },
+      {
+        "period": "2019 - Present",
+        "role": "Founder & Director",
+        "organization": "Our Organization",
+        "description": "Leading the organization with a vision to create sustainable change and empower communities."
+      }
+    ],
+    "achievements": [
+      {
+        "title": "Award Winner",
+        "description": "Received the Community Leadership Award for outstanding contribution to social development."
+      },
+      {
+        "title": "500+ Communities",
+        "description": "Worked closely with 500+ communities to create sustainable and long-lasting impact."
+      },
+      {
+        "title": "Fundraising Expert",
+        "description": "Successfully raised over $5M+ to support health, education, and livelihood programs."
+      },
+      {
+        "title": "Global Partnerships",
+        "description": "Built strong partnerships with global organizations and donors to expand our reach."
+      }
+    ]
   },
   "supportSection": {
     "badge": {
@@ -1181,7 +1297,7 @@
       {
         "title": "Huruma Con Donation For Poor Child 2026",
         "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80",
-        "href": "/events/huruma-child-donation",
+        "href": "/event",
         "button": {
           "label": "Join Now",
           "variant": "primary"
@@ -1190,7 +1306,7 @@
       {
         "title": "Poor Funding For Helpless In Africa",
         "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=80",
-        "href": "/events/africa-funding",
+        "href": "/event",
         "button": {
           "label": "Join Now",
           "variant": "secondary"
@@ -1199,13 +1315,154 @@
       {
         "title": "Education Is Necessary To Poverty Family In Canada",
         "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
-        "href": "/events/canada-education",
+        "href": "/event",
         "button": {
           "label": "Join Now",
           "variant": "primary"
         }
       }
     ]
+  },
+  "blogDetails": {
+    "pageTitle": "Detail page",
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Blog Details",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop"
+    },
+    "mainContent": {
+      "category": "Nonprofit",
+      "mainImage": {
+        "src": "https://images.unsplash.com/photo-1497366754035-f200968a6e72?q=80&w=400&auto=format&fit=crop",
+        "alt": "Group of smiling young children together"
+      },
+      "meta": {
+        "publishedDate": "September 31, 2025",
+        "author": "John Anderson",
+        "readTime": "5 min read"
+      },
+      "title": "Delicate Contempt Received Two Yet Advanced",
+      "introParagraphs": [
+        "Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipiscing elit."
+      ],
+      "quote": {
+        "quoteText": "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout."
+      },
+      "middleParagraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+      ],
+      "galleryImages": [
+        {
+          "src": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=400&q=80",
+          "alt": "Volunteer holding supplies outdoors"
+        },
+        {
+          "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+          "alt": "Volunteer standing outdoors in green shirt"
+        },
+        {
+          "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+          "alt": "Group of volunteers holding donation box"
+        }
+      ],
+      "keyElements": {
+        "title": "Four Major Elements That We Offer:",
+        "items": [
+          {
+            "id": "1",
+            "label": "Scientific Skills For getting a better result"
+          },
+          {
+            "id": "2",
+            "label": "A Career Overview opportunity Available"
+          },
+          {
+            "id": "3",
+            "label": "Communication Skills to getting in touch"
+          },
+          {
+            "id": "4",
+            "label": "A good Work Environment For work"
+          }
+        ]
+      },
+      "subSections": [
+        {
+          "title": "Setting The Mood With Incense",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat."
+          ]
+        },
+        {
+          "title": "The Rise Of Smarketing And Why You Need It",
+          "paragraphs": [
+            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud."
+          ]
+        }
+      ]
+    },
+    "sidebar": {
+      "searchPlaceholder": "Search here...",
+      "popularPostsTitle": "Popular Posts",
+      "popularPosts": [
+        {
+          "id": "1",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "2",
+          "title": "Future Plan & Strategy For Construction",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/973266950/photo/golden-trophy-or-gold-cup-isolated-on-white-background.jpg?s=1024x1024&w=is&k=20&c=_uxSWD0mxPZlpzHC16m6xQ2cMk65ObucQ1T1TWeQPTk=",
+            "alt": "Future Plan & Strategy For Construction"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "3",
+          "title": "Melancholy Devonshire Alteration",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80",
+            "alt": "Melancholy Devonshire Alteration"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "4",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1200&auto=format&fit=crop",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "5",
+          "title": "Education Programs That Create Real Change",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+            "alt": "Education Programs That Create Real Change"
+          },
+          "slug": "#"
+        }
+      ],
+      "ctaWidget": {
+        "title": "Make A Difference Today",
+        "description": "Your support helps us create lasting change in the lives of those who need it most.",
+        "buttonLabel": "Donate Now",
+        "buttonHref": "/donate"
+      }
+    }
   },
   "gallery": {
     "badge": {
@@ -1493,7 +1750,8 @@
     },
     "pretitle": "Stay updated with inspiring stories, community achievements, and our latest charity initiatives.",
     "button": {
-      "label": "View All Blogs"
+      "label": "View More",
+      "href": "/blog"
     },
     "articles": [
       {
@@ -1503,7 +1761,7 @@
         "description": "Discover how education, healthcare, and community support can help families overcome poverty and build a brighter future together.",
         "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/poverty-not-only-means"
+        "href": "/blog-details"
       },
       {
         "category": "Food",
@@ -1512,7 +1770,7 @@
         "description": "Learn how our nutrition programs provide healthy meals to children while supporting their education and overall development.",
         "image": "https://images.unsplash.com/photo-1518717758536-85ae29035b6d?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/healthy-meals"
+        "href": "/blog-details"
       },
       {
         "category": "Health",
@@ -1521,7 +1779,7 @@
         "description": "Read how medical camps, vaccinations, and healthcare initiatives are changing thousands of lives across underserved communities.",
         "image": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/medical-support"
+        "href": "blog-details"
       },
       {
         "category": "Education",
@@ -1530,7 +1788,7 @@
         "description": "Providing school supplies, scholarships, and learning opportunities helps children dream bigger and achieve lasting success.",
         "image": "https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/education"
+        "href": "/blog-details"
       },
       {
         "category": "Women",
@@ -1539,7 +1797,7 @@
         "description": "Our vocational training programs enable women to gain financial independence and create sustainable livelihoods.",
         "image": "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/women-empowerment"
+        "href": "/blog-details"
       },
       {
         "category": "Community",
@@ -1548,7 +1806,7 @@
         "description": "Meet the volunteers whose dedication is making a meaningful impact through education, food drives, and relief programs.",
         "image": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?auto=format&fit=crop&w=900&q=80",
         "author": "Admin",
-        "href": "/blog/volunteers"
+        "href": "/blog-details"
       }
     ]
   },
@@ -2757,6 +3015,7 @@
     "banner": {
       "breadcrumbCurrent": "Donate Now",
       "breadcrumbHome": "Home",
+      "title": "Donate Now",
       "bgImageUrl": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?q=80&w=1200&auto=format&fit=crop"
     },
     "whyDonate": {
@@ -4498,6 +4757,84 @@
           "href": "/sitemap",
           "icon": "Network",
           "isCurrent": true
+        }
+      ]
+    }
+  },
+ "caseStudyDetails": {
+    "pageTitle": "Case Study Detail",
+    "banner": {
+      "breadcrumbCurrent": "Case Study Details",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?q=80&w=2022&auto=format&fit=crop"
+    },
+    "mainContent": {
+      "primaryArticle": {
+        "title": "Education For Poor Children",
+        "mainImage": {
+          "src": "https://images.unsplash.com/photo-1502082553048-f009c37129b9?auto=format&fit=crop&w=400&q=80",
+          "alt": "Group of volunteers holding a Charity sign"
+        },
+        "paragraphs": [
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum, accusantium cupiditate exercitationem quaerat dolorum architecto fugiat suscipit praesentium iusto? Fuga cupiditate laboriosam fugiat in, maiores a quidem labore autem accusantium! lore",
+          "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia cupiditate nihil ipsam atque! Autem dolores id ducimus, ipsum magnam at quidem praesentium possimus harum quas, facere explicabo impedit atque doloremque."
+        ]
+      },
+      "secondaryArticle": {
+        "postedOn": "September 31, 2025",
+        "title": "Raise Fund For Healthy Food",
+        "paragraphs": [
+          "Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.",
+          "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        ]
+      }
+    },
+    "sidebar": {
+      "searchPlaceholder": "Search...",
+      "popularPostsTitle": "Popular Posts",
+      "popularPosts": [
+        {
+          "id": "1",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "category": "Poor",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "2",
+          "title": "Future Plan & Strategy For Construction",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1060352206/photo/donate-food-to-hungry-people-concept-of-poverty-and-hunger.jpg?s=1024x1024&w=is&k=20&c=gGe745FB1BoPtvm1gX-4AGTexDDZOn7Xpk_HB3phOtM=",
+            "alt": "Future Plan & Strategy For Construction"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "3",
+          "title": "Melancholy Devonshire Alteration",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+            "alt": "Melancholy Devonshire Alteration"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "4",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "category": "Poor",
+          "image": {
+            "src": "https://media.istockphoto.com/id/973266950/photo/golden-trophy-or-gold-cup-isolated-on-white-background.jpg?s=1024x1024&w=is&k=20&c=_uxSWD0mxPZlpzHC16m6xQ2cMk65ObucQ1T1TWeQPTk=",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
         }
       ]
     }

@@ -19,6 +19,7 @@ import {
 import { FaHandHoldingHeart } from "react-icons/fa";
 
 import type { ServicesPageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 const iconMap: Record<string, React.ReactNode> = {
   FiBookOpen: <FiBookOpen className="h-5 w-5 sm:h-6 sm:w-6" />,
@@ -40,26 +41,26 @@ export default function ServicesPage({ data }: ServicesPageProps) {
       {/* banner */}
       <PageBanner banner={banner} />
 
-      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 bg-[#fdfcfc] py-8 text-[#1a1a1a] sm:py-12 lg:py-16">
+      <div className="mx-auto max-w-7xl px-3 sm:px-6 lg:px-8 bg-[#fdfcfc] py-8 text-[#1a1a1a] sm:py-12 ">
         {/* ================= HEADER SECTION ================= */}
         <div className="text-center">
           {/* Top Divider & Tag */}
           <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
-            <span className="h-[1px] w-6 bg-orange-400 sm:w-10" />
-
+            {/* <span className="h-[1px] w-6 bg-orange-400 sm:w-10" /> */}
+                        <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{header.subTag}</span>
 
-            <span className="h-[1px] w-6 bg-orange-400 sm:w-10" />
+            {/* <span className="h-[1px] w-6 bg-orange-400 sm:w-10" /> */}
           </div>
 
           {/* Title */}
-          <h1 className="mt-2 font-serif text-2xl font-extrabold tracking-tight text-[#111111] sm:text-4xl lg:text-5xl">
+          <h1 className="mt-0 font-serif text-2xl font-extrabold tracking-tight text-[#111111] sm:text-4xl lg:text-5xl">
             {header.titlePrefix}
 
-            <span className="relative inline-block text-orange-500">
+            <span className="relative inline-block text-[#111111]">
               {header.titleHighlight}
 
-              <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-orange-500" />
+              {/* <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-orange-500" /> */}
             </span>
           </h1>
 

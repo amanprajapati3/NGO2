@@ -14,9 +14,9 @@ import {
 } from "lucide-react";
 import { SlBookOpen } from "react-icons/sl";
 
-
 import PageBanner from "../../shared/PageBanner";
 import type { BrochurePageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface Props {
   data: BrochurePageProps;
@@ -34,19 +34,10 @@ const iconMap: Record<string, React.ElementType> = {
 };
 
 export default function Bronchure({ data }: Props) {
-  const {
-    banner,
-    header,
-    features,
-    sectionTitle,
-    brochures,
-    ctaSection,
-  } = data;
+  const { banner, header, features, sectionTitle, brochures, ctaSection } =
+    data;
 
-  const getIcon = (
-    name?: string,
-    className = "h-5 w-5"
-  ) => {
+  const getIcon = (name?: string, className = "h-5 w-5") => {
     if (!name) {
       return <SlBookOpen className={className} aria-hidden="true" />;
     }
@@ -58,37 +49,29 @@ export default function Bronchure({ data }: Props) {
 
   return (
     <main className="min-h-screen bg-white text-gray-800">
-
       {/* ===================== BANNER ===================== */}
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-10 pt-5 text-center">
-        <div className="mb-2 flex items-center justify-center gap-4">
-          <div className="h-px w-12 bg-orange-500" />
-
-          <div className="flex h-12 w-12 sm:w-20 sm:h-20 items-center justify-center rounded-full border-2 border-orange-500 text-orange-600">
-            {getIcon(header.icon, "h-6 w-6 sm:w-12 sm:h-12")}
-          </div>
-
-          <div className="h-px w-12 bg-orange-500" />
+      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-5 text-center">
+        <div className="flex items-center justify-center gap-2">
+          <HiOutlineHeart className="text-base text-[#FF4500]" />
+          <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">
+            {header.label}
+          </p>
         </div>
-
-        <p className="mb-1 text-sm font-semibold tracking-[0.2em] text-orange-600">
-          {header.label}
-        </p>
 
         <h2 className="mb-2 text-2xl font-bold text-gray-900 md:text-4xl">
           {header.heading}
         </h2>
 
-        <div className="mx-auto mb-2 flex items-center justify-center gap-3">
+        {/* <div className="mx-auto mb-2 flex items-center justify-center gap-3">
           <div className="h-px w-10 bg-gray-300" />
 
           {getIcon("heart", "h-4 w-4 fill-orange-500 text-orange-500")}
 
           <div className="h-px w-10 bg-gray-300" />
-        </div>
+        </div> */}
 
         <p className="mx-auto max-w-2xl sm:leading-relaxed text-gray-600">
           {header.description}
@@ -121,21 +104,21 @@ export default function Bronchure({ data }: Props) {
 
       {/* ===================== SECTION TITLE ===================== */}
       <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 text-center">
-        <div className="mb-3 flex items-center justify-center gap-3">
-          <div className="h-px w-10 bg-orange-500" />
+        <div className="mb-0 flex items-center justify-center gap-2">
+          <HiOutlineHeart className="text-base text-[#FF4500]" />
 
           <p className="text-sm font-semibold tracking-widest text-orange-600">
             {sectionTitle.label}
           </p>
 
-          <div className="h-px w-10 bg-orange-500" />
+          {/* <div className="h-px w-10 bg-orange-500" /> */}
         </div>
 
         <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
           {sectionTitle.heading}
         </h2>
 
-        <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-orange-500" />
+        {/* <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-orange-500" /> */}
       </section>
 
       {/* ===================== BROCHURE CARDS ===================== */}
@@ -211,11 +194,9 @@ export default function Bronchure({ data }: Props) {
       <section className="mx-auto max-w-6xl sm:px-4 pb-16">
         <div className="overflow-hidden sm:rounded-2xl bg-orange-50">
           <div className="grid grid-cols-1 items-center gap-8 sm:p-8 px-2 py-4 md:grid-cols-2 md:p-10 lg:gap-12">
-
             {/* Left Content */}
             <div className="flex items-start gap-5">
               <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2  border-orange-300 bg-white text-orange-600">
-                
                 <img src="/heartImage.png" alt="" />
                 {/* {getIcon("heart-hands", "h-8 w-8")} */}
               </div>
@@ -270,17 +251,13 @@ export default function Bronchure({ data }: Props) {
                     {stat.value}
                   </p>
 
-                  <p className="text-xs text-gray-600">
-                    {stat.label}
-                  </p>
+                  <p className="text-xs text-gray-600">{stat.label}</p>
                 </div>
               ))}
             </div>
-
           </div>
         </div>
       </section>
-
     </main>
   );
 }

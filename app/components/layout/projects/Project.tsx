@@ -12,7 +12,7 @@ export default function Project({ data }: ProjectPageLayoutProps) {
   const banner = data?.banner;
 
   return (
-    <div className="w-full overflow-hidden bg-gray-50/50">
+    <div className="w-full mb-10 overflow-hidden bg-gray-50/50">
       {/* ================= Banner ================= */}
       <PageBanner banner={banner} />
 

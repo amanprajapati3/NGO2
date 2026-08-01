@@ -1,6 +1,7 @@
 import React from "react";
 import PageBanner from "../../shared/PageBanner";
 import type { IndustryPageData } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 // ===============================
 // Sector Icon Renderer
@@ -229,21 +230,19 @@ export default function Industry({ data }: IndustryProps) {
         {/* ================= SECTION HEADER ================= */}
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-3">
-            <span className="h-px w-8 bg-orange-500" />
+           <HiOutlineHeart className="text-base text-[#FF4500]" />
 
             <span className="text-xs font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
               {header.topBadge}
             </span>
-
-            <span className="h-px w-8 bg-orange-500" />
           </div>
 
-          <h2 className="mt-3 font-serif text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
+          <h2 className="mt-0 font-serif text-3xl font-bold tracking-tight text-slate-900 sm:text-5xl">
             {header.title.part1}{" "}
-            <span className="relative inline-block text-orange-500">
+            <span className="relative inline-block text-slate-900">
               {header.title.part2}
 
-              <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-orange-500" />
+              {/* <span className="absolute -bottom-1 left-0 h-[3px] w-full bg-orange-500" /> */}
             </span>
           </h2>
 

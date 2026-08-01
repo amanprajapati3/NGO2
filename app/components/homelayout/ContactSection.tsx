@@ -51,21 +51,21 @@ export default function ContactSection({ data }: ContactSectionProps) {
         <div className="mb-6 flex flex-col items-center text-center sm:mb-8">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
+          <div className="inline-flex items-center gap-2 rounded-full  px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
             <HiOutlineHeart className="text-base sm:text-lg" />
             {badge.label}
           </div>
 
           {/* Title */}
-          <h2 className="md:mt-2 max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl ">
+          <h2 className=" max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl ">
             {title.line1}{" "}
-            <span className="text-orange-500">
+            <span className="text-slate-900">
               {title.highlight}
             </span>
           </h2>
 
           {/* Accent */}
-          <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" />
+          {/* <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" /> */}
 
           {/* Description */}
           <p className="mt-2 max-w-2xl md:text-md text-sm  text-slate-900 sm:text-base">

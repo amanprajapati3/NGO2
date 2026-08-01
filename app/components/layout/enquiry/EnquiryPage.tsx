@@ -22,6 +22,7 @@ import { FaRegHeart } from "react-icons/fa";
 
 import PageBanner from "../../shared/PageBanner";
 import type { EnquiryNowPageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface Props {
   data: EnquiryNowPageProps;
@@ -74,37 +75,39 @@ export default function EnquiryPage({ data }: Props) {
     <main className="min-h-screen bg-white text-gray-800">
       <PageBanner banner={banner} />
 
-      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-8 pt-3 text-center">
+      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-12 pt-3 text-center">
         {/* Icon + line */}
 
-        <div className="mb-0 flex items-center justify-center gap-3">
+        {/* <div className="mb-0 flex items-center justify-center gap-3">
           <div className="h-px w-12 bg-orange-500" />
           <div className="relative flex h-20 w-20 items-center font-light justify-center text-orange-600">
-            {/* Message / Envelope Icon */}
-            {getIcon(header.icon, "h-12 w-12")}
+           
+          
 
-            {/* Heart on top-center */}
             <span className="absolute left-1/2 top-3 -translate-x-1/2 rounded-full bg-white text-orange-500">
               <FaRegHeart className="h-5 w-5" />
             </span>
           </div>
 
           <div className="h-px w-12 bg-orange-500" />
-        </div>
+        </div> */}
 
-        <p className="mb-0 text-sm font-semibold tracking-widest text-orange-600">
-          {header.label}
-        </p>
+        <div className="flex justify-center gap-1">
+          <HiOutlineHeart className="text-base text-[#FF4500]" />
+          <p className="mb-0 text-sm font-semibold tracking-widest text-orange-600">
+            {header.label}
+          </p>
+        </div>
 
         <h2 className="mb-0 text-3xl font-bold text-gray-900 md:text-4xl">
           {header.heading}
         </h2>
 
-        <div className="mb-2 flex items-center justify-center gap-3">
+        {/* <div className="mb-2 flex items-center justify-center gap-3">
           <div className="h-px w-10 bg-orange-500 sm:w-16" />
           <Heart className="h-5 w-5 fill-orange-500 text-orange-500 sm:h-6 sm:w-6" />
           <div className="h-px w-10 bg-orange-500 sm:w-16" />
-        </div>
+        </div> */}
 
         {/* Description */}
         <p className="mx-auto max-w-2xl leading-relaxed text-gray-600">

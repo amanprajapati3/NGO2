@@ -5,6 +5,7 @@ import Image from "next/image";
 import { FiArrowRight, FiBookOpen, FiUser } from "react-icons/fi";
 
 import type { NewsSectionProps, NewsArticle } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 export default function NewsSection({ data }: NewsSectionProps) {
   const { badge, title, pretitle, button, articles } = data;
@@ -14,7 +15,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
   const visibleArticles = showAll ? articles : articles.slice(0, 3);
 
   return (
-    <section className="relative overflow-hidden bg-white px-0 py-8 ">
+    <section className="relative overflow-hidden bg-white px-0 py-14 ">
       {/* Background Glows */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full  blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full  blur-[120px] pointer-events-none" />
@@ -31,14 +32,14 @@ export default function NewsSection({ data }: NewsSectionProps) {
         <div className="flex flex-col items-center text-center">
           {/* Badge Label with Book Icon */}
           <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
-            <FiBookOpen className="text-sm" />
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge?.label || "Our Blog"}</span>
           </div>
 
           {/* Main Serif Title */}
-          <h2 className="mt-0 font-serif text-3xl font-extrabold tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+          <h2 className="mt-0 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A]sm:text-4xl lg:text-5xl">
             {title?.line1 || "Check Out Our"}{" "}
-            <span className="text-[#1E1B4B]">
+            <span className="text-[#0F172A]">
               {title?.highlight || "Latest News"}
             </span>
           </h2>
@@ -88,7 +89,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
 
                   {/* Article Title */}
                   <h3 className="mt-3 font-serif text-lg font-bold leading-snug text-[#1E1B4B] transition-colors duration-200 group-hover:text-[#FF4500] sm:text-xl">
-                    {article.title}
+                   <a href={article.href}> {article.title}</a>
                   </h3>
 
                   {/* Optional Summary */}
@@ -110,7 +111,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
               onClick={() => setShowAll(!showAll)}
               className="group inline-flex items-center cursor-pointer gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
             >
-              <span>{showAll ? "Show Less" : button?.label || "View All Posts"}</span>
+             <a href={button.href}>{showAll ? "Show Less" : button?.label || "View All Posts"}</a>
               <FiArrowRight
                 className={`text-sm transition-transform duration-300 ${
                   showAll ? "-rotate-90" : "group-hover:translate-x-1"

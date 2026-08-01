@@ -2,29 +2,13 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Handshake,
-  TrendingUp,
-  Coins,
-  Users,
-  HeartHandshake,
-  CheckCircle2,
-  User,
-  Mail,
-  Phone,
-  MapPin,
-  MessageSquare,
-  Send,
-  ClipboardList,
-  FileText,
-  Award,
-  GraduationCap,
-  Clock,
+import {Handshake, TrendingUp, Coins, Users, HeartHandshake, CheckCircle2, User, Mail, Phone, MapPin, MessageSquare, Send, ClipboardList, FileText, Award, GraduationCap, Clock,
   Heart,
 } from "lucide-react";
 
 import PageBanner from "../../shared/PageBanner";
 import type { FranchisePageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface Props {
   data: FranchisePageProps;
@@ -96,32 +80,34 @@ export default function FrenchisePage({ data }: Props) {
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl px-3 pb-12 sm:pt-10 pt-5 text-center">
 
-        <div className="mb-2 flex items-center justify-center gap-4">
-          <div className="h-px w-14 bg-orange-500" />
+        {/* <div className="mb-2 flex items-center justify-center gap-4">
 
           <div className="flex h-12 sm:h-20 sm:w-20 w-12 items-center justify-center rounded-full border-2 border-orange-500 text-orange-600">
             {getIcon(header.icon, "h-6 w-6 sm:w-12 sm:h-12")}
           </div>
 
           <div className="h-px w-14 bg-orange-500" />
-        </div>
-
-        <p className="mb-1 text-sm font-semibold tracking-[0.2em] text-orange-600">
+        </div> */}
+         <div className="flex justify-center gap-1">
+          <HiOutlineHeart className="text-base text-[#FF4500]" />
+        <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">
           {header.label}
         </p>
+         </div>
+
 
         {/* JSON DATA */}
         <h2 className="mb-2 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
           {header.heading}
         </h2>
 
-        <div className="mb-2 flex items-center justify-center gap-3">
+        {/* <div className="mb-2 flex items-center justify-center gap-3">
           <div className="h-px w-10 bg-gray-300 sm:w-14" />
 
           <Heart className="h-4 w-4 fill-orange-500 text-orange-500" />
 
           <div className="h-px w-10 bg-gray-300 sm:w-14" />
-        </div>
+        </div> */}
 
         <p className="mx-auto max-w-2xl md:leading-relaxed text-gray-600">
           {header.description}
@@ -430,12 +416,13 @@ export default function FrenchisePage({ data }: Props) {
       {/* ===================== PROCESS ===================== */}
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="mb-10 text-center">
-          <div className="mb-3 flex items-center justify-center gap-3">
-            <div className="h-px w-10 bg-orange-500" />
+          <div className="mb-0 flex items-center justify-center gap-1">
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
+
             <p className="text-sm font-semibold tracking-widest text-orange-600">
               {processSection.label}
             </p>
-            <div className="h-px w-10 bg-orange-500" />
+            {/* <div className="h-px w-10 bg-orange-500" /> */}
           </div>
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
             {processSection.title}

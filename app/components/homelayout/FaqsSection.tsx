@@ -24,7 +24,7 @@ export default function FAQSection({
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-6 sm:py-8">
+    <section className="relative overflow-hidden bg-white py-6 sm:py-8 md:py-12">
       {/* Decorative Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
       <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />
@@ -36,7 +36,7 @@ export default function FAQSection({
           <div className=" items-center text-center ">
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
+            <div className="inline-flex items-center gap-2 rounded-full px-3 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4  sm:text-sm">
               <HiOutlineHeart className="text-base sm:text-lg" />
               {badge.label}
             </div>
@@ -44,15 +44,15 @@ export default function FAQSection({
             {/* Title */}
             <h2 className="md:mt-0 max-w-xl text-3xl font-extrabold leading-tight text-slate-900 sm:text-4xl md:text-5xl lg:mt-0">
               {title.line1}{" "}
-              <span className="text-orange-500">
+              <span className="text-slate-900">
                 {title.highlight}
               </span>
             </h2>
 
             {/* Accent Line */}
-            <center>
+            {/* <center>
             <div className="mt-2 h-1 w-14 sm:w-28 rounded-full bg-orange-500" />
-            </center>
+            </center> */}
 
             {/* Description */}
             <p className="mt-2 max-w-lg md:text-md text-sm text-slate-900  ">

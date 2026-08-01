@@ -6,7 +6,10 @@ import { FiArrowLeft, FiArrowRight } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi2";
 
 import { FaStar } from "react-icons/fa";
-import type { TestimonialSectionProps, TestimonialItem } from "@/type/typeSection";
+import type {
+  TestimonialSectionProps,
+  TestimonialItem,
+} from "@/type/typeSection";
 
 export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const { badge, title, pretitle, description, testimonials } = data;
@@ -15,13 +18,13 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
   const nextSlide = () => {
     setCurrentIndex((prev) =>
-      prev === testimonials.length - 1 ? 0 : prev + 1
+      prev === testimonials.length - 1 ? 0 : prev + 1,
     );
   };
 
   const prevSlide = () => {
     setCurrentIndex((prev) =>
-      prev === 0 ? testimonials.length - 1 : prev - 1
+      prev === 0 ? testimonials.length - 1 : prev - 1,
     );
   };
 
@@ -33,7 +36,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const activeTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-5 md:py-12">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-0 ">
       {/* Soft Radial Background Glow */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
 
@@ -47,9 +50,9 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
           </div>
 
           {/* Main Title */}
-          <h2 className="md:mt-1 font-serif text-3xl font-extrabold md:tracking-tight text-[#1E1B4B] sm:text-4xl lg:text-5xl">
+          <h2 className="md:mt-1 font-serif text-3xl font-extrabold md:tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
             {title?.line1 || "Don’t Believe Us?"}{" "}
-            <span className="text-[#1E1B4B]">
+            <span className="text-[#0F172A]">
               {title?.highlight || "See Review"}
             </span>
           </h2>
@@ -64,12 +67,10 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
         {/* ================= TESTIMONIAL CARD ================= */}
         <div className="relative md:mt-12 mt-4 overflow-hidden rounded-3xl border border-slate-100 bg-white md:p-6 p-2 shadow-xl shadow-slate-200/50 sm:p-10">
-          
           {/* Background Dotted Globe Mesh Overlay (Right Side) */}
           <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-[radial-gradient(#CBD5E1_1.5px,transparent_1.5px)] [background-size:12px_12px] opacity-40 pointer-events-none" />
 
           <div className="relative z-10 grid grid-cols-1 items-stretch md:gap-8 gap-2 lg:grid-cols-12 lg:gap-12">
-            
             {/* ================= LEFT PROFILE COLUMN ================= */}
             <div className="flex flex-col items-center text-center lg:col-span-4 justify-center">
               {/* Profile Avatar */}
@@ -96,9 +97,11 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
               {/* Star Rating */}
               <div className="mt-3 flex items-center justify-center gap-1 text-amber-400">
-                {Array.from({ length: activeTestimonial.rating || 5 }).map((_, i) => (
-                  <FaStar key={i} className="text-sm fill-amber-400" />
-                ))}
+                {Array.from({ length: activeTestimonial.rating || 5 }).map(
+                  (_, i) => (
+                    <FaStar key={i} className="text-sm fill-amber-400" />
+                  ),
+                )}
               </div>
             </div>
 
@@ -115,7 +118,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
                 </h4>
 
                 {/* Main Testimonial Message Body */}
-                <p className="md:mt-4 mt-1 text-xs text-slate-600 sm:text-sm leading-relaxed">
+                <p className="mt-1 md:mt-4 h-64 sm:h-36 overflow-hidden text-sm text-slate-600 sm:text-sm leading-relaxed">
                   {activeTestimonial.message}
                 </p>
               </div>
@@ -138,7 +141,6 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
                 </button>
               </div>
             </div>
-
           </div>
         </div>
       </div>

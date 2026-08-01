@@ -124,12 +124,12 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
           </h2>
 
           {/* Subheading Divider Line */}
-          <div className="md:mt-3 mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="md:mt-3 mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span>Making Impact Every Day</span>
             <span className="h-[1px] w-10 bg-orange-300" />
-          </div>
+          </div> */}
 
           {/* Description Paragraph */}
           <p className="mt-2 max-w-2xl text-xs  text-slate-800 sm:text-sm">

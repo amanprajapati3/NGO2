@@ -7,14 +7,14 @@ export default function PrivacyPolicy({ data }: privacyPolicyprops) {
   const { banner, conditions } = data;
   return (
     <>
-      <main className="min-h-screen bg-[#fafafa]">
+      <main className="min-h-screen border bg-[#fafafa]">
         {/* ================= Banner ================= */}
       <PageBanner banner={banner} />
 
 
         {/* ================= Terms & Conditions ================= */}
         <section className="py-12 md:py-16">
-          <div className="mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
+          <div className="mx-auto  px-4 md:px-10 ">
             <div className="flex flex-col">
               {conditions.map((section, index) => (
                 <div key={section.id} className="group">
@@ -25,7 +25,7 @@ export default function PrivacyPolicy({ data }: privacyPolicyprops) {
                     </h2>
 
                     {/* Orange Accent */}
-                    <div className="mt-2 h-[3px] w-10 bg-[#FF4500]" />
+                    {/* <div className="mt-2 h-[3px] w-10 bg-[#FF4500]" /> */}
                   </div>
 
                   {/* Content */}

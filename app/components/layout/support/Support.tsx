@@ -1,6 +1,7 @@
 import React from "react";
 import PageBanner from "../../shared/PageBanner"
 import type { SupportDataProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 // Helper Function for Rendering Vector SVGs Based on Icon Names
 const renderIcon = (
@@ -122,21 +123,25 @@ export default function SupportPage({ data }: SupportDataProps) {
         <section className="text-center">
           {/* Section Header */}
           <div className="max-w-2xl mx-auto">
-            <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+            <div className="flex justify-center gap-2">
+              <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
+              
+            <span className="text-xs mt-0.5 font-bold uppercase tracking-widest text-[#EA580C]">
               {introduction.topBadge}
             </span>
-            <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-3" />
+            </div>
+            {/* <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-3" /> */}
 
             <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
               {introduction.heading.plainText}{" "}
-              <span className="text-[#EA580C]">
+              <span className="text-slate-900">
                 {introduction.heading.highlightedText}
               </span>
             </h2>
 
-            <div className="mx-auto w-10 h-[2px] bg-[#EA580C] mt-3 mb-4" />
+            {/* <div className="mx-auto w-10 h-[2px] bg-[#EA580C] mt-3 mb-4" /> */}
 
-            <p className="text-xs sm:text-sm text-slate-600 ">
+            <p className="text-xs pt-2 sm:text-sm text-slate-600 ">
               {introduction.description}
             </p>
           </div>
@@ -167,15 +172,13 @@ export default function SupportPage({ data }: SupportDataProps) {
         {/* ================= 3. WAYS TO SUPPORT (5 CARDS) ================= */}
         <section className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-xs text-center">
           <div className="flex items-center justify-center gap-3">
-            <div className="h-[2px] w-8 bg-[#EA580C]" />
+              <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
 
             <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
               {waysToSupport.topBadge}
             </span>
-
-            <div className="h-[2px] w-8 bg-[#EA580C]" />
           </div>
-          <h2 className="text-2xl pt-2 sm:text-4xl font-serif font-bold text-slate-900">
+          <h2 className="text-2xl pt-0 sm:text-4xl font-serif font-bold text-slate-900">
             {waysToSupport.heading}
           </h2>
 
@@ -218,10 +221,14 @@ export default function SupportPage({ data }: SupportDataProps) {
 
         {/* ================= 4. YOUR SUPPORT, REAL IMPACT ================= */}
         <section className="bg-orange-50/50 border rounded-3xl p-6 sm:p-10 border-orange-200/80 text-center">
+        <div className="flex justify-center gap-1">
+          <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
+
           <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
             {impactStats.topBadge}
           </span>
-          <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-2" />
+          </div>
+          {/* <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-2" /> */}
 
           <h2 className="text-2xl sm:text-4xl font-serif font-bold text-slate-900">
             {impactStats.heading}

@@ -4,6 +4,7 @@ import Link from "next/link";
 import { FaStar, FaQuoteLeft } from "react-icons/fa";
 import { FiHeart } from "react-icons/fi";
 import type { TestimonialData } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 interface TestimonialPageLayoutProps {
   data: TestimonialData;
@@ -30,26 +31,26 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
             {/* Badge Label */}
             {badge?.label && (
               <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
-                <span className="h-[1px] w-8 bg-orange-200" />
+               <HiOutlineHeart className="text-base text-[#FF4500]" />
+                
                 <span>{badge.label}</span>
-                <span className="h-[1px] w-8 bg-orange-200" />
               </div>
             )}
 
             {/* Main Title */}
             <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
               {title?.line1 || "Don't Believe Us?"}{" "}
-              <span className="text-[#FF4500]">
+              <span className="text-[#0F172A]">
                 {title?.highlight || "See Review"}
               </span>
             </h2>
 
             {/* Subheading Heart Line Divider */}
-            <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+            {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
               <span className="h-[1px] w-10 bg-orange-300" />
-              <FiHeart className="text-[10px] text-[#FF4500]" />
+              <FiHeart className="text-[  10px] text-[#FF4500]" />
               <span className="h-[1px] w-10 bg-orange-300" />
-            </div>
+            </div> */}
 
             {/* pretitle / Description */}
             {pretitle && (

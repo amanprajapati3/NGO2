@@ -31,6 +31,7 @@ import type {
   DonateNowProps,
   DonationAmountOption,
 } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 export default function DonatePage({ data }: DonateNowProps) {
   // Form States
@@ -96,28 +97,33 @@ export default function DonatePage({ data }: DonateNowProps) {
 
           {/* ================= 2. TOP HEADER ================= */}
           <div className="flex flex-col items-center text-center">
-            <div className="flex items-center justify-center gap-4">
+            {/* <div className="flex items-center justify-center gap-4">
               <span className="h-[1.5px] w-12 bg-orange-400/60" />
               <FaHandHoldingHeart className="text-2xl text-orange-400" />
               <span className="h-[1.5px] w-12 bg-orange-400/60" />
-            </div>
+            </div> */}
 
-            <span className="mt-2 text-xs font-bold uppercase tracking-widest text-orange-400">
+            <div className="flex justify-center gap-1">
+
+             <HiOutlineHeart className="text-base text-[#FF4500]" />
+            
+            <span className=" text-xs font-bold uppercase tracking-widest text-orange-400">
               {data.header.badge}
             </span>
+            </div>
 
-            <h2 className="mt-2 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
+            <h2 className="mt-0 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
               {data.header.title.line1}{" "}
-              <span className="text-orange-400">
+              <span className="text-[#0F172A]">
                 {data.header.title.highlight}
               </span>
             </h2>
 
-            <div className="mt-3 flex items-center justify-center gap-3">
+            {/* <div className="mt-3 flex items-center justify-center gap-3">
               <span className="h-[1px] w-10 bg-orange-300" />
               <FaRegHeart className="text-xs text-orange-5--" />
               <span className="h-[1px] w-10 bg-orange-300" />
-            </div>
+            </div> */}
 
             <p className="mt-3 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
               {data.header.description}

@@ -1,6 +1,7 @@
 import React from "react";
 import PageBanner from "../../shared/PageBanner";
 import type { AwardsDataProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 // ================= ACCURATE C-CURVED LAUREL LEAF BRANCH SVG =================
 const LaurelWreathSVG = ({ className }: { className?: string }) => (
@@ -215,12 +216,16 @@ export default function Award({ data }: AwardsDataProps) {
             <LaurelWreathSVG className="absolute -right-4 sm:right-2 top-0 h-48 sm:h-60 text-red-300/80 pointer-events-none" />
 
             {/* Top Badge */}
-            <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA580C]">
-              {header.topBadge}
-            </span>
+            <div className="flex justify-center gap-1">
+              <HiOutlineHeart className="text-base text-[#FF4500]" />
+
+              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA580C]">
+                {header.topBadge}
+              </span>
+            </div>
 
             {/* Top Line & Star Divider */}
-            <div className="mt-2 flex items-center justify-center gap-3">
+            {/* <div className="mt-2 flex items-center justify-center gap-3">
               <span className="h-[1.5px] w-12 sm:w-16 bg-[#EA580C]/40" />
               <svg
                 className="w-5 h-5 text-[#EA580C]"
@@ -232,25 +237,25 @@ export default function Award({ data }: AwardsDataProps) {
                 <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
               </svg>
               <span className="h-[1.5px] w-12 sm:w-16 bg-[#EA580C]/40" />
-            </div>
+            </div> */}
 
             {/* Main Header Title */}
-            <h2 className="mt-3 text-3xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight">
+            <h2 className="mt-0 text-3xl sm:text-5xl font-serif font-bold text-slate-900 leading-tight">
               {header.title.part1}{" "}
-              <span className="text-[#EA580C]">{header.title.part2}</span>
+              <span className="text-slate-900">{header.title.part2}</span>
             </h2>
 
             {/* Three Dots Line Underline */}
-            <div className="mt-3 flex items-center justify-center gap-1.5">
+            {/* <div className="mt-3 flex items-center justify-center gap-1.5">
               <span className="h-[1.5px] w-8 bg-orange-300" />
               <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
               <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
               <span className="w-1.5 h-1.5 rounded-full bg-[#EA580C]" />
               <span className="h-[1.5px] w-8 bg-orange-300" />
-            </div>
+            </div> */}
 
             {/* pretitle */}
-            <p className="mt-4 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-lg mx-auto">
+            <p className="mt-0 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-lg mx-auto">
               {header.pretitle}
             </p>
           </div>
@@ -285,20 +290,18 @@ export default function Award({ data }: AwardsDataProps) {
           <div className="mt-16">
             <div className="text-center mb-10">
               <div className="inline-flex items-center gap-3">
-                <span className="h-[1px] w-8 bg-orange-400" />
+                
 
                 <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
                   {awardsSection.topBadge}
                 </span>
 
-                <span className="h-[1px] w-8 bg-orange-400" />
               </div>
 
-              <h3 className="mt-2 text-2xl sm:text-4xl font-serif font-bold text-slate-900">
+              <h3 className="mt-0 text-2xl sm:text-4xl font-serif font-bold text-slate-900">
                 {awardsSection.title}
               </h3>
 
-              <div className="mt-2 mx-auto w-10 h-[3px] bg-[#EA580C]" />
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">

@@ -4,7 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FiArrowRight, FiHeart, FiUser } from "react-icons/fi";
 import { FaFacebookF, FaLinkedinIn, FaTwitter } from "react-icons/fa6";
-import { HiOutlineUsers } from "react-icons/hi2";
+import { HiOutlineHeart, HiOutlineUsers } from "react-icons/hi2";
 import { RiInstagramFill } from "react-icons/ri";
 
 import type { TeamMember, TeamSectionProps } from "@/type/typeSection";
@@ -77,7 +77,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
   const { badge, heading, description, members, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 mt-0 lg:py-12">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 mt-0">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
@@ -104,7 +104,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
         <div className="flex flex-col items-center text-center">
           {/* Badge Pill */}
           <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
-            <HiOutlineUsers className="text-base text-[#FF4500]" />
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge.label}</span>
           </div>
 
@@ -114,11 +114,11 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
           </h2>
 
           {/* Subheading Line Divider */}
-          <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-12 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span className="h-[1px] w-12 bg-orange-300" />
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
@@ -154,7 +154,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
                 <div>
                   {/* Name */}
                   <h3 className="text-base font-bold text-slate-900 transition-colors group-hover:text-[#FF4500]">
-                    {member.name}
+                   <a href={member.textLink}>{member.name}</a> 
                   </h3>
 
                   {/* Designation */}

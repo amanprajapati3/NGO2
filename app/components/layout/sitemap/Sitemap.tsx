@@ -1,81 +1,25 @@
 "use client";
 
-import PageBanner from "../../shared/PageBanner"
-
+import PageBanner from "../../shared/PageBanner";
 import type { SitemapPageProps } from "@/type/typeSection";
-import Image from "next/image";
 import Link from "next/link";
 import {
-  Home,
-  Building2,
-  Target,
-  Eye,
-  CheckCircle2,
-  Users,
-  Award,
-  HeartHandshake,
-  Newspaper,
-  Settings,
-  Factory,
-  FolderKanban,
-  FileText,
-  List,
-  HelpCircle,
-  LifeBuoy,
-  Calendar,
-  Briefcase,
-  UserPlus,
-  Network,
-  Zap,
-  CheckSquare,
-  PhoneCall,
-  Heart,
-  Image as ImageIcon,
-  ShieldCheck,
-  Shield,
-  ClipboardList,
-  RotateCcw,
-  Cookie,
-  AlertTriangle,
-  GitFork,
-  LayoutGrid,
+  Home, Building2, Target, Eye, CheckCircle2, Users, Award,
+  HeartHandshake, Newspaper, Settings, Factory, FolderKanban,
+  FileText, List, HelpCircle, LifeBuoy, Calendar, Briefcase,
+  UserPlus, Network, Zap, CheckSquare, PhoneCall, Heart,
+  Image as ImageIcon, ShieldCheck, Shield, ClipboardList,
+  RotateCcw, Cookie, AlertTriangle, GitFork, LayoutGrid,
 } from "lucide-react";
 import React from "react";
 
-// Icon Renderer Map
 const iconMap: Record<string, React.ElementType> = {
-  Home,
-  Building2,
-  Target,
-  Eye,
-  CheckCircle2,
-  Users,
-  Award,
-  HeartHandshake,
-  Newspaper,
-  Settings,
-  Factory,
-  FolderKanban,
-  FileText,
-  List,
-  HelpCircle,
-  LifeBuoy,
-  Calendar,
-  Briefcase,
-  UserPlus,
-  Network,
-  Zap,
-  CheckSquare,
-  PhoneCall,
-  Heart,
-  Image: ImageIcon,
-  ShieldCheck,
-  Shield,
-  ClipboardList,
-  RotateCcw,
-  Cookie,
-  AlertTriangle,
-  GitFork,
+  Home, Building2, Target, Eye, CheckCircle2, Users, Award,
+  HeartHandshake, Newspaper, Settings, Factory, FolderKanban,
+  FileText, List, HelpCircle, LifeBuoy, Calendar, Briefcase,
+  UserPlus, Network, Zap, CheckSquare, PhoneCall, Heart,
+  Image: ImageIcon, ShieldCheck, Shield, ClipboardList,
+  RotateCcw, Cookie, AlertTriangle, GitFork,
 };
 
 export default function Sitemap({ data }: SitemapPageProps) {
@@ -91,37 +35,20 @@ export default function Sitemap({ data }: SitemapPageProps) {
       {/* ================= Banner ================= */}
       <PageBanner banner={banner} />
 
-
       {/* ================= Sitemap Content ================= */}
       <section className="relative py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         {/* Decorative Grid Texture */}
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
 
-        <div className="relative z-10">
+        <div className="relative z-10 flex flex-col items-center">
+          
           {/* Header Title Block */}
           <div className="flex flex-col items-center text-center mb-12">
-            {/* Top Icon Diagram */}
-            <div className="mb-1 p-2 rounded-lg bg-orange-50 border border-orange-100 text-[#ff541b]">
-              <GitFork className="w-8 h-8 rotate-180" />
-            </div>
-
-            {/* Sitemap Big Title with Decorative Lines & Heart */}
             <div className="flex items-center justify-center gap-4 w-full max-w-md my-1">
-              <div className="h-[2px] flex-1 bg-gradient-to-r from-transparent to-[#ff541b]" />
-              <h2 className="text-3xl sm:text-4xl  font-black tracking-wider text-[#0B132A]">
+              <h2 className="text-3xl sm:text-4xl font-black tracking-wider text-[#0B132A]">
                 {header.title}
               </h2>
-              <div className="h-[2px] flex-1 bg-gradient-to-l from-transparent to-[#ff541b]" />
             </div>
-
-            {/* Heart Decorator */}
-            <div className="flex items-center gap-2 my-1 text-[#ff541b]">
-              <span className="h-[1px] w-8 bg-[#ff541b]" />
-              <Heart className="w-4 h-4 fill-[#ff541b]" />
-              <span className="h-[1px] w-8 bg-[#ff541b]" />
-            </div>
-
-            {/* pretitle */}
             <p className="mt-1 text-sm sm:text-base text-slate-600 max-w-2xl">
               {header.pretitle}
             </p>
@@ -139,23 +66,23 @@ export default function Sitemap({ data }: SitemapPageProps) {
               <span>{homeNode.label}</span>
             </Link>
 
-            {/* Vertical Line down from HOME to main branch line */}
+            {/* Vertical Line down from HOME */}
             <div className="w-[2px] h-10 bg-[#ff541b]" />
           </div>
 
           {/* 2. Main Horizontal Line & 6 Top Columns */}
-          <div className="relative">
-            {/* Horizontal Line across 6 columns on Desktop */}
+          <div className="relative w-full flex flex-col items-center">
+            {/* Horizontal Line across 6 category columns */}
             <div className="hidden lg:block absolute top-0 left-[8.33%] right-[8.33%] h-[2px] bg-[#ff541b]" />
 
-            {/* Central Drop Line through Middle (between col 3 & 4) down to LEGAL & POLICIES */}
-            <div className="hidden lg:block absolute top-0 left-1/2 -translate-x-1/2 w-[2px] h-full bg-[#ff541b] z-0 pointer-events-none" />
+            {/* CONTINUOUS VERTICAL CENTER LINE: Passes directly through the grid down to Legal Node */}
+            <div className="hidden lg:block absolute top-0 bottom-0 left-1/2 -translate-x-1/2 w-[2px] bg-[#ff541b] z-0 pointer-events-none" />
 
             {/* 6 Category Columns Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10 pt-0 lg:pt-8">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-6 relative z-10 w-full pt-0 lg:pt-8 pb-10">
               {categories.map((category) => (
                 <div key={category.id} className="flex flex-col items-center">
-                  {/* Vertical Line from top horizontal line to Category Header on Desktop */}
+                  {/* Drop line from horizontal bar to column header */}
                   <div className="hidden lg:block w-[2px] h-8 bg-[#ff541b] -mt-8" />
 
                   {/* Category Header Card */}
@@ -188,35 +115,30 @@ export default function Sitemap({ data }: SitemapPageProps) {
                 </div>
               ))}
             </div>
-          </div>
 
-          {/* Central Vertical Connector Line to LEGAL & POLICIES */}
-          <div className="flex flex-col items-center mt-10 md:mt-16">
-            <div className="w-[2px] h-12 bg-[#ff541b]" />
-
-            {/* 3. LEGAL & POLICIES Node */}
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-[#0B132A] text-white font-bold tracking-wider text-xs sm:text-sm rounded-xl shadow-lg border border-slate-800">
+            {/* 3. LEGAL & POLICIES Node Attached Directly to Center Vertical Line */}
+            <div className="relative z-10 inline-flex items-center gap-2 px-6 py-3 bg-[#0B132A] text-white font-bold tracking-wider text-xs sm:text-sm rounded-xl shadow-lg border border-slate-800">
               <ShieldCheck className="w-5 h-5 text-[#ff541b]" />
               <span>{legalNode.title}</span>
             </div>
 
-            {/* Vertical Line down from LEGAL & POLICIES to Legal Horizontal Bar */}
-            <div className="w-[2px] h-10 bg-[#ff541b]" />
+            {/* Vertical Line down from LEGAL & POLICIES to Legal Horizontal Line */}
+            <div className="w-[2px] h-8 bg-[#ff541b]" />
           </div>
 
           {/* 4. Lower Horizontal Line & 6 Policy Cards */}
-          <div className="relative">
-            {/* Horizontal Line across 6 policy cards on Desktop */}
+          <div className="relative w-full">
+            {/* Horizontal Line across 6 policy cards */}
             <div className="hidden lg:block absolute top-0 left-[8.33%] right-[8.33%] h-[2px] bg-[#ff541b]" />
 
             {/* 6 Policy Cards Grid */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 relative z-10 pt-0 lg:pt-6">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-6 gap-4 relative z-10">
               {legalNode.items.map((item, idx) => {
                 const isCurrentSitemap = item.isCurrent;
                 return (
                   <div key={idx} className="flex flex-col items-center">
-                    {/* Vertical Line from legal horizontal line on Desktop */}
-                    <div className="hidden lg:block w-[2px] h-6 bg-[#ff541b] -mt-6" />
+                    {/* Vertical Line drop from legal horizontal line */}
+                    <div className="hidden lg:block w-[2px] h-6 bg-[#ff541b]" />
 
                     <Link
                       href={item.href}
@@ -226,11 +148,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
                           : "bg-white text-slate-700 border-slate-200/80 shadow-[0_2px_8px_rgba(0,0,0,0.03)] hover:shadow-md hover:border-orange-300 hover:text-[#ff541b]"
                       }`}
                     >
-                      <span
-                        className={
-                          isCurrentSitemap ? "text-[#ff541b]" : "text-[#ff541b]"
-                        }
-                      >
+                      <span className="text-[#ff541b]">
                         {renderIcon(item.icon, "w-4 h-4")}
                       </span>
                       <span className="font-semibold text-xs sm:text-sm tracking-wide text-center">
@@ -242,6 +160,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
               })}
             </div>
           </div>
+
         </div>
       </section>
     </main>

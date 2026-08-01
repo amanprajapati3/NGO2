@@ -100,7 +100,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
             <span className="relative inline-block text-[#0F172A]">
               {title.highlight}
               {/* Curved red brush accent under highlight text */}
-              <svg
+              {/* <svg
                 className="absolute -bottom-2 left-0 w-full text-[#FF4500]"
                 height="10"
                 viewBox="0 0 100 20"
@@ -113,19 +113,19 @@ export default function CausesSection({ data }: CausesSectionProps) {
                   fill="none"
                   strokeLinecap="round"
                 />
-              </svg>
+              </svg> */}
             </span>{" "}
             {title.line2}
           </h2>
 
           {/* Center Line Divider with Heart */}
-          <div className="mt-4 flex items-center gap-2">
+          {/* <div className="mt-4 flex items-center gap-2">
             <div className="h-[2px] w-8 bg-slate-300" />
             <div className="h-[2px] w-12 bg-[#FF4500]" />
             <FiHeart className="text-xs text-[#FF4500]" />
             <div className="h-[2px] w-12 bg-[#FF4500]" />
             <div className="h-[2px] w-8 bg-slate-300" />
-          </div>
+          </div> */}
 
           {/* Description */}
           <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">

@@ -1,6 +1,7 @@
 import React from "react";
 import PageBanner from "../../shared/PageBanner";
 import type { CSRPageProps } from "@/type/typeSection";
+import { HiOutlineHeart } from "react-icons/hi2";
 
 // --- Custom SVGs Matching Image Icons Exactly ---
 const IconWrapper = ({ children }: { children: React.ReactNode }) => (
@@ -300,32 +301,29 @@ export default function CSR({ data }: CSRProps) {
         {/* 2. Top Header & pretitle */}
         <div className="mx-auto max-w-3xl space-y-1 text-center">
           <div className="inline-flex items-center space-x-3">
-            <span className="h-[2px] w-12 bg-orange-500" />
-
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
               {data.header.topBadge}
             </span>
-
-            <span className="h-[2px] w-12 bg-orange-500" />
           </div>
 
           <h2 className="font-serif text-3xl font-bold text-slate-900 md:text-4xl">
             {data.header.title.part1}{" "}
-            <span className="text-orange-600">{data.header.title.part2}</span>
+            <span className="text-slate-900">{data.header.title.part2}</span>
           </h2>
 
-          <div className="flex items-center justify-center gap-3 py-2 sm:gap-4">
+          {/* <div className="flex items-center justify-center gap-3 py-2 sm:gap-4">
             {/* Left line */}
-            <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" />
+            {/* <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" /> */}
 
             {/* Heart */}
-            <span className="text-2xl leading-none text-orange-500 sm:text-3xl md:text-4xl">
+            {/* <span className="text-2xl leading-none text-orange-500 sm:text-3xl md:text-4xl">
               ♥
-            </span>
+            </span> */}
 
-            {/* Right line */}
+            {/* Right line *
             <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" />
-          </div>
+          </div> */}
 
           <p className="text-sm leading-relaxed text-slate-600 md:text-base">
             {data.header.pretitle}
@@ -357,7 +355,7 @@ export default function CSR({ data }: CSRProps) {
               {data.focusAreas.title}
             </h2>
 
-            <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" />
+            {/* <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" /> */}
           </div>
 
           <div className="grid mb-6 grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
@@ -401,7 +399,7 @@ export default function CSR({ data }: CSRProps) {
               {data.ourImpact.title}
             </h2>
 
-            <div className="h-1 w-8 rounded-full bg-orange-500" />
+            {/* <div className="h-1 w-8 rounded-full bg-orange-500" /> */}
 
             <p className="text-sm leading-relaxed text-slate-600">
               {data.ourImpact.description}
@@ -437,7 +435,7 @@ export default function CSR({ data }: CSRProps) {
               {data.csrProjects.title}
             </h2>
 
-            <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" />
+            {/* <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" /> */}
           </div>
 
           <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-5">
