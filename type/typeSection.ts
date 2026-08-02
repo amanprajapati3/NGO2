@@ -428,6 +428,7 @@ export interface CauseItem {
   icon: string;
   category: string;
   title: string;
+  titleLink:string;
   description: string;
   button: CauseButton;
 }
@@ -661,6 +662,7 @@ export interface EventBanner {
 export interface EventButton {
   label: string;
   variant?: "primary" | "secondary";
+  href:string;
 }
 
 export interface EventCard {
@@ -2579,6 +2581,74 @@ export interface BlogDetailData {
 }
 
 export interface BlogDetailsPageProps {
-  data: BlogDetailData
-;
+  data: BlogDetailData;
+}
+
+export interface EventDetailImage {
+  src: string;
+  alt: string;
+}
+
+export interface EventDetailsBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  bgImageUrl: string;
+}
+
+export interface EventDetailMeta {
+  publishedDate: string;
+}
+
+export interface EventMapDetails {
+  locationName: string;
+  address: string;
+  embedUrl: string;
+}
+
+export interface EventMissionSection {
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface EventLocationSection {
+  icon: string;
+  title: string;
+  description: string;
+  map: EventMapDetails;
+}
+
+export interface EventDetailMainContent {
+  mainImage: EventDetailImage;
+  meta: EventDetailMeta;
+  title: string;
+  introParagraphs: string[];
+  middleParagraphs: string[];
+  mission: EventMissionSection;
+  location: EventLocationSection;
+}
+
+export interface EventDetailPopularPost {
+  id: string;
+  title: string;
+  date: string;
+  image: EventDetailImage;
+  slug: string;
+}
+
+export interface EventDetailSidebar {
+  searchPlaceholder: string;
+  popularPostsTitle: string;
+  popularPosts: EventDetailPopularPost[];
+}
+
+export interface EventDetailData {
+  pageTitle: string;
+  banner: EventDetailsBanner;
+  mainContent: EventDetailMainContent;
+  sidebar: EventDetailSidebar;
+}
+
+export interface EventDetailsPageProps {
+  data: EventDetailData;
 }

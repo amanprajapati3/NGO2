@@ -22,7 +22,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           {/* Badge */}
           <div className="flex justify-center gap-1">
              <HiOutlineHeart className="text-base text-[#FF4500]" />
-          <span className="inline-flex rounded-full bg-orange-50  text-xs font-bold uppercase tracking-[0.25em] text-orange-600">
+          <span className="inline-flex rounded-full bg-orange-50  text-sm font-bold uppercase tracking-[0.25em] text-orange-600">
             {badge.label}
           </span>
           </div>
@@ -35,7 +35,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           </h2>
 
           {/* Decorative Line */}
-          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
 
             <FiHeart className="text-[10px] text-[#FF4500]" />
@@ -44,7 +44,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           </div> */}
 
           {/* Description */}
-          <p className="mx-auto mt-2 max-w-3xl text-sm text-slate-900 md:text-base">
+          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {description}
           </p>
         </div>

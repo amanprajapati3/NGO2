@@ -85,7 +85,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
             <div>
               {/* Meta Info Bar */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
-                <span className="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-2.5 py-1 text-xs font-medium text-gray-700">
+                <span className="inline-flex items-center gap-1.5 rounded-md bg-gray-100 px-2.5 py-1 text-sm font-medium text-gray-700">
                   <FiTag className="text-yellow-600" />
                   {story.category}
                 </span>

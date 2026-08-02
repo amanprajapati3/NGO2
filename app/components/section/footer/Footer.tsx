@@ -165,7 +165,7 @@ export default function Footer({ data }: { data: FooterData }) {
                       {item.title}
                     </h4>
 
-                    <div className="mt-2 flex items-center gap-1.5 text-xs text-slate-400">
+                    <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-400">
                       <span className="h-2 w-2 rounded-full bg-[#ff5a1f]" />
                       <span>
                         {item.category}, {item.date}
@@ -180,7 +180,7 @@ export default function Footer({ data }: { data: FooterData }) {
 
         {/* BOTTOM BAR */}
         <div className="border-t border-dashed border-slate-700 py-4">
-          <div className="flex flex-col items-center justify-between gap-3 text-xs text-indigo-200 sm:flex-row">
+          <div className="flex flex-col items-center justify-between gap-3 text-sm text-indigo-200 sm:flex-row">
             <p>{data.bottomBar.copyright}</p>
 
             <div className="flex items-center gap-3">

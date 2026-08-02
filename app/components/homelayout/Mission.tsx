@@ -179,7 +179,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                   </div>
 
                   <div>
-                    <span className="text-xs md:text-md font-bold uppercase tracking-wider text-[#ff5e14]">
+                    <span className="text-sm md:text-md font-bold uppercase tracking-wider text-[#ff5e14]">
                       {imageSection.purposeCard.badge}
                     </span>
                     <h4 className="mt-1 text-base md:text-xl font-bold text-white">
@@ -204,7 +204,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 </div>
 
                 {/* Badge */}
-                <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#ff5e14]">
+                <div className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#ff5e14]">
                   <span className="flex h-7 w-7 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
                     <FiTarget className="text-sm md:text-md text-[#ff5e14]" />
                   </span>
@@ -233,7 +233,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                         key={tab.id}
                         type="button"
                         onClick={() => setActiveTab(tab.id)}
-                        className={`relative flex items-center cursor-pointer md:gap-2 pb-1 text-sm md:text-lg font-semibold transition-colors ${
+                        className={`relative flex items-center cursor-pointer gap-2 pb-1 text-sm md:text-lg font-semibold transition-colors ${
                           isActive
                             ? "text-[#ff5e14]"
                             : "text-slate-300 hover:text-white"
@@ -252,8 +252,9 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
                 {/* Dynamic Content */}
                 {activeTabData && (
-                  <div className="mt-6 space-y-3 text-sm md:text-lg leading-relaxed text-slate-300 sm:text-[15px]">
+                  <div className="mt-6 h-[300px] overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-[15px] md:h-[260px] md:text-lg">
                     <p>{activeTabData.content.primary}</p>
+
                     {activeTabData.content.secondary && (
                       <p>{activeTabData.content.secondary}</p>
                     )}
@@ -315,7 +316,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                   {getPurposeIcon(imageSection.purposeCard.icon)}
                 </div>
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#ff5e14]">
+                  <span className="text-sm font-bold uppercase tracking-wider text-[#ff5e14]">
                     {imageSection.purposeCard.badge}
                   </span>
                   <h4 className="mt-0.5 text-sm font-bold text-white">

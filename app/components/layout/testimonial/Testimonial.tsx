@@ -30,7 +30,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
           <div className="flex flex-col items-center text-center">
             {/* Badge Label */}
             {badge?.label && (
-              <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
+              <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
                <HiOutlineHeart className="text-base text-[#FF4500]" />
                 
                 <span>{badge.label}</span>
@@ -46,7 +46,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
             </h2>
 
             {/* Subheading Heart Line Divider */}
-            {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+            {/* <div className="mt-2 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
               <span className="h-[1px] w-10 bg-orange-300" />
               <FiHeart className="text-[  10px] text-[#FF4500]" />
               <span className="h-[1px] w-10 bg-orange-300" />
@@ -54,13 +54,13 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
 
             {/* pretitle / Description */}
             {pretitle && (
-              <p className="mt-2 text-sm font-semibold text-slate-700">
+              <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
                 {pretitle}
               </p>
             )}
 
             {description && (
-              <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+              <p className="mx-auto mt-0 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-0 sm:text-base">
                 {description}
               </p>
             )}
@@ -113,7 +113,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
                     <h3 className="text-base font-bold text-[#0F172A] line-clamp-1">
                       {item.name}
                     </h3>
-                    <p className="text-xs font-medium text-slate-500 line-clamp-1">
+                    <p className="text-sm font-medium text-slate-500 line-clamp-1">
                       {item.designation}
                     </p>
                   </div>

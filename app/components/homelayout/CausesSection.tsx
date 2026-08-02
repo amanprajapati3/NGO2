@@ -56,7 +56,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
   const { badge, title, description, items, exploreButton, cta } = data;
 
   return (
-    <section className="relative overflow-hidden md:pt-12 pt-5">
+    <section className="relative overflow-hidden md:pt-12 pt-10">
 
        
       {/* Top Left / Bottom Right Light Glow Background Decorators */}
@@ -89,7 +89,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full  px-3.5 pt-1 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="inline-flex items-center gap-2 rounded-full  px-3.5 pt-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge.label}</span>
           </div>
@@ -122,13 +122,13 @@ export default function CausesSection({ data }: CausesSectionProps) {
           {/* <div className="mt-4 flex items-center gap-2">
             <div className="h-[2px] w-8 bg-slate-300" />
             <div className="h-[2px] w-12 bg-[#FF4500]" />
-            <FiHeart className="text-xs text-[#FF4500]" />
+            <FiHeart className="text-sm text-[#FF4500]" />
             <div className="h-[2px] w-12 bg-[#FF4500]" />
             <div className="h-[2px] w-8 bg-slate-300" />
           </div> */}
 
           {/* Description */}
-          <p className="mt-4 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
             {description}
           </p>
         </div>
@@ -173,18 +173,18 @@ export default function CausesSection({ data }: CausesSectionProps) {
                   <div>
                     {/* Category */}
                     <span
-                      className={`text-xs font-bold uppercase tracking-wider ${primaryColorClass}`}
+                      className={`text-sm font-bold uppercase tracking-wider ${primaryColorClass}`}
                     >
                       {item.category}
                     </span>
 
                     {/* Title */}
                     <h3 className="mt-2 text-xl font-bold leading-snug text-slate-900 group-hover:text-[#FF4500] transition-colors">
-                      {item.title}
+                      <a href={item.titleLink}> {item.title}</a>
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-2 text-xs leading-relaxed text-slate-500">
+                    <p className="mt-2 text-sm leading-relaxed text-slate-500">
                       {item.description}
                     </p>
                   </div>
@@ -203,7 +203,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
                     {/* Main Donate Button */}
                     <Link
                       href={item.button.href}
-                      className={`flex flex-1 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all ${bgButtonClass}`}
+                      className={`flex flex-1 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
                     >
                       <span>{item.button.label}</span>
                       <FiArrowRight className="text-sm" />
@@ -219,7 +219,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
         <div className="mb-12 mt-4 flex justify-center">
           <Link
             href={exploreButton.href}
-            className="group inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3 text-xs font-bold text-slate-800 shadow-sm transition-all hover:border-slate-400 hover:bg-slate-50"
+            className="group inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-bold text-slate-800 shadow-sm transition-all hover:border-slate-400 hover:bg-slate-50"
           >
             <span>{exploreButton.label}</span>
             <FiArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
@@ -313,14 +313,14 @@ export default function CausesSection({ data }: CausesSectionProps) {
         {cta.title}
       </h2>
 
-      <p className="mt-2.5 text-xs text-slate-300 sm:text-sm leading-relaxed opacity-90 max-w-md mx-auto">
+      <p className="mt-2.5 text-sm text-slate-300 sm:text-sm leading-relaxed opacity-90 max-w-md mx-auto">
         {cta.description}
       </p>
 
       <div className="mt-6">
         <Link
           href={cta.button.href}
-          className="inline-flex items-center gap-2 rounded-full bg-[#463E75] hover:bg-[#524989] px-7 py-2.5 text-xs font-bold text-white shadow-md transition-all border border-white/10"
+          className="inline-flex items-center gap-2 rounded-full bg-[#463E75] hover:bg-[#524989] px-7 py-2.5 text-sm font-bold text-white shadow-md transition-all border border-white/10"
         >
           <span>{cta.button.label}</span>
           <FiArrowRight className="text-sm" />

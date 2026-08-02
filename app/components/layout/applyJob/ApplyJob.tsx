@@ -61,7 +61,7 @@ export default function ApplyJob() {
             {/* STEP 1: PERSONAL INFORMATION */}
             <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6 lg:p-7">
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-xs font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-sm font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
                   {formSections.personalInformation.step}
                 </span>
                 <h2 className="text-base font-bold text-[#0d152e] sm:text-lg lg:text-xl">
@@ -73,7 +73,7 @@ export default function ApplyJob() {
               <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
                 {/* Full Name */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {formSections.personalInformation.fields.fullName.label}{" "}
                     {formSections.personalInformation.fields.fullName
                       .required && <span className="text-red-500">*</span>}
@@ -87,13 +87,13 @@ export default function ApplyJob() {
                       formSections.personalInformation.fields.fullName
                         .placeholder
                     }
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                   />
                 </div>
 
                 {/* Email Address */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {formSections.personalInformation.fields.emailAddress.label}{" "}
                     {formSections.personalInformation.fields.emailAddress
                       .required && <span className="text-red-500">*</span>}
@@ -108,13 +108,13 @@ export default function ApplyJob() {
                       formSections.personalInformation.fields.emailAddress
                         .placeholder
                     }
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                   />
                 </div>
 
                 {/* Phone Number */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {formSections.personalInformation.fields.phoneNumber.label}{" "}
                     {formSections.personalInformation.fields.phoneNumber
                       .required && <span className="text-red-500">*</span>}
@@ -129,13 +129,13 @@ export default function ApplyJob() {
                       formSections.personalInformation.fields.phoneNumber
                         .placeholder
                     }
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                   />
                 </div>
 
                 {/* Current Location */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.personalInformation.fields.currentLocation
                         .label
@@ -154,7 +154,7 @@ export default function ApplyJob() {
                         formSections.personalInformation.fields.currentLocation
                           .placeholder
                       }
-                      className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                      className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                     />
                     <FiChevronDown className="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 text-slate-400" />
                   </div>
@@ -165,7 +165,7 @@ export default function ApplyJob() {
             {/* STEP 2: PROFESSIONAL INFORMATION */}
             <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6 lg:p-7">
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-xs font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-sm font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
                   {formSections.professionalInformation.step}
                 </span>
                 <h2 className="text-base font-bold text-[#0d152e] sm:text-lg lg:text-xl">
@@ -177,7 +177,7 @@ export default function ApplyJob() {
               <div className="mt-5 grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-5">
                 {/* Current Job Title */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.professionalInformation.fields
                         .currentJobTitle.label
@@ -189,13 +189,13 @@ export default function ApplyJob() {
                       formSections.professionalInformation.fields
                         .currentJobTitle.placeholder
                     }
-                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                    className="w-full rounded-xl border border-slate-200 bg-white px-3 py-2 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                   />
                 </div>
 
                 {/* Total Experience */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.professionalInformation.fields
                         .totalExperience.label
@@ -210,7 +210,7 @@ export default function ApplyJob() {
                           .totalExperience.required
                       }
                       defaultValue=""
-                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-xs text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-sm text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                     >
                       <option value="" disabled hidden>
                         {
@@ -229,7 +229,7 @@ export default function ApplyJob() {
 
                 {/* Relevant Experience */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.professionalInformation.fields
                         .relevantExperience.label
@@ -246,7 +246,7 @@ export default function ApplyJob() {
                           .relevantExperience.required
                       }
                       defaultValue=""
-                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-xs text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-sm text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                     >
                       <option value="" disabled hidden>
                         {
@@ -265,7 +265,7 @@ export default function ApplyJob() {
 
                 {/* Notice Period */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.professionalInformation.fields.noticePeriod
                         .label
@@ -280,7 +280,7 @@ export default function ApplyJob() {
                           .required
                       }
                       defaultValue=""
-                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-xs text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-sm text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                     >
                       <option value="" disabled hidden>
                         {
@@ -302,7 +302,7 @@ export default function ApplyJob() {
             {/* STEP 3: UPLOAD DOCUMENTS */}
             <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6 lg:p-7">
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-xs font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-sm font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
                   {formSections.uploadDocuments.step}
                 </span>
                 <h2 className="text-base font-bold text-[#0d152e] sm:text-lg lg:text-xl">
@@ -310,14 +310,14 @@ export default function ApplyJob() {
                 </h2>
               </div>
               <div className="mt-2 h-[2px] w-8 bg-[#ff541b]" />
-              <p className="mt-3 text-xs text-slate-500 sm:text-sm">
+              <p className="mt-3 text-sm text-slate-500 sm:text-sm">
                 {formSections.uploadDocuments.pretitle}
               </p>
 
               <div className="mt-5 space-y-4 sm:space-y-5">
                 {/* Resume Upload Box */}
                 <div>
-                  <label className="mb-1.5 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1.5 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {formSections.uploadDocuments.fields.resume.label}{" "}
                     {formSections.uploadDocuments.fields.resume.required && (
                       <span className="text-red-500">*</span>
@@ -336,7 +336,7 @@ export default function ApplyJob() {
                       }
                     />
                     <FiUploadCloud className="h-7 w-7 text-[#ff541b] sm:h-8 sm:w-8" />
-                    <p className="mt-2 text-xs font-medium text-[#0d152e] sm:text-sm">
+                    <p className="mt-2 text-sm font-medium text-[#0d152e] sm:text-sm">
                       {resumeFile ? (
                         <span className="font-semibold text-[#ff541b]">
                           {resumeFile.name}
@@ -348,7 +348,7 @@ export default function ApplyJob() {
                         </>
                       )}
                     </p>
-                    <p className="mt-1 text-[10px] text-slate-500 sm:text-xs">
+                    <p className="mt-1 text-[10px] text-slate-500 sm:text-sm">
                       {formSections.uploadDocuments.fields.resume.dragDropText}{" "}
                       <span className="font-semibold text-[#ff541b] underline">
                         {formSections.uploadDocuments.fields.resume.actionText}
@@ -365,7 +365,7 @@ export default function ApplyJob() {
 
                 {/* Cover Letter Upload Box */}
                 <div>
-                  <label className="mb-1.5 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1.5 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {formSections.uploadDocuments.fields.coverLetter.label}
                   </label>
                   <label className="relative flex cursor-pointer flex-col items-center justify-center rounded-2xl border border-dashed border-slate-200 bg-[#fafafa] p-4 text-center transition-all hover:bg-slate-50 sm:p-6">
@@ -378,7 +378,7 @@ export default function ApplyJob() {
                       }
                     />
                     <FiUploadCloud className="h-7 w-7 text-[#ff541b] sm:h-8 sm:w-8" />
-                    <p className="mt-2 text-xs font-medium text-[#0d152e] sm:text-sm">
+                    <p className="mt-2 text-sm font-medium text-[#0d152e] sm:text-sm">
                       {coverLetterFile ? (
                         <span className="font-semibold text-[#ff541b]">
                           {coverLetterFile.name}
@@ -388,7 +388,7 @@ export default function ApplyJob() {
                           .uploadTitle
                       )}
                     </p>
-                    <p className="mt-1 text-[10px] text-slate-500 sm:text-xs">
+                    <p className="mt-1 text-[10px] text-slate-500 sm:text-sm">
                       {
                         formSections.uploadDocuments.fields.coverLetter
                           .dragDropText
@@ -414,7 +414,7 @@ export default function ApplyJob() {
             {/* STEP 4: ADDITIONAL INFORMATION */}
             <div className="rounded-2xl border border-slate-100 bg-white p-4 shadow-sm sm:p-6 lg:p-7">
               <div className="flex items-center gap-3">
-                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-xs font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
+                <span className="flex h-6 w-6 items-center justify-center rounded-full bg-[#ff541b] text-sm font-bold text-white sm:h-7 sm:w-7 sm:text-sm">
                   {formSections.additionalInformation.step}
                 </span>
                 <h2 className="text-base font-bold text-[#0d152e] sm:text-lg lg:text-xl">
@@ -426,7 +426,7 @@ export default function ApplyJob() {
               <div className="mt-5 space-y-4 sm:space-y-5">
                 {/* Why Interested */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.additionalInformation.fields.whyInterested
                         .label
@@ -445,9 +445,9 @@ export default function ApplyJob() {
                         formSections.additionalInformation.fields.whyInterested
                           .placeholder
                       }
-                      className="w-full resize-none rounded-xl border border-slate-200 bg-white p-3 text-xs text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:p-4 sm:text-sm"
+                      className="w-full resize-none rounded-xl border border-slate-200 bg-white p-3 text-sm text-[#0d152e] outline-none transition-all placeholder:text-slate-400 focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:p-4 sm:text-sm"
                     />
-                    <div className="mt-1 text-right text-[10px] text-slate-400 sm:text-xs">
+                    <div className="mt-1 text-right text-[10px] text-slate-400 sm:text-sm">
                       {whyText.length}/
                       {
                         formSections.additionalInformation.fields.whyInterested
@@ -459,7 +459,7 @@ export default function ApplyJob() {
 
                 {/* How did you hear */}
                 <div>
-                  <label className="mb-1 block text-xs font-semibold text-[#0d152e] sm:text-sm">
+                  <label className="mb-1 block text-sm font-semibold text-[#0d152e] sm:text-sm">
                     {
                       formSections.additionalInformation.fields.hearAboutUs
                         .label
@@ -468,7 +468,7 @@ export default function ApplyJob() {
                   <div className="relative">
                     <select
                       defaultValue=""
-                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-xs text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
+                      className="w-full appearance-none rounded-xl border border-slate-200 bg-white px-3 py-2 pr-8 text-sm text-[#0d152e] outline-none transition-all focus:border-[#ff541b] focus:ring-1 focus:ring-[#ff541b] sm:px-4 sm:py-2.5 sm:text-sm"
                     >
                       <option value="" disabled hidden>
                         {
@@ -491,7 +491,7 @@ export default function ApplyJob() {
             <div className="flex flex-col-reverse items-center justify-between gap-3 pt-2 sm:flex-row sm:gap-4">
               <Link
                 href={actions.backButton.href}
-                className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white py-2.5 text-xs font-semibold text-[#0d152e] transition-all hover:bg-slate-50 sm:w-auto sm:px-6 sm:py-3 sm:text-sm"
+                className="flex w-full items-center justify-center gap-2 rounded-xl border border-slate-200 bg-white py-2.5 text-sm font-semibold text-[#0d152e] transition-all hover:bg-slate-50 sm:w-auto sm:px-6 sm:py-3 sm:text-sm"
               >
                 <FiArrowLeft className="text-sm" />
                 <span>{actions.backButton.label}</span>
@@ -499,7 +499,7 @@ export default function ApplyJob() {
 
               <button
                 type="submit"
-                className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#ff541b] py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-[#e0430e] sm:w-auto sm:px-8 sm:py-3 sm:text-sm"
+                className="flex w-full cursor-pointer items-center justify-center gap-2 rounded-xl bg-[#ff541b] py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-[#e0430e] sm:w-auto sm:px-8 sm:py-3 sm:text-sm"
               >
                 <span>{actions.submitButton.label}</span>
                 <FiArrowRight className="text-sm" />
@@ -519,7 +519,7 @@ export default function ApplyJob() {
               </div>
               <div className="mt-2 h-[2px] w-8 bg-[#ff541b]" />
 
-              <div className="mt-4 space-y-3 divide-y divide-slate-100 text-xs sm:text-sm">
+              <div className="mt-4 space-y-3 divide-y divide-slate-100 text-sm sm:text-sm">
                 {sidebar.jobSummary.details.map((item, idx) => (
                   <div
                     key={idx}
@@ -551,7 +551,7 @@ export default function ApplyJob() {
                 {sidebar.tipsBeforeYouApply.tips.map((tip, idx) => (
                   <li
                     key={idx}
-                    className="flex items-start gap-2 text-xs text-slate-600 sm:text-sm"
+                    className="flex items-start gap-2 text-sm text-slate-600 sm:text-sm"
                   >
                     <FiCheck className="mt-0.5 shrink-0 text-amber-600" />
                     <span>{tip}</span>
@@ -569,7 +569,7 @@ export default function ApplyJob() {
                 </h3>
               </div>
               <div className="mt-2 h-[2px] w-8 bg-blue-500" />
-              <p className="mt-3 text-xs leading-relaxed text-slate-600 sm:text-sm">
+              <p className="mt-3 text-sm leading-relaxed text-slate-600 sm:text-sm">
                 {sidebar.equalOpportunityEmployer.description}
               </p>
             </div>
@@ -582,15 +582,15 @@ export default function ApplyJob() {
               <h4 className="mt-3 text-sm font-bold text-[#0d152e] sm:text-base">
                 {sidebar.needHelp.title}
               </h4>
-              <p className="mt-1 text-xs text-slate-500 sm:text-sm">
+              <p className="mt-1 text-sm text-slate-500 sm:text-sm">
                 {sidebar.needHelp.description}
               </p>
               <a
                 href={sidebar.needHelp.button.href}
-                className="mt-4 inline-flex items-center gap-2 rounded-xl border border-[#ff541b] bg-white px-4 py-2 text-xs font-semibold text-[#ff541b] transition-all hover:bg-[#ff541b] hover:text-white sm:text-sm"
+                className="mt-4 inline-flex items-center gap-2 rounded-xl border border-[#ff541b] bg-white px-4 py-2 text-sm font-semibold text-[#ff541b] transition-all hover:bg-[#ff541b] hover:text-white sm:text-sm"
               >
                 <span>{sidebar.needHelp.button.label}</span>
-                <FiArrowRight className="text-xs" />
+                <FiArrowRight className="text-sm" />
               </a>
             </div>
           </div>

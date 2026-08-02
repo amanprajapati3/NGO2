@@ -55,7 +55,7 @@ export default function Career({ data }: CareerPageProps) {
 
                 {/* <div className="flex  gap-2">
                     <div className="bg-orange-500 mt-3 h-1 w-[80px]"></div>
-                  <span className="mt-1 text-xs text-[#ff541b]">
+                  <span className="mt-1 text-sm text-[#ff541b]">
                     <FiHeart className="inline fill-[#ff541b]" size={20} />
                   </span>
                   <div className="bg-orange-500 mt-3 h-1 w-[80px]"></div>
@@ -63,7 +63,7 @@ export default function Career({ data }: CareerPageProps) {
               </h2>
             </div>
 
-            <p className="mt-3 text-sm font-medium text-[#64748b] sm:text-base">
+            <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
               {description}
             </p>
           </div>
@@ -85,7 +85,7 @@ export default function Career({ data }: CareerPageProps) {
                     <h3 className="text-lg font-bold text-[#0d152e] transition-colors group-hover:text-[#ff541b]">
                       {job.title}
                     </h3>
-                    <p className="mt-1 text-xs leading-relaxed text-[#64748b] line-clamp-2">
+                    <p className="mt-1 text-sm leading-relaxed text-[#64748b] line-clamp-2">
                       {job.description}
                     </p>
                   </div>
@@ -102,7 +102,7 @@ export default function Career({ data }: CareerPageProps) {
                       <p className="text-[11px] font-medium text-[#94a3b8]">
                         Location
                       </p>
-                      <p className="text-xs font-bold text-[#0d152e]">
+                      <p className="text-sm font-bold text-[#0d152e]">
                         {job.location}
                       </p>
                     </div>
@@ -117,7 +117,7 @@ export default function Career({ data }: CareerPageProps) {
                       <p className="text-[11px] font-medium text-[#94a3b8]">
                         Job Type
                       </p>
-                      <p className="text-xs font-bold text-[#0d152e]">
+                      <p className="text-sm font-bold text-[#0d152e]">
                         {job.employmentType}
                       </p>
                     </div>
@@ -128,7 +128,7 @@ export default function Career({ data }: CareerPageProps) {
                 <div className="shrink-0">
                   <Link
                     href={job.href}
-                    className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-[#ff541b] px-5 py-2.5 text-xs font-bold text-[#ff541b] transition-all duration-300 hover:bg-[#ff541b] hover:text-white md:w-auto"
+                    className="inline-flex w-full items-center justify-center gap-2 rounded-lg border border-[#ff541b] px-5 py-2.5 text-sm font-bold text-[#ff541b] transition-all duration-300 hover:bg-[#ff541b] hover:text-white md:w-auto"
                   >
                     <span>{job.label}</span>
                     <FiArrowRight size={14} />
@@ -144,7 +144,7 @@ export default function Career({ data }: CareerPageProps) {
               <button
                 type="button"
                 onClick={() => setShowAllJobs(!showAllJobs)}
-                className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-white px-6 py-3 text-xs font-bold text-[#ff541b] shadow-sm border border-slate-100 transition-all duration-300 hover:bg-[#fff0eb] hover:shadow-md"
+                className="inline-flex items-center gap-2 cursor-pointer rounded-xl bg-white px-6 py-3 text-sm font-bold text-[#ff541b] shadow-sm border border-slate-100 transition-all duration-300 hover:bg-[#fff0eb] hover:shadow-md"
               >
                 <span>
                   {showAllJobs ? "View Less Positions" : "View More Positions"}
@@ -197,7 +197,7 @@ export default function Career({ data }: CareerPageProps) {
             {cta.title}
           </h2>
 
-          <p className="mt-2 text-xs leading-relaxed text-[#525b70] sm:text-sm">
+          <p className="mt-2 text-sm leading-relaxed text-[#525b70] sm:text-sm">
             {cta.description}
           </p>
         </div>
@@ -207,7 +207,7 @@ export default function Career({ data }: CareerPageProps) {
       <div className="shrink-0">
         <Link
           href={cta.button.href}
-          className="group inline-flex items-center gap-2.5 rounded-xl bg-[#ff541b] px-6 py-3.5 text-xs font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e] hover:shadow-lg sm:text-sm"
+          className="group inline-flex items-center gap-2.5 rounded-xl bg-[#ff541b] px-6 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e] hover:shadow-lg sm:text-sm"
         >
           <span>{cta.button.label}</span>
           <FiArrowRight className="text-base transition-transform duration-300 group-hover:translate-x-1" />

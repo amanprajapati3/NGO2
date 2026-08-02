@@ -86,7 +86,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
   const { badge, heading, description, items, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:pt-12 pt-5">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:pt-12 pt-10">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
@@ -113,7 +113,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Pill */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 pt-1 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 pt-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge.label}</span>
           </div>
@@ -124,7 +124,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
           </h2>
 
           {/* Subheading Divider Line */}
-          {/* <div className="md:mt-3 mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="md:mt-3 mt-1 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span>Making Impact Every Day</span>
@@ -132,7 +132,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
           </div> */}
 
           {/* Description Paragraph */}
-          <p className="mt-2 max-w-2xl text-xs  text-slate-800 sm:text-sm">
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
             {description}
           </p>
         </div>
@@ -185,7 +185,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                     </h3>
 
                     {/* Card Description */}
-                    <p className="mt-1 text-xs leading-relaxed text-slate-800">
+                    <p className="mt-1 text-sm leading-relaxed text-slate-800">
                       {item.description}
                     </p>
                   </div>
@@ -194,7 +194,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                   <div className="mt-0 pt-2">
                     <Link
                       href={item.button.href}
-                      className={`inline-flex items-center gap-1.5 text-xs font-bold transition-all hover:gap-2.5 ${primaryTextColor}`}
+                      className={`inline-flex items-center gap-1.5 text-sm font-bold transition-all hover:gap-2.5 ${primaryTextColor}`}
                     >
                       <span>{item.button.label}</span>
                       <FiArrowRight className="text-sm" />
@@ -288,7 +288,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
 
             <div className="relative z-10 flex flex-col items-center justify-between md:gap-6 gap-2 sm:flex-row">
               {/* Left Side: Avatar + Text */}
-              <div className="flex items-center gap-5 text-center sm:text-left">
+              <div className="flex items-center gap-5 text-center flex-col sm:flex-row sm:text-left">
                 {/* Double Ring Heart Avatar */}
                 <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-orange-100/70 p-2 ring-8 ring-orange-100/30">
                   
@@ -299,7 +299,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                   <h3 className="text-lg font-extrabold text-slate-900 sm:text-xl">
                     {cta.title}
                   </h3>
-                  <p className="mt-1 max-w-md text-xs text-slate-600 sm:text-sm">
+                  <p className="mt-1 max-w-md text-sm text-slate-600 sm:text-sm">
                     {cta.description}
                   </p>
                 </div>
@@ -308,7 +308,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
               {/* Right Side: Donate Button */}
               <Link
                 href={cta.button.href}
-                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#FF4500] px-7 py-3 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-[#e03d00] hover:shadow-lg"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#FF4500] px-7 py-3 text-sm font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-[#e03d00] hover:shadow-lg"
               >
                 <span>{cta.button.label}</span>
                 <FiArrowRight className="text-sm" />

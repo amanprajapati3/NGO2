@@ -45,7 +45,7 @@ export default function ServicesPage({ data }: ServicesPageProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="text-center">
           {/* Top Divider & Tag */}
-          <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
+          <div className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
             {/* <span className="h-[1px] w-6 bg-orange-400 sm:w-10" /> */}
                         <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{header.subTag}</span>
@@ -65,12 +65,12 @@ export default function ServicesPage({ data }: ServicesPageProps) {
           </h1>
 
           {/* Description */}
-          <p className="mx-auto mt-3 max-w-2xl text-xs leading-relaxed text-slate-600 sm:mt-4 sm:text-base">
+          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {header.description}
           </p>
 
           {/* Section Tag */}
-          <div className="mt-4 flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-orange-500 sm:mt-6 sm:text-xs">
+          <div className="mt-4 flex items-center justify-center gap-2 text-[10px] font-bold uppercase tracking-widest text-orange-500 sm:mt-6 sm:text-sm">
             <span className="h-[1px] w-4 bg-orange-500 sm:w-8" />
 
             <span className="h-1.5 w-1.5 rounded-full bg-orange-500" />
@@ -91,7 +91,7 @@ export default function ServicesPage({ data }: ServicesPageProps) {
               className="group relative flex flex-col overflow-hidden rounded-2xl border border-slate-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
             >
               {/* Image */}
-              <div className="relative h-44 w-full overflow-hidden bg-slate-100 sm:h-52">
+              <div className="relative h-44 w-full bg-slate-100 sm:h-52">
                 <Image
                   src={item.image}
                   alt={item.title}
@@ -114,7 +114,7 @@ export default function ServicesPage({ data }: ServicesPageProps) {
                   {item.title}
                 </h3>
 
-                <p className="mt-2 flex-1 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                <p className="mt-2 flex-1 text-sm leading-relaxed text-slate-500 sm:text-sm">
                   {item.description}
                 </p>
 
@@ -122,11 +122,11 @@ export default function ServicesPage({ data }: ServicesPageProps) {
                 <div className="mt-4 sm:mt-6">
                   <Link
                     href={item.link}
-                    className="inline-flex items-center gap-1.5 text-xs font-bold text-orange-500 transition-colors hover:text-orange-600 sm:text-sm"
+                    className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-500 transition-colors hover:text-orange-600 sm:text-sm"
                   >
                     <span>{item.label}</span>
 
-                    <FiArrowRight className="text-xs transition-transform group-hover:translate-x-1 sm:text-sm" />
+                    <FiArrowRight className="text-sm transition-transform group-hover:translate-x-1 sm:text-sm" />
                   </Link>
                 </div>
               </div>
@@ -160,18 +160,18 @@ export default function ServicesPage({ data }: ServicesPageProps) {
                   </span>
                 </h2>
 
-                <p className="max-w-xl text-xs leading-relaxed text-slate-600 sm:text-sm lg:text-base">
+                <p className="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-sm lg:text-base">
                   {callToAction.description}
                 </p>
 
                 <div className="pt-2">
                   <Link
                     href={callToAction.buttonLink}
-                    className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-orange-600 sm:px-7 sm:py-3 sm:text-sm"
+                    className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-orange-600 sm:px-7 sm:py-3 sm:text-sm"
                   >
                     <span>{callToAction.buttonText}</span>
 
-                    <FiArrowRight className="text-xs sm:text-sm" />
+                    <FiArrowRight className="text-sm sm:text-sm" />
                   </Link>
                 </div>
               </div>

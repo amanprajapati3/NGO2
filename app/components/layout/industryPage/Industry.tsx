@@ -232,7 +232,7 @@ export default function Industry({ data }: IndustryProps) {
           <div className="inline-flex items-center gap-3">
            <HiOutlineHeart className="text-base text-[#FF4500]" />
 
-            <span className="text-xs font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
+            <span className="text-sm font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
               {header.topBadge}
             </span>
           </div>
@@ -246,14 +246,14 @@ export default function Industry({ data }: IndustryProps) {
             </span>
           </h2>
 
-          <p className="mx-auto mt-4 max-w-2xl text-xs leading-relaxed text-slate-600 sm:text-sm">
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
             {header.pretitle}
           </p>
 
           <div className="mt-8 inline-flex items-center gap-2">
             <span className="h-2 w-2 rounded-full bg-orange-600" />
 
-            <span className="text-[11px] font-bold uppercase tracking-widest text-orange-500 sm:text-xs">
+            <span className="text-[11px] font-bold uppercase tracking-widest text-orange-500 sm:text-sm">
               {header.sectionTag}
             </span>
 
@@ -291,7 +291,7 @@ export default function Industry({ data }: IndustryProps) {
                     {sector.title}
                   </h3>
 
-                  <p className="mt-2 line-clamp-3 text-xs leading-relaxed text-slate-500">
+                  <p className="mt-2 line-clamp-3 text-sm leading-relaxed text-slate-500">
                     {sector.description}
                   </p>
                 </div>
@@ -301,7 +301,7 @@ export default function Industry({ data }: IndustryProps) {
               <div className="pb-5 text-center">
                 <a
                   href={sector.cta.url}
-                  className="inline-flex items-center gap-1.5 text-xs font-bold text-orange-500 transition-colors hover:text-orange-700"
+                  className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-500 transition-colors hover:text-orange-700"
                 >
                   {sector.cta.text}
 
@@ -334,14 +334,14 @@ export default function Industry({ data }: IndustryProps) {
 
               <div className="mt-2 h-[3px] w-12 bg-orange-500" />
 
-              <p className="mt-4 text-xs leading-relaxed text-slate-600 sm:text-sm">
+              <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-sm">
                 {partnerBanner.description}
               </p>
 
               <div className="mt-6">
                 <a
                   href={partnerBanner.cta.url}
-                  className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-2.5 text-xs font-bold text-white shadow-md transition-all hover:bg-orange-700 hover:shadow-lg"
+                  className="inline-flex items-center gap-2 rounded-full bg-orange-500 px-6 py-2.5 text-sm font-bold text-white shadow-md transition-all hover:bg-orange-700 hover:shadow-lg"
                 >
                   {partnerBanner.cta.text}
 
@@ -367,7 +367,7 @@ export default function Industry({ data }: IndustryProps) {
                     {metric.value}
                   </span>
 
-                  <span className="mt-1 text-xs font-medium text-slate-600">
+                  <span className="mt-1 text-sm font-medium text-slate-600">
                     {metric.label}
                   </span>
                 </div>

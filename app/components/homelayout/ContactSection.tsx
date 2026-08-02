@@ -51,7 +51,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
         <div className="mb-6 flex flex-col items-center text-center sm:mb-8">
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full  px-3 py-1.5 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
+          <div className="inline-flex items-center gap-2 rounded-full  px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
             <HiOutlineHeart className="text-base sm:text-lg" />
             {badge.label}
           </div>
@@ -68,7 +68,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
           {/* <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" /> */}
 
           {/* Description */}
-          <p className="mt-2 max-w-2xl md:text-md text-sm  text-slate-900 sm:text-base">
+          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {description}
           </p>
         </div>
@@ -111,7 +111,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                       {office.address.label}
                     </h4>
 
-                    <p className="mt-1 text-xs leading-5 text-white/80 sm:text-sm sm:leading-6">
+                    <p className="mt-1 text-sm leading-5 text-white/80 sm:text-sm sm:leading-6">
                       {office.address.value}
                     </p>
                   </div>
@@ -128,7 +128,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                       {office.phone.label}
                     </h4>
 
-                    <p className="mt-1 break-words text-xs text-white/80 sm:text-sm">
+                    <p className="mt-1 break-words text-sm text-white/80 sm:text-sm">
                       {office.phone.value}
                     </p>
                   </div>
@@ -145,7 +145,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                       {office.email.label}
                     </h4>
 
-                    <p className="mt-1 break-words text-xs text-white/80 sm:text-sm">
+                    <p className="mt-1 break-words text-sm text-white/80 sm:text-sm">
                       {office.email.value}
                     </p>
                   </div>
@@ -162,7 +162,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
                       {office.hours.label}
                     </h4>
 
-                    <p className="mt-1 text-xs leading-5 text-white/80 sm:text-sm sm:leading-6">
+                    <p className="mt-1 text-sm leading-5 text-white/80 sm:text-sm sm:leading-6">
                       {office.hours.value}
                     </p>
                   </div>

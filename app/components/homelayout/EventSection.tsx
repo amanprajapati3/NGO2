@@ -84,7 +84,7 @@ export default function EventSection({ data }: EventsSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* pretitle Line */}
-          <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge?.label || "Upcoming Events"}</span>
           </div>
@@ -98,15 +98,15 @@ export default function EventSection({ data }: EventsSectionProps) {
           </h2>
 
           {/* Subheading Heart Divider */}
-          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-12 bg-orange-300" />
-            <FiHeart className="text-xs text-[#FF4500] fill-[#FF4500]" />
+            <FiHeart className="text-sm text-[#FF4500] fill-[#FF4500]" />
             <span className="h-[1px] w-12 bg-orange-300" />
           </div> */}
 
           {/* Optional Description Paragraph */}
           {description && (
-            <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
               {description}
             </p>
           )}
@@ -147,15 +147,15 @@ export default function EventSection({ data }: EventsSectionProps) {
                   <div className="mb-3 h-0.5 w-10 bg-[#FF4500]" />
 
                   {/* Title */}
-                  <h3 className="font-serif text-xl font-bold leading-snug text-white sm:text-2xl">
-                    {event.title}
+                  <h3 className="font-serif text-xl hover:text-orange-500 font-bold leading-snug text-white sm:text-2xl">
+                   <a href={event.href}>{event.title}</a> 
                   </h3>
 
                   {/* Action Button */}
                   <div className="mt-6">
                     <Link
-                      href={event.href || "#"}
-                      className={`inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-xs font-bold text-white shadow-md transition-all duration-300 hover:shadow-lg ${btnBg}`}
+                      href={event.button.href || "#"}
+                      className={`inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all duration-300 hover:shadow-lg ${btnBg}`}
                     >
                       <span>{event.button?.label || "Join Now"}</span>
                       <FiArrowRight className="text-sm transition-transform duration-300 group-hover:translate-x-1" />

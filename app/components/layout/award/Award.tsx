@@ -219,7 +219,7 @@ export default function Award({ data }: AwardsDataProps) {
             <div className="flex justify-center gap-1">
               <HiOutlineHeart className="text-base text-[#FF4500]" />
 
-              <span className="text-xs sm:text-sm font-bold uppercase tracking-widest text-[#EA580C]">
+              <span className="text-sm sm:text-sm font-bold uppercase tracking-widest text-[#EA580C]">
                 {header.topBadge}
               </span>
             </div>
@@ -255,7 +255,7 @@ export default function Award({ data }: AwardsDataProps) {
             </div> */}
 
             {/* pretitle */}
-            <p className="mt-0 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-lg mx-auto">
+            <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed   text-slate-500 sm:mt-2 sm:text-base">
               {header.pretitle}
             </p>
           </div>
@@ -277,7 +277,7 @@ export default function Award({ data }: AwardsDataProps) {
                   {stat.value}
                 </span>
 
-                <span className="mt-1 text-xs font-semibold text-slate-700">
+                <span className="mt-1 text-sm font-semibold text-slate-700">
                   {stat.label}
                 </span>
 
@@ -290,18 +290,14 @@ export default function Award({ data }: AwardsDataProps) {
           <div className="mt-16">
             <div className="text-center mb-10">
               <div className="inline-flex items-center gap-3">
-                
-
-                <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+                <span className="text-sm font-bold uppercase tracking-widest text-[#EA580C]">
                   {awardsSection.topBadge}
                 </span>
-
               </div>
 
               <h3 className="mt-0 text-2xl sm:text-4xl font-serif font-bold text-slate-900">
                 {awardsSection.title}
               </h3>
-
             </div>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -323,13 +319,13 @@ export default function Award({ data }: AwardsDataProps) {
                       {award.title}
                     </h4>
 
-                    <p className="mt-2 text-xs text-slate-500 leading-relaxed">
+                    <p className="mt-2 text-sm text-slate-500 leading-relaxed">
                       {award.description}
                     </p>
                   </div>
 
                   <div className="my-3 pt-3 border-t border-slate-100">
-                    <span className="text-xs font-bold text-slate-400">
+                    <span className="text-sm font-bold text-slate-400">
                       {award.year}
                     </span>
                   </div>
@@ -339,24 +335,29 @@ export default function Award({ data }: AwardsDataProps) {
           </div>
 
           {/* ================= SUPPORT BANNER ================= */}
-          <div className="mt-16 sm:mt-20 relative overflow-hidden rounded-2xl bg-[#FFF8F6] border border-orange-100/80 shadow-sm">
+          <div className="mt-12 sm:mt-20 relative overflow-hidden rounded-2xl bg-[#FFF8F6] border border-orange-100/80 shadow-sm">
             <div className="grid grid-cols-1 lg:grid-cols-[55%_45%] min-h-[280px]">
               {/* ================= LEFT CONTENT ================= */}
-              <div className="relative z-20 flex items-center px-6 py-8 sm:px-10 sm:py-10 lg:px-12 lg:py-12">
-                <div className="flex flex-col sm:flex-row items-start gap-5 sm:gap-6 w-full">
-                  {/* Heart / Hands Icon – matches reference (no circle) */}
-                  <div className="w-16 md:w-28 bg-white rounded-full">
-                    <img src="/heartImage.png" alt="" />
+              <div className="relative z-20 flex items-center justify-center lg:justify-start px-3 py-8 sm:px-10 sm:py-10 lg:px-12 lg:py-12">
+                <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start lg:items-start gap-5 sm:gap-6 w-full text-center lg:text-left">
+                  {/* Heart / Hands Icon */}
+                  <div className="w-16 md:w-28 shrink-0 bg-white rounded-full">
+                    <img
+                      src="/heartImage.png"
+                      alt=""
+                      className="w-full h-auto"
+                    />
                   </div>
 
                   {/* Text */}
-                  <div className="min-w-0">
+                  <div className="min-w-0 flex flex-col items-center lg:items-start">
                     {/* Badge */}
                     <div className="inline-block">
-                      <span className="text-[11px] sm:text-xs font-bold uppercase tracking-[0.08em] text-orange-500">
+                      <span className="text-[11px] sm:text-sm font-bold uppercase tracking-[0.08em] text-orange-500">
                         {supportBanner.topBadge}
                       </span>
-                      <div className="mt-1.5 w-9 h-[2px] bg-orange-400 rounded-full" />
+
+                      <div className="mt-1.5 w-9 h-[2px] bg-orange-400 rounded-full mx-auto lg:mx-0" />
                     </div>
 
                     {/* Title */}
@@ -369,7 +370,7 @@ export default function Award({ data }: AwardsDataProps) {
                     </h3>
 
                     {/* Description */}
-                    <p className="mt-3.5 max-w-[340px] text-[12px] sm:text-[13px] text-slate-600 leading-relaxed">
+                    <p className="mt-3.5 max-w-[340px] :text-[13px] text-slate-600 leading-relaxed">
                       {supportBanner.description}
                     </p>
 
@@ -377,9 +378,10 @@ export default function Award({ data }: AwardsDataProps) {
                     <div className="mt-6">
                       <a
                         href={supportBanner.cta.url}
-                        className="inline-flex items-center gap-2.5 rounded-full bg-orange-500 px-6 py-2.5 text-[12px] sm:text-[13px] font-semibold text-white shadow-sm transition-all duration-300 hover:bg-orange-600 hover:shadow-md"
+                        className="inline-flex items-center gap-2.5 rounded-full bg-orange-500 px-6 py-2.5 text-[13px] font-semibold text-white shadow-sm transition-all duration-300 hover:bg-orange-600 hover:shadow-md"
                       >
                         {supportBanner.cta.text}
+
                         <span className="text-base leading-none translate-y-px">
                           →
                         </span>
@@ -391,18 +393,17 @@ export default function Award({ data }: AwardsDataProps) {
 
               {/* ================= RIGHT IMAGE ================= */}
               <div className="relative h-[240px] sm:h-[300px] lg:h-auto min-h-[280px] overflow-hidden">
-                {/* Trophy Image */}
                 <img
                   src={supportBanner.trophyImage.src}
                   alt={supportBanner.trophyImage.alt}
-                  className="absolute inset-0 w-full rounded-l-full  h-full object-cover object-center"
+                  className="absolute inset-0 w-full rounded-l-full h-full object-cover object-center"
                 />
               </div>
             </div>
           </div>
           {/* ================= 6. TRANSPARENCY BANNER ================= */}
           <div className="mt-8 rounded-2xl bg-[#C2410C] text-white p-5 sm:p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
-            <div className="flex items-center gap-4 text-center md:text-left">
+            <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
               <div className="w-12 h-12 rounded-full bg-white/10 flex items-center justify-center shrink-0">
                 <svg
                   className="w-6 h-6 text-white"
@@ -420,11 +421,11 @@ export default function Award({ data }: AwardsDataProps) {
               </div>
 
               <div>
-                <h4 className="font-semibold text-sm sm:text-base">
+                <h4 className="font-semibold text-md sm:text-base">
                   {transparencyBanner.title}
                 </h4>
 
-                <p className="text-xs text-orange-100 mt-0.5">
+                <p className="text-sm text-orange-100 mt-0.5">
                   {transparencyBanner.pretitle}
                 </p>
               </div>
@@ -432,7 +433,7 @@ export default function Award({ data }: AwardsDataProps) {
 
             <a
               href={transparencyBanner.cta.url}
-              className="px-5 py-2.5 rounded-full border border-white/80 text-white hover:bg-white hover:text-[#C2410C] transition-all text-xs font-bold whitespace-nowrap"
+              className="px-5 py-2.5 rounded-full border border-white/80 text-white hover:bg-white hover:text-[#C2410C] transition-all text-sm font-bold whitespace-nowrap"
             >
               {transparencyBanner.cta.text} &rarr;
             </a>

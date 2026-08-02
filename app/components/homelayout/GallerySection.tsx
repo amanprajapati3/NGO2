@@ -55,7 +55,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Label */}
-          <div className="flex items-center gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
+          <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             
             <span>{badge?.label || "Our Gallery"}</span>
@@ -71,14 +71,14 @@ export default function GallerySection({ data }: GallerySectionProps) {
           </h2>
 
           {/* Subheading Heart Line Divider */}
-          {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-2 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-10 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span className="h-[1px] w-10 bg-orange-300" />
           </div> */}
 
           {/* Description Paragraph */}
-          <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {description}
           </p>
 
@@ -91,7 +91,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 <div key={category.value} className="flex items-center">
                   <button
                     onClick={() => setActiveCategory(category.value)}
-                    className={`rounded-full px-5 py-2 text-xs font-bold border transition-all duration-300 cursor-pointer ${
+                    className={`rounded-full px-5 py-2 text-sm font-bold border transition-all duration-300 cursor-pointer ${
                       isActive
                         ? "bg-[#FF4500] border-[#FF4500] text-white shadow-md shadow-orange-500/20"
                         : "border-gray-200 bg-white text-slate-600 hover:border-[#FF4500] hover:text-[#FF4500]"
@@ -147,7 +147,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                     {/* Hover Caption Title */}
                     {item.title && (
                       <div className="absolute bottom-4 left-4 right-4 z-10 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                        <p className="text-xs font-bold text-white drop-shadow sm:text-sm">
+                        <p className="text-sm font-bold text-white drop-shadow sm:text-sm">
                           {item.title}
                         </p>
                       </div>
@@ -164,7 +164,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
           <div className="mt-12">
             <div className="flex text-center mb-10 justify-center items-center">
               <div className="flex flex-col items-center text-center">
-                <div className="flex items-center  gap-3 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
+                <div className="flex items-center  gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
                   {/* <span className="h-[1px] w-8 bg-orange-200 " /> */}
                    <HiOutlineHeart className="text-base text-[#FF4500]" />
 
@@ -180,14 +180,14 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 </h2>
 
                 {/* Subheading Heart Line Divider */}
-                {/* <div className="mt-2 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+                {/* <div className="mt-2 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
                   <span className="h-[1px] w-10 bg-orange-300" />
                   <FiHeart className="text-[10px] text-[#FF4500]" />
                   <span className="h-[1px] w-10 bg-orange-300" />
                 </div> */}
 
                 {/* Description Paragraph */}
-                <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+                <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
                   {description}
                 </p>
               </div>
@@ -230,7 +230,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                   <div className="flex flex-1 flex-col justify-between p-5">
                     <div>
                       {/* Tag Pill */}
-                      <span className="inline-block rounded-full bg-[#f95738] px-2.5 py-0.5 text-[10px] font-extrabold uppercase tracking-wide text-white">
+                      <span className="inline-block rounded-full bg-[#f95738] px-2.5 py-0.5 text-[13px] font-extrabold uppercase tracking-wide text-white">
                         {item.categoryLabel || item.category}
                       </span>
 
@@ -240,7 +240,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                       </h3>
 
                       {/* Description */}
-                      <p className="mt-1.5 text-xs text-slate-500 line-clamp-2 leading-relaxed">
+                      <p className="mt-1.5 text-sm text-slate-500 line-clamp-2 leading-relaxed">
                         {item.description}
                       </p>
                     </div>

@@ -93,7 +93,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
       {/* ================= MAIN CONTENT ================= */}
       <section className="relative py-12 ">
-        <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
           {/* ================= 2. TOP HEADER ================= */}
           <div className="flex flex-col items-center text-center">
@@ -107,7 +107,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
              <HiOutlineHeart className="text-base text-[#FF4500]" />
             
-            <span className=" text-xs font-bold uppercase tracking-widest text-orange-400">
+            <span className=" text-sm font-bold uppercase tracking-widest text-orange-400">
               {data.header.badge}
             </span>
             </div>
@@ -121,11 +121,11 @@ export default function DonatePage({ data }: DonateNowProps) {
 
             {/* <div className="mt-3 flex items-center justify-center gap-3">
               <span className="h-[1px] w-10 bg-orange-300" />
-              <FaRegHeart className="text-xs text-orange-5--" />
+              <FaRegHeart className="text-sm text-orange-5--" />
               <span className="h-[1px] w-10 bg-orange-300" />
             </div> */}
 
-            <p className="mt-3 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+            <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
               {data.header.description}
             </p>
           </div>
@@ -135,7 +135,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
             {/* ------------ WHY DONATE ------------ */}
             <div className="flex flex-col justify-between rounded-3xl border border-red-100/50 bg-gradient-to-b from-red-50/60 via-pink-50/30 to-red-50/70 p-0 lg:col-span-4">
-              <div className="p-5">
+              <div className="sm:p-5 p-3">
                 <h3 className="font-serif text-2xl font-bold text-[#0F172A]">
                   {data.whyDonate.title.line1}{" "}
                   <span className="text-orange-400">
@@ -145,7 +145,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
                 <div className="mt-2 h-[3px] w-10 bg-orange-500" />
 
-                <p className="mt-4 text-xs leading-relaxed text-slate-600 sm:text-sm">
+                <p className="mt-4 text-sm leading-relaxed text-slate-600 sm:text-sm">
                   {data.whyDonate.description}
                 </p>
 
@@ -164,7 +164,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                           {feature.title}
                         </h4>
 
-                        <p className="mt-1 text-xs leading-relaxed text-slate-500">
+                        <p className="mt-1 text-sm leading-relaxed text-slate-500">
                           {feature.description}
                         </p>
                       </div>
@@ -187,7 +187,7 @@ export default function DonatePage({ data }: DonateNowProps) {
             </div>
 
             {/* ------------ DONATION FORM ------------ */}
-            <div className="rounded-3xl border border-gray-100 bg-white p-6 shadow-sm sm:p-10 lg:col-span-8">
+            <div className="rounded-3xl border border-gray-100 bg-white p-3 shadow-sm sm:p-10 lg:col-span-8">
               <form
                 onSubmit={(e) => e.preventDefault()}
                 className="space-y-8"
@@ -268,7 +268,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
                     {/* Full Name */}
                     <div>
-                      <label className="block text-xs font-bold text-[#0F172A]">
+                      <label className="block text-sm font-bold text-[#0F172A]">
                         {data.donationForm.donorInfoSection.fields.fullName.label}{" "}
                         <span className="text-orange-500">*</span>
                       </label>
@@ -285,14 +285,14 @@ export default function DonatePage({ data }: DonateNowProps) {
                           }
                           value={formData.fullName}
                           onChange={handleInputChange}
-                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-xs font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
+                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-sm font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
                         />
                       </div>
                     </div>
 
                     {/* Email */}
                     <div>
-                      <label className="block text-xs font-bold text-[#0F172A]">
+                      <label className="block text-sm font-bold text-[#0F172A]">
                         {data.donationForm.donorInfoSection.fields.email.label}{" "}
                         <span className="text-orange-500">*</span>
                       </label>
@@ -309,14 +309,14 @@ export default function DonatePage({ data }: DonateNowProps) {
                           }
                           value={formData.email}
                           onChange={handleInputChange}
-                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-xs font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:orange-500"
+                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-sm font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:orange-500"
                         />
                       </div>
                     </div>
 
                     {/* Phone */}
                     <div>
-                      <label className="block text-xs font-bold text-[#0F172A]">
+                      <label className="block text-sm font-bold text-[#0F172A]">
                         {data.donationForm.donorInfoSection.fields.phone.label}{" "}
                         <span className="text-orange-500">*</span>
                       </label>
@@ -333,14 +333,14 @@ export default function DonatePage({ data }: DonateNowProps) {
                           }
                           value={formData.phone}
                           onChange={handleInputChange}
-                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-xs font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
+                          className="w-full rounded-xl border border-gray-200 py-3 pl-10 pr-4 text-sm font-medium text-slate-800 outline-none transition-all placeholder:text-slate-400 focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
                         />
                       </div>
                     </div>
 
                     {/* Country */}
                     <div>
-                      <label className="block text-xs font-bold text-[#0F172A]">
+                      <label className="block text-sm font-bold text-[#0F172A]">
                         {data.donationForm.donorInfoSection.fields.country.label}{" "}
                         <span className="text-orange-500">*</span>
                       </label>
@@ -353,7 +353,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                           required
                           value={formData.country}
                           onChange={handleInputChange}
-                          className="w-full appearance-none rounded-xl border border-gray-200 bg-white py-3 pl-10 pr-8 text-xs font-medium text-slate-800 outline-none transition-all focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
+                          className="w-full appearance-none rounded-xl border border-gray-200 bg-white py-3 pl-10 pr-8 text-sm font-medium text-slate-800 outline-none transition-all focus:border-orange-400 focus:ring-1 focus:ring-orange-500"
                         >
                           <option value="" disabled>
                             {
@@ -369,7 +369,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                           <option value="AU">Australia</option>
                         </select>
 
-                        <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-xs text-slate-400">
+                        <div className="pointer-events-none absolute right-3.5 top-1/2 -translate-y-1/2 text-sm text-slate-400">
                           ▼
                         </div>
                       </div>
@@ -406,7 +406,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                           >
                             <div className="mb-2 flex h-8 items-center justify-center">
                               {method.id === "upi" && (
-                                <span className="text-xs font-black italic tracking-wider text-slate-800">
+                                <span className="text-sm font-black italic tracking-wider text-slate-800">
                                   UPI
                                 </span>
                               )}
@@ -424,7 +424,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                               )}
                             </div>
 
-                            <span className="text-xs font-bold text-[#0F172A]">
+                            <span className="text-sm font-bold text-[#0F172A]">
                               {method.title}
                             </span>
 
@@ -450,7 +450,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                       className="mt-0.5 h-4 w-4 rounded border-gray-300 text-orange-400 focus:ring-orange-500"
                     />
 
-                    <span className="text-xs leading-normal text-slate-600">
+                    <span className="text-sm leading-normal text-slate-600">
                       {data.donationForm.newsletterConsent.label}
                     </span>
                   </label>
@@ -465,7 +465,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                     </span>
                   </button>
 
-                  <div className="flex items-center justify-center gap-2 text-xs font-medium text-slate-500">
+                  <div className="flex items-center justify-center gap-2 text-sm font-medium text-slate-500">
                     <FiLock className="text-slate-600" />
                     <span>
                       {data.donationForm.securityNote.text}
@@ -477,12 +477,12 @@ export default function DonatePage({ data }: DonateNowProps) {
           </div>
 
           {/* ================= 4. IMPACT STATS ================= */}
-          <div className="mt-16 rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
+          <div className="md:mt-16 mt-8 rounded-3xl border border-gray-100 bg-white p-8 shadow-sm">
             <div className="grid grid-cols-1 divide-y divide-gray-100 sm:grid-cols-2 sm:divide-y-0 lg:grid-cols-4 lg:divide-x lg:divide-gray-100">
               {data.impactStats.map((stat, idx) => (
                 <div
                   key={stat.label}
-                  className="flex flex-col items-center justify-center p-6 text-center"
+                  className="flex flex-col items-center justify-center sm:p-6 p-3 text-center"
                 >
                   <div className="flex h-16 w-16 items-center justify-center rounded-full bg-orange-50">
                     {statIcons[idx % statIcons.length]}
@@ -496,7 +496,7 @@ export default function DonatePage({ data }: DonateNowProps) {
                     {stat.label}
                   </p>
 
-                  <p className="mt-0.5 text-xs text-slate-400">
+                  <p className="mt-0.5 text-sm text-slate-400">
                     {stat.description}
                   </p>
                 </div>

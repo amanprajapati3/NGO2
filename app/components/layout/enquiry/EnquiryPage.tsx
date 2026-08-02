@@ -75,7 +75,7 @@ export default function EnquiryPage({ data }: Props) {
     <main className="min-h-screen bg-white text-gray-800">
       <PageBanner banner={banner} />
 
-      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-12 pt-3 text-center">
+      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-12 pt-10  text-center">
         {/* Icon + line */}
 
         {/* <div className="mb-0 flex items-center justify-center gap-3">
@@ -110,7 +110,7 @@ export default function EnquiryPage({ data }: Props) {
         </div> */}
 
         {/* Description */}
-        <p className="mx-auto max-w-2xl leading-relaxed text-gray-600">
+        <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
           {header.description}
         </p>
       </section>
@@ -484,11 +484,11 @@ export default function EnquiryPage({ data }: Props) {
           5. FOOTER BANNER
       =================================================== */}
 
-      <section className="mx-auto max-w-6xl sm:px-4 pb-16">
+      <section className="mx-auto max-w-6xl sm:px-4 ">
         <div className="flex flex-col items-center justify-between gap-6 sm:rounded-2xl bg-orange-600 sm:px-8 px-3 sm:py-7 py-3 text-white sm:flex-row">
           {/* Text */}
 
-          <div className="flex items-center gap-4">
+          <div className="flex flex-col md:flex-row items-center gap-4">
             <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-white/20">
               {getIcon(footerBanner.icon, "h-6 w-6")}
             </div>

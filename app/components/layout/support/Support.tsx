@@ -126,7 +126,7 @@ export default function SupportPage({ data }: SupportDataProps) {
             <div className="flex justify-center gap-2">
               <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
               
-            <span className="text-xs mt-0.5 font-bold uppercase tracking-widest text-[#EA580C]">
+            <span className="text-sm mt-0.5 font-bold uppercase tracking-widest text-[#EA580C]">
               {introduction.topBadge}
             </span>
             </div>
@@ -141,7 +141,7 @@ export default function SupportPage({ data }: SupportDataProps) {
 
             {/* <div className="mx-auto w-10 h-[2px] bg-[#EA580C] mt-3 mb-4" /> */}
 
-            <p className="text-xs pt-2 sm:text-sm text-slate-600 ">
+            <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
               {introduction.description}
             </p>
           </div>
@@ -160,7 +160,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                   <h3 className="font-serif font-bold text-base text-slate-900">
                     {val.title}
                   </h3>
-                  <p className="mt-1 text-xs text-slate-500 leading-relaxed">
+                  <p className="mt-1 text-sm text-slate-500 leading-relaxed">
                     {val.description}
                   </p>
                 </div>
@@ -174,7 +174,7 @@ export default function SupportPage({ data }: SupportDataProps) {
           <div className="flex items-center justify-center gap-3">
               <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
 
-            <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+            <span className="text-sm font-bold uppercase tracking-widest text-[#EA580C]">
               {waysToSupport.topBadge}
             </span>
           </div>
@@ -200,7 +200,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                     {card.title}
                   </h3>
 
-                  <p className="text-xs text-slate-500 leading-relaxed">
+                  <p className="text-sm text-slate-500 leading-relaxed">
                     {card.description}
                   </p>
                 </div>
@@ -208,7 +208,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                 <div className="mt-6 w-full">
                   <a
                     href={card.action.url}
-                    className="w-full inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full bg-[#EA580C] text-white text-xs font-bold hover:bg-orange-700 transition-colors shadow-xs"
+                    className="w-full inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full bg-[#EA580C] text-white text-sm font-bold hover:bg-orange-700 transition-colors shadow-xs"
                   >
                     {card.action.label}
                     <span>&rarr;</span>
@@ -224,7 +224,7 @@ export default function SupportPage({ data }: SupportDataProps) {
         <div className="flex justify-center gap-1">
           <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
 
-          <span className="text-xs font-bold uppercase tracking-widest text-[#EA580C]">
+          <span className="text-sm font-bold uppercase tracking-widest text-[#EA580C]">
             {impactStats.topBadge}
           </span>
           </div>
@@ -251,14 +251,14 @@ export default function SupportPage({ data }: SupportDataProps) {
                   {stat.value}
                 </span>
 
-                <span className="mt-1 text-xs font-semibold text-slate-700">
+                <span className="mt-1 text-sm font-semibold text-slate-700">
                   {stat.label}
                 </span>
               </div>
             ))}
           </div>
 
-          <p className="mt-8 text-xs sm:text-sm text-slate-600 font-medium max-w-xl mx-auto">
+          <p className="mt-8 text-sm sm:text-sm text-slate-600 font-medium max-w-xl mx-auto">
             {impactStats.closingText}
           </p>
         </section>
@@ -281,7 +281,7 @@ export default function SupportPage({ data }: SupportDataProps) {
           {/* Content */}
           <div className="relative z-10 grid grid-cols-1 lg:grid-cols-12 items-center min-h-[300px]">
             {/* Left Content Area */}
-            <div className="lg:col-span-7 p-6 sm:p-10 flex flex-col sm:flex-row items-start gap-6">
+            <div className="lg:col-span-7 p-3 sm:p-10 flex flex-col sm:flex-row items-start gap-6">
               {/* Left Hands Icon Badge */}
               {/* <div className="w-20 h-20 sm:w-24 sm:h-24 rounded-full bg-white shadow-sm border border-orange-100 flex items-center justify-center shrink-0">
                 {/* {renderIcon(
@@ -294,7 +294,7 @@ export default function SupportPage({ data }: SupportDataProps) {
               {/* Text Info */}
               <div className="flex-1">
                 <div>
-                  <span className="text-xs font-bold uppercase tracking-wider text-[#EA580C]">
+                  <span className="text-sm font-bold uppercase tracking-wider text-[#EA580C]">
                     {ctaBanner.topBadge}
                   </span>
 
@@ -308,15 +308,15 @@ export default function SupportPage({ data }: SupportDataProps) {
                   </span>
                 </h3>
 
-                <p className="mt-3 text-xs sm:text-sm text-slate-600 leading-relaxed max-w-md">
+                <p className="mt-3 text-sm sm:text-sm text-slate-900 leading-relaxed max-w-md">
                   {ctaBanner.description}
                 </p>
 
                 {/* Dual Action Buttons */}
-                <div className="mt-6 flex flex-wrap items-center gap-3">
+                <div className="mt-6 flex flex-wrap justify-center md:justify-start items-center sm:gap-3 gap-1">
                   <a
                     href={ctaBanner.primaryAction.url}
-                    className="inline-flex items-center gap-2 px-6 py-3 rounded-full bg-[#EA580C] text-white text-xs font-bold shadow-xs hover:bg-orange-700 transition-all"
+                    className="inline-flex items-center sm:gap-2 gap-1 sm:px-6 sm:py-3 p-2 rounded-full bg-[#EA580C] text-white text-sm font-bold shadow-xs hover:bg-orange-700 transition-all"
                   >
                     {ctaBanner.primaryAction.label}
                     <span>&rarr;</span>
@@ -325,7 +325,7 @@ export default function SupportPage({ data }: SupportDataProps) {
                   {ctaBanner.secondaryAction && (
                     <a
                       href={ctaBanner.secondaryAction.url}
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-full border border-[#EA580C] text-[#EA580C] text-xs font-bold hover:bg-orange-50 transition-all"
+                      className="inline-flex items-center sm:gap-2 gap-1 sm:px-6 sm:py-3 p-2 rounded-full border border-[#EA580C] text-[#EA580C] text-sm font-bold hover:bg-orange-50 transition-all"
                     >
                       {ctaBanner.secondaryAction.label}
                       <span>&rarr;</span>
@@ -339,16 +339,16 @@ export default function SupportPage({ data }: SupportDataProps) {
 
         {/* ================= 6. TRANSPARENCY BAR ================= */}
         <section className="rounded-2xl bg-white text-orange-500 p-5 sm:p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
-          <div className="flex items-center gap-4 text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
             <div className="w-12 h-12 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
               {renderIcon(transparencyBar.iconName, "w-10 h-10 text-orange-700")}
             </div>
 
             <div>
-              <h4 className="font-semibold text-sm pt-2 sm:text-base">
+              <h4 className="font-semibold text-md pt-2 sm:text-base">
                 {transparencyBar.title}
               </h4>
-              <p className="text-xs text-orange-600 mt-0.5">
+              <p className="text-sm text-orange-600 mt-0.5">
                 {transparencyBar.pretitle}
               </p>
             </div>
@@ -356,7 +356,7 @@ export default function SupportPage({ data }: SupportDataProps) {
 
           <a
             href={transparencyBar.action.url}
-            className="px-5 py-2.5 rounded-full shadow-sm hover:shadow-md shadow-orange-500 text-orange-500 hover:bg-white hover:text-[#EA580C] transition-all text-xs font-bold whitespace-nowrap"
+            className="px-5 py-2.5 rounded-full shadow-sm hover:shadow-md shadow-orange-500 text-orange-500 hover:bg-white hover:text-[#EA580C] transition-all text-sm font-bold whitespace-nowrap"
           >
             {transparencyBar.action.label} &rarr;
           </a>

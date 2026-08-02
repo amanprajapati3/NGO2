@@ -1,13 +1,11 @@
 import PageBanner from "../../shared/PageBanner";
 import type { privacyPolicyprops } from "@/type/typeSection";
-import Image from "next/image";
-import Link from "next/link";
 
 export default function PrivacyPolicy({ data }: privacyPolicyprops) {
   const { banner, conditions } = data;
   return (
     <>
-      <main className="min-h-screen border bg-[#fafafa]">
+      <main className="min-h-screen bg-[#fafafa]">
         {/* ================= Banner ================= */}
       <PageBanner banner={banner} />
 

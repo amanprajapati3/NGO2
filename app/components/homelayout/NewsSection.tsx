@@ -31,7 +31,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Label with Book Icon */}
-          <div className="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge?.label || "Our Blog"}</span>
           </div>
@@ -46,7 +46,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
 
           {/* pretitle / Description */}
           {pretitle && (
-            <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
               {pretitle}
             </p>
           )}
@@ -79,7 +79,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
               <div className="flex flex-1 flex-col justify-between p-6 sm:p-7">
                 <div>
                   {/* Category & Date Metadata */}
-                  <div className="flex items-center gap-2 text-xs font-medium text-slate-500">
+                  <div className="flex items-center gap-2 text-sm font-medium text-slate-500">
                     <span className="h-2 w-2 rounded-full bg-[#FF4500]" />
                     <span>
                       {article.category ? `${article.category}, ` : ""}
@@ -94,7 +94,7 @@ export default function NewsSection({ data }: NewsSectionProps) {
 
                   {/* Optional Summary */}
                   {article.description && (
-                    <p className="mt-2 text-xs leading-relaxed text-slate-500 line-clamp-2">
+                    <p className="mt-2 text-sm leading-relaxed text-slate-500 line-clamp-2">
                       {article.description}
                     </p>
                   )}
@@ -109,9 +109,9 @@ export default function NewsSection({ data }: NewsSectionProps) {
           <div className="mt-10 flex justify-center">
             <button
               onClick={() => setShowAll(!showAll)}
-              className="group inline-flex items-center cursor-pointer gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
+              className="group inline-flex items-center cursor-pointer gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-sm font-bold text-white shadow-md shadow-orange-500/20 transition-all duration-300 hover:bg-[#e03d00] hover:shadow-lg hover:-translate-y-0.5"
             >
-             <a href={button.href}>{showAll ? "Show Less" : button?.label || "View All Posts"}</a>
+             {showAll ? "Show Less" : button?.label || "View All Posts"}
               <FiArrowRight
                 className={`text-sm transition-transform duration-300 ${
                   showAll ? "-rotate-90" : "group-hover:translate-x-1"

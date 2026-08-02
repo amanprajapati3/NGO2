@@ -36,7 +36,7 @@ export default function FAQSection({
           <div className=" items-center text-center ">
 
             {/* Badge */}
-            <div className="inline-flex items-center gap-2 rounded-full px-3 text-xs font-semibold uppercase tracking-wider text-orange-500 sm:px-4  sm:text-sm">
+            <div className="inline-flex items-center gap-2 rounded-full px-3 text-sm font-semibold uppercase tracking-wider text-orange-500 sm:px-4  sm:text-sm">
               <HiOutlineHeart className="text-base sm:text-lg" />
               {badge.label}
             </div>
@@ -55,7 +55,7 @@ export default function FAQSection({
             </center> */}
 
             {/* Description */}
-            <p className="mt-2 max-w-lg md:text-md text-sm text-slate-900  ">
+            <p className="mt-2 max-w-xl md:text-base text-sm text-slate-500  ">
               {description}
             </p>
 

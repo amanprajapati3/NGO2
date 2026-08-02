@@ -86,7 +86,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
                   <ExactCaringHandsIcon/>
                 </div>
 
-                <span className="text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+                <span className="text-sm font-bold uppercase tracking-wider text-[#FF4500]">
                   {badge.label}
                 </span>
               </div>
@@ -103,12 +103,12 @@ export default function DonationSection({ data }: SupportSectionProps) {
               {/* Divider */}
               <div className="mt-2 flex items-center gap-2 text-[#FF4500]">
                 <span className="h-[2px] w-12 bg-[#FF4500]" />
-                <FiHeart className="text-xs" />
+                <FiHeart className="text-sm" />
                 <span className="h-[2px] w-12 bg-[#FF4500]" />
               </div>
 
               {/* Description */}
-              <p className="md:mt-4 mt-2 max-w-lg text-xs leading-relaxed text-slate-600 sm:text-sm">
+              <p className="md:mt-4 mt-2 max-w-lg text-sm leading-relaxed text-slate-600 sm:text-sm">
                 {description}
               </p>
 
@@ -116,7 +116,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
               <div className="md:mt-6 mt-2">
                 <Link
                   href={button.href}
-                  className="inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:-translate-y-0.5 hover:bg-[#e03d00] hover:shadow-lg"
+                  className="inline-flex items-center gap-2.5 rounded-full bg-[#FF4500] px-8 py-3.5 text-sm font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:-translate-y-0.5 hover:bg-[#e03d00] hover:shadow-lg"
                 >
                   <FiHeart className="text-sm" />
                   <span>{button.label}</span>
@@ -126,7 +126,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
 
               {/* Trust Badge */}
               <div className="md:mt-5 mt-4 flex items-center gap-2 text-[11px] font-semibold text-slate-500">
-                <FiShield className="text-xs text-[#FF4500]" />
+                <FiShield className="text-sm text-[#FF4500]" />
                 <span>100% Secure Donation | Make an Impact Today</span>
               </div>
             </div>

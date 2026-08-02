@@ -302,7 +302,7 @@ export default function CSR({ data }: CSRProps) {
         <div className="mx-auto max-w-3xl space-y-1 text-center">
           <div className="inline-flex items-center space-x-3">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
-            <span className="text-xs font-bold uppercase tracking-widest text-orange-600">
+            <span className="text-sm font-bold uppercase tracking-widest text-orange-600">
               {data.header.topBadge}
             </span>
           </div>
@@ -325,7 +325,7 @@ export default function CSR({ data }: CSRProps) {
             <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" />
           </div> */}
 
-          <p className="text-sm leading-relaxed text-slate-600 md:text-base">
+          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {data.header.pretitle}
           </p>
         </div>
@@ -382,7 +382,7 @@ export default function CSR({ data }: CSRProps) {
                       {item.title}
                     </h3>
 
-                    <p className="text-xs leading-relaxed text-slate-500">
+                    <p className="text-sm leading-relaxed text-slate-500">
                       {item.description}
                     </p>
                   </div>
@@ -405,7 +405,7 @@ export default function CSR({ data }: CSRProps) {
               {data.ourImpact.description}
             </p>
 
-            <button className="mt-4 flex items-center space-x-2 rounded-lg border border-orange-400 bg-white px-5 py-2.5 text-xs font-semibold text-orange-600 shadow-sm transition-colors hover:bg-orange-50">
+            <button className="mt-4 flex items-center space-x-2 rounded-lg border border-orange-400 bg-white px-5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm transition-colors hover:bg-orange-50">
               <span>{data.ourImpact.ctaButton.text}</span>
               <span>&rarr;</span>
             </button>
@@ -420,7 +420,7 @@ export default function CSR({ data }: CSRProps) {
                   {pillar.title}
                 </h4>
 
-                <p className="text-xs leading-relaxed text-slate-500">
+                <p className="text-sm leading-relaxed text-slate-500">
                   {pillar.description}
                 </p>
               </div>
@@ -458,7 +458,7 @@ export default function CSR({ data }: CSRProps) {
                       {project.title}
                     </h3>
 
-                    <p className="text-xs leading-relaxed text-slate-500">
+                    <p className="text-sm leading-relaxed text-slate-500">
                       {project.description}
                     </p>
                   </div>
@@ -492,7 +492,7 @@ export default function CSR({ data }: CSRProps) {
                 {data.bannerCta.title}
               </h3>
 
-              <p className="text-xs text-red-100 md:text-sm">
+              <p className="text-sm text-red-100 md:text-sm">
                 {data.bannerCta.description}
               </p>
             </div>
@@ -518,7 +518,7 @@ export default function CSR({ data }: CSRProps) {
                   {value.title}
                 </h4>
 
-                <p className="mt-1 text-xs text-slate-500">
+                <p className="mt-1 text-sm text-slate-500">
                   {value.description}
                 </p>
               </div>

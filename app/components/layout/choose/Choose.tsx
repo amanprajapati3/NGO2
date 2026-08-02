@@ -67,7 +67,7 @@ export default function WhyChooseUs({
           <div className="flex flex-col lg:col-span-5">
 
             {/* BADGE */}
-            <div className="mb-3 flex items-center gap-2 text-xs md:tet-xl font-bold tracking-wider text-[#ff541b] uppercase">
+            <div className="mb-3 flex items-center gap-2 text-sm md:tet-xl font-bold tracking-wider text-[#ff541b] uppercase">
               <FiHeart size={15} className="fill-[#ff541b]" />
               <span>{data.badge}</span>
             </div>
@@ -94,7 +94,7 @@ export default function WhyChooseUs({
             <div className="mt-3 h-[3px] w-12 rounded-full bg-[#ff541b]" />
 
             {/* DESCRIPTION */}
-            <p className="mt-5 text-xs sm:text-lg leading-relaxed text-[#525b70]">
+            <p className="mt-5 text-sm sm:text-lg leading-relaxed text-[#525b70]">
               {data.desc}
             </p>
 
@@ -114,7 +114,7 @@ export default function WhyChooseUs({
                   {renderIcon(data.imageOverlay.icon)}
                 </div>
 
-                <p className="text-xs sm:text-sm font-normal text-white leading-tight">
+                <p className="text-sm sm:text-sm font-normal text-white leading-tight">
                   {data.imageOverlay.text}{" "}
                   <span className="font-bold text-[#ff541b]">
                     {data.imageOverlay.highlight}
@@ -146,7 +146,7 @@ export default function WhyChooseUs({
                   <div className="mt-2.5 h-[2px] w-4 bg-[#ff541b]" />
 
                   {/* DESCRIPTION */}
-                  <p className="mt-3 text-xs md:text-lg leading-relaxed text-[#64748b]">
+                  <p className="mt-3 text-sm md:text-lg leading-relaxed text-[#64748b]">
                     {card.desc}
                   </p>
                 </div>

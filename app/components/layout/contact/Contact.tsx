@@ -92,14 +92,14 @@ export default function ContactUs({ data: propData }: ContactSectionProps) {
               <h4 className="text-base font-bold text-gray-900">
                 {map.locationTitle}
               </h4>
-              <p className="mt-0.5 text-xs text-gray-500 sm:text-sm">
+              <p className="mt-0.5 text-sm text-gray-500 sm:text-sm">
                 {map.locationpretitle}
               </p>
               {/* <a
                 href={map.mapUrl}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="mt-3 inline-flex items-center gap-1.5 text-xs font-semibold text-blue-600 hover:underline"
+                className="mt-3 inline-flex items-center gap-1.5 text-sm font-semibold text-blue-600 hover:underline"
               >
                 View larger map
                 <ExternalLink className="h-3 w-3" />

@@ -36,7 +36,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const activeTestimonial: TestimonialItem = testimonials[currentIndex];
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-0 ">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-0 pb-10">
       {/* Soft Radial Background Glow */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
 
@@ -44,7 +44,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Label */}
-          <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-sm" />
             <span>{badge?.label || "Testimonials"}</span>
           </div>
@@ -59,7 +59,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
           {/* pretitle / Description */}
           {(description || pretitle) && (
-            <p className="mt-1 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+            <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
               {description || pretitle}
             </p>
           )}
@@ -90,7 +90,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
               </h3>
 
               {/* Designation / Country */}
-              <p className="mt-1 text-xs font-semibold text-slate-500">
+              <p className="mt-1 text-sm font-semibold text-slate-500">
                 {activeTestimonial.designation || "Charity Bingo"}{" "}
                 <span className="text-[#FF4500]">Canada</span>
               </p>

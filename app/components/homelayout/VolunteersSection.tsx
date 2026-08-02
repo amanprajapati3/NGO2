@@ -77,7 +77,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
   const { badge, heading, description, members, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 mt-0">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 mt-0 py-8">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />
@@ -103,7 +103,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
         {/* ================= HEADER SECTION ================= */}
         <div className="flex flex-col items-center text-center">
           {/* Badge Pill */}
-          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1 text-xs font-bold uppercase tracking-wider text-[#FF4500]">
+          <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
             <span>{badge.label}</span>
           </div>
@@ -114,14 +114,14 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
           </h2>
 
           {/* Subheading Line Divider */}
-          {/* <div className="mt-1 flex items-center justify-center gap-3 text-xs font-semibold tracking-wide text-slate-500">
+          {/* <div className="mt-1 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
             <span className="h-[1px] w-12 bg-orange-300" />
             <FiHeart className="text-[10px] text-[#FF4500]" />
             <span className="h-[1px] w-12 bg-orange-300" />
           </div> */}
 
           {/* Description */}
-          <p className="mt-2 max-w-2xl text-xs leading-relaxed text-slate-500 sm:text-sm">
+          <p className="mt-2 max-w-2xl text-sm leading-relaxed text-slate-500 sm:text-base">
             {description}
           </p>
         </div>
@@ -163,7 +163,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
                   </p>
 
                   {/* Description */}
-                  <p className="mt-1 text-xs leading-relaxed text-slate-500">
+                  <p className="mt-1 text-sm leading-relaxed text-slate-500">
                     {member.description}
                   </p>
                 </div>
@@ -284,7 +284,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
                   <h3 className="text-lg font-extrabold text-slate-900 sm:text-xl">
                     {cta.title}
                   </h3>
-                  <p className="mt-1 max-w-md text-xs text-slate-600 sm:text-sm">
+                  <p className="mt-1 max-w-md text-sm text-slate-600 sm:text-sm">
                     {cta.description}
                   </p>
                 </div>
@@ -293,7 +293,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
               {/* Right Side: Donate Button */}
               <Link
                 href={cta.button.href}
-                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#FF4500] px-7 py-3 text-xs font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-[#e03d00] hover:shadow-lg"
+                className="inline-flex shrink-0 items-center gap-2 rounded-full bg-[#FF4500] px-7 py-3 text-sm font-bold text-white shadow-md shadow-orange-500/20 transition-all hover:bg-[#e03d00] hover:shadow-lg"
               >
                 <span>{cta.button.label}</span>
                 <FiArrowRight className="text-sm" />

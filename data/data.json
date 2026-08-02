@@ -780,6 +780,7 @@
         "icon": "education",
         "category": "#Education",
         "title": "Education For Poor Child",
+        "titleLink": "/case-details",
         "description": "Providing quality education, school supplies, scholarships, and equal learning opportunities for underprivileged children.",
         "button": {
           "label": "Donate Now",
@@ -795,6 +796,7 @@
         "icon": "donation",
         "category": "#Donation",
         "title": "Massive Donation To Poor",
+        "titleLink": "/case-details",
         "description": "Supporting families through food distribution, clothing, emergency assistance, and essential daily resources.",
         "button": {
           "label": "Donate Now",
@@ -810,6 +812,7 @@
         "icon": "medical",
         "category": "#Healthcare",
         "title": "Huge Help To Homeless Children",
+        "titleLink": "/case-details",
         "description": "Delivering healthcare, shelter, nutrition, and emotional support to vulnerable children and families in need.",
         "button": {
           "label": "Donate Now",
@@ -1297,34 +1300,122 @@
       {
         "title": "Huruma Con Donation For Poor Child 2026",
         "image": "https://images.unsplash.com/photo-1517486808906-6ca8b3f04846?auto=format&fit=crop&w=900&q=80",
-        "href": "/event",
+        "href": "/event-details",
         "button": {
           "label": "Join Now",
-          "variant": "primary"
+          "variant": "primary",
+          "href": "/contact-us"
         }
       },
       {
         "title": "Poor Funding For Helpless In Africa",
         "image": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=900&q=80",
-        "href": "/event",
+        "href": "/event-details",
         "button": {
           "label": "Join Now",
-          "variant": "secondary"
+          "variant": "secondary",
+          "href": "/contact-us"
         }
       },
       {
         "title": "Education Is Necessary To Poverty Family In Canada",
         "image": "https://images.unsplash.com/photo-1517048676732-d65bc937f952?auto=format&fit=crop&w=900&q=80",
-        "href": "/event",
+        "href": "/event-details",
         "button": {
           "label": "Join Now",
-          "variant": "primary"
+          "variant": "primary",
+          "href": "/contact-us"
         }
       }
     ]
   },
+  "eventDetails": {
+    "pageTitle": "Event Detail page",
+    "banner": {
+      "breadcrumbHome": "Home",
+      "breadcrumbCurrent": "Events",
+      "bgImageUrl": "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=870&auto=format&fit=crop"
+    },
+    "mainContent": {
+      "mainImage": {
+        "src": "https://images.unsplash.com/photo-1559027615-cd4628902d4a?q=80&w=1200&auto=format&fit=crop",
+        "alt": "Volunteers distributing aid material"
+      },
+      "meta": {
+        "publishedDate": "July 31, 2025"
+      },
+      "title": "Weather Evident Smiling Bed Against",
+      "introParagraphs": [
+        "Quuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quia non numquam eius modi tempora incidunt ut labore et dolore magnam dolor sit amet, consectetur adipiscing."
+      ],
+      "middleParagraphs": [
+        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius m modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+      ],
+      "mission": {
+        "icon": "target",
+        "title": "Event Mission",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem."
+      },
+      "location": {
+        "icon": "location-pin",
+        "title": "Event Location",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+        "map": {
+          "locationName": "New York, USA",
+          "address": "New York, NY, USA",
+          "embedUrl": "https://maps.google.com/maps?q=New+York,+NY,+USA"
+        }
+      }
+    },
+    "sidebar": {
+      "searchPlaceholder": "Search...",
+      "popularPostsTitle": "Popular Posts",
+      "popularPosts": [
+        {
+          "id": "1",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://media.istockphoto.com/id/1159029519/photo/portrait-of-a-poor-little-thailand-girl-lost-in-deep-thoughts-poverty-poor-children.jpg?s=1024x1024&w=is&k=20&c=9RD0e3JEhR6Omm1AZgtmzeLsxwMOY1-5CudYnRphQS4=",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "2",
+          "title": "Future Plan & Strategy For Construction",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&fit=crop&w=400&q=80",
+            "alt": "Future Plan & Strategy For Construction"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "3",
+          "title": "Melancholy Devonshire Alteration",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1509099836639-18ba1795216d?auto=format&fit=crop&w=400&q=80",
+            "alt": "Melancholy Devonshire Alteration"
+          },
+          "slug": "#"
+        },
+        {
+          "id": "4",
+          "title": "Delicate Contempt Received Two Yet Advanced",
+          "date": "June 30, 2025",
+          "image": {
+            "src": "https://images.unsplash.com/photo-1767561070418-cbb62b952a6d?q=80&w=870&auto=format&fit=crop",
+            "alt": "Delicate Contempt Received Two Yet Advanced"
+          },
+          "slug": "#"
+        }
+      ]
+    }
+  },
   "blogDetails": {
-    "pageTitle": "Detail page",
+    "pageTitle": "Blog Detail page",
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Blog Details",
@@ -1751,7 +1842,7 @@
     "pretitle": "Stay updated with inspiring stories, community achievements, and our latest charity initiatives.",
     "button": {
       "label": "View More",
-      "href": "/blog"
+      "href": "#"
     },
     "articles": [
       {
@@ -3681,7 +3772,7 @@
         "url": "/donate"
       },
       "secondaryAction": {
-        "label": "Volunteer With Us",
+        "label": "Be Member",
         "url": "/volunteer"
       },
       "bannerImage": {

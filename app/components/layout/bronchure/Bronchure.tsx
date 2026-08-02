@@ -53,7 +53,7 @@ export default function Bronchure({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-5 text-center">
+      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-10 text-center">
         <div className="flex items-center justify-center gap-2">
           <HiOutlineHeart className="text-base text-[#FF4500]" />
           <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">
@@ -73,7 +73,7 @@ export default function Bronchure({ data }: Props) {
           <div className="h-px w-10 bg-gray-300" />
         </div> */}
 
-        <p className="mx-auto max-w-2xl sm:leading-relaxed text-gray-600">
+        <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
           {header.description}
         </p>
       </section>
@@ -94,7 +94,7 @@ export default function Bronchure({ data }: Props) {
                 {feature.title}
               </h3>
 
-              <p className="text-xs leading-relaxed text-gray-600">
+              <p className="text-sm leading-relaxed text-gray-600">
                 {feature.description}
               </p>
             </div>
@@ -145,7 +145,7 @@ export default function Bronchure({ data }: Props) {
                     {item.title}
                   </p>
 
-                  <p className="mt-0.5 line-clamp-2 text-xs text-white/90">
+                  <p className="mt-0.5 line-clamp-2 text-sm text-white/90">
                     {item.pretitle}
                   </p>
                 </div> */}
@@ -193,16 +193,15 @@ export default function Bronchure({ data }: Props) {
       {/* ===================== CTA SECTION ===================== */}
       <section className="mx-auto max-w-6xl sm:px-4 pb-16">
         <div className="overflow-hidden sm:rounded-2xl bg-orange-50">
-          <div className="grid grid-cols-1 items-center gap-8 sm:p-8 px-2 py-4 md:grid-cols-2 md:p-10 lg:gap-12">
+          <div className="grid grid-cols-1 items-center gap-8 px-2 py-4 sm:p-8 md:grid-cols-2 md:p-10 lg:gap-12">
             {/* Left Content */}
-            <div className="flex items-start gap-5">
-              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2  border-orange-300 bg-white text-orange-600">
+            <div className="flex flex-col items-center justify-center gap-5 text-center md:flex-row lg:items-start lg:justify-start lg:text-left">
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full border-2 border-orange-300 bg-white text-orange-600">
                 <img src="/heartImage.png" alt="" />
-                {/* {getIcon("heart-hands", "h-8 w-8")} */}
               </div>
 
-              <div>
-                <p className="mb-1 text-xs font-semibold tracking-widest text-orange-600">
+              <div className="flex flex-col items-center lg:items-start">
+                <p className="mb-1 text-sm font-semibold tracking-widest text-orange-600">
                   {ctaSection.label}
                 </p>
 
@@ -214,23 +213,21 @@ export default function Bronchure({ data }: Props) {
                   {ctaSection.description}
                 </p>
 
-                <div className="flex flex-wrap sm:gap-3 gap-1">
+                <div className="flex flex-wrap justify-center gap-1 sm:gap-3 lg:justify-start">
                   <Link
                     href={ctaSection.primaryButton.href}
-                    className="inline-flex items-center sm:gap-2 gap-0.5 rounded-full bg-orange-600 sm:px-5 px-2 sm:py-2.5 py-1 text-sm font-semibold text-white transition hover:bg-orange-700"
+                    className="inline-flex items-center gap-0.5 rounded-full bg-orange-600 px-2 py-1 text-sm font-semibold text-white transition hover:bg-orange-700 sm:gap-2 sm:px-5 sm:py-2.5"
                   >
                     {ctaSection.primaryButton.label}
-
                     {getIcon("arrow-right", "h-4 w-4")}
                   </Link>
 
                   <Link
                     href={ctaSection.secondaryButton.href}
-                    className="inline-flex items-center sm:gap-2 gap-0.5 rounded-full border-2 border-orange-500 sm:px-5 px-2 sm:py-2.5 py-1 text-sm font-semibold text-orange-600 transition hover:bg-orange-50"
+                    className="inline-flex items-center gap-0.5 rounded-full border-2 border-orange-500 px-2 py-1 text-sm font-semibold text-orange-600 transition hover:bg-orange-50 sm:gap-2 sm:px-5 sm:py-2.5"
                   >
                     {ctaSection.secondaryButton.label}
-
-                    {getIcon("arrow-right", "h-4 w-4 ")}
+                    {getIcon("arrow-right", "h-4 w-4")}
                   </Link>
                 </div>
               </div>
@@ -243,15 +240,15 @@ export default function Bronchure({ data }: Props) {
                   key={stat.label}
                   className="flex flex-col items-center text-center"
                 >
-                  <div className="mb-2 flex h-11 sm:w-16 sm:h-16 w-11 items-center justify-center rounded-full bg-white text-orange-600 shadow-sm">
-                    {getIcon(stat.icon, "h-5 w-5 sm:w-10 sm:h-10")}
+                  <div className="mb-2 flex h-11 w-11 items-center justify-center rounded-full bg-white text-orange-600 shadow-sm sm:h-16 sm:w-16">
+                    {getIcon(stat.icon, "h-5 w-5 sm:h-10 sm:w-10")}
                   </div>
 
                   <p className="text-lg font-bold text-orange-600">
                     {stat.value}
                   </p>
 
-                  <p className="text-xs text-gray-600">{stat.label}</p>
+                  <p className="text-sm text-gray-600">{stat.label}</p>
                 </div>
               ))}
             </div>

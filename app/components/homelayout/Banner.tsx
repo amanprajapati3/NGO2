@@ -62,7 +62,7 @@ const Banner: React.FC<BannerSliderProps> = ({
 
   return (
     <section
-      className={`${playfair.variable} ${caveat.variable} relative h-[480px] min-h-[480px] sm:h-[570px] sm:h-min-[570px] w-full overflow-hidden bg-black`}
+      className={`${playfair.variable} ${caveat.variable} relative h-[420px] min-h-[420px] sm:h-[570px] sm:min-h-[570px] w-full overflow-hidden bg-black`}
     >
       {/* Background Images */}
       {banners.map((banner, index) => (
@@ -97,16 +97,16 @@ const Banner: React.FC<BannerSliderProps> = ({
         aria-hidden="true"
       />
 
-      {/* Left Vertical Slider Dots */}
+      {/* Slider Indicator Dots: Bottom-centered on mobile, Vertical on Desktop */}
       {totalSlides > 1 && (
-        <div className="absolute left-3 md:left-14 top-1/2 z-20 flex -translate-y-1/2 flex-col gap-2.5 sm:gap-3">
+        <div className="absolute bottom-3 left-1/2 -translate-x-1/2 z-20 flex flex-row sm:bottom-auto sm:left-3 md:left-14 sm:top-1/2 sm:-translate-y-1/2 sm:translate-x-0 sm:flex-col gap-2 sm:gap-3">
           {banners.map((_, index) => (
             <button
               key={index}
               type="button"
               onClick={() => goToSlide(index)}
               aria-label={`Go to slide ${index + 1}`}
-              className={`relative flex h-4 w-4 sm:h-5 sm:w-5 items-center justify-center rounded-full border transition-all duration-300 ${
+              className={`relative flex h-3.5 w-3.5 sm:h-5 sm:w-5 items-center justify-center rounded-full border transition-all duration-300 ${
                 currentSlide === index
                   ? "border-[#ff521d]"
                   : "border-[#ff521d]/70 hover:border-[#ff521d]"
@@ -115,7 +115,7 @@ const Banner: React.FC<BannerSliderProps> = ({
               <span
                 className={`block rounded-full transition-all duration-300 ${
                   currentSlide === index
-                    ? "h-2 w-2 sm:h-2.5 sm:w-2.5 bg-[#ff521d]"
+                    ? "h-1.5 w-1.5 sm:h-2.5 sm:w-2.5 bg-[#ff521d]"
                     : "h-0 w-0"
                 }`}
               />
@@ -124,64 +124,66 @@ const Banner: React.FC<BannerSliderProps> = ({
         </div>
       )}
 
-      {/* Main Content Area */}
-      <div className="relative z-10 flex h-full items-center justify-center pl-10 pr-6 xs:px-12 sm:px-16 md:px-20">
-        <div className="mx-auto flex h-full max-w-[1000px] flex-col items-center justify-center text-center">
+      {/* Main Content Area - Vertically Centered */}
+      <div className="relative z-10 flex h-full items-center justify-center px-4 sm:px-16 md:px-20">
+        <div className="mx-auto flex h-full w-full max-w-[1000px] flex-col items-center justify-center text-center">
           
-          {/* Dynamic Content Container */}
-          <div className="flex min-h-[180px] sm:min-h-[240px] flex-col items-center justify-center">
-            {/* Pretitle */}
+          {/* Dynamic Content Block */}
+          <div className="flex flex-col items-center justify-center">
+            {/* Pretitle - Increased size on mobile */}
             {slide.pretitle && (
               <div
-                className={`${caveat.variable} mb-1 sm:mb-2 text-xl xs:text-2xl sm:text-[48px] lg:text-[56px] font-medium leading-none text-white`}
+                className={`${caveat.variable} mb-1 sm:mb-2 text-xl xs:text-2xl sm:text-[48px] lg:text-[56px] font-medium leading-tight text-white`}
               >
                 {slide.pretitle}
               </div>
             )}
 
-            {/* Main Title */}
+            {/* Main Title - Increased size on mobile */}
             <h1
-              className={`${playfair.variable} max-w-[900px] text-2xl xs:text-3xl sm:text-[52px] lg:text-[64px] xl:text-[68px] font-bold leading-[1.1] sm:leading-[1.05] tracking-[-0.02em] text-white`}
+              className={`${playfair.variable} max-w-[900px] text-2xl xs:text-3xl sm:text-[52px] lg:text-[64px] xl:text-[68px] font-bold leading-[1.15] sm:leading-[1.05] tracking-[-0.02em] text-white`}
             >
               {slide.title}
             </h1>
 
-            {/* Description */}
+            {/* Description - Increased size on mobile */}
             {slide.desc && (
-              <p className="mt-3 sm:mt-4 max-w-[700px] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-[16px] font-normal leading-6 sm:leading-7 text-white/95 line-clamp-3 sm:line-clamp-none">
+              <p className="mt-2.5 sm:mt-4 max-w-[700px] text-[13px] xs:text-[14px] sm:text-[15px] lg:text-[16px] font-normal leading-relaxed text-white/95 line-clamp-2 sm:line-clamp-none">
                 {slide.desc}
               </p>
             )}
           </div>
 
-          {/* CTA Buttons Container - Matching Image Exactly */}
-          <div className="mt-6 flex h-[52px] flex-wrap items-center justify-center gap-3 sm:gap-4">
-            {slide.ctaButtons && slide.ctaButtons.length > 0 && slide.ctaButtons.map((cta, index) => {
-              const isPrimary = cta.variant === "primary" || !cta.variant;
+          {/* CTA Buttons - Strictly One-Line Layout on Mobile */}
+          {slide.ctaButtons && slide.ctaButtons.length > 0 && (
+            <div className="mt-5 sm:mt-6 flex w-full max-w-[500px] flex-nowrap items-center justify-center gap-2.5 sm:gap-4 px-2">
+              {slide.ctaButtons.map((cta, index) => {
+                const isPrimary = cta.variant === "primary" || !cta.variant;
 
-              return (
-                <a
-                  key={`${cta.href}-${index}`}
-                  href={cta.href}
-                  className={`inline-flex h-[48px] sm:h-[52px] min-w-[170px] sm:min-w-[190px] items-center justify-center rounded-full px-6 sm:px-7 text-[15px] sm:text-[16px] transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 ${
-                    isPrimary
-                      ? "bg-[#ff521d] text-white font-bold"
-                      : "bg-[#3d376d] text-white font-medium"
-                  }`}
-                >
-                  <span className="whitespace-nowrap">{cta.label}</span>
-                  <span className="ml-2.5 text-[18px] sm:text-[20px] font-normal leading-none">→</span>
-                </a>
-              );
-            })}
-          </div>
+                return (
+                  <a
+                    key={`${cta.href}-${index}`}
+                    href={cta.href}
+                    className={`inline-flex h-[40px] xs:h-[44px] sm:h-[52px] flex-1 sm:flex-initial min-w-0 sm:min-w-[190px] items-center justify-center rounded-full px-3.5 xs:px-4 sm:px-7 text-[13px] xs:text-[14px] sm:text-[16px] transition-all duration-300 hover:opacity-90 hover:-translate-y-0.5 ${
+                      isPrimary
+                        ? "bg-[#ff521d] text-white font-bold"
+                        : "bg-[#3d376d] text-white font-medium"
+                    }`}
+                  >
+                    <span className="truncate whitespace-nowrap">{cta.label}</span>
+                    <span className="ml-1.5 sm:ml-2.5 text-[15px] sm:text-[20px] font-normal leading-none">→</span>
+                  </a>
+                );
+              })}
+            </div>
+          )}
 
         </div>
       </div>
 
-      {/* Bottom Right Navigation */}
+      {/* Bottom Right Navigation - Hidden on Mobile (sm:flex) */}
       {totalSlides > 1 && (
-        <div className="absolute bottom-5 right-4 sm:bottom-8 sm:right-8 z-30 flex items-center gap-2 sm:gap-3">
+        <div className="absolute bottom-5 right-4 sm:bottom-8 sm:right-8 z-30 hidden sm:flex items-center gap-2 sm:gap-3">
           <button
             type="button"
             onClick={prevSlide}

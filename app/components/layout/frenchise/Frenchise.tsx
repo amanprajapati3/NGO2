@@ -78,7 +78,7 @@ export default function FrenchisePage({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl px-3 pb-12 sm:pt-10 pt-5 text-center">
+      <section className="mx-auto max-w-4xl px-3 pb-12  pt-10 text-center">
 
         {/* <div className="mb-2 flex items-center justify-center gap-4">
 
@@ -109,7 +109,7 @@ export default function FrenchisePage({ data }: Props) {
           <div className="h-px w-10 bg-gray-300 sm:w-14" />
         </div> */}
 
-        <p className="mx-auto max-w-2xl md:leading-relaxed text-gray-600">
+        <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
           {header.description}
         </p>
       </section>
@@ -145,9 +145,9 @@ export default function FrenchisePage({ data }: Props) {
         <div className="grid grid-cols-1 sm:gap-8 gap-4 lg:grid-cols-2 lg:gap-10">
 
           {/* ================= LEFT SECTION ================= */}
-          <div className="relative overflow-hidden rounded-2xl bg-orange-50 p-8">
+          <div className="relative overflow-hidden rounded-2xl bg-orange-50 sm:p-8 p-3">
 
-            <p className="mb-2 text-xs font-semibold tracking-widest text-orange-600">
+            <p className="mb-2 text-sm font-semibold tracking-widest text-orange-600">
               {leftSection.label}
             </p>
 
@@ -442,7 +442,7 @@ export default function FrenchisePage({ data }: Props) {
                 <p className="mb-1 text-sm font-bold text-gray-900">
                   {step.number}. {step.title}
                 </p>
-                <p className="text-xs leading-relaxed text-gray-500">
+                <p className="text-sm leading-relaxed text-gray-500">
                   {step.description}
                 </p>
               </div>

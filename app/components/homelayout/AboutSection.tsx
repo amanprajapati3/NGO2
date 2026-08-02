@@ -143,45 +143,45 @@ export default function AboutSection({ data }: AboutSectionProps) {
   } = data;
 
   return (
-    <section className="relative overflow-hidden bg-white py-12 sm:py-16">
+    <section className="relative overflow-hidden bg-white py-8 sm:py-12">
       {/* Background Semi-Circle Decoration */}
       <BackgroundDecorations />
 
-      <div className="relative z-10 mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div className="grid items-center gap-10 lg:grid-cols-12 lg:gap-12">
           
           {/* ================= LEFT CONTENT ================= */}
-          <div className="text-left lg:col-span-6">
+          <div className="md:text-left text-center lg:col-span-6">
             {/* Tag Badge */}
-            <div className="inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wider text-[#ff5a36] sm:text-sm">
+            <div className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#ff5a36] sm:text-sm">
               <HiOutlineHeart className="text-base text-[#ff5a36]" />
               <span>{badge?.label || "ABOUT US"}</span>
             </div>
 
             {/* Heading */}
-            <h2 className="mt-3 text-3xl font-extrabold leading-tight text-[#1a0c2e] sm:text-4xl md:text-[42px] lg:leading-[1.18]">
+            <h2 className="md:mt-3 mt-0 text-3xl font-extrabold leading-tight text-[#1a0c2e] sm:text-4xl md:text-[42px] lg:leading-[1.18]">
               {title.line1}
             </h2>
 
             {/* Paragraph Description */}
-            <p className="mt-4 text-xs leading-relaxed text-[#666666] sm:text-sm md:text-base">
+            <p className="mt-4 text-sm leading-relaxed text-[#666666] sm:text-sm md:text-base">
               {desc.primary}
             </p>
             {desc.secondary && (
-              <p className="mt-3 text-xs leading-relaxed text-[#666666] sm:text-sm md:text-base">
+              <p className="mt-3 text-sm leading-relaxed text-[#666666] sm:text-sm md:text-base">
                 {desc.secondary}
               </p>
             )}
 
             {/* Action Buttons */}
-            <div className="mt-6 flex flex-wrap items-center gap-3 sm:mt-8 sm:gap-4">
+            <div className="mt-6 flex flex-wrap justify-center md:justify-start items-center md:gap-3 gap-1 sm:mt-8 sm:gap-4">
               {buttons.map((button) => {
                 const primary = button.variant === "primary";
                 return (
                   <Link
                     key={button.label}
                     href={button.href}
-                    className={`group inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold transition-all duration-300 sm:px-7 sm:py-3.5 sm:text-sm ${
+                    className={`group inline-flex items-center sm:gap-2 gap-1 rounded-full px-2 py-2.5 text-sm font-bold transition-all duration-300 sm:px-7 sm:py-3.5 sm:text-sm ${
                       primary
                         ? "bg-[#ff5a36] text-white shadow-md shadow-[#ff5a36]/20 hover:bg-[#1a0c2e]"
                         : "bg-[#1a0c2e] text-white shadow-md hover:bg-[#ff5a36]"
@@ -197,19 +197,19 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
             {/* Feature Pills under buttons (Trust badges) */}
             <div className="mt-8 flex flex-wrap items-center gap-3 sm:gap-4">
-              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-xs sm:text-sm font-semibold text-[#1a0c2e]">
+              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-sm sm:text-sm font-semibold text-[#1a0c2e]">
                 <div className="flex h-5 w-5 items-center justify-center rounded-full bg-emerald-100 text-emerald-600">
                   ✓
                 </div>
                 <span>100% Trusted</span>
               </div>
-              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-xs sm:text-sm font-semibold text-[#1a0c2e]">
+              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-sm sm:text-sm font-semibold text-[#1a0c2e]">
                 <div className="flex h-5 w-5 items-center justify-center rounded-full bg-amber-100 text-amber-600">
                   ★
                 </div>
                 <span>80G Certified</span>
               </div>
-              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-xs sm:text-sm font-semibold text-[#1a0c2e]">
+              <div className="flex items-center gap-2 rounded-full bg-[#f8f9fa] px-3.5 py-1.5 border border-slate-100 text-sm sm:text-sm font-semibold text-[#1a0c2e]">
                 <div className="flex h-5 w-5 items-center justify-center rounded-full bg-purple-100 text-purple-600">
                   ♥
                 </div>
@@ -241,13 +241,13 @@ export default function AboutSection({ data }: AboutSectionProps) {
                     <FiHeart className="text-xl fill-current" />
                   </div>
                   <div className="flex flex-col text-left">
-                    <span className="text-[11px] font-medium text-gray-500 sm:text-xs">
+                    <span className="text-[11px] font-medium text-gray-500 sm:text-sm">
                       {gallery.floatingCard.pretitle || "Your Support"}
                     </span>
-                    <span className="text-xs font-bold text-[#1a0c2e] sm:text-sm">
+                    <span className="text-sm font-bold text-[#1a0c2e] sm:text-sm">
                       {gallery.floatingCard.title || "Creates Real"}
                     </span>
-                    <span className="text-xs font-bold text-[#ff5a36] sm:text-sm">
+                    <span className="text-sm font-bold text-[#ff5a36] sm:text-sm">
                       {gallery.floatingCard.highlight || "Change"}
                     </span>
                   </div>
@@ -322,7 +322,7 @@ export default function AboutSection({ data }: AboutSectionProps) {
                         <h3 className="text-base font-extrabold text-[#1a0c2e] sm:text-xl md:text-2xl">
                           <AnimatedNumber value={item.value} />
                         </h3>
-                        <p className="text-xs font-medium text-gray-500 sm:text-sm">
+                        <p className="text-sm font-medium text-gray-500 sm:text-sm">
                           {item.label}
                         </p>
                       </div>

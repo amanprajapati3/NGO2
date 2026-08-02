@@ -90,7 +90,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
                     <span className="text-[#ff541b]">
                       {renderIcon(category.icon, "w-4 h-4")}
                     </span>
-                    <span className="font-bold text-xs tracking-wider uppercase">
+                    <span className="font-bold text-sm tracking-wider uppercase">
                       {category.title}
                     </span>
                   </div>
@@ -106,7 +106,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
                         <span className="text-[#ff541b] group-hover:scale-110 transition-transform">
                           {renderIcon(item.icon, "w-4 h-4")}
                         </span>
-                        <span className="text-xs sm:text-sm font-medium text-slate-700 group-hover:text-[#ff541b] transition-colors leading-tight">
+                        <span className="text-sm sm:text-sm font-medium text-slate-700 group-hover:text-[#ff541b] transition-colors leading-tight">
                           {item.label}
                         </span>
                       </Link>
@@ -117,7 +117,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
             </div>
 
             {/* 3. LEGAL & POLICIES Node Attached Directly to Center Vertical Line */}
-            <div className="relative z-10 inline-flex items-center gap-2 px-6 py-3 bg-[#0B132A] text-white font-bold tracking-wider text-xs sm:text-sm rounded-xl shadow-lg border border-slate-800">
+            <div className="relative z-10 inline-flex items-center gap-2 px-6 py-3 bg-[#0B132A] text-white font-bold tracking-wider text-sm sm:text-sm rounded-xl shadow-lg border border-slate-800">
               <ShieldCheck className="w-5 h-5 text-[#ff541b]" />
               <span>{legalNode.title}</span>
             </div>
@@ -151,7 +151,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
                       <span className="text-[#ff541b]">
                         {renderIcon(item.icon, "w-4 h-4")}
                       </span>
-                      <span className="font-semibold text-xs sm:text-sm tracking-wide text-center">
+                      <span className="font-semibold text-sm sm:text-sm tracking-wide text-center">
                         {item.label}
                       </span>
                     </Link>

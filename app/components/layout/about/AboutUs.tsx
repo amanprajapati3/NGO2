@@ -373,7 +373,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
                           <h3 className="text-lg font-bold text-[#23122c]">
                             <AnimatedNumber value={item.value} />
                           </h3>
-                          <p className="text-xs font-medium leading-tight text-[#666666]">
+                          <p className="text-sm font-medium leading-tight text-[#666666]">
                             {item.label}
                           </p>
                         </div>

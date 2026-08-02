@@ -67,16 +67,23 @@ export default function Header({
   };
 
   const pathname = usePathname();
+
+  // Strict Body Scroll Lock Effect
   useEffect(() => {
-    document.body.style.overflow =
-      isMobileMenuOpen || isPopupOpen ? "hidden" : "";
+    if (isMobileMenuOpen || isPopupOpen) {
+      document.body.style.overflow = "hidden";
+      document.body.style.touchAction = "none";
+    } else {
+      document.body.style.overflow = "";
+      document.body.style.touchAction = "";
+    }
 
     return () => {
       document.body.style.overflow = "";
+      document.body.style.touchAction = "";
     };
   }, [isMobileMenuOpen, isPopupOpen]);
 
-  // Safely alias popup data with optional chaining
   const popup = data?.PopupData;
 
   return (
@@ -85,7 +92,7 @@ export default function Header({
       <div className="fixed top-0 z-50 w-full bg-[#3d376d] shadow-md">
         {/* ================= TOP BAR ================= */}
         {topBar && (
-          <div className="hidden bg-white text-xs text-slate-900 sm:block">
+          <div className="hidden bg-white text-sm text-slate-900 sm:block">
             <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:px-6 lg:px-8">
               <div className="ml-44 flex flex-nowrap items-center justify-center gap-2 py-1 sm:justify-start sm:gap-4">
                 {topBar.address && (
@@ -147,7 +154,7 @@ export default function Header({
             <div className="flex h-16 items-center justify-between sm:h-20">
               {/* Logo */}
               <Link href="/" className="group flex items-center gap-3">
-                <div className="flex w-16  items-center justify-center transition duration-300 group-hover:scale-105 sm:-mt-8 sm:w-40">
+                <div className="flex w-16 items-center justify-center transition duration-300 group-hover:scale-105 sm:-mt-8 sm:w-40">
                   <img
                     src={data?.logo}
                     alt="Logo"
@@ -163,9 +170,6 @@ export default function Header({
                       const hasChildren =
                         item.children && item.children.length > 0;
 
-                      // Define active state logic
-                      // It's active if the pathname exactly matches item.href, or
-                      // if item is a root parent and pathname starts with its href (for active subpages)
                       const isActive =
                         pathname === item.href ||
                         (item.href !== "/" && pathname.startsWith(item.href));
@@ -175,7 +179,7 @@ export default function Header({
                           <Link
                             href={item.href}
                             className={`inline-flex items-center gap-1.5 rounded-lg px-3 py-2 text-sm transition duration-200 focus:outline-none 
-              ${isActive ? "text-orange-600 font-semibold" : "text-slate-100 hover:bg-white/10 hover:text-white"}`}
+                              ${isActive ? "text-orange-600 font-semibold" : "text-slate-100 hover:bg-white/10 hover:text-white"}`}
                           >
                             <span>{item.label}</span>
 
@@ -183,7 +187,7 @@ export default function Header({
                               <FiChevronDown
                                 size={16}
                                 className={`transition-transform duration-300 group-hover:rotate-180 
-                  ${isActive ? "text-orange-600" : "text-slate-100"}`}
+                                  ${isActive ? "text-orange-600" : "text-slate-100"}`}
                               />
                             )}
                           </Link>
@@ -205,7 +209,7 @@ export default function Header({
                                       key={child.label}
                                       href={child.href}
                                       className={`group/child flex items-center justify-between px-3.5 py-2.5 text-sm font-medium transition duration-100 hover:bg-slate-400 hover:text-black
-                        ${isChildActive ? "text-orange-600 font-semibold bg-orange-50/50" : "text-slate-700"}`}
+                                        ${isChildActive ? "text-orange-600 font-semibold bg-orange-50/50" : "text-slate-700"}`}
                                     >
                                       <span>{child.label}</span>
                                     </Link>
@@ -219,7 +223,6 @@ export default function Header({
                     })}
                   </nav>
 
-                  {/* Grid Icon Button - Opens About Popup Drawer */}
                   <button
                     type="button"
                     onClick={() => setIsPopupOpen(true)}
@@ -264,35 +267,32 @@ export default function Header({
             : "pointer-events-none invisible opacity-0"
         }`}
         onClick={() => setIsPopupOpen(false)}
+        onTouchMove={(e) => e.preventDefault()}
       />
 
       <div
-        className={`fixed inset-y-0 right-0 z-[101] flex w-full max-w-md flex-col bg-white text-black shadow-2xl transition-transform duration-300 ease-in-out ${
+        className={`fixed inset-y-0 right-0 z-[101] flex h-dvh w-full max-w-md flex-col bg-white text-black shadow-2xl transition-transform duration-300 ease-in-out ${
           isPopupOpen ? "translate-x-0" : "translate-x-full"
         }`}
       >
-        <div className="flex items-center justify-between px-5 pt-5">
+        <div className="flex flex-shrink-0 items-center justify-between px-5 pt-5">
           <h3 className="text-xl pt-16 font-bold text-black">
             {popup?.aboutpopup?.title || "About Us"}
           </h3>
           <button
             type="button"
             onClick={() => setIsPopupOpen(false)}
-            className="rounded-full cursor-pointer p-2 text-slate-900 "
+            className="rounded-full cursor-pointer p-2 text-slate-900"
           >
             <FiX size={24} />
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-5">
-          {/* About Description */}
+        <div className="flex-1 overflow-y-auto overscroll-contain px-5 pb-6">
           {popup?.aboutpopup?.desc && (
-            <p className="text-sm text-slate-500">
-              {popup.aboutpopup.desc}
-            </p>
+            <p className="text-sm text-slate-500">{popup.aboutpopup.desc}</p>
           )}
 
-          {/* Instagram Grid */}
           {popup?.instagram && (
             <div>
               <h4 className="mb-4 text-base font-semibold text-white">
@@ -302,7 +302,7 @@ export default function Header({
                 {popup.instagram.images?.map((img, idx) => (
                   <div
                     key={idx}
-                    className="aspect-square overflow-hidden  bg-slate-800"
+                    className="aspect-square overflow-hidden bg-slate-800"
                   >
                     <img
                       src={img.src}
@@ -315,9 +315,8 @@ export default function Header({
             </div>
           )}
 
-          {/* Contact Popup Info */}
           {popup?.contactpopup && (
-            <div className="rounded-xl flex justify-center py-8 text-center space-y-6 ">
+            <div className="rounded-xl flex justify-center py-8 text-center space-y-6">
               <div>
                 <a
                   href={popup.contactpopup.phoneHref}
@@ -327,7 +326,7 @@ export default function Header({
                   <span>{popup.contactpopup.phone}</span>
                 </a>
 
-                <p className="text-xs pt-5 text-slate-500 uppercase font-semibold">
+                <p className="text-sm pt-5 text-slate-500 uppercase font-semibold">
                   {popup.contactpopup.separator}
                 </p>
 
@@ -342,7 +341,6 @@ export default function Header({
             </div>
           )}
 
-          {/* Social Links */}
           {popup?.socialLinkspopup && popup.socialLinkspopup.length > 0 && (
             <div className="flex justify-center items-center gap-3 pt-2">
               {popup.socialLinkspopup.map((social) => (
@@ -367,10 +365,11 @@ export default function Header({
             : "pointer-events-none invisible opacity-0"
         }`}
         onClick={() => setIsMobileMenuOpen(false)}
+        onTouchMove={(e) => e.preventDefault()}
       />
 
       <div
-        className={`fixed inset-y-0 left-0 z-50 flex w-[85%] max-w-xs flex-col bg-white shadow-2xl transition-transform duration-300 ease-in-out md:hidden ${
+        className={`fixed inset-y-0 left-0 z-50 flex h-dvh w-[85%] max-w-xs flex-col bg-white shadow-2xl transition-transform duration-300 ease-in-out md:hidden ${
           isMobileMenuOpen ? "translate-x-0" : "-translate-x-full"
         }`}
       >
@@ -395,7 +394,8 @@ export default function Header({
           </button>
         </div>
 
-        <div className="flex-1 overflow-y-auto px-4 py-4">
+        {/* Scroll Container with OverScroll containment */}
+        <div className="flex-1 overflow-y-auto overscroll-contain px-4 py-4">
           <nav className="flex flex-col space-y-1">
             {data?.header?.map((item) => {
               const hasChildren = item.children && item.children.length > 0;

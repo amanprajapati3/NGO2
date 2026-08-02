@@ -131,7 +131,7 @@ export default function CaseDetails({ data }: CaseDetailPageProps) {
                       {/* Post Info */}
                       <div className="flex flex-1 flex-col">
                         {/* Meta Category & Date */}
-                        <div className="flex items-center gap-2 text-xs font-medium text-gray-500 sm:text-sm">
+                        <div className="flex items-center gap-2 text-sm font-medium text-gray-500 sm:text-sm">
                           <span>{post.date}</span>
                           {post.category && (
                             <>

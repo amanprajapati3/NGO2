@@ -148,7 +148,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                       <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#ff541b] shadow-sm">
                         {iconMap[perk.icon] || <FiGift className="text-xl" />}
                       </div>
-                      <span className="mt-3 text-xs font-bold leading-tight text-[#0d152e]">
+                      <span className="mt-3 text-sm font-bold leading-tight text-[#0d152e]">
                         {perk.title}
                       </span>
                     </div>
@@ -169,7 +169,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
               </h3>
               <div className="mt-2 h-[2px] w-8 bg-[#ff541b]" />
 
-              <div className="mt-6 space-y-4 text-xs sm:text-sm">
+              <div className="mt-6 space-y-4 text-sm sm:text-sm">
                 
                 <div className="flex items-center justify-between py-1 border-b border-slate-50">
                   <div className="flex items-center gap-2.5 text-[#64748b]">
@@ -235,7 +235,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
               <div className="mt-7">
                 <Link
                   href={data.applyButton.href}
-                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-[#ff541b] py-3.5 text-xs font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e]"
+                  className="group flex w-full items-center justify-center gap-2 rounded-xl bg-[#ff541b] py-3.5 text-sm font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e]"
                 >
                   <span>{data.applyButton.label}</span>
                   <FiArrowRight className="text-base transition-transform duration-300 group-hover:translate-x-1" />
@@ -253,13 +253,13 @@ export default function JobDetails({ data }: JobDetailsProps) {
                 <h4 className="mt-3 text-base font-bold text-[#0d152e]">
                   {data.questionsSection.title}
                 </h4>
-                <p className="mt-1 text-xs text-[#64748b] leading-relaxed">
+                <p className="mt-1 text-sm text-[#64748b] leading-relaxed">
                   {data.questionsSection.pretitle}
                 </p>
 
                 <a
                   href={`mailto:${data.questionsSection.email}`}
-                  className="mt-4 inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-white px-4 py-2.5 text-xs font-semibold text-blue-600 transition-all hover:bg-blue-50"
+                  className="mt-4 inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-white px-4 py-2.5 text-sm font-semibold text-blue-600 transition-all hover:bg-blue-50"
                 >
                   <FiMail size={14} />
                   <span>{data.questionsSection.buttonLabel}</span>
@@ -273,7 +273,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                 <h3 className="text-base font-bold text-[#0d152e]">
                   {data.shareSection.title}
                 </h3>
-                <p className="mt-1 text-xs text-[#64748b]">
+                <p className="mt-1 text-sm text-[#64748b]">
                   {data.shareSection.pretitle}
                 </p>
 
@@ -338,14 +338,14 @@ export default function JobDetails({ data }: JobDetailsProps) {
 
                 <div className="max-w-md">
                   {data.cta.badge && (
-                    <span className="text-xs font-bold uppercase tracking-wider text-[#ff541b]">
+                    <span className="text-sm font-bold uppercase tracking-wider text-[#ff541b]">
                       {data.cta.badge}
                     </span>
                   )}
                   <h3 className="mt-1 text-xl font-bold text-[#0d152e] sm:text-2xl">
                     {data.cta.title}
                   </h3>
-                  <p className="mt-1 text-xs leading-relaxed text-[#525b70] sm:text-sm">
+                  <p className="mt-1 text-sm leading-relaxed text-[#525b70] sm:text-sm">
                     {data.cta.description}
                   </p>
                 </div>
@@ -354,7 +354,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
               <div className="shrink-0">
                 <Link
                   href={data.cta.button.href}
-                  className="group inline-flex items-center gap-2 rounded-xl bg-[#ff541b] px-6 py-3.5 text-xs font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e] sm:text-sm"
+                  className="group inline-flex items-center gap-2 rounded-xl bg-[#ff541b] px-6 py-3.5 text-sm font-bold text-white shadow-md transition-all duration-300 hover:bg-[#e0430e] sm:text-sm"
                 >
                   <span>{data.cta.button.label}</span>
                   <FiArrowRight className="text-base transition-transform duration-300 group-hover:translate-x-1" />

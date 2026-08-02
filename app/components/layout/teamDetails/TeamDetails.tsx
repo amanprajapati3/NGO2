@@ -87,7 +87,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                       <h4 className="text-xl sm:text-2xl lg:text-3xl font-extrabold text-orange-500">
                         {stat.value}
                       </h4>
-                      <p className="text-[10px] min-h-8 sm:text-xs text-slate-400 mt-0.5 uppercase tracking-wider font-medium">
+                      <p className="text-[10px] min-h-8 sm:text-sm text-slate-400 mt-0.5 uppercase tracking-wider font-medium">
                         {stat.label}
                       </p>
                     </div>
@@ -116,7 +116,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <Mail className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 font-medium">Email</p>
+                    <p className="text-sm text-slate-500 font-medium">Email</p>
                     <a href={`mailto:${contactInfo.email}`} className="text-sm font-semibold text-slate-800 hover:text-orange-600 transition">
                       {contactInfo.email}
                     </a>
@@ -128,7 +128,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <Phone className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 font-medium">Phone</p>
+                    <p className="text-sm text-slate-500 font-medium">Phone</p>
                     <a href={`tel:${contactInfo.phone}`} className="text-sm font-semibold text-slate-800 hover:text-orange-600 transition">
                       {contactInfo.phone}
                     </a>
@@ -140,7 +140,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <MapPin className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 font-medium">Location</p>
+                    <p className="text-sm text-slate-500 font-medium">Location</p>
                     <p className="text-sm font-semibold text-slate-800">{contactInfo.location}</p>
                   </div>
                 </div>
@@ -150,7 +150,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <GraduationCap className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 font-medium">Qualification</p>
+                    <p className="text-sm text-slate-500 font-medium">Qualification</p>
                     <p className="text-sm font-semibold text-slate-800">{contactInfo.qualification}</p>
                   </div>
                 </div>
@@ -160,7 +160,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <Globe className="w-5 h-5" />
                   </div>
                   <div>
-                    <p className="text-xs text-slate-500 font-medium">Language</p>
+                    <p className="text-sm text-slate-500 font-medium">Language</p>
                     <p className="text-sm font-semibold text-slate-800">
                       {contactInfo.languages.join(", ")}
                     </p>
@@ -237,7 +237,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                       <span className="text-sm font-semibold text-slate-800">
                         {item.skill}
                       </span>
-                      <span className="text-xs font-bold text-slate-600">
+                      <span className="text-sm font-bold text-slate-600">
                         {item.percentage}%
                       </span>
                     </div>
@@ -285,7 +285,7 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                     <div className="w-10 h-10 rounded-lg bg-orange-50 text-orange-600 flex items-center justify-center mb-4">
                       <Briefcase className="w-5 h-5" />
                     </div>
-                    <span className="text-xs font-bold bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
+                    <span className="text-sm font-bold bg-orange-100 text-orange-700 px-3 py-1 rounded-full">
                       {exp.period}
                     </span>
                     <h3 className="text-lg font-bold text-slate-900 mt-4">

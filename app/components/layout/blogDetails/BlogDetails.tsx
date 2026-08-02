@@ -43,14 +43,14 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
               />
               {/* Category Badge */}
               <div className="absolute bottom-4 left-4 z-10">
-                <span className="px-4 py-1.5 bg-[#ff541b] text-white text-xs font-semibold rounded-md shadow-md tracking-wide uppercase">
+                <span className="px-4 py-1.5 bg-[#ff541b] text-white text-sm font-semibold rounded-md shadow-md tracking-wide uppercase">
                   {mainContent.category}
                 </span>
               </div>
             </div>
 
             {/* Article Meta Bar */}
-            <div className="flex flex-wrap items-center gap-6 text-xs sm:text-sm text-slate-500 mb-4 pb-1">
+            <div className="flex flex-wrap items-center gap-6 text-sm sm:text-sm text-slate-500 mb-4 pb-1">
               <div className="flex items-center gap-2">
                 <Calendar className="w-4 h-4 text-[#ff541b]" />
                 <span>{mainContent.meta.publishedDate}</span>
@@ -123,7 +123,7 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                       <div className="flex-shrink-0 w-5 h-5 rounded-full bg-orange-100 flex items-center justify-center">
                         <Check className="w-3.5 h-3.5 text-[#ff541b] stroke-[3]" />
                       </div>
-                      <span className="text-xs sm:text-sm font-medium text-slate-700">
+                      <span className="text-sm sm:text-sm font-medium text-slate-700">
                         {element.label}
                       </span>
                     </div>
@@ -192,10 +192,10 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-xs text-slate-400 font-medium mb-1">
+                      <span className="text-sm text-slate-400 font-medium mb-1">
                         {post.date}
                       </span>
-                      <h4 className="text-xs sm:text-sm font-bold text-[#0B132A] line-clamp-2 leading-snug group-hover:text-[#ff541b] transition-colors">
+                      <h4 className="text-sm sm:text-sm font-bold text-[#0B132A] line-clamp-2 leading-snug group-hover:text-[#ff541b] transition-colors">
                         {post.title}
                       </h4>
                     </div>
@@ -219,13 +219,13 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                   {sidebar.ctaWidget.title}
                 </h3>
                 
-                <p className="text-xs sm:text-sm text-slate-600 leading-relaxed mb-6 relative z-10 max-w-xs">
+                <p className="text-sm sm:text-sm text-slate-600 leading-relaxed mb-6 relative z-10 max-w-xs">
                   {sidebar.ctaWidget.description}
                 </p>
 
                 <Link
                   href={sidebar.ctaWidget.buttonHref}
-                  className="relative z-10 inline-flex items-center justify-center px-8 py-3 bg-[#ff541b] text-white font-bold text-xs sm:text-sm rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#e0450e] hover:shadow-orange-500/30 hover:-translate-y-0.5 transition-all duration-200 uppercase tracking-wider"
+                  className="relative z-10 inline-flex items-center justify-center px-8 py-3 bg-[#ff541b] text-white font-bold text-sm sm:text-sm rounded-xl shadow-lg shadow-orange-500/20 hover:bg-[#e0450e] hover:shadow-orange-500/30 hover:-translate-y-0.5 transition-all duration-200 uppercase tracking-wider"
                 >
                   {sidebar.ctaWidget.buttonLabel}
                 </Link>

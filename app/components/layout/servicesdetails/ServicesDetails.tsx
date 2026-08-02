@@ -175,17 +175,17 @@ export default function ServiceDetailPage({
 
         {/* ABOUT THIS SERVICE */}
         <section className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
-          <div className="lg:col-span-6">
-            <div className="flex items-center gap-2">
+          <div className="lg:col-span-6 text-center md:text-start">
+            <div className="  text-center md:text-start">
               {/* <span className="h-[2px] w-6 bg-orange-400" /> */}
-              <span className="text-xs font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
+              <p className="text-sm text-center  font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
                 {aboutSection.tag}
-              </span>
+              </p>
             </div>
-            <h1 className="mt-3 text-2xl font-serif font-extrabold text-[#111111] sm:text-3xl lg:text-4xl">
+            <h1 className="mt-1 text-2xl font-serif font-extrabold text-[#111111] sm:text-3xl lg:text-4xl">
               {aboutSection.title}
             </h1>
-            <div className="mt-4 space-y-3 text-xs leading-relaxed text-slate-600 sm:text-sm sm:leading-normal">
+            <div className="mt-4 space-y-3 text-sm leading-relaxed text-slate-600 sm:text-sm sm:leading-normal">
               {aboutSection.paragraphs.map((paragraph, index) => (
                 <p key={index}>{paragraph}</p>
               ))}
@@ -201,7 +201,7 @@ export default function ServiceDetailPage({
                       <FiBook className="h-5 w-5" />
                     )}
                   </div>
-                  <span className="text-xs font-bold leading-tight text-[#111111]">
+                  <span className="text-sm font-bold leading-tight text-[#111111]">
                     {feature.title}
                   </span>
                 </div>
@@ -223,7 +223,7 @@ export default function ServiceDetailPage({
         {/* WHAT WE DO */}
         <section className="mt-12">
           <div className="text-center">
-            <div className="flex items-center justify-center gap-2 text-xs font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
+            <div className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
               {/* <span className="h-[1px] w-6 bg-orange-500" /> */}
               <HiOutlineHeart className="text-base text-[#FF4500]" />
               
@@ -249,7 +249,7 @@ export default function ServiceDetailPage({
                   <h3 className="mt-4 text-base font-serif font-bold text-[#111111]">
                     {card.title}
                   </h3>
-                  <p className="mt-2 text-xs leading-relaxed text-slate-500 sm:text-sm">
+                  <p className="mt-2 text-sm leading-relaxed text-slate-500 sm:text-sm">
                     {card.description}
                   </p>
              </div>
@@ -269,7 +269,7 @@ export default function ServiceDetailPage({
             <div className="absolute inset-0" />
             <div className="relative flex items-center justify-center px-4 text-center">
               <div>
-                <div className="flex items-center  text-orange-400 justify-center gap-2 text-xs font-bold uppercase tracking-wider text-black sm:text-sm">
+                <div className="flex items-center  text-orange-400 justify-center gap-2 text-sm font-bold uppercase tracking-wider text-black sm:text-sm">
                   <HiOutlineHeart className="text-base text-[#FF4500]" />
                   <span>{impactSection.tag}</span>
                   {/* <span className="h-[1px] w-6 bg-orange-400 " /> */}
@@ -299,7 +299,7 @@ export default function ServiceDetailPage({
                     startAnimation={statsStarted}
                   />
                 </span>
-                <span className="mt-1 text-xs font-semibold text-slate-700 sm:text-sm">
+                <span className="mt-1 text-sm font-semibold text-slate-700 sm:text-sm">
                   {stat.label}
                 </span>
               </div>
@@ -311,33 +311,33 @@ export default function ServiceDetailPage({
         <section className="mt-10 overflow-hidden rounded-3xl bg-[#fafafa] sm:mt-16">
           <div className="grid grid-cols-1 items-center lg:grid-cols-12">
             <div className="space-y-4 p-6 sm:p-10 lg:col-span-6 lg:p-12">
-              <span className="text-xs font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
+              <span className="text-sm font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
                 {getInvolvedSection.tag}
               </span>
               <h2 className="text-xl font-serif font-bold text-[#111111] sm:text-3xl lg:text-4xl">
                 {getInvolvedSection.title}
               </h2>
-              <p className="text-xs leading-relaxed text-slate-600 sm:text-sm">
+              <p className="text-sm leading-relaxed text-slate-600 sm:text-sm">
                 {getInvolvedSection.description}
               </p>
               <div className="flex flex-col gap-3 pt-2 sm:flex-row sm:items-center">
                 <Link
                   href={getInvolvedSection.buttons.primary.href}
-                  className="inline-flex items-center justify-center gap-2 rounded-full bg-orange-400 px-6 py-3 text-xs font-bold text-white shadow-md transition-all hover:bg-orange-500 sm:text-sm"
+                  className="inline-flex items-center justify-center gap-2 rounded-full bg-orange-400 px-6 py-3 text-sm font-bold text-white shadow-md transition-all hover:bg-orange-500 sm:text-sm"
                 >
                   <span>
                     {getInvolvedSection.buttons.primary.label}
                   </span>
-                  <FiArrowRight className="text-xs sm:text-sm" />
+                  <FiArrowRight className="text-sm sm:text-sm" />
                 </Link>
                 <Link
                   href={getInvolvedSection.buttons.secondary.href}
-                  className="inline-flex items-center justify-center gap-2 rounded-full border border-orange-600 bg-white px-6 py-3 text-xs font-bold text-orange-400 transition-all hover:bg-orange-500 hover:text-white sm:text-sm"
+                  className="inline-flex items-center justify-center gap-2 rounded-full border border-orange-600 bg-white px-6 py-3 text-sm font-bold text-orange-400 transition-all hover:bg-orange-500 hover:text-white sm:text-sm"
                 >
                   <span>
                     {getInvolvedSection.buttons.secondary.label}
                   </span>
-                  <FiArrowRight className="text-xs sm:text-sm" />
+                  <FiArrowRight className="text-sm sm:text-sm" />
                 </Link>
               </div>
             </div>

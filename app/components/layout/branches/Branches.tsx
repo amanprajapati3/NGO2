@@ -108,7 +108,7 @@ export default function Branches({ data }: Props) {
                 {stat.label}
               </p>
 
-              <p className="mt-0.5 text-xs text-gray-500">{stat.subLabel}</p>
+              <p className="mt-0.5 text-sm text-gray-500">{stat.subLabel}</p>
             </div>
           ))}
         </div>
@@ -118,20 +118,22 @@ export default function Branches({ data }: Props) {
       <section className="mx-auto max-w-6xl sm:px-4 px-2 sm:pb-16 pb-10">
         <div className="mb-10 text-center">
           <div className="mb- flex items-center justify-center gap-3">
-            <div className="h-px w-10 bg-orange-500" />
+            {/* <div className="h-px w-10 bg-orange-500" /> */}
+                      <HiOutlineHeart className="text-base  text-[#FF4500]" />
+
 
             <p className="text-sm font-semibold tracking-widest text-orange-600">
               {locationsSection.label}
             </p>
 
-            <div className="h-px w-10 bg-orange-500" />
+            {/* <div className="h-px w-10 bg-orange-500" /> */}
           </div>
 
           <h2 className="text-2xl font-bold text-gray-900 md:text-3xl">
             {locationsSection.title}
           </h2>
 
-          <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-orange-500" />
+          {/* <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-orange-500" /> */}
         </div>
 
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-5">
@@ -178,7 +180,7 @@ export default function Branches({ data }: Props) {
                 <div className="mb-3 flex items-center justify-center gap-3 md:justify-start">
                   <span className="h-px w-10 bg-orange-400" />
 
-                  <span className="text-xs font-semibold tracking-[0.2em] text-orange-600">
+                  <span className="text-sm font-semibold tracking-[0.2em] text-orange-600">
                     {locationsSection.label}
                   </span>
                 </div>
@@ -205,11 +207,11 @@ export default function Branches({ data }: Props) {
       </section>
 
       {/* ===================== CTA BANNER ===================== */}
-      <section className="mx-auto max-w-6xl px-4 pb-10">
+      <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-10">
         <div className="relative overflow-hidden rounded-2xl bg-orange-50">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2">
             {/* Left Content */}
-            <div className="relative z-10 p-8 md:p-10 lg:p-12">
+            <div className="relative z-10 sm:p-8 p-2 md:p-10 lg:p-12">
               <div className="mb-4 flex items-center gap-3">
                 <div className="flex h-12 w-12 sm:h-20 sm:w-20 items-center justify-center rounded-full bg-white text-orange-600">
                   <img
@@ -219,7 +221,7 @@ export default function Branches({ data }: Props) {
                   />
                 </div>
 
-                <p className="text-xs font-semibold tracking-widest text-orange-600">
+                <p className="text-sm font-semibold tracking-widest text-orange-600">
                   {ctaBanner.label}
                 </p>
               </div>
@@ -232,10 +234,10 @@ export default function Branches({ data }: Props) {
                 {ctaBanner.description}
               </p>
 
-              <div className="flex flex-wrap gap-3">
+              <div className="flex flex-wrap justify-center sm:justify-start mb-2 sm:gap-3 gap-1">
                 <Link
                   href={ctaBanner.primaryButton.href}
-                  className="inline-flex items-center gap-2 rounded-full bg-orange-600 px-6 py-2.5 text-sm font-semibold text-white transition hover:bg-orange-700"
+                  className="inline-flex items-center gap-2 rounded-full bg-orange-600 sm:px-6 sm:py-2.5 p-2 text-sm font-semibold text-white transition hover:bg-orange-700"
                 >
                   {ctaBanner.primaryButton.label}
                   <ArrowRight className="h-4 w-4" />
@@ -243,7 +245,7 @@ export default function Branches({ data }: Props) {
 
                 <Link
                   href={ctaBanner.secondaryButton.href}
-                  className="inline-flex items-center gap-2 rounded-full border-2 border-orange-600 px-6 py-2.5 text-sm font-semibold text-orange-600 transition hover:bg-orange-50"
+                  className="inline-flex items-center gap-2 rounded-full border-2 border-orange-600 sm:px-6 sm:py-2.5 p-2 text-sm font-semibold text-orange-600 transition hover:bg-orange-50"
                 >
                   {ctaBanner.secondaryButton.label}
                   <ArrowRight className="h-4 w-4" />
