@@ -2190,7 +2190,6 @@ export interface FranchisePageProps {
     breadcrumbHome: string;
     breadcrumbCurrent: string;
     bgImageUrl: string;
-    title: string;
   };
 
   header: {
@@ -2237,7 +2236,7 @@ export interface FranchisePageProps {
     }[];
 
     privacy: {
-      text: string;
+      prefix: string;
       links: {
         label: string;
         href: string;
