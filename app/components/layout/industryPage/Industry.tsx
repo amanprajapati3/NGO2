@@ -47,7 +47,7 @@ const getIcon = (name: string) => {
           viewBox="0 0 24 24"
           className="w-6 h-6 text-white"
         >
-          <path d="M17 8C8 10 5 16.17 3.83 12 12c.17 4.17 4 8 8 8 5.52 0 10-4.48 10-10 0-4.84-3.44-8.87-8-9.83zm-5 10c-3.31 0-6-2.69-6-6 0-1.01.25-1.97.7-2.8 2.24 3.32 5.86 5.6 10 5.75-.85 1.81-2.75 3.05-4.7 3.05z" />
+          <path d="M17.5 3C10.5 3.5 5 7.5 5 13c0 3.5 2.5 6 6 6 5.5 0 9-5 9-12.5C20 5 19 3.5 17.5 3zM7 13c0-3.2 3-6 8-7.2-1.5 4.5-4.2 7.2-8 7.2zm4 7c-1.2 0-2.5-.3-3.5-1 2.2-.3 4.5-1.5 6.2-3.3 1.5-1.6 2.5-3.5 3.1-5.5-.2 5.8-2.4 9.8-5.8 9.8z" />
         </svg>
       );
 
@@ -223,14 +223,17 @@ export default function Industry({ data }: IndustryProps) {
 
   return (
     <div className="w-full bg-[#FCFDFD] font-sans text-[#0F172A]">
-      <PageBanner banner={banner} title={`${header.title.part1} ${header.title.part2}`} />
+      <PageBanner
+        banner={banner}
+        title={`${header.title.part1} ${header.title.part2}`}
+      />
 
       {/* ================= MAIN CONTENT ================= */}
       <section className="mx-auto max-w-7xl px-4 md:py-12 py-8 sm:px-6  lg:px-8">
         {/* ================= SECTION HEADER ================= */}
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-3">
-           <HiOutlineHeart className="text-base text-[#FF4500]" />
+            <HiOutlineHeart className="text-base text-[#FF4500]" />
 
             <span className="text-sm font-bold uppercase tracking-wider text-orange-500 sm:text-sm">
               {header.topBadge}

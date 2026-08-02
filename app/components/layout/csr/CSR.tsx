@@ -405,8 +405,8 @@ export default function CSR({ data }: CSRProps) {
               {data.ourImpact.description}
             </p>
 
-            <button className="mt-4 flex items-center space-x-2 rounded-lg border border-orange-400 bg-white px-5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm transition-colors hover:bg-orange-50">
-              <span>{data.ourImpact.ctaButton.text}</span>
+            <button className="mt-4 flex items-center cursor-pointer space-x-2 rounded-lg border border-orange-400 bg-white px-5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm transition-colors hover:bg-orange-50">
+              <a href={data.ourImpact.ctaButton.href}> <span>{data.ourImpact.ctaButton.text}</span></a>
               <span>&rarr;</span>
             </button>
           </div>
@@ -498,8 +498,8 @@ export default function CSR({ data }: CSRProps) {
             </div>
           </div>
 
-          <button className="flex items-center space-x-2 whitespace-nowrap rounded-lg bg-white px-6 py-3 text-sm font-bold text-orange-700 shadow-sm transition-colors hover:bg-orange-50">
-            <span>{data.bannerCta.buttonText}</span>
+          <button className="flex items-center space-x-2 cursor-pointer whitespace-nowrap rounded-lg bg-white px-6 py-3 text-sm font-bold text-orange-700 shadow-sm transition-colors hover:bg-orange-50">
+           <a href={data.bannerCta.href}> <span>{data.bannerCta.buttonText}</span></a>
             <span>&rarr;</span>
           </button>
         </div>

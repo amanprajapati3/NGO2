@@ -77,8 +77,8 @@
       "href": "/career"
     },
     {
-          "label": "Blogs",
-          "href": "/blog"
+      "label": "Blogs",
+      "href": "/blog"
     },
     {
       "label": "Events",
@@ -108,9 +108,9 @@
         }
       ]
     },
-            {
-          "label": "Faqs",
-          "href": "/faq"
+    {
+      "label": "Faqs",
+      "href": "/faq"
     }
   ],
   "footer": {
@@ -194,19 +194,19 @@
           "title": "Support About Poverty To Poor Family",
           "date": "22 January 2025",
           "image": "/NGO_Images/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
-          "href": "/blog"
+          "href": "/blog-details"
         },
         {
           "title": "Mostly Suffered School Boys Care",
           "date": "24 January 2024",
           "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
-          "href": "/blog"
+          "href": "/blog-details"
         },
         {
           "title": "Mostly Suffered School Boys Care",
           "date": "24 January 2024",
           "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
-          "href": "/blog"
+          "href": "/blog-details"
         }
       ]
     },
@@ -2279,7 +2279,7 @@
         "href": "/job-detail"
       },
       {
-        "id": "communications-officer",
+        "id": "program-officer",
         "title": "Communications Officer",
         "location": "New Delhi, India",
         "employmentType": "Full Time",
@@ -2296,7 +2296,7 @@
       "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities..",
       "button": {
         "label": "Send Your Resume",
-        "href": "/contact-us"
+        "href": "/apply-form"
       }
     }
   },
@@ -2367,7 +2367,7 @@
       "title": "Have Questions?",
       "pretitle": "We're here to help you find the right opportunity.",
       "buttonLabel": "Contact HR Team",
-      "email": "careers@company.com"
+      "phone": "+91 1235 4678 90"
     },
     "shareSection": {
       "title": "Share this Job",
@@ -2384,7 +2384,7 @@
       "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities.",
       "button": {
         "label": "Send Your Resume",
-        "href": "/contact-us"
+        "href": "/apply-form"
       }
     },
     "applyButton": {
@@ -2637,7 +2637,7 @@
         "description": "If you have any questions, feel free to contact our HR team.",
         "button": {
           "label": "Contact HR Team",
-          "href": "mailto:hr@company.com"
+          "href": "tel:98709860987"
         }
       }
     }
@@ -3661,7 +3661,7 @@
           "title": "Become a Volunteer",
           "description": "Give your time and skills to support our programs and communities.",
           "action": {
-            "label": "Sign Up Now",
+            "label": "Connect",
             "url": "/contact-us"
           }
         },
@@ -3854,7 +3854,8 @@
 
       "ctaButton": {
         "text": "Learn More About Our Impact",
-        "action": "->"
+        "action": "->",
+        "href": "/about-us"
       },
 
       "pillars": [
@@ -3928,7 +3929,8 @@
       "title": "Together, We Can Build a Better Tomorrow",
       "description": "Join hands with us in creating a more inclusive, equitable, and sustainable world.",
       "buttonText": "Partner With Us",
-      "buttonAction": "->"
+      "buttonAction": "->",
+      "href": "/contact-us"
     },
 
     "coreValues": {
@@ -4100,11 +4102,20 @@
         }
       ],
 
-      "privacy": {
-        "text": "I agree to the Privacy Policy and Terms & Conditions.",
-        "links": ["Privacy Policy", "Terms & Conditions"],
-        "required": true
-      },
+"privacy": {
+  "prefix": "I agree to the",
+  "links": [
+    {
+      "label": "Privacy Policy",
+      "href": "/privacy-policy"
+    },
+    {
+      "label": "Terms & Conditions",
+      "href": "/terms-conditions"
+    }
+  ],
+  "required": true
+},
 
       "submitButton": {
         "label": "Submit Enquiry",
@@ -4332,10 +4343,18 @@
           ]
         }
       ],
-
       "privacy": {
-        "text": "I agree to the Privacy Policy and Terms & Conditions.",
-        "links": ["Privacy Policy", "Terms & Conditions"],
+        "prefix": "I agree to the",
+        "links": [
+          {
+            "label": "Privacy Policy",
+            "href": "/privacy-policy"
+          },
+          {
+            "label": "Terms & Conditions",
+            "href": "/terms-conditions"
+          }
+        ],
         "required": true
       },
 
@@ -5008,7 +5027,7 @@
       "buttonLink": "/donate"
     }
   },
-    "media": {
+  "media": {
     "banner": {
       "breadcrumbCurrent": "Media",
       "breadcrumbHome": "Home",

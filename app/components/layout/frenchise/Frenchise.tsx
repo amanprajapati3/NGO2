@@ -2,7 +2,24 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import {Handshake, TrendingUp, Coins, Users, HeartHandshake, CheckCircle2, User, Mail, Phone, MapPin, MessageSquare, Send, ClipboardList, FileText, Award, GraduationCap, Clock,
+import {
+  Handshake,
+  TrendingUp,
+  Coins,
+  Users,
+  HeartHandshake,
+  CheckCircle2,
+  User,
+  Mail,
+  Phone,
+  MapPin,
+  MessageSquare,
+  Send,
+  ClipboardList,
+  FileText,
+  Award,
+  GraduationCap,
+  Clock,
   Heart,
 } from "lucide-react";
 
@@ -45,10 +62,7 @@ export default function FrenchisePage({ data }: Props) {
     contactBanner,
   } = data;
 
-  const getIcon = (
-    name?: string,
-    className = "h-5 w-5"
-  ) => {
+  const getIcon = (name?: string, className = "h-5 w-5") => {
     if (!name) return null;
 
     const Icon = iconMap[name.toLowerCase()];
@@ -73,13 +87,11 @@ export default function FrenchisePage({ data }: Props) {
 
   return (
     <main className="min-h-screen bg-white text-gray-800">
-
       {/* ===================== BANNER ===================== */}
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl px-3 pb-12  md:pt-10 pt-8 text-center">
-
         {/* <div className="mb-2 flex items-center justify-center gap-4">
 
           <div className="flex h-12 sm:h-20 sm:w-20 w-12 items-center justify-center rounded-full border-2 border-orange-500 text-orange-600">
@@ -88,13 +100,12 @@ export default function FrenchisePage({ data }: Props) {
 
           <div className="h-px w-14 bg-orange-500" />
         </div> */}
-         <div className="flex justify-center gap-1">
+        <div className="flex justify-center gap-1">
           <HiOutlineHeart className="text-base text-[#FF4500]" />
-        <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">
-          {header.label}
-        </p>
-         </div>
-
+          <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">
+            {header.label}
+          </p>
+        </div>
 
         {/* JSON DATA */}
         <h2 className="mb-2 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
@@ -117,7 +128,6 @@ export default function FrenchisePage({ data }: Props) {
       {/* ===================== FEATURES ===================== */}
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
         <div className="grid  gap-0 grid-cols-2 md:grid-cols-4">
-
           {features.map((feature) => (
             <div
               key={feature.title}
@@ -136,17 +146,14 @@ export default function FrenchisePage({ data }: Props) {
               </p>
             </div>
           ))}
-
         </div>
       </section>
 
       {/* ===================== MAIN GRID ===================== */}
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
         <div className="grid grid-cols-1 sm:gap-8 gap-4 lg:grid-cols-2 lg:gap-10">
-
           {/* ================= LEFT SECTION ================= */}
           <div className="relative overflow-hidden rounded-2xl bg-orange-50 sm:p-8 p-3">
-
             <p className="mb-2 text-sm font-semibold tracking-widest text-orange-600">
               {leftSection.label}
             </p>
@@ -161,15 +168,10 @@ export default function FrenchisePage({ data }: Props) {
 
             <ul className="mb-8 sm:space-y-3 space-y-1">
               {leftSection.points.map((point) => (
-                <li
-                  key={point}
-                  className="flex items-start gap-3"
-                >
+                <li key={point} className="flex items-start gap-3">
                   <CheckCircle2 className="mt-0.5 h-5 w-5 shrink-0 text-orange-500" />
 
-                  <span className="text-sm text-gray-700">
-                    {point}
-                  </span>
+                  <span className="text-sm text-gray-700">{point}</span>
                 </li>
               ))}
             </ul>
@@ -188,146 +190,115 @@ export default function FrenchisePage({ data }: Props) {
 
           {/* ================= RIGHT FORM ================= */}
           <div className="rounded-2xl border border-gray-100 bg-white sm:p-8 p-2 shadow-sm">
-
             <h3 className="mb-1 text-xl font-bold text-gray-900">
               {form.title}
             </h3>
 
-            <p className="mb-6 text-sm text-gray-500">
-              {form.pretitle}
-            </p>
+            <p className="mb-6 text-sm text-gray-500">{form.pretitle}</p>
 
             <form className="space-y-5">
-
               {/* Full Name + Email */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {[fullNameField, emailField]
-                  .filter(Boolean)
-                  .map((field) => (
-                    <div key={field!.name}>
+                {[fullNameField, emailField].filter(Boolean).map((field) => (
+                  <div key={field!.name}>
+                    <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                      {field!.label}
 
-                      <label className="mb-1.5 block text-sm font-medium text-gray-700">
-                        {field!.label}
+                      {field!.required && (
+                        <span className="ml-1 text-orange-500">*</span>
+                      )}
+                    </label>
 
-                        {field!.required && (
-                          <span className="ml-1 text-orange-500">
-                            *
-                          </span>
-                        )}
-                      </label>
+                    <div className="relative">
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                        {getIcon(field!.icon, "h-4 w-4")}
+                      </span>
 
-                      <div className="relative">
-
-                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                          {getIcon(field!.icon, "h-4 w-4")}
-                        </span>
-
-                        <input
-                          type={field!.type}
-                          name={field!.name}
-                          placeholder={field!.placeholder}
-                          required={field!.required}
-                          className="w-full rounded-lg border border-gray-200 py-2.5 pl-10 pr-4 text-sm transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
-                        />
-
-                      </div>
+                      <input
+                        type={field!.type}
+                        name={field!.name}
+                        placeholder={field!.placeholder}
+                        required={field!.required}
+                        className="w-full rounded-lg border border-gray-200 py-2.5 pl-10 pr-4 text-sm transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
+                      />
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
 
               {/* Phone + City */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {[phoneField, cityField]
-                  .filter(Boolean)
-                  .map((field) => (
-                    <div key={field!.name}>
+                {[phoneField, cityField].filter(Boolean).map((field) => (
+                  <div key={field!.name}>
+                    <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                      {field!.label}
 
-                      <label className="mb-1.5 block text-sm font-medium text-gray-700">
-                        {field!.label}
+                      {field!.required && (
+                        <span className="ml-1 text-orange-500">*</span>
+                      )}
+                    </label>
 
-                        {field!.required && (
-                          <span className="ml-1 text-orange-500">
-                            *
-                          </span>
-                        )}
-                      </label>
+                    <div className="relative">
+                      <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
+                        {getIcon(field!.icon, "h-4 w-4")}
+                      </span>
 
-                      <div className="relative">
-
-                        <span className="absolute left-3 top-1/2 -translate-y-1/2 text-gray-400">
-                          {getIcon(field!.icon, "h-4 w-4")}
-                        </span>
-
-                        <input
-                          type={field!.type}
-                          name={field!.name}
-                          placeholder={field!.placeholder}
-                          required={field!.required}
-                          className="w-full rounded-lg border border-gray-200 py-2.5 pl-10 pr-4 text-sm transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
-                        />
-
-                      </div>
+                      <input
+                        type={field!.type}
+                        name={field!.name}
+                        placeholder={field!.placeholder}
+                        required={field!.required}
+                        className="w-full rounded-lg border border-gray-200 py-2.5 pl-10 pr-4 text-sm transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
+                      />
                     </div>
-                  ))}
+                  </div>
+                ))}
               </div>
 
               {/* State + Investment */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-                {[stateField, investmentField]
-                  .filter(Boolean)
-                  .map((field) => (
-                    <div key={field!.name}>
+                {[stateField, investmentField].filter(Boolean).map((field) => (
+                  <div key={field!.name}>
+                    <label className="mb-1.5 block text-sm font-medium text-gray-700">
+                      {field!.label}
 
-                      <label className="mb-1.5 block text-sm font-medium text-gray-700">
-                        {field!.label}
+                      {field!.required && (
+                        <span className="ml-1 text-orange-500">*</span>
+                      )}
+                    </label>
 
-                        {field!.required && (
-                          <span className="ml-1 text-orange-500">
-                            *
-                          </span>
-                        )}
-                      </label>
+                    <select
+                      name={field!.name}
+                      required={field!.required}
+                      defaultValue=""
+                      className="w-full appearance-none rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-500 transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
+                    >
+                      <option value="" disabled>
+                        {field!.placeholder}
+                      </option>
 
-                      <select
-                        name={field!.name}
-                        required={field!.required}
-                        defaultValue=""
-                        className="w-full appearance-none rounded-lg border border-gray-200 bg-white px-4 py-2.5 text-sm text-gray-500 transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
-                      >
-                        <option value="" disabled>
-                          {field!.placeholder}
+                      {field!.options?.map((option) => (
+                        <option key={option.value} value={option.value}>
+                          {option.label}
                         </option>
-
-                        {field!.options?.map((option) => (
-                          <option
-                            key={option.value}
-                            value={option.value}
-                          >
-                            {option.label}
-                          </option>
-                        ))}
-                      </select>
-
-                    </div>
-                  ))}
+                      ))}
+                    </select>
+                  </div>
+                ))}
               </div>
 
               {/* Why Partner */}
               {whyField && (
                 <div>
-
                   <label className="mb-1.5 block text-sm font-medium text-gray-700">
                     {whyField.label}
 
                     {whyField.required && (
-                      <span className="ml-1 text-orange-500">
-                        *
-                      </span>
+                      <span className="ml-1 text-orange-500">*</span>
                     )}
                   </label>
 
                   <div className="relative">
-
                     <span className="absolute left-3 top-3 text-gray-400">
                       {getIcon(whyField.icon, "h-4 w-4")}
                     </span>
@@ -339,19 +310,16 @@ export default function FrenchisePage({ data }: Props) {
                       required={whyField.required}
                       className="w-full resize-none rounded-lg border border-gray-200 py-2.5 pl-10 pr-4 text-sm transition focus:border-orange-500 focus:outline-none focus:ring-2 focus:ring-orange-500/30"
                     />
-
                   </div>
                 </div>
               )}
 
               {/* How did you hear + Preferred Contact */}
               <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-
                 {[hearField, contactMethodField]
                   .filter(Boolean)
                   .map((field) => (
                     <div key={field!.name}>
-
                       <label className="mb-1.5 block text-sm font-medium text-gray-700">
                         {field!.label}
                       </label>
@@ -367,10 +335,7 @@ export default function FrenchisePage({ data }: Props) {
                         </option>
 
                         {field!.options?.map((option) => (
-                          <option
-                            key={option.value}
-                            value={option.value}
-                          >
+                          <option key={option.value} value={option.value}>
                             {option.label}
                           </option>
                         ))}
@@ -381,7 +346,6 @@ export default function FrenchisePage({ data }: Props) {
 
               {/* Privacy */}
               <div className="flex items-start gap-2.5 pt-1">
-
                 <input
                   type="checkbox"
                   id="privacy"
@@ -393,9 +357,22 @@ export default function FrenchisePage({ data }: Props) {
                   htmlFor="privacy"
                   className="text-sm leading-relaxed text-gray-600"
                 >
-                  {form.privacy.text}
+                  I agree to the{" "}
+                  <Link
+                    href={form.privacy.links[0].href}
+                    className="font-medium text-orange-600 hover:text-orange-700 hover:underline"
+                  >
+                    {form.privacy.links[0].label}
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href={form.privacy.links[1].href}
+                    className="font-medium text-orange-600 hover:text-orange-700 hover:underline"
+                  >
+                    {form.privacy.links[1].label}
+                  </Link>
+                  .
                 </label>
-
               </div>
 
               {/* Submit */}
@@ -407,7 +384,6 @@ export default function FrenchisePage({ data }: Props) {
 
                 {form.submitButton.label}
               </button>
-
             </form>
           </div>
         </div>
@@ -454,7 +430,6 @@ export default function FrenchisePage({ data }: Props) {
       {/* ===================== CONTACT BANNER ===================== */}
       <section className="mx-auto max-w-6xl sm:px-4 px-0 md:pb-16">
         <div className="relative overflow-hidden md:rounded-2xl bg-gray-900 sm:px-8 p-4 sm:py-10 text-white md:px-12">
-
           {/* JSON image */}
           <div className="absolute inset-y-0 right-0 hidden w-1/3  md:block">
             <Image

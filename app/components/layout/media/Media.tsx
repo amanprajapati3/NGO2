@@ -71,7 +71,6 @@ export default function Media({ data }: MediaProps) {
                         sizes="(max-width: 640px) 120px, (max-width: 1024px) 160px, 200px"
                         className="h-full w-full object-contain scale-110 transition-transform duration-300 group-hover:scale-115"
                         loading="lazy"
-                        quality={80}
                       />
                     </div>
 

@@ -1,10 +1,20 @@
+"use client"
+
 import PageBanner from "../../shared/PageBanner"
 import Image from "next/image";
 import Link from "next/link";
 import type { TermsConditionProps } from "@/type/typeSection";
+import { useEffect } from "react";
 
 export default function TermsConditions({ data }: TermsConditionProps) {
   const { banner, conditions } = data;
+    useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      left: 0,
+      behavior: "instant",
+    });
+  }, []);
 
   return (
     <main className="min-h-screen bg-[#fafafa]">

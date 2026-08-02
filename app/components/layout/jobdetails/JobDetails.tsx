@@ -16,24 +16,22 @@ import {
   FiArrowRight,
   FiHeadphones,
   FiMail,
-  FiLinkedin,
-  FiFacebook,
-  FiTwitter,
   FiGift,
-  FiHeart,
   FiTrendingUp,
-  FiShield,
   FiLayers,
 } from "react-icons/fi";
-import { FaWhatsapp } from "react-icons/fa";
+import { GiCheckedShield } from "react-icons/gi";
 import type { JobDetailsProps } from "@/type/typeSection";
+import { GiLifeSupport } from "react-icons/gi";
+import { IoMdClock } from "react-icons/io";
+import { FaGift } from "react-icons/fa6";
 
 const iconMap: Record<string, React.ReactNode> = {
-  FiShield: <FiShield className="text-xl" />,
-  FiTrendingUp: <FiTrendingUp className="text-xl" />,
-  FiHeart: <FiHeart className="text-xl" />,
-  FiClock: <FiClock className="text-xl" />,
-  FiGift: <FiGift className="text-xl" />,
+  FiShield: <GiCheckedShield className="text-xl md:text-4xl" />,
+  FiTrendingUp: <FiTrendingUp className="text-xl md:text-4xl" />,
+  FiHeart: <GiLifeSupport className="text-xl md:text-4xl" />,
+  FiClock: <IoMdClock className="text-xl md:text-4xl" />,
+  FiGift: <FaGift className="text-xl md:text-4xl" />,
 };
 
 export default function JobDetails({ data }: JobDetailsProps) {
@@ -145,7 +143,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                       key={index}
                       className="flex flex-col items-center justify-center rounded-xl bg-[#fff7f4] p-4 text-center transition-all duration-300 hover:bg-[#fff0eb]"
                     >
-                      <div className="flex h-10 w-10 items-center justify-center rounded-full bg-white text-[#ff541b] shadow-sm">
+                      <div className="flex h-10 md:h-20 md:w-20 w-10 items-center justify-center rounded-full bg-white text-[#ff541b] shadow-sm">
                         {iconMap[perk.icon] || <FiGift className="text-xl" />}
                       </div>
                       <span className="mt-3 text-sm font-bold leading-tight text-[#0d152e]">
@@ -258,7 +256,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                 </p>
 
                 <a
-                  href={`mailto:${data.questionsSection.email}`}
+                  href={`tel:${data.questionsSection.phone}`}
                   className="mt-4 inline-flex items-center gap-2 rounded-lg border border-blue-200 bg-white px-4 py-2.5 text-sm font-semibold text-blue-600 transition-all hover:bg-blue-50"
                 >
                   <FiMail size={14} />
@@ -268,7 +266,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
             )}
 
             {/* SHARE THIS JOB */}
-            {data.shareSection && (
+            {/* {data.shareSection && (
               <div className="rounded-2xl bg-white p-6 shadow-[0_2px_15px_rgba(0,0,0,0.03)] border border-slate-100 sm:p-7">
                 <h3 className="text-base font-bold text-[#0d152e]">
                   {data.shareSection.title}
@@ -320,7 +318,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
                   )}
                 </div>
               </div>
-            )}
+            )} */}
 
           </div>
 

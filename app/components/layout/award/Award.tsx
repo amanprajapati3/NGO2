@@ -202,11 +202,11 @@ export default function Award({ data }: AwardsDataProps) {
       <PageBanner banner={banner} />
 
       {/* ================= 2. MAIN AWARDS SECTION ================= */}
-      <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/40 via-white to-orange-50/20 md:py-12 py-8">
+      <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/40 via-white to-orange-50/20 md:py-8 py-8">
         {/* Floating Streamers and Confetti Backdrop */}
         <ConfettiBackground />
 
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="max-w-7xl mx-auto px-4  sm:px-6 lg:px-8 relative z-10">
           {/* ================= SECTION HEADER ================= */}
           <div className="relative text-center max-w-3xl mx-auto pt-4 pb-6">
             {/* Left Opposite C-Shape Curved Laurel Wreath */}

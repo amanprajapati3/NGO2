@@ -399,12 +399,25 @@ export default function EnquiryPage({ data }: Props) {
                   required={form.privacy.required}
                   className="mt-1 h-4 w-4 rounded border-gray-300 text-orange-600 focus:ring-orange-500"
                 />
-
                 <label
                   htmlFor="privacy"
                   className="text-sm leading-relaxed text-gray-600"
                 >
-                  {form.privacy.text}
+                  {form.privacy.prefix}{" "}
+                  <Link
+                    href={form.privacy.links[0].href}
+                    className="font-medium text-orange-600 hover:underline"
+                  >
+                    {form.privacy.links[0].label}
+                  </Link>{" "}
+                  and{" "}
+                  <Link
+                    href={form.privacy.links[1].href}
+                    className="font-medium text-orange-600 hover:underline"
+                  >
+                    {form.privacy.links[1].label}
+                  </Link>
+                  .
                 </label>
               </div>
 
@@ -511,7 +524,9 @@ export default function EnquiryPage({ data }: Props) {
             <a href={footerBanner.button.href} className="flex gap-1">
               {" "}
               {footerBanner.button.label}
-             <span className="mt-1">{getIcon(footerBanner.button.icon, "h-4 w-4")}</span> 
+              <span className="mt-1">
+                {getIcon(footerBanner.button.icon, "h-4 w-4")}
+              </span>
             </a>
           </button>
         </div>

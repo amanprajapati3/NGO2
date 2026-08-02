@@ -427,7 +427,7 @@ export interface CauseItem {
   icon: string;
   category: string;
   title: string;
-  titleLink:string;
+  titleLink: string;
   description: string;
   button: CauseButton;
 }
@@ -536,7 +536,7 @@ export interface TeamSocial {
 
 export interface TeamMember {
   name: string;
-  textLink:string;
+  textLink: string;
   designation: string;
   description: string;
   image: string;
@@ -594,7 +594,7 @@ export interface SupportBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
   bgImageUrl: string;
-  title:string;
+  title: string;
 }
 
 export interface SupportButton {
@@ -661,7 +661,7 @@ export interface EventBanner {
 export interface EventButton {
   label: string;
   variant?: "primary" | "secondary";
-  href:string;
+  href: string;
 }
 
 export interface EventCard {
@@ -839,7 +839,7 @@ export interface NewsTitle {
 
 export interface NewsButton {
   label: string;
-  href:string;
+  href: string;
 }
 
 export interface NewsArticle {
@@ -1129,7 +1129,7 @@ export interface QuestionsSection {
   title: string;
   pretitle: string;
   buttonLabel: string;
-  email: string;
+  phone: string;
 }
 
 export interface ShareSection {
@@ -1601,8 +1601,6 @@ export interface SitemapPageProps {
   data: SitemapData;
 }
 
-
-
 //Donate Now Banner
 export type DonateNowBanner = {
   breadcrumbCurrent: string;
@@ -2049,6 +2047,7 @@ export interface CSRPageProps {
     ctaButton: {
       text: string;
       action: string;
+      href: string;
     };
 
     pillars: {
@@ -2077,6 +2076,7 @@ export interface CSRPageProps {
     description: string;
     buttonText: string;
     buttonAction: string;
+    href: string;
   };
 
   coreValues: {
@@ -2145,8 +2145,12 @@ export interface EnquiryNowPageProps {
     }[];
 
     privacy: {
+      prefix:string;
       text: string;
-      links: string[];
+      links: {
+        label: string;
+        href: string;
+      }[];
       required: boolean;
     };
 
@@ -2176,7 +2180,7 @@ export interface EnquiryNowPageProps {
     button: {
       label: string;
       icon: string;
-      href:string;
+      href: string;
     };
   };
 }
@@ -2234,7 +2238,10 @@ export interface FranchisePageProps {
 
     privacy: {
       text: string;
-      links: string[];
+      links: {
+        label: string;
+        href: string;
+      }[];
       required: boolean;
     };
 
@@ -2412,11 +2419,11 @@ export interface TeamDetailContactInfo {
   languages: string[];
 }
 
-export interface TeamDetailsBanner{
+export interface TeamDetailsBanner {
   breadcrumbHome: string;
   breadcrumbCurrent: string;
   bgImageUrl: string;
-  title:string;
+  title: string;
 }
 
 export interface TeamDetailSocialLinks {
@@ -2448,7 +2455,7 @@ export interface TeamDetailsData {
   role: string;
   bio: string;
   image: string;
-  banner:TeamDetailsBanner;
+  banner: TeamDetailsBanner;
   stats: TeamDetailStat[];
   contactInfo: TeamDetailContactInfo;
   socialLinks: TeamDetailSocialLinks;
@@ -2491,10 +2498,10 @@ export interface PrimaryArticle {
   paragraphs: string[];
 }
 
-export interface CaseDetailsBanner{
+export interface CaseDetailsBanner {
   breadcrumbHome: string;
-  breadcrumbCurrent:string;
-  bgImageUrl:string
+  breadcrumbCurrent: string;
+  bgImageUrl: string;
 }
 
 export interface SecondaryArticle {
@@ -2509,12 +2516,12 @@ export interface CaseDetailPageMainContent {
   pageTitle: string;
   mainContent: CaseDetailPageMainContent;
   sidebar: SidebarCaseDetailsData;
-  banner: CaseDetailsBanner
+  banner: CaseDetailsBanner;
 }
 
 // Complete Page Data Interface
 export interface CaseDetailPageProps {
-   data: CaseDetailPageMainContent
+  data: CaseDetailPageMainContent;
 }
 
 export interface BlogDetailImage {
@@ -2522,10 +2529,10 @@ export interface BlogDetailImage {
   alt: string;
 }
 
-export interface BlogDetailsBanner{
-  breadcrumbHome:string;
-  breadcrumbCurrent:string;
-  bgImageUrl:string;
+export interface BlogDetailsBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
+  bgImageUrl: string;
 }
 
 export interface BlogDetailMeta {
@@ -2592,7 +2599,7 @@ export interface BlogDetailData {
   pageTitle: string;
   mainContent: BlogDetailMainContent;
   sidebar: BlogDetailSidebar;
-  banner:BlogDetailsBanner;
+  banner: BlogDetailsBanner;
 }
 
 export interface BlogDetailsPageProps {
@@ -2668,9 +2675,9 @@ export interface EventDetailsPageProps {
   data: EventDetailData;
 }
 
-export interface ProjectDetailsBanner{
-  breadcrumbHome:string;
-  breadcrumbCurrent:string;
+export interface ProjectDetailsBanner {
+  breadcrumbHome: string;
+  breadcrumbCurrent: string;
   bgImageUrl: string;
 }
 
