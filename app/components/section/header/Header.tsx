@@ -108,7 +108,7 @@ export default function Header({
                 {topBar.phone && (
                   <a
                     href={topBar.phoneHref || `tel:${topBar.phone}`}
-                    className="flex items-center gap-1.5 text-xs sm:text-sm"
+                    className="flex items-center gap-1.5 text-sm sm:text-sm"
                   >
                     <FiPhone className="shrink-0 text-orange-500" size={14} />
                     <span>{topBar.phone}</span>

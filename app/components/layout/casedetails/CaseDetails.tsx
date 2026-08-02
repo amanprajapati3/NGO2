@@ -46,7 +46,7 @@ export default function CaseDetails({ data }: CaseDetailPageProps) {
               </h2>
 
               {/* Article Paragraphs */}
-              <div className="mt-0 p-2 sm:p-3 space-y-4 text-sm leading-relaxed text-gray-600 sm:text-base">
+              <div className="mt-0 p-2 sm:p-3 space-y-4 text-sm leading-relaxed text-gray-600">
                 {primaryArticle.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}
@@ -69,7 +69,7 @@ export default function CaseDetails({ data }: CaseDetailPageProps) {
               </h2>
 
               {/* Paragraphs */}
-              <div className="mt-4 space-y-4 text-sm leading-relaxed text-gray-600 sm:text-base">
+              <div className="mt-4 space-y-4 text-sm leading-relaxed text-gray-600 ">
                 {secondaryArticle.paragraphs.map((paragraph, index) => (
                   <p key={index}>{paragraph}</p>
                 ))}

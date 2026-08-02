@@ -344,7 +344,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
 
             {/* Optional Title Overlay */}
             {/* {filteredImages[selectedIndex].title && (
-              <div className="w-full bg-black/60 p-3 text-center text-white text-xs sm:text-sm font-semibold rounded-b-2xl">
+              <div className="w-full bg-black/60 p-3 text-center text-white text-sm sm:text-sm font-semibold rounded-b-2xl">
                 {filteredImages[selectedIndex].title}
               </div>
             )} */}

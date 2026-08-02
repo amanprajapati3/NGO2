@@ -61,14 +61,14 @@ export default function PageBanner({
                   {item.label}
                 </Link>
               ) : (
-                <span>{item.label}</span>
+                <span className="text-orange-500">{item.label}</span>
               )}
               {index < breadcrumbItems.length - 1 && <span>/</span>}
             </span>
           ))}
         </div>
 
-        <div className="mx-auto mt-5 h-1 w-16 rounded-full bg-[#ff541b]" />
+        <div className="mx-auto mt-2 h-1 w-16 rounded-full bg-[#ff541b]" />
       </div>
     </section>
   );

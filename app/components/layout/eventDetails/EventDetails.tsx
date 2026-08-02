@@ -158,7 +158,7 @@ export default function EventDetails({ data }: EventDetailsPageProps) {
                       />
                     </div>
                     <div className="flex flex-col">
-                      <span className="text-xs sm:text-sm text-slate-400 font-medium mb-1">
+                      <span className="text-sm sm:text-sm text-slate-400 font-medium mb-1">
                         {post.date}
                       </span>
                       <h4 className="text-sm font-bold text-[#0B132A] line-clamp-2 leading-snug group-hover:text-[#ff541b] transition-colors">

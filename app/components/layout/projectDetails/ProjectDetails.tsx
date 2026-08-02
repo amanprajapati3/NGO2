@@ -100,7 +100,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                   className="object-cover"
                 />
                 {mainImage?.badgeText && (
-                  <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-full bg-[#FF4500] px-3.5 py-1.5 text-xs font-bold text-white shadow-md">
+                  <div className="absolute bottom-4 left-4 z-10 flex items-center gap-2 rounded-full bg-[#FF4500] px-3.5 py-1.5 text-sm font-bold text-white shadow-md">
                     <IoWaterOutline className="text-sm" />
                     <span>{mainImage.badgeText}</span>
                   </div>
@@ -110,7 +110,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
 
             {/* Right Meta Header & Details */}
             <div className="flex flex-col justify-center lg:col-span-5 lg:pl-4">
-              <div className="flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-[#FF4500]">
+              <div className="flex items-center gap-2 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
                 <HiOutlineHeart className="text-base" />
                 <span>{badge || "OUR PROJECT"}</span>
               </div>
@@ -132,7 +132,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                   <span className="mt-1 text-[11px] font-semibold text-slate-400">
                     {meta?.projectStarted?.label || "Project Started"}
                   </span>
-                  <span className="mt-0.5 text-xs font-bold text-slate-800 sm:text-sm">
+                  <span className="mt-0.5 text-sm font-bold text-slate-800 sm:text-sm">
                     {meta?.projectStarted?.value}
                   </span>
                 </div>
@@ -142,7 +142,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                   <span className="mt-1 text-[11px] font-semibold text-slate-400">
                     {meta?.location?.label || "Location"}
                   </span>
-                  <span className="mt-0.5 text-xs font-bold text-slate-800 sm:text-sm">
+                  <span className="mt-0.5 text-sm font-bold text-slate-800 sm:text-sm">
                     {meta?.location?.value}
                   </span>
                 </div>
@@ -152,7 +152,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                   <span className="mt-1 text-[11px] font-semibold text-slate-400">
                     {meta?.beneficiaries?.label || "Beneficiaries"}
                   </span>
-                  <span className="mt-0.5 text-xs font-bold text-slate-800 sm:text-sm">
+                  <span className="mt-0.5 text-sm font-bold text-slate-800 sm:text-sm">
                     {meta?.beneficiaries?.value}
                   </span>
                 </div>
@@ -221,7 +221,7 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                       <h4 className="font-serif text-xl font-extrabold text-[#0F172A]">
                         {stat.value}
                       </h4>
-                      <p className="text-xs font-medium text-slate-500 sm:text-sm">
+                      <p className="text-sm font-medium text-slate-500 sm:text-sm">
                         {stat.label}
                       </p>
                     </div>
@@ -311,7 +311,6 @@ export default function ProjectDetails({ data }: ProjectDetailsProps) {
                       width={112}
                       height={112}
                       sizes="112px"
-                      quality={80}
                       className="h-full w-full object-contain"
                     />
                   </div>
