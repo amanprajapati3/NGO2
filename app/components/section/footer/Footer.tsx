@@ -139,25 +139,22 @@ export default function Footer({ data }: { data: FooterData }) {
             <div className="space-y-6">
               {data.recentNews.items.map((item, index) => (
                 <Link key={index} href={item.href} className="group flex gap-5">
-                  <div className="relative h-[67px] w-[80px] shrink-0 overflow-hidden">
+                  <div className="relative h-[67px] w-[80px] rounded-md shrink-0 overflow-hidden">
                     <img
                       src={item.image}
                       alt={item.title}
                       className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
                     />
                   </div>
-
+                
                   <div className="border-l border-dashed border-slate-700 pl-5">
+                      <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-400">
+                    {/* <span className="h-2 w-2 rounded-full bg-[#ff5a1f]" /> */}
+                    <span>{item.date}</span>
+                  </div>
                     <h4 className="text-sm font-medium leading-6 text-white transition-colors group-hover:text-[#ff5a1f]">
                       {item.title}
                     </h4>
-
-                    <div className="mt-2 flex items-center gap-1.5 text-sm text-slate-400">
-                      <span className="h-2 w-2 rounded-full bg-[#ff5a1f]" />
-                      <span>
-                        {item.category}, {item.date}
-                      </span>
-                    </div>
                   </div>
                 </Link>
               ))}

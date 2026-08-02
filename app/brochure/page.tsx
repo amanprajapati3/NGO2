@@ -1,4 +1,4 @@
-import Bronchure from "../components/layout/bronchure/Bronchure";
+import Bronchure from "../components/layout/brochure/Brochure";
 import data from "@/data/data.json";
 import type { BrochurePageProps } from "@/type/typeSection";
 

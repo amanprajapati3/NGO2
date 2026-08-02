@@ -203,7 +203,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
                     {/* Main Donate Button */}
                     <Link
                       href={item.button.href}
-                      className={`absolute left-1/2 -translate-x-1/2 flex w-[55%] items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
+                      className={`absolute left-1/2 -translate-x-1/2 flex w-[40%] items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
                     >
                       <span>{item.button.label}</span>
                       <FiArrowRight className="text-sm" />
@@ -216,7 +216,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
         </div>
 
         {/* ================= EXPLORE MORE BUTTON ================= */}
-        <div className="mb-12 mt-4 flex justify-center">
+        {/* <div className="mb-12 mt-4 flex justify-center">
           <Link
             href={exploreButton.href}
             className="group inline-flex items-center gap-2 rounded-full border border-slate-300 bg-white px-7 py-3 text-sm font-bold text-slate-800 shadow-sm transition-all hover:border-slate-400 hover:bg-slate-50"
@@ -224,11 +224,11 @@ export default function CausesSection({ data }: CausesSectionProps) {
             <span>{exploreButton.label}</span>
             <FiArrowRight className="text-sm transition-transform group-hover:translate-x-1" />
           </Link>
-        </div>
+        </div> */}
 
         {/* ================= CTA BANNER ================= */}
 {cta && (
-  <div className="relative mt-5 h-[260px] sm:h-[280px] overflow-hidden bg-[#232042] py-10 text-center text-white shadow-2xl  flex items-center justify-center">
+  <div className="relative mt-12 h-[260px] sm:h-[280px] overflow-hidden bg-[#232042] py-10 text-center text-white shadow-2xl  flex items-center justify-center">
     
     {/* ================= BACKGROUND LEAVES (EXACT SCALE & POSITIONS) ================= */}
     <div className="absolute inset-0 pointer-events-none select-none overflow-hidden flex justify-between items-center px-2 sm:px-6">

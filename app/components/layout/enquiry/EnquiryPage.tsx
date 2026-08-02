@@ -484,7 +484,7 @@ export default function EnquiryPage({ data }: Props) {
           5. FOOTER BANNER
       =================================================== */}
 
-      <section className="mx-auto max-w-6xl sm:px-4 ">
+      <section className="mx-auto max-w-6xl sm:px-4 md:mb-10">
         <div className="flex flex-col items-center justify-between gap-6 sm:rounded-2xl bg-orange-600 sm:px-8 px-3 sm:py-7 py-3 text-white sm:flex-row">
           {/* Text */}
 
@@ -508,9 +508,11 @@ export default function EnquiryPage({ data }: Props) {
             type="button"
             className="inline-flex items-center gap-2 whitespace-nowrap rounded-full bg-white px-6 py-3 font-semibold text-orange-600 transition hover:bg-orange-50"
           >
-            {footerBanner.button.label}
-
-            {getIcon(footerBanner.button.icon, "h-4 w-4")}
+            <a href={footerBanner.button.href} className="flex gap-1">
+              {" "}
+              {footerBanner.button.label}
+             <span className="mt-1">{getIcon(footerBanner.button.icon, "h-4 w-4")}</span> 
+            </a>
           </button>
         </div>
       </section>

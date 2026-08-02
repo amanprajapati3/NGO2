@@ -12,11 +12,11 @@ import type { TeamMember, TeamSectionProps } from "@/type/typeSection";
 const getSocialIcon = (icon: string) => {
   switch (icon) {
     case "facebook":
-      return <FaFacebookF className="text-[10px]" />;
+      return <FaFacebookF className="text-[12px]" />;
     case "linkedin":
-      return <FaLinkedinIn className="text-[10px]" />;
-    case "twitter":
-      return <RiInstagramFill className="text-[10px]" />;
+      return <FaLinkedinIn className="text-[12px]" />;
+    case "instagram":
+      return <RiInstagramFill className="text-[12px]" />;
     default:
       return null;
   }

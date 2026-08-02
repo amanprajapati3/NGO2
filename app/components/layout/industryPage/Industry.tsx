@@ -298,7 +298,7 @@ export default function Industry({ data }: IndustryProps) {
               </div>
 
               {/* CTA */}
-              <div className="pb-5 text-center">
+              {/* <div className="pb-5 text-center">
                 <a
                   href={sector.cta.url}
                   className="inline-flex items-center gap-1.5 text-sm font-bold text-orange-500 transition-colors hover:text-orange-700"
@@ -309,7 +309,7 @@ export default function Industry({ data }: IndustryProps) {
                     →
                   </span>
                 </a>
-              </div>
+              </div> */}
             </div>
           ))}
         </div>

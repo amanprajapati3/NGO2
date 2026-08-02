@@ -89,10 +89,6 @@
           "href": "/event"
         },
         {
-          "label": "Past Events",
-          "href": "/events/past"
-        },
-        {
           "label": "Gallery",
           "href": "/gallery"
         }
@@ -105,10 +101,6 @@
         {
           "label": "Contact Us",
           "href": "/contact-us"
-        },
-        {
-          "label": "Office Locations",
-          "href": "/office-locations"
         },
         {
           "label": "Support",
@@ -189,27 +181,31 @@
           "href": "/testimonial"
         },
         {
-          "label": "Bronchure",
-          "href": "/bronchure"
+          "label": "Brochure",
+          "href": "/brochure"
         }
       ]
     },
 
     "recentNews": {
-      "title": "Recent News",
+      "title": "Recent Blogs",
       "items": [
         {
           "title": "Support About Poverty To Poor Family",
-          "category": "Poor",
-          "date": "22 January",
-          "image": "/NGO_images-feepik/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
+          "date": "22 January 2025",
+          "image": "/NGO_Images/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
           "href": "/blog"
         },
         {
           "title": "Mostly Suffered School Boys Care",
-          "category": "Health",
-          "date": "24 February",
-          "image": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg",
+          "date": "24 January 2024",
+          "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
+          "href": "/blog"
+        },
+        {
+          "title": "Mostly Suffered School Boys Care",
+          "date": "24 January 2024",
+          "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
           "href": "/blog"
         }
       ]
@@ -250,7 +246,7 @@
       "title": "It is more difficult to give money away",
       "pretitle": "Haruma",
       "desc": "Discover curated botanical blends and timeless floral aesthetic crafted to elevate your daily ritual.",
-      "bgImageUrl": "/NGO_images-feepik/children-holding-hand-group.jpg",
+      "bgImageUrl": "/NGO_Images/children-holding-hand-group.jpg",
       "overlayOpacity": 0.55,
       "ctaButtons": [
         {
@@ -265,7 +261,7 @@
       "title": "Together, We Can Create Change",
       "pretitle": "Support Our Mission",
       "desc": "Your support helps us empower communities, create opportunities, and build a better future for everyone.",
-      "bgImageUrl": "/NGO_images-feepik/children-plant-plants-garden.jpg",
+      "bgImageUrl": "/NGO_Images/children-plant-plants-garden.jpg",
       "overlayOpacity": 0.55,
       "ctaButtons": [
         { "label": "Donate Now", "href": "/donate", "variant": "primary" },
@@ -276,7 +272,7 @@
       "title": "It is more difficult to give money away",
       "pretitle": "Haruma",
       "desc": "Discover curated botanical blends and timeless floral aesthetic crafted to elevate your daily ritual.",
-      "bgImageUrl": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+      "bgImageUrl": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
       "overlayOpacity": 0.55,
       "ctaButtons": [
         {
@@ -297,35 +293,35 @@
       "title": "Instagram",
       "images": [
         {
-          "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+          "src": "/NGO_Images/children-speaking-holding-book.jpg",
           "alt": "Children together"
         },
         {
-          "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+          "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
           "alt": "Child portrait"
         },
         {
-          "src": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg",
+          "src": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
           "alt": "Happy child"
         },
         {
-          "src": "/NGO_images-feepik/colorful-letters-forming-word-donate.jpg",
+          "src": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
           "alt": "Child smiling"
         },
         {
-          "src": "/NGO_images-feepik/communication-feedback-chos-role.jpg",
+          "src": "/NGO_Images/communication-feedback-chos-role.jpg",
           "alt": "Children portrait"
         },
         {
-          "src": "/NGO_images-feepik/community-concept-with-nature-close-up.jpg",
+          "src": "/NGO_Images/community-concept-with-nature-close-up.jpg",
           "alt": "Children playing"
         },
         {
-          "src": "/NGO_images-feepik/cropped-hands-women.jpg",
+          "src": "/NGO_Images/cropped-hands-women.jpg",
           "alt": "Childhood moment"
         },
         {
-          "src": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+          "src": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
           "alt": "Child portrait"
         }
       ]
@@ -392,15 +388,15 @@
 
     "gallery": {
       "mainImage": {
-        "src": "/NGO_images-feepik/diverse-community-with-hands-circle.jpg",
+        "src": "/NGO_Images/diverse-community-with-hands-circle.jpg",
         "alt": "Children smiling together"
       },
       "topImage": {
-        "src": "/NGO_images-feepik/girl-is-reading-book-with-word-one-it.jpg",
+        "src": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "alt": "Shelter for families"
       },
       "sideImage": {
-        "src": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children (1).jpg",
+        "src": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "alt": "Community support"
       },
       "playButton": {
@@ -465,7 +461,7 @@
       "breadcrumbHome": "Home",
       "alt": "about us page ",
       "overlay": true,
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "values": {
       "badge": "Our Values",
@@ -516,7 +512,7 @@
       "line2": "Team Equal Care?"
     },
     "desc": "We are committed to creating sustainable change in communities by focusing on education, healthcare, empowerment, and essential support for those in need.",
-    "image": "/NGO_images-feepik/group-best-friends-making-toast.jpg",
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
     "imageAlt": "Children smiling together",
     "imageOverlay": {
       "icon": "heart-hand",
@@ -655,7 +651,7 @@
 
     "imageSection": {
       "mainImage": {
-        "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+        "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
         "alt": "Community volunteer helping children"
       },
       "purposeCard": {
@@ -697,7 +693,7 @@
     "banner": {
       "breadcrumbCurrent": "Case Study",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg"
+      "bgImageUrl": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
     },
     "title": {
       "line1": "The",
@@ -710,7 +706,7 @@
     "items": [
       {
         "image": {
-          "src": "/NGO_images-feepik/group-environmental-conservation-people-hands-planting-aerial-view.jpg",
+          "src": "/NGO_Images/group-environmental-conservation-people-hands-planting-aerial-view.jpg",
           "alt": "Education for poor child"
         },
         "icon": "education",
@@ -726,7 +722,7 @@
       },
       {
         "image": {
-          "src": "/NGO_images-feepik/hands-people-group-with-soil-plants-growth-environment-earth-day-support-teamwork-nature-volunteer-leaf-help-with-ngo-investing-sustainable-fertilizer-project-future.jpg",
+          "src": "/NGO_Images/group-environmental-conservation-people-hands-planting-aerial-view.jpg",
           "alt": "Donation support"
         },
         "icon": "donation",
@@ -742,7 +738,7 @@
       },
       {
         "image": {
-          "src": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg",
+          "src": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
           "alt": "Help homeless children"
         },
         "icon": "medical",
@@ -765,7 +761,7 @@
     },
 
     "cta": {
-      "bgImageUrl": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+      "bgImageUrl": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
 
       "title": "Want You Know How Can Help?",
 
@@ -791,7 +787,7 @@
     "banner": {
       "breadcrumbCurrent": "Projects",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg"
+      "bgImageUrl": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
     },
 
     "heading": {
@@ -806,7 +802,7 @@
         "category": "Education",
         "title": "Quality Education For All",
         "description": "Providing free education, books and learning resources to underprivileged children for a brighter future.",
-        "image": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+        "image": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
         "button": {
           "label": "Learn More",
           "href": "/project-details"
@@ -819,7 +815,7 @@
         "category": "Healthcare",
         "title": "Healthcare For Every Life",
         "description": "Organizing health camps, medical support and awareness programs for rural communities.",
-        "image": "/NGO_images-feepik/happy-diverse-kinds-park.jpg",
+        "image": "/NGO_Images/happy-diverse-kinds-park.jpg",
         "button": {
           "label": "Learn More",
           "href": "/project-details"
@@ -832,7 +828,7 @@
         "category": "Clean Water",
         "title": "Clean Water, Better Life",
         "description": "Building water wells and supplying safe drinking water to families and villages.",
-        "image": "/NGO_images-feepik/medium-shot-happy-kids-posing.jpg",
+        "image": "/NGO_Images/medium-shot-happy-kids-posing.jpg",
         "button": {
           "label": "Learn More",
           "href": "/project-details"
@@ -845,7 +841,7 @@
         "category": "Women Empowerment",
         "title": "Empowering Women",
         "description": "Skill development, vocational training and support programs to help women become independent.",
-        "image": "/NGO_images-feepik/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
+        "image": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
         "button": {
           "label": "Learn More",
           "href": "/project-details"
@@ -872,7 +868,7 @@
     "banner": {
       "breadcrumbCurrent": "Our Team",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
 
     "heading": {
@@ -888,7 +884,7 @@
         "textLink": "/team-details",
         "designation": "Founder & Director",
         "description": "Visionary leader with 15+ years of experience in social development and community building.",
-        "image": "/NGO_images-feepik/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
+        "image": "/NGO_Images/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -909,7 +905,7 @@
         "textLink": "/team-details",
         "designation": "Program Manager",
         "description": "Driving impactful programs in education, health and women's empowerment.",
-        "image": "/NGO_images-feepik/origami-chain-people-with-globe.jpg",
+        "image": "/NGO_Images/origami-chain-people-with-globe.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -930,7 +926,7 @@
         "textLink": "/team-details",
         "designation": "Operations Head",
         "description": "Ensures smooth operations and effective resource management across all initiatives.",
-        "image": "/NGO_images-feepik/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
+        "image": "/NGO_Images/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -951,7 +947,7 @@
         "textLink": "/team-details",
         "designation": "Communications Lead",
         "description": "Creating meaningful stories and inspiring our supporters through impactful communication.",
-        "image": "/NGO_images-feepik/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
+        "image": "/NGO_Images/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -972,7 +968,7 @@
         "textLink": "/team-details",
         "designation": "Volunteer Coordinator",
         "description": "Connecting passionate volunteers with meaningful opportunities across communities.",
-        "image": "/NGO_images-feepik/portrait-cute-girl-with-kitten.jpg",
+        "image": "/NGO_Images/portrait-cute-girl-with-kitten.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -993,7 +989,7 @@
         "textLink": "/team-details",
         "designation": "Healthcare Specialist",
         "description": "Leading rural health initiatives and awareness programs for underserved communities.",
-        "image": "/NGO_images-feepik/professional-working-person (1).jpg",
+        "image": "/NGO_Images/professional-working-person.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -1014,7 +1010,7 @@
         "textLink": "/team-details",
         "designation": "Fundraising Manager",
         "description": "Building partnerships and mobilizing resources to maximize social impact.",
-        "image": "/NGO_images-feepik/professional-working-person.jpg",
+        "image": "/NGO_Images/professional-working-person.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -1035,7 +1031,7 @@
         "textLink": "/team-details",
         "designation": "Community Outreach",
         "description": "Working closely with local communities to ensure sustainable development initiatives.",
-        "image": "/NGO_images-feepik/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg",
+        "image": "/NGO_Images/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg",
         "socials": [
           {
             "icon": "facebook",
@@ -1068,11 +1064,11 @@
     "name": "Rohit Sharma",
     "role": "FOUNDER & DIRECTOR",
     "bio": "Visionary leader with 15+ years of experience in social development and community building.",
-    "image": "/NGO_images-feepik/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
+    "image": "/NGO_Images/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
     "banner": {
       "breadcrumbCurrent": "Team Details",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
+      "bgImageUrl": "/NGO_Images/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
       "title": "Team Details"
     },
     "stats": [
@@ -1180,7 +1176,7 @@
     "banner": {
       "breadcrumbCurrent": "CTA",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/smiley-young-african-boy-standing-field.jpg"
+      "bgImageUrl": "/NGO_Images/smiley-young-african-boy-standing-field.jpg"
     },
     "title": {
       "line1": "Together, We Can",
@@ -1203,7 +1199,7 @@
       }
     ],
     "image": {
-      "src": "/NGO_images-feepik/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
+      "src": "/NGO_Images/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
       "alt": "Happy children"
     },
     "floatingCard": {
@@ -1224,7 +1220,7 @@
     "banner": {
       "breadcrumbCurrent": "Events",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "title": {
       "line1": "Be Ready",
@@ -1236,7 +1232,7 @@
     "events": [
       {
         "title": "Huruma Con Donation For Poor Child 2026",
-        "image": "/NGO_images-feepik/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
+        "image": "/NGO_Images/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
         "href": "/event-details",
         "button": {
           "label": "Join Now",
@@ -1246,7 +1242,7 @@
       },
       {
         "title": "Poor Funding For Helpless In Africa",
-        "image": "/NGO_images-feepik/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
+        "image": "/NGO_Images/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
         "href": "/event-details",
         "button": {
           "label": "Join Now",
@@ -1256,7 +1252,7 @@
       },
       {
         "title": "Education Is Necessary To Poverty Family In Canada",
-        "image": "/NGO_images-feepik/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
+        "image": "/NGO_Images/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
         "href": "/event-details",
         "button": {
           "label": "Join Now",
@@ -1271,11 +1267,11 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Events",
-      "bgImageUrl": "/NGO_images-feepik/children-holding-hand-group.jpg"
+      "bgImageUrl": "/NGO_Images/children-holding-hand-group.jpg"
     },
     "mainContent": {
       "mainImage": {
-        "src": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg",
+        "src": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
         "alt": "Volunteers distributing aid material"
       },
       "meta": {
@@ -1313,7 +1309,7 @@
           "title": "Delicate Contempt Received Two Yet Advanced",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+            "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -1323,7 +1319,7 @@
           "title": "Future Plan & Strategy For Construction",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg",
+            "src": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
             "alt": "Future Plan & Strategy For Construction"
           },
           "slug": "#"
@@ -1333,7 +1329,7 @@
           "title": "Melancholy Devonshire Alteration",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Melancholy Devonshire Alteration"
           },
           "slug": "#"
@@ -1343,7 +1339,7 @@
           "title": "Delicate Contempt Received Two Yet Advanced",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/children-holding-hand-group.jpg",
+            "src": "/NGO_Images/children-holding-hand-group.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -1356,12 +1352,12 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Blog Details",
-      "bgImageUrl": "/NGO_images-feepik/children-holding-hand-group.jpg"
+      "bgImageUrl": "/NGO_Images/children-holding-hand-group.jpg"
     },
     "mainContent": {
       "category": "Nonprofit",
       "mainImage": {
-        "src": "/NGO_images-feepik/children-plant-plants-garden.jpg",
+        "src": "/NGO_Images/children-plant-plants-garden.jpg",
         "alt": "Group of smiling young children together"
       },
       "meta": {
@@ -1381,15 +1377,15 @@
       ],
       "galleryImages": [
         {
-          "src": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg",
+          "src": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
           "alt": "Volunteer holding supplies outdoors"
         },
         {
-          "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+          "src": "/NGO_Images/children-speaking-holding-book.jpg",
           "alt": "Volunteer standing outdoors in green shirt"
         },
         {
-          "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+          "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
           "alt": "Group of volunteers holding donation box"
         }
       ],
@@ -1438,7 +1434,7 @@
           "title": "Delicate Contempt Received Two Yet Advanced",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+            "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -1448,7 +1444,7 @@
           "title": "Future Plan & Strategy For Construction",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Future Plan & Strategy For Construction"
           },
           "slug": "#"
@@ -1458,7 +1454,7 @@
           "title": "Melancholy Devonshire Alteration",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Melancholy Devonshire Alteration"
           },
           "slug": "#"
@@ -1468,7 +1464,7 @@
           "title": "Delicate Contempt Received Two Yet Advanced",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg",
+            "src": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -1478,7 +1474,7 @@
           "title": "Education Programs That Create Real Change",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+            "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Education Programs That Create Real Change"
           },
           "slug": "#"
@@ -1499,7 +1495,7 @@
     "banner": {
       "breadcrumbCurrent": "Gallery",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "title": {
       "line1": "Moments of",
@@ -1542,7 +1538,7 @@
         "category": "education",
         "categoryLabel": "EDUCATION",
         "duration": "02:45",
-        "thumbnail": "/NGO_images-feepik/colorful-letters-forming-word-donate.jpg",
+        "thumbnail": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1551,7 +1547,7 @@
         "category": "community",
         "categoryLabel": "CLEAN WATER",
         "duration": "02:12",
-        "thumbnail": "/NGO_images-feepik/communication-feedback-chos-role.jpg",
+        "thumbnail": "/NGO_Images/communication-feedback-chos-role.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1560,7 +1556,7 @@
         "category": "events",
         "categoryLabel": "WOMEN EMPOWERMENT",
         "duration": "01:58",
-        "thumbnail": "/NGO_images-feepik/community-concept-with-nature-close-up.jpg",
+        "thumbnail": "/NGO_Images/community-concept-with-nature-close-up.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1569,7 +1565,7 @@
         "category": "community",
         "categoryLabel": "COMMUNITY",
         "duration": "02:68",
-        "thumbnail": "/NGO_images-feepik/cropped-hands-women.jpg",
+        "thumbnail": "/NGO_Images/cropped-hands-women.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1578,7 +1574,7 @@
         "category": "community",
         "categoryLabel": "COMMUNITY",
         "duration": "01:47",
-        "thumbnail": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+        "thumbnail": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1587,7 +1583,7 @@
         "category": "health",
         "categoryLabel": "HEALTHCARE",
         "duration": "02:31",
-        "thumbnail": "/NGO_images-feepik/diverse-community-with-hands-circle.jpg",
+        "thumbnail": "/NGO_Images/diverse-community-with-hands-circle.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1596,7 +1592,7 @@
         "category": "education",
         "categoryLabel": "EDUCATION",
         "duration": "01:59",
-        "thumbnail": "/NGO_images-feepik/girl-is-reading-book-with-word-one-it.jpg",
+        "thumbnail": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       {
@@ -1605,7 +1601,7 @@
         "category": "community",
         "categoryLabel": "CLEAN WATER",
         "duration": "02:20",
-        "thumbnail": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children (1).jpg",
+        "thumbnail": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       }
     ],
@@ -1614,37 +1610,37 @@
       {
         "title": "Education is Hope",
         "category": "education",
-        "image": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+        "image": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
       },
       {
         "title": "Healthcare Support",
         "category": "health",
-        "image": "/NGO_images-feepik/diverse-community-with-hands-circle.jpg"
+        "image": "/NGO_Images/diverse-community-with-hands-circle.jpg"
       },
       {
         "title": "Food Distribution",
         "category": "food",
-        "image": "/NGO_images-feepik/group-best-friends-making-toast.jpg"
+        "image": "/NGO_Images/group-best-friends-making-toast.jpg"
       },
       {
         "title": "Community Children",
         "category": "community",
-        "image": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg"
+        "image": "/NGO_Images/group-children-with-their-hands-up-air.jpg"
       },
       {
         "title": "Learning Together",
         "category": "education",
-        "image": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg"
+        "image": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
       },
       {
         "title": "Planting Hope",
         "category": "community",
-        "image": "/NGO_images-feepik/group-environmental-conservation-people-hands-planting-aerial-view.jpg"
+        "image": "/NGO_Images/group-environmental-conservation-people-hands-planting-aerial-view.jpg"
       },
       {
         "title": "Volunteer Team",
         "category": "events",
-        "image": "/NGO_images-feepik/hands-people-group-with-soil-plants-growth-environment-earth-day-support-teamwork-nature-volunteer-leaf-help-with-ngo-investing-sustainable-fertilizer-project-future.jpg"
+        "image": "/NGO_Images/group-environmental-conservation-people-hands-planting-aerial-view.jpg"
       }
     ]
   },
@@ -1661,7 +1657,7 @@
     "banner": {
       "breadcrumbCurrent": "Partners",
       "breadcrumbHome": " Home",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
 
     "description": "We are grateful to our partners and sponsors for their trust, support, and shared commitment to building a better tomorrow.",
@@ -1710,7 +1706,7 @@
     "banner": {
       "breadcrumbCurrent": "Testimonial",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg"
+      "bgImageUrl": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg"
     },
     "title": {
       "line1": "Don't Believe Us?",
@@ -1722,42 +1718,42 @@
       {
         "name": "Juhon Dew",
         "designation": "Charity Blog Creator",
-        "image": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+        "image": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
         "rating": 5,
         "message": "Supporting this organization has been one of the most rewarding experiences of my life. Every campaign is thoughtfully planned, transparent, and focused on creating meaningful change. I have personally witnessed children receive education, families gain access to healthcare, and entire communities become stronger through their initiatives. Their commitment, honesty, and compassion make me proud to continue contributing and sharing their mission with others."
       },
       {
         "name": "Sarah Williams",
         "designation": "Community Volunteer",
-        "image": "/NGO_images-feepik/happy-diverse-kinds-park.jpg",
+        "image": "/NGO_Images/happy-diverse-kinds-park.jpg",
         "rating": 5,
         "message": "Volunteering with this NGO has completely transformed my perspective on service and humanity. Every project is organized with professionalism and genuine care for the people they support. The smiles of children, the gratitude of families, and the dedication of the entire team inspire me every single day. I feel honored to be part of an organization that consistently turns hope into real opportunities for those who need it most."
       },
       {
         "name": "Michael Brown",
         "designation": "Monthly Donor",
-        "image": "/NGO_images-feepik/medium-shot-happy-kids-posing.jpg",
+        "image": "/NGO_Images/medium-shot-happy-kids-posing.jpg",
         "rating": 5,
         "message": "What impressed me most was the transparency and accountability shown throughout every donation campaign. Regular reports, project updates, and real stories from beneficiaries gave me complete confidence that my contributions were making a genuine impact. Knowing that every donation helps provide education, food, clean water, and healthcare encourages me to remain a long-term supporter."
       },
       {
         "name": "Emily Johnson",
         "designation": "Education Sponsor",
-        "image": "/NGO_images-feepik/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
+        "image": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
         "rating": 5,
         "message": "Being able to sponsor a child's education through this foundation has been an unforgettable journey. Receiving progress updates, letters, and photos has allowed me to witness the positive changes firsthand. The organization creates a personal connection between supporters and beneficiaries while maintaining the highest standards of integrity."
       },
       {
         "name": "Daniel Carter",
         "designation": "Corporate Partner",
-        "image": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+        "image": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
         "rating": 5,
         "message": "Partnering with this charity has strengthened our company's commitment to social responsibility. Their experienced team manages every project efficiently while ensuring measurable outcomes that truly improve lives. Together we have supported education, healthcare, and disaster relief initiatives for thousands of families."
       },
       {
         "name": "Sophia Martinez",
         "designation": "Healthcare Volunteer",
-        "image": "/NGO_images-feepik/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
+        "image": "/NGO_Images/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
         "rating": 5,
         "message": "Working alongside dedicated volunteers and staff members has shown me the incredible difference that compassion and teamwork can make. Every outreach program is carefully planned, ensuring medical assistance reaches families who would otherwise have little access to healthcare."
       }
@@ -1770,7 +1766,7 @@
     "banner": {
       "breadcrumbCurrent": "Blogs & News",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/smiley-young-african-boy-standing-field.jpg"
+      "bgImageUrl": "/NGO_Images/smiley-young-african-boy-standing-field.jpg"
     },
     "title": {
       "line1": "Check Out Our",
@@ -1787,7 +1783,7 @@
         "date": "22 January",
         "title": "Poverty Not Only Means Having Less Money But Fewer Opportunities",
         "description": "Discover how education, healthcare, and community support can help families overcome poverty and build a brighter future together.",
-        "image": "/NGO_images-feepik/origami-chain-people-with-globe.jpg",
+        "image": "/NGO_Images/origami-chain-people-with-globe.jpg",
         "author": "Admin",
         "href": "/blog-details"
       },
@@ -1796,7 +1792,7 @@
         "date": "21 December",
         "title": "Healthy Meals Bring Hope To Every Child In Need",
         "description": "Learn how our nutrition programs provide healthy meals to children while supporting their education and overall development.",
-        "image": "/NGO_images-feepik/origami-chain-people-with-globe.jpg",
+        "image": "/NGO_Images/origami-chain-people-with-globe.jpg",
         "author": "Admin",
         "href": "/blog-details"
       },
@@ -1805,7 +1801,7 @@
         "date": "23 June",
         "title": "Medical Support Creates A Better Future For Vulnerable Families",
         "description": "Read how medical camps, vaccinations, and healthcare initiatives are changing thousands of lives across underserved communities.",
-        "image": "/NGO_images-feepik/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
+        "image": "/NGO_Images/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
         "author": "Admin",
         "href": "blog-details"
       },
@@ -1814,7 +1810,7 @@
         "date": "12 April",
         "title": "Education Opens New Doors For Every Child",
         "description": "Providing school supplies, scholarships, and learning opportunities helps children dream bigger and achieve lasting success.",
-        "image": "/NGO_images-feepik/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
+        "image": "/NGO_Images/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
         "author": "Admin",
         "href": "/blog-details"
       },
@@ -1823,7 +1819,7 @@
         "date": "18 March",
         "title": "Empowering Women Through Skills And Employment",
         "description": "Our vocational training programs enable women to gain financial independence and create sustainable livelihoods.",
-        "image": "/NGO_images-feepik/portrait-cute-girl-with-kitten.jpg",
+        "image": "/NGO_Images/portrait-cute-girl-with-kitten.jpg",
         "author": "Admin",
         "href": "/blog-details"
       },
@@ -1832,7 +1828,7 @@
         "date": "5 February",
         "title": "Volunteers Continue Bringing Smiles To Communities",
         "description": "Meet the volunteers whose dedication is making a meaningful impact through education, food drives, and relief programs.",
-        "image": "/NGO_images-feepik/professional-working-person (1).jpg",
+        "image": "/NGO_Images/portrait-cute-girl-with-kitten.jpg",
         "author": "Admin",
         "href": "/blog-details"
       }
@@ -1845,7 +1841,7 @@
     "banner": {
       "breadcrumbCurrent": "Contact Us",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/professional-working-person.jpg"
+      "bgImageUrl": "/NGO_Images/professional-working-person.jpg"
     },
     "title": {
       "line1": "Let's Start",
@@ -1948,7 +1944,7 @@
     "banner": {
       "breadcrumbCurrent": "Faqs",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg"
+      "bgImageUrl": "/NGO_Images/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg"
     },
     "title": {
       "line1": "Have Any",
@@ -1958,7 +1954,7 @@
     "description": "Find answers to the most commonly asked questions about our charity programs, donations, volunteering, and community initiatives.",
 
     "image": {
-      "src": "/NGO_images-feepik/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg",
+      "src": "/NGO_Images/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg",
       "alt": "Customer support"
     },
 
@@ -2008,7 +2004,7 @@
         "age": "11 Years",
         "location": "New Delhi, India",
         "category": "Education",
-        "image": "/NGO_images-feepik/smiley-young-african-boy-standing-field.jpg",
+        "image": "/NGO_Images/smiley-young-african-boy-standing-field.jpg",
         "title": "From School Dropout To Class Topper",
         "story": "Ananya's family struggled financially, making it impossible for her to continue her education. Through our scholarship program, she received school supplies, tuition support, uniforms, and mentoring. Today, she consistently ranks among the top students in her class and dreams of becoming a doctor to help underserved communities.",
         "before": "Unable to attend school because of financial hardship and lack of educational resources.",
@@ -2020,7 +2016,7 @@
         "age": "42 Years",
         "location": "Jaipur, India",
         "category": "Healthcare",
-        "image": "/NGO_images-feepik/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
+        "image": "/NGO_Images/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
         "title": "A New Beginning Through Healthcare",
         "story": "Ramesh suffered from a medical condition that prevented him from working and supporting his family. Our medical assistance program provided timely treatment, medicines, and follow-up care. He has fully recovered and now works full-time, providing a stable income for his loved ones.",
         "before": "Unable to work due to untreated health complications.",
@@ -2032,7 +2028,7 @@
         "age": "31 Years",
         "location": "Lucknow, India",
         "category": "Women Empowerment",
-        "image": "/NGO_images-feepik/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
+        "image": "/NGO_Images/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
         "title": "Building Independence Through Skills",
         "story": "Priya joined our vocational training initiative with no source of income. After completing tailoring and entrepreneurship training, she started her own small business. Today she earns enough to support her family while also employing two women from her community.",
         "before": "Financially dependent with limited employment opportunities.",
@@ -2044,7 +2040,7 @@
         "age": "14 Years",
         "location": "Patna, India",
         "category": "Child Welfare",
-        "image": "/NGO_images-feepik/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
+        "image": "/NGO_Images/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
         "title": "Hope Restored Through Community Support",
         "story": "Rahul lost access to education after his family faced severe financial difficulties. Our child welfare initiative provided educational assistance, nutrition, counseling, and emotional support. He has returned to school and actively participates in community activities.",
         "before": "Out of school with limited access to food and educational support.",
@@ -2057,7 +2053,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "About Us",
-      "bgImageUrl": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg"
+      "bgImageUrl": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
     },
 
     "pretitle": "Who We Are",
@@ -2072,7 +2068,7 @@
         "Our work focuses on understanding the challenges faced by underserved communities and developing practical solutions that create long-term impact. From education and healthcare to livelihood support and community development, we work where our efforts can make the greatest difference.",
         "We believe lasting change happens when communities are not simply supported, but are empowered to become active participants in shaping their own future. Every program we undertake is built around collaboration, inclusion, and respect."
       ],
-      "image": "/NGO_images-feepik/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
+      "image": "/NGO_Images/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
       "imageAlt": "Volunteers working together with a local community"
     },
 
@@ -2080,7 +2076,7 @@
       "pretitle": "Our Mission",
       "title": "Turning Care Into Action",
       "desc": "Our mission is to empower individuals and communities through programs that improve access to education, healthcare, livelihoods, and essential support.",
-      "image": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg",
+      "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
       "imageAlt": "Community members participating in an NGO program"
     },
 
@@ -2088,7 +2084,7 @@
       "pretitle": "Our Vision",
       "title": "A Future Where Everyone Has an Opportunity",
       "desc": "We envision a world where every individual can live with dignity, access essential opportunities, and contribute to a stronger and more compassionate community.",
-      "image": "/NGO_images-feepik/children-holding-hand-group.jpg",
+      "image": "/NGO_Images/children-holding-hand-group.jpg",
       "imageAlt": "Children learning and growing together"
     },
 
@@ -2140,7 +2136,7 @@
       "pretitle": "Our Impact",
       "title": "Together, We Are Making a Difference",
       "desc": "Every volunteer, supporter, partner, and community member contributes to the change we are working to create.",
-      "image": "/NGO_images-feepik/children-plant-plants-garden.jpg",
+      "image": "/NGO_Images/children-plant-plants-garden.jpg",
       "imageAlt": "Children smiling together in a community",
       "stats": [
         {
@@ -2178,7 +2174,7 @@
         "label": "Donate Now",
         "href": "/donate"
       },
-      "image": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+      "image": "/NGO_Images/children-speaking-holding-book.jpg",
       "imageAlt": "Volunteers joining hands for a community initiative"
     }
   },
@@ -2186,7 +2182,7 @@
     "banner": {
       "breadcrumbCurrent": "Career",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/smiley-young-african-boy-standing-field.jpg"
+      "bgImageUrl": "/NGO_Images/smiley-young-african-boy-standing-field.jpg"
     },
     "badge": {
       "label": "Join Our Team"
@@ -2300,7 +2296,7 @@
       "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities..",
       "button": {
         "label": "Send Your Resume",
-        "href": "/"
+        "href": "/contact-us"
       }
     }
   },
@@ -2309,7 +2305,7 @@
     "banner": {
       "breadcrumbCurrent": "Job Details",
       "breadcrumbHome": "Career",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "title": "Job Details",
     "location": "New Delhi, India",
@@ -2388,7 +2384,7 @@
       "description": "We're always looking for passionate people. Send us your resume and we'll keep you in mind for future opportunities.",
       "button": {
         "label": "Send Your Resume",
-        "href": "/contact"
+        "href": "/contact-us"
       }
     },
     "applyButton": {
@@ -2400,7 +2396,7 @@
     "banner": {
       "breadcrumbCurrent": "Apply Now",
       "breadcrumbHome": "Career",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "badge": {
       "label": "Join Our Team"
@@ -2489,7 +2485,7 @@
     "banner": {
       "breadcrumbCurrent": "Job Application",
       "breadcrumbHome": "Job Details",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "formSections": {
       "personalInformation": {
@@ -2648,7 +2644,7 @@
   },
   "servicesPage": {
     "banner": {
-      "bgImageUrl": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg",
+      "bgImageUrl": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
       "breadcrumbCurrent": "Services",
       "breadcrumbHome": "Home"
     },
@@ -2665,7 +2661,7 @@
         "id": "education-for-all",
         "title": "Education for All",
         "description": "We provide quality education and learning opportunities for underprivileged children to build a brighter future.",
-        "image": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+        "image": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
         "icon": "FiBookOpen",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2674,7 +2670,7 @@
         "id": "healthcare-wellness",
         "title": "Healthcare & Wellness",
         "description": "We organize health camps and wellness programs to ensure better health and hygiene for communities.",
-        "image": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg",
+        "image": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
         "icon": "FiHeart",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2683,7 +2679,7 @@
         "id": "environment-protection",
         "title": "Environment Protection",
         "description": "We work towards a greener planet by promoting tree plantation, clean energy, and sustainable living.",
-        "image": "/NGO_images-feepik/colorful-letters-forming-word-donate.jpg",
+        "image": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
         "icon": "FiFeather",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2692,7 +2688,7 @@
         "id": "women-empowerment",
         "title": "Women Empowerment",
         "description": "We empower women with skills, training, and resources to help them become independent and confident.",
-        "image": "/NGO_images-feepik/communication-feedback-chos-role.jpg",
+        "image": "/NGO_Images/communication-feedback-chos-role.jpg",
         "icon": "FiUser",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2701,7 +2697,7 @@
         "id": "food-nutrition",
         "title": "Food & Nutrition",
         "description": "We provide nutritious food and support to fight hunger and malnutrition in our communities.",
-        "image": "/NGO_images-feepik/community-concept-with-nature-close-up.jpg",
+        "image": "/NGO_Images/community-concept-with-nature-close-up.jpg",
         "icon": "FiSmile",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2710,7 +2706,7 @@
         "id": "elderly-care",
         "title": "Elderly Care",
         "description": "We care for our elders by providing support, medical care, and companionship for a dignified life.",
-        "image": "/NGO_images-feepik/cropped-hands-women.jpg",
+        "image": "/NGO_Images/cropped-hands-women.jpg",
         "icon": "FiHeartHandshake",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2719,7 +2715,7 @@
         "id": "disaster-relief",
         "title": "Disaster Relief",
         "description": "We respond quickly in times of crisis to provide immediate relief and rehabilitation support.",
-        "image": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+        "image": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
         "icon": "FiShield",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2728,7 +2724,7 @@
         "id": "youth-development",
         "title": "Youth Development",
         "description": "We inspire and guide youth through education, mentorship, and skill development programs.",
-        "image": "/NGO_images-feepik/diverse-community-with-hands-circle.jpg",
+        "image": "/NGO_Images/diverse-community-with-hands-circle.jpg",
         "icon": "FiAward",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2737,7 +2733,7 @@
         "id": "community-development",
         "title": "Community Development",
         "description": "We work with communities to improve living conditions and create opportunities for sustainable growth.",
-        "image": "/NGO_images-feepik/girl-is-reading-book-with-word-one-it.jpg",
+        "image": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "icon": "FiUsers",
         "link": "/services-detail",
         "label": "Learn More"
@@ -2749,13 +2745,13 @@
       "titleHighlight": "Better Tomorrow",
       "description": "Your support helps us continue our mission and bring smiles, hope, and change to those who need it most.",
       "buttonText": "Get Involved",
-      "buttonLink": "/get-involved",
-      "bannerImage": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children (1).jpg"
+      "buttonLink": "/contact-us",
+      "bannerImage": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     }
   },
   "serviceDetailPage": {
     "banner": {
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
       "breadcrumbCurrent": "Services Details",
       "breadcrumbHome": "Home"
     },
@@ -2783,7 +2779,7 @@
           "icon": "FiUsers"
         }
       ],
-      "image": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+      "image": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
       "imageAlt": "Children learning together"
     },
 
@@ -2863,7 +2859,7 @@
           "href": "/contact-us"
         }
       },
-      "image": "/NGO_images-feepik/group-best-friends-making-toast.jpg",
+      "image": "/NGO_Images/group-best-friends-making-toast.jpg",
       "imageAlt": "Supporting children's education"
     }
   },
@@ -2871,7 +2867,7 @@
     "banner": {
       "breadcrumbCurrent": "Terms & Conditions",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "conditions": [
       {
@@ -2910,7 +2906,7 @@
     "banner": {
       "breadcrumbCurrent": "Privacy Policy",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "conditions": [
       {
@@ -2964,7 +2960,7 @@
     "banner": {
       "breadcrumbCurrent": "Refund Policy",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "conditions": [
       {
@@ -2998,7 +2994,7 @@
     "banner": {
       "breadcrumbCurrent": "Cookie Policy",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "conditions": [
       {
@@ -3037,7 +3033,7 @@
     "banner": {
       "breadcrumbCurrent": "Disclaimer",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "conditions": [
       {
@@ -3081,7 +3077,7 @@
       "breadcrumbCurrent": "Donate Now",
       "breadcrumbHome": "Home",
       "title": "Donate Now",
-      "bgImageUrl": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
+      "bgImageUrl": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
     },
     "whyDonate": {
       "title": {
@@ -3257,7 +3253,7 @@
     "banner": {
       "breadcrumbCurrent": "Industry We Serve",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
+      "bgImageUrl": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
     },
 
     "sectors": [
@@ -3266,7 +3262,7 @@
         "title": "Education",
         "description": "Promoting quality education and learning opportunities for underprivileged children.",
         "image": {
-          "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+          "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
           "alt": "Underprivileged children studying in a classroom"
         },
         "iconName": "graduation-cap",
@@ -3280,7 +3276,7 @@
         "title": "Healthcare",
         "description": "Improving healthcare access and promoting wellness for healthier communities.",
         "image": {
-          "src": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg",
+          "src": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg",
           "alt": "Doctor performing checkup on a young girl"
         },
         "iconName": "activity-heartbeat",
@@ -3294,7 +3290,7 @@
         "title": "Environment",
         "description": "Working towards a sustainable future through conservation and eco-friendly initiatives.",
         "image": {
-          "src": "/NGO_images-feepik/group-environmental-conservation-people-hands-planting-aerial-view.jpg",
+          "src": "/NGO_Images/group-environmental-conservation-people-hands-planting-aerial-view.jpg",
           "alt": "Hands gently holding a small growing green plant"
         },
         "iconName": "leaf",
@@ -3308,7 +3304,7 @@
         "title": "Women Empowerment",
         "description": "Empowering women with skills, resources, and opportunities for independent living.",
         "image": {
-          "src": "/NGO_images-feepik/hands-people-group-with-soil-plants-growth-environment-earth-day-support-teamwork-nature-volunteer-leaf-help-with-ngo-investing-sustainable-fertilizer-project-future.jpg",
+          "src": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
           "alt": "Women learning tailor sewing skills on sewing machines"
         },
         "iconName": "user-female",
@@ -3322,7 +3318,7 @@
         "title": "Food & Nutrition",
         "description": "Combating hunger and malnutrition by providing nutritious food and support.",
         "image": {
-          "src": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg",
+          "src": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
           "alt": "Children sitting together eating healthy meals"
         },
         "iconName": "food-bowl",
@@ -3336,7 +3332,7 @@
         "title": "Arts & Culture",
         "description": "Preserving and promoting arts, culture, and traditions for future generations.",
         "image": {
-          "src": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+          "src": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
           "alt": "Young girl dressed in traditional Indian attire performing art"
         },
         "iconName": "theatre-masks",
@@ -3350,7 +3346,7 @@
         "title": "Skill Development",
         "description": "Equipping individuals with skills and training for better livelihoods and employment.",
         "image": {
-          "src": "/NGO_images-feepik/happy-diverse-kinds-park.jpg",
+          "src": "/NGO_Images/happy-diverse-kinds-park.jpg",
           "alt": "Young men undergoing vocational machinery training in a workshop"
         },
         "iconName": "gears",
@@ -3364,7 +3360,7 @@
         "title": "Water & Sanitation",
         "description": "Ensuring access to clean water and sanitation facilities for healthy living.",
         "image": {
-          "src": "/NGO_images-feepik/medium-shot-happy-kids-posing.jpg",
+          "src": "/NGO_Images/medium-shot-happy-kids-posing.jpg",
           "alt": "Hands washing under a outdoor tap with clean running water"
         },
         "iconName": "water-drop",
@@ -3378,7 +3374,7 @@
         "title": "Animal Welfare",
         "description": "Protecting and caring for animals and promoting their welfare in communities.",
         "image": {
-          "src": "/NGO_images-feepik/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
+          "src": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
           "alt": "A happy dog and cat sitting together outdoors"
         },
         "iconName": "paw-print",
@@ -3392,7 +3388,7 @@
         "title": "Corporate Partnerships",
         "description": "Collaborating with businesses to create sustainable and scalable impact.",
         "image": {
-          "src": "/NGO_images-feepik/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
+          "src": "/NGO_Images/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
           "alt": "Two professionals in business suits shaking hands"
         },
         "iconName": "handshake",
@@ -3411,7 +3407,7 @@
       "description": "Together with our partners, volunteers, and supporters, we can build a stronger, brighter, and more equitable future for all.",
       "cta": {
         "text": "Get Involved",
-        "url": "/get-involved"
+        "url": "/contact-us"
       },
       "metrics": [
         {
@@ -3445,7 +3441,7 @@
     "banner": {
       "breadcrumbCurrent": "Awards & Recognitions",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/origami-chain-people-with-globe.jpg"
+      "bgImageUrl": "/NGO_Images/origami-chain-people-with-globe.jpg"
     },
 
     "header": {
@@ -3494,7 +3490,7 @@
           "description": "For outstanding contribution to social development and community welfare.",
           "year": "2024",
           "image": {
-            "src": "/NGO_images-feepik/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
+            "src": "/NGO_Images/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
             "alt": "Gold star trophy on black base"
           }
         },
@@ -3504,7 +3500,7 @@
           "description": "Honoring our consistent efforts in creating meaningful change in communities.",
           "year": "2023",
           "image": {
-            "src": "/NGO_images-feepik/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
+            "src": "/NGO_Images/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
             "alt": "Golden laurel wreath trophy"
           }
         },
@@ -3514,7 +3510,7 @@
           "description": "Recognizing our dedication to social responsibility and sustainable development.",
           "year": "2023",
           "image": {
-            "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Golden statue trophy holding crystal globe"
           }
         },
@@ -3524,7 +3520,7 @@
           "description": "For exceptional work in education, healthcare and empowerment programs.",
           "year": "2022",
           "image": {
-            "src": "/NGO_images-feepik/portrait-cute-girl-with-kitten.jpg",
+            "src": "/NGO_Images/portrait-cute-girl-with-kitten.jpg",
             "alt": "Circular wooden plaque award with golden emblem"
           }
         },
@@ -3534,7 +3530,7 @@
           "description": "In appreciation of our humanitarian services and relief efforts.",
           "year": "2022",
           "image": {
-            "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+            "src": "/NGO_Images/children-speaking-holding-book.jpg",
             "alt": "Silver circular plate award with laurel details"
           }
         },
@@ -3544,7 +3540,7 @@
           "description": "For building a strong volunteer network and promoting community participation.",
           "year": "2021",
           "image": {
-            "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+            "src": "/NGO_Images/children-speaking-holding-book.jpg",
             "alt": "Leaf shaped glass award with golden star"
           }
         },
@@ -3554,7 +3550,7 @@
           "description": "Recognizing innovation and creativity in implementing impactful programs.",
           "year": "2021",
           "image": {
-            "src": "/NGO_images-feepik/professional-working-person (1).jpg",
+            "src": "/NGO_Images/professional-working-person.jpg",
             "alt": "Golden trophy cup on dark wooden base"
           }
         },
@@ -3564,7 +3560,7 @@
           "description": "For collaborative partnerships that drive progress and create lasting impact.",
           "year": "2020",
           "image": {
-            "src": "/NGO_images-feepik/professional-working-person.jpg",
+            "src": "/NGO_Images/professional-working-person.jpg",
             "alt": "Shield shaped golden plaque award"
           }
         }
@@ -3580,11 +3576,11 @@
       "description": "Every award is a reflection of your trust and support. Together, we will continue to create a better tomorrow.",
       "cta": {
         "text": "Support Our Mission",
-        "url": "/support-our-mission"
+        "url": "/contact-us"
       },
       "iconName": "hands-heart",
       "trophyImage": {
-        "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+        "src": "/NGO_Images/children-speaking-holding-book.jpg",
         "alt": "Gold trophy with inscription 'TOGETHER WE CAN CREATE CHANGE'"
       }
     },
@@ -3603,13 +3599,13 @@
     "hero": {
       "title": "Support",
       "logo": {
-        "src": "/NGO_images-feepik/children-plant-plants-garden.jpg",
+        "src": "/NGO_Images/children-plant-plants-garden.jpg",
         "alt": "Organization Logo"
       },
       "banner": {
         "breadcrumbCurrent": "Support Us",
         "breadcrumbHome": "Home",
-        "bgImageUrl": "/NGO_images-feepik/group-doctors-putting-their-hands-together-closeup.jpg"
+        "bgImageUrl": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
       }
     },
 
@@ -3747,10 +3743,10 @@
       },
       "secondaryAction": {
         "label": "Be Member",
-        "url": "/volunteer"
+        "url": "/team"
       },
       "bannerImage": {
-        "src": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg",
+        "src": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
         "alt": "Hands coming together to support a community cause"
       }
     },
@@ -3761,7 +3757,7 @@
       "pretitle": "Your trust inspires us to do more and better every day.",
       "action": {
         "label": "Learn More About Us",
-        "url": "/about/transparency"
+        "url": "/about-us"
       }
     }
   },
@@ -3769,7 +3765,7 @@
     "banner": {
       "breadcrumbCurrent": "CSR",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg"
+      "bgImageUrl": "/NGO_Images/small-plant-symbolizing-importance-working-together-nurture-grow-something.jpg"
     },
 
     "header": {
@@ -3817,35 +3813,35 @@
           "id": "education",
           "title": "Education",
           "description": "Empowering children with quality education and better learning opportunities.",
-          "image": "/NGO_images-feepik/smiley-young-african-boy-standing-field.jpg",
+          "image": "/NGO_Images/smiley-young-african-boy-standing-field.jpg",
           "iconName": "school"
         },
         {
           "id": "healthcare",
           "title": "Healthcare",
           "description": "Supporting health and well-being through medical care and awareness.",
-          "image": "/NGO_images-feepik/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
+          "image": "/NGO_Images/two-happy-boys-society-park-happy-asian-brothers-who-are-smiling-happily-together-brothers-play.jpg",
           "iconName": "healthcare"
         },
         {
           "id": "environment",
           "title": "Environment",
           "description": "Protecting natural resources and promoting sustainability for future generations.",
-          "image": "/NGO_images-feepik/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
+          "image": "/NGO_Images/two-women-are-sitting-bench-one-has-sign-that-says-medical.jpg",
           "iconName": "leaf"
         },
         {
           "id": "skill-development",
           "title": "Skill Development",
           "description": "Building skills and creating livelihood opportunities for self-reliance.",
-          "image": "/NGO_images-feepik/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
+          "image": "/NGO_Images/volunteers-planting-trees-forest-working-together-environmental-project-aimed-reforestation-ecosystem-restoration.jpg",
           "iconName": "graduation-cap"
         },
         {
           "id": "community-support",
           "title": "Community Support",
           "description": "Standing with communities in times of need and driving social progress.",
-          "image": "/NGO_images-feepik/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
+          "image": "/NGO_Images/black-white-photo-girl-reading-book-with-words-word-bottom.jpg",
           "iconName": "heart-hands"
         }
       ]
@@ -3899,31 +3895,31 @@
           "id": "rural-education-program",
           "title": "Rural Education Program",
           "description": "Improving access to quality education in rural areas.",
-          "image": "/NGO_images-feepik/charity-volunteer-giving-helping-hands.jpg"
+          "image": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg"
         },
         {
           "id": "mobile-health-camps",
           "title": "Mobile Health Camps",
           "description": "Bringing essential healthcare services to underserved communities.",
-          "image": "/NGO_images-feepik/children-holding-hand-group.jpg"
+          "image": "/NGO_Images/children-holding-hand-group.jpg"
         },
         {
           "id": "green-earth-initiative",
           "title": "Green Earth Initiative",
           "description": "Tree plantation drives and environment conservation programs.",
-          "image": "/NGO_images-feepik/children-plant-plants-garden.jpg"
+          "image": "/NGO_Images/children-plant-plants-garden.jpg"
         },
         {
           "id": "women-empowerment",
           "title": "Women Empowerment",
           "description": "Skill training and livelihood support for women to build independent futures.",
-          "image": "/NGO_images-feepik/children-speaking-holding-book.jpg"
+          "image": "/NGO_Images/children-speaking-holding-book.jpg"
         },
         {
           "id": "community-relief-support",
           "title": "Community Relief Support",
           "description": "Providing food, essentials, and support during emergencies and disasters.",
-          "image": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg"
+          "image": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg"
         }
       ]
     },
@@ -3974,7 +3970,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Enquiry Now",
-      "bgImageUrl": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
+      "bgImageUrl": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg"
     },
 
     "header": {
@@ -4012,7 +4008,7 @@
       ],
 
       "image": {
-        "src": "/NGO_images-feepik/children-plant-plants-garden.jpg",
+        "src": "/NGO_Images/children-plant-plants-garden.jpg",
         "alt": "Group of children holding a Thank You sign"
       }
     },
@@ -4147,7 +4143,8 @@
 
       "button": {
         "label": "Learn More About Us",
-        "icon": "arrow-right"
+        "icon": "arrow-right",
+        "href": "/about-us"
       }
     }
   },
@@ -4155,7 +4152,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Franchise",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
 
     "header": {
@@ -4201,7 +4198,7 @@
         "Scalable and sustainable business"
       ],
       "image": {
-        "src": "/NGO_images-feepik/colorful-letters-forming-word-donate.jpg",
+        "src": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
         "alt": "Team joining hands together"
       }
     },
@@ -4401,7 +4398,7 @@
       "workingHours": "Mon - Sat : 9:00 AM - 6:00 PM",
 
       "image": {
-        "src": "/NGO_images-feepik/communication-feedback-chos-role.jpg",
+        "src": "/NGO_Images/communication-feedback-chos-role.jpg",
         "alt": "Hands holding a red heart"
       }
     }
@@ -4410,7 +4407,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Branches",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
 
     "header": {
@@ -4487,7 +4484,7 @@
       "mapSide": {
         "title": "Spreading Hope, Changing Lives",
         "description": "Our branches help us reach more people and create lasting impact in communities.",
-        "mapImage": "/NGO_images-feepik/community-concept-with-nature-close-up.jpg"
+        "mapImage": "/NGO_Images/community-concept-with-nature-close-up.jpg"
       }
     },
 
@@ -4497,17 +4494,17 @@
       "description": "Get in touch with your nearest branch or reach out to us to know how you can get involved.",
 
       "primaryButton": {
-        "label": "Get Involved",
-        "href": "/get-involved"
+        "label": "Donate Now",
+        "href": "/donate"
       },
 
       "secondaryButton": {
         "label": "Contact Us",
-        "href": "/contact"
+        "href": "/contact-us"
       },
 
       "image": {
-        "src": "/NGO_images-feepik/communication-feedback-chos-role.jpg",
+        "src": "/NGO_Images/communication-feedback-chos-role.jpg",
         "alt": "Hands holding a red heart together"
       }
     },
@@ -4536,7 +4533,7 @@
     "banner": {
       "breadcrumbHome": "Home",
       "breadcrumbCurrent": "Brochure",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "header": {
       "icon": "book-open",
@@ -4662,7 +4659,7 @@
       },
       "secondaryButton": {
         "label": "Join Us",
-        "href": "/join"
+        "href": "/contact-us"
       },
       "stats": [
         {
@@ -4692,7 +4689,7 @@
     "banner": {
       "breadcrumbCurrent": "Sitemap",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
+      "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     },
     "header": {
       "title": "SITEMAP",
@@ -4831,13 +4828,13 @@
     "banner": {
       "breadcrumbCurrent": "Case Study Details",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/colorful-letters-forming-word-charity.jpg"
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg"
     },
     "mainContent": {
       "primaryArticle": {
         "title": "Education For Poor Children",
         "mainImage": {
-          "src": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+          "src": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
           "alt": "Group of volunteers holding a Charity sign"
         },
         "paragraphs": [
@@ -4865,7 +4862,7 @@
           "date": "June 30, 2025",
           "category": "Poor",
           "image": {
-            "src": "/NGO_images-feepik/children-speaking-holding-book.jpg",
+            "src": "/NGO_Images/children-speaking-holding-book.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -4875,7 +4872,7 @@
           "title": "Future Plan & Strategy For Construction",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg",
+            "src": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
             "alt": "Future Plan & Strategy For Construction"
           },
           "slug": "#"
@@ -4885,7 +4882,7 @@
           "title": "Melancholy Devonshire Alteration",
           "date": "June 30, 2025",
           "image": {
-            "src": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+            "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Melancholy Devonshire Alteration"
           },
           "slug": "#"
@@ -4896,7 +4893,7 @@
           "date": "June 30, 2025",
           "category": "Poor",
           "image": {
-            "src": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
           "slug": "#"
@@ -4908,12 +4905,12 @@
     "banner": {
       "breadcrumbCurrent": "Projet Details",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg"
+      "bgImageUrl": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg"
     },
     "badge": "OUR PROJECT",
     "title": "Clean Water, Better Life",
     "mainImage": {
-      "url": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+      "url": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
       "alt": "Boy drinking clean water from tap",
       "badgeText": "Clean Water"
     },
@@ -4974,22 +4971,22 @@
       "images": [
         {
           "id": "1",
-          "url": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+          "url": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
           "alt": "Children drinking water from tap"
         },
         {
           "id": "2",
-          "url": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+          "url": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
           "alt": "Water tank structure installed"
         },
         {
           "id": "3",
-          "url": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+          "url": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
           "alt": "Children holding glasses of clean water"
         },
         {
           "id": "4",
-          "url": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+          "url": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
           "alt": "Woman pumping water from deep well"
         }
       ]
@@ -5015,7 +5012,7 @@
     "banner": {
       "breadcrumbCurrent": "Media",
       "breadcrumbHome": "Home",
-      "bgImageUrl": "/NGO_images-feepik/group-people-making-good-team-while-volunteering.jpg",
+      "bgImageUrl": "/NGO_Images/group-people-making-good-team-while-volunteering.jpg",
       "title": "Media"
     },
     "content": {

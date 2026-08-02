@@ -109,7 +109,6 @@ export interface FooterServicesData {
 
 export interface RecentNewsItem {
   title: string;
-  category: string;
   date: string;
   image: string;
   href: string;
@@ -2177,6 +2176,7 @@ export interface EnquiryNowPageProps {
     button: {
       label: string;
       icon: string;
+      href:string;
     };
   };
 }
