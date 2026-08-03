@@ -171,9 +171,6 @@ export interface AboutDescription {
   secondary: string;
 }
 
-// =========================
-// About Buttons
-// =========================
 export interface AboutButton {
   label: string;
   href: string;
@@ -181,24 +178,23 @@ export interface AboutButton {
   icon: string;
 }
 
-// =========================
-// Gallery Images
-// =========================
+export interface TrustBadge {
+  icon: string;
+  text: string;
+  bgColor: string;
+  textColor: string;
+  desc:string;
+}
+
 export interface AboutImage {
   src: string;
   alt: string;
 }
 
-// =========================
-// Video
-// =========================
 export interface AboutVideo {
   videoUrl: string;
 }
 
-// =========================
-// Floating Card
-// =========================
 export interface FloatingCard {
   icon: string;
   title: string;
@@ -206,9 +202,6 @@ export interface FloatingCard {
   highlight: string;
 }
 
-// =========================
-// Gallery
-// =========================
 export interface AboutGallery {
   mainImage: AboutImage;
   topImage: AboutImage;
@@ -217,9 +210,6 @@ export interface AboutGallery {
   floatingCard: FloatingCard;
 }
 
-// =========================
-// Statistics
-// =========================
 export interface AboutStatistic {
   icon: string;
   value: string;
@@ -273,6 +263,7 @@ export interface AboutSection {
   badge: AboutBadge;
   title: AboutTitle;
   desc: AboutDescription;
+  trustBadges: TrustBadge[];
   buttons: AboutButton[];
   gallery: AboutGallery;
   statistics: AboutStatistic[];

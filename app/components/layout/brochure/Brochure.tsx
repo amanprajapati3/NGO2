@@ -84,7 +84,7 @@ export default function Bronchure({ data }: Props) {
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="flex flex-col items-center sm:px-3 sm:py-4 p-0 text-center"
+              className="flex border-r border-r-orange-300 flex-col items-center sm:px-3 sm:py-4 p-0 text-center"
             >
               <div className="mb-3 flex h-12 w-12 sm:w-20 sm:h-20 items-center justify-center rounded-full bg-white text-orange-600 shadow-sm">
                 {getIcon(feature.icon, "h-6 w-6 sm:w-12 sm:h-12")}

@@ -362,7 +362,7 @@ export default function CSR({ data }: CSRProps) {
             {data.focusAreas.items.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col  rounded-xl border border-slate-100 bg-white text-center shadow-sm transition-shadow hover:shadow-md"
+                className="flex flex-col border-r-2 border-r-orange-300 rounded-xl border border-slate-100 bg-white text-center shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="relative h-40 w-full">
                   <img

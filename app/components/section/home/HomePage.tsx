@@ -44,7 +44,7 @@ const news = data.news as NewsSectionData
         <Banner banners={banner} />
         <AboutSection data={about}/>
         {/* <MissionSection data={mission} /> */}
-        <CausesSection data={causes}/>
+        <CausesSection data={causes} showExploreButton={true}/>
         <ProjectSection data={project}/>
         {/* <VolunteerSection data={team}/> */}
         {/* <DonationSection data={support}/> */}

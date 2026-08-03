@@ -169,29 +169,12 @@ export default function MissionSection({ data }: MissionSectionProps) {
           </div>
 
           {/* Content Layout */}
-          <div className="relative z-10 grid mt-4 md:mt-0 grid-cols-1 gap-8 lg:grid-cols-12 lg:items-center">
+          <div className="relative z-10 flex w-full justify-end lg:items-center">
             {/* Purpose Card (Left - Bottom Overlay on Desktop) */}
-            <div className="hidden lg:col-span-5 lg:flex lg:flex-col lg:justify-end lg:pt-96">
-              <div className="rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
-                    {getPurposeIcon(imageSection.purposeCard.icon)}
-                  </div>
 
-                  <div>
-                    <span className="text-sm md:text-md font-bold uppercase tracking-wider text-[#ff5e14]">
-                      {imageSection.purposeCard.badge}
-                    </span>
-                    <h4 className="mt-1 text-base md:text-xl font-bold text-white">
-                      {imageSection.purposeCard.title}
-                    </h4>
-                  </div>
-                </div>
-              </div>
-            </div>
 
             {/* Content Box (Right Panel) */}
-            <div className="lg:col-span-7">
+            <div className="w-full md:w-[65%]">
               <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 md:p-6 p-2 text-white shadow-2xl backdrop-blur-lg sm:p-10 lg:p-12">
                 {/* Dot Grid Top Right */}
                 <div className="absolute top-6 right-6 grid grid-cols-6 gap-1.5 opacity-20">
@@ -252,7 +235,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
                 {/* Dynamic Content */}
                 {activeTabData && (
-                  <div className="mt-6 h-[300px] overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-base md:h-[260px]">
+                  <div className="mt-6 h-[300px]  overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-base md:h-[220px]">
                     <p>{activeTabData.content.primary}</p>
 
                     {activeTabData.content.secondary && (
@@ -262,7 +245,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 )}
 
                 {/* Features Grid */}
-                <div className="mt-8 grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <div className="mt-0  grid grid-cols-1 gap-4 sm:grid-cols-3">
                   {tabs[0]?.content.features.map((feature) => (
                     <div
                       key={feature.title}
@@ -282,9 +265,27 @@ export default function MissionSection({ data }: MissionSectionProps) {
                     </div>
                   ))}
                 </div>
+                            <div className="hidden lg:col-span-5 lg:flex lg:flex-col lg:justify-end mt-4">
+              <div className="rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
+                <div className="flex items-center gap-4">
+                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
+                    {getPurposeIcon(imageSection.purposeCard.icon)}
+                  </div>
+
+                  <div>
+                    <span className="text-sm md:text-md font-bold uppercase tracking-wider text-[#ff5e14]">
+                      {imageSection.purposeCard.badge}
+                    </span>
+                    <h4 className="mt-1 text-base md:text-xl font-bold text-white">
+                      {imageSection.purposeCard.title}
+                    </h4>
+                  </div>
+                </div>
+              </div>
+            </div>
 
                 {/* Buttons */}
-                <div className="md:mt-8 my-4 flex justify-center md:justify-start flex-wrap items-center md:gap-6 gap-2">
+                {/* <div className="md:mt-8 my-4 flex justify-center md:justify-start flex-wrap items-center md:gap-6 gap-2">
                   {buttons.map((button) => {
                     const isPrimary = button.variant === "primary";
 
@@ -303,7 +304,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                       </Link>
                     );
                   })}
-                </div>
+                </div> */}
               </div>
             </div>
           </div>

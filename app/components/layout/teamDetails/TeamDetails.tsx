@@ -220,13 +220,13 @@ export default function TeamDetails({ data }: TeamDetailsProps) {
                   )}
                 </div>
 
-                <a
+                {/* <a
                   href="#contact"
                   className="inline-flex w-fit items-center gap-2 bg-orange-600 hover:bg-orange-700 text-white font-medium px-6 py-3 rounded-full transition shadow-md shadow-orange-500/20"
                 >
                   Send Message
                   <Send className="w-4 h-4" />
-                </a>
+                </a> */}
               </div>
             </div>
           </div>

@@ -385,7 +385,29 @@
         "icon": "users"
       }
     ],
-
+    "trustBadges": [
+      {
+        "icon": "check",
+        "text": "100% Trusted",
+        "bgColor": "bg-emerald-100",
+        "textColor": "text-emerald-600",
+        "desc": "Transparent & Accountable"
+      },
+      {
+        "icon": "star",
+        "text": "80G Certified",
+        "bgColor": "bg-amber-100",
+        "textColor": "text-amber-600",
+        "desc": "Tax Benifits Available"
+      },
+      {
+        "icon": "heart",
+        "text": "50K+ Lives",
+        "bgColor": "bg-purple-100",
+        "textColor": "text-purple-600",
+        "desc": "Impacted So far"
+      }
+    ],
     "gallery": {
       "mainImage": {
         "src": "/NGO_Images/diverse-community-with-hands-circle.jpg",
@@ -400,7 +422,7 @@
         "alt": "Community support"
       },
       "playButton": {
-        "videoUrl": "/"
+        "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ"
       },
       "floatingCard": {
         "icon": "heartHands",
@@ -430,24 +452,24 @@
 
     "statistics": [
       {
-        "icon": "shield",
-        "value": "100%",
-        "label": "Trusted"
+        "icon": "children",
+        "value": "25,000+",
+        "label": "Children Supported"
       },
       {
-        "icon": "badge",
-        "value": "80G",
-        "label": "Certified"
+        "icon": "education",
+        "value": "350+",
+        "label": "Education Program"
       },
       {
-        "icon": "users",
-        "value": "50K+",
-        "label": "Lives Impacted"
+        "icon": "heart",
+        "value": "150+",
+        "label": "HealthCare Camps"
       },
       {
-        "icon": "globe",
-        "value": "25+",
-        "label": "Communities Served"
+        "icon": "people",
+        "value": "100+",
+        "label": "Village Reached"
       }
     ],
 
@@ -751,12 +773,60 @@
           "href": "/donate",
           "icon": "arrow"
         }
-      }
+      },
+      {
+  "image": {
+    "src": "/NGO_Images/happy-diverse-kinds-park.jpg",
+    "alt": "Women empowerment program"
+  },
+  "icon": "women",
+  "category": "#Women Empowerment",
+  "title": "Empowering Women",
+  "titleLink": "/case-details",
+  "description": "Providing skill development, vocational training, financial support, and employment opportunities to help women become independent.",
+  "button": {
+    "label": "Donate Now",
+    "href": "/donate",
+    "icon": "arrow"
+  }
+},
+{
+  "image": {
+    "src": "/NGO_Images/medium-shot-happy-kids-posing.jpg",
+    "alt": "Clean water for communities"
+  },
+  "icon": "water",
+  "category": "#Clean Water",
+  "title": "Clean Water For All",
+  "titleLink": "/case-details",
+  "description": "Building water wells, providing purification systems, and creating safe access to clean drinking water for underserved communities.",
+  "button": {
+    "label": "Donate Now",
+    "href": "/donate",
+    "icon": "arrow"
+  }
+},
+{
+  "image": {
+    "src": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+    "alt": "Community development program"
+  },
+  "icon": "community",
+  "category": "#Community Development",
+  "title": "Building Strong Communities",
+  "titleLink": "/case-details",
+  "description": "Creating stronger communities through livelihood programs, infrastructure support, awareness campaigns, and local development initiatives.",
+  "button": {
+    "label": "Donate Now",
+    "href": "/donate",
+    "icon": "arrow"
+  }
+}
     ],
 
     "exploreButton": {
       "label": "Explore More Causes",
-      "href": "/",
+      "href": "/case-study",
       "icon": "arrow"
     },
 
@@ -1055,7 +1125,7 @@
       "description": "Join our team of dedicated individuals and help us build a stronger, kinder and more equitable future.",
       "button": {
         "label": "Donate Now",
-        "href": "/"
+        "href": "/donate"
       }
     }
   },

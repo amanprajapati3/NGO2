@@ -16,7 +16,7 @@ export default function CaseStudy({ data }: CausesSectionProps) {
       <div>
       <PageBanner banner={banner} />
 
-        <CausesSection data={data} />
+        <CausesSection data={data} showExploreButton={false}/>
       </div>
     </>
   );
