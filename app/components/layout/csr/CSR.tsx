@@ -352,7 +352,7 @@ export default function CSR({ data }: CSRProps) {
         <div className="space-y-8">
           <div className="space-y-2 text-center">
             <h2 className="font-serif text-2xl font-bold text-slate-900 md:text-3xl">
-              {data.focusAreas.title}
+              {data.focusAreas.topBadge}
             </h2>
 
             {/* <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" /> */}
@@ -396,7 +396,7 @@ export default function CSR({ data }: CSRProps) {
         <div className="grid grid-cols-1 items-center gap-8 rounded-2xl border border-orange-100/60 bg-orange-50/50 p-6 md:p-10 lg:grid-cols-3">
           <div className="space-y-4">
             <h2 className="font-serif text-2xl font-bold text-slate-900 md:text-3xl">
-              {data.ourImpact.title}
+              {data.ourImpact.topBadge}
             </h2>
 
             {/* <div className="h-1 w-8 rounded-full bg-orange-500" /> */}
@@ -435,7 +435,7 @@ export default function CSR({ data }: CSRProps) {
         <div className="space-y-8">
           <div className="space-y-2 text-center">
             <h2 className="font-serif text-2xl font-bold text-slate-900 md:text-3xl">
-              {data.csrProjects.title}
+              {data.csrProjects.topBadge}
             </h2>
 
             {/* <div className="mx-auto h-1 w-8 rounded-full bg-orange-500" /> */}

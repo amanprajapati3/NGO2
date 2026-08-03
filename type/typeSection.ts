@@ -2011,7 +2011,6 @@ export interface CSRPageProps {
 
   focusAreas: {
     topBadge: string;
-    title: string;
     description: string;
 
     items: {
@@ -2025,7 +2024,6 @@ export interface CSRPageProps {
 
   ourImpact: {
     topBadge: string;
-    title: string;
     description: string;
 
     ctaButton: {
@@ -2044,7 +2042,6 @@ export interface CSRPageProps {
 
   csrProjects: {
     topBadge: string;
-    title: string;
     description: string;
 
     items: {

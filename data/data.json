@@ -4782,7 +4782,6 @@
 
     "focusAreas": {
       "topBadge": "OUR FOCUS AREAS",
-      "title": "Creating Change Where It Matters",
       "description": "Our CSR initiatives focus on empowering people, strengthening communities, protecting the environment, and creating sustainable opportunities for a better future.",
       "items": [
         {
@@ -4825,7 +4824,6 @@
 
     "ourImpact": {
       "topBadge": "OUR IMPACT",
-      "title": "Creating a Lasting Difference",
       "description": "Through collaboration, compassion, and commitment, we are creating a lasting impact in the lives we touch.",
 
       "ctaButton": {
@@ -4864,7 +4862,6 @@
 
     "csrProjects": {
       "topBadge": "OUR CSR PROJECTS",
-      "title": "Projects That Create Real Impact",
       "description": "From education and healthcare to environmental conservation and women empowerment, our projects are designed to create meaningful and lasting change.",
 
       "items": [
