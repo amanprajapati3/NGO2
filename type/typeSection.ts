@@ -1405,81 +1405,74 @@ export interface ServicesPageProps {
   data: ServicesPageData;
 }
 
-export interface ServiceDetailFeature {
-  id: string;
-  title: string;
-  icon: string;
-}
-
-export interface ServiceDetailAbout {
-  tag: string;
-  title: string;
-  paragraphs: string[];
-  features: ServiceDetailFeature[];
-  image: string;
-  imageAlt: string;
-}
-
-export interface ServiceDetailProgram {
-  id: string;
-  title: string;
-  description: string;
-  icon: string;
-}
-
-export interface ServiceDetailWhatWeDo {
-  tag: string;
-  title: string;
-  cards: ServiceDetailProgram[];
-}
-
-export interface ServiceDetailStat {
-  id: string;
-  value: string;
-  label: string;
-  icon: string;
-}
-
-export interface ServiceDetailImpact {
-  tag: string;
-  title: string;
-  stats: ServiceDetailStat[];
-}
-
-export interface ServiceDetailsBanner {
-  bgImageUrl: string;
-  breadcrumbHome: string;
-  breadcrumbCurrent: string;
-}
-
-export interface ServiceDetailButton {
-  label: string;
-  href: string;
-}
-
-export interface ServiceDetailGetInvolved {
-  tag: string;
-  title: string;
-  description: string;
-  buttons: {
-    primary: ServiceDetailButton;
-    secondary: ServiceDetailButton;
-  };
-  image: string;
-  imageAlt: string;
-}
-
 export interface ServiceDetailPageData {
-  aboutSection: ServiceDetailAbout;
-  whatWeDoSection: ServiceDetailWhatWeDo;
-  impactSection: ServiceDetailImpact;
-  banner: ServiceDetailsBanner;
-  getInvolvedSection: ServiceDetailGetInvolved;
+  banner: {
+    bgImageUrl: string;
+    breadcrumbCurrent: string;
+    breadcrumbHome: string;
+  };
+
+  aboutSection: {
+    tag: string;
+    title: string;
+    paragraphs: string[];
+
+    features: {
+      id: string;
+      title: string;
+      icon: string;
+    }[];
+
+    image: string;
+    imageAlt: string;
+  };
+
+  whatWeDoSection: {
+    tag: string;
+    title: string;
+
+    cards: {
+      id: string;
+      title: string;
+      description: string;
+      icon: string;
+    }[];
+  };
+
+  impactSection: {
+    tag: string;
+    title: string;
+
+    stats: {
+      id: string;
+      value: string;
+      label: string;
+      icon: string;
+    }[];
+  };
+
+  getInvolvedSection: {
+    tag: string;
+    title: string;
+    description: string;
+
+    buttons: {
+      primary: {
+        label: string;
+        href: string;
+      };
+
+      secondary: {
+        label: string;
+        href: string;
+      };
+    };
+
+    image: string;
+    imageAlt: string;
+  };
 }
 
-export interface ServiceDetailPageProps {
-  data: ServiceDetailPageData;
-}
 export type TermsBanner = {
   breadcrumbCurrent: string;
   breadcrumbHome: string;
@@ -2708,6 +2701,7 @@ export interface ProjectDetailsData {
   banner: ProjectDetailsBanner;
 
   badge: string;
+
   title: string;
 
   mainImage: {
@@ -2727,6 +2721,7 @@ export interface ProjectDetailsData {
   overview: {
     title: string;
     paragraphs: string[];
+
     goalCard: {
       title: string;
       description: string;
@@ -2750,6 +2745,11 @@ export interface ProjectDetailsData {
 
   ctaSidebar: SidebarCallToAction;
 }
+
+export type ProjectDetailsMap = Record<
+  string,
+  ProjectDetailsData
+>;
 
 export interface ProjectDetailsProps {
   data: ProjectDetailsData;

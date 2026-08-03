@@ -212,7 +212,7 @@
     },
 
     "bottomBar": {
-      "copyright": "©lestow",
+      "copyright": "Copyright © 2026. All rights reserved. Powered by Lestow.",
       "links": [
         {
           "label": "Refund Policy",
@@ -805,7 +805,7 @@
         "image": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/project-details"
+          "href": "/project-details/quality-education-for-all"
         },
         "icon": "book",
         "color": "orange"
@@ -818,7 +818,7 @@
         "image": "/NGO_Images/happy-diverse-kinds-park.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/project-details"
+          "href": "/project-details/healthcare-for-every-life"
         },
         "icon": "heart",
         "color": "purple"
@@ -831,7 +831,7 @@
         "image": "/NGO_Images/medium-shot-happy-kids-posing.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/project-details"
+          "href": "/project-details/clean-water-better-life"
         },
         "icon": "drop",
         "color": "orange"
@@ -844,7 +844,7 @@
         "image": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/project-details"
+          "href": "/project-details/empowering-women"
         },
         "icon": "women",
         "color": "purple"
@@ -1437,7 +1437,7 @@
             "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "2",
@@ -1447,7 +1447,7 @@
             "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Future Plan & Strategy For Construction"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "3",
@@ -1457,7 +1457,7 @@
             "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Melancholy Devonshire Alteration"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "4",
@@ -1467,7 +1467,7 @@
             "src": "/NGO_Images/charity-volunteer-giving-helping-hands.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "5",
@@ -1477,7 +1477,7 @@
             "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Education Programs That Create Real Change"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         }
       ],
       "ctaWidget": {
@@ -2663,7 +2663,7 @@
         "description": "We provide quality education and learning opportunities for underprivileged children to build a brighter future.",
         "image": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
         "icon": "FiBookOpen",
-        "link": "/services-detail",
+        "link": "/services-detail/education-for-all",
         "label": "Learn More"
       },
       {
@@ -2672,7 +2672,7 @@
         "description": "We organize health camps and wellness programs to ensure better health and hygiene for communities.",
         "image": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
         "icon": "FiHeart",
-        "link": "/services-detail",
+        "link": "/services-detail/healthcare-wellness",
         "label": "Learn More"
       },
       {
@@ -2681,7 +2681,7 @@
         "description": "We work towards a greener planet by promoting tree plantation, clean energy, and sustainable living.",
         "image": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
         "icon": "FiFeather",
-        "link": "/services-detail",
+        "link": "/services-detail/environment-protection",
         "label": "Learn More"
       },
       {
@@ -2690,7 +2690,7 @@
         "description": "We empower women with skills, training, and resources to help them become independent and confident.",
         "image": "/NGO_Images/communication-feedback-chos-role.jpg",
         "icon": "FiUser",
-        "link": "/services-detail",
+        "link": "/services-detail/women-empowerment",
         "label": "Learn More"
       },
       {
@@ -2699,7 +2699,7 @@
         "description": "We provide nutritious food and support to fight hunger and malnutrition in our communities.",
         "image": "/NGO_Images/community-concept-with-nature-close-up.jpg",
         "icon": "FiSmile",
-        "link": "/services-detail",
+        "link": "/services-detail/food-nutrition",
         "label": "Learn More"
       },
       {
@@ -2708,7 +2708,7 @@
         "description": "We care for our elders by providing support, medical care, and companionship for a dignified life.",
         "image": "/NGO_Images/cropped-hands-women.jpg",
         "icon": "FiHeartHandshake",
-        "link": "/services-detail",
+        "link": "/services-detail/elderly-care",
         "label": "Learn More"
       },
       {
@@ -2717,7 +2717,7 @@
         "description": "We respond quickly in times of crisis to provide immediate relief and rehabilitation support.",
         "image": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
         "icon": "FiShield",
-        "link": "/services-detail",
+        "link": "/services-detail/disaster-relief",
         "label": "Learn More"
       },
       {
@@ -2726,7 +2726,7 @@
         "description": "We inspire and guide youth through education, mentorship, and skill development programs.",
         "image": "/NGO_Images/diverse-community-with-hands-circle.jpg",
         "icon": "FiAward",
-        "link": "/services-detail",
+        "link": "/services-detail/youth-development",
         "label": "Learn More"
       },
       {
@@ -2735,7 +2735,7 @@
         "description": "We work with communities to improve living conditions and create opportunities for sustainable growth.",
         "image": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
         "icon": "FiUsers",
-        "link": "/services-detail",
+        "link": "/services-detail/community-development",
         "label": "Learn More"
       }
     ],
@@ -2749,15 +2749,17 @@
       "bannerImage": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg"
     }
   },
-  "serviceDetailPage": {
+"serviceDetails": {
+  "education-for-all": {
     "banner": {
       "bgImageUrl": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
-      "breadcrumbCurrent": "Services Details",
+      "breadcrumbCurrent": "Education for All",
       "breadcrumbHome": "Home"
     },
+
     "aboutSection": {
       "tag": "ABOUT THIS SERVICE",
-      "title": "Building Brighter Futures",
+      "title": "Building Brighter Futures Through Education",
       "paragraphs": [
         "We work to provide underprivileged children with access to quality education, school supplies, and a safe learning environment. Our programs focus on bridging the education gap and empowering children to dream, learn, and achieve.",
         "Through scholarships, teacher training, and learning resources, we are helping children build the skills they need to create a better tomorrow."
@@ -2863,6 +2865,910 @@
       "imageAlt": "Supporting children's education"
     }
   },
+
+  "healthcare-wellness": {
+    "banner": {
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
+      "breadcrumbCurrent": "Healthcare & Wellness",
+      "breadcrumbHome": "Home"
+    },
+
+    "aboutSection": {
+      "tag": "ABOUT THIS SERVICE",
+      "title": "Building Healthier Communities",
+      "paragraphs": [
+        "We work to improve access to healthcare and essential wellness services for underserved communities. Our programs focus on preventive care, health awareness, hygiene, and early medical support.",
+        "Through health camps, awareness programs, medical assistance, and community outreach, we help families make informed decisions about their health and wellbeing."
+      ],
+      "features": [
+        {
+          "id": "1",
+          "title": "Health Camps",
+          "icon": "FiHeart"
+        },
+        {
+          "id": "2",
+          "title": "Medical Support",
+          "icon": "FiUserCheck"
+        },
+        {
+          "id": "3",
+          "title": "Health Awareness",
+          "icon": "FiUsers"
+        }
+      ],
+      "image": "/NGO_Images/colorful-letters-forming-word-charity.jpg",
+      "imageAlt": "Healthcare support for communities"
+    },
+
+    "whatWeDoSection": {
+      "tag": "OUR PROGRAMS",
+      "title": "Healthcare Initiatives",
+      "cards": [
+        {
+          "id": "1",
+          "title": "Health Camps",
+          "description": "We organize health camps that provide basic medical checkups and healthcare guidance.",
+          "icon": "FiHeart"
+        },
+        {
+          "id": "2",
+          "title": "Medical Assistance",
+          "description": "We help families access essential medical care and support when they need it most.",
+          "icon": "FiUserCheck"
+        },
+        {
+          "id": "3",
+          "title": "Hygiene Awareness",
+          "description": "We conduct awareness programs that promote hygiene, sanitation, and healthy habits.",
+          "icon": "FiUsers"
+        },
+        {
+          "id": "4",
+          "title": "Wellness Programs",
+          "description": "We promote healthy lifestyles through community wellness and awareness activities.",
+          "icon": "FiAward"
+        }
+      ]
+    },
+
+    "impactSection": {
+      "tag": "OUR IMPACT",
+      "title": "Creating Healthier Communities",
+      "stats": [
+        {
+          "id": "1",
+          "value": "18,000+",
+          "label": "People Reached",
+          "icon": "FiUsers"
+        },
+        {
+          "id": "2",
+          "value": "120+",
+          "label": "Health Camps",
+          "icon": "FiHeart"
+        },
+        {
+          "id": "3",
+          "value": "8,500+",
+          "label": "Medical Checkups",
+          "icon": "FiUserCheck"
+        },
+        {
+          "id": "4",
+          "value": "250+",
+          "label": "Awareness Programs",
+          "icon": "FiBookOpen"
+        }
+      ]
+    },
+
+    "getInvolvedSection": {
+      "tag": "GET INVOLVED",
+      "title": "Help Us Build Healthier Communities",
+      "description": "Your support helps us provide essential healthcare services and wellness programs to people who need them most.",
+      "buttons": {
+        "primary": {
+          "label": "Donate Now",
+          "href": "/donate"
+        },
+        "secondary": {
+          "label": "Volunteer With Us",
+          "href": "/contact-us"
+        }
+      },
+      "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+      "imageAlt": "Community healthcare support"
+    }
+  },
+
+  "environment-protection": {
+    "banner": {
+      "bgImageUrl": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
+      "breadcrumbCurrent": "Environment Protection",
+      "breadcrumbHome": "Home"
+    },
+
+    "aboutSection": {
+      "tag": "ABOUT THIS SERVICE",
+      "title": "Protecting Our Planet for Future Generations",
+      "paragraphs": [
+        "We work to protect the environment by promoting tree plantation, sustainable practices, clean surroundings, and responsible use of natural resources.",
+        "Our environmental initiatives encourage communities and young people to take meaningful action toward a greener and healthier planet."
+      ],
+      "features": [
+        {
+          "id": "1",
+          "title": "Tree Plantation",
+          "icon": "FiFeather"
+        },
+        {
+          "id": "2",
+          "title": "Clean Environment",
+          "icon": "FiUsers"
+        },
+        {
+          "id": "3",
+          "title": "Sustainable Living",
+          "icon": "FiBook"
+        }
+      ],
+      "image": "/NGO_Images/colorful-letters-forming-word-donate.jpg",
+      "imageAlt": "Environmental protection initiative"
+    },
+
+    "whatWeDoSection": {
+      "tag": "OUR PROGRAMS",
+      "title": "Environmental Initiatives",
+      "cards": [
+        {
+          "id": "1",
+          "title": "Tree Plantation",
+          "description": "We organize plantation drives to increase green cover and restore local ecosystems.",
+          "icon": "FiFeather"
+        },
+        {
+          "id": "2",
+          "title": "Clean-Up Drives",
+          "description": "We bring communities together to keep public spaces clean and healthy.",
+          "icon": "FiHome"
+        },
+        {
+          "id": "3",
+          "title": "Environmental Awareness",
+          "description": "We educate communities about responsible environmental practices.",
+          "icon": "FiBookOpen"
+        },
+        {
+          "id": "4",
+          "title": "Sustainable Living",
+          "description": "We encourage people to adopt practical and sustainable lifestyle choices.",
+          "icon": "FiUsers"
+        }
+      ]
+    },
+
+    "impactSection": {
+      "tag": "OUR IMPACT",
+      "title": "Together for a Greener Tomorrow",
+      "stats": [
+        {
+          "id": "1",
+          "value": "50,000+",
+          "label": "Trees Planted",
+          "icon": "FiFeather"
+        },
+        {
+          "id": "2",
+          "value": "200+",
+          "label": "Clean-Up Drives",
+          "icon": "FiHome"
+        },
+        {
+          "id": "3",
+          "value": "15,000+",
+          "label": "People Engaged",
+          "icon": "FiUsers"
+        },
+        {
+          "id": "4",
+          "value": "180+",
+          "label": "Awareness Programs",
+          "icon": "FiBookOpen"
+        }
+      ]
+    },
+
+    "getInvolvedSection": {
+      "tag": "GET INVOLVED",
+      "title": "Be a Part of a Greener Future",
+      "description": "Together, we can protect nature, restore our environment, and create a healthier planet for future generations.",
+      "buttons": {
+        "primary": {
+          "label": "Donate Now",
+          "href": "/donate"
+        },
+        "secondary": {
+          "label": "Volunteer With Us",
+          "href": "/contact-us"
+        }
+      },
+      "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+      "imageAlt": "Environmental volunteer initiative"
+    }
+  },
+  "women-empowerment": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/communication-feedback-chos-role.jpg",
+    "breadcrumbCurrent": "Women Empowerment",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Empowering Women, Strengthening Communities",
+    "paragraphs": [
+      "We empower women with skills, knowledge, training, and resources that help them become financially independent and confident. Our programs create opportunities for women to learn new skills and build sustainable livelihoods.",
+      "Through vocational training, entrepreneurship support, awareness programs, and community initiatives, we help women overcome barriers and take an active role in shaping their families and communities."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Skill Development",
+        "icon": "FiAward"
+      },
+      {
+        "id": "2",
+        "title": "Financial Independence",
+        "icon": "FiBook"
+      },
+      {
+        "id": "3",
+        "title": "Leadership Opportunities",
+        "icon": "FiUsers"
+      }
+    ],
+    "image": "/NGO_Images/communication-feedback-chos-role.jpg",
+    "imageAlt": "Women participating in empowerment activities"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "How We Empower Women",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Vocational Training",
+        "description": "We provide practical training that helps women develop valuable skills and create sustainable sources of income.",
+        "icon": "FiAward"
+      },
+      {
+        "id": "2",
+        "title": "Entrepreneurship Support",
+        "description": "We help women explore business opportunities and provide guidance to start and grow small enterprises.",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "title": "Financial Awareness",
+        "description": "We conduct programs that help women understand savings, financial planning, and responsible money management.",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "title": "Leadership Development",
+        "description": "We encourage women to develop confidence, leadership skills, and participate in community decision-making.",
+        "icon": "FiUsers"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Creating Opportunities for Women",
+    "stats": [
+      {
+        "id": "1",
+        "value": "12,000+",
+        "label": "Women Supported",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "value": "350+",
+        "label": "Training Programs",
+        "icon": "FiAward"
+      },
+      {
+        "id": "3",
+        "value": "4,500+",
+        "label": "Women Trained",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "value": "800+",
+        "label": "Small Businesses Supported",
+        "icon": "FiHome"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Help Women Build Independent Futures",
+    "description": "Your support can help women gain skills, access opportunities, and build a secure and independent future for themselves and their families.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Women supporting each other"
+  }
+},
+
+"food-nutrition": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/community-concept-with-nature-close-up.jpg",
+    "breadcrumbCurrent": "Food & Nutrition",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Fighting Hunger, Nourishing Hope",
+    "paragraphs": [
+      "We work to ensure that children, families, and vulnerable communities have access to nutritious food and essential nutritional support. Our programs focus on reducing hunger and improving overall wellbeing.",
+      "Through food distribution, community kitchens, nutrition awareness, and support for vulnerable families, we help create healthier communities where everyone has the opportunity to live with dignity."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Nutritious Meals",
+        "icon": "FiSmile"
+      },
+      {
+        "id": "2",
+        "title": "Nutrition Awareness",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "3",
+        "title": "Community Support",
+        "icon": "FiUsers"
+      }
+    ],
+    "image": "/NGO_Images/community-concept-with-nature-close-up.jpg",
+    "imageAlt": "Food and nutrition support for communities"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "Our Food & Nutrition Programs",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Food Distribution",
+        "description": "We distribute nutritious food packages to families and individuals facing hunger and food insecurity.",
+        "icon": "FiSmile"
+      },
+      {
+        "id": "2",
+        "title": "Community Kitchens",
+        "description": "We support community meal programs that provide healthy and freshly prepared meals to people in need.",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "title": "Nutrition Education",
+        "description": "We educate families about balanced diets, healthy eating habits, and the importance of proper nutrition.",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "title": "Child Nutrition",
+        "description": "We provide nutritional support to children to help them grow, learn, and stay healthy.",
+        "icon": "FiUsers"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Nourishing Communities Together",
+    "stats": [
+      {
+        "id": "1",
+        "value": "35,000+",
+        "label": "People Fed",
+        "icon": "FiSmile"
+      },
+      {
+        "id": "2",
+        "value": "500+",
+        "label": "Food Distribution Drives",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "value": "15,000+",
+        "label": "Children Supported",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "4",
+        "value": "250+",
+        "label": "Nutrition Programs",
+        "icon": "FiBookOpen"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Help Us Put Food on Every Table",
+    "description": "Your contribution can help provide nutritious meals and essential food support to families and children facing hunger.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Community food support"
+  }
+},
+
+"elderly-care": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/cropped-hands-women.jpg",
+    "breadcrumbCurrent": "Elderly Care",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Caring for Our Elders With Dignity",
+    "paragraphs": [
+      "We support elderly people who may be living alone, facing financial difficulties, or requiring additional care and companionship. Our goal is to ensure that every elder feels respected, valued, and supported.",
+      "Through medical assistance, emotional support, essential supplies, and community engagement, we help older adults live healthier and more dignified lives."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Medical Support",
+        "icon": "FiHeart"
+      },
+      {
+        "id": "2",
+        "title": "Emotional Care",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "3",
+        "title": "Daily Assistance",
+        "icon": "FiUserCheck"
+      }
+    ],
+    "image": "/NGO_Images/cropped-hands-women.jpg",
+    "imageAlt": "Supporting elderly people"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "How We Care for Our Elders",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Medical Assistance",
+        "description": "We help elderly people access basic medical care, checkups, medicines, and healthcare guidance.",
+        "icon": "FiHeart"
+      },
+      {
+        "id": "2",
+        "title": "Essential Supplies",
+        "description": "We provide essential food, hygiene products, clothing, and other supplies to elderly people in need.",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "title": "Companionship",
+        "description": "We organize community visits and activities that help reduce loneliness and create meaningful connections.",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "4",
+        "title": "Daily Support",
+        "description": "We provide practical assistance to elderly people who need help with everyday activities.",
+        "icon": "FiUserCheck"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Bringing Care and Dignity to Every Elder",
+    "stats": [
+      {
+        "id": "1",
+        "value": "8,000+",
+        "label": "Elders Supported",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "value": "180+",
+        "label": "Medical Camps",
+        "icon": "FiHeart"
+      },
+      {
+        "id": "3",
+        "value": "5,000+",
+        "label": "Health Checkups",
+        "icon": "FiUserCheck"
+      },
+      {
+        "id": "4",
+        "value": "300+",
+        "label": "Community Visits",
+        "icon": "FiHome"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Help Us Care for Our Elders",
+    "description": "Your support can provide healthcare, companionship, and essential assistance to elderly people who deserve to live with dignity and respect.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Elderly care and community support"
+  }
+},
+
+"disaster-relief": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
+    "breadcrumbCurrent": "Disaster Relief",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Standing Together in Times of Crisis",
+    "paragraphs": [
+      "When disasters strike, families and communities can lose access to food, shelter, healthcare, and other basic necessities. We respond quickly to provide immediate assistance to people affected by emergencies.",
+      "Our disaster relief efforts focus on emergency supplies, temporary shelter, medical assistance, rehabilitation, and long-term recovery support."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Emergency Relief",
+        "icon": "FiShield"
+      },
+      {
+        "id": "2",
+        "title": "Medical Assistance",
+        "icon": "FiHeart"
+      },
+      {
+        "id": "3",
+        "title": "Recovery Support",
+        "icon": "FiHome"
+      }
+    ],
+    "image": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
+    "imageAlt": "Disaster relief support"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "Our Disaster Relief Response",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Emergency Supplies",
+        "description": "We distribute food, clean water, hygiene kits, clothing, and other essential supplies during emergencies.",
+        "icon": "FiShield"
+      },
+      {
+        "id": "2",
+        "title": "Temporary Shelter",
+        "description": "We support affected families with temporary shelter and essential household supplies.",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "title": "Medical Aid",
+        "description": "We coordinate medical assistance and health support for communities affected by disasters.",
+        "icon": "FiHeart"
+      },
+      {
+        "id": "4",
+        "title": "Rehabilitation",
+        "description": "We help communities rebuild their lives and recover after the immediate crisis has passed.",
+        "icon": "FiUsers"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Helping Communities Recover",
+    "stats": [
+      {
+        "id": "1",
+        "value": "45,000+",
+        "label": "People Assisted",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "value": "120+",
+        "label": "Relief Operations",
+        "icon": "FiShield"
+      },
+      {
+        "id": "3",
+        "value": "25,000+",
+        "label": "Relief Kits Distributed",
+        "icon": "FiHome"
+      },
+      {
+        "id": "4",
+        "value": "150+",
+        "label": "Medical Camps",
+        "icon": "FiHeart"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Be There When Communities Need Us Most",
+    "description": "Your support helps us respond quickly to disasters and provide essential assistance to families facing difficult circumstances.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Disaster relief volunteers"
+  }
+},
+
+"youth-development": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/diverse-community-with-hands-circle.jpg",
+    "breadcrumbCurrent": "Youth Development",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Inspiring Young Minds to Lead the Future",
+    "paragraphs": [
+      "We help young people discover their potential through education, mentorship, career guidance, and skill development opportunities. Our programs encourage youth to become confident, responsible, and active members of society.",
+      "By providing access to learning resources, practical training, and leadership opportunities, we help young people prepare for education, employment, and meaningful participation in their communities."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Skill Development",
+        "icon": "FiAward"
+      },
+      {
+        "id": "2",
+        "title": "Youth Mentorship",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "3",
+        "title": "Career Guidance",
+        "icon": "FiBookOpen"
+      }
+    ],
+    "image": "/NGO_Images/diverse-community-with-hands-circle.jpg",
+    "imageAlt": "Young people participating in a community program"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "Programs for Young People",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Skill Training",
+        "description": "We provide practical training that helps young people develop skills relevant to education, careers, and employment.",
+        "icon": "FiAward"
+      },
+      {
+        "id": "2",
+        "title": "Mentorship",
+        "description": "We connect young people with mentors who guide and encourage them throughout their personal and professional journeys.",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "3",
+        "title": "Career Guidance",
+        "description": "We help youth explore career paths, develop goals, and make informed decisions about their future.",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "title": "Leadership Programs",
+        "description": "We create opportunities for young people to develop leadership, communication, and teamwork skills.",
+        "icon": "FiUserCheck"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Preparing Youth for a Brighter Future",
+    "stats": [
+      {
+        "id": "1",
+        "value": "15,000+",
+        "label": "Young People Reached",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "value": "400+",
+        "label": "Training Programs",
+        "icon": "FiAward"
+      },
+      {
+        "id": "3",
+        "value": "6,000+",
+        "label": "Youth Trained",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "value": "250+",
+        "label": "Mentors Engaged",
+        "icon": "FiUserCheck"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Help Young People Reach Their Potential",
+    "description": "Your support can give young people access to education, mentorship, skills, and opportunities that help them build successful futures.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Youth development program"
+  }
+},
+
+"community-development": {
+  "banner": {
+    "bgImageUrl": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
+    "breadcrumbCurrent": "Community Development",
+    "breadcrumbHome": "Home"
+  },
+  "aboutSection": {
+    "tag": "ABOUT THIS SERVICE",
+    "title": "Building Stronger and Sustainable Communities",
+    "paragraphs": [
+      "We work alongside communities to improve living conditions, create opportunities, and support long-term development. Our approach focuses on empowering local people to identify challenges and build practical solutions together.",
+      "Through education, infrastructure support, livelihood initiatives, and community participation, we help communities become stronger, more resilient, and self-reliant."
+    ],
+    "features": [
+      {
+        "id": "1",
+        "title": "Community Support",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "title": "Local Development",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "title": "Sustainable Growth",
+        "icon": "FiAward"
+      }
+    ],
+    "image": "/NGO_Images/girl-is-reading-book-with-word-one-it.jpg",
+    "imageAlt": "Community development initiative"
+  },
+  "whatWeDoSection": {
+    "tag": "OUR PROGRAMS",
+    "title": "Building Better Communities",
+    "cards": [
+      {
+        "id": "1",
+        "title": "Community Infrastructure",
+        "description": "We support projects that improve essential facilities and create safer and better living environments.",
+        "icon": "FiHome"
+      },
+      {
+        "id": "2",
+        "title": "Livelihood Support",
+        "description": "We help families access opportunities that improve income, skills, and long-term economic stability.",
+        "icon": "FiAward"
+      },
+      {
+        "id": "3",
+        "title": "Community Education",
+        "description": "We organize educational programs that help people gain knowledge and make informed decisions.",
+        "icon": "FiBookOpen"
+      },
+      {
+        "id": "4",
+        "title": "Local Participation",
+        "description": "We encourage local residents to participate in planning and creating solutions for their communities.",
+        "icon": "FiUsers"
+      }
+    ]
+  },
+  "impactSection": {
+    "tag": "OUR IMPACT",
+    "title": "Growing Together as Communities",
+    "stats": [
+      {
+        "id": "1",
+        "value": "75,000+",
+        "label": "People Reached",
+        "icon": "FiUsers"
+      },
+      {
+        "id": "2",
+        "value": "250+",
+        "label": "Communities Supported",
+        "icon": "FiHome"
+      },
+      {
+        "id": "3",
+        "value": "180+",
+        "label": "Development Projects",
+        "icon": "FiAward"
+      },
+      {
+        "id": "4",
+        "value": "12,000+",
+        "label": "Families Supported",
+        "icon": "FiUsers"
+      }
+    ]
+  },
+  "getInvolvedSection": {
+    "tag": "GET INVOLVED",
+    "title": "Help Us Build Stronger Communities",
+    "description": "Your support helps communities access opportunities, improve living conditions, and create a more secure and sustainable future.",
+    "buttons": {
+      "primary": {
+        "label": "Donate Now",
+        "href": "/donate"
+      },
+      "secondary": {
+        "label": "Volunteer With Us",
+        "href": "/contact-us"
+      }
+    },
+    "image": "/NGO_Images/group-best-friends-making-toast.jpg",
+    "imageAlt": "Community development initiative"
+  }
+}
+},
   "terms": {
     "banner": {
       "breadcrumbCurrent": "Terms & Conditions",
@@ -3490,7 +4396,7 @@
           "description": "For outstanding contribution to social development and community welfare.",
           "year": "2024",
           "image": {
-            "src": "/NGO_Images/people-hands-diversity-with-humanity-unity-inclusion-community-together-banner-closeup-group-social-gathering-with-teamwork-share-charity-poor-civilization-poverty.jpg",
+            "src": "https://i.pinimg.com/736x/09/57/1e/09571e3e4cc1eb290cb5d3d783b55f3b.jpg",
             "alt": "Gold star trophy on black base"
           }
         },
@@ -3500,7 +4406,7 @@
           "description": "Honoring our consistent efforts in creating meaningful change in communities.",
           "year": "2023",
           "image": {
-            "src": "/NGO_Images/planet-earth-boy-s-hands-saves-protects-world-environmental-concept-earth-day.jpg",
+            "src": "https://i.pinimg.com/736x/d7/8a/2d/d78a2ded501b893cf7399b586af49af2.jpg",
             "alt": "Golden laurel wreath trophy"
           }
         },
@@ -3510,7 +4416,7 @@
           "description": "Recognizing our dedication to social responsibility and sustainable development.",
           "year": "2023",
           "image": {
-            "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
+            "src": "https://i.pinimg.com/736x/d6/6b/bf/d66bbfcac26fc21756d2733dc5a93fad.jpg",
             "alt": "Golden statue trophy holding crystal globe"
           }
         },
@@ -3520,7 +4426,7 @@
           "description": "For exceptional work in education, healthcare and empowerment programs.",
           "year": "2022",
           "image": {
-            "src": "/NGO_Images/portrait-cute-girl-with-kitten.jpg",
+            "src": "https://i.pinimg.com/736x/d6/6b/bf/d66bbfcac26fc21756d2733dc5a93fad.jpg",
             "alt": "Circular wooden plaque award with golden emblem"
           }
         },
@@ -3530,7 +4436,7 @@
           "description": "In appreciation of our humanitarian services and relief efforts.",
           "year": "2022",
           "image": {
-            "src": "/NGO_Images/children-speaking-holding-book.jpg",
+            "src": "https://i.pinimg.com/736x/cb/24/d2/cb24d2618598b0fd48faca3006e07c93.jpg",
             "alt": "Silver circular plate award with laurel details"
           }
         },
@@ -3540,7 +4446,7 @@
           "description": "For building a strong volunteer network and promoting community participation.",
           "year": "2021",
           "image": {
-            "src": "/NGO_Images/children-speaking-holding-book.jpg",
+            "src": "https://i.pinimg.com/736x/4a/51/0b/4a510bf6c89e71704e9e3807311522f6.jpg",
             "alt": "Leaf shaped glass award with golden star"
           }
         },
@@ -3550,7 +4456,7 @@
           "description": "Recognizing innovation and creativity in implementing impactful programs.",
           "year": "2021",
           "image": {
-            "src": "/NGO_Images/professional-working-person.jpg",
+            "src": "https://i.pinimg.com/736x/67/c1/a9/67c1a92630367555b02a30164580f600.jpg",
             "alt": "Golden trophy cup on dark wooden base"
           }
         },
@@ -3560,7 +4466,7 @@
           "description": "For collaborative partnerships that drive progress and create lasting impact.",
           "year": "2020",
           "image": {
-            "src": "/NGO_Images/professional-working-person.jpg",
+            "src": "https://i.pinimg.com/1200x/40/56/83/405683537585d1128e52cb3e2f236518.jpg",
             "alt": "Shield shaped golden plaque award"
           }
         }
@@ -4884,7 +5790,7 @@
             "src": "/NGO_Images/children-speaking-holding-book.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "2",
@@ -4894,7 +5800,7 @@
             "src": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg",
             "alt": "Future Plan & Strategy For Construction"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "3",
@@ -4904,7 +5810,7 @@
             "src": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
             "alt": "Melancholy Devonshire Alteration"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         },
         {
           "id": "4",
@@ -4915,14 +5821,231 @@
             "src": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
             "alt": "Delicate Contempt Received Two Yet Advanced"
           },
-          "slug": "#"
+          "slug": "/blog-details"
         }
       ]
     }
   },
-  "projectDetails": {
+"projectDetails": {
+  "quality-education-for-all": {
     "banner": {
-      "breadcrumbCurrent": "Projet Details",
+      "breadcrumbCurrent": "Quality Education For All",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg"
+    },
+    "badge": "OUR PROJECT",
+    "title": "Quality Education For All",
+    "mainImage": {
+      "url": "/NGO_Images/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
+      "alt": "Children receiving educational support",
+      "badgeText": "Education"
+    },
+    "summary": "This project provides free education, books, learning resources, and a safe learning environment for underprivileged children. Our goal is to ensure that every child has the opportunity to learn, grow, and build a brighter future.",
+    "meta": {
+      "projectStarted": {
+        "label": "Project Started",
+        "value": "January 10, 2023"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Rural Communities, India"
+      },
+      "beneficiaries": {
+        "label": "Beneficiaries",
+        "value": "2,500+ Children"
+      }
+    },
+    "overview": {
+      "title": "Project Overview",
+      "paragraphs": [
+        "Education can transform lives, but many children from underserved communities still lack access to quality learning opportunities.",
+        "Our Quality Education For All project provides free classes, books, school supplies, digital learning resources, and academic support to children who need them most.",
+        "We work with teachers, volunteers, schools, and local communities to create sustainable learning opportunities and help children continue their education."
+      ],
+      "goalCard": {
+        "title": "Our Goal",
+        "description": "To provide every child with access to quality education, learning resources, and the opportunity to build a successful future."
+      }
+    },
+    "impactSoFar": {
+      "title": "Impact So Far",
+      "stats": [
+        {
+          "icon": "people",
+          "value": "2,500+",
+          "label": "Children Educated"
+        },
+        {
+          "icon": "book",
+          "value": "8,000+",
+          "label": "Books Distributed"
+        },
+        {
+          "icon": "school",
+          "value": "35",
+          "label": "Schools Supported"
+        },
+        {
+          "icon": "teacher",
+          "value": "120+",
+          "label": "Teachers Supported"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Project Gallery",
+      "images": [
+        {
+          "id": "1",
+          "url": "/NGO_Images/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+          "alt": "Children learning together"
+        },
+        {
+          "id": "2",
+          "url": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
+          "alt": "Children participating in class"
+        },
+        {
+          "id": "3",
+          "url": "/NGO_Images/close-up-hand-holding-flowering-plant.jpg",
+          "alt": "Educational learning activity"
+        },
+        {
+          "id": "4",
+          "url": "/NGO_Images/diverse-community-with-hands-circle.jpg",
+          "alt": "Students working together"
+        }
+      ]
+    },
+    "keyHighlights": {
+      "title": "Key Highlights",
+      "items": [
+        "Provided free education to children from underserved communities",
+        "Distributed books, school supplies, and learning materials",
+        "Supported schools with educational resources",
+        "Organized learning and skill development activities",
+        "Worked with teachers and volunteers for long-term educational support"
+      ]
+    },
+    "ctaSidebar": {
+      "title": "Help A Child Learn",
+      "description": "Your support can give a child access to education, books, and the opportunity to build a brighter future.",
+      "buttonText": "Donate Now",
+      "buttonLink": "/donate"
+    }
+  },
+
+  "healthcare-for-every-life": {
+    "banner": {
+      "breadcrumbCurrent": "Healthcare For Every Life",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_Images/happy-diverse-kinds-park.jpg"
+    },
+    "badge": "OUR PROJECT",
+    "title": "Healthcare For Every Life",
+    "mainImage": {
+      "url": "/NGO_Images/happy-diverse-kinds-park.jpg",
+      "alt": "Community healthcare support",
+      "badgeText": "Healthcare"
+    },
+    "summary": "This project brings essential healthcare services to underserved communities through health camps, medical assistance, awareness programs, and preventive healthcare initiatives.",
+    "meta": {
+      "projectStarted": {
+        "label": "Project Started",
+        "value": "March 20, 2023"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Rural Communities, India"
+      },
+      "beneficiaries": {
+        "label": "Beneficiaries",
+        "value": "5,000+ People"
+      }
+    },
+    "overview": {
+      "title": "Project Overview",
+      "paragraphs": [
+        "Many families in rural and underserved communities face difficulties accessing affordable and timely healthcare.",
+        "Our Healthcare For Every Life project organizes medical camps, health screenings, awareness sessions, and basic medical support for communities in need.",
+        "We collaborate with healthcare professionals, volunteers, and local organizations to improve health awareness and encourage preventive care."
+      ],
+      "goalCard": {
+        "title": "Our Goal",
+        "description": "To make essential healthcare services accessible to underserved communities and promote healthier lives."
+      }
+    },
+    "impactSoFar": {
+      "title": "Impact So Far",
+      "stats": [
+        {
+          "icon": "people",
+          "value": "5,000+",
+          "label": "People Reached"
+        },
+        {
+          "icon": "medical",
+          "value": "75",
+          "label": "Health Camps"
+        },
+        {
+          "icon": "doctor",
+          "value": "150+",
+          "label": "Doctors & Volunteers"
+        },
+        {
+          "icon": "heart-percentage",
+          "value": "60%",
+          "label": "Increase In Health Awareness"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Project Gallery",
+      "images": [
+        {
+          "id": "1",
+          "url": "/NGO_Images/happy-diverse-kinds-park.jpg",
+          "alt": "Community health activity"
+        },
+        {
+          "id": "2",
+          "url": "/NGO_Images/group-doctors-putting-their-hands-together-closeup.jpg",
+          "alt": "Healthcare professionals working together"
+        },
+        {
+          "id": "3",
+          "url": "/NGO_Images/cute-sisters-having-snacks-home.jpg",
+          "alt": "Community wellness activity"
+        },
+        {
+          "id": "4",
+          "url": "/NGO_Images/diverse-community-with-hands-circle.jpg",
+          "alt": "Community healthcare support"
+        }
+      ]
+    },
+    "keyHighlights": {
+      "title": "Key Highlights",
+      "items": [
+        "Organized free health camps in underserved communities",
+        "Provided basic medical screenings and consultations",
+        "Distributed essential medicines where needed",
+        "Conducted health and hygiene awareness programs",
+        "Promoted preventive healthcare and healthy lifestyles"
+      ]
+    },
+    "ctaSidebar": {
+      "title": "Support Better Health",
+      "description": "Your contribution can help us provide essential healthcare services to people who need them most.",
+      "buttonText": "Donate Now",
+      "buttonLink": "/donate"
+    }
+  },
+
+  "clean-water-better-life": {
+    "banner": {
+      "breadcrumbCurrent": "Clean Water, Better Life",
       "breadcrumbHome": "Home",
       "bgImageUrl": "/NGO_Images/hands-people-with-diverse-ethnicity.jpg"
     },
@@ -4930,7 +6053,7 @@
     "title": "Clean Water, Better Life",
     "mainImage": {
       "url": "/NGO_Images/group-children-with-their-hands-up-air.jpg",
-      "alt": "Boy drinking clean water from tap",
+      "alt": "Children benefiting from clean water",
       "badgeText": "Clean Water"
     },
     "summary": "This project aims to provide clean and safe drinking water to underserved communities. We build water wells, install purification systems, and promote hygiene awareness for a healthier tomorrow.",
@@ -5016,17 +6139,126 @@
         "Built 12 deep water wells in remote areas",
         "Installed modern water purification systems",
         "Conducted hygiene and sanitation awareness programs",
-        "Involving local communities for long-term maintenance",
+        "Involved local communities in long-term maintenance",
         "Regular water quality testing and monitoring"
       ]
     },
     "ctaSidebar": {
-      "title": "Be A Part Of Change",
+      "title": "Bring Clean Water To More Families",
       "description": "Your support can bring clean water and better health to many more lives.",
       "buttonText": "Donate Now",
       "buttonLink": "/donate"
     }
   },
+
+  "empowering-women": {
+    "banner": {
+      "breadcrumbCurrent": "Empowering Women",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg"
+    },
+    "badge": "OUR PROJECT",
+    "title": "Empowering Women",
+    "mainImage": {
+      "url": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
+      "alt": "Women participating in empowerment activities",
+      "badgeText": "Women Empowerment"
+    },
+    "summary": "This project empowers women through skill development, vocational training, financial awareness, and community support programs that help women become independent and confident.",
+    "meta": {
+      "projectStarted": {
+        "label": "Project Started",
+        "value": "September 5, 2023"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Rural Communities, India"
+      },
+      "beneficiaries": {
+        "label": "Beneficiaries",
+        "value": "1,800+ Women"
+      }
+    },
+    "overview": {
+      "title": "Project Overview",
+      "paragraphs": [
+        "Many women face barriers to education, employment, financial independence, and access to skill development opportunities.",
+        "Our Empowering Women project provides vocational training, practical skills, entrepreneurship guidance, and financial awareness programs.",
+        "We work with local communities and trainers to help women develop confidence, earn sustainable incomes, and participate actively in their communities."
+      ],
+      "goalCard": {
+        "title": "Our Goal",
+        "description": "To help women gain skills, confidence, financial independence, and opportunities for a better future."
+      }
+    },
+    "impactSoFar": {
+      "title": "Impact So Far",
+      "stats": [
+        {
+          "icon": "people",
+          "value": "1,800+",
+          "label": "Women Supported"
+        },
+        {
+          "icon": "training",
+          "value": "65",
+          "label": "Training Programs"
+        },
+        {
+          "icon": "business",
+          "value": "320+",
+          "label": "Women Starting Businesses"
+        },
+        {
+          "icon": "heart-percentage",
+          "value": "70%",
+          "label": "Increase In Financial Awareness"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Project Gallery",
+      "images": [
+        {
+          "id": "1",
+          "url": "/NGO_Images/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
+          "alt": "Women participating in a training program"
+        },
+        {
+          "id": "2",
+          "url": "/NGO_Images/cropped-hands-women.jpg",
+          "alt": "Women working together"
+        },
+        {
+          "id": "3",
+          "url": "/NGO_Images/communication-feedback-chos-role.jpg",
+          "alt": "Women participating in community activities"
+        },
+        {
+          "id": "4",
+          "url": "/NGO_Images/diverse-community-with-hands-circle.jpg",
+          "alt": "Women supporting each other"
+        }
+      ]
+    },
+    "keyHighlights": {
+      "title": "Key Highlights",
+      "items": [
+        "Provided vocational and skill development training",
+        "Conducted entrepreneurship and financial awareness programs",
+        "Supported women interested in starting small businesses",
+        "Created opportunities for peer learning and community support",
+        "Helped women build confidence and financial independence"
+      ]
+    },
+    "ctaSidebar": {
+      "title": "Empower A Woman Today",
+      "description": "Your support can help women gain skills, confidence, and opportunities to build independent lives.",
+      "buttonText": "Donate Now",
+      "buttonLink": "/donate"
+    }
+  }
+},
   "media": {
     "banner": {
       "breadcrumbCurrent": "Media",

@@ -307,11 +307,11 @@ export default function Award({ data }: AwardsDataProps) {
                   className="group bg-white rounded-2xl  border-black shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between text-center transform hover:-translate-y-1"
                 >
                   <div>
-                    <div className="w-full mb-5 h-48 overflow-hidden rounded-t-xl bg-slate-50">
+                    <div className="w-full mb-5 h-64 overflow-hidden rounded-t-xl bg-slate-50">
                       <img
                         src={award.image.src}
                         alt={award.image.alt}
-                        className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                        className="w-full h-full object-center group-hover:scale-105 transition-transform duration-300"
                       />
                     </div>
 

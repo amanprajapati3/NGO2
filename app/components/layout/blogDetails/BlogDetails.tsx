@@ -3,14 +3,14 @@
 import React from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { 
-  Calendar, 
-  User, 
-  Clock, 
-  Search, 
-  Check, 
-  Quote, 
-  Heart 
+import {
+  Calendar,
+  User,
+  Clock,
+  Search,
+  Check,
+  Quote,
+  Heart,
 } from "lucide-react";
 import PageBanner from "../../shared/PageBanner";
 import type { BlogDetailsPageProps } from "@/type/typeSection";
@@ -28,10 +28,8 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
       {/* Main Content Area */}
       <section className="py-16 md:py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12">
-          
           {/* LEFT COLUMN: Article Content (8 Cols) */}
           <div className="lg:col-span-8 flex flex-col">
-            
             {/* Main Featured Image Card */}
             <div className="relative w-full rounded-2xl overflow-hidden shadow-sm mb-6 aspect-[16/9] sm:aspect-[2/1]">
               <Image
@@ -74,7 +72,10 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
 
             {/* Intro Paragraphs */}
             {mainContent.introParagraphs.map((paragraph, index) => (
-              <p key={index} className="text-slate-600 leading-relaxed text-sm sm:text-base mb-6">
+              <p
+                key={index}
+                className="text-slate-600 leading-relaxed text-sm sm:text-base mb-6"
+              >
                 {paragraph}
               </p>
             ))}
@@ -90,26 +91,33 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
 
             {/* Middle Paragraphs */}
             {mainContent.middleParagraphs.map((paragraph, index) => (
-              <p key={index} className="text-slate-600 leading-relaxed text-sm sm:text-base mb-8">
+              <p
+                key={index}
+                className="text-slate-600 leading-relaxed text-sm sm:text-base mb-8"
+              >
                 {paragraph}
               </p>
             ))}
 
             {/* Gallery Grid (3 Columns) */}
-            {mainContent.galleryImages && mainContent.galleryImages.length > 0 && (
-              <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
-                {mainContent.galleryImages.map((img, idx) => (
-                  <div key={idx} className="relative h-48 sm:h-40 md:h-48 rounded-xl overflow-hidden shadow-sm group">
-                    <Image
-                      src={img.src}
-                      alt={img.alt}
-                      fill
-                      className="object-cover group-hover:scale-105 transition-transform duration-300"
-                    />
-                  </div>
-                ))}
-              </div>
-            )}
+            {mainContent.galleryImages &&
+              mainContent.galleryImages.length > 0 && (
+                <div className="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-8">
+                  {mainContent.galleryImages.map((img, idx) => (
+                    <div
+                      key={idx}
+                      className="relative h-48 sm:h-40 md:h-48 rounded-xl overflow-hidden shadow-sm group"
+                    >
+                      <Image
+                        src={img.src}
+                        alt={img.alt}
+                        fill
+                        className="object-cover group-hover:scale-105 transition-transform duration-300"
+                      />
+                    </div>
+                  ))}
+                </div>
+              )}
 
             {/* Four Major Elements Card Container */}
             {mainContent.keyElements && (
@@ -133,27 +141,32 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
             )}
 
             {/* Dynamic Subsections */}
-            {mainContent.subSections && mainContent.subSections.map((section, index) => (
-              <div key={index} className="mt-8">
-                <h2 className="text-xl sm:text-2xl font-bold text-[#0B132A] mb-3">
-                  {section.title}
-                </h2>
-                {section.paragraphs.map((p, pIdx) => (
-                  <p key={pIdx} className="text-slate-600 leading-relaxed text-sm sm:text-base mb-4">
-                    {p}
-                  </p>
-                ))}
-              </div>
-            ))}
-
+            {mainContent.subSections &&
+              mainContent.subSections.map((section, index) => (
+                <div key={index} className="mt-8">
+                  <h2 className="text-xl sm:text-2xl font-bold text-[#0B132A] mb-3">
+                    {section.title}
+                  </h2>
+                  {section.paragraphs.map((p, pIdx) => (
+                    <p
+                      key={pIdx}
+                      className="text-slate-600 leading-relaxed text-sm sm:text-base mb-4"
+                    >
+                      {p}
+                    </p>
+                  ))}
+                </div>
+              ))}
           </div>
 
           {/* RIGHT COLUMN: Sidebar (4 Cols) */}
           <aside className="lg:col-span-4 flex flex-col gap-8">
-            
             {/* Search Input Box */}
             <div className="bg-[#f8f9fa] p-4 rounded-2xl border border-slate-100 shadow-sm">
-              <form onSubmit={(e) => e.preventDefault()} className="relative flex items-center">
+              <form
+                onSubmit={(e) => e.preventDefault()}
+                className="relative flex items-center"
+              >
                 <input
                   type="text"
                   placeholder={sidebar.searchPlaceholder || "Search here..."}
@@ -181,6 +194,9 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                   <Link
                     key={post.id}
                     href={post.slug || "#"}
+                    onClick={() => {
+                      window.location.href = post.slug || "#";
+                    }}
                     className="group flex items-center gap-4 hover:opacity-90 transition-opacity"
                   >
                     <div className="relative w-16 h-16 rounded-xl overflow-hidden flex-shrink-0 shadow-sm">
@@ -218,7 +234,7 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                 <h3 className="text-xl font-extrabold text-[#0B132A] mb-3 relative z-10">
                   {sidebar.ctaWidget.title}
                 </h3>
-                
+
                 <p className="text-sm sm:text-sm text-slate-600 leading-relaxed mb-6 relative z-10 max-w-xs">
                   {sidebar.ctaWidget.description}
                 </p>
@@ -231,9 +247,7 @@ export default function BlogDetails({ data }: BlogDetailsPageProps) {
                 </Link>
               </div>
             )}
-
           </aside>
-
         </div>
       </section>
     </main>
