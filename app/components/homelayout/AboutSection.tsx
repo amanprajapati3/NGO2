@@ -18,13 +18,16 @@ import { usePathname } from "next/navigation";
 // Helper to format YouTube links into embed URLs suitable for iframe
 const getEmbedUrl = (url: string) => {
   if (!url) return "";
+
   if (url.includes("youtube.com/watch?v=")) {
     return url.replace("watch?v=", "embed/") + "?autoplay=1";
   }
+
   if (url.includes("youtu.be/")) {
-    const id = url.split("youtu.be/")[1];
+    const id = url.split("youtu.be/")[1].split("?")[0];
     return `https://www.youtube.com/embed/${id}?autoplay=1`;
   }
+
   return url;
 };
 
@@ -233,7 +236,6 @@ export default function AboutSection({ data }: AboutSectionProps) {
                 ) {
                   return null;
                 }
-
                 const primary = button.variant === "primary";
 
                 return (

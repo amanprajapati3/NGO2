@@ -16,11 +16,11 @@ const about = data.about as AboutSectionType;
 const mission = data.mission as MissionData;
 const whychooseus = data.whyChooseUs as WhyChooseUsData;
 
-export default function AboutPage() {
+export default function AboutUs() {
   return (
     <main className="w-full overflow-hidden">
       {/* Page Banner */}
-      {about?.banner && <PageBanner banner={about.banner} />}
+      {about.banner && <PageBanner banner={about.banner} />}
 
       {/* Rendered About Us Section */}
       <AboutSection data={about} />

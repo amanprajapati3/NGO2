@@ -4,7 +4,7 @@ import data from "@/data/data.json";
 export default function AboutUsPage() {
   return (
     <>
-      <AboutUs data={data.about} />
+      <AboutUs />
     </>
   );
 }

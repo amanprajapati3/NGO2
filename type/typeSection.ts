@@ -183,7 +183,7 @@ export interface TrustBadge {
   text: string;
   bgColor: string;
   textColor: string;
-  desc:string;
+  desc: string;
 }
 
 export interface AboutImage {
