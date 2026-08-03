@@ -314,14 +314,14 @@ export default function CSR({ data }: CSRProps) {
 
           {/* <div className="flex items-center justify-center gap-3 py-2 sm:gap-4">
             {/* Left line */}
-            {/* <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" /> */}
+          {/* <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" /> */}
 
-            {/* Heart */}
-            {/* <span className="text-2xl leading-none text-orange-500 sm:text-3xl md:text-4xl">
+          {/* Heart */}
+          {/* <span className="text-2xl leading-none text-orange-500 sm:text-3xl md:text-4xl">
               ♥
             </span> */}
 
-            {/* Right line *
+          {/* Right line *
             <span className="h-[2px] w-10 rounded-full bg-orange-500 sm:w-16 md:w-20" />
           </div> */}
 
@@ -335,7 +335,7 @@ export default function CSR({ data }: CSRProps) {
           {data.stats.map((stat) => (
             <div
               key={stat.id}
-              className="space-y-2 pt-6 text-center first:pt-0 sm:pt-0"
+              className="space-y-2 pt-6 text-center first:pt-0 sm:pt-0 border-r-0 lg:border-r lg:border-r-orange-200 lg:last:border-r-0"
             >
               {renderIcon(stat.iconName)}
 
@@ -362,7 +362,7 @@ export default function CSR({ data }: CSRProps) {
             {data.focusAreas.items.map((item) => (
               <div
                 key={item.id}
-                className="flex flex-col border-r-2 border-r-orange-300 rounded-xl border border-slate-100 bg-white text-center shadow-sm transition-shadow hover:shadow-md"
+                className="flex flex-col  rounded-xl border border-slate-100 bg-white text-center shadow-sm transition-shadow hover:shadow-md"
               >
                 <div className="relative h-40 w-full">
                   <img
@@ -406,7 +406,10 @@ export default function CSR({ data }: CSRProps) {
             </p>
 
             <button className="mt-4 flex items-center cursor-pointer space-x-2 rounded-lg border border-orange-400 bg-white px-5 py-2.5 text-sm font-semibold text-orange-600 shadow-sm transition-colors hover:bg-orange-50">
-              <a href={data.ourImpact.ctaButton.href}> <span>{data.ourImpact.ctaButton.text}</span></a>
+              <a href={data.ourImpact.ctaButton.href}>
+                {" "}
+                <span>{data.ourImpact.ctaButton.text}</span>
+              </a>
               <span>&rarr;</span>
             </button>
           </div>
@@ -499,7 +502,10 @@ export default function CSR({ data }: CSRProps) {
           </div>
 
           <button className="flex items-center space-x-2 cursor-pointer whitespace-nowrap rounded-lg bg-white px-6 py-3 text-sm font-bold text-orange-700 shadow-sm transition-colors hover:bg-orange-50">
-           <a href={data.bannerCta.href}> <span>{data.bannerCta.buttonText}</span></a>
+            <a href={data.bannerCta.href}>
+              {" "}
+              <span>{data.bannerCta.buttonText}</span>
+            </a>
             <span>&rarr;</span>
           </button>
         </div>

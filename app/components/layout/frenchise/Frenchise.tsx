@@ -127,11 +127,11 @@ export default function FrenchisePage({ data }: Props) {
 
       {/* ===================== FEATURES ===================== */}
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
-        <div className="grid  gap-0 grid-cols-2 md:grid-cols-4">
+        <div className="grid gap-0 grid-cols-2 md:grid-cols-4">
           {features.map((feature) => (
             <div
               key={feature.title}
-              className="flex flex-col items-center border-r-2 border-orange-200 bg-white sm:p-6 p-1 text-center hover:shadow-md  transition"
+              className="flex flex-col items-center border-r-0 md:border-r-2 md:border-orange-200 md:last:border-r-0 bg-white sm:p-6 p-1 text-center hover:shadow-md transition"
             >
               <div className="mb-4 flex h-14 sm:w-20 sm:h-20 w-14 items-center justify-center rounded-full bg-orange-50 text-orange-600">
                 {getIcon(feature.icon, "h-7 sm:w-12 sm:h-12 w-7")}

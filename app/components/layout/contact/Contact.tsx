@@ -1,3 +1,5 @@
+"use client"
+
 import PageBanner from "../../shared/PageBanner";
 import Image from "next/image";
 import Link from "next/link";
@@ -15,6 +17,7 @@ import {
   Minus, 
   ExternalLink 
 } from "lucide-react";
+import { useEffect } from "react";
 
 const contact = data.contact as unknown as ContactData;
 
@@ -30,6 +33,13 @@ export default function ContactUs({ data: propData }: ContactSectionProps) {
   // Fall back to imported data if props are missing
   const activeData = propData || contact;
   const { banner, cards, map } = activeData;
+      useEffect(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: "instant",
+      });
+    }, []);
 
   return (
     <div className="w-full overflow-hidden bg-gray-50/50">
