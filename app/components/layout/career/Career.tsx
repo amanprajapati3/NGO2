@@ -40,7 +40,7 @@ export default function Career({ data }: CareerPageProps) {
 
 
       {/* ================= CAREER INTRO & OPEN POSITIONS ================= */}
-      <section className="px-4 py-4 sm:px-6 md:py-12 lg:px-8">
+      <section className="px-4 py-8 sm:px-6 md:py-12 lg:px-8">
         <div className="mx-auto max-w-5xl">
           {/* HEADER AREA */}
           <div className="mx-auto max-w-3xl text-center">

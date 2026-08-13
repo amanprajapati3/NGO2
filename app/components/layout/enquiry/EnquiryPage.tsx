@@ -75,7 +75,7 @@ export default function EnquiryPage({ data }: Props) {
     <main className="min-h-screen bg-white text-gray-800">
       <PageBanner banner={banner} />
 
-      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-12 pt-10  text-center">
+      <section className="mx-auto max-w-4xl px-2 pb-10 sm:pt-12 pt-8  text-center">
         {/* Icon + line */}
 
         {/* <div className="mb-0 flex items-center justify-center gap-3">

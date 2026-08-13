@@ -223,7 +223,7 @@ export default function AboutUs({ data }: AboutSectionProps) {
       )}
 
       {/* main about section */}
-      <section className="relative overflow-hidden bg-white md:pt-12 pt-5">
+      <section className="relative overflow-hidden bg-white md:pt-12 pt-8">
         <BackgroundDecorations />
         <div className="relative z-10 mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
           <div className="grid text-center md:text-start items-center gap-10 lg:grid-cols-12 lg:gap-12">

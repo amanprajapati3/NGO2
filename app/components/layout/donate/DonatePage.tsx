@@ -92,7 +92,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="relative py-12 ">
+      <section className="relative md:py-12 py-8">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
           {/* ================= 2. TOP HEADER ================= */}

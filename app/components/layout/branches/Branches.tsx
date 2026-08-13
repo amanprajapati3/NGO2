@@ -77,7 +77,7 @@ export default function Branches({ data }: Props) {
           <div className="h-px w-10 bg-orange-400" />
         </div> */}
 
-        <h2 className="mb-2 text-3xl font-bold leading-tight text-gray-900 md:text-4xl">
+        <h2 className="mb-2 text-3xl font-extrabold leading-tight text-gray-900 md:text-4xl">
           {header.heading}
         </h2>
 

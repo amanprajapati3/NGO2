@@ -78,7 +78,7 @@ export default function FrenchisePage({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl px-3 pb-12  pt-10 text-center">
+      <section className="mx-auto max-w-4xl px-3 pb-12  md:pt-10 pt-8 text-center">
 
         {/* <div className="mb-2 flex items-center justify-center gap-4">
 

@@ -40,7 +40,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-3 sm:py-8">
+    <section className="relative overflow-hidden bg-white py-8 md:py-10">
       {/* Decorative Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute -right-24 bottom-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />

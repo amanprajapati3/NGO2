@@ -2,19 +2,13 @@
 
 import React from "react";
 import Link from "next/link";
-import {
-  FiMapPin,
-  FiPhone,
-  FiMail,
-  FiArrowRight,
-} from "react-icons/fi";
+import { FiMapPin, FiPhone, FiMail, FiArrowRight } from "react-icons/fi";
 import { FooterData } from "@/type/typeSection";
 
 export default function Footer({ data }: { data: FooterData }) {
   return (
     <footer className="bg-[#252525] text-slate-200">
       <div className="mx-auto max-w-7xl px-5 sm:px-6 lg:px-8">
-
         {/* NEWSLETTER */}
         <div className="border-b border-dashed border-slate-700 py-8">
           <div className="grid grid-cols-1 items-center gap-6 lg:grid-cols-2">
@@ -48,7 +42,6 @@ export default function Footer({ data }: { data: FooterData }) {
 
         {/* MAIN FOOTER */}
         <div className="grid grid-cols-1 gap-10 py-7 sm:grid-cols-2 lg:grid-cols-12 lg:gap-8">
-
           {/* CONTACT INFO */}
           <div className="lg:col-span-3">
             <h3 className="mb-6 text-xl font-bold text-white">
@@ -56,7 +49,6 @@ export default function Footer({ data }: { data: FooterData }) {
             </h3>
 
             <div className="space-y-5">
-
               <div>
                 <div className="mb-2 flex items-center gap-2 text-sm font-medium text-[#ff5a1f]">
                   <FiMapPin size={16} />
@@ -95,7 +87,6 @@ export default function Footer({ data }: { data: FooterData }) {
                   {data.contactInfo.email.address}
                 </a>
               </div>
-
             </div>
           </div>
 
@@ -147,11 +138,7 @@ export default function Footer({ data }: { data: FooterData }) {
 
             <div className="space-y-6">
               {data.recentNews.items.map((item, index) => (
-                <Link
-                  key={index}
-                  href={item.href}
-                  className="group flex gap-5"
-                >
+                <Link key={index} href={item.href} className="group flex gap-5">
                   <div className="relative h-[67px] w-[80px] shrink-0 overflow-hidden">
                     <img
                       src={item.image}
@@ -179,20 +166,23 @@ export default function Footer({ data }: { data: FooterData }) {
         </div>
 
         {/* BOTTOM BAR */}
-        <div className="border-t border-dashed border-slate-700 py-4">
-          <div className="flex flex-col items-center justify-between gap-3 text-sm text-indigo-200 sm:flex-row">
-            <p>{data.bottomBar.copyright}</p>
+        <div className="border-t border-dashed border-slate-700 py-5">
+          <div className="flex flex-col items-center justify-center gap-4 text-center text-sm text-indigo-200 sm:flex-row sm:justify-between sm:text-left">
+            {/* Copyright */}
+            <p className="leading-6">{data.bottomBar.copyright}</p>
 
-            <div className="flex items-center gap-3">
+            {/* Bottom Links */}
+            <div className="flex flex-wrap items-center justify-center gap-x-3 gap-y-2">
               {data.bottomBar.links.map((link, index) => (
                 <React.Fragment key={index}>
+                  {/* Separator - Desktop/Tablet only */}
                   {index > 0 && (
-                    <span className="text-[#ff5a1f]">|</span>
+                    <span className="hidden text-[#ff5a1f] sm:inline">|</span>
                   )}
 
                   <Link
                     href={link.href}
-                    className="transition-colors duration-200 hover:text-[#ff5a1f]"
+                    className="whitespace-nowrap transition-colors duration-200 hover:text-[#ff5a1f]"
                   >
                     {link.label}
                   </Link>
@@ -201,7 +191,6 @@ export default function Footer({ data }: { data: FooterData }) {
             </div>
           </div>
         </div>
-
       </div>
     </footer>
   );

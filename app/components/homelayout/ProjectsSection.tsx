@@ -86,7 +86,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
   const { badge, heading, description, items, cta } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:pt-12 pt-10">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:pt-12 pt-8 ">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 bottom-0 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />

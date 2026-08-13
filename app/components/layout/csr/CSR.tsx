@@ -297,7 +297,7 @@ export default function CSR({ data }: CSRProps) {
       <PageBanner banner={data.banner} />
 
       {/* Main Container */}
-      <div className="mx-auto max-w-7xl  px-4 py-12 sm:px-6 lg:px-8">
+      <div className="mx-auto max-w-7xl  px-4 md:py-12 py-8 sm:px-6 lg:px-8">
         {/* 2. Top Header & pretitle */}
         <div className="mx-auto max-w-3xl space-y-1 text-center">
           <div className="inline-flex items-center space-x-3">

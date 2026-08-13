@@ -53,7 +53,7 @@ export default function Bronchure({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
-      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-10 text-center">
+      <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-8 text-center">
         <div className="flex items-center justify-center gap-2">
           <HiOutlineHeart className="text-base text-[#FF4500]" />
           <p className=" text-sm font-semibold tracking-[0.2em] text-orange-600">

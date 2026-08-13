@@ -20,7 +20,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
 
 
       {/* ================= TESTIMONIAL CONTENT SECTION ================= */}
-      <section className="relative py-12">
+      <section className="relative md:py-12 py-8">
         {/* Background Soft Glow Orbs */}
         <div className="absolute -left-20 top-10 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
         <div className="absolute -right-20 bottom-10 h-96 w-96 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />

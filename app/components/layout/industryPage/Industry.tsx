@@ -226,7 +226,7 @@ export default function Industry({ data }: IndustryProps) {
       <PageBanner banner={banner} title={`${header.title.part1} ${header.title.part2}`} />
 
       {/* ================= MAIN CONTENT ================= */}
-      <section className="mx-auto max-w-7xl px-4 py-12 sm:px-6  lg:px-8">
+      <section className="mx-auto max-w-7xl px-4 md:py-12 py-8 sm:px-6  lg:px-8">
         {/* ================= SECTION HEADER ================= */}
         <div className="mx-auto max-w-3xl text-center">
           <div className="inline-flex items-center gap-3">

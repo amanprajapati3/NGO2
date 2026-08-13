@@ -13,6 +13,7 @@ import type {
   AboutStatistic2,
 } from "@/type/typeSection";
 import { useEffect, useRef, useState } from "react";
+import { constants } from "crypto";
 
 // ==========================================
 // BACKGROUND DECORATION COMPONENT
@@ -52,7 +53,7 @@ const getStatIconAndTheme = (icon: string, index: number) => {
 
   const theme = themes[index % themes.length];
 
-  let IconComponent = <LuSmile className="text-xl sm:text-2xl" />;
+  const IconComponent = <LuSmile className="text-xl sm:text-2xl" />;
   switch (icon) {
     case "shield":
       return { icon: <FaShieldAlt className="text-lg sm:text-2xl" />, theme };

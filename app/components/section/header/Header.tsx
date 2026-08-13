@@ -92,44 +92,43 @@ export default function Header({
       <div className="fixed top-0 z-50 w-full bg-[#3d376d] shadow-md">
         {/* ================= TOP BAR ================= */}
         {topBar && (
-          <div className="hidden bg-white text-sm text-slate-900 sm:block">
-            <div className="mx-auto flex max-w-7xl flex-col items-center justify-between gap-2 px-4 sm:flex-row sm:px-6 lg:px-8">
-              <div className="ml-44 flex flex-nowrap items-center justify-center gap-2 py-1 sm:justify-start sm:gap-4">
+          <div className="bg-white text-sm text-slate-900">
+            <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-3 py-2 sm:justify-between sm:px-6 sm:py-1 lg:px-8">
+              {/* Contact Information */}
+              <div className="flex items-center gap-3 sm:gap-4">
+                {/* Address - Hidden on Mobile */}
                 {topBar.address && (
-                  <div className="flex items-center gap-1.5 transition-colors">
-                    <FiMapPin
-                      className="flex-shrink-0 text-orange-500"
-                      size={14}
-                    />
+                  <div className="hidden items-center gap-1.5 sm:flex">
+                    <FiMapPin className="shrink-0 text-orange-500" size={14} />
                     <span>{topBar.address}</span>
                   </div>
                 )}
 
+                {/* Phone - Visible on Mobile */}
                 {topBar.phone && (
                   <a
                     href={topBar.phoneHref || `tel:${topBar.phone}`}
-                    className="flex items-center gap-1.5 transition-colors"
+                    className="flex items-center gap-1.5 text-xs sm:text-sm"
                   >
-                    <FiPhone
-                      className="flex-shrink-0 text-orange-500"
-                      size={14}
-                    />
+                    <FiPhone className="shrink-0 text-orange-500" size={14} />
                     <span>{topBar.phone}</span>
                   </a>
                 )}
 
+                {/* CTA - Hidden on Mobile */}
                 {topBar.headerCta && (
                   <Link
                     href={topBar.headerCta.href}
-                    className="inline-flex items-center justify-center rounded-full bg-orange-500 px-4 py-1 text-sm font-bold text-white shadow-md shadow-rose-600/20 transition-all duration-200 hover:bg-orange-700 hover:shadow-lg hover:shadow-rose-600/30"
+                    className="hidden items-center justify-center rounded-full bg-orange-500 px-4 py-1 text-sm font-bold text-white shadow-md shadow-rose-600/20 transition-all duration-200 hover:bg-orange-700 hover:shadow-lg hover:shadow-rose-600/30 sm:inline-flex"
                   >
                     {topBar.headerCta.label}
                   </Link>
                 )}
               </div>
 
+              {/* Social Media - Visible on Mobile */}
               {topBar.socialLinks && topBar.socialLinks.length > 0 && (
-                <div className="flex items-center gap-3">
+                <div className="flex items-center gap-2 sm:gap-3">
                   {topBar.socialLinks.map((social) => (
                     <a
                       key={social.label}

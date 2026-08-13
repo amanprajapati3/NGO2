@@ -16,7 +16,7 @@ export default function CaseDetails({ data }: CaseDetailPageProps) {
       <PageBanner banner={banner} />
 
       {/* Main Section */}
-      <section className="mx-auto max-w-7xl px-2 py-10 sm:px-6 lg:px-8 ">
+      <section className="mx-auto max-w-7xl px-2 py-8 md:py-12 sm:px-6 lg:px-8 ">
         {/* Page Section Title */}
         <h1 className="mb-8 text-center text-3xl font-extrabold text-[#1a0c2e] sm:text-4xl md:text-5xl">
           {pageTitle}

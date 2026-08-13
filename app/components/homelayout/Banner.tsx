@@ -62,7 +62,7 @@ const Banner: React.FC<BannerSliderProps> = ({
 
   return (
     <section
-      className={`${playfair.variable} ${caveat.variable} relative h-[420px] min-h-[420px] sm:h-[570px] sm:min-h-[570px] w-full overflow-hidden bg-black`}
+      className={`${playfair.variable} ${caveat.variable} relative h-[470px] min-h-[470px] sm:h-[570px] sm:min-h-[570px] w-full overflow-hidden bg-black`}
     >
       {/* Background Images */}
       {banners.map((banner, index) => (

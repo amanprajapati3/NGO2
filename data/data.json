@@ -24,7 +24,7 @@
       }
     ],
     "headerCta": {
-      "label": "Donate",
+      "label": "Donate Now",
       "href": "/donate"
     },
     "copyright": "\u00a9 2026 Helping Hearts. All rights reserved."
@@ -39,7 +39,7 @@
       "href": "#",
       "children": [
         {
-          "label": "About us",
+          "label": "Overview",
           "href": "/about-us"
         },
         {
@@ -3692,7 +3692,7 @@
           "description": "Give your time and skills to support our programs and communities.",
           "action": {
             "label": "Sign Up Now",
-            "url": "/volunteer"
+            "url": "/contact-us"
           }
         },
         {
@@ -3702,7 +3702,7 @@
           "description": "Collaborate with us to create sustainable and long-term impact.",
           "action": {
             "label": "Partner Now",
-            "url": "/partner"
+            "url": "/team"
           }
         },
         {
@@ -3712,7 +3712,7 @@
           "description": "Sponsor our programs and help us reach more people in need.",
           "action": {
             "label": "Sponsor Now",
-            "url": "/sponsor"
+            "url": "/partners"
           }
         },
         {
@@ -3721,8 +3721,8 @@
           "title": "Spread the Word",
           "description": "Share our mission with your friends and help us grow our impact.",
           "action": {
-            "label": "Share Now",
-            "url": "/share"
+            "label": "Our Mission",
+            "url": "/about-us"
           }
         }
       ]

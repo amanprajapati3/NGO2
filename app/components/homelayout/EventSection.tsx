@@ -10,7 +10,7 @@ export default function EventSection({ data }: EventsSectionProps) {
   const { badge, title, description, events } = data;
 
   return (
-    <section className="relative overflow-hidden bg-[#fafafa] px-0 py-14">
+    <section className="relative overflow-hidden bg-[#fafafa] px-0 md:py-12 py-8">
       {/* Background Soft Glow Orbs */}
       <div className="absolute -left-20 top-0 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
       <div className="absolute -right-20 top-1/2 h-96 w-96 -translate-y-1/2 rounded-full bg-orange-100/40 blur-[120px] pointer-events-none" />

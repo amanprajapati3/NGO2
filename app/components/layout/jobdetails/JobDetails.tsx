@@ -54,7 +54,7 @@ export default function JobDetails({ data }: JobDetailsProps) {
       />
 
       {/* ================= MAIN CONTENT SECTION ================= */}
-      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-16">
+      <section className="mx-auto max-w-7xl px-4 py-10 sm:px-6 lg:px-8 lg:py-12">
         <div className="grid grid-cols-1 gap-8 lg:grid-cols-12 lg:gap-10">
 
           {/* LEFT COLUMN: DETAILS */}

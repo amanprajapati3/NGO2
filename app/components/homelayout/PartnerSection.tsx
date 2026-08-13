@@ -11,7 +11,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
   const { badge, title, description, partnersList } = data;
 
   return (
-    <section className="relative overflow-hidden bg-gray-100 py-8">
+    <section className="relative overflow-hidden bg-gray-100 py-8 md:py-12">
       {/* Background */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[140px]" />
       <div className="absolute bottom-0 right-0 h-72 w-72 rounded-full bg-orange-50 blur-[150px]" />
@@ -31,7 +31,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
           {/* Heading */}
           <h2 className="mt-0 text-3xl font-extrabold text-slate-900 md:text-5xl">
             {title.line1}{" "}
-            <span className="text-orange-700">{title.highlight}</span>
+            <span className="text-slate-900">{title.highlight}</span>
           </h2>
 
           {/* Decorative Line */}

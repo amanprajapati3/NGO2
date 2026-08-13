@@ -24,7 +24,7 @@ export default function FAQSection({
   };
 
   return (
-    <section className="relative overflow-hidden bg-white py-6 sm:py-8 md:py-12">
+    <section className="relative overflow-hidden bg-white py-8 md:py-12">
       {/* Decorative Blur */}
       <div className="absolute -left-24 top-0 h-72 w-72 rounded-full bg-orange-100 blur-[130px]" />
       <div className="absolute -right-24 bottom-0 h-80 w-80 rounded-full bg-orange-50 blur-[150px]" />

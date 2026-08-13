@@ -118,7 +118,7 @@ export default function SupportPage({ data }: SupportDataProps) {
       <PageBanner banner={hero.banner} title={hero.title} />
 
       {/* ================= MAIN CONTAINER ================= */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12  space-y-16">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-12 py-8 space-y-16">
         {/* ================= 2. INTRODUCTION & TOP VALUES ================= */}
         <section className="text-center">
           {/* Section Header */}
@@ -132,7 +132,7 @@ export default function SupportPage({ data }: SupportDataProps) {
             </div>
             {/* <div className="mx-auto w-8 h-[2px] bg-[#EA580C] mt-1 mb-3" /> */}
 
-            <h2 className="text-3xl sm:text-4xl font-serif font-bold text-slate-900 leading-tight">
+            <h2 className="text-3xl sm:text-4xl font-serif font-extrabold text-slate-900 leading-tight">
               {introduction.heading.plainText}{" "}
               <span className="text-slate-900">
                 {introduction.heading.highlightedText}
