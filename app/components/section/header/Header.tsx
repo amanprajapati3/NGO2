@@ -95,10 +95,10 @@ export default function Header({
           <div className="bg-white text-sm text-slate-900">
             <div className="mx-auto flex max-w-7xl items-center justify-center gap-4 px-3 py-2 sm:justify-between sm:px-6 sm:py-1 lg:px-8">
               {/* Contact Information */}
-              <div className="flex items-center gap-3 sm:gap-4">
+              <div className="flex sm:ml-44 items-center gap-3 sm:gap-4">
                 {/* Address - Hidden on Mobile */}
                 {topBar.address && (
-                  <div className="hidden items-center gap-1.5 sm:flex">
+                  <div className="hidden items-center gap-1.5 md:flex">
                     <FiMapPin className="shrink-0 text-orange-500" size={14} />
                     <span>{topBar.address}</span>
                   </div>
