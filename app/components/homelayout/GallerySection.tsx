@@ -1,8 +1,8 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
-import { FiHeart, FiEye, FiX } from "react-icons/fi";
+import { FiEye, FiX, FiChevronLeft, FiChevronRight } from "react-icons/fi";
 import { FaPlay } from "react-icons/fa";
 import type {
   GallerySectionProps,
@@ -21,8 +21,8 @@ export default function GallerySection({ data }: GallerySectionProps) {
 
   const [activeCategory, setActiveCategory] = useState(defaultCategory);
 
-  // Modal State for Image Lightbox & Video Player
-  const [selectedImage, setSelectedImage] = useState<GalleryImage | null>(null);
+  // Modal State for Image Lightbox Slider & Video Player
+  const [selectedIndex, setSelectedIndex] = useState<number | null>(null);
   const [selectedVideo, setSelectedVideo] = useState<GalleryVideo | null>(null);
 
   // Filter images & videos according to active category tab
@@ -45,6 +45,58 @@ export default function GallerySection({ data }: GallerySectionProps) {
     return url;
   };
 
+  // Lightbox Navigation Functions
+  const handleNextImage = useCallback(() => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) =>
+      prev !== null ? (prev + 1) % filteredImages.length : 0,
+    );
+  }, [selectedIndex, filteredImages.length]);
+
+  const handlePrevImage = useCallback(() => {
+    if (selectedIndex === null) return;
+    setSelectedIndex((prev) =>
+      prev !== null
+        ? (prev - 1 + filteredImages.length) % filteredImages.length
+        : 0,
+    );
+  }, [selectedIndex, filteredImages.length]);
+
+  // Keyboard navigation listener (Arrow Left / Right & Escape)
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (selectedIndex === null) return;
+      if (e.key === "ArrowRight") handleNextImage();
+      if (e.key === "ArrowLeft") handlePrevImage();
+      if (e.key === "Escape") setSelectedIndex(null);
+    };
+
+    window.addEventListener("keydown", handleKeyDown);
+    return () => window.removeEventListener("keydown", handleKeyDown);
+  }, [selectedIndex, handleNextImage, handlePrevImage]);
+
+  // Touch swipe support state for mobile devices
+  const [touchStartX, setTouchStartX] = useState<number | null>(null);
+
+  const handleTouchStart = (e: React.TouchEvent) => {
+    setTouchStartX(e.touches[0].clientX);
+  };
+
+  const handleTouchEnd = (e: React.TouchEvent) => {
+    if (touchStartX === null) return;
+    const touchEndX = e.changedTouches[0].clientX;
+    const diffX = touchStartX - touchEndX;
+
+    if (Math.abs(diffX) > 50) {
+      if (diffX > 0) {
+        handleNextImage(); // Swiped Left
+      } else {
+        handlePrevImage(); // Swiped Right
+      }
+    }
+    setTouchStartX(null);
+  };
+
   return (
     <section className="relative overflow-hidden bg-[#fafafa] px-0 py-8 md:py-12">
       {/* Background Soft Glow Orbs */}
@@ -57,9 +109,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
           {/* Badge Label */}
           <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
             <HiOutlineHeart className="text-base text-[#FF4500]" />
-            
             <span>{badge?.label || "Our Gallery"}</span>
-            {/* <span className="h-[1px] w-8 bg-orange-200" /> */}
           </div>
 
           {/* Main Title */}
@@ -69,13 +119,6 @@ export default function GallerySection({ data }: GallerySectionProps) {
               {title?.highlight || "Change & Hope"}
             </span>
           </h2>
-
-          {/* Subheading Heart Line Divider */}
-          {/* <div className="mt-2 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
-            <span className="h-[1px] w-10 bg-orange-300" />
-            <FiHeart className="text-[10px] text-[#FF4500]" />
-            <span className="h-[1px] w-10 bg-orange-300" />
-          </div> */}
 
           {/* Description Paragraph */}
           <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
@@ -90,7 +133,10 @@ export default function GallerySection({ data }: GallerySectionProps) {
               return (
                 <div key={category.value} className="flex items-center">
                   <button
-                    onClick={() => setActiveCategory(category.value)}
+                    onClick={() => {
+                      setActiveCategory(category.value);
+                      setSelectedIndex(null);
+                    }}
                     className={`rounded-full px-5 py-2 text-sm font-bold border transition-all duration-300 cursor-pointer ${
                       isActive
                         ? "bg-[#FF4500] border-[#FF4500] text-white shadow-md shadow-orange-500/20"
@@ -119,7 +165,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 return (
                   <div
                     key={item.title || index}
-                    onClick={() => setSelectedImage(item)}
+                    onClick={() => setSelectedIndex(index)}
                     className={`group relative overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl cursor-pointer ${
                       isTall
                         ? "h-[320px] sm:h-[420px] lg:row-span-2 lg:h-full"
@@ -164,12 +210,9 @@ export default function GallerySection({ data }: GallerySectionProps) {
           <div className="mt-12">
             <div className="flex text-center mb-10 justify-center items-center">
               <div className="flex flex-col items-center text-center">
-                <div className="flex items-center  gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
-                  {/* <span className="h-[1px] w-8 bg-orange-200 " /> */}
-                   <HiOutlineHeart className="text-base text-[#FF4500]" />
-
-                  <span className="">{badge?.label || "Our Gallery"}</span>
-                  {/* <span className="h-[1px] w-8 bg-orange-200 " /> */}
+                <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
+                  <HiOutlineHeart className="text-base text-[#FF4500]" />
+                  <span>{badge?.label || "Our Gallery"}</span>
                 </div>
                 {/* Main Title */}
                 <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
@@ -178,13 +221,6 @@ export default function GallerySection({ data }: GallerySectionProps) {
                     {title?.highlight || "Change & Hope"}
                   </span>
                 </h2>
-
-                {/* Subheading Heart Line Divider */}
-                {/* <div className="mt-2 flex items-center justify-center gap-3 text-sm font-semibold tracking-wide text-slate-500">
-                  <span className="h-[1px] w-10 bg-orange-300" />
-                  <FiHeart className="text-[10px] text-[#FF4500]" />
-                  <span className="h-[1px] w-10 bg-orange-300" />
-                </div> */}
 
                 {/* Description Paragraph */}
                 <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
@@ -210,17 +246,14 @@ export default function GallerySection({ data }: GallerySectionProps) {
                       className="object-cover transition-transform duration-500 group-hover:scale-105"
                     />
 
-                    {/* Dark Tint Overlay */}
                     <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                    {/* Center Red Circular Play Button */}
                     <div className="absolute inset-0 flex items-center justify-center">
                       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
                         <FaPlay className="ml-0.5 text-sm" />
                       </div>
                     </div>
 
-                    {/* Duration Badge Bottom Right */}
                     <div className="absolute bottom-2.5 right-2.5 rounded bg-black/80 px-2 py-0.5 text-[10px] font-bold text-white tracking-wider">
                       {item.duration}
                     </div>
@@ -229,17 +262,14 @@ export default function GallerySection({ data }: GallerySectionProps) {
                   {/* Card Info Content */}
                   <div className="flex flex-1 flex-col justify-between p-5">
                     <div>
-                      {/* Tag Pill */}
                       <span className="inline-block rounded-full bg-[#f95738] px-2.5 py-0.5 text-[13px] font-extrabold uppercase tracking-wide text-white">
                         {item.categoryLabel || item.category}
                       </span>
 
-                      {/* Title */}
                       <h3 className="mt-3 text-base font-bold text-gray-900 line-clamp-1 group-hover:text-[#FF4500] transition-colors">
                         {item.title}
                       </h3>
 
-                      {/* Description */}
                       <p className="mt-1.5 text-sm text-slate-500 line-clamp-2 leading-relaxed">
                         {item.description}
                       </p>
@@ -252,33 +282,72 @@ export default function GallerySection({ data }: GallerySectionProps) {
         )}
       </div>
 
-      {/* ================= SIMPLE IMAGE POPUP ================= */}
-      {selectedImage && (
+      {/* ================= IMAGE LIGHTBOX SLIDER MODAL ================= */}
+      {selectedIndex !== null && filteredImages[selectedIndex] && (
         <div
-          onClick={() => setSelectedImage(null)}
-          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-4 backdrop-blur-sm transition-all"
+          onClick={() => setSelectedIndex(null)}
+          onTouchStart={handleTouchStart}
+          onTouchEnd={handleTouchEnd}
+          className="fixed inset-0 z-50 flex items-center justify-center bg-black/80 p-2 sm:p-4 backdrop-blur-sm transition-all"
         >
+          {/* Close Button */}
+          <button
+            onClick={() => setSelectedIndex(null)}
+            aria-label="Close image modal"
+            className="absolute top-4 cursor-pointer right-4 z-20 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black transition-colors"
+          >
+            <FiX className="text-xl" />
+          </button>
+
+          {/* Left Arrow Button (Only if > 1 image) */}
+          {filteredImages.length > 1 && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handlePrevImage();
+              }}
+              aria-label="Previous image"
+              className="absolute left-2 cursor-pointer sm:left-6 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black transition-colors"
+            >
+              <FiChevronLeft className="text-2xl" />
+            </button>
+          )}
+
+          {/* Right Arrow Button (Only if > 1 image) */}
+          {filteredImages.length > 1 && (
+            <button
+              onClick={(e) => {
+                e.stopPropagation();
+                handleNextImage();
+              }}
+              aria-label="Next image"
+              className="absolute right-2 cursor-pointer sm:right-6 z-20 flex h-10 w-10 sm:h-12 sm:w-12 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black transition-colors"
+            >
+              <FiChevronRight className="text-2xl" />
+            </button>
+          )}
+
+          {/* Center Image Container without black sidebars */}
           <div
             onClick={(e) => e.stopPropagation()}
-            className="relative max-w-5xl w-full overflow-hidden rounded-2xl bg-black shadow-2xl"
+            className="relative max-h-[85vh] max-w-[90vw] overflow-hidden rounded-2xl flex flex-col items-center justify-center"
           >
-            {/* Close Button */}
-            <button
-              onClick={() => setSelectedImage(null)}
-              className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black transition-colors"
-            >
-              <FiX className="text-xl" />
-            </button>
-
-            {/* Clean Image Preview */}
-            <div className="relative h-[70vh] sm:h-[80vh] w-full">
+            <div className="relative h-[80vh] w-[90vw]">
               <Image
-                src={selectedImage.image}
-                alt={selectedImage.title || "Gallery Preview"}
+                src={filteredImages[selectedIndex].image}
+                alt={filteredImages[selectedIndex].title || "Gallery Preview"}
                 fill
-                className="object-contain"
+                sizes="90vw"
+                className="rounded-2xl object-contain"
               />
             </div>
+
+            {/* Optional Title Overlay */}
+            {/* {filteredImages[selectedIndex].title && (
+              <div className="w-full bg-black/60 p-3 text-center text-white text-xs sm:text-sm font-semibold rounded-b-2xl">
+                {filteredImages[selectedIndex].title}
+              </div>
+            )} */}
           </div>
         </div>
       )}
@@ -296,6 +365,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
             {/* Close Button */}
             <button
               onClick={() => setSelectedVideo(null)}
+              aria-label="Close video modal"
               className="absolute top-4 right-4 z-10 flex h-10 w-10 items-center justify-center rounded-full bg-black/60 text-white hover:bg-black transition-colors"
             >
               <FiX className="text-xl" />

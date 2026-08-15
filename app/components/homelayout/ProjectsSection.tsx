@@ -191,7 +191,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                   </div>
 
                   {/* Text Action Link */}
-                  {/* <div className="mt-0 pt-2">
+                  <div className="mt-0 pt-2">
                     <Link
                       href={item.button.href}
                       className={`inline-flex items-center gap-1.5 text-sm font-bold transition-all hover:gap-2.5 ${primaryTextColor}`}
@@ -199,7 +199,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                       <span>{item.button.label}</span>
                       <FiArrowRight className="text-sm" />
                     </Link>
-                  </div> */}
+                  </div>
                 </div>
               </div>
             );

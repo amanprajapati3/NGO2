@@ -873,7 +873,7 @@
         "image": "/NGO_images-feepik/hands-soil-woman-with-plant-earth-day-future-eco-business-funding-support-closeup-recycle-sustainability-female-volunteer-with-leaf-growth-agriculture-climate-change-ngo.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/"
+          "href": "/project-details"
         },
         "icon": "book",
         "color": "orange"
@@ -886,7 +886,7 @@
         "image": "/NGO_images-feepik/happy-diverse-kinds-park.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/"
+          "href": "/project-details"
         },
         "icon": "heart",
         "color": "purple"
@@ -899,7 +899,7 @@
         "image": "/NGO_images-feepik/medium-shot-happy-kids-posing.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/"
+          "href": "/project-details"
         },
         "icon": "drop",
         "color": "orange"
@@ -912,7 +912,7 @@
         "image": "/NGO_images-feepik/multiethnic-adventurer-girls-casual-clothes-crouching-wild-nature-looking-piece-acorn-environment-nature-lovers-concept.jpg",
         "button": {
           "label": "Learn More",
-          "href": "/"
+          "href": "/project-details"
         },
         "icon": "women",
         "color": "purple"
@@ -949,6 +949,7 @@
     "members": [
       {
         "name": "Rohit Sharma",
+        "textLink": "/team-details",
         "designation": "Founder & Director",
         "description": "Visionary leader with 15+ years of experience in social development and community building.",
         "image": "/NGO_images-feepik/nature-friends-group-volunteers-with-boxes-help-goals-donation-charity-event-non-profit-food-drive-ngo-people-outdoor-field-community-service-project-collaboration.jpg",
@@ -2259,6 +2260,43 @@
       "highlight": "Career"
     },
     "description": "Join a passionate team working together to create meaningful change and build a better future for communities.",
+    "whyWorkWithUs": {
+      "badge": "Why Work With Us?",
+      "title": "Why Work With Us?",
+      "description": "We offer a supportive environment, growth opportunities, and the chance to make a real difference.",
+      "benefits": [
+        {
+          "id": "meaningful-impact",
+          "icon": "heart-hand",
+          "title": "Meaningful Impact",
+          "description": "Your work directly contributes to positive change in society."
+        },
+        {
+          "id": "growth-learning",
+          "icon": "growth",
+          "title": "Growth & Learning",
+          "description": "Continuous learning and development opportunities."
+        },
+        {
+          "id": "inclusive-culture",
+          "icon": "users",
+          "title": "Inclusive Culture",
+          "description": "A diverse and inclusive workplace where everyone belongs."
+        },
+        {
+          "id": "job-satisfaction",
+          "icon": "shield",
+          "title": "Job Satisfaction",
+          "description": "Be part of a mission-driven team that values your contribution."
+        },
+        {
+          "id": "work-life-balance",
+          "icon": "star",
+          "title": "Work-Life Balance",
+          "description": "We support your well-being with flexible and balanced work culture."
+        }
+      ]
+    },
     "jobs": [
       {
         "id": "program-manager",
@@ -2886,7 +2924,7 @@
         },
         "secondary": {
           "label": "Volunteer With Us",
-          "href": "/volunteer"
+          "href": "/contact-us"
         }
       },
       "image": "/NGO_images-feepik/group-best-friends-making-toast.jpg",
@@ -4852,7 +4890,7 @@
       ]
     }
   },
- "caseStudyDetails": {
+  "caseStudyDetails": {
     "pageTitle": "Case Study Detail",
     "banner": {
       "breadcrumbCurrent": "Case Study Details",
@@ -4928,6 +4966,113 @@
           "slug": "#"
         }
       ]
+    }
+  },
+  "projectDetails": {
+    "banner": {
+      "breadcrumbCurrent": "Projet Details",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_images-feepik/hands-people-with-diverse-ethnicity.jpg"
+    },
+    "badge": "OUR PROJECT",
+    "title": "Clean Water, Better Life",
+    "mainImage": {
+      "url": "/NGO_images-feepik/group-children-with-their-hands-up-air.jpg",
+      "alt": "Boy drinking clean water from tap",
+      "badgeText": "Clean Water"
+    },
+    "summary": "This project aims to provide clean and safe drinking water to underserved communities. We build water wells, install purification systems, and promote hygiene awareness for a healthier tomorrow.",
+    "meta": {
+      "projectStarted": {
+        "label": "Project Started",
+        "value": "June 15, 2024"
+      },
+      "location": {
+        "label": "Location",
+        "value": "Rural Villages, India"
+      },
+      "beneficiaries": {
+        "label": "Beneficiaries",
+        "value": "1,250+ People"
+      }
+    },
+    "overview": {
+      "title": "Project Overview",
+      "paragraphs": [
+        "Access to clean water is a basic human right. Many families in rural areas still struggle to find safe drinking water, leading to waterborne diseases and poor health.",
+        "Our Clean Water, Better Life project focuses on building deep water wells, installing purification systems, and conducting hygiene education sessions in schools and communities.",
+        "We work with local partners and volunteers to ensure long-term impact and sustainability."
+      ],
+      "goalCard": {
+        "title": "Our Goal",
+        "description": "To ensure clean, safe, and sustainable water access for every household in the community."
+      }
+    },
+    "impactSoFar": {
+      "title": "Impact So Far",
+      "stats": [
+        {
+          "icon": "people",
+          "value": "1,250+",
+          "label": "People Getting Clean Water"
+        },
+        {
+          "icon": "water-drop",
+          "value": "12",
+          "label": "Water Wells Built"
+        },
+        {
+          "icon": "shield-check",
+          "value": "18",
+          "label": "Villages Covered"
+        },
+        {
+          "icon": "heart-percentage",
+          "value": "80%",
+          "label": "Reduction In Waterborne Diseases"
+        }
+      ]
+    },
+    "gallery": {
+      "title": "Project Gallery",
+      "images": [
+        {
+          "id": "1",
+          "url": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+          "alt": "Children drinking water from tap"
+        },
+        {
+          "id": "2",
+          "url": "/NGO_images-feepik/cute-sisters-having-snacks-home.jpg",
+          "alt": "Water tank structure installed"
+        },
+        {
+          "id": "3",
+          "url": "/NGO_images-feepik/girl-with-smile-her-face-is-sitting-classroom-with-other-children.jpg",
+          "alt": "Children holding glasses of clean water"
+        },
+        {
+          "id": "4",
+          "url": "/NGO_images-feepik/close-up-hand-holding-flowering-plant.jpg",
+          "alt": "Woman pumping water from deep well"
+        }
+      ]
+    },
+    "keyHighlights": {
+      "title": "Key Highlights",
+      "items": [
+        "Built 12 deep water wells in remote areas",
+        "Installed modern water purification systems",
+        "Conducted hygiene and sanitation awareness programs",
+        "Involving local communities for long-term maintenance",
+        "Regular water quality testing and monitoring"
+      ]
+    },
+    "ctaSidebar": {
+      "title": "Be A Part Of Change",
+      "description": "Your support can bring clean water and better health to many more lives.",
+      "buttonText": "Donate Now",
+      "buttonLink": "/donate"
     }
   }
 }

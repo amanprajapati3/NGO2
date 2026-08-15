@@ -155,7 +155,7 @@ export default function EventSection({ data }: EventsSectionProps) {
                   <div className="mt-6">
                     <Link
                       href={event.button.href || "#"}
-                      className={`inline-flex items-center gap-2 rounded-xl px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all duration-300 hover:shadow-lg ${btnBg}`}
+                      className={`inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold md:px-12 text-white shadow-md transition-all duration-300 hover:shadow-lg ${btnBg}`}
                     >
                       <span>{event.button?.label || "Join Now"}</span>
                       <FiArrowRight className="text-sm transition-transform duration-300 group-hover:translate-x-1" />

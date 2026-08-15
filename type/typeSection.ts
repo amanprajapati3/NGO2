@@ -1074,6 +1074,20 @@ export interface CareerButton {
   href: string;
 }
 
+export interface CareerWhyWorkBenefit {
+  id: string;
+  icon: string;
+  title: string;
+  description: string;
+}
+
+export interface CareerWhyWorkWithUs {
+  badge: string;
+  title: string;
+  description: string;
+  benefits: CareerWhyWorkBenefit[];
+}
+
 export interface CareerCTA {
   badge: string;
   title: string;
@@ -1086,6 +1100,7 @@ export interface CareerPageData {
   badge: CareerBadge;
   heading: CareerHeading;
   description: string;
+  whyWorkWithUs: CareerWhyWorkWithUs;
   jobs: CareerJob[];
   cta: CareerCTA;
 }
@@ -2651,4 +2666,85 @@ export interface EventDetailData {
 
 export interface EventDetailsPageProps {
   data: EventDetailData;
+}
+
+export interface ProjectDetailsBanner{
+  breadcrumbHome:string;
+  breadcrumbCurrent:string;
+  bgImageUrl: string;
+}
+
+export interface MetaDetail {
+  label: string;
+  value: string;
+}
+
+export interface Impactstat {
+  icon?: string;
+  value: string;
+  label: string;
+}
+
+export interface GalleryItem {
+  id: string;
+  url: string;
+  alt: string;
+}
+
+export interface SidebarCallToAction {
+  title: string;
+  description: string;
+  buttonText: string;
+  buttonLink: string;
+}
+
+export interface ProjectDetailsData {
+  banner: ProjectDetailsBanner;
+
+  badge: string;
+  title: string;
+
+  mainImage: {
+    url: string;
+    alt: string;
+    badgeText: string;
+  };
+
+  summary: string;
+
+  meta: {
+    projectStarted: MetaDetail;
+    location: MetaDetail;
+    beneficiaries: MetaDetail;
+  };
+
+  overview: {
+    title: string;
+    paragraphs: string[];
+    goalCard: {
+      title: string;
+      description: string;
+    };
+  };
+
+  impactSoFar: {
+    title: string;
+    stats: Impactstat[];
+  };
+
+  gallery: {
+    title: string;
+    images: GalleryItem[];
+  };
+
+  keyHighlights: {
+    title: string;
+    items: string[];
+  };
+
+  ctaSidebar: SidebarCallToAction;
+}
+
+export interface ProjectDetailsProps {
+  data: ProjectDetailsData;
 }

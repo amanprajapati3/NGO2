@@ -37,15 +37,10 @@ const renderIcon = (icon: string) => {
   }
 };
 
-export default function WhyChooseUs({
-  data,
-}: {
-  data: WhyChooseUsData;
-}) {
+export default function WhyChooseUs({ data }: { data: WhyChooseUsData }) {
   return (
     <section className="relative overflow-hidden bg-[#fafafa] md:px-32 px-2 py-8 ">
       <div className="relative mx-auto  bg-[#fffcf9] md:p-6 p-2">
-        
         {/* BACKGROUND DECORATION */}
         {/* Left Glow Curved Border */}
         <div className="pointer-events-none absolute -left-12 top-0 h-full w-24 rounded-r-full bg-[#ffefe9] opacity-60 blur-xl" />
@@ -53,34 +48,29 @@ export default function WhyChooseUs({
         {/* Dotted Grid Pattern Top Right */}
         <div className="pointer-events-none absolute right-6 top-6 grid grid-cols-6 gap-2.5 opacity-40">
           {Array.from({ length: 30 }).map((_, index) => (
-            <span
-              key={index}
-              className="h-1 w-1 rounded-full bg-[#ff784b]"
-            />
+            <span key={index} className="h-1 w-1 rounded-full bg-[#ff784b]" />
           ))}
         </div>
 
         {/* MAIN GRID CONTENT */}
         <div className="relative z-10 grid grid-cols-1 gap-10 lg:grid-cols-12 lg:gap-8">
-
           {/* LEFT COLUMN: TITLE, DESC & IMAGE */}
           <div className="flex flex-col lg:col-span-5">
-
             {/* BADGE */}
-            <div className="mb-3 flex items-center gap-2 text-sm md:tet-xl font-bold tracking-wider text-[#ff541b] uppercase">
+            <div className="mb-3 flex items-center gap-2 text-sm  font-bold tracking-wider text-[#ff541b] uppercase">
               <FiHeart size={15} className="fill-[#ff541b]" />
               <span>{data.badge}</span>
             </div>
 
             {/* TITLE */}
-            <h2 className="text-3xl font-extrabold text-[#0f172a] sm:text-4xl md:text-[50px] leading-[1.15]">
+            <h2 className="text-3xl font-extrabold text-[#0f172a] sm:text-4xl md:text-4xl leading-[1.15]">
               {data.title.line1}
               <br />
               <span>
                 {data.title.line2.split(" ").map((word, index) => (
                   <React.Fragment key={index}>
                     {index === data.title.line2.split(" ").length - 1 ? (
-                      <span className="text-[#ff541b]">{word}</span>
+                      <span className="text-[#0f172a]">{word}</span>
                     ) : (
                       word
                     )}
@@ -91,15 +81,15 @@ export default function WhyChooseUs({
             </h2>
 
             {/* RED UNDERLINE */}
-            <div className="mt-3 h-[3px] w-12 rounded-full bg-[#ff541b]" />
+            {/* <div className="mt-3 h-[3px] w-12 rounded-full bg-[#ff541b]" /> */}
 
             {/* DESCRIPTION */}
-            <p className="mt-5 text-sm sm:text-lg leading-relaxed text-[#525b70]">
+            <p className="mt-5 text-sm sm:text-base leading-relaxed text-[#525b70]">
               {data.desc}
             </p>
 
             {/* IMAGE CARD */}
-            <div className="relative mt-8 min-h-[380px] w-full overflow-hidden rounded-2xl sm:min-h-[420px] lg:min-h-[400px]">
+            <div className="relative z-20 mt-8 -mb-8 min-h-[420px] w-full overflow-hidden rounded-2xl sm:min-h-[460px] lg:min-h-[580px]">
               <Image
                 src={data.image}
                 alt={data.imageAlt}
@@ -108,13 +98,13 @@ export default function WhyChooseUs({
                 sizes="(max-width: 1024px) 100vw, 400px"
               />
 
-              {/* OVERLAY BADGE AT BOTTOM */}
-              <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3.5 rounded-2xl bg-[#091024]/90 p-3.5 backdrop-blur-md shadow-lg sm:p-4">
+              {/* OVERLAY BADGE */}
+              <div className="absolute bottom-4 left-4 right-4 flex items-center gap-3.5 rounded-2xl bg-[#091024]/90 p-3.5 shadow-lg backdrop-blur-md sm:p-4">
                 <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full bg-white text-[#ff541b] shadow-md">
                   {renderIcon(data.imageOverlay.icon)}
                 </div>
 
-                <p className="text-sm sm:text-sm font-normal text-white leading-tight">
+                <p className="text-sm font-normal leading-tight text-white sm:text-sm">
                   {data.imageOverlay.text}{" "}
                   <span className="font-bold text-[#ff541b]">
                     {data.imageOverlay.highlight}
@@ -138,7 +128,7 @@ export default function WhyChooseUs({
                   </div>
 
                   {/* TITLE */}
-                  <h3 className="mt-4 text-base md:text-2xl font-bold leading-snug text-[#0f172a]">
+                  <h3 className="mt-4 text-base md:text-xl font-bold leading-snug text-[#0f172a]">
                     {card.title}
                   </h3>
 
@@ -146,14 +136,13 @@ export default function WhyChooseUs({
                   <div className="mt-2.5 h-[2px] w-4 bg-[#ff541b]" />
 
                   {/* DESCRIPTION */}
-                  <p className="mt-3 text-sm md:text-lg leading-relaxed text-[#64748b]">
+                  <p className="mt-3 text-sm md:text-base leading-relaxed text-[#64748b]">
                     {card.desc}
                   </p>
                 </div>
               </div>
             ))}
           </div>
-
         </div>
 
         {/* DECORATIVE DASHED HEART LINE (BOTTOM-LEFT) */}
@@ -182,7 +171,6 @@ export default function WhyChooseUs({
             />
           </svg>
         </div>
-
       </div>
     </section>
   );

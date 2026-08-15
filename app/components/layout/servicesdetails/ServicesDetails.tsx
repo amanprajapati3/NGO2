@@ -178,7 +178,7 @@ export default function ServiceDetailPage({
           <div className="lg:col-span-6 text-center md:text-start">
             <div className="  text-center md:text-start">
               {/* <span className="h-[2px] w-6 bg-orange-400" /> */}
-              <p className="text-sm text-center  font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
+              <p className="text-sm text-center md:text-left font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
                 {aboutSection.tag}
               </p>
             </div>

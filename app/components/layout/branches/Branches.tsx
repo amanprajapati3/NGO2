@@ -57,15 +57,13 @@ export default function Branches({ data }: Props) {
 
       {/* ===================== HEADER ===================== */}
       <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 pt-10 md:pt-14 text-center ">
-        
         <div className="flex justify-center gap-1">
-
           <HiOutlineHeart className="text-base  text-[#FF4500]" />
-       
-        <p className="mb-0 -mt-0.5 text-sm font-semibold tracking-[0.2em] text-orange-600">
-          {header.label}
-        </p>
-         </div>
+
+          <p className="mb-0 -mt-0.5 text-sm font-semibold tracking-[0.2em] text-orange-600">
+            {header.label}
+          </p>
+        </div>
 
         {/* <div className="mb-1 flex items-center justify-center gap-3">
           <div className="h-px w-10 bg-orange-400" />
@@ -89,26 +87,41 @@ export default function Branches({ data }: Props) {
       </section>
 
       {/* ===================== STATS ===================== */}
-      <section className="mx-auto max-w-5xl sm:px-4 px-2 sm:pb-16 pb-10">
-        <div className="grid grid-cols-2 gap-4 rounded-2xl border border-gray-100 bg-white sm:p-6 p-2 shadow-sm md:grid-cols-4 md:gap-0 md:divide-x md:divide-gray-100">
-          {stats.map((stat) => (
+      <section className="mx-auto max-w-5xl px-2 pb-10 sm:px-4 sm:pb-16">
+        <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:grid-cols-2 md:grid-cols-4">
+          {stats.map((stat, index) => (
             <div
               key={stat.label}
-              className="flex flex-col items-center sm:px-4 sm:py-3 p-2 text-center"
+              className={`relative flex  gap-4 px-5 py-5 text-left sm:px-6 sm:py-6 md:py-5 ${
+                index !== stats.length - 1
+                  ? "border-b border-gray-100 md:border-b-0 md:border-r"
+                  : ""
+              }`}
             >
-              <div className="mb-3 flex h-12 w-12 items-center justify-center rounded-full bg-orange-50 text-orange-600">
-                {getIcon(stat.icon, "h-6 w-6")}
+              {/* ICON - Fixed height and centered */}
+              <div className="flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-orange-50 text-orange-600">
+                {getIcon(stat.icon, "h-7 w-7")}
               </div>
 
-              <p className="text-2xl font-bold text-orange-600 md:text-3xl">
-                {stat.value}
-              </p>
+              {/* CONTENT - Flex column centered to maintain stable positioning */}
+              <div className="flex min-w-0 flex-1 flex-col justify-center">
+                <p className="text-2xl font-bold text-orange-600 md:text-3xl">
+                  {stat.value}
+                </p>
 
-              <p className="mt-1 text-sm font-semibold text-gray-900">
-                {stat.label}
-              </p>
+                <p className="mt-1 text-sm font-semibold text-gray-900">
+                  {stat.label}
+                </p>
 
-              <p className="mt-0.5 text-sm text-gray-500">{stat.subLabel}</p>
+                <p className="mt-0.5 text-sm  min-h-9 text-gray-500">
+                  {stat.subLabel}
+                </p>
+              </div>
+
+              {/* RIGHT VERTICAL DIVIDER */}
+              {index !== stats.length - 1 && (
+                <div className="absolute bottom-5 right-0 hidden h-[calc(100%-40px)] w-px bg-orange-600 md:block" />
+              )}
             </div>
           ))}
         </div>
@@ -119,8 +132,7 @@ export default function Branches({ data }: Props) {
         <div className="mb-10 text-center">
           <div className="mb- flex items-center justify-center gap-3">
             {/* <div className="h-px w-10 bg-orange-500" /> */}
-                      <HiOutlineHeart className="text-base  text-[#FF4500]" />
-
+            <HiOutlineHeart className="text-base  text-[#FF4500]" />
 
             <p className="text-sm font-semibold tracking-widest text-orange-600">
               {locationsSection.label}
@@ -142,23 +154,29 @@ export default function Branches({ data }: Props) {
             {locationsSection.branches.map((branch) => (
               <div
                 key={branch.city}
-                className="rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition hover:shadow-md"
+                className="rounded-2xl border border-gray-100 bg-white p-5 text-center shadow-sm transition hover:shadow-md"
               >
-                <div className="mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 text-orange-600">
+                {/* Icon */}
+                <div className="mx-auto mb-3 flex h-11 w-11 items-center justify-center rounded-full bg-orange-50 text-orange-600">
                   {getIcon("map-pin", "h-5 w-5")}
                 </div>
 
+                {/* City */}
                 <h3 className="mb-1.5 text-base font-bold text-gray-900">
                   {branch.city}
                 </h3>
 
-                <p className="mb-3 text-sm leading-relaxed text-gray-600">
-                  {branch.address}
-                </p>
+                {/* Address - fixed area */}
+                <div className="mb-3 flex  min-h-24 items-start justify-center">
+                  <p className="text-sm leading-relaxed text-gray-600">
+                    {branch.address}
+                  </p>
+                </div>
 
+                {/* Phone */}
                 <a
                   href={`tel:${branch.phone.replace(/\s/g, "")}`}
-                  className="flex items-center gap-2 text-sm font-medium text-orange-600 hover:underline"
+                  className="flex items-center justify-center gap-2 text-sm font-medium text-orange-600 hover:underline"
                 >
                   {getIcon("phone", "h-4 w-4")}
                   {branch.phone}

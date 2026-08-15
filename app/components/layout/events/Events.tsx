@@ -15,7 +15,7 @@ export default function EventsPageLayout({
   const banner = data?.banner;
 
   return (
-    <div className="w-full overflow-hidden bg-gray-50/50">
+    <div className="w-full overflow-hidden md:mb-5 bg-gray-50/50">
       <PageBanner banner={banner} />
 
       <EventSection data={data} />

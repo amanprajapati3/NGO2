@@ -252,7 +252,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
                 {/* Dynamic Content */}
                 {activeTabData && (
-                  <div className="mt-6 h-[300px] overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-[15px] md:h-[260px] md:text-lg">
+                  <div className="mt-6 h-[300px] overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-base md:h-[260px]">
                     <p>{activeTabData.content.primary}</p>
 
                     {activeTabData.content.secondary && (

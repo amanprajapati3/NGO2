@@ -48,30 +48,30 @@ export default function ContactSection({ data }: ContactSectionProps) {
       <div className="relative mx-auto max-w-7xl px-3 sm:px-4 lg:px-8">
 
         {/* ================= HEADING ================= */}
-        <div className="mb-6 flex flex-col items-center text-center sm:mb-8">
+        {/* <div className="mb-6 flex flex-col items-center text-center sm:mb-8"> */}
 
           {/* Badge */}
-          <div className="inline-flex items-center gap-2 rounded-full  px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
+          {/* <div className="inline-flex items-center gap-2 rounded-full  px-3 py-1.5 text-sm font-semibold uppercase tracking-wider text-orange-500 sm:px-4 sm:py-2 sm:text-sm">
             <HiOutlineHeart className="text-base sm:text-lg" />
             {badge.label}
-          </div>
+          </div> */}
 
           {/* Title */}
-          <h2 className=" max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl ">
+          {/* <h2 className=" max-w-3xl text-3xl font-extrabold text-slate-900 sm:text-4xl md:text-5xl ">
             {title.line1}{" "}
             <span className="text-slate-900">
               {title.highlight}
             </span>
-          </h2>
+          </h2> */}
 
           {/* Accent */}
           {/* <div className="mt-2 h-1 w-14 rounded-full bg-orange-500 sm:w-16" /> */}
 
           {/* Description */}
-          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
+          {/* <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
             {description}
-          </p>
-        </div>
+          </p> */}
+        {/* </div> */}
 
         {/* ================= MAIN CONTENT ================= */}
         <div className="grid gap-5 lg:grid-cols-[580px_1fr] lg:gap-0">

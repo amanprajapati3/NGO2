@@ -190,7 +190,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
                   </div>
 
                   {/* Card Bottom Actions */}
-                  <div className="md:mt-6 mt-2 flex items-center justify-between gap-3 pt-2">
+                  <div className="md:mt-6 mt-2 flex relative items-center justify-between gap-3 pt-2">
                     {/* Secondary Icon Circle */}
                     <div
                       className={`flex h-11 w-11 shrink-0 items-center justify-center rounded-full ${
@@ -203,7 +203,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
                     {/* Main Donate Button */}
                     <Link
                       href={item.button.href}
-                      className={`flex flex-1 items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
+                      className={`absolute left-1/2 -translate-x-1/2 flex w-[55%] items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
                     >
                       <span>{item.button.label}</span>
                       <FiArrowRight className="text-sm" />
@@ -320,7 +320,7 @@ export default function CausesSection({ data }: CausesSectionProps) {
       <div className="mt-6">
         <Link
           href={cta.button.href}
-          className="inline-flex items-center gap-2 rounded-full bg-[#463E75] hover:bg-[#524989] px-7 py-2.5 text-sm font-bold text-white shadow-md transition-all border border-white/10"
+          className="inline-flex items-center gap-2 rounded-full bg-[#463E75] hover:bg-[#524989] px-7 md:px-12 py-2.5 text-sm font-bold text-white shadow-md transition-all border border-white/10"
         >
           <span>{cta.button.label}</span>
           <FiArrowRight className="text-sm" />

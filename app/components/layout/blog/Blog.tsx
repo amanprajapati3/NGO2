@@ -15,8 +15,7 @@ export default function BlogPageLayout({ data }: BlogPageLayoutProps) {
     <div className="w-full overflow-hidden bg-gray-50/50">
       <PageBanner banner={banner} />
 
-
-      <NewsSection data={data} />
+      <NewsSection data={data} showDescription enablePagination />
     </div>
   );
 }
