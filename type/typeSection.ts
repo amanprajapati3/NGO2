@@ -2748,3 +2748,32 @@ export interface ProjectDetailsData {
 export interface ProjectDetailsProps {
   data: ProjectDetailsData;
 }
+
+export interface MediaBanner {
+  breadcrumbCurrent: string;
+  breadcrumbHome: string;
+  bgImageUrl: string;
+  title: string;
+}
+
+export interface MediaCardItem {
+  title: string;
+  logoUrl: string;
+  articleUrl?: string;
+}
+
+export interface MediaContent {
+  sectionTitle: string;
+  viewAllText?: string;
+  viewAllUrl?: string;
+  mediaCards: MediaCardItem[];
+}
+
+export interface MediaData {
+  banner: MediaBanner;
+  content?: MediaContent;
+}
+
+export interface MediaProps {
+  data: MediaData;
+}

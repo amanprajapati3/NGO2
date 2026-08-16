@@ -158,7 +158,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
         {/* ================= 1. IMAGE GALLERY (TOP BENTO GRID) ================= */}
         {filteredImages.length > 0 && (
           <div className="mt-8 md:mt-10">
-            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:grid-rows-2">
+            <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-4 lg:auto-rows-[200px]">
               {filteredImages.map((item: GalleryImage, index: number) => {
                 const isTall = index === 0;
 
@@ -166,34 +166,34 @@ export default function GallerySection({ data }: GallerySectionProps) {
                   <div
                     key={item.title || index}
                     onClick={() => setSelectedIndex(index)}
-                    className={`group relative overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl cursor-pointer ${
+                    className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl ${
                       isTall
-                        ? "h-[320px] sm:h-[420px] lg:row-span-2 lg:h-full"
-                        : "h-[200px] sm:h-[220px]"
+                        ? "h-[320px] sm:h-[420px] lg:row-span-2 lg:h-auto"
+                        : "h-[200px] sm:h-[220px] lg:h-auto"
                     }`}
                   >
                     <Image
                       src={item.image}
                       alt={item.title || "Gallery image"}
                       fill
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                       sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                      className="object-cover transition-transform duration-700 group-hover:scale-105"
                     />
 
-                    {/* Faded Background Dark Overlay on Hover */}
+                    {/* Hover Overlay */}
                     <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                    {/* Center Hover Eye Icon */}
+                    {/* Eye Icon */}
                     <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
                       <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-gray-900 shadow-lg backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
                         <FiEye className="text-xl" />
                       </div>
                     </div>
 
-                    {/* Hover Caption Title */}
+                    {/* Caption */}
                     {item.title && (
                       <div className="absolute bottom-4 left-4 right-4 z-10 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                        <p className="text-sm font-bold text-white drop-shadow sm:text-sm">
+                        <p className="text-sm font-bold text-white drop-shadow">
                           {item.title}
                         </p>
                       </div>

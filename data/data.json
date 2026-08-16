@@ -63,8 +63,8 @@
           "href": "/branches"
         },
         {
-          "label": "CEO Message",
-          "href": "/ceo-message"
+          "label": "Media",
+          "href": "/media"
         },
         {
           "label": "Awards & Recognition",
@@ -77,68 +77,8 @@
       "href": "/career"
     },
     {
-      "label": "Programs",
-      "href": "#",
-      "children": [
-        {
-          "label": "Community Development",
-          "href": "/community-development"
-        },
-        {
-          "label": "Government Projects",
-          "href": "/government-projects"
-        },
-        {
-          "label": "International Projects",
-          "href": "/international-projects"
-        },
-        {
-          "label": "Current Programs",
-          "href": "/current-programs"
-        },
-        {
-          "label": "Ongoing Projects",
-          "href": "/ongoing-projects"
-        },
-        {
-          "label": "Completed Projects",
-          "href": "/completed-projects"
-        }
-      ]
-    },
-    {
-      "label": "Our Work",
-      "href": "#",
-      "children": [
-        {
-          "label": "Education",
-          "href": "/education"
-        },
-        {
-          "label": "Healthcare",
-          "href": "/healthcare"
-        },
-        {
-          "label": "Women Empowerment",
-          "href": "/women-empowerment"
-        },
-        {
-          "label": "Child Welfare",
-          "href": "/child-welfare"
-        },
-        {
-          "label": "Disaster Relief",
-          "href": "/disaster-relief"
-        },
-        {
-          "label": "Human Rights",
-          "href": "/human-rights"
-        },
-        {
-          "label": "Elderly Care",
-          "href": "/elderly-care"
-        }
-      ]
+          "label": "Blogs",
+          "href": "/blog"
     },
     {
       "label": "Events",
@@ -175,6 +115,10 @@
           "href": "/support"
         }
       ]
+    },
+            {
+          "label": "Faqs",
+          "href": "/faq"
     }
   ],
   "footer": {
@@ -211,16 +155,8 @@
       "title": "Our Support",
       "links": [
         {
-          "label": "Faqs",
-          "href": "/faq"
-        },
-        {
           "label": "Donate Now",
           "href": "/donate"
-        },
-        {
-          "label": "Blogs",
-          "href": "/blog"
         },
         {
           "label": "Our Partners",
@@ -5073,6 +5009,61 @@
       "description": "Your support can bring clean water and better health to many more lives.",
       "buttonText": "Donate Now",
       "buttonLink": "/donate"
+    }
+  },
+    "media": {
+    "banner": {
+      "breadcrumbCurrent": "Media",
+      "breadcrumbHome": "Home",
+      "bgImageUrl": "/NGO_images-feepik/group-people-making-good-team-while-volunteering.jpg",
+      "title": "Media"
+    },
+    "content": {
+      "sectionTitle": "Latest Media Articles",
+      "viewAllText": "View All News",
+      "viewAllUrl": "/",
+      "mediaCards": [
+        {
+          "title": "Zee News",
+          "logoUrl": "https://i.pinimg.com/1200x/1f/e6/17/1fe617fe71d1dda9cabb5a42e67cd955.jpg",
+          "articleUrl": "https://zeenews.india.com/india/father-cremated-by-ngo-as-three-daughters-skip-funeral-one-joins-on-video-call-3065194.html"
+        },
+        {
+          "title": "NDTV",
+          "logoUrl": "https://i.pinimg.com/1200x/1f/e6/17/1fe617fe71d1dda9cabb5a42e67cd955.jpg",
+          "articleUrl": "https://zeenews.india.com/india/father-cremated-by-ngo-as-three-daughters-skip-funeral-one-joins-on-video-call-3065194.html"
+        },
+        {
+          "title": "Sky News",
+          "logoUrl": "https://i.pinimg.com/1200x/b2/46/e3/b246e3bfb944872b0e7459e105043617.jpg",
+          "articleUrl": "https://news.sky.com/"
+        },
+        {
+          "title": "IK Media News",
+          "logoUrl": "https://i.pinimg.com/1200x/31/a1/dc/31a1dc1f0254e1bdfff3867a48fe818c.jpg",
+          "articleUrl": "https://www.ikmultimedia.com/news/"
+        },
+        {
+          "title": "News Time",
+          "logoUrl": "https://i.pinimg.com/736x/f5/17/e5/f517e55e02164cfa7237169372acfa70.jpg",
+          "articleUrl": "https://www.timesnownews.com/"
+        },
+        {
+          "title": "ND News Digital",
+          "logoUrl": "https://i.pinimg.com/736x/67/97/8b/67978bfd621fb4c4cbd1623175a2cf28.jpg",
+          "articleUrl": "https://nddnews.in/"
+        },
+        {
+          "title": "BNews",
+          "logoUrl": "https://i.pinimg.com/736x/d6/f2/51/d6f25164940233697854c1e5f028d168.jpg",
+          "articleUrl": "https://www.bbc.com/news"
+        },
+        {
+          "title": "DN News",
+          "logoUrl": "https://i.pinimg.com/1200x/f2/51/c8/f251c86a4a866264bc0d8102184bc125.jpg",
+          "articleUrl": "https://www.dnaindia.com/"
+        }
+      ]
     }
   }
 }
