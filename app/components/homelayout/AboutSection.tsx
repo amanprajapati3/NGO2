@@ -260,12 +260,12 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
             {/* Dynamic Trust Badges - Styled as per image */}
             {trustBadges && trustBadges.length > 0 && (
-              <div className="mt-8 pt-4">
+              <div className="mt-8  pt-4">
                 <div className="grid grid-cols-1 gap-4 sm:grid-cols-3 sm:gap-2 sm:divide-x sm:divide-slate-200">
                   {trustBadges.map((tb: TrustBadge, idx: number) => (
                     <div
                       key={idx}
-                      className={`flex items-center gap-3 justify-center md:justify-start ${
+                      className={`flex items-center gap-3  md:justify-start ${
                         idx !== 0 ? "sm:pl-4" : ""
                       }`}
                     >
@@ -365,9 +365,9 @@ export default function AboutSection({ data }: AboutSectionProps) {
 
         {/* ================= STATISTICS CONTAINER ================= */}
         {statsToRender.length > 0 && (
-          <div className="mt-12 sm:mt-16">
-            <div className="rounded-3xl border border-slate-100/80 bg-white px-6 py-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] sm:px-10 sm:py-8">
-              <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-slate-200/80">
+          <div className="mt-6 sm:mt-16">
+            <div className="rounded-3xl sm:border sm:border-slate-100/80 sm:bg-white sm:px-6 py-6 shadow-[0_10px_30px_-10px_rgba(0,0,0,0.05)] sm:px-10 sm:py-8">
+              <div className="grid gap-2  sm:gap-6 grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-slate-200/80">
                 {statsToRender.map((item: AboutStatistic, index: number) => {
                   const { icon, theme } = getStatIconAndTheme(item.icon, index);
 
@@ -379,13 +379,13 @@ export default function AboutSection({ data }: AboutSectionProps) {
                       }`}
                     >
                       <div
-                        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-full ${theme.bg}`}
+                        className={`flex sm:h-16 sm:w-16 shrink-0 items-center justify-center rounded-full ${theme.bg}`}
                       >
                         {icon}
                       </div>
 
                       <div className="flex flex-col text-left">
-                        <h3 className="text-2xl font-black text-[#1a0c2e] sm:text-3xl">
+                        <h3 className="text-xl sm:text-2xl font-black text-[#1a0c2e] sm:text-3xl">
                           <AnimatedNumber value={item.value} />
                         </h3>
                         <p className="text-sm font-medium text-gray-500 mt-0.5">

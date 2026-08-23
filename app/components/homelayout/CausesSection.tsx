@@ -208,7 +208,7 @@ export default function CausesSection({
                       {/* Main Donate Button */}
                       <Link
                         href={item.button.href}
-                        className={`absolute left-[40%] -translate-x-1/2 flex w-[60%] md:w-[45%] items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
+                        className={`absolute md:left-[40%] left-[50%] -translate-x-1/2 flex w-[60%] md:w-[45%] items-center justify-center gap-2 rounded-full px-5 py-2.5 text-sm font-bold text-white shadow-md transition-all ${bgButtonClass}`}
                       >
                         <span>{item.button.label}</span>
                         <FiArrowRight className="text-sm" />
