@@ -2,6 +2,7 @@ import React from "react";
 import PageBanner from "../../shared/PageBanner"
 import type { SupportDataProps } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 // Helper Function for Rendering Vector SVGs Based on Icon Names
 const renderIcon = (
@@ -119,7 +120,7 @@ export default function SupportPage({ data }: SupportDataProps) {
 
       {/* ================= MAIN CONTAINER ================= */}
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 md:py-12 py-8 space-y-16">
-        {/* ================= 2. INTRODUCTION & TOP VALUES ================= */}
+        <ScrollReveal direction="up">
         <section className="text-center">
           {/* Section Header */}
           <div className="max-w-2xl mx-auto">
@@ -168,8 +169,9 @@ export default function SupportPage({ data }: SupportDataProps) {
             ))}
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* ================= 3. WAYS TO SUPPORT (5 CARDS) ================= */}
+        <ScrollReveal direction="up" delay={0.1}>
         <section className="bg-white rounded-3xl p-6 sm:p-10 border border-slate-200/80 shadow-xs text-center">
           <div className="flex items-center justify-center gap-3">
               <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
@@ -218,8 +220,9 @@ export default function SupportPage({ data }: SupportDataProps) {
             ))}
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* ================= 4. YOUR SUPPORT, REAL IMPACT ================= */}
+        <ScrollReveal direction="up" delay={0.15}>
         <section className="bg-orange-50/50 border rounded-3xl p-6 sm:p-10 border-orange-200/80 text-center">
         <div className="flex justify-center gap-1">
           <HiOutlineHeart className="text-base text-orange-500 sm:text-lg" />
@@ -262,8 +265,9 @@ export default function SupportPage({ data }: SupportDataProps) {
             {impactStats.closingText}
           </p>
         </section>
+        </ScrollReveal>
 
-        {/* ================= 5. CTA BANNER (SIDE-BY-SIDE WITH HANDS ICON) ================= */}
+        <ScrollReveal direction="up" delay={0.2}>
         <section className="relative min-h-[300px] overflow-hidden rounded-3xl border border-orange-100 shadow-sm">
           {/* Full Section Background Image */}
           <img
@@ -336,8 +340,9 @@ export default function SupportPage({ data }: SupportDataProps) {
             </div>
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* ================= 6. TRANSPARENCY BAR ================= */}
+        <ScrollReveal direction="up" delay={0.25}>
         <section className="rounded-2xl bg-white text-orange-500 p-5 sm:p-6 shadow-md flex flex-col md:flex-row items-center justify-between gap-4">
           <div className="flex flex-col md:flex-row items-center gap-4 text-center md:text-left">
             <div className="w-12 h-12 rounded-full bg-orange-100 text-orange-700 flex items-center justify-center shrink-0">
@@ -361,6 +366,7 @@ export default function SupportPage({ data }: SupportDataProps) {
             {transparencyBar.action.label} &rarr;
           </a>
         </section>
+        </ScrollReveal>
       </div>
     </div>
   );

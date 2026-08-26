@@ -14,6 +14,7 @@ import {
 } from "react-icons/fi";
 
 import type { MissionSectionProps } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 const getTabIcon = (icon: string) => {
   switch (icon) {
@@ -59,10 +60,9 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
   return (
     <section className="relative w-full bg-white">
-      <div className="relative mx-auto ">
+      <div className="relative mx-auto">
         {/* Main Section Container */}
         <div className="relative min-h-[660px] w-full overflow-hidden bg-[#0c0f1d] p-0 sm:p-8 lg:p-12">
-          {/* ================= EXACT ROUGH BRUSH EDGE OVERLAY ================= */}
           {/* ================= ROUGH BRUSH EDGE OVERLAY ================= */}
           {imageSection.showBrushTop && (
             <div className="pointer-events-none absolute left-0 right-0 top-0 z-20 h-16 w-full overflow-hidden">
@@ -97,7 +97,6 @@ export default function MissionSection({ data }: MissionSectionProps) {
                   </filter>
                 </defs>
 
-                {/* Main heavy irregular brush */}
                 <path
                   d="
           M0,0
@@ -124,7 +123,6 @@ export default function MissionSection({ data }: MissionSectionProps) {
                   filter="url(#rough-brush-edge)"
                 />
 
-                {/* Second broken paint layer */}
                 <path
                   d="M0,0 L1200,0 L1200,25 C1160,38 1135,18 1095,32 C1055,46 1025,18 985,35 C945,50 915,20 875,34 C835,48 805,15 765,32 C725,48 690,18 650,35 C610,50 580,20 540,33 C500,48 470,17 430,34 C390,50 360,20 320,32 C280,47 250,18 210,34 C170,48 140,20 100,33 C60,47 35,22 0,35 Z"
                   fill="currentColor"
@@ -132,7 +130,6 @@ export default function MissionSection({ data }: MissionSectionProps) {
                   filter="url(#rough-brush-edge)"
                 />
 
-                {/* Small rough paint fragments */}
                 <path
                   d="M0,0 L1200,0 L1200,15 C1140,22 1110,10 1060,20 C1010,30 980,8 930,18 C880,27 840,9 790,20 C740,30 700,8 650,18 C600,28 560,10 510,20 C460,30 420,8 370,18 C320,27 280,9 230,20 C180,29 140,8 90,18 C50,25 25,12 0,20 "
                   fill="currentColor"
@@ -154,12 +151,12 @@ export default function MissionSection({ data }: MissionSectionProps) {
               sizes="100vw"
             />
 
-            {/* Dark Vignette Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-r from-black/85 via-black/60 to-transparent lg:from-black/70 lg:to-transparent" />
+            {/* Vignette Overlay (Darker on the right side to enhance card contrast) */}
+            <div className="absolute inset-0 bg-gradient-to-r from-black/50 via-black/75 to-black/90 lg:from-transparent lg:via-black/60 lg:to-black/90" />
 
-            {/* Concentric Orange Circles (Bottom Left) */}
+            {/* Concentric Orange Circles */}
             {imageSection.showRings && (
-              <div className="absolute -bottom-28 -left-28 pointer-events-none opacity-40">
+              <div className="absolute -bottom-28 -right-28 pointer-events-none opacity-40">
                 <div className="h-96 w-96 rounded-full border border-[#ff5e14]/40" />
                 <div className="absolute inset-8 rounded-full border border-[#ff5e14]/30" />
                 <div className="absolute inset-16 rounded-full border border-[#ff5e14]/20" />
@@ -168,14 +165,11 @@ export default function MissionSection({ data }: MissionSectionProps) {
             )}
           </div>
 
-          {/* Content Layout */}
-          <div className="relative z-10 flex w-full justify-end lg:items-center">
-            {/* Purpose Card (Left - Bottom Overlay on Desktop) */}
-
-
-            {/* Content Box (Right Panel) */}
-            <div className="w-full md:w-[65%]">
-              <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 md:p-6 p-2 text-white shadow-2xl backdrop-blur-lg sm:p-10 lg:p-12">
+          {/* Wrapper to center on mobile/tablet and shift to right on desktop */}
+          <div className="relative z-10 flex w-full justify-center lg:justify-end items-center">
+            {/* Entire Main Content Card Container */}
+            <ScrollReveal direction="right" className="w-full md:w-[85%] lg:w-[65%]">
+              <div className="relative mx-auto w-full rounded-2xl border border-white/10 bg-[#101426]/95 p-4 sm:p-10 lg:p-12 text-white shadow-2xl backdrop-blur-lg">
                 {/* Dot Grid Top Right */}
                 <div className="absolute top-6 right-6 grid grid-cols-6 gap-1.5 opacity-20">
                   {Array.from({ length: 30 }).map((_, i) => (
@@ -208,7 +202,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 </div>
 
                 {/* Tab Navigation */}
-                <div className="md:mt-8 mt-4  md:justifyt-start md:item-start flex items-center md:gap-6 gap-2 border-b border-slate-800 pb-3">
+                <div className="mt-4 md:mt-8 flex items-center gap-2 md:gap-6 border-b border-slate-800 pb-3">
                   {tabs.map((tab) => {
                     const isActive = tab.id === activeTab;
                     return (
@@ -235,7 +229,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
 
                 {/* Dynamic Content */}
                 {activeTabData && (
-                  <div className="mt-6 h-[300px]  overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-base md:h-[220px]">
+                  <div className="mt-6 h-[300px] overflow-y-auto space-y-3 text-sm leading-relaxed text-slate-300 sm:h-[220px] sm:text-base md:h-[220px]">
                     <p>{activeTabData.content.primary}</p>
 
                     {activeTabData.content.secondary && (
@@ -245,7 +239,7 @@ export default function MissionSection({ data }: MissionSectionProps) {
                 )}
 
                 {/* Features Grid */}
-                <div className="mt-0  grid grid-cols-1 gap-4 sm:grid-cols-3">
+                <div className="mt-0 grid grid-cols-1 gap-4 sm:grid-cols-3">
                   {tabs[0]?.content.features.map((feature) => (
                     <div
                       key={feature.title}
@@ -265,67 +259,26 @@ export default function MissionSection({ data }: MissionSectionProps) {
                     </div>
                   ))}
                 </div>
-                            <div className="hidden lg:col-span-5 lg:flex lg:flex-col lg:justify-end mt-4">
-              <div className="rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
-                <div className="flex items-center gap-4">
-                  <div className="flex h-14 w-14 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
-                    {getPurposeIcon(imageSection.purposeCard.icon)}
+
+                {/* Purpose Card Included Inside Main Card */}
+                <div className="mt-4 rounded-2xl border border-white/10 bg-[#121627]/90 p-5 backdrop-blur-md shadow-2xl">
+                  <div className="flex items-center gap-4">
+                    <div className="flex h-12 w-12 sm:h-14 sm:w-14 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
+                      {getPurposeIcon(imageSection.purposeCard.icon)}
+                    </div>
+
+                    <div>
+                      <span className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#ff5e14]">
+                        {imageSection.purposeCard.badge}
+                      </span>
+                      <h4 className="mt-0.5 text-sm sm:text-lg font-bold text-white">
+                        {imageSection.purposeCard.title}
+                      </h4>
+                    </div>
                   </div>
-
-                  <div>
-                    <span className="text-sm md:text-md font-bold uppercase tracking-wider text-[#ff5e14]">
-                      {imageSection.purposeCard.badge}
-                    </span>
-                    <h4 className="mt-1 text-base md:text-xl font-bold text-white">
-                      {imageSection.purposeCard.title}
-                    </h4>
-                  </div>
                 </div>
               </div>
-            </div>
-
-                {/* Buttons */}
-                {/* <div className="md:mt-8 my-4 flex justify-center md:justify-start flex-wrap items-center md:gap-6 gap-2">
-                  {buttons.map((button) => {
-                    const isPrimary = button.variant === "primary";
-
-                    return (
-                      <Link
-                        key={button.label}
-                        href={button.href}
-                        className={`group inline-flex items-center md:gap-2 gap-1 rounded-full md:px-7 px-3 md:py-3.5 py-2 text-sm font-bold transition-all duration-300 ${
-                          isPrimary
-                            ? "bg-[#ff5e14] text-white hover:bg-[#e04f0d] shadow-lg shadow-orange-500/20"
-                            : "text-slate-300 bg-white/20 hover:text-white"
-                        }`}
-                      >
-                        <span>{button.label}</span>
-                        <FiArrowRight className="text-base transition-transform group-hover:translate-x-1" />
-                      </Link>
-                    );
-                  })}
-                </div> */}
-              </div>
-            </div>
-          </div>
-
-          {/* Purpose Box on Mobile / Tablet */}
-          <div className="my-6 block lg:hidden">
-            <div className="rounded-2xl border border-white/10 bg-[#101426]/90 p-5 backdrop-blur-md">
-              <div className="flex items-center gap-4">
-                <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-[#ff5e14]/30 bg-[#ff5e14]/10">
-                  {getPurposeIcon(imageSection.purposeCard.icon)}
-                </div>
-                <div>
-                  <span className="text-sm font-bold uppercase tracking-wider text-[#ff5e14]">
-                    {imageSection.purposeCard.badge}
-                  </span>
-                  <h4 className="mt-0.5 text-sm font-bold text-white">
-                    {imageSection.purposeCard.title}
-                  </h4>
-                </div>
-              </div>
-            </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

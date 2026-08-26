@@ -11,6 +11,7 @@ import type {
   GalleryData,
 } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function GallerySection({ data }: GallerySectionProps) {
   const { badge, title, description, categories, images, videos = [] } = data;
@@ -105,55 +106,57 @@ export default function GallerySection({ data }: GallerySectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
-        <div className="flex flex-col items-center text-center">
-          {/* Badge Label */}
-          <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
-            <HiOutlineHeart className="text-base text-[#FF4500]" />
-            <span>{badge?.label || "Our Gallery"}</span>
+        <ScrollReveal direction="up">
+          <div className="flex flex-col items-center text-center">
+            {/* Badge Label */}
+            <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-widest text-[#FF4500]">
+              <HiOutlineHeart className="text-base text-[#FF4500]" />
+              <span>{badge?.label || "Our Gallery"}</span>
+            </div>
+
+            {/* Main Title */}
+            <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
+              {title?.line1 || "Moments of"}{" "}
+              <span className="text-[#0F172A]">
+                {title?.highlight || "Change & Hope"}
+              </span>
+            </h2>
+
+            {/* Description Paragraph */}
+            <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
+              {description}
+            </p>
+
+            {/* ================= CATEGORY FILTER TABS ================= */}
+            <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:mt-8">
+              {categories.map((category, idx) => {
+                const isActive = activeCategory === category.value;
+
+                return (
+                  <div key={category.value} className="flex items-center">
+                    <button
+                      onClick={() => {
+                        setActiveCategory(category.value);
+                        setSelectedIndex(null);
+                      }}
+                      className={`rounded-full px-5 py-2 text-sm font-bold border transition-all duration-300 cursor-pointer ${
+                        isActive
+                          ? "bg-[#FF4500] border-[#FF4500] text-white shadow-md shadow-orange-500/20"
+                          : "border-gray-200 bg-white text-slate-600 hover:border-[#FF4500] hover:text-[#FF4500]"
+                      }`}
+                    >
+                      {category.label}
+                    </button>
+
+                    {idx < categories.length - 1 && (
+                      <span className="ml-2 hidden h-3 w-[1px] bg-slate-200 sm:inline-block sm:ml-3" />
+                    )}
+                  </div>
+                );
+              })}
+            </div>
           </div>
-
-          {/* Main Title */}
-          <h2 className="mt-1 font-serif text-3xl font-extrabold tracking-tight text-[#0F172A] sm:text-4xl lg:text-5xl">
-            {title?.line1 || "Moments of"}{" "}
-            <span className="text-[#0F172A]">
-              {title?.highlight || "Change & Hope"}
-            </span>
-          </h2>
-
-          {/* Description Paragraph */}
-          <p className="mx-auto mt-1 max-w-2xl text-sm leading-relaxed text-slate-500 sm:mt-2 sm:text-base">
-            {description}
-          </p>
-
-          {/* ================= CATEGORY FILTER TABS ================= */}
-          <div className="mt-6 flex flex-wrap items-center justify-center gap-2 sm:gap-3 md:mt-8">
-            {categories.map((category, idx) => {
-              const isActive = activeCategory === category.value;
-
-              return (
-                <div key={category.value} className="flex items-center">
-                  <button
-                    onClick={() => {
-                      setActiveCategory(category.value);
-                      setSelectedIndex(null);
-                    }}
-                    className={`rounded-full px-5 py-2 text-sm font-bold border transition-all duration-300 cursor-pointer ${
-                      isActive
-                        ? "bg-[#FF4500] border-[#FF4500] text-white shadow-md shadow-orange-500/20"
-                        : "border-gray-200 bg-white text-slate-600 hover:border-[#FF4500] hover:text-[#FF4500]"
-                    }`}
-                  >
-                    {category.label}
-                  </button>
-
-                  {idx < categories.length - 1 && (
-                    <span className="ml-2 hidden h-3 w-[1px] bg-slate-200 sm:inline-block sm:ml-3" />
-                  )}
-                </div>
-              );
-            })}
-          </div>
-        </div>
+        </ScrollReveal>
 
         {/* ================= 1. IMAGE GALLERY (TOP BENTO GRID) ================= */}
         {filteredImages.length > 0 && (
@@ -163,42 +166,48 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 const isTall = index === 0;
 
                 return (
-                  <div
+                  <ScrollReveal
                     key={item.title || index}
-                    onClick={() => setSelectedIndex(index)}
-                    className={`group relative cursor-pointer overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl ${
+                    direction="up"
+                    delay={0.1 + index * 0.1}
+                    className={`w-full ${
                       isTall
                         ? "h-[320px] sm:h-[420px] lg:row-span-2 lg:h-auto"
                         : "h-[200px] sm:h-[220px] lg:h-auto"
                     }`}
                   >
-                    <Image
-                      src={item.image}
-                      alt={item.title || "Gallery image"}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-700 group-hover:scale-105"
-                    />
+                    <div
+                      onClick={() => setSelectedIndex(index)}
+                      className="group relative h-full w-full cursor-pointer overflow-hidden rounded-2xl bg-slate-100 shadow-sm transition-all duration-300 hover:shadow-xl"
+                    >
+                      <Image
+                        src={item.image}
+                        alt={item.title || "Gallery image"}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover transition-transform duration-700 group-hover:scale-105"
+                      />
 
-                    {/* Hover Overlay */}
-                    <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
+                      {/* Hover Overlay */}
+                      <div className="absolute inset-0 bg-black/40 opacity-0 transition-opacity duration-300 group-hover:opacity-100" />
 
-                    {/* Eye Icon */}
-                    <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-gray-900 shadow-lg backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
-                        <FiEye className="text-xl" />
+                      {/* Eye Icon */}
+                      <div className="absolute inset-0 flex items-center justify-center opacity-0 transition-opacity duration-300 group-hover:opacity-100">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-white/90 text-gray-900 shadow-lg backdrop-blur-sm transition-transform duration-300 group-hover:scale-110">
+                          <FiEye className="text-xl" />
+                        </div>
                       </div>
+
+                      {/* Caption */}
+                      {item.title && (
+                        <div className="absolute bottom-4 left-4 right-4 z-10 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
+                          <p className="text-sm font-bold text-white drop-shadow">
+                            {item.title}
+                          </p>
+                        </div>
+                      )}
                     </div>
-
-                    {/* Caption */}
-                    {item.title && (
-                      <div className="absolute bottom-4 left-4 right-4 z-10 translate-y-2 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100">
-                        <p className="text-sm font-bold text-white drop-shadow">
-                          {item.title}
-                        </p>
-                      </div>
-                    )}
-                  </div>
+                  </ScrollReveal>
                 );
               })}
             </div>
@@ -231,51 +240,52 @@ export default function GallerySection({ data }: GallerySectionProps) {
 
             <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
               {filteredVideos.map((item: GalleryVideo, index: number) => (
-                <div
-                  key={index}
-                  onClick={() => setSelectedVideo(item)}
-                  className="group flex flex-col justify-between overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer"
-                >
-                  {/* Video Thumbnail with Play Button & Duration Tag */}
-                  <div className="relative h-48 w-full overflow-hidden bg-slate-900">
-                    <Image
-                      src={item.thumbnail}
-                      alt={item.title}
-                      fill
-                      sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-                      className="object-cover transition-transform duration-500 group-hover:scale-105"
-                    />
+                <ScrollReveal key={index} direction="up" delay={0.2 + index * 0.15} className="w-full h-full">
+                  <div
+                    onClick={() => setSelectedVideo(item)}
+                    className="group flex flex-col justify-between h-full overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md cursor-pointer"
+                  >
+                    {/* Video Thumbnail with Play Button & Duration Tag */}
+                    <div className="relative h-48 w-full overflow-hidden bg-slate-900">
+                      <Image
+                        src={item.thumbnail}
+                        alt={item.title}
+                        fill
+                        sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
+                        className="object-cover transition-transform duration-500 group-hover:scale-105"
+                      />
 
-                    <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
+                      <div className="absolute inset-0 bg-black/20 group-hover:bg-black/30 transition-colors" />
 
-                    <div className="absolute inset-0 flex items-center justify-center">
-                      <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
-                        <FaPlay className="ml-0.5 text-sm" />
+                      <div className="absolute inset-0 flex items-center justify-center">
+                        <div className="flex h-12 w-12 items-center justify-center rounded-full bg-red-600 text-white shadow-lg transition-transform duration-300 group-hover:scale-110">
+                          <FaPlay className="ml-0.5 text-sm" />
+                        </div>
+                      </div>
+
+                      <div className="absolute bottom-2.5 right-2.5 rounded bg-black/80 px-2 py-0.5 text-[10px] font-bold text-white tracking-wider">
+                        {item.duration}
                       </div>
                     </div>
 
-                    <div className="absolute bottom-2.5 right-2.5 rounded bg-black/80 px-2 py-0.5 text-[10px] font-bold text-white tracking-wider">
-                      {item.duration}
+                    {/* Card Info Content */}
+                    <div className="flex flex-1 flex-col justify-between p-5">
+                      <div>
+                        <span className="inline-block rounded-full bg-[#f95738] px-2.5 py-0.5 text-[13px] font-extrabold uppercase tracking-wide text-white">
+                          {item.categoryLabel || item.category}
+                        </span>
+
+                        <h3 className="mt-3 text-base font-bold text-gray-900 line-clamp-1 group-hover:text-[#FF4500] transition-colors">
+                          {item.title}
+                        </h3>
+
+                        <p className="mt-1.5 text-sm text-slate-500 line-clamp-2 leading-relaxed">
+                          {item.description}
+                        </p>
+                      </div>
                     </div>
                   </div>
-
-                  {/* Card Info Content */}
-                  <div className="flex flex-1 flex-col justify-between p-5">
-                    <div>
-                      <span className="inline-block rounded-full bg-[#f95738] px-2.5 py-0.5 text-[13px] font-extrabold uppercase tracking-wide text-white">
-                        {item.categoryLabel || item.category}
-                      </span>
-
-                      <h3 className="mt-3 text-base font-bold text-gray-900 line-clamp-1 group-hover:text-[#FF4500] transition-colors">
-                        {item.title}
-                      </h3>
-
-                      <p className="mt-1.5 text-sm text-slate-500 line-clamp-2 leading-relaxed">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                </div>
+                </ScrollReveal>
               ))}
             </div>
           </div>
@@ -299,7 +309,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
             <FiX className="text-xl" />
           </button>
 
-          {/* Left Arrow Button (Only if > 1 image) */}
+          {/* Left Arrow Button */}
           {filteredImages.length > 1 && (
             <button
               onClick={(e) => {
@@ -313,7 +323,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
             </button>
           )}
 
-          {/* Right Arrow Button (Only if > 1 image) */}
+          {/* Right Arrow Button */}
           {filteredImages.length > 1 && (
             <button
               onClick={(e) => {
@@ -327,7 +337,7 @@ export default function GallerySection({ data }: GallerySectionProps) {
             </button>
           )}
 
-          {/* Center Image Container without black sidebars */}
+          {/* Center Image Container */}
           <div
             onClick={(e) => e.stopPropagation()}
             className="relative max-h-[85vh] max-w-[90vw] overflow-hidden rounded-2xl flex flex-col items-center justify-center"
@@ -341,13 +351,6 @@ export default function GallerySection({ data }: GallerySectionProps) {
                 className="rounded-2xl object-contain"
               />
             </div>
-
-            {/* Optional Title Overlay */}
-            {/* {filteredImages[selectedIndex].title && (
-              <div className="w-full bg-black/60 p-3 text-center text-white text-sm sm:text-sm font-semibold rounded-b-2xl">
-                {filteredImages[selectedIndex].title}
-              </div>
-            )} */}
           </div>
         </div>
       )}

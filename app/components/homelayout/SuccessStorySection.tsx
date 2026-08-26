@@ -12,6 +12,7 @@ import {
 } from "react-icons/fi";
 
 import type { SuccessStoriesProps } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function SuccessStories({ data }: SuccessStoriesProps) {
   const [activeIndex, setActiveIndex] = useState(0);
@@ -31,6 +32,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
       <div className="mx-auto max-w-7xl md:px-5 px-2">
         
         {/* Header */}
+        <ScrollReveal direction="up">
         <div className="mx-auto max-w-3xl text-center">
           <span className="inline-flex rounded-full px-5 pt-2 text-sm font-semibold text-orange-700">
             {data.badge.label}
@@ -45,6 +47,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
             {data.pretitle}
           </p>
         </div>
+        </ScrollReveal>
 
         {/* Outer Relative Wrapper for Positioning Left & Right Buttons */}
         <div className="relative mt-5">
@@ -70,6 +73,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
           <div className="grid items-center gap-10 px-2 md:grid-cols-2 md:px-12">
             
             {/* Story Image */}
+            <ScrollReveal direction="left">
             <div className="relative mx-auto h-[380px] w-full max-w-md overflow-hidden rounded-3xl shadow-lg">
               <Image
                 src={story.image}
@@ -80,8 +84,10 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
                 sizes="(max-width: 768px) 100vw, 450px"
               />
             </div>
+            </ScrollReveal>
 
             {/* Story Text Details */}
+            <ScrollReveal direction="right">
             <div>
               {/* Meta Info Bar */}
               <div className="flex flex-wrap items-center gap-4 text-sm text-gray-500">
@@ -130,6 +136,7 @@ export default function SuccessStories({ data }: SuccessStoriesProps) {
                 {story.name}
               </p>
             </div>
+            </ScrollReveal>
 
           </div>
         </div>

@@ -10,6 +10,7 @@ import type {
   TestimonialSectionProps,
   TestimonialItem,
 } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function TestimonialSection({ data }: TestimonialSectionProps) {
   const { badge, title, pretitle, description, testimonials } = data;
@@ -42,6 +43,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
 
       <div className="relative mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
           {/* Badge Label */}
           <div className="inline-flex items-center gap-1.5 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -64,8 +66,10 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
             </p>
           )}
         </div>
+        </ScrollReveal>
 
         {/* ================= TESTIMONIAL CARD ================= */}
+        <ScrollReveal direction="scale" delay={0.2}>
         <div className="relative md:mt-12 mt-4 overflow-hidden rounded-3xl border border-slate-100 bg-white md:p-6 p-2 shadow-xl shadow-slate-200/50 sm:p-10">
           {/* Background Dotted Globe Mesh Overlay (Right Side) */}
           <div className="absolute -right-20 -top-20 h-96 w-96 rounded-full bg-[radial-gradient(#CBD5E1_1.5px,transparent_1.5px)] [background-size:12px_12px] opacity-40 pointer-events-none" />
@@ -143,6 +147,7 @@ export default function TestimonialSection({ data }: TestimonialSectionProps) {
             </div>
           </div>
         </div>
+        </ScrollReveal>
       </div>
     </section>
   );

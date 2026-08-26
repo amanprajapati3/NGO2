@@ -20,6 +20,7 @@ import { RiGraduationCapFill } from "react-icons/ri";
 
 import type { ServiceDetailPageData } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 const iconMap: Record<string, React.ReactNode> = {
   FiGraduationCap: <RiGraduationCapFill className="h-5 w-5 sm:h-6 sm:w-6" />,
@@ -173,6 +174,7 @@ export default function ServiceDetailPage({
 
       <div className="mx-auto max-w-7xl px-3 py-8 text-[#1a1a1a] sm:px-6 lg:px-8">
 
+        <ScrollReveal direction="up">
         {/* ABOUT THIS SERVICE */}
         <section className="grid grid-cols-1 items-center gap-8 lg:grid-cols-12 lg:gap-12">
           <div className="lg:col-span-6 text-center md:text-start">
@@ -219,8 +221,9 @@ export default function ServiceDetailPage({
             />
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* WHAT WE DO */}
+        <ScrollReveal direction="up" delay={0.1}>
         <section className="mt-12">
           <div className="text-center">
             <div className="flex items-center justify-center gap-2 text-sm font-bold uppercase tracking-wider text-orange-400 sm:text-sm">
@@ -257,8 +260,9 @@ export default function ServiceDetailPage({
             ))}
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* OUR IMPACT */}
+        <ScrollReveal direction="up" delay={0.15}>
         <section
           ref={impactRef}
           className="mt-10 overflow-hidden rounded-3xl bg-[#fdf2f2]"
@@ -306,8 +310,9 @@ export default function ServiceDetailPage({
             ))}
           </div>
         </section>
+        </ScrollReveal>
 
-        {/* GET INVOLVED */}
+        <ScrollReveal direction="up" delay={0.2}>
         <section className="mt-10 overflow-hidden rounded-3xl bg-[#fafafa] sm:mt-16">
           <div className="grid grid-cols-1 items-center lg:grid-cols-12">
             <div className="space-y-4 p-6 sm:p-10 lg:col-span-6 lg:p-12">
@@ -352,6 +357,7 @@ export default function ServiceDetailPage({
             </div>
           </div>
         </section>
+        </ScrollReveal>
       </div>
     </main>
   );

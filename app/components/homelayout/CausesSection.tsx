@@ -13,6 +13,7 @@ import {
 import { HiOutlineHeart } from "react-icons/hi2";
 
 import type { CausesSectionProps, CauseItem } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 const getCauseIcon = (icon: string) => {
   switch (icon) {
@@ -89,6 +90,7 @@ export default function CausesSection({
 
       <div className="relative mx-auto ">
         {/* ================= HEADER SECTION ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
           {/* Badge */}
           <div className="inline-flex items-center gap-2 rounded-full  px-3.5 pt-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -134,11 +136,13 @@ export default function CausesSection({
             {description}
           </p>
         </div>
+        </ScrollReveal>
 
         {/* ================= CAUSE CARDS GRID ================= */}
         <div className="md:mt-12 mt-4 grid grid-cols-1 px-4 sm:px-6 lg:px-8 gap-8 sm:grid-cols-2 lg:grid-cols-3">
           {(showExploreButton ? items.slice(0, 3) : items).map(
             (item: CauseItem, index: number) => {
+              const cardDelay = 0.2 + index * 0.15;
               const isPurple = index === 1;
               const primaryColorClass = isPurple
                 ? "text-[#5B3CC4]"
@@ -149,8 +153,8 @@ export default function CausesSection({
                 : "bg-[#FF4500] hover:bg-[#e03d00]";
 
               return (
+                <ScrollReveal key={item.title} direction="up" delay={cardDelay}>
                 <div
-                  key={item.title}
                   className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
                 >
                   {/* Image & Floating Corner Icon */}
@@ -216,6 +220,7 @@ export default function CausesSection({
                     </div>
                   </div>
                 </div>
+                </ScrollReveal>
               );
             },
           )}

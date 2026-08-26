@@ -17,6 +17,7 @@ import { SlBookOpen } from "react-icons/sl";
 import PageBanner from "../../shared/PageBanner";
 import type { BrochurePageProps } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 interface Props {
   data: BrochurePageProps;
@@ -53,6 +54,7 @@ export default function Bronchure({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
+      <ScrollReveal direction="up">
       <section className="mx-auto max-w-4xl px-4 pb-10 sm:pt-12 pt-8 text-center">
         <div className="flex items-center justify-center gap-2">
           <HiOutlineHeart className="text-base text-[#FF4500]" />
@@ -77,8 +79,9 @@ export default function Bronchure({ data }: Props) {
           {header.description}
         </p>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== FEATURES ===================== */}
+      <ScrollReveal direction="up" delay={0.1}>
       <section className="mx-auto max-w-5xl sm:px-4 px-2 pb-16">
         <div className="grid sm:gap-5 gap-2 rounded-2xl bg-orange-50/70 sm:p-6 p-2 grid-cols-2 lg:grid-cols-4">
           {features.map((feature) => (
@@ -101,8 +104,9 @@ export default function Bronchure({ data }: Props) {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== SECTION TITLE ===================== */}
+      <ScrollReveal direction="up" delay={0.15}>
       <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 text-center">
         <div className="mb-0 flex items-center justify-center gap-2">
           <HiOutlineHeart className="text-base text-[#FF4500]" />
@@ -120,8 +124,9 @@ export default function Bronchure({ data }: Props) {
 
         {/* <div className="mx-auto mt-3 h-1 w-12 rounded-full bg-orange-500" /> */}
       </section>
+      </ScrollReveal>
 
-      {/* ===================== BROCHURE CARDS ===================== */}
+      <ScrollReveal direction="up" delay={0.2}>
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {brochures.map((item) => (
@@ -189,8 +194,9 @@ export default function Bronchure({ data }: Props) {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== CTA SECTION ===================== */}
+      <ScrollReveal direction="up" delay={0.25}>
       <section className="mx-auto max-w-6xl sm:px-4 pb-16">
         <div className="overflow-hidden sm:rounded-2xl bg-orange-50">
           <div className="grid grid-cols-1 items-center gap-8 px-2 py-4 sm:p-8 md:grid-cols-2 md:p-10 lg:gap-12">
@@ -255,6 +261,7 @@ export default function Bronchure({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

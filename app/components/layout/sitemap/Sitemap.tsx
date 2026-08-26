@@ -12,6 +12,7 @@ import {
   RotateCcw, Cookie, AlertTriangle, GitFork, LayoutGrid,
 } from "lucide-react";
 import React from "react";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 const iconMap: Record<string, React.ElementType> = {
   Home, Building2, Target, Eye, CheckCircle2, Users, Award,
@@ -36,6 +37,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
       <PageBanner banner={banner} />
 
       {/* ================= Sitemap Content ================= */}
+      <ScrollReveal direction="up">
       <section className="relative py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto overflow-hidden">
         {/* Decorative Grid Texture */}
         <div className="absolute inset-0 bg-[radial-gradient(#e5e7eb_1px,transparent_1px)] [background-size:24px_24px] opacity-40 pointer-events-none" />
@@ -163,6 +165,7 @@ export default function Sitemap({ data }: SitemapPageProps) {
 
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

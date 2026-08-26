@@ -5,6 +5,7 @@ import { FaStar, FaQuoteLeft } from "react-icons/fa";
 import { FiHeart } from "react-icons/fi";
 import type { TestimonialData } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 interface TestimonialPageLayoutProps {
   data: TestimonialData;
@@ -20,6 +21,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
 
 
       {/* ================= TESTIMONIAL CONTENT SECTION ================= */}
+      <ScrollReveal direction="up">
       <section className="relative md:py-12 py-8">
         {/* Background Soft Glow Orbs */}
         <div className="absolute -left-20 top-10 h-80 w-80 rounded-full bg-orange-100/60 blur-[100px] pointer-events-none" />
@@ -123,6 +125,7 @@ export default function TestimonialPageLayout({ data }: TestimonialPageLayoutPro
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </div>
   );
 }

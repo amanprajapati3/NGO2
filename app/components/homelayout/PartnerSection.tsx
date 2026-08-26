@@ -6,6 +6,7 @@ import Link from "next/link";
 import type { PartnersSectionProps, PartnerItem } from "@/type/typeSection";
 import { FiHeart } from "react-icons/fi";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function PartnersSection({ data }: PartnersSectionProps) {
   const { badge, title, description, partnersList } = data;
@@ -18,6 +19,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-5 lg:px-8">
         {/* Header */}
+        <ScrollReveal direction="up">
         <div className="text-center">
           {/* Badge */}
           <div className="flex justify-center gap-1">
@@ -48,10 +50,12 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
             {description}
           </p>
         </div>
+        </ScrollReveal>
 
         {/* ================= Partners Grid ================= */}
         <div className="mt-8 grid grid-cols-2 gap-4 sm:grid-cols-3 md:mt-12 md:grid-cols-4 lg:grid-cols-5 lg:gap-5">
-          {partnersList.map((partner: PartnerItem) => (
+          {partnersList.map((partner: PartnerItem, index: number) => (
+            <ScrollReveal key={partner.name} direction="scale" delay={0.2 + index * 0.08}>
             <Link
               key={partner.name}
               href={partner.website}
@@ -68,6 +72,7 @@ export default function PartnersSection({ data }: PartnersSectionProps) {
                 className="max-h-14 w-auto object-contain transition duration-300 group-hover:scale-105"
               />
             </Link>
+            </ScrollReveal>
           ))}
         </div>
       </div>

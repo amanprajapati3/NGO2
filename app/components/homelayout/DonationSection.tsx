@@ -7,6 +7,7 @@ import { FaRegHeart, FaHeart } from "react-icons/fa6";
 import { HiOutlineHeart } from "react-icons/hi2";
 
 import type { SupportSectionProps } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export const HandDrawnHeartWithTail = ({
   className = "w-16 h-16",
@@ -79,6 +80,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
         <div className="relative overflow-hidden rounded-3xl border border-slate-100 bg-white shadow-xl shadow-red-200">
           <div className="grid grid-cols-1 items-center lg:grid-cols-12">
             {/* ================= LEFT CONTENT AREA ================= */}
+            <ScrollReveal direction="left">
             <div className="z-10 flex flex-col items-center md:px-6 px-3 py-10 text-center sm:px-10 lg:col-span-6 lg:items-start lg:py-14 lg:pl-14 lg:pr-6 lg:text-left">
               {/* Badge Pill with Icon */}
               <div className="inline-flex items-center gap-2.5">
@@ -130,8 +132,10 @@ export default function DonationSection({ data }: SupportSectionProps) {
                 <span>100% Secure Donation | Make an Impact Today</span>
               </div>
             </div>
+            </ScrollReveal>
 
             {/* ================= RIGHT IMAGE AREA ================= */}
+            <ScrollReveal direction="right">
             <div className="relative min-h-[380px] w-full lg:col-span-6 lg:min-h-[480px]">
               {/* Curved Image */}
               <div className="relative h-full min-h-[380px] w-full overflow-hidden rounded-br-[420px] lg:min-h-[480px] lg:rounded-l-[240px]">
@@ -246,6 +250,7 @@ export default function DonationSection({ data }: SupportSectionProps) {
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           </div>
         </div>
       </div>

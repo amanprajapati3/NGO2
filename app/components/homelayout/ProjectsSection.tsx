@@ -7,6 +7,7 @@ import { GrRestroomWomen } from "react-icons/gr";
 import { HiOutlineHeart } from "react-icons/hi2";
 
 import type { ProjectSectionProps, ProjectCard } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 const getProjectIcon = (icon: string) => {
   switch (icon) {
@@ -111,6 +112,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
           {/* Badge Pill */}
           <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 pt-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -136,10 +138,12 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
             {description}
           </p>
         </div>
+        </ScrollReveal>
 
         {/* ================= CARDS GRID ================= */}
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {items.map((item: ProjectCard, index: number) => {
+            const cardDelay = 0.2 + index * 0.15;
             const isPurple = index === 1 || index === 3;
             const primaryTextColor = isPurple
               ? "text-[#5B3CC4]"
@@ -147,8 +151,8 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
             const circleBgColor = isPurple ? "bg-[#5B3CC4]" : "bg-[#FF4500]";
 
             return (
+              <ScrollReveal key={item.title} direction="up" delay={cardDelay}>
               <div
-                key={item.title}
                 className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
               >
                 {/* Image Section with Overlapping Circle Badge */}
@@ -202,6 +206,7 @@ export default function ProjectSection({ data }: ProjectSectionProps) {
                   </div>
                 </div>
               </div>
+              </ScrollReveal>
             );
           })}
         </div>

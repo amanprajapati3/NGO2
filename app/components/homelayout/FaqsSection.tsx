@@ -11,6 +11,7 @@ import type {
   FAQSectionProps,
   FAQItem,
 } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function FAQSection({
   data,
@@ -33,6 +34,7 @@ export default function FAQSection({
         <div className="flex flex-col justify-center items-center text-center gap-10">
 
           {/* ================= LEFT ================= */}
+          <ScrollReveal direction="up">
           <div className=" items-center text-center ">
 
             {/* Badge */}
@@ -71,6 +73,7 @@ export default function FAQSection({
               />
             </div> */}
           </div>
+          </ScrollReveal>
 
           {/* ================= RIGHT ================= */}
           <div className="w-full space-y-3 sm:space-y-4">
@@ -80,8 +83,8 @@ export default function FAQSection({
                 const open = activeIndex === index;
 
                 return (
+                  <ScrollReveal key={item.question} direction="up" delay={0.2 + index * 0.1}>
                   <div
-                    key={item.question}
                     className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-sm transition-all duration-300 sm:rounded-3xl"
                   >
                     {/* Question */}
@@ -135,6 +138,7 @@ export default function FAQSection({
                       )}
                     </AnimatePresence>
                   </div>
+                  </ScrollReveal>
                 );
               }
             )}

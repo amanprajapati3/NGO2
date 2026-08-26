@@ -32,6 +32,7 @@ import type {
   DonationAmountOption,
 } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 export default function DonatePage({ data }: DonateNowProps) {
   // Form States
@@ -92,6 +93,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
 
       {/* ================= MAIN CONTENT ================= */}
+      <ScrollReveal direction="up">
       <section className="relative md:py-12 py-8">
         <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
 
@@ -506,6 +508,7 @@ export default function DonatePage({ data }: DonateNowProps) {
 
         </div>
       </section>
+      </ScrollReveal>
     </div>
   );
 }

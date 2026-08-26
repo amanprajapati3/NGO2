@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import type { TermsConditionProps } from "@/type/typeSection";
 import { useEffect } from "react";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 export default function TermsConditions({ data }: TermsConditionProps) {
   const { banner, conditions } = data;
@@ -23,6 +24,7 @@ export default function TermsConditions({ data }: TermsConditionProps) {
 
 
       {/* ================= Terms & Conditions ================= */}
+      <ScrollReveal direction="up">
       <section className="py-12 md:py-16">
         <div className="mx-auto px-4 md:px-10">
           <div className="flex flex-col">
@@ -52,6 +54,7 @@ export default function TermsConditions({ data }: TermsConditionProps) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

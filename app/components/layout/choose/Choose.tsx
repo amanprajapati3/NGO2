@@ -11,6 +11,7 @@ import {
   FiArrowUpRight,
 } from "react-icons/fi";
 import { WhyChooseUsData } from "@/type/typeSection";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 const renderIcon = (icon: string) => {
   switch (icon) {
@@ -39,6 +40,7 @@ const renderIcon = (icon: string) => {
 
 export default function WhyChooseUs({ data }: { data: WhyChooseUsData }) {
   return (
+    <ScrollReveal direction="up">
     <section className="relative overflow-hidden bg-[#fafafa] md:px-32 px-2 py-8 ">
       <div className="relative mx-auto  bg-[#fffcf9] md:p-6 p-2">
         {/* BACKGROUND DECORATION */}
@@ -173,5 +175,6 @@ export default function WhyChooseUs({ data }: { data: WhyChooseUsData }) {
         </div>
       </div>
     </section>
+    </ScrollReveal>
   );
 }

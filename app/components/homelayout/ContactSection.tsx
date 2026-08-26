@@ -13,6 +13,7 @@ import {
 import { HiOutlineHeart } from "react-icons/hi2";
 
 import type { ContactSectionProps } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function ContactSection({ data }: ContactSectionProps) {
   const { badge, title, description, office, form } = data;
@@ -77,6 +78,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
         <div className="grid gap-5 lg:grid-cols-[580px_1fr] lg:gap-0">
 
           {/* ================= LEFT : OFFICE ================= */}
+          <ScrollReveal direction="left">
           <div className="relative overflow-hidden rounded-2xl bg-gradient-to-br from-slate-900 via-slate-800 to-orange-600 p-4 text-white sm:p-6 md:p-8 lg:rounded-none lg:rounded-l-2xl">
 
             {/* Decorative Circles */}
@@ -171,8 +173,10 @@ export default function ContactSection({ data }: ContactSectionProps) {
               </div>
             </div>
           </div>
+          </ScrollReveal>
 
           {/* ================= RIGHT : FORM ================= */}
+          <ScrollReveal direction="right">
           <div className="rounded-2xl border border-slate-200 bg-white p-4 sm:p-6 md:p-8 lg:rounded-l-none lg:rounded-r-2xl">
 
             {/* Form Heading */}
@@ -293,6 +297,7 @@ export default function ContactSection({ data }: ContactSectionProps) {
 
             </form>
           </div>
+          </ScrollReveal>
         </div>
       </div>
     </section>

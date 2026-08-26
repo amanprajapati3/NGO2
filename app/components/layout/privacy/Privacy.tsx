@@ -1,4 +1,5 @@
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 import type { privacyPolicyprops } from "@/type/typeSection";
 
 export default function PrivacyPolicy({ data }: privacyPolicyprops) {
@@ -11,7 +12,8 @@ export default function PrivacyPolicy({ data }: privacyPolicyprops) {
 
 
         {/* ================= Terms & Conditions ================= */}
-        <section className="py-12 md:py-16">
+        <ScrollReveal direction="up">
+      <section className="py-12 md:py-16">
           <div className="mx-auto  px-4 md:px-10 ">
             <div className="flex flex-col">
               {conditions.map((section, index) => (
@@ -39,8 +41,9 @@ export default function PrivacyPolicy({ data }: privacyPolicyprops) {
               ))}
             </div>
           </div>
-        </section>
-      </main>
+      </section>
+      </ScrollReveal>
+    </main>
     </>
   );
 }

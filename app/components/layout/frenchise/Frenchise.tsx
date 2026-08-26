@@ -26,6 +26,7 @@ import {
 import PageBanner from "../../shared/PageBanner";
 import type { FranchisePageProps } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 interface Props {
   data: FranchisePageProps;
@@ -91,6 +92,7 @@ export default function FrenchisePage({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
+      <ScrollReveal direction="up">
       <section className="mx-auto max-w-4xl px-3 pb-12  md:pt-10 pt-8 text-center">
         {/* <div className="mb-2 flex items-center justify-center gap-4">
 
@@ -124,8 +126,9 @@ export default function FrenchisePage({ data }: Props) {
           {header.description}
         </p>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== FEATURES ===================== */}
+      <ScrollReveal direction="up" delay={0.1}>
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
         <div className="grid gap-0 grid-cols-2 md:grid-cols-4">
           {features.map((feature) => (
@@ -148,8 +151,9 @@ export default function FrenchisePage({ data }: Props) {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== MAIN GRID ===================== */}
+      <ScrollReveal direction="up" delay={0.15}>
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-16">
         <div className="grid grid-cols-1 sm:gap-8 gap-4 lg:grid-cols-2 lg:gap-10">
           {/* ================= LEFT SECTION ================= */}
@@ -388,8 +392,9 @@ export default function FrenchisePage({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== PROCESS ===================== */}
+      <ScrollReveal direction="up" delay={0.2}>
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="mb-10 text-center">
           <div className="mb-0 flex items-center justify-center gap-1">
@@ -426,8 +431,9 @@ export default function FrenchisePage({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== CONTACT BANNER ===================== */}
+      <ScrollReveal direction="up" delay={0.25}>
       <section className="mx-auto max-w-6xl sm:px-4 px-0 md:pb-16">
         <div className="relative overflow-hidden md:rounded-2xl bg-gray-900 sm:px-8 p-4 sm:py-10 text-white md:px-12">
           {/* JSON image */}
@@ -482,6 +488,7 @@ export default function FrenchisePage({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

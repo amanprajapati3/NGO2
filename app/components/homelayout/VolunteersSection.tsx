@@ -8,6 +8,7 @@ import { HiOutlineHeart, HiOutlineUsers } from "react-icons/hi2";
 import { RiInstagramFill } from "react-icons/ri";
 
 import type { TeamMember, TeamSectionProps } from "@/type/typeSection";
+import ScrollReveal from "../shared/ScrollReveal";
 
 const getSocialIcon = (icon: string) => {
   switch (icon) {
@@ -101,6 +102,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
           {/* Badge Pill */}
           <div className="inline-flex items-center gap-2 rounded-full bg-orange-50 px-3.5 py-1 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -125,12 +127,13 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
             {description}
           </p>
         </div>
+        </ScrollReveal>
 
         {/* ================= TEAM MEMBERS GRID ================= */}
         <div className="md:mt-12 mt-5 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
-          {members.map((member: TeamMember) => (
+          {members.map((member: TeamMember, index: number) => (
+            <ScrollReveal key={member.name} direction="up" delay={0.2 + index * 0.15}>
             <div
-              key={member.name}
               className="group flex flex-col overflow-hidden rounded-2xl bg-white shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
             >
               {/* Image & Centered Overlapping Avatar Icon */}
@@ -163,7 +166,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
                   </p>
 
                   {/* Description */}
-                  <p className="mt-1 text-sm leading-relaxed text-slate-500">
+                  <p className="mt-1 text-sm min-h-[80px] leading-relaxed text-slate-500">
                     {member.description}
                   </p>
                 </div>
@@ -186,6 +189,7 @@ export default function VolunteerSection({ data }: TeamSectionProps) {
               {/* Bottom Red Accent Line */}
               <div className="h-1.5 w-full bg-[#FF4500]" />
             </div>
+            </ScrollReveal>
           ))}
         </div>
 

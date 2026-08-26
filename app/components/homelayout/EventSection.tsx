@@ -5,6 +5,7 @@ import Link from "next/link";
 import { FiArrowRight, FiHeart } from "react-icons/fi";
 import type { EventsSectionProps, EventCard } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../shared/ScrollReveal";
 
 export default function EventSection({ data }: EventsSectionProps) {
   const { badge, title, description, events } = data;
@@ -82,6 +83,7 @@ export default function EventSection({ data }: EventsSectionProps) {
 
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         {/* ================= HEADER SECTION ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
           {/* pretitle Line */}
           <div className="flex items-center gap-3 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -111,10 +113,12 @@ export default function EventSection({ data }: EventsSectionProps) {
             </p>
           )}
         </div>
+        </ScrollReveal>
 
         {/* ================= EVENT CARDS GRID ================= */}
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
           {events.map((event: EventCard, index: number) => {
+            const cardDelay = 0.2 + index * 0.15;
             // Button theme variations matching image: Red, Purple, Orange
             const buttonBgStyles = [
               "bg-[#D32F2F] hover:bg-[#B71C1C]", // Red
@@ -125,8 +129,8 @@ export default function EventSection({ data }: EventsSectionProps) {
             const btnBg = buttonBgStyles[index % buttonBgStyles.length];
 
             return (
+              <ScrollReveal key={event.title} direction="up" delay={cardDelay}>
               <div
-                key={event.title}
                 className="group relative flex h-[420px] w-full flex-col justify-end overflow-hidden rounded-2xl bg-slate-900 shadow-md transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl"
               >
                 {/* Background Image */}
@@ -163,6 +167,7 @@ export default function EventSection({ data }: EventsSectionProps) {
                   </div>
                 </div>
               </div>
+              </ScrollReveal>
             );
           })}
         </div>

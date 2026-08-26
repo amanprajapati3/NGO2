@@ -23,6 +23,7 @@ import type {
   CareerPageProps,
   CareerJob,
 } from "@/type/typeSection";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 const getJobIcon = (type: string) => {
   if (type.toLowerCase().includes("full")) {
@@ -75,6 +76,7 @@ export default function Career({ data }: CareerPageProps) {
 
       {/*  WHY WORK WITH US */}
       {whyWorkWithUs && (
+        <ScrollReveal direction="up">
         <section className="px-4 py-8 sm:px-6 md:py-12 lg:px-8">
           <div className="mx-auto max-w-7xl">
 
@@ -140,12 +142,11 @@ export default function Career({ data }: CareerPageProps) {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       )}
 
 
-      {/* =========================================================
-          OPEN POSITIONS
-      ========================================================= */}
+      <ScrollReveal direction="up" delay={0.1}>
       <section className="px-4  sm:px-6  lg:px-8">
         <div className="mx-auto max-w-5xl">
 
@@ -308,11 +309,9 @@ export default function Career({ data }: CareerPageProps) {
 
         </div>
       </section>
+      </ScrollReveal>
 
-
-      {/* =========================================================
-          CTA
-      ========================================================= */}
+      <ScrollReveal direction="up" delay={0.15}>
       <section className="relative overflow-hidden bg-[#fafafa] px-4 py-8 sm:px-6 md:py-12 lg:px-8">
 
         <div className="relative mx-auto max-w-5xl overflow-hidden rounded-3xl bg-[#fff2eb] p-6 sm:p-8 md:p-10 lg:p-12">
@@ -363,6 +362,7 @@ export default function Career({ data }: CareerPageProps) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
     </main>
   );

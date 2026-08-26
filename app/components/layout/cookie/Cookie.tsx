@@ -2,6 +2,7 @@ import type { cookiePolicyprops } from "@/type/typeSection";
 import Image from "next/image";
 import Link from "next/link";
 import PageBanner from "../../shared/PageBanner";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 export default function CookiePolicy({ data }: cookiePolicyprops) {
   const { banner, conditions } = data;
@@ -13,7 +14,8 @@ export default function CookiePolicy({ data }: cookiePolicyprops) {
 
 
         {/* ================= Cookie Policy Conditions ================= */}
-        <section className="py-12 md:py-16">
+        <ScrollReveal direction="up">
+      <section className="py-12 md:py-16">
           <div className="mx-auto  px-4 md:px-10">
             <div className="flex flex-col">
               {conditions.map((section, index) => (
@@ -41,8 +43,9 @@ export default function CookiePolicy({ data }: cookiePolicyprops) {
               ))}
             </div>
           </div>
-        </section>
-      </main>
+      </section>
+      </ScrollReveal>
+    </main>
     </>
   );
 }

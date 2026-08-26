@@ -3,6 +3,7 @@
 import { MediaProps } from "@/type/typeSection";
 import PageBanner from "../../shared/PageBanner";
 import Image from "next/image";
+import ScrollReveal from "../../shared/ScrollReveal";
 export default function Media({ data }: MediaProps) {
   const { banner, content } = data;
 
@@ -10,6 +11,7 @@ export default function Media({ data }: MediaProps) {
     <>
       <div className="bg-white overflow-hidden">
         <PageBanner banner={banner} />
+        <ScrollReveal direction="up">
         <section className="max-w-7xl mx-auto px-2 sm:px-4 py-8 ">
           <div className="  rounded-3xl p-0  shadow-sm">
             {/* Header Row: Section Title & View All Link */}
@@ -86,6 +88,7 @@ export default function Media({ data }: MediaProps) {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       </div>
     </>
   );

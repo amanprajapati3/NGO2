@@ -18,6 +18,7 @@ import {
   ExternalLink 
 } from "lucide-react";
 import { useEffect } from "react";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 const contact = data.contact as unknown as ContactData;
 
@@ -52,6 +53,7 @@ export default function ContactUs({ data: propData }: ContactSectionProps) {
 
       {/* ================= FEATURE CARDS BAR ================= */}
       {cards && cards.length > 0 && (
+        <ScrollReveal direction="up">
         <section className="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
           <div className="rounded-2xl border border-gray-200/80 bg-white p-6 shadow-sm sm:p-8">
             <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-4 lg:gap-0 lg:divide-x lg:divide-gray-200">
@@ -81,10 +83,12 @@ export default function ContactUs({ data: propData }: ContactSectionProps) {
             </div>
           </div>
         </section>
+        </ScrollReveal>
       )}
 
       {/* ================= MAP SECTION ================= */}
       {map && (
+        <ScrollReveal direction="up" delay={0.2}>
         <section className="mx-auto max-w-7xl px-4 pb-16 sm:px-6 lg:px-8">
           <div className="relative h-[400px] w-full overflow-hidden rounded-xl border border-gray-200 shadow-sm sm:h-[480px] lg:h-[520px]">
             {/* Google Map iFrame */}
@@ -150,6 +154,7 @@ export default function ContactUs({ data: propData }: ContactSectionProps) {
             </div> */}
           </div>
         </section>
+        </ScrollReveal>
       )}
     </div>
   );

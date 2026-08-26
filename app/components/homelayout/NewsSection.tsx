@@ -6,6 +6,7 @@ import { FiArrowLeft, FiArrowRight, FiUser } from "react-icons/fi";
 
 import type { NewsSectionProps, NewsArticle } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../shared/ScrollReveal";
 
 interface NewsSectionExtendedProps extends NewsSectionProps {
   showDescription?: boolean;
@@ -79,6 +80,7 @@ export default function NewsSection({
       <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
 
         {/* ================= HEADER ================= */}
+        <ScrollReveal direction="up">
         <div className="flex flex-col items-center text-center">
 
           <div className="inline-flex items-center gap-2 text-sm font-bold uppercase tracking-wider text-[#FF4500]">
@@ -99,12 +101,13 @@ export default function NewsSection({
             </p>
           )}
         </div>
+        </ScrollReveal>
 
         {/* ================= ARTICLE CARDS ================= */}
         <div className="mt-12 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {visibleArticles.map((article: NewsArticle) => (
+          {visibleArticles.map((article: NewsArticle, index: number) => (
+            <ScrollReveal key={article.title} direction="up" delay={0.2 + index * 0.15}>
             <div
-              key={article.title}
               className="group flex flex-col overflow-hidden rounded-xl bg-white shadow-md shadow-slate-200/60 transition-all duration-300 hover:-translate-y-1 hover:shadow-xl"
             >
               {/* Image */}
@@ -154,6 +157,7 @@ export default function NewsSection({
                 </div>
               </div>
             </div>
+            </ScrollReveal>
           ))}
         </div>
 

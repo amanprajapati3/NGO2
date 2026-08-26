@@ -19,6 +19,7 @@ import {
 import PageBanner from "../../shared/PageBanner";
 import type { BranchesPageProps } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 interface Props {
   data: BranchesPageProps;
@@ -56,6 +57,7 @@ export default function Branches({ data }: Props) {
       <PageBanner banner={banner} />
 
       {/* ===================== HEADER ===================== */}
+      <ScrollReveal direction="up">
       <section className="mx-auto max-w-4xl sm:px-4 px-2 pb-10 pt-10 md:pt-14 text-center ">
         <div className="flex justify-center gap-1">
           <HiOutlineHeart className="text-base  text-[#FF4500]" />
@@ -85,8 +87,9 @@ export default function Branches({ data }: Props) {
           {header.description}
         </p>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== STATS ===================== */}
+      <ScrollReveal direction="up" delay={0.1}>
       <section className="mx-auto max-w-5xl px-2 pb-10 sm:px-4 sm:pb-16">
         <div className="grid grid-cols-1 overflow-hidden rounded-2xl border border-gray-100 bg-white shadow-sm sm:grid-cols-2 md:grid-cols-4">
           {stats.map((stat, index) => (
@@ -126,8 +129,9 @@ export default function Branches({ data }: Props) {
           ))}
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== LOCATIONS ===================== */}
+      <ScrollReveal direction="up" delay={0.15}>
       <section className="mx-auto max-w-6xl sm:px-4 px-2 sm:pb-16 pb-10">
         <div className="mb-10 text-center">
           <div className="mb- flex items-center justify-center gap-3">
@@ -223,8 +227,9 @@ export default function Branches({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== CTA BANNER ===================== */}
+      <ScrollReveal direction="up" delay={0.2}>
       <section className="mx-auto max-w-6xl sm:px-4 px-2 pb-10">
         <div className="relative overflow-hidden rounded-2xl bg-orange-50">
           <div className="grid grid-cols-1 items-center lg:grid-cols-2">
@@ -295,8 +300,9 @@ export default function Branches({ data }: Props) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
 
-      {/* ===================== CONTACT BAR ===================== */}
+      <ScrollReveal direction="up" delay={0.25}>
       <section className="mx-auto max-w-6xl px-4 pb-16">
         <div className="grid grid-cols-1 gap-6 rounded-2xl border border-gray-100 bg-orange-50/50 p-6 sm:grid-cols-3 sm:gap-0 sm:divide-x sm:divide-orange-100">
           {contactBar.items.map((item) => (
@@ -314,6 +320,7 @@ export default function Branches({ data }: Props) {
           ))}
         </div>
       </section>
+      </ScrollReveal>
     </main>
   );
 }

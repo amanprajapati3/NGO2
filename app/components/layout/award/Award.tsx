@@ -2,6 +2,7 @@ import React from "react";
 import PageBanner from "../../shared/PageBanner";
 import type { AwardsDataProps } from "@/type/typeSection";
 import { HiOutlineHeart } from "react-icons/hi2";
+import ScrollReveal from "../../shared/ScrollReveal";
 
 // ================= ACCURATE C-CURVED LAUREL LEAF BRANCH SVG =================
 const LaurelWreathSVG = ({ className }: { className?: string }) => (
@@ -202,6 +203,7 @@ export default function Award({ data }: AwardsDataProps) {
       <PageBanner banner={banner} />
 
       {/* ================= 2. MAIN AWARDS SECTION ================= */}
+      <ScrollReveal direction="up">
       <section className="relative overflow-hidden bg-gradient-to-b from-orange-50/40 via-white to-orange-50/20 md:py-8 py-8">
         {/* Floating Streamers and Confetti Backdrop */}
         <ConfettiBackground />
@@ -440,6 +442,7 @@ export default function Award({ data }: AwardsDataProps) {
           </div>
         </div>
       </section>
+      </ScrollReveal>
     </div>
   );
 }
